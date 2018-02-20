@@ -22404,6 +22404,48 @@
           "body": "[\r\n\t{\r\n\t\t\"offset\": \"0\",\r\n\t\t\"limit\": \"500\",\r\n\t\t\"total_count\": \"5\",\r\n\t\t\"execution_time\": \"715\",\r\n\t\t\"items\": [\r\n\t\t\t{\r\n\t\t\t\t\"api\": \"accounts_receivables\",\r\n\t\t\t\t\"total_records\": \"11212\",\r\n\t\t\t\t\"update_time\": \"2017-11-10 11:07:29\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"api\": \"appointments\",\r\n\t\t\t\t\"total_records\": \"43547\",\r\n\t\t\t\t\"update_time\": \"2017-11-10 12:02:53\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"api\": \"claim_descriptions\",\r\n\t\t\t\t\"total_records\": \"32326\",\r\n\t\t\t\t\"update_time\": \"2017-11-10 11:03:46\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"api\": \"claims\",\r\n\t\t\t\t\"total_records\": \"32000\",\r\n\t\t\t\t\"update_time\": \"2017-11-10 11:03:35\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"api\": \"clinical_conditions\",\r\n\t\t\t\t\"total_records\": \"34\",\r\n\t\t\t\t\"update_time\": \"2017-11-10 11:07:56\"\r\n\t\t\t}\r\n\t\t]\r\n\t}\r\n]"
         }
       ]
+    },
+    {
+      "_postman_id": "bad9ce36-3371-aed9-bc1f-b300b79faa69",
+      "name": "{{url}}/practice_events?request_key={{request_key}}&loaded_startdate={ }&loaded_enddate={ }&events={event(s)}",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "{{url}}/practice_events?request_key={{request_key}}&loaded_startdate={ }&loaded_enddate={ }&events={event(s)}",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "practice_events"
+          ],
+          "query": [
+            {
+              "key": "request_key",
+              "value": "{{request_key}}",
+              "equals": true
+            },
+            {
+              "key": "loaded_startdate",
+              "value": "{ }",
+              "equals": true
+            },
+            {
+              "key": "loaded_enddate",
+              "value": "{ }",
+              "equals": true
+            },
+            {
+              "key": "events",
+              "value": "{event(s)}",
+              "equals": true
+            }
+          ]
+        },
+        "description": "This api will return what data has been changed in practice between given date range. \r\nIn response you will get data with flags Deleted , Added  & Updated\r\n"
+      },
+      "response": []
     }
   ]
 }
