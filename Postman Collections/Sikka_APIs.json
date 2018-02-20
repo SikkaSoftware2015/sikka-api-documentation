@@ -22443,7 +22443,7 @@
             }
           ]
         },
-        "description": "This api will return what data has been changed in practice between given date range. \r\nIn response you will get data with flags Deleted , Added  & Updated\r\n"
+        "description": "This api will return what data has been changed in practice between given date range. \r\nIn response you will get data with flags Deleted , Added  & Updated\r\n\r\n|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|loaded_startdate|Start date for getting only changed record set. Date format : yyyy-mm-dd or yyyy-MM-ddTHH:mm:ss|yes|\r\n|loaded_enddate|End date for getting only changed record set. Date format : yyyy-mm-dd or yyyy-MM-ddTHH:mm:ss|yes|\r\n|events|Name of the events you want to get modified records. Events name must match with API name|yes|"
       },
       "response": []
     }
