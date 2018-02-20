@@ -22407,7 +22407,7 @@
     },
     {
       "_postman_id": "bad9ce36-3371-aed9-bc1f-b300b79faa69",
-      "name": "{{url}}/practice_events?request_key={{request_key}}&loaded_startdate={ }&loaded_enddate={ }&events={event(s)}",
+      "name": "practice_events",
       "request": {
         "method": "GET",
         "header": [],
