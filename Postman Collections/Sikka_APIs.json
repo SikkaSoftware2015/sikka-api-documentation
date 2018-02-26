@@ -13155,7 +13155,7 @@
         },
         {
           "_postman_id": "4fb108b3-8e40-f4b2-f983-f9ead9b74137",
-          "name": "patient_contracts copy",
+          "name": "patient_addresses",
           "request": {
             "method": "GET",
             "header": [],
