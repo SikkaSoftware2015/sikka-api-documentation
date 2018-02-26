@@ -12652,13 +12652,13 @@
             "header": [],
             "body": {},
             "url": {
-              "raw": "{{url}}/patient_addresses/patient_id?request_key={{request_key}}",
+              "raw": "{{url}}/patient_addresses/{patient_id}?request_key={{request_key}}",
               "host": [
                 "{{url}}"
               ],
               "path": [
                 "patient_addresses",
-                "patient_id"
+                "{patient_id}"
               ],
               "query": [
                 {
