@@ -13161,18 +13161,17 @@
             "header": [],
             "body": {},
             "url": {
-              "raw": "{{url}}/patient_contracts?request_key={{request_key}}",
+              "raw": "{{url}}/patient_addresses?request_key={{request_key}}",
               "host": [
                 "{{url}}"
               ],
               "path": [
-                "patient_contracts"
+                "patient_addresses"
               ],
               "query": [
                 {
                   "key": "request_key",
-                  "value": "{{request_key}}",
-                  "equals": true
+                  "value": "{{request_key}}"
                 }
               ]
             },
