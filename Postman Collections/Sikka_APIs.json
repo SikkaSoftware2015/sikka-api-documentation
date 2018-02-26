@@ -12646,7 +12646,7 @@
         },
         {
           "_postman_id": "f7d240c3-d7e9-a387-9a0d-1259755910aa",
-          "name": "patient_addresses copy",
+          "name": "patient_addresses by patient_id",
           "request": {
             "method": "GET",
             "header": [],
