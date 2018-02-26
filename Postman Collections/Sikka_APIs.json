@@ -12678,12 +12678,13 @@
                 "header": [],
                 "body": {},
                 "url": {
-                  "raw": "{{url}}/patient_addresses?request_key={{request_key}}",
+                  "raw": "{{url}}/patient_addresses/{patient_id}?request_key={{request_key}}",
                   "host": [
                     "{{url}}"
                   ],
                   "path": [
-                    "patient_addresses"
+                    "patient_addresses",
+                    "{patient_id}"
                   ],
                   "query": [
                     {
@@ -12697,77 +12698,10 @@
               "status": "OK",
               "code": 200,
               "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "name": "Access-Control-Allow-Headers",
-                  "key": "Access-Control-Allow-Headers",
-                  "value": "accept, authorization, Content-Type, X-Session-Id",
-                  "description": ""
-                },
-                {
-                  "name": "Access-Control-Allow-Methods",
-                  "key": "Access-Control-Allow-Methods",
-                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
-                  "description": ""
-                },
-                {
-                  "name": "Access-Control-Allow-Origin",
-                  "key": "Access-Control-Allow-Origin",
-                  "value": "*",
-                  "description": ""
-                },
-                {
-                  "name": "Cache-Control",
-                  "key": "Cache-Control",
-                  "value": "private",
-                  "description": ""
-                },
-                {
-                  "name": "Connection",
-                  "key": "Connection",
-                  "value": "keep-alive",
-                  "description": ""
-                },
-                {
-                  "name": "Content-Length",
-                  "key": "Content-Length",
-                  "value": "822",
-                  "description": ""
-                },
-                {
-                  "name": "Content-Type",
-                  "key": "Content-Type",
-                  "value": "application/json",
-                  "description": ""
-                },
-                {
-                  "name": "Date",
-                  "key": "Date",
-                  "value": "Wed, 26 Apr 2017 09:45:32 GMT",
-                  "description": ""
-                },
-                {
-                  "name": "Server",
-                  "key": "Server",
-                  "value": "Microsoft-IIS/8.5",
-                  "description": ""
-                },
-                {
-                  "name": "X-AspNet-Version",
-                  "key": "X-AspNet-Version",
-                  "value": "4.0.30319",
-                  "description": ""
-                },
-                {
-                  "name": "X-Powered-By",
-                  "key": "X-Powered-By",
-                  "value": "ASP.NET",
-                  "description": ""
-                }
-              ],
+              "header": [],
               "cookie": [],
               "responseTime": "401",
-              "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"2\",\r\n\t\"total_count\": \"138529\",\r\n\t\"execution_time\": \"123\",\r\n\t\"items\": [{\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST/patient_addresses/TEST-517186\",\r\n\t\t\"patient_id\": \"TEST-517186\",\r\n\t\t\"patient\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST/patients/TEST-517186\"\r\n\t\t},\r\n\t\t\"address_line1\": \"271 Test St\",\r\n\t\t\"address_line2\": \"2nd Line\",\r\n\t\t\"city\": \"Test_City\",\r\n\t\t\"state\": \"CA\",\r\n\t\t\"zipcode\": \"99999\",\r\n\t\t\"rank\": \"1\",\r\n\t\t\"practice_id\": \"1-TEST\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST\"\r\n\t\t}\r\n\t}, {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST/patient_addresses/TEST-517160\",\r\n\t\t\"patient_id\": \"TEST-517160\",\r\n\t\t\"patient\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST/patients/TEST-517160\"\r\n\t\t},\r\n\t\t\"address_line1\": \"10623 Brookchase Ct.\",\r\n\t\t\"address_line2\": \"\",\r\n\t\t\"city\": \"Test_City\",\r\n\t\t\"state\": \"KY\",\r\n\t\t\"zipcode\": \"99999\",\r\n\t\t\"rank\": \"1\",\r\n\t\t\"practice_id\": \"1-TEST\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST\"\r\n\t\t}\r\n\t}]\r\n}]"
+              "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"2\",\n        \"total_count\": \"1\",\n        \"execution_time\": \"123\",\n        \"items\": [\n            {\n                \"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST/patient_addresses/TEST-517186\",\n                \"patient_id\": \"TEST-517186\",\n                \"patient\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST/patients/TEST-517186\"\n                },\n                \"address_line1\": \"271 Test St\",\n                \"address_line2\": \"2nd Line\",\n                \"city\": \"Test_City\",\n                \"state\": \"CA\",\n                \"zipcode\": \"99999\",\n                \"rank\": \"1\",\n                \"practice_id\": \"1-TEST\",\n                \"practice\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST\"\n                }\n            }\n        ]\n    }\n]"
             }
           ]
         },
