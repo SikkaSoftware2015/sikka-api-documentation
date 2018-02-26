@@ -16705,7 +16705,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n\t\"request_key\": \"b73ae58003bb686a38be06db529a894e\",\r\n\t\"medical_notes\": [{\r\n\t\t\"patient_id\": \"1\",\r\n\t\t\"type\": \"\",\r\n\t\t\"date\": \"2016-12-02\",\r\n\t\t\"text\": \"test text\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"provider_id\": \"1\",\r\n\t\t\"description\": \"\"\r\n\t}, {\r\n\t\t\"patient_id\": \"2\",\r\n\t\t\"type\": \"\",\r\n\t\t\"date\": \"2016-12-02\",\r\n\t\t\"text\": \"test text 2\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"provider_id\": \"1\",\r\n\t\t\"description\": \"\"\r\n\t}]\r\n}"
+              "raw": "{\r\n  \"request_key\": \"b73ae58003bb686a38be06db529a894e\",\r\n  \"medical_notes\": [{\r\n    \"patient_id\": \"1\",\r\n    \"type\": \"\",\r\n    \"date\": \"2016-12-02\",\r\n    \"text\": \"test text\",\r\n    \"practice_id\": \"1\",\r\n    \"provider_id\": \"1\",\r\n    \"description\": \"\"\r\n  }, {\r\n    \"patient_id\": \"2\",\r\n    \"type\": \"\",\r\n    \"date\": \"2016-12-02\",\r\n    \"text\": \"test text 2\",\r\n    \"practice_id\": \"1\",\r\n    \"provider_id\": \"1\",\r\n    \"description\": \"\"\r\n  }]\r\n}"
             },
             "url": "{{url}}/medical_notes/medical_note",
             "description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|provider_id|Provider id as per practice management system|Yes|\r\n|patient_id|Patient ID as per the management system|Yes|\r\n|practice_id|Practice ID|Yes|\r\n|date|Filter on date field, format: yyyy-mm-dd|Yes|\r\n|type|type|No|\r\n|text|Text|Yes|\r\n|description|Description|No|\r\n"
