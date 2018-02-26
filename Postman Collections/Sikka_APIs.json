@@ -17748,6 +17748,133 @@
               "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"500\",\r\n\t\"total_count\": \"2\",\r\n\t\"items\": [{\r\n\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/1/pet_documents/4886\",\r\n\t\t\"patient_id\": \"4886\",\r\n\t\t\"patient\": {\r\n\t\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/1/patients/4886\"\r\n\t\t},\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/1\"\r\n\t\t},\r\n\t\t\"document_link\": \"http://s3.amazonaws.com/pet_documents_test1.pdf\"\r\n\t}, {\r\n\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/1/pet_documents/4886\",\r\n\t\t\"patient_id\": \"4886\",\r\n\t\t\"patient\": {\r\n\t\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/1/patients/4886\"\r\n\t\t},\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/1\"\r\n\t\t},\r\n\t\t\"document_link\": \"http://s3.amazonaws.com/pet_documents_test2.pdf\"\r\n\t}]\r\n}]"
             }
           ]
+        },
+        {
+          "_postman_id": "4fb108b3-8e40-f4b2-f983-f9ead9b74137",
+          "name": "patient_contracts copy",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "url": {
+              "raw": "{{url}}/patient_contracts?request_key={{request_key}}",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "patient_contracts"
+              ],
+              "query": [
+                {
+                  "key": "request_key",
+                  "value": "{{request_key}}",
+                  "equals": true
+                }
+              ]
+            },
+            "description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|patient_id|Patient ID as per the management system|No|\r\n|practice_id|Practice ID|No|\r\n|offset|offset  page number, default 0|No|\r\n|limit|records per page, default 500, maximum 5000|No|\r\n|sort_by|order by field name, for valid field name(s) refer below table|No|\r\n|sort_order|desc or asc, default desc|No|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|patient_id|Patient ID as per the management system|\r\n|practice_id|Practice ID|"
+          },
+          "response": [
+            {
+              "id": "da04af65-a613-7861-3fd3-937d1f72d99d",
+              "name": "request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {},
+                "url": {
+                  "raw": "{{url}}/patient_contracts?request_key={{request_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "patient_contracts"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "{{request_key}}",
+                      "equals": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "Access-Control-Allow-Headers",
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "accept, authorization, Content-Type, X-Session-Id",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Methods",
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Origin",
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "description": ""
+                },
+                {
+                  "name": "Cache-Control",
+                  "key": "Cache-Control",
+                  "value": "private",
+                  "description": ""
+                },
+                {
+                  "name": "Connection",
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Length",
+                  "key": "Content-Length",
+                  "value": "822",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Type",
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": ""
+                },
+                {
+                  "name": "Date",
+                  "key": "Date",
+                  "value": "Wed, 26 Apr 2017 09:45:32 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "Server",
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5",
+                  "description": ""
+                },
+                {
+                  "name": "X-AspNet-Version",
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "description": ""
+                },
+                {
+                  "name": "X-Powered-By",
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": "401",
+              "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"2\",\n        \"total_count\": \"9621\",\n        \"execution_time\": \"197\",\n        \"items\": [\n            {\n                \"href\": \"https://api.sikkasoft.com/v2/practices/1-AB/patient_contracts/AB-003619\",\n                \"patient_id\": \"AB-003619\",\n                \"patient\": {\n                    \"href\": \"https://qaapi.sikkasoft.com/v2/practices/1-AB/patients/AB-003619\"\n                },\n                \"patient_name\": \"Test Name\",\n                \"startdate\": \"2017-05-16\",\n                \"enddate\": \"2019-02-01\",\n                \"gross_amount\": \"5295.0000\",\n                \"net_amount\": \"3300.0000\",\n                \"discount_amount\": \"1995.0000\",\n                \"paid_amount\": \"1675.0000\",\n                \"initial_amount\": \"\",\n                \"contract_period\": \"\",\n                \"status\": \"Comprehensive Treatment\",\n                \"practice_id\": \"1-AB\",\n                \"practice\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/1-AB\"\n                },\n                \"provider_id\": \"\",\n                \"provider\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/1-AB/providers\"\n                },\n                \"contract_type\": \"\"\n            },\n            {\n                \"href\": \"https://api.sikkasoft.com/v2/practices/1-AB/patient_contracts/AB-010650\",\n                \"patient_id\": \"AB-010650\",\n                \"patient\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/1-AB/patients/AB-010650\"\n                },\n                \"patient_name\": \"Test Name\",\n                \"startdate\": \"\",\n                \"enddate\": \"2017-07-10\",\n                \"gross_amount\": \"5375.0000\",\n                \"net_amount\": \"5375.0000\",\n                \"discount_amount\": \"0.0000\",\n                \"paid_amount\": \"5375.0000\",\n                \"initial_amount\": \"\",\n                \"contract_period\": \"\",\n                \"status\": \"Comprehensive Treatment\",\n                \"practice_id\": \"1-AB\",\n                \"practice\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/1-AB\"\n                },\n                \"provider_id\": \"\",\n                \"provider\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/1-AB/providers\"\n                },\n                \"contract_type\": \"\"\n            }\n        ]\n    }\n]"
+            }
+          ]
         }
       ]
     },
