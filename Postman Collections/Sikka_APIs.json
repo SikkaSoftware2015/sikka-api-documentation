@@ -13186,12 +13186,12 @@
                 "header": [],
                 "body": {},
                 "url": {
-                  "raw": "{{url}}/patient_contracts?request_key={{request_key}}",
+                  "raw": "{{url}}/patient_addresses?request_key={{request_key}}",
                   "host": [
                     "{{url}}"
                   ],
                   "path": [
-                    "patient_contracts"
+                    "patient_addresses"
                   ],
                   "query": [
                     {
@@ -13275,7 +13275,7 @@
               ],
               "cookie": [],
               "responseTime": "401",
-              "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"2\",\n        \"total_count\": \"9621\",\n        \"execution_time\": \"197\",\n        \"items\": [\n            {\n                \"href\": \"https://api.sikkasoft.com/v2/practices/1-AB/patient_contracts/AB-003619\",\n                \"patient_id\": \"AB-003619\",\n                \"patient\": {\n                    \"href\": \"https://qaapi.sikkasoft.com/v2/practices/1-AB/patients/AB-003619\"\n                },\n                \"patient_name\": \"Test Name\",\n                \"startdate\": \"2017-05-16\",\n                \"enddate\": \"2019-02-01\",\n                \"gross_amount\": \"5295.0000\",\n                \"net_amount\": \"3300.0000\",\n                \"discount_amount\": \"1995.0000\",\n                \"paid_amount\": \"1675.0000\",\n                \"initial_amount\": \"\",\n                \"contract_period\": \"\",\n                \"status\": \"Comprehensive Treatment\",\n                \"practice_id\": \"1-AB\",\n                \"practice\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/1-AB\"\n                },\n                \"provider_id\": \"\",\n                \"provider\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/1-AB/providers\"\n                },\n                \"contract_type\": \"\"\n            },\n            {\n                \"href\": \"https://api.sikkasoft.com/v2/practices/1-AB/patient_contracts/AB-010650\",\n                \"patient_id\": \"AB-010650\",\n                \"patient\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/1-AB/patients/AB-010650\"\n                },\n                \"patient_name\": \"Test Name\",\n                \"startdate\": \"\",\n                \"enddate\": \"2017-07-10\",\n                \"gross_amount\": \"5375.0000\",\n                \"net_amount\": \"5375.0000\",\n                \"discount_amount\": \"0.0000\",\n                \"paid_amount\": \"5375.0000\",\n                \"initial_amount\": \"\",\n                \"contract_period\": \"\",\n                \"status\": \"Comprehensive Treatment\",\n                \"practice_id\": \"1-AB\",\n                \"practice\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/1-AB\"\n                },\n                \"provider_id\": \"\",\n                \"provider\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/1-AB/providers\"\n                },\n                \"contract_type\": \"\"\n            }\n        ]\n    }\n]"
+              "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"2\",\r\n\t\"total_count\": \"138529\",\r\n\t\"execution_time\": \"123\",\r\n\t\"items\": [{\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST/patient_addresses/TEST-517186\",\r\n\t\t\"patient_id\": \"TEST-517186\",\r\n\t\t\"patient\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST/patients/TEST-517186\"\r\n\t\t},\r\n\t\t\"address_line1\": \"271 Test St\",\r\n\t\t\"address_line2\": \"2nd Line\",\r\n\t\t\"city\": \"Test_City\",\r\n\t\t\"state\": \"CA\",\r\n\t\t\"zipcode\": \"99999\",\r\n\t\t\"rank\": \"1\",\r\n\t\t\"practice_id\": \"1-TEST\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST\"\r\n\t\t}\r\n\t}, {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST/patient_addresses/TEST-517160\",\r\n\t\t\"patient_id\": \"TEST-517160\",\r\n\t\t\"patient\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST/patients/TEST-517160\"\r\n\t\t},\r\n\t\t\"address_line1\": \"10623 Brookchase Ct.\",\r\n\t\t\"address_line2\": \"\",\r\n\t\t\"city\": \"Test_City\",\r\n\t\t\"state\": \"KY\",\r\n\t\t\"zipcode\": \"99999\",\r\n\t\t\"rank\": \"1\",\r\n\t\t\"practice_id\": \"1-TEST\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST\"\r\n\t\t}\r\n\t}]\r\n}]"
             }
           ]
         },
