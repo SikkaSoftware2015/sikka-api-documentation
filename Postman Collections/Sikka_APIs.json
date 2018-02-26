@@ -16591,6 +16591,104 @@
               "cookie": [],
               "responseTime": "327",
               "body": "[{\"offset\":\"0\",\"limit\":\"500\",\"total_count\":\"3\",\"items\":[{\"href\":\"\",\"patient_id\":\"445501\",\"patient\":{\"href\":\"https:\\/\\/qaapi.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/445501\"},\"type\":\"PatNote\",\"date\":\"2016-01-01\",\"text\":\"Check gums on next visit\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/qaapi.sikkasoft.com\\/v2\\/practices\\/1\"},\"description\":\"\",\"provider_id\":\"\",\"procedure_date\":\"\",\"transaction_sr_no\":\"0\",\"transaction\":{\"href\":\"https:\\/\\/qaapi.sikkasoft.com\\/v2\\/practices\\/1\\/transactions\\/0\"},\"procedure_code_id\":\"\",\"clinical_condition_id\":\"\",\"tooth_number\":\"\",\"surface\":\"\"},{\"href\":\"\",\"patient_id\":\"111001\",\"patient\":{\"href\":\"https:\\/\\/qaapi.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/111001\"},\"type\":\"PatNote\",\"date\":\"2016-01-01\",\"text\":\"Xrays were normal\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/qaapi.sikkasoft.com\\/v2\\/practices\\/1\"},\"description\":\"\",\"provider_id\":\"\",\"procedure_date\":\"\",\"transaction_sr_no\":\"0\",\"transaction\":{\"href\":\"https:\\/\\/qaapi.sikkasoft.com\\/v2\\/practices\\/1\\/transactions\\/0\"},\"procedure_code_id\":\"\",\"clinical_condition_id\":\"\",\"tooth_number\":\"\",\"surface\":\"\"},{\"href\":\"\",\"patient_id\":\"111001\",\"patient\":{\"href\":\"https:\\/\\/qaapi.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/111001\"},\"type\":\"PatNote\",\"date\":\"2016-02-02\",\"text\":\"Check gums on next visit\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/qaapi.sikkasoft.com\\/v2\\/practices\\/1\"},\"description\":\"\",\"provider_id\":\"\",\"procedure_date\":\"\",\"transaction_sr_no\":\"0\",\"transaction\":{\"href\":\"https:\\/\\/qaapi.sikkasoft.com\\/v2\\/practices\\/1\\/transactions\\/0\"},\"procedure_code_id\":\"\",\"clinical_condition_id\":\"\",\"tooth_number\":\"\",\"surface\":\"\"}]}]\r\n"
+            },
+            {
+              "id": "55d1714b-8617-4c7d-0a1b-3a2b3e58dba4",
+              "name": "sample response",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {},
+                "url": {
+                  "raw": "{{url}}/medical_notes?request_key={{request_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "medical_notes"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "{{request_key}}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "Access-Control-Allow-Headers",
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "accept, authorization, Content-Type, X-Session-Id",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Methods",
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Origin",
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "description": ""
+                },
+                {
+                  "name": "Cache-Control",
+                  "key": "Cache-Control",
+                  "value": "private, no-cache=\"set-cookie\"",
+                  "description": ""
+                },
+                {
+                  "name": "Connection",
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Length",
+                  "key": "Content-Length",
+                  "value": "1272",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Type",
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": ""
+                },
+                {
+                  "name": "Date",
+                  "key": "Date",
+                  "value": "Mon, 24 Apr 2017 12:14:33 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "Server",
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5",
+                  "description": ""
+                },
+                {
+                  "name": "X-AspNet-Version",
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "description": ""
+                },
+                {
+                  "name": "X-Powered-By",
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": "2788",
+              "body": "[{\"offset\":\"0\",\"limit\":\"2\",\"total_count\":\"215110\",\"items\":[{\"href\":\"\",\"patient_id\":\"6066\",\"patient\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/6066\"},\"type\":\"General Note\",\"date\":\"2016-04-19\",\"text\":\"DOS4-19-16Pt presents to the office as a new patient.Took 2 PAS #15Reviewed medical history with patient.Completed new patient interview.Took new patient photo.Dr Mathes performed comprehensive exam- completed dental chart perio chart and took intra oral pictures. Treatment plan established today for start with referral to DR. Dale for #15 and then crown?? Pt. needs a comprehensive treatment plan soon has extra insurance for 1 month so needs to get the higher priced treatment now. Dr. to give to Kim so she can give to Melissa.NV:Refer to Dr. Dale for #15LW\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"},\"description\":\"\"},{\"href\":\"\",\"patient_id\":\"6066\",\"patient\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/6066\"},\"type\":\"Primary Insurace Note\",\"date\":\"2016-04-19\",\"text\":\"Insurance Claim from April 19 2016 was Submitted to Prim. Insurance Company: CIGNA Payer ID: 62308\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"},\"description\":\"\"}]}]\r\n"
             }
           ]
         },
@@ -22275,6 +22373,116 @@
           "cookie": [],
           "responseTime": "1021",
           "body": "[\n    {\n        \"scope\": \"https://api.sikkasoft.com/v2/\",\n        \"request_key\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\n        \"token_type\": \"Bearer\",\n        \"expires_in\": \"86400\"\n    }\n]"
+        },
+        {
+          "id": "4c0ff35e-6114-aab3-aa4f-5501e1c652ce",
+          "name": "start",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "url": {
+              "raw": "{{url}}/start?app_id={{app_id}}&app_key={{app_key}}&office_id={{office_id}}&secret_key={{secret_key}}",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "start"
+              ],
+              "query": [
+                {
+                  "key": "app_id",
+                  "value": "{{app_id}}"
+                },
+                {
+                  "key": "app_key",
+                  "value": "{{app_key}}"
+                },
+                {
+                  "key": "office_id",
+                  "value": "{{office_id}}"
+                },
+                {
+                  "key": "secret_key",
+                  "value": "{{secret_key}}"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "name": "Access-Control-Allow-Headers",
+              "key": "Access-Control-Allow-Headers",
+              "value": "accept, authorization, Content-Type, X-Session-Id",
+              "description": ""
+            },
+            {
+              "name": "Access-Control-Allow-Methods",
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+              "description": ""
+            },
+            {
+              "name": "Access-Control-Allow-Origin",
+              "key": "Access-Control-Allow-Origin",
+              "value": "*",
+              "description": ""
+            },
+            {
+              "name": "Cache-Control",
+              "key": "Cache-Control",
+              "value": "private",
+              "description": ""
+            },
+            {
+              "name": "Connection",
+              "key": "Connection",
+              "value": "keep-alive",
+              "description": ""
+            },
+            {
+              "name": "Content-Length",
+              "key": "Content-Length",
+              "value": "141",
+              "description": ""
+            },
+            {
+              "name": "Content-Type",
+              "key": "Content-Type",
+              "value": "application/json",
+              "description": ""
+            },
+            {
+              "name": "Date",
+              "key": "Date",
+              "value": "Fri, 21 Apr 2017 06:48:56 GMT",
+              "description": ""
+            },
+            {
+              "name": "Server",
+              "key": "Server",
+              "value": "Microsoft-IIS/8.5",
+              "description": ""
+            },
+            {
+              "name": "X-AspNet-Version",
+              "key": "X-AspNet-Version",
+              "value": "4.0.30319",
+              "description": ""
+            },
+            {
+              "name": "X-Powered-By",
+              "key": "X-Powered-By",
+              "value": "ASP.NET",
+              "description": ""
+            }
+          ],
+          "cookie": [],
+          "responseTime": "485",
+          "body": "[{\"scope\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/\",\"request_key\":\"ad9beb2883ed1a2277d1aac15fc9793d\",\"token_type\":\"Bearer\",\"expires_in\":\"86400\"}]\r\n"
         }
       ]
     },
