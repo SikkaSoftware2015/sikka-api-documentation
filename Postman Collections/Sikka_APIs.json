@@ -326,7 +326,7 @@
                 "header": [],
                 "body": {},
                 "url": {
-                  "raw": "{{authurl}}/authorized_practices?app_id={{app_id}}&app_key={{app_key}}&show=all",
+                  "raw": "{{authurl}}/authorized_practices?app_id={{app_id}}&app_key={{app_key}}&show=all&practice_id={practice_id}",
                   "host": [
                     "{{authurl}}"
                   ],
@@ -347,6 +347,11 @@
                     {
                       "key": "show",
                       "value": "all",
+                      "equals": true
+                    },
+                    {
+                      "key": "practice_id",
+                      "value": "{practice_id}",
                       "equals": true
                     }
                   ]
@@ -404,7 +409,7 @@
                 }
               ]
             },
-            "description": "Return the practice information, your application authorized to access data\n\n|Parameter|Description|Required|\n|---|---|---|\n|app_id|This is the ID assigned to the application when the application is registered on API portal|Yes|\n|app_key|This is the unique key generated when the application is registered on API portal|Yes|\n|show|Possible value for this parameter is \"all\" to show all practices|No|"
+            "description": "Return the practice information, your application authorized to access data\n\n|Parameter|Description|Required|\n|---|---|---|\n|app_id|This is the ID assigned to the application when the application is registered on API portal|Yes|\n|app_key|This is the unique key generated when the application is registered on API portal|Yes|\n|show|Possible value for this parameter is \"all\" to show all practices|No|\n|practice_id|Practice ID, only works when show=all used|No|"
           },
           "response": [
             {
@@ -508,7 +513,7 @@
                 "header": [],
                 "body": {},
                 "url": {
-                  "raw": "{{authurl}}/authorized_practices/{{office_id}}?app_id={{app_id}}&app_key={{app_key}}&show=all",
+                  "raw": "{{authurl}}/authorized_practices/{{office_id}}?app_id={{app_id}}&app_key={{app_key}}&show=all&practice_id={practice_id}",
                   "host": [
                     "{{authurl}}"
                   ],
@@ -530,6 +535,11 @@
                     {
                       "key": "show",
                       "value": "all",
+                      "equals": true
+                    },
+                    {
+                      "key": "practice_id",
+                      "value": "{practice_id}",
                       "equals": true
                     }
                   ]
@@ -12640,7 +12650,7 @@
               ],
               "cookie": [],
               "responseTime": "401",
-              "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"2\",\r\n\t\"total_count\": \"138529\",\r\n\t\"execution_time\": \"123\",\r\n\t\"items\": [{\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST/patient_addresses/TEST-517186\",\r\n\t\t\"patient_id\": \"TEST-517186\",\r\n\t\t\"patient\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST/patients/TEST-517186\"\r\n\t\t},\r\n\t\t\"address_line1\": \"271 Test St\",\r\n\t\t\"address_line2\": \"2nd Line\",\r\n\t\t\"city\": \"Test_City\",\r\n\t\t\"state\": \"CA\",\r\n\t\t\"zipcode\": \"99999\",\r\n\t\t\"rank\": \"1\",\r\n\t\t\"practice_id\": \"1-TEST\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST\"\r\n\t\t}\r\n\t}, {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST/patient_addresses/TEST-517160\",\r\n\t\t\"patient_id\": \"TEST-517160\",\r\n\t\t\"patient\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST/patients/TEST-517160\"\r\n\t\t},\r\n\t\t\"address_line1\": \"10623 Brookchase Ct.\",\r\n\t\t\"address_line2\": \"\",\r\n\t\t\"city\": \"Test_City\",\r\n\t\t\"state\": \"KY\",\r\n\t\t\"zipcode\": \"99999\",\r\n\t\t\"rank\": \"1\",\r\n\t\t\"practice_id\": \"1-TEST\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST\"\r\n\t\t}\r\n\t}]\r\n}]"
+              "body": "[\r\n  {\r\n    \"offset\": \"0\",\r\n    \"limit\": \"2\",\r\n    \"total_count\": \"138529\",\r\n    \"execution_time\": \"123\",\r\n    \"items\": [\r\n      {\r\n        \"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST/patient_addresses/TEST-517186\",\r\n        \"patient_id\": \"TEST-517186\",\r\n        \"patient\": {\r\n          \"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST/patients/TEST-517186\"\r\n        },\r\n        \"address_line1\": \"271 Test St\",\r\n        \"address_line2\": \"2nd Line\",\r\n        \"city\": \"Test_City\",\r\n        \"state\": \"CA\",\r\n        \"zipcode\": \"99999\",\r\n        \"rank\": \"1\",\r\n        \"practice_id\": \"1-TEST\",\r\n        \"practice\": {\r\n          \"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST\"\r\n        }\r\n      },\r\n      {\r\n        \"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST/patient_addresses/TEST-517160\",\r\n        \"patient_id\": \"TEST-517160\",\r\n        \"patient\": {\r\n          \"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST/patients/TEST-517160\"\r\n        },\r\n        \"address_line1\": \"10623 Test Ct.\",\r\n        \"address_line2\": \"\",\r\n        \"city\": \"Test_City\",\r\n        \"state\": \"KY\",\r\n        \"zipcode\": \"99999\",\r\n        \"rank\": \"1\",\r\n        \"practice_id\": \"1-TEST\",\r\n        \"practice\": {\r\n          \"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST\"\r\n        }\r\n      }\r\n    ]\r\n  }\r\n]"
             }
           ]
         },
