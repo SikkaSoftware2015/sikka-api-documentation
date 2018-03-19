@@ -12662,18 +12662,17 @@
             "header": [],
             "body": {},
             "url": {
-              "raw": "{{url}}/patient_addresses?request_key={{request_key}}",
+              "raw": "{{url}}/many_guarantors_one_patient?request_key={{request_key}}",
               "host": [
                 "{{url}}"
               ],
               "path": [
-                "patient_addresses"
+                "many_guarantors_one_patient"
               ],
               "query": [
                 {
                   "key": "request_key",
-                  "value": "{{request_key}}",
-                  "equals": true
+                  "value": "{{request_key}}"
                 }
               ]
             },
