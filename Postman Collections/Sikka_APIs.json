@@ -12655,6 +12655,133 @@
           ]
         },
         {
+          "_postman_id": "78ea33a3-c672-0dff-e57f-d77336ae815e",
+          "name": "patient_addresses copy",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "url": {
+              "raw": "{{url}}/patient_addresses?request_key={{request_key}}",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "patient_addresses"
+              ],
+              "query": [
+                {
+                  "key": "request_key",
+                  "value": "{{request_key}}",
+                  "equals": true
+                }
+              ]
+            },
+            "description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|patient_id|Patient ID as per the management system|No|\r\n|practice_id|Practice ID|No|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|patient_id|Patient ID as per the management system|\r\n|practice_id|Practice ID|"
+          },
+          "response": [
+            {
+              "id": "630d6385-6c33-0593-45de-d7afe69962c1",
+              "name": "request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {},
+                "url": {
+                  "raw": "{{url}}/patient_addresses?request_key={{request_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "patient_addresses"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "{{request_key}}",
+                      "equals": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "Access-Control-Allow-Headers",
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "accept, authorization, Content-Type, X-Session-Id",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Methods",
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Origin",
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "description": ""
+                },
+                {
+                  "name": "Cache-Control",
+                  "key": "Cache-Control",
+                  "value": "private",
+                  "description": ""
+                },
+                {
+                  "name": "Connection",
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Length",
+                  "key": "Content-Length",
+                  "value": "822",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Type",
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": ""
+                },
+                {
+                  "name": "Date",
+                  "key": "Date",
+                  "value": "Wed, 26 Apr 2017 09:45:32 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "Server",
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5",
+                  "description": ""
+                },
+                {
+                  "name": "X-AspNet-Version",
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "description": ""
+                },
+                {
+                  "name": "X-Powered-By",
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": "401",
+              "body": "[\r\n  {\r\n    \"offset\": \"0\",\r\n    \"limit\": \"2\",\r\n    \"total_count\": \"138529\",\r\n    \"execution_time\": \"123\",\r\n    \"items\": [\r\n      {\r\n        \"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST/patient_addresses/TEST-517186\",\r\n        \"patient_id\": \"TEST-517186\",\r\n        \"patient\": {\r\n          \"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST/patients/TEST-517186\"\r\n        },\r\n        \"address_line1\": \"271 Test St\",\r\n        \"address_line2\": \"2nd Line\",\r\n        \"city\": \"Test_City\",\r\n        \"state\": \"CA\",\r\n        \"zipcode\": \"99999\",\r\n        \"rank\": \"1\",\r\n        \"practice_id\": \"1-TEST\",\r\n        \"practice\": {\r\n          \"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST\"\r\n        }\r\n      },\r\n      {\r\n        \"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST/patient_addresses/TEST-517160\",\r\n        \"patient_id\": \"TEST-517160\",\r\n        \"patient\": {\r\n          \"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST/patients/TEST-517160\"\r\n        },\r\n        \"address_line1\": \"10623 Test Ct.\",\r\n        \"address_line2\": \"\",\r\n        \"city\": \"Test_City\",\r\n        \"state\": \"KY\",\r\n        \"zipcode\": \"99999\",\r\n        \"rank\": \"1\",\r\n        \"practice_id\": \"1-TEST\",\r\n        \"practice\": {\r\n          \"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST\"\r\n        }\r\n      }\r\n    ]\r\n  }\r\n]"
+            }
+          ]
+        },
+        {
           "_postman_id": "f7d240c3-d7e9-a387-9a0d-1259755910aa",
           "name": "patient_addresses by patient_id",
           "request": {
@@ -18041,133 +18168,6 @@
               "cookie": [],
               "responseTime": "889",
               "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"500\",\r\n\t\"total_count\": \"2\",\r\n\t\"items\": [{\r\n\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/1/pet_documents/4886\",\r\n\t\t\"patient_id\": \"4886\",\r\n\t\t\"patient\": {\r\n\t\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/1/patients/4886\"\r\n\t\t},\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/1\"\r\n\t\t},\r\n\t\t\"document_link\": \"http://s3.amazonaws.com/pet_documents_test1.pdf\"\r\n\t}, {\r\n\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/1/pet_documents/4886\",\r\n\t\t\"patient_id\": \"4886\",\r\n\t\t\"patient\": {\r\n\t\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/1/patients/4886\"\r\n\t\t},\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/1\"\r\n\t\t},\r\n\t\t\"document_link\": \"http://s3.amazonaws.com/pet_documents_test2.pdf\"\r\n\t}]\r\n}]"
-            }
-          ]
-        },
-        {
-          "_postman_id": "78ea33a3-c672-0dff-e57f-d77336ae815e",
-          "name": "patient_addresses copy",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "body": {},
-            "url": {
-              "raw": "{{url}}/patient_addresses?request_key={{request_key}}",
-              "host": [
-                "{{url}}"
-              ],
-              "path": [
-                "patient_addresses"
-              ],
-              "query": [
-                {
-                  "key": "request_key",
-                  "value": "{{request_key}}",
-                  "equals": true
-                }
-              ]
-            },
-            "description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|patient_id|Patient ID as per the management system|No|\r\n|practice_id|Practice ID|No|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|patient_id|Patient ID as per the management system|\r\n|practice_id|Practice ID|"
-          },
-          "response": [
-            {
-              "id": "630d6385-6c33-0593-45de-d7afe69962c1",
-              "name": "request",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "body": {},
-                "url": {
-                  "raw": "{{url}}/patient_addresses?request_key={{request_key}}",
-                  "host": [
-                    "{{url}}"
-                  ],
-                  "path": [
-                    "patient_addresses"
-                  ],
-                  "query": [
-                    {
-                      "key": "request_key",
-                      "value": "{{request_key}}",
-                      "equals": true
-                    }
-                  ]
-                }
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "name": "Access-Control-Allow-Headers",
-                  "key": "Access-Control-Allow-Headers",
-                  "value": "accept, authorization, Content-Type, X-Session-Id",
-                  "description": ""
-                },
-                {
-                  "name": "Access-Control-Allow-Methods",
-                  "key": "Access-Control-Allow-Methods",
-                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
-                  "description": ""
-                },
-                {
-                  "name": "Access-Control-Allow-Origin",
-                  "key": "Access-Control-Allow-Origin",
-                  "value": "*",
-                  "description": ""
-                },
-                {
-                  "name": "Cache-Control",
-                  "key": "Cache-Control",
-                  "value": "private",
-                  "description": ""
-                },
-                {
-                  "name": "Connection",
-                  "key": "Connection",
-                  "value": "keep-alive",
-                  "description": ""
-                },
-                {
-                  "name": "Content-Length",
-                  "key": "Content-Length",
-                  "value": "822",
-                  "description": ""
-                },
-                {
-                  "name": "Content-Type",
-                  "key": "Content-Type",
-                  "value": "application/json",
-                  "description": ""
-                },
-                {
-                  "name": "Date",
-                  "key": "Date",
-                  "value": "Wed, 26 Apr 2017 09:45:32 GMT",
-                  "description": ""
-                },
-                {
-                  "name": "Server",
-                  "key": "Server",
-                  "value": "Microsoft-IIS/8.5",
-                  "description": ""
-                },
-                {
-                  "name": "X-AspNet-Version",
-                  "key": "X-AspNet-Version",
-                  "value": "4.0.30319",
-                  "description": ""
-                },
-                {
-                  "name": "X-Powered-By",
-                  "key": "X-Powered-By",
-                  "value": "ASP.NET",
-                  "description": ""
-                }
-              ],
-              "cookie": [],
-              "responseTime": "401",
-              "body": "[\r\n  {\r\n    \"offset\": \"0\",\r\n    \"limit\": \"2\",\r\n    \"total_count\": \"138529\",\r\n    \"execution_time\": \"123\",\r\n    \"items\": [\r\n      {\r\n        \"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST/patient_addresses/TEST-517186\",\r\n        \"patient_id\": \"TEST-517186\",\r\n        \"patient\": {\r\n          \"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST/patients/TEST-517186\"\r\n        },\r\n        \"address_line1\": \"271 Test St\",\r\n        \"address_line2\": \"2nd Line\",\r\n        \"city\": \"Test_City\",\r\n        \"state\": \"CA\",\r\n        \"zipcode\": \"99999\",\r\n        \"rank\": \"1\",\r\n        \"practice_id\": \"1-TEST\",\r\n        \"practice\": {\r\n          \"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST\"\r\n        }\r\n      },\r\n      {\r\n        \"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST/patient_addresses/TEST-517160\",\r\n        \"patient_id\": \"TEST-517160\",\r\n        \"patient\": {\r\n          \"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST/patients/TEST-517160\"\r\n        },\r\n        \"address_line1\": \"10623 Test Ct.\",\r\n        \"address_line2\": \"\",\r\n        \"city\": \"Test_City\",\r\n        \"state\": \"KY\",\r\n        \"zipcode\": \"99999\",\r\n        \"rank\": \"1\",\r\n        \"practice_id\": \"1-TEST\",\r\n        \"practice\": {\r\n          \"href\": \"https://api.sikkasoft.com/v2/practices/1-TEST\"\r\n        }\r\n      }\r\n    ]\r\n  }\r\n]"
             }
           ]
         }
