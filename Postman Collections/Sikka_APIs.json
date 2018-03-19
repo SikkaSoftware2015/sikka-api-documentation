@@ -12843,7 +12843,7 @@
         },
         {
           "_postman_id": "caa3b352-b220-8cd6-5769-42e0bc535579",
-          "name": "patient_addresses by patient_id copy",
+          "name": "many_guarantors_one_patient by patient_id",
           "request": {
             "method": "GET",
             "header": [],
