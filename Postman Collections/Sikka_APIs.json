@@ -12716,67 +12716,6 @@
           ]
         },
         {
-          "_postman_id": "caa3b352-b220-8cd6-5769-42e0bc535579",
-          "name": "many_guarantors_one_patient by patient_id",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "body": {},
-            "url": {
-              "raw": "{{url}}/many_guarantors_one_patient/{patient_id}?request_key={{request_key}}",
-              "host": [
-                "{{url}}"
-              ],
-              "path": [
-                "many_guarantors_one_patient",
-                "{patient_id}"
-              ],
-              "query": [
-                {
-                  "key": "request_key",
-                  "value": "{{request_key}}"
-                }
-              ]
-            },
-            "description": "Get all guarantors related to patient_id\r\n\r\n|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|patient_id|Patient ID as per the management system|No|\r\n|practice_id|Practice ID|No|\r\n|guarantor_id|Guarantor id as per practice management systems|No|\r\n|firstname|First name of patient, provider or guarantor|No|\r\n|lastname|Last name of patient, provider or guarantor|No|\r\n|cell|Cell Number|No|\r\n|phone|Phone Number|No|\r\n|workphone|Work Phone Number|No|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|patient_id|Patient ID as per the management system|\r\n|practice_id|Practice ID|"
-          },
-          "response": [
-            {
-              "id": "d8dd5014-4856-5f1d-8913-46fa4add88c5",
-              "name": "request",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "body": {},
-                "url": {
-                  "raw": "{{url}}/many_guarantors_one_patient/{patient_id}?request_key={{request_key}}",
-                  "host": [
-                    "{{url}}"
-                  ],
-                  "path": [
-                    "many_guarantors_one_patient",
-                    "{patient_id}"
-                  ],
-                  "query": [
-                    {
-                      "key": "request_key",
-                      "value": "{{request_key}}",
-                      "equals": true
-                    }
-                  ]
-                }
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [],
-              "cookie": [],
-              "responseTime": "401",
-              "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"500\",\r\n\t\"total_count\": \"2\",\r\n\t\"execution_time\": \"8191\",\r\n\t\"items\": [{\r\n\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/2/many_guarantors_one_patient/22222\",\r\n\t\t\"guarantor_id\": \"44444\",\r\n\t\t\"patient_id\": \"22222\",\r\n\t\t\"patient\": {\r\n\t\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/2/patients/22222\"\r\n\t\t},\r\n\t\t\"firstname\": \"Male_Fname\",\r\n\t\t\"middlename\": \"\",\r\n\t\t\"lastname\": \"Test\",\r\n\t\t\"salutation\": \"Ms.\",\r\n\t\t\"ext\": \"\",\r\n\t\t\"gender\": \"Male\",\r\n\t\t\"marital_status\": \"\",\r\n\t\t\"birthdate\": \"1111-11-11\",\r\n\t\t\"address_line1\": \"Test St. Line 1\",\r\n\t\t\"address_line2\": \"Line 2 Of Address\",\r\n\t\t\"city\": \"San Jose\",\r\n\t\t\"state\": \"CA\",\r\n\t\t\"zipcode\": \"95110\",\r\n\t\t\"country\": \"\",\r\n\t\t\"phone\": \"(408) 659-8395\",\r\n\t\t\"workphone\": \"\",\r\n\t\t\"fax\": \"\",\r\n\t\t\"otherphone\": \"\",\r\n\t\t\"email\": \"\",\r\n\t\t\"cell\": \"\",\r\n\t\t\"practice_id\": \"2\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/2\"\r\n\t\t},\r\n\t\t\"relationship\": \"Mother\"\r\n\t}, {\r\n\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/2/many_guarantors_one_patient/22222\",\r\n\t\t\"guarantor_id\": \"55555\",\r\n\t\t\"patient_id\": \"22222\",\r\n\t\t\"patient\": {\r\n\t\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/2/patients/22222\"\r\n\t\t},\r\n\t\t\"firstname\": \"Male_Fname_API\",\r\n\t\t\"middlename\": \"\",\r\n\t\t\"lastname\": \"Test\",\r\n\t\t\"salutation\": \"Mr.\",\r\n\t\t\"ext\": \"\",\r\n\t\t\"gender\": \"Male\",\r\n\t\t\"marital_status\": \"\",\r\n\t\t\"birthdate\": \"1111-11-11\",\r\n\t\t\"address_line1\": \"Test St. Line 1\",\r\n\t\t\"address_line2\": \"Line 2 Of Address\",\r\n\t\t\"city\": \"San Jose\",\r\n\t\t\"state\": \"CA\",\r\n\t\t\"zipcode\": \"95110\",\r\n\t\t\"country\": \"\",\r\n\t\t\"phone\": \"\",\r\n\t\t\"workphone\": \"\",\r\n\t\t\"fax\": \"\",\r\n\t\t\"otherphone\": \"\",\r\n\t\t\"email\": \"\",\r\n\t\t\"cell\": \"\",\r\n\t\t\"practice_id\": \"2\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/2\"\r\n\t\t},\r\n\t\t\"relationship\": \"(Unknown)\"\r\n\t}]\r\n}]"
-            }
-          ]
-        },
-        {
           "_postman_id": "467decef-4035-1b5e-a0e2-1265cc94daac",
           "name": "patient_charts",
           "request": {
@@ -18225,6 +18164,67 @@
                   "description": ""
                 }
               ],
+              "cookie": [],
+              "responseTime": "401",
+              "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"500\",\r\n\t\"total_count\": \"2\",\r\n\t\"execution_time\": \"8191\",\r\n\t\"items\": [{\r\n\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/2/many_guarantors_one_patient/22222\",\r\n\t\t\"guarantor_id\": \"44444\",\r\n\t\t\"patient_id\": \"22222\",\r\n\t\t\"patient\": {\r\n\t\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/2/patients/22222\"\r\n\t\t},\r\n\t\t\"firstname\": \"Male_Fname\",\r\n\t\t\"middlename\": \"\",\r\n\t\t\"lastname\": \"Test\",\r\n\t\t\"salutation\": \"Ms.\",\r\n\t\t\"ext\": \"\",\r\n\t\t\"gender\": \"Male\",\r\n\t\t\"marital_status\": \"\",\r\n\t\t\"birthdate\": \"1111-11-11\",\r\n\t\t\"address_line1\": \"Test St. Line 1\",\r\n\t\t\"address_line2\": \"Line 2 Of Address\",\r\n\t\t\"city\": \"San Jose\",\r\n\t\t\"state\": \"CA\",\r\n\t\t\"zipcode\": \"95110\",\r\n\t\t\"country\": \"\",\r\n\t\t\"phone\": \"(408) 659-8395\",\r\n\t\t\"workphone\": \"\",\r\n\t\t\"fax\": \"\",\r\n\t\t\"otherphone\": \"\",\r\n\t\t\"email\": \"\",\r\n\t\t\"cell\": \"\",\r\n\t\t\"practice_id\": \"2\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/2\"\r\n\t\t},\r\n\t\t\"relationship\": \"Mother\"\r\n\t}, {\r\n\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/2/many_guarantors_one_patient/22222\",\r\n\t\t\"guarantor_id\": \"55555\",\r\n\t\t\"patient_id\": \"22222\",\r\n\t\t\"patient\": {\r\n\t\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/2/patients/22222\"\r\n\t\t},\r\n\t\t\"firstname\": \"Male_Fname_API\",\r\n\t\t\"middlename\": \"\",\r\n\t\t\"lastname\": \"Test\",\r\n\t\t\"salutation\": \"Mr.\",\r\n\t\t\"ext\": \"\",\r\n\t\t\"gender\": \"Male\",\r\n\t\t\"marital_status\": \"\",\r\n\t\t\"birthdate\": \"1111-11-11\",\r\n\t\t\"address_line1\": \"Test St. Line 1\",\r\n\t\t\"address_line2\": \"Line 2 Of Address\",\r\n\t\t\"city\": \"San Jose\",\r\n\t\t\"state\": \"CA\",\r\n\t\t\"zipcode\": \"95110\",\r\n\t\t\"country\": \"\",\r\n\t\t\"phone\": \"\",\r\n\t\t\"workphone\": \"\",\r\n\t\t\"fax\": \"\",\r\n\t\t\"otherphone\": \"\",\r\n\t\t\"email\": \"\",\r\n\t\t\"cell\": \"\",\r\n\t\t\"practice_id\": \"2\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/2\"\r\n\t\t},\r\n\t\t\"relationship\": \"(Unknown)\"\r\n\t}]\r\n}]"
+            }
+          ]
+        },
+        {
+          "_postman_id": "caa3b352-b220-8cd6-5769-42e0bc535579",
+          "name": "many_guarantors_one_patient by patient_id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {},
+            "url": {
+              "raw": "{{url}}/many_guarantors_one_patient/{patient_id}?request_key={{request_key}}",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "many_guarantors_one_patient",
+                "{patient_id}"
+              ],
+              "query": [
+                {
+                  "key": "request_key",
+                  "value": "{{request_key}}"
+                }
+              ]
+            },
+            "description": "Get all guarantors related to patient_id\r\n\r\n|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|patient_id|Patient ID as per the management system|No|\r\n|practice_id|Practice ID|No|\r\n|guarantor_id|Guarantor id as per practice management systems|No|\r\n|firstname|First name of patient, provider or guarantor|No|\r\n|lastname|Last name of patient, provider or guarantor|No|\r\n|cell|Cell Number|No|\r\n|phone|Phone Number|No|\r\n|workphone|Work Phone Number|No|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|patient_id|Patient ID as per the management system|\r\n|practice_id|Practice ID|"
+          },
+          "response": [
+            {
+              "id": "d8dd5014-4856-5f1d-8913-46fa4add88c5",
+              "name": "request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {},
+                "url": {
+                  "raw": "{{url}}/many_guarantors_one_patient/{patient_id}?request_key={{request_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "many_guarantors_one_patient",
+                    "{patient_id}"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "{{request_key}}",
+                      "equals": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [],
               "cookie": [],
               "responseTime": "401",
               "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"500\",\r\n\t\"total_count\": \"2\",\r\n\t\"execution_time\": \"8191\",\r\n\t\"items\": [{\r\n\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/2/many_guarantors_one_patient/22222\",\r\n\t\t\"guarantor_id\": \"44444\",\r\n\t\t\"patient_id\": \"22222\",\r\n\t\t\"patient\": {\r\n\t\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/2/patients/22222\"\r\n\t\t},\r\n\t\t\"firstname\": \"Male_Fname\",\r\n\t\t\"middlename\": \"\",\r\n\t\t\"lastname\": \"Test\",\r\n\t\t\"salutation\": \"Ms.\",\r\n\t\t\"ext\": \"\",\r\n\t\t\"gender\": \"Male\",\r\n\t\t\"marital_status\": \"\",\r\n\t\t\"birthdate\": \"1111-11-11\",\r\n\t\t\"address_line1\": \"Test St. Line 1\",\r\n\t\t\"address_line2\": \"Line 2 Of Address\",\r\n\t\t\"city\": \"San Jose\",\r\n\t\t\"state\": \"CA\",\r\n\t\t\"zipcode\": \"95110\",\r\n\t\t\"country\": \"\",\r\n\t\t\"phone\": \"(408) 659-8395\",\r\n\t\t\"workphone\": \"\",\r\n\t\t\"fax\": \"\",\r\n\t\t\"otherphone\": \"\",\r\n\t\t\"email\": \"\",\r\n\t\t\"cell\": \"\",\r\n\t\t\"practice_id\": \"2\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/2\"\r\n\t\t},\r\n\t\t\"relationship\": \"Mother\"\r\n\t}, {\r\n\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/2/many_guarantors_one_patient/22222\",\r\n\t\t\"guarantor_id\": \"55555\",\r\n\t\t\"patient_id\": \"22222\",\r\n\t\t\"patient\": {\r\n\t\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/2/patients/22222\"\r\n\t\t},\r\n\t\t\"firstname\": \"Male_Fname_API\",\r\n\t\t\"middlename\": \"\",\r\n\t\t\"lastname\": \"Test\",\r\n\t\t\"salutation\": \"Mr.\",\r\n\t\t\"ext\": \"\",\r\n\t\t\"gender\": \"Male\",\r\n\t\t\"marital_status\": \"\",\r\n\t\t\"birthdate\": \"1111-11-11\",\r\n\t\t\"address_line1\": \"Test St. Line 1\",\r\n\t\t\"address_line2\": \"Line 2 Of Address\",\r\n\t\t\"city\": \"San Jose\",\r\n\t\t\"state\": \"CA\",\r\n\t\t\"zipcode\": \"95110\",\r\n\t\t\"country\": \"\",\r\n\t\t\"phone\": \"\",\r\n\t\t\"workphone\": \"\",\r\n\t\t\"fax\": \"\",\r\n\t\t\"otherphone\": \"\",\r\n\t\t\"email\": \"\",\r\n\t\t\"cell\": \"\",\r\n\t\t\"practice_id\": \"2\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/2\"\r\n\t\t},\r\n\t\t\"relationship\": \"(Unknown)\"\r\n\t}]\r\n}]"
