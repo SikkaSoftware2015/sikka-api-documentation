@@ -23005,7 +23005,7 @@
         "header": [],
         "body": {},
         "url": {
-          "raw": "{{url}}/practice_events?request_key={{request_key}}&loaded_startdate=2018-01-01&loaded_enddate=2018-01-07&events=patients,appointments,transactions",
+          "raw": "{{url}}/practice_events?request_key={{request_key}}&loaded_startdate=2018-01-01&loaded_enddate=2018-01-07&events=patients,appointments,transactions&interval=15",
           "host": [
             "{{url}}"
           ],
@@ -23031,6 +23031,11 @@
             {
               "key": "events",
               "value": "patients,appointments,transactions",
+              "equals": true
+            },
+            {
+              "key": "interval",
+              "value": "15",
               "equals": true
             }
           ]
