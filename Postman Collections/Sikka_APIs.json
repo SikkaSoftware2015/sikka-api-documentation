@@ -22494,34 +22494,6 @@
       ]
     },
     {
-      "_postman_id": "cd10083d-f92a-4c16-bd41-a3fc161e166a",
-      "name": "API updates",
-      "description": "You will see API modifications ,changes and updates in this section ( monthly , if there are any changes )\n\n#####Titel : Appointment status information returned from practices using Open Dental\n      \n##### Effective from : May-31-2018\n##### APIs updated : appointments \n##### Details :\n      ```javascriptThis fixeds an issue with returning data from practices that use OpenDental. We were returning the 'Appointment Confirmed' state , instead of 'Appointment state'. The correct appointment status is not being returned. For those ineterested in still receiving the 'Appointment Confirmed' state, we have added a new field in the response called 'confirm_status'```",
-      "item": [],
-      "event": [
-        {
-          "listen": "prerequest",
-          "script": {
-            "id": "63f9adc4-6151-48b4-abe7-45531441abab",
-            "type": "text/javascript",
-            "exec": [
-              ""
-            ]
-          }
-        },
-        {
-          "listen": "test",
-          "script": {
-            "id": "d40bc585-fab3-40c3-afd1-80b89816e0df",
-            "type": "text/javascript",
-            "exec": [
-              ""
-            ]
-          }
-        }
-      ]
-    },
-    {
       "_postman_id": "9dce4284-fec5-9724-4055-0e0e946d593b",
       "name": "start",
       "request": {
