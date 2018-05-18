@@ -22497,15 +22497,7 @@
       "_postman_id": "cd10083d-f92a-4c16-bd41-a3fc161e166a",
       "name": "API updates",
       "description": "You will see API modifications ,changes and updates in this section ( monthly , if there are any changes )",
-      "item": [
-        {
-          "_postman_id": "034a6b1c-22a9-4bd7-8673-9286a7c2601d",
-          "name": "May-2018",
-          "description": "##### Appointment status information\r\n##### Effective Practice management system : OpenDental\r\n      \r\n##### Updated date : May-31-2018\r\n##### APIs updated : appointments \r\n##### Details :\r\n      ```javascriptThis fixeds an issue with returning data from practices that use OpenDental. We were returning the 'Appointment Confirmed' state , instead of 'Appointment state'. The correct appointment status is not being returned. For those ineterested in still receiving the 'Appointment Confirmed' state, we have added a new field in the response called 'confirm_status'```",
-          "item": [],
-          "_postman_isSubFolder": true
-        }
-      ]
+      "item": []
     },
     {
       "_postman_id": "9dce4284-fec5-9724-4055-0e0e946d593b",
