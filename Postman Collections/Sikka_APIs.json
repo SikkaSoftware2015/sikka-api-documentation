@@ -22494,6 +22494,12 @@
       ]
     },
     {
+      "_postman_id": "cd10083d-f92a-4c16-bd41-a3fc161e166a",
+      "name": "API updates",
+      "description": "You will see API modifications ,changes and updates in this section ( monthly , if there are any changes )",
+      "item": []
+    },
+    {
       "_postman_id": "9dce4284-fec5-9724-4055-0e0e946d593b",
       "name": "start",
       "request": {
