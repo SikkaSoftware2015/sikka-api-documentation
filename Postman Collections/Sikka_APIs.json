@@ -22893,7 +22893,7 @@
             }
           ]
         },
-        "description": "The \"end\" function is used to terminate the request session.\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|"
+        "description": "This API provides details regarding data extracted or not for different API end-points with number of records, date.\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|"
       },
       "response": [
         {
