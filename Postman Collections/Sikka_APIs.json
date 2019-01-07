@@ -9,7 +9,7 @@
     {
       "_postman_id": "ef222857-1c8a-67ad-5c2c-9582a7fca19e",
       "name": "Authentication API",
-      "description": "Sikka authentication API contains all API related with Sikka authentication. Like account log in ,singup , update abd delete.\nAlso about request key information , application details , authentication etc.",
+      "description": "Sikka authentication API contains all API related with Sikka authentication. Like account log in ,singup , update and delete.\nAlso about request key information , application details , authentication etc.",
       "item": [
         {
           "_postman_id": "32279b62-5ad4-bc28-fce9-26f22e2e9080",
