@@ -7631,7 +7631,7 @@
                 }
               ]
             },
-            "description": "Get he list of all fee schedules available in practice management system.\r\n\r\n|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|practice_id|Practice ID|No|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|fee_amount|Fee Amount|\r\n|procedure_code|Procedure code as per practice management system|"
+            "description": "Get the list of all fee schedules available in practice management system.\r\n\r\n|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|practice_id|Practice ID|No|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|fee_amount|Fee Amount|\r\n|procedure_code|Procedure code as per practice management system|"
           },
           "response": [
             {
