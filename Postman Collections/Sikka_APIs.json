@@ -5085,12 +5085,12 @@
                   "raw": ""
                 },
                 "url": {
-                  "raw": "{{url}}/practices?request_key={{request_key}}",
+                  "raw": "{{url}}/contact_details?request_key={{request_key}}",
                   "host": [
                     "{{url}}"
                   ],
                   "path": [
-                    "practices"
+                    "contact_details"
                   ],
                   "query": [
                     {
@@ -5174,7 +5174,140 @@
               ],
               "cookie": [],
               "responseTime": null,
-              "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"500\",\n        \"total_count\": \"2\",\n        \"items\": [\n            {\n                \"href\": \"https://api.sikkasoft.com/v2/practices/2\",\n                \"practice_id\": \"2\",\n                \"name\": \"Demo Sikka Practice -2\",\n                \"address_line1\": \"San jose\",\n                \"address_line2\": \"San Jose\",\n                \"city\": \"San Jose\",\n                \"state\": \"CA\",\n                \"zipcode\": \"95011\",\n                \"phone\": \"xxxxxxxxxx\",\n                \"country\": \"\",\n                \"email\": \"\",\n                \"website\": \"\",\n                \"description\": \"\",\n                \"providers\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/2/providers/\"\n                },\n                \"patients\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/2/patients/\"\n                },\n                \"guarantors\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/2/guarantors/\"\n                },\n                \"appointments\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/2/appointments/\"\n                },\n                \"transactions\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/2/transactions/\"\n                }\n            },\n            {\n                \"href\": \"https://api.sikkasoft.com/v2/practices/1\",\n                \"practice_id\": \"1\",\n                \"name\": \"Demo Sikka Practice\",\n                \"address_line1\": \"San Jose\",\n                \"address_line2\": \"San Jose\",\n                \"city\": \"San Jose\",\n                \"state\": \"CA\",\n                \"zipcode\": \"95011\",\n                \"phone\": \"xxxxxxxxxx\",\n                \"country\": \"\",\n                \"email\": \"\",\n                \"website\": \"\",\n                \"description\": \"\",\n                \"providers\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/\"\n                },\n                \"patients\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/\"\n                },\n                \"guarantors\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/1/guarantors/\"\n                },\n                \"appointments\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/1/appointments/\"\n                },\n                \"transactions\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/1/transactions/\"\n                }\n            }\n        ]\n    }\n]"
+              "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"5\",\r\n\t\"total_count\": \"9463\",\r\n\t\"execution_time\": \"101\",\r\n\t\"items\": [{\r\n\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/1-1/contact_details/990419\",\r\n\t\t\"uid\": \"990419\",\r\n\t\t\"contact_of\": \"patient\",\r\n\t\t\"contact_type\": \"Home Phone\",\r\n\t\t\"contact_value\": \"xxxxxxxxxx\",\r\n\t\t\"practice_id\": \"1-1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/1-1\"\r\n\t\t}\r\n\t}, {\r\n\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/1-1/contact_details/990416\",\r\n\t\t\"uid\": \"990416\",\r\n\t\t\"contact_of\": \"patient\",\r\n\t\t\"contact_type\": \"Home Phone\",\r\n\t\t\"contact_value\": \"xxxxxxxxxx\",\r\n\t\t\"practice_id\": \"1-1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/1-1\"\r\n\t\t}\r\n\t}, {\r\n\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/1-1/contact_details/990414\",\r\n\t\t\"uid\": \"990414\",\r\n\t\t\"contact_of\": \"patient\",\r\n\t\t\"contact_type\": \"Home Phone\",\r\n\t\t\"contact_value\": \"xxxxxxxxxx\",\r\n\t\t\"practice_id\": \"1-1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/1-1\"\r\n\t\t}\r\n\t}, {\r\n\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/1-1/contact_details/990413\",\r\n\t\t\"uid\": \"990413\",\r\n\t\t\"contact_of\": \"patient\",\r\n\t\t\"contact_type\": \"Home Phone\",\r\n\t\t\"contact_value\": \"xxxxxxxxxx\",\r\n\t\t\"practice_id\": \"1-1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/1-1\"\r\n\t\t}\r\n\t}, {\r\n\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/1-1/contact_details/990411\",\r\n\t\t\"uid\": \"990411\",\r\n\t\t\"contact_of\": \"patient\",\r\n\t\t\"contact_type\": \"Home Phone\",\r\n\t\t\"contact_value\": \"xxxxxxxxxx\",\r\n\t\t\"practice_id\": \"1-1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/1-1\"\r\n\t\t}\r\n\t}]\r\n}]"
+            }
+          ]
+        },
+        {
+          "_postman_id": "6944d426-e359-4d9d-aaf6-13f9457a1e79",
+          "name": "contact_details Copy",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{url}}/contact_details?request_key={{request_key}}",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "contact_details"
+              ],
+              "query": [
+                {
+                  "key": "request_key",
+                  "value": "{{request_key}}",
+                  "equals": true
+                }
+              ]
+            },
+            "description": "contact_details API will return the collection of all the contacts of providers and patients.\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|practice_id|Practice ID|No|\n|uid|Unique ID of the record(patient_id, provider_id)|No|\n|contact_of|Contact of which entity|No|\n|contact_type|Type of the contact|No|\n|contact_value|Value of the contact|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|practice_id|Practice ID|\n|uid|Unique ID of the record(patient_id, provider_id)|\n|contact_of|Contact of which entity|\n|contact_type|Type of the contact|\n|contact_value|Value of the contact|\n\n**Note**\ncontact_value might have numbers and emails, so the response will be sorted as string."
+          },
+          "response": [
+            {
+              "id": "bf4e587b-6121-4eb0-bb97-4886117685c2",
+              "name": "request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "{{url}}/contact_details?request_key={{request_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "contact_details"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "{{request_key}}",
+                      "equals": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "Access-Control-Allow-Headers",
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "accept, authorization, Content-Type, X-Session-Id",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Methods",
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Origin",
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "description": ""
+                },
+                {
+                  "name": "Cache-Control",
+                  "key": "Cache-Control",
+                  "value": "private",
+                  "description": ""
+                },
+                {
+                  "name": "Connection",
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Length",
+                  "key": "Content-Length",
+                  "value": "1471",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Type",
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": ""
+                },
+                {
+                  "name": "Date",
+                  "key": "Date",
+                  "value": "Thu, 27 Apr 2017 07:21:18 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "Server",
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5",
+                  "description": ""
+                },
+                {
+                  "name": "X-AspNet-Version",
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "description": ""
+                },
+                {
+                  "name": "X-Powered-By",
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"5\",\r\n\t\"total_count\": \"9463\",\r\n\t\"execution_time\": \"101\",\r\n\t\"items\": [{\r\n\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/1-1/contact_details/990419\",\r\n\t\t\"uid\": \"990419\",\r\n\t\t\"contact_of\": \"patient\",\r\n\t\t\"contact_type\": \"Home Phone\",\r\n\t\t\"contact_value\": \"xxxxxxxxxx\",\r\n\t\t\"practice_id\": \"1-1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/1-1\"\r\n\t\t}\r\n\t}, {\r\n\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/1-1/contact_details/990416\",\r\n\t\t\"uid\": \"990416\",\r\n\t\t\"contact_of\": \"patient\",\r\n\t\t\"contact_type\": \"Home Phone\",\r\n\t\t\"contact_value\": \"xxxxxxxxxx\",\r\n\t\t\"practice_id\": \"1-1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/1-1\"\r\n\t\t}\r\n\t}, {\r\n\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/1-1/contact_details/990414\",\r\n\t\t\"uid\": \"990414\",\r\n\t\t\"contact_of\": \"patient\",\r\n\t\t\"contact_type\": \"Home Phone\",\r\n\t\t\"contact_value\": \"xxxxxxxxxx\",\r\n\t\t\"practice_id\": \"1-1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/1-1\"\r\n\t\t}\r\n\t}, {\r\n\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/1-1/contact_details/990413\",\r\n\t\t\"uid\": \"990413\",\r\n\t\t\"contact_of\": \"patient\",\r\n\t\t\"contact_type\": \"Home Phone\",\r\n\t\t\"contact_value\": \"xxxxxxxxxx\",\r\n\t\t\"practice_id\": \"1-1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/1-1\"\r\n\t\t}\r\n\t}, {\r\n\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/1-1/contact_details/990411\",\r\n\t\t\"uid\": \"990411\",\r\n\t\t\"contact_of\": \"patient\",\r\n\t\t\"contact_type\": \"Home Phone\",\r\n\t\t\"contact_value\": \"xxxxxxxxxx\",\r\n\t\t\"practice_id\": \"1-1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/1-1\"\r\n\t\t}\r\n\t}]\r\n}]"
             }
           ]
         },
