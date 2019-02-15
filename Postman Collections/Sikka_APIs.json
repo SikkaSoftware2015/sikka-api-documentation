@@ -5180,7 +5180,7 @@
         },
         {
           "_postman_id": "6944d426-e359-4d9d-aaf6-13f9457a1e79",
-          "name": "contact_details Copy",
+          "name": "contact_details by uid",
           "request": {
             "method": "GET",
             "header": [],
