@@ -5189,12 +5189,13 @@
               "raw": ""
             },
             "url": {
-              "raw": "{{url}}/contact_details?request_key={{request_key}}",
+              "raw": "{{url}}/contact_details/{uid}?request_key={{request_key}}",
               "host": [
                 "{{url}}"
               ],
               "path": [
-                "contact_details"
+                "contact_details",
+                "{uid}"
               ],
               "query": [
                 {
