@@ -18633,7 +18633,7 @@
         },
         {
           "_postman_id": "1199ac94-1aae-41dc-9aa5-9fc3c941409e",
-          "name": "payment_plans Copy",
+          "name": "payment_plans by agreement_id",
           "request": {
             "method": "GET",
             "header": [],
