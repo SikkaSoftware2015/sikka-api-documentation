@@ -18524,7 +18524,7 @@
                 }
               ]
             },
-            "description": "payment_plans API will return the collection of all the payment plans patients.\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|guarantor_id|Guarantor id as per practice management systems|No|\n|patient_id|Patient ID as per the management system|No|\n|practice_id|Practice ID|No|\n|startdate|format: yyyy-mm-dd, start date|No|\n|enddate|format: yyyy-mm-dd, end date|No|\n|description|Description|No|\n\n**SortBy**\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|agreement_id|Agreement id as per practice management systems|No|\n|guarantor_id|Guarantor id as per practice management systems|No|\n|patient_id|Patient ID as per the management system|No|\n|practice_id|Practice ID|No|"
+            "description": "payment_plans API will return the collection of all the payment plans patients.\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|guarantor_id|Guarantor id as per practice management systems|No|\n|patient_id|Patient ID as per the management system|No|\n|practice_id|Practice ID|No|\n|startdate|format: yyyy-mm-dd, start date|No|\n|enddate|format: yyyy-mm-dd, end date|No|\n|description|Description|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|agreement_id|Agreement id as per practice management systems|\n|guarantor_id|Guarantor id as per practice management systems|\n|patient_id|Patient ID as per the management system|\n|practice_id|Practice ID|"
           },
           "response": [
             {
