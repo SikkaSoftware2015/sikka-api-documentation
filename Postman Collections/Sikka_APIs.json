@@ -18509,12 +18509,12 @@
               "raw": ""
             },
             "url": {
-              "raw": "{{url}}/contact_details?request_key={{request_key}}",
+              "raw": "{{url}}/payment_plans?request_key={{request_key}}",
               "host": [
                 "{{url}}"
               ],
               "path": [
-                "contact_details"
+                "payment_plans"
               ],
               "query": [
                 {
@@ -18524,7 +18524,7 @@
                 }
               ]
             },
-            "description": "payment_plans API will return the collection of all the payment plans patients.\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|guarantor_id|Guarantor id as per practice management systems|No|\n|patient_id|Patient ID as per the management system|No|\n|practice_id|Practice ID|No|\n|startdate|format: yyyy-mm-dd, start date|No|\n|enddate|format: yyyy-mm-dd, end date|No|\n|description|Description|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|agreement_id|Agreement id as per practice management systems|\n|guarantor_id|Guarantor id as per practice management systems|\n|patient_id|Patient ID as per the management system|\n|practice_id|Practice ID|"
+            "description": "payment_plans API will return the collection of all the payment plans.\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|guarantor_id|Guarantor id as per practice management systems|No|\n|patient_id|Patient ID as per the management system|No|\n|practice_id|Practice ID|No|\n|startdate|format: yyyy-mm-dd, start date|No|\n|enddate|format: yyyy-mm-dd, end date|No|\n|description|Description|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|agreement_id|Agreement id as per practice management systems|\n|guarantor_id|Guarantor id as per practice management systems|\n|patient_id|Patient ID as per the management system|\n|practice_id|Practice ID|"
           },
           "response": [
             {
@@ -18642,12 +18642,13 @@
               "raw": ""
             },
             "url": {
-              "raw": "{{url}}/contact_details?request_key={{request_key}}",
+              "raw": "{{url}}/payment_plans/{agreement_id}?request_key={{request_key}}",
               "host": [
                 "{{url}}"
               ],
               "path": [
-                "contact_details"
+                "payment_plans",
+                "{agreement_id}"
               ],
               "query": [
                 {
@@ -18657,7 +18658,7 @@
                 }
               ]
             },
-            "description": "payment_plans API will return the collection of all the payment plans patients.\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|guarantor_id|Guarantor id as per practice management systems|No|\n|patient_id|Patient ID as per the management system|No|\n|practice_id|Practice ID|No|\n|startdate|format: yyyy-mm-dd, start date|No|\n|enddate|format: yyyy-mm-dd, end date|No|\n|description|Description|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|agreement_id|Agreement id as per practice management systems|\n|guarantor_id|Guarantor id as per practice management systems|\n|patient_id|Patient ID as per the management system|\n|practice_id|Practice ID|"
+            "description": "payment_plans API will return the collection of all the payment plans of given agreement_id.\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|guarantor_id|Guarantor id as per practice management systems|No|\n|patient_id|Patient ID as per the management system|No|\n|practice_id|Practice ID|No|\n|startdate|format: yyyy-mm-dd, start date|No|\n|enddate|format: yyyy-mm-dd, end date|No|\n|description|Description|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|agreement_id|Agreement id as per practice management systems|\n|guarantor_id|Guarantor id as per practice management systems|\n|patient_id|Patient ID as per the management system|\n|practice_id|Practice ID|"
           },
           "response": [
             {
@@ -18671,12 +18672,13 @@
                   "raw": ""
                 },
                 "url": {
-                  "raw": "{{url}}/contact_details?request_key={{request_key}}",
+                  "raw": "{{url}}/contact_details/{agreement_id}?request_key={{request_key}}",
                   "host": [
                     "{{url}}"
                   ],
                   "path": [
-                    "contact_details"
+                    "contact_details",
+                    "{agreement_id}"
                   ],
                   "query": [
                     {
@@ -18760,7 +18762,7 @@
               ],
               "cookie": [],
               "responseTime": null,
-              "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"2\",\r\n\t\"total_count\": \"6\",\r\n\t\"execution_time\": \"671\",\t\r\n\t\"items\": [{\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/payment_plans/35\",\r\n\t\t\"agreement_id\": \"35\",\r\n\t\t\"agreemen_type\": \"\",\r\n\t\t\"guarantor_id\": \"14947\",\r\n\t\t\"guarantor\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/guarantors/14947\"\r\n\t\t},\r\n\t\t\"patient_id\": \"14947\",\r\n\t\t\"patient\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/14947\"\r\n\t\t},\r\n\t\t\"payment_amount\": \"0.0000\",\r\n\t\t\"number_of_payments\": \"11\",\r\n\t\t\"note\": \"07/24/2018 - Date of Agreement: 07/24/2018  Total Amount: 1996.26  APR: 0  Total Cost of Loan: 1996.26\",\r\n\t\t\"paymen_interval\": \"0\",\r\n\t\t\"create_date\": \"2018-07-24\",\r\n\t\t\"startdate\": \"2018-07-24\",\r\n\t\t\"enddate\": \"\",\r\n\t\t\"interest_rate\": \"0\",\r\n\t\t\"loan_amount\": \"\",\r\n\t\t\"remaining_balance\": \"0.0000\",\r\n\t\t\"down_payment\": \"0.0000\",\r\n\t\t\"finance_charges\": \"\",\r\n\t\t\"late_charges\": \"\",\r\n\t\t\"grace_period\": \"\",\r\n\t\t\"minimum_balance_to_charge\": \"\",\r\n\t\t\"description\": \"\",\r\n\t\t\"is_closed\": \"False\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t}\r\n\t}, {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/payment_plans/31\",\r\n\t\t\"agreement_id\": \"31\",\r\n\t\t\"agreemen_type\": \"\",\r\n\t\t\"guarantor_id\": \"15027\",\r\n\t\t\"guarantor\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/guarantors/15027\"\r\n\t\t},\r\n\t\t\"patient_id\": \"15027\",\r\n\t\t\"patient\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/15027\"\r\n\t\t},\r\n\t\t\"payment_amount\": \"242.4200\",\r\n\t\t\"number_of_payments\": \"0\",\r\n\t\t\"note\": \"06/13/2018 - Date of Agreement: 06/13/2018  Total Amount: 1445.58  APR: 0  Total Cost of Loan: 1445.58\",\r\n\t\t\"paymen_interval\": \"0\",\r\n\t\t\"create_date\": \"2018-06-13\",\r\n\t\t\"startdate\": \"2018-06-13\",\r\n\t\t\"enddate\": \"\",\r\n\t\t\"interest_rate\": \"0\",\r\n\t\t\"loan_amount\": \"\",\r\n\t\t\"remaining_balance\": \"0.0000\",\r\n\t\t\"down_payment\": \"0.0000\",\r\n\t\t\"finance_charges\": \"\",\r\n\t\t\"late_charges\": \"\",\r\n\t\t\"grace_period\": \"\",\r\n\t\t\"minimum_balance_to_charge\": \"\",\r\n\t\t\"description\": \"\",\r\n\t\t\"is_closed\": \"False\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t}\r\n\t}]\r\n}]"
+              "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"500\",\r\n\t\"total_count\": \"1\",\r\n\t\"execution_time\": \"1\",\t\r\n\t\"items\": [{\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/payment_plans/35\",\r\n\t\t\"agreement_id\": \"35\",\r\n\t\t\"agreemen_type\": \"\",\r\n\t\t\"guarantor_id\": \"14947\",\r\n\t\t\"guarantor\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/guarantors/14947\"\r\n\t\t},\r\n\t\t\"patient_id\": \"14947\",\r\n\t\t\"patient\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/14947\"\r\n\t\t},\r\n\t\t\"payment_amount\": \"0.0000\",\r\n\t\t\"number_of_payments\": \"11\",\r\n\t\t\"note\": \"07/24/2018 - Date of Agreement: 07/24/2018  Total Amount: 1996.26  APR: 0  Total Cost of Loan: 1996.26\",\r\n\t\t\"paymen_interval\": \"0\",\r\n\t\t\"create_date\": \"2018-07-24\",\r\n\t\t\"startdate\": \"2018-07-24\",\r\n\t\t\"enddate\": \"\",\r\n\t\t\"interest_rate\": \"0\",\r\n\t\t\"loan_amount\": \"\",\r\n\t\t\"remaining_balance\": \"0.0000\",\r\n\t\t\"down_payment\": \"0.0000\",\r\n\t\t\"finance_charges\": \"\",\r\n\t\t\"late_charges\": \"\",\r\n\t\t\"grace_period\": \"\",\r\n\t\t\"minimum_balance_to_charge\": \"\",\r\n\t\t\"description\": \"\",\r\n\t\t\"is_closed\": \"False\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t}\r\n\t}]\r\n}]"
             }
           ]
         }
