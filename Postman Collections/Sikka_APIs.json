@@ -18627,7 +18627,140 @@
               ],
               "cookie": [],
               "responseTime": null,
-              "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"5\",\r\n\t\"total_count\": \"9463\",\r\n\t\"execution_time\": \"101\",\r\n\t\"items\": [{\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1-1/contact_details/990419\",\r\n\t\t\"uid\": \"990419\",\r\n\t\t\"contact_of\": \"patient\",\r\n\t\t\"contact_type\": \"Home Phone\",\r\n\t\t\"contact_value\": \"xxxxxxxxxx\",\r\n\t\t\"label\": \"\",\r\n\t\t\"practice_id\": \"1-1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1-1\"\r\n\t\t}\r\n\t}, {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1-1/contact_details/990416\",\r\n\t\t\"uid\": \"990416\",\r\n\t\t\"contact_of\": \"patient\",\r\n\t\t\"contact_type\": \"Home Phone\",\r\n\t\t\"contact_value\": \"xxxxxxxxxx\",\r\n\t\t\"label\": \"\",\r\n\t\t\"practice_id\": \"1-1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1-1\"\r\n\t\t}\r\n\t}, {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1-1/contact_details/990414\",\r\n\t\t\"uid\": \"990414\",\r\n\t\t\"contact_of\": \"patient\",\r\n\t\t\"contact_type\": \"Home Phone\",\r\n\t\t\"contact_value\": \"xxxxxxxxxx\",\r\n\t\t\"label\": \"\",\r\n\t\t\"practice_id\": \"1-1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1-1\"\r\n\t\t}\r\n\t}, {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1-1/contact_details/990413\",\r\n\t\t\"uid\": \"990413\",\r\n\t\t\"contact_of\": \"patient\",\r\n\t\t\"contact_type\": \"Home Phone\",\r\n\t\t\"contact_value\": \"xxxxxxxxxx\",\r\n\t\t\"label\": \"\",\r\n\t\t\"practice_id\": \"1-1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1-1\"\r\n\t\t}\r\n\t}, {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1-1/contact_details/990411\",\r\n\t\t\"uid\": \"990411\",\r\n\t\t\"contact_of\": \"patient\",\r\n\t\t\"contact_type\": \"Home Phone\",\r\n\t\t\"contact_value\": \"xxxxxxxxxx\",\r\n\t\t\"label\": \"\",\r\n\t\t\"practice_id\": \"1-1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1-1\"\r\n\t\t}\r\n\t}]\r\n}]"
+              "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"2\",\r\n\t\"total_count\": \"6\",\r\n\t\"execution_time\": \"671\",\t\r\n\t\"items\": [{\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/payment_plans/35\",\r\n\t\t\"agreement_id\": \"35\",\r\n\t\t\"agreemen_type\": \"\",\r\n\t\t\"guarantor_id\": \"14947\",\r\n\t\t\"guarantor\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/guarantors/14947\"\r\n\t\t},\r\n\t\t\"patient_id\": \"14947\",\r\n\t\t\"patient\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/14947\"\r\n\t\t},\r\n\t\t\"payment_amount\": \"0.0000\",\r\n\t\t\"number_of_payments\": \"11\",\r\n\t\t\"note\": \"07/24/2018 - Date of Agreement: 07/24/2018  Total Amount: 1996.26  APR: 0  Total Cost of Loan: 1996.26\",\r\n\t\t\"paymen_interval\": \"0\",\r\n\t\t\"create_date\": \"2018-07-24\",\r\n\t\t\"startdate\": \"2018-07-24\",\r\n\t\t\"enddate\": \"\",\r\n\t\t\"interest_rate\": \"0\",\r\n\t\t\"loan_amount\": \"\",\r\n\t\t\"remaining_balance\": \"0.0000\",\r\n\t\t\"down_payment\": \"0.0000\",\r\n\t\t\"finance_charges\": \"\",\r\n\t\t\"late_charges\": \"\",\r\n\t\t\"grace_period\": \"\",\r\n\t\t\"minimum_balance_to_charge\": \"\",\r\n\t\t\"description\": \"\",\r\n\t\t\"is_closed\": \"False\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t}\r\n\t}, {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/payment_plans/31\",\r\n\t\t\"agreement_id\": \"31\",\r\n\t\t\"agreemen_type\": \"\",\r\n\t\t\"guarantor_id\": \"15027\",\r\n\t\t\"guarantor\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/guarantors/15027\"\r\n\t\t},\r\n\t\t\"patient_id\": \"15027\",\r\n\t\t\"patient\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/15027\"\r\n\t\t},\r\n\t\t\"payment_amount\": \"242.4200\",\r\n\t\t\"number_of_payments\": \"0\",\r\n\t\t\"note\": \"06/13/2018 - Date of Agreement: 06/13/2018  Total Amount: 1445.58  APR: 0  Total Cost of Loan: 1445.58\",\r\n\t\t\"paymen_interval\": \"0\",\r\n\t\t\"create_date\": \"2018-06-13\",\r\n\t\t\"startdate\": \"2018-06-13\",\r\n\t\t\"enddate\": \"\",\r\n\t\t\"interest_rate\": \"0\",\r\n\t\t\"loan_amount\": \"\",\r\n\t\t\"remaining_balance\": \"0.0000\",\r\n\t\t\"down_payment\": \"0.0000\",\r\n\t\t\"finance_charges\": \"\",\r\n\t\t\"late_charges\": \"\",\r\n\t\t\"grace_period\": \"\",\r\n\t\t\"minimum_balance_to_charge\": \"\",\r\n\t\t\"description\": \"\",\r\n\t\t\"is_closed\": \"False\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t}\r\n\t}]\r\n}]"
+            }
+          ]
+        },
+        {
+          "_postman_id": "1199ac94-1aae-41dc-9aa5-9fc3c941409e",
+          "name": "payment_plans Copy",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{url}}/contact_details?request_key={{request_key}}",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "contact_details"
+              ],
+              "query": [
+                {
+                  "key": "request_key",
+                  "value": "{{request_key}}",
+                  "equals": true
+                }
+              ]
+            },
+            "description": "payment_plans API will return the collection of all the payment plans patients.\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|guarantor_id|Guarantor id as per practice management systems|No|\n|patient_id|Patient ID as per the management system|No|\n|practice_id|Practice ID|No|\n|startdate|format: yyyy-mm-dd, start date|No|\n|enddate|format: yyyy-mm-dd, end date|No|\n|description|Description|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|agreement_id|Agreement id as per practice management systems|\n|guarantor_id|Guarantor id as per practice management systems|\n|patient_id|Patient ID as per the management system|\n|practice_id|Practice ID|"
+          },
+          "response": [
+            {
+              "id": "57f74900-17d8-4c15-a271-df319f6a3de1",
+              "name": "request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "{{url}}/contact_details?request_key={{request_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "contact_details"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "{{request_key}}",
+                      "equals": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "Access-Control-Allow-Headers",
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "accept, authorization, Content-Type, X-Session-Id",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Methods",
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Origin",
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "description": ""
+                },
+                {
+                  "name": "Cache-Control",
+                  "key": "Cache-Control",
+                  "value": "private",
+                  "description": ""
+                },
+                {
+                  "name": "Connection",
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Length",
+                  "key": "Content-Length",
+                  "value": "1471",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Type",
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": ""
+                },
+                {
+                  "name": "Date",
+                  "key": "Date",
+                  "value": "Thu, 27 Apr 2017 07:21:18 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "Server",
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5",
+                  "description": ""
+                },
+                {
+                  "name": "X-AspNet-Version",
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "description": ""
+                },
+                {
+                  "name": "X-Powered-By",
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"2\",\r\n\t\"total_count\": \"6\",\r\n\t\"execution_time\": \"671\",\t\r\n\t\"items\": [{\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/payment_plans/35\",\r\n\t\t\"agreement_id\": \"35\",\r\n\t\t\"agreemen_type\": \"\",\r\n\t\t\"guarantor_id\": \"14947\",\r\n\t\t\"guarantor\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/guarantors/14947\"\r\n\t\t},\r\n\t\t\"patient_id\": \"14947\",\r\n\t\t\"patient\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/14947\"\r\n\t\t},\r\n\t\t\"payment_amount\": \"0.0000\",\r\n\t\t\"number_of_payments\": \"11\",\r\n\t\t\"note\": \"07/24/2018 - Date of Agreement: 07/24/2018  Total Amount: 1996.26  APR: 0  Total Cost of Loan: 1996.26\",\r\n\t\t\"paymen_interval\": \"0\",\r\n\t\t\"create_date\": \"2018-07-24\",\r\n\t\t\"startdate\": \"2018-07-24\",\r\n\t\t\"enddate\": \"\",\r\n\t\t\"interest_rate\": \"0\",\r\n\t\t\"loan_amount\": \"\",\r\n\t\t\"remaining_balance\": \"0.0000\",\r\n\t\t\"down_payment\": \"0.0000\",\r\n\t\t\"finance_charges\": \"\",\r\n\t\t\"late_charges\": \"\",\r\n\t\t\"grace_period\": \"\",\r\n\t\t\"minimum_balance_to_charge\": \"\",\r\n\t\t\"description\": \"\",\r\n\t\t\"is_closed\": \"False\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t}\r\n\t}, {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/payment_plans/31\",\r\n\t\t\"agreement_id\": \"31\",\r\n\t\t\"agreemen_type\": \"\",\r\n\t\t\"guarantor_id\": \"15027\",\r\n\t\t\"guarantor\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/guarantors/15027\"\r\n\t\t},\r\n\t\t\"patient_id\": \"15027\",\r\n\t\t\"patient\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/15027\"\r\n\t\t},\r\n\t\t\"payment_amount\": \"242.4200\",\r\n\t\t\"number_of_payments\": \"0\",\r\n\t\t\"note\": \"06/13/2018 - Date of Agreement: 06/13/2018  Total Amount: 1445.58  APR: 0  Total Cost of Loan: 1445.58\",\r\n\t\t\"paymen_interval\": \"0\",\r\n\t\t\"create_date\": \"2018-06-13\",\r\n\t\t\"startdate\": \"2018-06-13\",\r\n\t\t\"enddate\": \"\",\r\n\t\t\"interest_rate\": \"0\",\r\n\t\t\"loan_amount\": \"\",\r\n\t\t\"remaining_balance\": \"0.0000\",\r\n\t\t\"down_payment\": \"0.0000\",\r\n\t\t\"finance_charges\": \"\",\r\n\t\t\"late_charges\": \"\",\r\n\t\t\"grace_period\": \"\",\r\n\t\t\"minimum_balance_to_charge\": \"\",\r\n\t\t\"description\": \"\",\r\n\t\t\"is_closed\": \"False\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t}\r\n\t}]\r\n}]"
             }
           ]
         }
