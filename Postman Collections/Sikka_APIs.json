@@ -16314,7 +16314,7 @@
                 }
               ]
             },
-            "description": "Get the full collection of all the treatment plans scheduled in practice management system\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|guarantor_id|Guarantor id as per practice management systems|No|\n|provider_id|Provider id as per practice management system|No|\n|patient_id|Patient ID as per the management system|No|\n|practice_id|Practice ID|No|\n|procedure_code|Procedure code as per practice management system|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|treatment_plan_sr_no|Treatment plan serial number from Practice management System|\n|amount|Amount|\n|procedure_date|Procedure Date|\n|entry_date|Entry Date|\n\n"
+            "description": "Get the full collection of all the treatment plans scheduled in practice management system\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|guarantor_id|Guarantor id as per practice management systems|No|\n|provider_id|Provider id as per practice management system|No|\n|patient_id|Patient ID as per the management system|No|\n|practice_id|Practice ID|No|\n|procedure_code|Procedure code as per practice management system|No|\n|treatment_plan_status|Filter by Treatment plan status |No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|treatment_plan_sr_no|Treatment plan serial number from Practice management System|\n|amount|Amount|\n|procedure_date|Procedure Date|\n|entry_date|Entry Date|"
           },
           "response": [
             {
