@@ -18771,6 +18771,138 @@
               "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"500\",\r\n\t\"total_count\": \"1\",\r\n\t\"execution_time\": \"1\",\t\r\n\t\"items\": [{\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/payment_plans/35\",\r\n\t\t\"agreement_id\": \"35\",\r\n\t\t\"agreemen_type\": \"\",\r\n\t\t\"guarantor_id\": \"14947\",\r\n\t\t\"guarantor\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/guarantors/14947\"\r\n\t\t},\r\n\t\t\"patient_id\": \"14947\",\r\n\t\t\"patient\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/14947\"\r\n\t\t},\r\n\t\t\"payment_amount\": \"0.0000\",\r\n\t\t\"number_of_payments\": \"11\",\r\n\t\t\"note\": \"07/24/2018 - Date of Agreement: 07/24/2018  Total Amount: 1996.26  APR: 0  Total Cost of Loan: 1996.26\",\r\n\t\t\"paymen_interval\": \"0\",\r\n\t\t\"create_date\": \"2018-07-24\",\r\n\t\t\"startdate\": \"2018-07-24\",\r\n\t\t\"enddate\": \"\",\r\n\t\t\"interest_rate\": \"0\",\r\n\t\t\"loan_amount\": \"\",\r\n\t\t\"remaining_balance\": \"0.0000\",\r\n\t\t\"down_payment\": \"0.0000\",\r\n\t\t\"finance_charges\": \"\",\r\n\t\t\"late_charges\": \"\",\r\n\t\t\"grace_period\": \"\",\r\n\t\t\"minimum_balance_to_charge\": \"\",\r\n\t\t\"description\": \"\",\r\n\t\t\"is_closed\": \"False\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t}\r\n\t}]\r\n}]"
             }
           ]
+        },
+        {
+          "_postman_id": "0de2bdac-4dca-4837-aa49-6e03c9eb28ad",
+          "name": "transactions Copy",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{url}}/transactions?request_key={{request_key}}",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "transactions"
+              ],
+              "query": [
+                {
+                  "key": "request_key",
+                  "value": "{{request_key}}"
+                }
+              ]
+            },
+            "description": "Get the collection of all transactions.\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|guarantor_id|Guarantor id as per practice management systems|No|\n|provider_id|Provider id as per practice management system|No|\n|patient_id|Patient ID as per the management system|No|\n|practice_id|Practice ID|No|\n|claim_sr_no|Claim serial number|No|\n|startdate|format: yyyy-mm-dd, start date|No|\n|enddate|format: yyyy-mm-dd, end date|No|\n|procedure_code|Procedure code as per practice management system|No|\n|transaction_type|Transaction Type|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|transaction_sr_no|Transaction serial number from Practice management System|\n|transaction_date|Transaction Date|\n"
+          },
+          "response": [
+            {
+              "id": "b395978b-1ae8-439f-a050-c44ce2633d83",
+              "name": "request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "{{url}}/transactions?request_key={{request_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "transactions"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "{{request_key}}",
+                      "equals": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "Access-Control-Allow-Headers",
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "accept, authorization, Content-Type, X-Session-Id",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Methods",
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Origin",
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "description": ""
+                },
+                {
+                  "name": "Cache-Control",
+                  "key": "Cache-Control",
+                  "value": "private",
+                  "description": ""
+                },
+                {
+                  "name": "Connection",
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Length",
+                  "key": "Content-Length",
+                  "value": "2542",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Type",
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": ""
+                },
+                {
+                  "name": "Date",
+                  "key": "Date",
+                  "value": "Thu, 27 Apr 2017 08:49:33 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "Server",
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5",
+                  "description": ""
+                },
+                {
+                  "name": "X-AspNet-Version",
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "description": ""
+                },
+                {
+                  "name": "X-Powered-By",
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[{\"offset\":\"0\",\"limit\":\"2\",\"total_count\":\"534299\",\"items\":[{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/transactions\\/544688\",\"transaction_sr_no\":\"544688\",\"patient_id\":\"3369\",\"patient\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/3369\"},\"guarantor_id\":\"1215\",\"guarantor\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/guarantors\\/1215\"},\"transaction_type\":\"Payment\",\"transaction_date\":\"2016-04-22\",\"transaction_entry_date\":\"2016-04-22\",\"procedure_code\":\"2\",\"procedure_description\":\"Check\",\"provider_id\":\"DR\",\"provider\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/DR\"},\"amount\":\"0.0000\",\"tooth_from\":\"\",\"tooth_to\":\"\",\"estimated_insurance_payment\":\"148\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"},\"invoice_number\":\"\",\"invoice_status\":\"\",\"invoice_item\":\"\",\"quantity\":\"\",\"claim_sr_no\":\"41014\",\"claim\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/claims\\/41014\"},\"pre_authorization_id\":\"\",\"payment_type\":\"Ins\",\"surface\":\"\",\"note\":\"for claim from 12\\/29\\/2015\",\"is_group_transaction\":\"\",\"cheque_no\":\"\",\"clinical_condition_id\":\"\",\"collection_provider_id\":\"\",\"created_by\":\"\",\"last_updated_by\":\"\",\"primary_insurance_estimate\":\"\",\"secondary_insurance_estimate\":\"\",\"surface_quadrant_type\":\"\"},{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/transactions\\/544687\",\"transaction_sr_no\":\"544687\",\"patient_id\":\"4277\",\"patient\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/4277\"},\"guarantor_id\":\"4277\",\"guarantor\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/guarantors\\/4277\"},\"transaction_type\":\"Payment\",\"transaction_date\":\"2016-04-22\",\"transaction_entry_date\":\"2016-04-22\",\"procedure_code\":\"2\",\"procedure_description\":\"Check\",\"provider_id\":\"DR\",\"provider\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/DR\"},\"amount\":\"0.0000\",\"tooth_from\":\"\",\"tooth_to\":\"\",\"estimated_insurance_payment\":\"0\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"},\"invoice_number\":\"\",\"invoice_status\":\"\",\"invoice_item\":\"\",\"quantity\":\"\",\"claim_sr_no\":\"40709\",\"claim\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/claims\\/40709\"},\"pre_authorization_id\":\"\",\"payment_type\":\"Ins\",\"surface\":\"\",\"note\":\"for claim from 11\\/4\\/2015\",\"is_group_transaction\":\"\",\"cheque_no\":\"\",\"clinical_condition_id\":\"\",\"collection_provider_id\":\"\",\"created_by\":\"\",\"last_updated_by\":\"\",\"primary_insurance_estimate\":\"\",\"secondary_insurance_estimate\":\"\",\"surface_quadrant_type\":\"\"}]}]\r\n"
+            }
+          ]
         }
       ]
     },
