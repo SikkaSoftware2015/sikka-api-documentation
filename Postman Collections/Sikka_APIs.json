@@ -6710,6 +6710,138 @@
               "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"500\",\r\n\t\"total_count\": \"4\",\r\n\t\"execution_time\": \"35\",\r\n\t\"items\": [{\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/practice_variables\",\r\n\t\t\"service_name\": \"Appointment Status\",\r\n\t\t\"value\": \"open.unconfirm\",\r\n\t\t\"description\": \"open.unconfirm\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t}\r\n\t}, {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/practice_variables\",\r\n\t\t\"service_name\": \"Appointment Status\",\r\n\t\t\"value\": \"open.confirm\",\r\n\t\t\"description\": \"open.confirm\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t}\r\n\t}, {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/practice_variables\",\r\n\t\t\"service_name\": \"Appointment Status\",\r\n\t\t\"value\": \"complete.unconfirm\",\r\n\t\t\"description\": \"complete.unconfirm\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t}\r\n\t}, {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/practice_variables\",\r\n\t\t\"service_name\": \"Appointment Status\",\r\n\t\t\"value\": \"complete.confirm\",\r\n\t\t\"description\": \"complete.confirm\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t}\r\n\t}]\r\n}]"
             }
           ]
+        },
+        {
+          "_postman_id": "d93c089b-a3d2-4419-a6c6-20927fa08d56",
+          "name": "providers Copy",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{url}}/providers?request_key={{request_key}}",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "providers"
+              ],
+              "query": [
+                {
+                  "key": "request_key",
+                  "value": "{{request_key}}"
+                }
+              ]
+            },
+            "description": "Get the list of all providers.\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|provider_type|Valid Provider type, coma separated for multiple|No|\n|provider_id|Provider id as per practice management system|No|\n|practice_id|Practice ID|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|provider_id|Provider id as per practice management system|\n"
+          },
+          "response": [
+            {
+              "id": "79966d1a-59b7-438e-8ac1-7c7fe23e7188",
+              "name": "request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "{{url}}/providers?request_key={{request_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "providers"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "{{request_key}}",
+                      "equals": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "Access-Control-Allow-Headers",
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "accept, authorization, Content-Type, X-Session-Id",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Methods",
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Origin",
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "description": ""
+                },
+                {
+                  "name": "Cache-Control",
+                  "key": "Cache-Control",
+                  "value": "private",
+                  "description": ""
+                },
+                {
+                  "name": "Connection",
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Length",
+                  "key": "Content-Length",
+                  "value": "1591",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Type",
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": ""
+                },
+                {
+                  "name": "Date",
+                  "key": "Date",
+                  "value": "Thu, 27 Apr 2017 08:25:16 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "Server",
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5",
+                  "description": ""
+                },
+                {
+                  "name": "X-AspNet-Version",
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "description": ""
+                },
+                {
+                  "name": "X-Powered-By",
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[{\"offset\":\"0\",\"limit\":\"2\",\"total_count\":\"35\",\"items\":[{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/VLP\",\"provider_id\":\"VLP\",\"firstname\":\"Vdfdd\",\"lastname\":\"Ztedda\",\"address_line1\":\"1astde\",\"address_line2\":\"Last Day 11-30-11\",\"city\":\"Lewistown\",\"state\":\"IL\",\"zipcode\":\"61542\",\"country\":\"\",\"phone\":\"\",\"provider_type\":\"Provider\",\"specialty\":\"Dental Assistant\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"},\"patients\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients?provider_id=VLP\"},\"appointments\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/appointments?provider_id=VLP\"},\"status\":\"Inactive\",\"provider_account_id\":\"\",\"state_id\":\"\",\"tax_identification_number\":\"\",\"medicaid_id\":\"\",\"drug_id\":\"\",\"national_provider_identifier\":\"\",\"email\":\"\"},{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/TLD\",\"provider_id\":\"TLD\",\"firstname\":\"Tastde\",\"lastname\":\"Ztedda\",\"address_line1\":\"5poie\",\"address_line2\":\"Apt. B\",\"city\":\"Peoria\",\"state\":\"IL\",\"zipcode\":\"61615\",\"country\":\"\",\"phone\":\"\",\"provider_type\":\"Provider\",\"specialty\":\"Dental Assistant\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"},\"patients\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients?provider_id=TLD\"},\"appointments\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/appointments?provider_id=TLD\"},\"status\":\"Inactive\",\"provider_account_id\":\"\",\"state_id\":\"\",\"tax_identification_number\":\"\",\"medicaid_id\":\"\",\"drug_id\":\"\",\"national_provider_identifier\":\"\",\"email\":\"\"}]}]\r\n"
+            }
+          ]
         }
       ]
     },
