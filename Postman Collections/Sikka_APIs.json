@@ -6710,138 +6710,6 @@
               "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"500\",\r\n\t\"total_count\": \"4\",\r\n\t\"execution_time\": \"35\",\r\n\t\"items\": [{\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/practice_variables\",\r\n\t\t\"service_name\": \"Appointment Status\",\r\n\t\t\"value\": \"open.unconfirm\",\r\n\t\t\"description\": \"open.unconfirm\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t}\r\n\t}, {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/practice_variables\",\r\n\t\t\"service_name\": \"Appointment Status\",\r\n\t\t\"value\": \"open.confirm\",\r\n\t\t\"description\": \"open.confirm\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t}\r\n\t}, {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/practice_variables\",\r\n\t\t\"service_name\": \"Appointment Status\",\r\n\t\t\"value\": \"complete.unconfirm\",\r\n\t\t\"description\": \"complete.unconfirm\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t}\r\n\t}, {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/practice_variables\",\r\n\t\t\"service_name\": \"Appointment Status\",\r\n\t\t\"value\": \"complete.confirm\",\r\n\t\t\"description\": \"complete.confirm\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t}\r\n\t}]\r\n}]"
             }
           ]
-        },
-        {
-          "_postman_id": "d93c089b-a3d2-4419-a6c6-20927fa08d56",
-          "name": "providers Copy",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
-            "url": {
-              "raw": "{{url}}/providers?request_key={{request_key}}",
-              "host": [
-                "{{url}}"
-              ],
-              "path": [
-                "providers"
-              ],
-              "query": [
-                {
-                  "key": "request_key",
-                  "value": "{{request_key}}"
-                }
-              ]
-            },
-            "description": "Get the list of all providers.\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|provider_type|Valid Provider type, coma separated for multiple|No|\n|provider_id|Provider id as per practice management system|No|\n|practice_id|Practice ID|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|provider_id|Provider id as per practice management system|\n"
-          },
-          "response": [
-            {
-              "id": "79966d1a-59b7-438e-8ac1-7c7fe23e7188",
-              "name": "request",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
-                "url": {
-                  "raw": "{{url}}/providers?request_key={{request_key}}",
-                  "host": [
-                    "{{url}}"
-                  ],
-                  "path": [
-                    "providers"
-                  ],
-                  "query": [
-                    {
-                      "key": "request_key",
-                      "value": "{{request_key}}",
-                      "equals": true
-                    }
-                  ]
-                }
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "name": "Access-Control-Allow-Headers",
-                  "key": "Access-Control-Allow-Headers",
-                  "value": "accept, authorization, Content-Type, X-Session-Id",
-                  "description": ""
-                },
-                {
-                  "name": "Access-Control-Allow-Methods",
-                  "key": "Access-Control-Allow-Methods",
-                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
-                  "description": ""
-                },
-                {
-                  "name": "Access-Control-Allow-Origin",
-                  "key": "Access-Control-Allow-Origin",
-                  "value": "*",
-                  "description": ""
-                },
-                {
-                  "name": "Cache-Control",
-                  "key": "Cache-Control",
-                  "value": "private",
-                  "description": ""
-                },
-                {
-                  "name": "Connection",
-                  "key": "Connection",
-                  "value": "keep-alive",
-                  "description": ""
-                },
-                {
-                  "name": "Content-Length",
-                  "key": "Content-Length",
-                  "value": "1591",
-                  "description": ""
-                },
-                {
-                  "name": "Content-Type",
-                  "key": "Content-Type",
-                  "value": "application/json",
-                  "description": ""
-                },
-                {
-                  "name": "Date",
-                  "key": "Date",
-                  "value": "Thu, 27 Apr 2017 08:25:16 GMT",
-                  "description": ""
-                },
-                {
-                  "name": "Server",
-                  "key": "Server",
-                  "value": "Microsoft-IIS/8.5",
-                  "description": ""
-                },
-                {
-                  "name": "X-AspNet-Version",
-                  "key": "X-AspNet-Version",
-                  "value": "4.0.30319",
-                  "description": ""
-                },
-                {
-                  "name": "X-Powered-By",
-                  "key": "X-Powered-By",
-                  "value": "ASP.NET",
-                  "description": ""
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "[{\"offset\":\"0\",\"limit\":\"2\",\"total_count\":\"35\",\"items\":[{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/VLP\",\"provider_id\":\"VLP\",\"firstname\":\"Vdfdd\",\"lastname\":\"Ztedda\",\"address_line1\":\"1astde\",\"address_line2\":\"Last Day 11-30-11\",\"city\":\"Lewistown\",\"state\":\"IL\",\"zipcode\":\"61542\",\"country\":\"\",\"phone\":\"\",\"provider_type\":\"Provider\",\"specialty\":\"Dental Assistant\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"},\"patients\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients?provider_id=VLP\"},\"appointments\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/appointments?provider_id=VLP\"},\"status\":\"Inactive\",\"provider_account_id\":\"\",\"state_id\":\"\",\"tax_identification_number\":\"\",\"medicaid_id\":\"\",\"drug_id\":\"\",\"national_provider_identifier\":\"\",\"email\":\"\"},{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/TLD\",\"provider_id\":\"TLD\",\"firstname\":\"Tastde\",\"lastname\":\"Ztedda\",\"address_line1\":\"5poie\",\"address_line2\":\"Apt. B\",\"city\":\"Peoria\",\"state\":\"IL\",\"zipcode\":\"61615\",\"country\":\"\",\"phone\":\"\",\"provider_type\":\"Provider\",\"specialty\":\"Dental Assistant\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"},\"patients\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients?provider_id=TLD\"},\"appointments\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/appointments?provider_id=TLD\"},\"status\":\"Inactive\",\"provider_account_id\":\"\",\"state_id\":\"\",\"tax_identification_number\":\"\",\"medicaid_id\":\"\",\"drug_id\":\"\",\"national_provider_identifier\":\"\",\"email\":\"\"}]}]\r\n"
-            }
-          ]
         }
       ]
     },
@@ -11836,6 +11704,138 @@
               ],
               "cookie": [],
               "responseTime": "875",
+              "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"2\",\r\n\t\"total_count\": \"5071\",\r\n\t\"items\": [{\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/6071\",\r\n\t\t\t\"patient_id\": \"6071\",\r\n\t\t\t\"guarantor_id\": \"5865\",\r\n\t\t\t\"firstname\": \"Wastde\",\r\n\t\t\t\"middlename\": \"\",\r\n\t\t\t\"lastname\": \"Kmade\",\r\n\t\t\t\"preferred_name\": \"\",\r\n\t\t\t\"salutation\": \"\",\r\n\t\t\t\"birthdate\": \"1926-12-26\",\r\n\t\t\t\"status\": \"Active\",\r\n\t\t\t\"patient_note\": \"\",\r\n\t\t\t\"medical_note\": \"\",\r\n\t\t\t\"alert_note\": \"\",\r\n\t\t\t\"other_note\": \"\",\r\n\t\t\t\"gender\": \"Male\",\r\n\t\t\t\"address_line1\": \"260ugdt\",\r\n\t\t\t\"address_line2\": \"\",\r\n\t\t\t\"city\": \"Peoria\",\r\n\t\t\t\"state\": \"IL\",\r\n\t\t\t\"zipcode\": \"61604\",\r\n\t\t\t\"homephone\": \"\",\r\n\t\t\t\"workphone\": \"\",\r\n\t\t\t\"cell\": \"\",\r\n\t\t\t\"email\": \"\",\r\n\t\t\t\"employer_id\": \"1082_282\",\r\n\t\t\t\"employer\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/employers/1082_282\"\r\n\t\t\t},\r\n\t\t\t\"billing_type\": \"\",\r\n\t\t\t\"first_visit\": \"\",\r\n\t\t\t\"last_visit\": \"\",\r\n\t\t\t\"provider_id\": \"DR\",\r\n\t\t\t\"provider\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/DR\"\r\n\t\t\t},\r\n\t\t\t\"practice_id\": \"1\",\r\n\t\t\t\"practice\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t\t},\r\n\t\t\t\"appointments\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/appointments?patient_id=6071\"\r\n\t\t\t},\r\n\t\t\t\"guarantor\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/guarantors/5865\"\r\n\t\t\t},\r\n\t\t\t\"primary_insurance_company_id\": \"1082\",\r\n\t\t\t\"primary_insurance_company\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/insurance_companies/1082\"\r\n\t\t\t},\r\n\t\t\t\"secondary_insurance_company_id\": \"\",\r\n\t\t\t\"primary_relationship\": \"Self\",\r\n\t\t\t\"country\": \"\",\r\n\t\t\t\"primary_medical_insurance\": \"\",\r\n\t\t\t\"primary_medical_insurance_id\": \"\",\r\n\t\t\t\"primary_medical_relationship\": \"\",\r\n\t\t\t\"primary_medical_subscriber_id\": \"\",\r\n\t\t\t\"secondary_medical_insurance\": \"\",\r\n\t\t\t\"secondary_medical_insurance_id\": \"\",\r\n\t\t\t\"secondary_medical_relationship\": \"\",\r\n\t\t\t\"secondary_medical_subscriber_id\": \"\",\r\n\t\t\t\"secondary_relationship\": \"\",\r\n\t\t\t\"subscriber_id\": \"\",\r\n\t\t\t\"patient_account_id\": \"\",\r\n\t\t\t\"other_referral\": \"\",\r\n\t\t\t\"patient_referral\": \"\",\r\n\t\t\t\"referred_out\": \"\",\r\n\t\t\t\"referred_by_provider_id\": \"\",\r\n\t\t\t\"referred_by_patient_id\": \"\",\r\n\t\t\t\"image\": \"\",\r\n\t\t\t\"thumb_image\": \"\",\r\n\t\t\t\"fee_no\": \"\",\r\n\t\t\t\"guarantor_first_name\": \"Mastde\",\r\n\t\t\t\"guarantor_last_name\": \"Kugdt\",\r\n\t\t\t\"created_date\": \"2016-04-20\",\r\n\t\t\t\"preferred_contact\": \"\",\r\n\t\t\t\"hygienist\": \"LW\",\r\n\t\t\t\"patient_codes\": \"\",\r\n\t\t\t\"primary_insurance\": \"\",\r\n\t\t\t\"secondary_insurance\": \"\",\r\n\t\t\t\"other_phone\": \"\",\r\n\t\t\t\"preferred_communication_method\": \"\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/6070\",\r\n\t\t\t\"patient_id\": \"6070\",\r\n\t\t\t\"guarantor_id\": \"6070\",\r\n\t\t\t\"firstname\": \"Tastde\",\r\n\t\t\t\"middlename\": \"\",\r\n\t\t\t\"lastname\": \"Smade\",\r\n\t\t\t\"preferred_name\": \"\",\r\n\t\t\t\"salutation\": \"\",\r\n\t\t\t\"birthdate\": \"1967-06-20\",\r\n\t\t\t\"status\": \"Active\",\r\n\t\t\t\"patient_note\": \"\",\r\n\t\t\t\"medical_note\": \"\",\r\n\t\t\t\"alert_note\": \"\",\r\n\t\t\t\"other_note\": \"\",\r\n\t\t\t\"gender\": \"Male\",\r\n\t\t\t\"address_line1\": \"\",\r\n\t\t\t\"address_line2\": \"\",\r\n\t\t\t\"city\": \"Peoria\",\r\n\t\t\t\"state\": \"IL\",\r\n\t\t\t\"zipcode\": \"61614\",\r\n\t\t\t\"homephone\": \"\",\r\n\t\t\t\"workphone\": \"\",\r\n\t\t\t\"cell\": \"\",\r\n\t\t\t\"email\": \"\",\r\n\t\t\t\"employer_id\": \"1117_38\",\r\n\t\t\t\"employer\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/employers/1117_38\"\r\n\t\t\t},\r\n\t\t\t\"billing_type\": \"\",\r\n\t\t\t\"first_visit\": \"\",\r\n\t\t\t\"last_visit\": \"\",\r\n\t\t\t\"provider_id\": \"DR\",\r\n\t\t\t\"provider\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/DR\"\r\n\t\t\t},\r\n\t\t\t\"practice_id\": \"1\",\r\n\t\t\t\"practice\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t\t},\r\n\t\t\t\"appointments\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/appointments?patient_id=6070\"\r\n\t\t\t},\r\n\t\t\t\"guarantor\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/guarantors/6070\"\r\n\t\t\t},\r\n\t\t\t\"primary_insurance_company_id\": \"1117\",\r\n\t\t\t\"primary_insurance_company\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/insurance_companies/1117\"\r\n\t\t\t},\r\n\t\t\t\"secondary_insurance_company_id\": \"\",\r\n\t\t\t\"primary_relationship\": \"Self\",\r\n\t\t\t\"country\": \"\",\r\n\t\t\t\"primary_medical_insurance\": \"\",\r\n\t\t\t\"primary_medical_insurance_id\": \"\",\r\n\t\t\t\"primary_medical_relationship\": \"\",\r\n\t\t\t\"primary_medical_subscriber_id\": \"\",\r\n\t\t\t\"secondary_medical_insurance\": \"\",\r\n\t\t\t\"secondary_medical_insurance_id\": \"\",\r\n\t\t\t\"secondary_medical_relationship\": \"\",\r\n\t\t\t\"secondary_medical_subscriber_id\": \"\",\r\n\t\t\t\"secondary_relationship\": \"\",\r\n\t\t\t\"subscriber_id\": \"\",\r\n\t\t\t\"patient_account_id\": \"\",\r\n\t\t\t\"other_referral\": \"\",\r\n\t\t\t\"patient_referral\": \"\",\r\n\t\t\t\"referred_out\": \"\",\r\n\t\t\t\"referred_by_provider_id\": \"\",\r\n\t\t\t\"referred_by_patient_id\": \"\",\r\n\t\t\t\"image\": \"\",\r\n\t\t\t\"thumb_image\": \"\",\r\n\t\t\t\"fee_no\": \"\",\r\n\t\t\t\"guarantor_first_name\": \"Ttedda\",\r\n\t\t\t\"guarantor_last_name\": \"Sqode\",\r\n\t\t\t\"created_date\": \"2016-04-20\",\r\n\t\t\t\"preferred_contact\": \"\",\r\n\t\t\t\"hygienist\": \"LW\",\r\n\t\t\t\"patient_codes\": \"\",\r\n\t\t\t\"primary_insurance\": \"\",\r\n\t\t\t\"secondary_insurance\": \"\",\r\n\t\t\t\"other_phone\": \"\",\r\n\t\t\t\"preferred_communication_method\": \"\"\r\n\t\t}\r\n\t]\r\n}]"
+            }
+          ]
+        },
+        {
+          "_postman_id": "32f67c2c-9ec8-43b3-a452-ca898cc2e427",
+          "name": "patients Copy",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{url}}/patients?request_key={{request_key}}",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "patients"
+              ],
+              "query": [
+                {
+                  "key": "request_key",
+                  "value": "{{request_key}}"
+                }
+              ]
+            },
+            "description": "Get the full list of all patient collections.\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|email|Email id of patient / provider|No|\n|guarantor_id|Guarantor id as per practice management systems|No|\n|provider_id|Provider id as per practice management system|No|\n|patient_id|Patient ID as per the management system|No|\n|firstname|First name of patient, provider or guarantor|No|\n|practice_id|Practice ID|No|\n|lastname|Last name of patient, provider or guarantor|No|\n|last_visit|Last Visit|No|\n|cell|Cell Number|No|\n|search|Search patient by firstname , lastname , email , middlename, city, state, zipcode, homephone, workphone, cell|No|\n|status|Status of patient|No|\n|phone|Phone Number|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|patient_id|Patient ID as per the management system|\n|firstname|First name of patient, provider or guarantor|\n|lastname|Last name of patient, provider or guarantor|\n|zipcode|Zipcode|"
+          },
+          "response": [
+            {
+              "id": "b2bf744e-49fe-4310-beb8-0b735298254e",
+              "name": "request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "{{url}}/patients?request_key={{request_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "patients"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "{{request_key}}",
+                      "equals": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "Access-Control-Allow-Headers",
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "accept, authorization, Content-Type, X-Session-Id",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Methods",
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Origin",
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "description": ""
+                },
+                {
+                  "name": "Cache-Control",
+                  "key": "Cache-Control",
+                  "value": "private",
+                  "description": ""
+                },
+                {
+                  "name": "Connection",
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Length",
+                  "key": "Content-Length",
+                  "value": "3816",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Type",
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": ""
+                },
+                {
+                  "name": "Date",
+                  "key": "Date",
+                  "value": "Wed, 26 Apr 2017 10:06:53 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "Server",
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5",
+                  "description": ""
+                },
+                {
+                  "name": "X-AspNet-Version",
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "description": ""
+                },
+                {
+                  "name": "X-Powered-By",
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
               "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"2\",\r\n\t\"total_count\": \"5071\",\r\n\t\"items\": [{\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/6071\",\r\n\t\t\t\"patient_id\": \"6071\",\r\n\t\t\t\"guarantor_id\": \"5865\",\r\n\t\t\t\"firstname\": \"Wastde\",\r\n\t\t\t\"middlename\": \"\",\r\n\t\t\t\"lastname\": \"Kmade\",\r\n\t\t\t\"preferred_name\": \"\",\r\n\t\t\t\"salutation\": \"\",\r\n\t\t\t\"birthdate\": \"1926-12-26\",\r\n\t\t\t\"status\": \"Active\",\r\n\t\t\t\"patient_note\": \"\",\r\n\t\t\t\"medical_note\": \"\",\r\n\t\t\t\"alert_note\": \"\",\r\n\t\t\t\"other_note\": \"\",\r\n\t\t\t\"gender\": \"Male\",\r\n\t\t\t\"address_line1\": \"260ugdt\",\r\n\t\t\t\"address_line2\": \"\",\r\n\t\t\t\"city\": \"Peoria\",\r\n\t\t\t\"state\": \"IL\",\r\n\t\t\t\"zipcode\": \"61604\",\r\n\t\t\t\"homephone\": \"\",\r\n\t\t\t\"workphone\": \"\",\r\n\t\t\t\"cell\": \"\",\r\n\t\t\t\"email\": \"\",\r\n\t\t\t\"employer_id\": \"1082_282\",\r\n\t\t\t\"employer\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/employers/1082_282\"\r\n\t\t\t},\r\n\t\t\t\"billing_type\": \"\",\r\n\t\t\t\"first_visit\": \"\",\r\n\t\t\t\"last_visit\": \"\",\r\n\t\t\t\"provider_id\": \"DR\",\r\n\t\t\t\"provider\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/DR\"\r\n\t\t\t},\r\n\t\t\t\"practice_id\": \"1\",\r\n\t\t\t\"practice\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t\t},\r\n\t\t\t\"appointments\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/appointments?patient_id=6071\"\r\n\t\t\t},\r\n\t\t\t\"guarantor\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/guarantors/5865\"\r\n\t\t\t},\r\n\t\t\t\"primary_insurance_company_id\": \"1082\",\r\n\t\t\t\"primary_insurance_company\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/insurance_companies/1082\"\r\n\t\t\t},\r\n\t\t\t\"secondary_insurance_company_id\": \"\",\r\n\t\t\t\"primary_relationship\": \"Self\",\r\n\t\t\t\"country\": \"\",\r\n\t\t\t\"primary_medical_insurance\": \"\",\r\n\t\t\t\"primary_medical_insurance_id\": \"\",\r\n\t\t\t\"primary_medical_relationship\": \"\",\r\n\t\t\t\"primary_medical_subscriber_id\": \"\",\r\n\t\t\t\"secondary_medical_insurance\": \"\",\r\n\t\t\t\"secondary_medical_insurance_id\": \"\",\r\n\t\t\t\"secondary_medical_relationship\": \"\",\r\n\t\t\t\"secondary_medical_subscriber_id\": \"\",\r\n\t\t\t\"secondary_relationship\": \"\",\r\n\t\t\t\"subscriber_id\": \"\",\r\n\t\t\t\"patient_account_id\": \"\",\r\n\t\t\t\"other_referral\": \"\",\r\n\t\t\t\"patient_referral\": \"\",\r\n\t\t\t\"referred_out\": \"\",\r\n\t\t\t\"referred_by_provider_id\": \"\",\r\n\t\t\t\"referred_by_patient_id\": \"\",\r\n\t\t\t\"image\": \"\",\r\n\t\t\t\"thumb_image\": \"\",\r\n\t\t\t\"fee_no\": \"\",\r\n\t\t\t\"guarantor_first_name\": \"Mastde\",\r\n\t\t\t\"guarantor_last_name\": \"Kugdt\",\r\n\t\t\t\"created_date\": \"2016-04-20\",\r\n\t\t\t\"preferred_contact\": \"\",\r\n\t\t\t\"hygienist\": \"LW\",\r\n\t\t\t\"patient_codes\": \"\",\r\n\t\t\t\"primary_insurance\": \"\",\r\n\t\t\t\"secondary_insurance\": \"\",\r\n\t\t\t\"other_phone\": \"\",\r\n\t\t\t\"preferred_communication_method\": \"\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/6070\",\r\n\t\t\t\"patient_id\": \"6070\",\r\n\t\t\t\"guarantor_id\": \"6070\",\r\n\t\t\t\"firstname\": \"Tastde\",\r\n\t\t\t\"middlename\": \"\",\r\n\t\t\t\"lastname\": \"Smade\",\r\n\t\t\t\"preferred_name\": \"\",\r\n\t\t\t\"salutation\": \"\",\r\n\t\t\t\"birthdate\": \"1967-06-20\",\r\n\t\t\t\"status\": \"Active\",\r\n\t\t\t\"patient_note\": \"\",\r\n\t\t\t\"medical_note\": \"\",\r\n\t\t\t\"alert_note\": \"\",\r\n\t\t\t\"other_note\": \"\",\r\n\t\t\t\"gender\": \"Male\",\r\n\t\t\t\"address_line1\": \"\",\r\n\t\t\t\"address_line2\": \"\",\r\n\t\t\t\"city\": \"Peoria\",\r\n\t\t\t\"state\": \"IL\",\r\n\t\t\t\"zipcode\": \"61614\",\r\n\t\t\t\"homephone\": \"\",\r\n\t\t\t\"workphone\": \"\",\r\n\t\t\t\"cell\": \"\",\r\n\t\t\t\"email\": \"\",\r\n\t\t\t\"employer_id\": \"1117_38\",\r\n\t\t\t\"employer\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/employers/1117_38\"\r\n\t\t\t},\r\n\t\t\t\"billing_type\": \"\",\r\n\t\t\t\"first_visit\": \"\",\r\n\t\t\t\"last_visit\": \"\",\r\n\t\t\t\"provider_id\": \"DR\",\r\n\t\t\t\"provider\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/DR\"\r\n\t\t\t},\r\n\t\t\t\"practice_id\": \"1\",\r\n\t\t\t\"practice\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t\t},\r\n\t\t\t\"appointments\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/appointments?patient_id=6070\"\r\n\t\t\t},\r\n\t\t\t\"guarantor\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/guarantors/6070\"\r\n\t\t\t},\r\n\t\t\t\"primary_insurance_company_id\": \"1117\",\r\n\t\t\t\"primary_insurance_company\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/insurance_companies/1117\"\r\n\t\t\t},\r\n\t\t\t\"secondary_insurance_company_id\": \"\",\r\n\t\t\t\"primary_relationship\": \"Self\",\r\n\t\t\t\"country\": \"\",\r\n\t\t\t\"primary_medical_insurance\": \"\",\r\n\t\t\t\"primary_medical_insurance_id\": \"\",\r\n\t\t\t\"primary_medical_relationship\": \"\",\r\n\t\t\t\"primary_medical_subscriber_id\": \"\",\r\n\t\t\t\"secondary_medical_insurance\": \"\",\r\n\t\t\t\"secondary_medical_insurance_id\": \"\",\r\n\t\t\t\"secondary_medical_relationship\": \"\",\r\n\t\t\t\"secondary_medical_subscriber_id\": \"\",\r\n\t\t\t\"secondary_relationship\": \"\",\r\n\t\t\t\"subscriber_id\": \"\",\r\n\t\t\t\"patient_account_id\": \"\",\r\n\t\t\t\"other_referral\": \"\",\r\n\t\t\t\"patient_referral\": \"\",\r\n\t\t\t\"referred_out\": \"\",\r\n\t\t\t\"referred_by_provider_id\": \"\",\r\n\t\t\t\"referred_by_patient_id\": \"\",\r\n\t\t\t\"image\": \"\",\r\n\t\t\t\"thumb_image\": \"\",\r\n\t\t\t\"fee_no\": \"\",\r\n\t\t\t\"guarantor_first_name\": \"Ttedda\",\r\n\t\t\t\"guarantor_last_name\": \"Sqode\",\r\n\t\t\t\"created_date\": \"2016-04-20\",\r\n\t\t\t\"preferred_contact\": \"\",\r\n\t\t\t\"hygienist\": \"LW\",\r\n\t\t\t\"patient_codes\": \"\",\r\n\t\t\t\"primary_insurance\": \"\",\r\n\t\t\t\"secondary_insurance\": \"\",\r\n\t\t\t\"other_phone\": \"\",\r\n\t\t\t\"preferred_communication_method\": \"\"\r\n\t\t}\r\n\t]\r\n}]"
             }
           ]
