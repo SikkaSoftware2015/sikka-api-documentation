@@ -556,203 +556,6 @@
           ]
         },
         {
-          "_postman_id": "3826b67e-3899-4237-ad31-7e6b25db3026",
-          "name": "list of authorized practices by office id Copy",
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "type": "text/javascript",
-                "exec": [
-                  "tests[\"Response time is less than 200ms\"] = responseTime < 200;",
-                  "",
-                  "tests[\"Status code is 200\"] = responseCode.code === 200;"
-                ]
-              }
-            }
-          ],
-          "request": {
-            "method": "GET",
-            "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
-            "url": {
-              "raw": "{{authurl}}/authorized_practices/{{office_id}}?app_id={{app_id}}&app_key={{app_key}}",
-              "host": [
-                "{{authurl}}"
-              ],
-              "path": [
-                "authorized_practices",
-                "{{office_id}}"
-              ],
-              "query": [
-                {
-                  "key": "app_id",
-                  "value": "{{app_id}}",
-                  "equals": true
-                },
-                {
-                  "key": "app_key",
-                  "value": "{{app_key}}",
-                  "equals": true
-                }
-              ]
-            },
-            "description": "Return the practice information, your application authorized to access data\n\n|Parameter|Description|Required|\n|---|---|---|\n|app_id|This is the ID assigned to the application when the application is registered on API portal|Yes|\n|app_key|This is the unique key generated when the application is registered on API portal|Yes|\n|show|Possible value for this parameter is \"all\" to show all practices|No|\n|practice_id|Practice ID, only works when show=all used|No|"
-          },
-          "response": [
-            {
-              "id": "bbbe5d98-dd06-443f-bcd4-61d3e726b4bd",
-              "name": "list of authorized practices by office id with show=all",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
-                "url": {
-                  "raw": "{{authurl}}/authorized_practices/{{office_id}}?app_id={{app_id}}&app_key={{app_key}}&show=all&practice_id={practice_id}",
-                  "host": [
-                    "{{authurl}}"
-                  ],
-                  "path": [
-                    "authorized_practices",
-                    "{{office_id}}"
-                  ],
-                  "query": [
-                    {
-                      "key": "app_id",
-                      "value": "{{app_id}}",
-                      "equals": true
-                    },
-                    {
-                      "key": "app_key",
-                      "value": "{{app_key}}",
-                      "equals": true
-                    },
-                    {
-                      "key": "show",
-                      "value": "all",
-                      "equals": true
-                    },
-                    {
-                      "key": "practice_id",
-                      "value": "{practice_id}",
-                      "equals": true
-                    }
-                  ]
-                }
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "",
-              "header": [],
-              "cookie": [],
-              "responseTime": null,
-              "body": "[\r\n  {\r\n    \"offset\": \"0\",\r\n    \"limit\": \"500\",\r\n    \"total_count\": \"2\",\r\n    \"items\": [\r\n      {\r\n        \"office_id\": \"xxxxx\",\r\n        \"domain\": \"Dental\",\r\n        \"href\": \"https://api.sikkasoft.com/auth/v2/authorized_practices/xxxxx\",\r\n        \"secret_key\": \"xxxxxxxxxxxxxxxxxxx\",\r\n        \"practice_name\": \"Demo Dental Care Testing Internal Use Only\",\r\n        \"address\": \"121 Main Street\",\r\n        \"city\": \"San Jose\",\r\n        \"state\": \"CA\",\r\n        \"zip\": \"95335\",\r\n        \"practice_management_system\": \"Dentrix\",\r\n        \"financial_system\": \"\",\r\n        \"practice_management_system_refresh_date\": \"2017-03-23 12:09:10\",\r\n        \"data_synchronization_date\": \"1900-01-01 00:00:00\",\r\n        \"data_insert_date\": \"2017-03-23 12:56:01\",\r\n        \"practice_management_system_version\": \"V16.2\",\r\n        \"practice_management_system_refresh_date_time_zone\": \"India Standard Time\",\r\n\t\t\"practice_id\": \"1\"\r\n      },\r\n      {\r\n        \"office_id\": \"xxxxx\",\r\n        \"domain\": \"Veterinary\",\r\n        \"href\": \"https://api.sikkasoft.com/auth/v2/authorized_practices/xxxxx\",\r\n        \"secret_key\": \"xxxxxxxxxxxxxxxxxxx\",\r\n        \"practice_name\": \"SikkaAPI Vet Demo\",\r\n        \"address\": \"Street 123\",\r\n        \"city\": \"San JOse\",\r\n        \"state\": \"CA\",\r\n        \"zip\": \"95116\",\r\n        \"practice_management_system\": \"\",\r\n        \"financial_system\": \"\",\r\n        \"practice_management_system_refresh_date\": \"\",\r\n        \"data_synchronization_date\": \"\",\r\n        \"data_insert_date\": \"\",\r\n        \"practice_management_system_version\": \"\",\r\n        \"practice_management_system_refresh_date_time_zone\": \"\",\r\n\t\t\"practice_id\": \"2\"\r\n      }\r\n    ]\r\n  }\r\n]"
-            },
-            {
-              "id": "eb815583-1070-4edc-854b-4da8ed71881e",
-              "name": "request",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
-                "url": {
-                  "raw": "{{authurl}}/authorized_practices/{{office_id}}?app_id={{app_id}}&app_key={{app_key}}",
-                  "host": [
-                    "{{authurl}}"
-                  ],
-                  "path": [
-                    "authorized_practices",
-                    "{{office_id}}"
-                  ],
-                  "query": [
-                    {
-                      "key": "app_id",
-                      "value": "{{app_id}}",
-                      "equals": true
-                    },
-                    {
-                      "key": "app_key",
-                      "value": "{{app_key}}",
-                      "equals": true
-                    }
-                  ]
-                }
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "name": "Cache-Control",
-                  "key": "Cache-Control",
-                  "value": "private",
-                  "description": ""
-                },
-                {
-                  "name": "Content-Encoding",
-                  "key": "Content-Encoding",
-                  "value": "gzip",
-                  "description": ""
-                },
-                {
-                  "name": "Content-Length",
-                  "key": "Content-Length",
-                  "value": "411",
-                  "description": ""
-                },
-                {
-                  "name": "Content-Type",
-                  "key": "Content-Type",
-                  "value": "application/json",
-                  "description": ""
-                },
-                {
-                  "name": "Date",
-                  "key": "Date",
-                  "value": "Fri, 16 Jun 2017 07:25:06 GMT",
-                  "description": ""
-                },
-                {
-                  "name": "Server",
-                  "key": "Server",
-                  "value": "Microsoft-IIS/8.5",
-                  "description": ""
-                },
-                {
-                  "name": "Vary",
-                  "key": "Vary",
-                  "value": "Accept-Encoding",
-                  "description": ""
-                },
-                {
-                  "name": "X-AspNet-Version",
-                  "key": "X-AspNet-Version",
-                  "value": "4.0.30319",
-                  "description": ""
-                },
-                {
-                  "name": "X-Powered-By",
-                  "key": "X-Powered-By",
-                  "value": "ASP.NET",
-                  "description": ""
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"office_id\": \"xxxxx\",\n    \"domain\": \"Dental\",\n    \"href\": \"https://api.sikkasoft.com/auth/v2/authorized_practices/xxxxx\",\n    \"secret_key\": \"xxxxxxxxxxxxxxxxxxx\",\n    \"practice_name\": \"Loadtest Dental\",\n    \"address\": \"San jose\",\n    \"city\": \"San Jose\",\n    \"state\": \"California\",\n    \"zip\": \"95011\",\n    \"practice_management_system\": \"\",\n    \"financial_system\": \"\",\n    \"practice_management_system_refresh_date\": \"\",\n    \"data_synchronization_date\": \"\",\n    \"data_insert_date\": \"\",\n    \"practice_management_system_version\": \"\",\n    \"practice_management_system_refresh_date_time_zone\": \"\",\n    \"practice_id\": \"1\"\n}"
-            }
-          ]
-        },
-        {
           "_postman_id": "a31b027f-33eb-ede4-1519-1f86be65f3a6",
           "name": "request_key_info",
           "request": {
@@ -6905,6 +6708,138 @@
               "cookie": [],
               "responseTime": "1403",
               "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"500\",\r\n\t\"total_count\": \"4\",\r\n\t\"execution_time\": \"35\",\r\n\t\"items\": [{\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/practice_variables\",\r\n\t\t\"service_name\": \"Appointment Status\",\r\n\t\t\"value\": \"open.unconfirm\",\r\n\t\t\"description\": \"open.unconfirm\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t}\r\n\t}, {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/practice_variables\",\r\n\t\t\"service_name\": \"Appointment Status\",\r\n\t\t\"value\": \"open.confirm\",\r\n\t\t\"description\": \"open.confirm\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t}\r\n\t}, {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/practice_variables\",\r\n\t\t\"service_name\": \"Appointment Status\",\r\n\t\t\"value\": \"complete.unconfirm\",\r\n\t\t\"description\": \"complete.unconfirm\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t}\r\n\t}, {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/practice_variables\",\r\n\t\t\"service_name\": \"Appointment Status\",\r\n\t\t\"value\": \"complete.confirm\",\r\n\t\t\"description\": \"complete.confirm\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t}\r\n\t}]\r\n}]"
+            }
+          ]
+        },
+        {
+          "_postman_id": "61a56a08-66be-44d9-8b50-8e314650b068",
+          "name": "practices Copy",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "{{url}}/practices?request_key={{request_key}}",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "practices"
+              ],
+              "query": [
+                {
+                  "key": "request_key",
+                  "value": "{{request_key}}"
+                }
+              ]
+            },
+            "description": "\"Practices\" API will return the collection of all practices\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|practice_id|Practice ID|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|practice_id|Practice ID|\n|name|Practice Name|\n"
+          },
+          "response": [
+            {
+              "id": "29a40f16-f6ff-457b-b646-78e9a8f1ecee",
+              "name": "request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "{{url}}/practices?request_key={{request_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "practices"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "{{request_key}}",
+                      "equals": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "Access-Control-Allow-Headers",
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "accept, authorization, Content-Type, X-Session-Id",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Methods",
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Origin",
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "description": ""
+                },
+                {
+                  "name": "Cache-Control",
+                  "key": "Cache-Control",
+                  "value": "private",
+                  "description": ""
+                },
+                {
+                  "name": "Connection",
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Length",
+                  "key": "Content-Length",
+                  "value": "1471",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Type",
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": ""
+                },
+                {
+                  "name": "Date",
+                  "key": "Date",
+                  "value": "Thu, 27 Apr 2017 07:21:18 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "Server",
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5",
+                  "description": ""
+                },
+                {
+                  "name": "X-AspNet-Version",
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "description": ""
+                },
+                {
+                  "name": "X-Powered-By",
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"500\",\n        \"total_count\": \"2\",\n        \"items\": [\n            {\n                \"href\": \"https://api.sikkasoft.com/v2/practices/2\",\n                \"practice_id\": \"2\",\n                \"name\": \"Demo Sikka Practice -2\",\n                \"address_line1\": \"San jose\",\n                \"address_line2\": \"San Jose\",\n                \"city\": \"San Jose\",\n                \"state\": \"CA\",\n                \"zipcode\": \"95011\",\n                \"phone\": \"xxxxxxxxxx\",\n                \"country\": \"\",\n                \"email\": \"\",\n                \"website\": \"\",\n                \"description\": \"\",\n                \"providers\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/2/providers/\"\n                },\n                \"patients\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/2/patients/\"\n                },\n                \"guarantors\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/2/guarantors/\"\n                },\n                \"appointments\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/2/appointments/\"\n                },\n                \"transactions\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/2/transactions/\"\n                }\n            },\n            {\n                \"href\": \"https://api.sikkasoft.com/v2/practices/1\",\n                \"practice_id\": \"1\",\n                \"name\": \"Demo Sikka Practice\",\n                \"address_line1\": \"San Jose\",\n                \"address_line2\": \"San Jose\",\n                \"city\": \"San Jose\",\n                \"state\": \"CA\",\n                \"zipcode\": \"95011\",\n                \"phone\": \"xxxxxxxxxx\",\n                \"country\": \"\",\n                \"email\": \"\",\n                \"website\": \"\",\n                \"description\": \"\",\n                \"providers\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/\"\n                },\n                \"patients\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/\"\n                },\n                \"guarantors\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/1/guarantors/\"\n                },\n                \"appointments\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/1/appointments/\"\n                },\n                \"transactions\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/1/transactions/\"\n                }\n            }\n        ]\n    }\n]"
             }
           ]
         }
