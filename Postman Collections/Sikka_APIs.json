@@ -6102,11 +6102,14 @@
           "response": [
             {
               "id": "2863071b-1308-b369-ae78-b92d91667eb1",
-              "name": "request",
+              "name": "sample response ",
               "originalRequest": {
                 "method": "GET",
                 "header": [],
-                "body": {},
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
                 "url": {
                   "raw": "{{url}}/providers?request_key={{request_key}}",
                   "host": [
@@ -6197,7 +6200,7 @@
               ],
               "cookie": [],
               "responseTime": "1025",
-              "body": "[{\"offset\":\"0\",\"limit\":\"2\",\"total_count\":\"35\",\"items\":[{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/VLP\",\"provider_id\":\"VLP\",\"firstname\":\"Vdfdd\",\"lastname\":\"Ztedda\",\"address_line1\":\"1astde\",\"address_line2\":\"Last Day 11-30-11\",\"city\":\"Lewistown\",\"state\":\"IL\",\"zipcode\":\"61542\",\"country\":\"\",\"phone\":\"\",\"provider_type\":\"Provider\",\"specialty\":\"Dental Assistant\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"},\"patients\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients?provider_id=VLP\"},\"appointments\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/appointments?provider_id=VLP\"},\"status\":\"Inactive\",\"provider_account_id\":\"\",\"state_id\":\"\",\"tax_identification_number\":\"\",\"medicaid_id\":\"\",\"drug_id\":\"\",\"national_provider_identifier\":\"\",\"email\":\"\"},{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/TLD\",\"provider_id\":\"TLD\",\"firstname\":\"Tastde\",\"lastname\":\"Ztedda\",\"address_line1\":\"5poie\",\"address_line2\":\"Apt. B\",\"city\":\"Peoria\",\"state\":\"IL\",\"zipcode\":\"61615\",\"country\":\"\",\"phone\":\"\",\"provider_type\":\"Provider\",\"specialty\":\"Dental Assistant\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"},\"patients\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients?provider_id=TLD\"},\"appointments\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/appointments?provider_id=TLD\"},\"status\":\"Inactive\",\"provider_account_id\":\"\",\"state_id\":\"\",\"tax_identification_number\":\"\",\"medicaid_id\":\"\",\"drug_id\":\"\",\"national_provider_identifier\":\"\",\"email\":\"\"}]}]\r\n"
+              "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"2\",\r\n\t\"total_count\": \"35\",\r\n\t\"items\": [{\r\n\t\t\"href\": \"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/VLP\",\r\n\t\t\"provider_id\": \"VLP\",\r\n\t\t\"firstname\": \"Vdfdd\",\r\n\t\t\"lastname\": \"Ztedda\",\r\n\t\t\"address_line1\": \"1astde\",\r\n\t\t\"address_line2\": \"Last Day 11-30-11\",\r\n\t\t\"city\": \"Lewistown\",\r\n\t\t\"state\": \"IL\",\r\n\t\t\"zipcode\": \"61542\",\r\n\t\t\"country\": \"\",\r\n\t\t\"phone\": \"\",\r\n\t\t\"provider_type\": \"Provider\",\r\n\t\t\"specialty\": \"Dental Assistant\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"\r\n\t\t},\r\n\t\t\"patients\": {\r\n\t\t\t\"href\": \"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients?provider_id=VLP\"\r\n\t\t},\r\n\t\t\"appointments\": {\r\n\t\t\t\"href\": \"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/appointments?provider_id=VLP\"\r\n\t\t},\r\n\t\t\"status\": \"Inactive\",\r\n\t\t\"provider_account_id\": \"\",\r\n\t\t\"state_id\": \"\",\r\n\t\t\"tax_identification_number\": \"\",\r\n\t\t\"medicaid_id\": \"\",\r\n\t\t\"drug_id\": \"\",\r\n\t\t\"national_provider_identifier\": \"\",\r\n\t\t\"email\": \"\",\r\n\t\t\"birthdate\": \"\",\r\n\t\t\"hire_date\": \"\",\r\n\t\t\"graduated_date\": \"\",\r\n\t\t\"initials\": \"\"\r\n\t}, {\r\n\t\t\"href\": \"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/TLD\",\r\n\t\t\"provider_id\": \"TLD\",\r\n\t\t\"firstname\": \"Tastde\",\r\n\t\t\"lastname\": \"Ztedda\",\r\n\t\t\"address_line1\": \"5poie\",\r\n\t\t\"address_line2\": \"Apt. B\",\r\n\t\t\"city\": \"Peoria\",\r\n\t\t\"state\": \"IL\",\r\n\t\t\"zipcode\": \"61615\",\r\n\t\t\"country\": \"\",\r\n\t\t\"phone\": \"\",\r\n\t\t\"provider_type\": \"Provider\",\r\n\t\t\"specialty\": \"Dental Assistant\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"\r\n\t\t},\r\n\t\t\"patients\": {\r\n\t\t\t\"href\": \"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients?provider_id=TLD\"\r\n\t\t},\r\n\t\t\"appointments\": {\r\n\t\t\t\"href\": \"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/appointments?provider_id=TLD\"\r\n\t\t},\r\n\t\t\"status\": \"Inactive\",\r\n\t\t\"provider_account_id\": \"\",\r\n\t\t\"state_id\": \"\",\r\n\t\t\"tax_identification_number\": \"\",\r\n\t\t\"medicaid_id\": \"\",\r\n\t\t\"drug_id\": \"\",\r\n\t\t\"national_provider_identifier\": \"\",\r\n\t\t\"email\": \"\",\r\n\t\t\"birthdate\": \"\",\r\n\t\t\"hire_date\": \"\",\r\n\t\t\"graduated_date\": \"\",\r\n\t\t\"initials\": \"\"\r\n\t}]\r\n}]"
             }
           ]
         },
@@ -6229,11 +6232,14 @@
           "response": [
             {
               "id": "024750a8-168b-d6ab-15b4-43e2027684e2",
-              "name": "request",
+              "name": "sample response",
               "originalRequest": {
                 "method": "GET",
                 "header": [],
-                "body": {},
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
                 "url": {
                   "raw": "{{url}}/providers/{provider_id}?request_key={{request_key}}",
                   "host": [
@@ -6325,7 +6331,7 @@
               ],
               "cookie": [],
               "responseTime": "750",
-              "body": "{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/VLP\",\"provider_id\":\"VLP\",\"firstname\":\"Vdfdd\",\"lastname\":\"Ztedda\",\"address_line1\":\"1astde\",\"address_line2\":\"Last Day 11-30-11\",\"city\":\"Lewistown\",\"state\":\"IL\",\"zipcode\":\"61542\",\"country\":\"\",\"phone\":\"\",\"provider_type\":\"Provider\",\"specialty\":\"Dental Assistant\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"},\"patients\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients?provider_id=VLP\"},\"appointments\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/appointments?provider_id=VLP\"},\"status\":\"Inactive\",\"provider_account_id\":\"\",\"state_id\":\"\",\"tax_identification_number\":\"\",\"medicaid_id\":\"\",\"drug_id\":\"\",\"national_provider_identifier\":\"\",\"email\":\"\"}\r\n"
+              "body": "{\r\n\t\t\"href\": \"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/VLP\",\r\n\t\t\"provider_id\": \"VLP\",\r\n\t\t\"firstname\": \"Vdfdd\",\r\n\t\t\"lastname\": \"Ztedda\",\r\n\t\t\"address_line1\": \"1astde\",\r\n\t\t\"address_line2\": \"Last Day 11-30-11\",\r\n\t\t\"city\": \"Lewistown\",\r\n\t\t\"state\": \"IL\",\r\n\t\t\"zipcode\": \"61542\",\r\n\t\t\"country\": \"\",\r\n\t\t\"phone\": \"\",\r\n\t\t\"provider_type\": \"Provider\",\r\n\t\t\"specialty\": \"Dental Assistant\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"\r\n\t\t},\r\n\t\t\"patients\": {\r\n\t\t\t\"href\": \"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients?provider_id=VLP\"\r\n\t\t},\r\n\t\t\"appointments\": {\r\n\t\t\t\"href\": \"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/appointments?provider_id=VLP\"\r\n\t\t},\r\n\t\t\"status\": \"Inactive\",\r\n\t\t\"provider_account_id\": \"\",\r\n\t\t\"state_id\": \"\",\r\n\t\t\"tax_identification_number\": \"\",\r\n\t\t\"medicaid_id\": \"\",\r\n\t\t\"drug_id\": \"\",\r\n\t\t\"national_provider_identifier\": \"\",\r\n\t\t\"email\": \"\",\r\n\t\t\"birthdate\": \"\",\r\n\t\t\"hire_date\": \"\",\r\n\t\t\"graduated_date\": \"\",\r\n\t\t\"initials\": \"\"\r\n\t}"
             }
           ]
         },
@@ -22901,7 +22907,7 @@
                 }
               ]
             },
-            "description": "This API will return key performance indicator's data based on date range and practice id passed. \n\nSample response is attached for 'Accounts Receivable' API.\n\n`\nhttps://api.sikkasoft.com/v2/kpis/Accounts Receivable?request_key={request_key}&startdate={start date}&enddate={end date}\n`\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|key_performance_indicator| key_performance_indicator as per 'kpis' endpoint response | Yes |\n|startdate| key performance indicator data start date.Date format : yyyy-mm-dd | Yes |\n|end| key performance indicator data end date.Date format : yyyy-mm-dd | Yes |\n|practice_id| Practice ID | No |"
+            "description": "This API will return key performance indicator's data based on date range and practice id passed. \n\nSample response is attached for 'Accounts Receivable' API.\n\n`\nhttps://api.sikkasoft.com/v2/kpis/Accounts Receivable?request_key={request_key}&startdate={start date}&enddate={end date}\n`\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|key_performance_indicator| key_performance_indicator as per 'kpis' endpoint response | Yes |\n|startdate| key performance indicator data start date.Date format : yyyy-mm-dd | Yes |\n|enddate| key performance indicator data end date.Date format : yyyy-mm-dd | Yes |\n|practice_id| Practice ID | No |"
           },
           "response": [
             {
