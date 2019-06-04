@@ -4278,6 +4278,132 @@
           ]
         },
         {
+          "name": "practices Copy",
+          "_postman_id": "122c5de3-3ea7-4212-83e1-5882281c50df",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/practices?request_key={{request_key}}",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "practices"
+              ],
+              "query": [
+                {
+                  "key": "request_key",
+                  "value": "{{request_key}}"
+                }
+              ]
+            },
+            "description": "\"Practices\" API will return the collection of all practices\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|practice_id|Practice ID|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|practice_id|Practice ID|\n|name|Practice Name|\n"
+          },
+          "response": [
+            {
+              "id": "438c3268-cad4-4a52-b0ae-c6bd1112d59a",
+              "name": "sample response",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{url}}/practices?request_key={{request_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "practices"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "{{request_key}}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "Access-Control-Allow-Headers",
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "accept, authorization, Content-Type, X-Session-Id",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Methods",
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Origin",
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "description": ""
+                },
+                {
+                  "name": "Cache-Control",
+                  "key": "Cache-Control",
+                  "value": "private",
+                  "description": ""
+                },
+                {
+                  "name": "Connection",
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Length",
+                  "key": "Content-Length",
+                  "value": "1471",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Type",
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": ""
+                },
+                {
+                  "name": "Date",
+                  "key": "Date",
+                  "value": "Thu, 27 Apr 2017 07:21:18 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "Server",
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5",
+                  "description": ""
+                },
+                {
+                  "name": "X-AspNet-Version",
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "description": ""
+                },
+                {
+                  "name": "X-Powered-By",
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[{\"offset\":\"0\",\"limit\":\"500\",\"total_count\":\"2\",\"items\":[{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/2\",\"practice_id\":\"2\",\"name\":\"Demo Sikka Practice -2\",\"address_line1\":\"San jose\",\"address_line2\":\"San Jose\",\"city\":\"San Jose\",\"state\":\"CA\",\"zipcode\":\"95011\",\"phone\":\"4088764040\",\"country\":\"\",\"email\":\"\",\"website\":\"\",\"description\":\"\",\"providers\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/2\\/providers\\/\"},\"patients\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/2\\/patients\\/\"},\"guarantors\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/2\\/guarantors\\/\"},\"appointments\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/2\\/appointments\\/\"},\"transactions\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/2\\/transactions\\/\"}},{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\",\"practice_id\":\"1\",\"name\":\"Demo Sikka Practice\",\"address_line1\":\"San Jose\",\"address_line2\":\"San Jose\",\"city\":\"San Jose\",\"state\":\"CA\",\"zipcode\":\"95011\",\"phone\":\"4088764040\",\"country\":\"\",\"email\":\"\",\"website\":\"\",\"description\":\"\",\"providers\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/\"},\"patients\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/\"},\"guarantors\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/guarantors\\/\"},\"appointments\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/appointments\\/\"},\"transactions\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/transactions\\/\"}}]}]\r\n"
+            }
+          ]
+        },
+        {
           "name": "practices by practice_id",
           "_postman_id": "a3f4ad6a-0857-b614-1d65-9cc8a8eceb3e",
           "request": {
@@ -7028,7 +7154,7 @@
               ],
               "cookie": [],
               "responseTime": "1111",
-              "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"2\",\r\n\t\"total_count\": \"28039\",\r\n\t\"items\": [{\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/appointments/99458\",\r\n\t\t\t\"appointment_sr_no\": \"99458\",\r\n\t\t\t\"patient_id\": \"2963\",\r\n\t\t\t\"patient\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/2963\"\r\n\t\t\t},\r\n\t\t\t\"operatory\": \"Lynns Room 2\",\r\n\t\t\t\"date\": \"2016-10-27\",\r\n\t\t\t\"time\": \"13:30\",\r\n\t\t\t\"length\": \"90\",\r\n\t\t\t\"description\": \"\",\r\n\t\t\t\"amount\": \"293.0000\",\r\n\t\t\t\"status\": \"Unconfirmed\",\r\n\t\t\t\"last_changed_date\": \"\",\r\n\t\t\t\"appointment_made_date\": \"2016-04-21\",\r\n\t\t\t\"type\": \"Prophy  Lynn\",\r\n\t\t\t\"procedure_code1\": \"00120\",\r\n\t\t\t\"procedure_code1_amount\": \"54\",\r\n\t\t\t\"procedure_code2\": \"00210\",\r\n\t\t\t\"procedure_code2_amount\": \"145\",\r\n\t\t\t\"procedure_code3\": \"01110\",\r\n\t\t\t\"procedure_code3_amount\": \"94\",\r\n\t\t\t\"procedure_code4\": \"\",\r\n\t\t\t\"procedure_code4_amount\": \"0\",\r\n\t\t\t\"procedure_code5\": \"\",\r\n\t\t\t\"procedure_code5_amount\": \"0\",\r\n\t\t\t\"procedure_code6\": \"\",\r\n\t\t\t\"procedure_code6_amount\": \"0\",\r\n\t\t\t\"procedure_code7\": \"\",\r\n\t\t\t\"procedure_code7_amount\": \"0\",\r\n\t\t\t\"hygienist\": \"\",\r\n\t\t\t\"provider_id\": \"LW\",\r\n\t\t\t\"provider\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/LW\"\r\n\t\t\t},\r\n\t\t\t\"practice_id\": \"1\",\r\n\t\t\t\"practice\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t\t},\r\n\t\t\t\"is_companion\": \"\",\r\n\t\t\t\"sooner_if_possible\": \"N\",\r\n\t\t\t\"confirmed_on_date\": \"\",\r\n\t\t\t\"note\": \"FMX 6MRC OHI OSHA TTHPS TBRSH CLEAN RECAL\",\r\n\t\t\t\"patient_name\": \"John Wiesbrock\",\r\n\t\t\t\"guarantor_id\": \"\",\r\n\t\t\t\"guarantor_name\": \"\",\r\n\t\t\t\"procedure_code1_time\": \"0\",\r\n\t\t\t\"procedure_code2_time\": \"0\",\r\n\t\t\t\"procedure_code3_time\": \"0\",\r\n\t\t\t\"procedure_code4_time\": \"0\",\r\n\t\t\t\"procedure_code5_time\": \"0\",\r\n\t\t\t\"procedure_code6_time\": \"0\",\r\n\t\t\t\"procedure_code7_time\": \"0\",\r\n\t\t\t\"tooth_number\": \"\",\r\n\t\t\t\"surface_quadrant\": \"\",\r\n\t\t\t\"surface_quadrant_type\": \"\",\r\n\t\t\t\"schedule\": \"Fixed\",\r\n\t\t\t\"treatment_class\": \"\",\r\n\t\t\t\"cancelled\": \"N\",\r\n\t\t\t\"book_code\": \"GV\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/appointments/99457\",\r\n\t\t\t\"appointment_sr_no\": \"99457\",\r\n\t\t\t\"patient_id\": \"5867\",\r\n\t\t\t\"patient\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/5867\"\r\n\t\t\t},\r\n\t\t\t\"operatory\": \"Lynns Room 2\",\r\n\t\t\t\"date\": \"2016-08-18\",\r\n\t\t\t\"time\": \"08:00\",\r\n\t\t\t\"length\": \"60\",\r\n\t\t\t\"description\": \"\",\r\n\t\t\t\"amount\": \"213.0000\",\r\n\t\t\t\"status\": \"Unconfirmed\",\r\n\t\t\t\"last_changed_date\": \"\",\r\n\t\t\t\"appointment_made_date\": \"2016-04-21\",\r\n\t\t\t\"type\": \"Prophy  Lynn\",\r\n\t\t\t\"procedure_code1\": \"00120\",\r\n\t\t\t\"procedure_code1_amount\": \"54\",\r\n\t\t\t\"procedure_code2\": \"04910\",\r\n\t\t\t\"procedure_code2_amount\": \"159\",\r\n\t\t\t\"procedure_code3\": \"\",\r\n\t\t\t\"procedure_code3_amount\": \"0\",\r\n\t\t\t\"procedure_code4\": \"\",\r\n\t\t\t\"procedure_code4_amount\": \"0\",\r\n\t\t\t\"procedure_code5\": \"\",\r\n\t\t\t\"procedure_code5_amount\": \"0\",\r\n\t\t\t\"procedure_code6\": \"\",\r\n\t\t\t\"procedure_code6_amount\": \"0\",\r\n\t\t\t\"procedure_code7\": \"\",\r\n\t\t\t\"procedure_code7_amount\": \"0\",\r\n\t\t\t\"hygienist\": \"\",\r\n\t\t\t\"provider_id\": \"LW\",\r\n\t\t\t\"provider\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/LW\"\r\n\t\t\t},\r\n\t\t\t\"practice_id\": \"1\",\r\n\t\t\t\"practice\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t\t},\r\n\t\t\t\"is_companion\": \"\",\r\n\t\t\t\"sooner_if_possible\": \"N\",\r\n\t\t\t\"confirmed_on_date\": \"\",\r\n\t\t\t\"note\": \"OHI 4MRC OSHA TTHPS TBRSH RECAL 04910\",\r\n\t\t\t\"patient_name\": \"James Evenhuis\",\r\n\t\t\t\"guarantor_id\": \"\",\r\n\t\t\t\"guarantor_name\": \"\",\r\n\t\t\t\"procedure_code1_time\": \"0\",\r\n\t\t\t\"procedure_code2_time\": \"0\",\r\n\t\t\t\"procedure_code3_time\": \"0\",\r\n\t\t\t\"procedure_code4_time\": \"0\",\r\n\t\t\t\"procedure_code5_time\": \"0\",\r\n\t\t\t\"procedure_code6_time\": \"0\",\r\n\t\t\t\"procedure_code7_time\": \"0\",\r\n\t\t\t\"tooth_number\": \"\",\r\n\t\t\t\"surface_quadrant\": \"\",\r\n\t\t\t\"surface_quadrant_type\": \"\",\r\n\t\t\t\"schedule\": \"Fixed\",\r\n\t\t\t\"treatment_class\": \"\",\r\n\t\t\t\"cancelled\": \"N\",\r\n\t\t\t\"book_code\": \"GV\"\r\n\t\t}\r\n\t]\r\n}]"
+              "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"2\",\r\n\t\"total_count\": \"28039\",\r\n\t\"items\": [{\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/appointments/99458\",\r\n\t\t\t\"appointment_sr_no\": \"99458\",\r\n\t\t\t\"patient_id\": \"2963\",\r\n\t\t\t\"patient\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/2963\"\r\n\t\t\t},\r\n\t\t\t\"operatory\": \"Lynns Room 2\",\r\n\t\t\t\"date\": \"2016-10-27\",\r\n\t\t\t\"time\": \"13:30\",\r\n\t\t\t\"length\": \"90\",\r\n\t\t\t\"description\": \"\",\r\n\t\t\t\"amount\": \"293.0000\",\r\n\t\t\t\"status\": \"Unconfirmed\",\r\n\t\t\t\"last_changed_date\": \"\",\r\n\t\t\t\"appointment_made_date\": \"2016-04-21\",\r\n\t\t\t\"type\": \"Prophy  Lynn\",\r\n\t\t\t\"procedure_code1\": \"00120\",\r\n\t\t\t\"procedure_code1_amount\": \"54\",\r\n\t\t\t\"procedure_code2\": \"00210\",\r\n\t\t\t\"procedure_code2_amount\": \"145\",\r\n\t\t\t\"procedure_code3\": \"01110\",\r\n\t\t\t\"procedure_code3_amount\": \"94\",\r\n\t\t\t\"procedure_code4\": \"\",\r\n\t\t\t\"procedure_code4_amount\": \"0\",\r\n\t\t\t\"procedure_code5\": \"\",\r\n\t\t\t\"procedure_code5_amount\": \"0\",\r\n\t\t\t\"procedure_code6\": \"\",\r\n\t\t\t\"procedure_code6_amount\": \"0\",\r\n\t\t\t\"procedure_code7\": \"\",\r\n\t\t\t\"procedure_code7_amount\": \"0\",\r\n\t\t\t\"hygienist\": \"\",\r\n\t\t\t\"provider_id\": \"LW\",\r\n\t\t\t\"provider\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/LW\"\r\n\t\t\t},\r\n\t\t\t\"practice_id\": \"1\",\r\n\t\t\t\"practice\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t\t},\r\n\t\t\t\"is_companion\": \"\",\r\n\t\t\t\"sooner_if_possible\": \"N\",\r\n\t\t\t\"confirmed_on_date\": \"\",\r\n\t\t\t\"note\": \"FMX 6MRC OHI OSHA TTHPS TBRSH CLEAN RECAL\",\r\n\t\t\t\"patient_name\": \"John Wiesbrock\",\r\n\t\t\t\"guarantor_id\": \"\",\r\n\t\t\t\"guarantor_name\": \"\",\r\n\t\t\t\"procedure_code1_time\": \"0\",\r\n\t\t\t\"procedure_code2_time\": \"0\",\r\n\t\t\t\"procedure_code3_time\": \"0\",\r\n\t\t\t\"procedure_code4_time\": \"0\",\r\n\t\t\t\"procedure_code5_time\": \"0\",\r\n\t\t\t\"procedure_code6_time\": \"0\",\r\n\t\t\t\"procedure_code7_time\": \"0\",\r\n\t\t\t\"tooth_number\": \"\",\r\n\t\t\t\"surface_quadrant\": \"\",\r\n\t\t\t\"surface_quadrant_type\": \"\",\r\n\t\t\t\"schedule\": \"Fixed\",\r\n\t\t\t\"treatment_class\": \"\",\r\n\t\t\t\"cancelled\": \"N\",\r\n\t\t\t\"book_code\": \"GV\",\r\n\t\t\t\"procedure_codes\": [\r\n                    {\r\n                        \"href\": \"https://qaapi.sikkasoft.com/v2/practices/1/procedure_codes/1110\",\r\n                        \"procedure_code\": \"1110\",\r\n                        \"procedure_code_amount\": \"0\",\r\n                        \"procedure_code_time_units\": \"\",\r\n                        \"provider_id\": \"20\",\r\n                        \"provider\": {\r\n                            \"href\": \"https://qaapi.sikkasoft.com/v2/practices/1/providers/20\"\r\n                        }\r\n                    }\r\n                ]\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/appointments/99457\",\r\n\t\t\t\"appointment_sr_no\": \"99457\",\r\n\t\t\t\"patient_id\": \"5867\",\r\n\t\t\t\"patient\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/5867\"\r\n\t\t\t},\r\n\t\t\t\"operatory\": \"Lynns Room 2\",\r\n\t\t\t\"date\": \"2016-08-18\",\r\n\t\t\t\"time\": \"08:00\",\r\n\t\t\t\"length\": \"60\",\r\n\t\t\t\"description\": \"\",\r\n\t\t\t\"amount\": \"213.0000\",\r\n\t\t\t\"status\": \"Unconfirmed\",\r\n\t\t\t\"last_changed_date\": \"\",\r\n\t\t\t\"appointment_made_date\": \"2016-04-21\",\r\n\t\t\t\"type\": \"Prophy  Lynn\",\r\n\t\t\t\"procedure_code1\": \"00120\",\r\n\t\t\t\"procedure_code1_amount\": \"54\",\r\n\t\t\t\"procedure_code2\": \"04910\",\r\n\t\t\t\"procedure_code2_amount\": \"159\",\r\n\t\t\t\"procedure_code3\": \"\",\r\n\t\t\t\"procedure_code3_amount\": \"0\",\r\n\t\t\t\"procedure_code4\": \"\",\r\n\t\t\t\"procedure_code4_amount\": \"0\",\r\n\t\t\t\"procedure_code5\": \"\",\r\n\t\t\t\"procedure_code5_amount\": \"0\",\r\n\t\t\t\"procedure_code6\": \"\",\r\n\t\t\t\"procedure_code6_amount\": \"0\",\r\n\t\t\t\"procedure_code7\": \"\",\r\n\t\t\t\"procedure_code7_amount\": \"0\",\r\n\t\t\t\"hygienist\": \"\",\r\n\t\t\t\"provider_id\": \"LW\",\r\n\t\t\t\"provider\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/LW\"\r\n\t\t\t},\r\n\t\t\t\"practice_id\": \"1\",\r\n\t\t\t\"practice\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t\t},\r\n\t\t\t\"is_companion\": \"\",\r\n\t\t\t\"sooner_if_possible\": \"N\",\r\n\t\t\t\"confirmed_on_date\": \"\",\r\n\t\t\t\"note\": \"OHI 4MRC OSHA TTHPS TBRSH RECAL 04910\",\r\n\t\t\t\"patient_name\": \"James Evenhuis\",\r\n\t\t\t\"guarantor_id\": \"\",\r\n\t\t\t\"guarantor_name\": \"\",\r\n\t\t\t\"procedure_code1_time\": \"0\",\r\n\t\t\t\"procedure_code2_time\": \"0\",\r\n\t\t\t\"procedure_code3_time\": \"0\",\r\n\t\t\t\"procedure_code4_time\": \"0\",\r\n\t\t\t\"procedure_code5_time\": \"0\",\r\n\t\t\t\"procedure_code6_time\": \"0\",\r\n\t\t\t\"procedure_code7_time\": \"0\",\r\n\t\t\t\"tooth_number\": \"\",\r\n\t\t\t\"surface_quadrant\": \"\",\r\n\t\t\t\"surface_quadrant_type\": \"\",\r\n\t\t\t\"schedule\": \"Fixed\",\r\n\t\t\t\"treatment_class\": \"\",\r\n\t\t\t\"cancelled\": \"N\",\r\n\t\t\t\"book_code\": \"GV\",\r\n\t\t\t\"procedure_codes\": [\r\n\t\t\t{\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/procedure_codes/ZW912\",\r\n\t\t\t\t\"procedure_code\": \"ZW912\",\r\n\t\t\t\t\"procedure_code_amount\": \"10\",\r\n\t\t\t\t\"procedure_code_time_units\": \"value\",\r\n\t\t\t\t\"provider_id\": \"LW\",\r\n\t\t\t\t\"provider\": \r\n\t\t\t\t{\r\n\t\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/LW\"\r\n\t        \t}\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/procedure_codes/ZW912\",\r\n\t\t\t\t\"procedure_code\": \"ZW912\",\r\n\t\t\t\t\"procedure_code_amount\": \"20\",\r\n\t\t\t\t\"procedure_code_time_units\": \"value\",\r\n\t\t\t\t\"provider_id\": \"LW\",\r\n\t\t\t\t\"provider\": \r\n\t\t\t\t{\r\n\t\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/LW\"\r\n\t\t\t\t}\r\n\t\t\t}]\r\n\t\t}\r\n\t]\r\n}]"
             }
           ]
         },
@@ -7157,7 +7283,7 @@
               ],
               "cookie": [],
               "responseTime": "1005",
-              "body": "{\r\n\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/appointments/99458\",\r\n\t\"appointment_sr_no\": \"99458\",\r\n\t\"patient_id\": \"2963\",\r\n\t\"patient\": {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/2963\"\r\n\t},\r\n\t\"operatory\": \"Lynns Room 2\",\r\n\t\"date\": \"2016-10-27\",\r\n\t\"time\": \"13:30\",\r\n\t\"length\": \"90\",\r\n\t\"description\": \"\",\r\n\t\"amount\": \"293.0000\",\r\n\t\"status\": \"Unconfirmed\",\r\n\t\"last_changed_date\": \"\",\r\n\t\"appointment_made_date\": \"2016-04-21\",\r\n\t\"type\": \"Prophy  Lynn\",\r\n\t\"procedure_code1\": \"00120\",\r\n\t\"procedure_code1_amount\": \"54\",\r\n\t\"procedure_code2\": \"00210\",\r\n\t\"procedure_code2_amount\": \"145\",\r\n\t\"procedure_code3\": \"01110\",\r\n\t\"procedure_code3_amount\": \"94\",\r\n\t\"procedure_code4\": \"\",\r\n\t\"procedure_code4_amount\": \"0\",\r\n\t\"procedure_code5\": \"\",\r\n\t\"procedure_code5_amount\": \"0\",\r\n\t\"procedure_code6\": \"\",\r\n\t\"procedure_code6_amount\": \"0\",\r\n\t\"procedure_code7\": \"\",\r\n\t\"procedure_code7_amount\": \"0\",\r\n\t\"hygienist\": \"\",\r\n\t\"provider_id\": \"LW\",\r\n\t\"provider\": {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/LW\"\r\n\t},\r\n\t\"practice_id\": \"1\",\r\n\t\"practice\": {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t},\r\n\t\"is_companion\": \"\",\r\n\t\"sooner_if_possible\": \"N\",\r\n\t\"confirmed_on_date\": \"\",\r\n\t\"note\": \"FMX 6MRC OHI OSHA TTHPS TBRSH CLEAN RECAL\",\r\n\t\"patient_name\": \"John Wiesbrock\",\r\n\t\"guarantor_id\": \"\",\r\n\t\"guarantor_name\": \"\",\r\n\t\"procedure_code1_time\": \"0\",\r\n\t\"procedure_code2_time\": \"0\",\r\n\t\"procedure_code3_time\": \"0\",\r\n\t\"procedure_code4_time\": \"0\",\r\n\t\"procedure_code5_time\": \"0\",\r\n\t\"procedure_code6_time\": \"0\",\r\n\t\"procedure_code7_time\": \"0\",\r\n\t\"tooth_number\": \"\",\r\n\t\"surface_quadrant\": \"\",\r\n\t\"surface_quadrant_type\": \"\",\r\n\t\"schedule\": \"Fixed\",\r\n\t\"treatment_class\": \"\",\r\n\t\"cancelled\": \"N\",\r\n\t\"book_code\": \"GV\"\r\n}"
+              "body": "{\r\n\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/appointments/99458\",\r\n\t\"appointment_sr_no\": \"99458\",\r\n\t\"patient_id\": \"2963\",\r\n\t\"patient\": {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/2963\"\r\n\t},\r\n\t\"operatory\": \"Lynns Room 2\",\r\n\t\"date\": \"2016-10-27\",\r\n\t\"time\": \"13:30\",\r\n\t\"length\": \"90\",\r\n\t\"description\": \"\",\r\n\t\"amount\": \"293.0000\",\r\n\t\"status\": \"Unconfirmed\",\r\n\t\"last_changed_date\": \"\",\r\n\t\"appointment_made_date\": \"2016-04-21\",\r\n\t\"type\": \"Prophy  Lynn\",\r\n\t\"procedure_code1\": \"00120\",\r\n\t\"procedure_code1_amount\": \"54\",\r\n\t\"procedure_code2\": \"00210\",\r\n\t\"procedure_code2_amount\": \"145\",\r\n\t\"procedure_code3\": \"01110\",\r\n\t\"procedure_code3_amount\": \"94\",\r\n\t\"procedure_code4\": \"\",\r\n\t\"procedure_code4_amount\": \"0\",\r\n\t\"procedure_code5\": \"\",\r\n\t\"procedure_code5_amount\": \"0\",\r\n\t\"procedure_code6\": \"\",\r\n\t\"procedure_code6_amount\": \"0\",\r\n\t\"procedure_code7\": \"\",\r\n\t\"procedure_code7_amount\": \"0\",\r\n\t\"hygienist\": \"\",\r\n\t\"provider_id\": \"LW\",\r\n\t\"provider\": {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/LW\"\r\n\t},\r\n\t\"practice_id\": \"1\",\r\n\t\"practice\": {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t},\r\n\t\"is_companion\": \"\",\r\n\t\"sooner_if_possible\": \"N\",\r\n\t\"confirmed_on_date\": \"\",\r\n\t\"note\": \"FMX 6MRC OHI OSHA TTHPS TBRSH CLEAN RECAL\",\r\n\t\"patient_name\": \"John Wiesbrock\",\r\n\t\"guarantor_id\": \"\",\r\n\t\"guarantor_name\": \"\",\r\n\t\"procedure_code1_time\": \"0\",\r\n\t\"procedure_code2_time\": \"0\",\r\n\t\"procedure_code3_time\": \"0\",\r\n\t\"procedure_code4_time\": \"0\",\r\n\t\"procedure_code5_time\": \"0\",\r\n\t\"procedure_code6_time\": \"0\",\r\n\t\"procedure_code7_time\": \"0\",\r\n\t\"tooth_number\": \"\",\r\n\t\"surface_quadrant\": \"\",\r\n\t\"surface_quadrant_type\": \"\",\r\n\t\"schedule\": \"Fixed\",\r\n\t\"treatment_class\": \"\",\r\n\t\"cancelled\": \"N\",\r\n\t\"book_code\": \"GV\",\r\n\t\"procedure_codes\": [{\r\n        \t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/1/procedure_codes/1110\",\r\n            \"procedure_code\": \"1110\",\r\n            \"procedure_code_amount\": \"0\",\r\n            \"procedure_code_time_units\": \"\",\r\n            \"provider_id\": \"20\",\r\n            \"provider\": {\r\n            \t\"href\": \"https://qaapi.sikkasoft.com/v2/practices/1/providers/20\"\r\n            }\r\n        }]\r\n}"
             }
           ]
         },
@@ -16606,10 +16732,6 @@
               "originalRequest": {
                 "method": "GET",
                 "header": [],
-                "body": {
-                  "mode": "formdata",
-                  "formdata": []
-                },
                 "url": {
                   "raw": "{{url}}/transactions?request_key={{request_key}}",
                   "host": [
@@ -16699,7 +16821,7 @@
               ],
               "cookie": [],
               "responseTime": "31266",
-              "body": "[{\"offset\":\"0\",\"limit\":\"2\",\"total_count\":\"534299\",\"items\":[{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/transactions\\/544688\",\"transaction_sr_no\":\"544688\",\"patient_id\":\"3369\",\"patient\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/3369\"},\"guarantor_id\":\"1215\",\"guarantor\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/guarantors\\/1215\"},\"transaction_type\":\"Payment\",\"transaction_date\":\"2016-04-22\",\"transaction_entry_date\":\"2016-04-22\",\"procedure_code\":\"2\",\"procedure_description\":\"Check\",\"provider_id\":\"DR\",\"provider\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/DR\"},\"amount\":\"0.0000\",\"tooth_from\":\"\",\"tooth_to\":\"\",\"estimated_insurance_payment\":\"148\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"},\"invoice_number\":\"\",\"invoice_status\":\"\",\"invoice_item\":\"\",\"quantity\":\"\",\"claim_sr_no\":\"41014\",\"claim\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/claims\\/41014\"},\"pre_authorization_id\":\"\",\"payment_type\":\"Ins\",\"surface\":\"\",\"note\":\"for claim from 12\\/29\\/2015\",\"is_group_transaction\":\"\",\"cheque_no\":\"\",\"clinical_condition_id\":\"\",\"collection_provider_id\":\"\",\"created_by\":\"\",\"last_updated_by\":\"\",\"primary_insurance_estimate\":\"\",\"secondary_insurance_estimate\":\"\",\"surface_quadrant_type\":\"\"},{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/transactions\\/544687\",\"transaction_sr_no\":\"544687\",\"patient_id\":\"4277\",\"patient\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/4277\"},\"guarantor_id\":\"4277\",\"guarantor\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/guarantors\\/4277\"},\"transaction_type\":\"Payment\",\"transaction_date\":\"2016-04-22\",\"transaction_entry_date\":\"2016-04-22\",\"procedure_code\":\"2\",\"procedure_description\":\"Check\",\"provider_id\":\"DR\",\"provider\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/DR\"},\"amount\":\"0.0000\",\"tooth_from\":\"\",\"tooth_to\":\"\",\"estimated_insurance_payment\":\"0\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"},\"invoice_number\":\"\",\"invoice_status\":\"\",\"invoice_item\":\"\",\"quantity\":\"\",\"claim_sr_no\":\"40709\",\"claim\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/claims\\/40709\"},\"pre_authorization_id\":\"\",\"payment_type\":\"Ins\",\"surface\":\"\",\"note\":\"for claim from 11\\/4\\/2015\",\"is_group_transaction\":\"\",\"cheque_no\":\"\",\"clinical_condition_id\":\"\",\"collection_provider_id\":\"\",\"created_by\":\"\",\"last_updated_by\":\"\",\"primary_insurance_estimate\":\"\",\"secondary_insurance_estimate\":\"\",\"surface_quadrant_type\":\"\"}]}]\r\n"
+              "body": "[{\"offset\":\"0\",\"limit\":\"2\",\"total_count\":\"534299\",\"items\":[{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/transactions\\/544688\",\"transaction_sr_no\":\"544688\",\"patient_id\":\"3369\",\"patient\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/3369\"},\"guarantor_id\":\"1215\",\"guarantor\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/guarantors\\/1215\"},\"transaction_type\":\"Payment\",\"transaction_date\":\"2016-04-22\",\"transaction_entry_date\":\"2016-04-22\",\"procedure_code\":\"2\",\"procedure_description\":\"Check\",\"provider_id\":\"DR\",\"provider\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/DR\"},\"amount\":\"0.0000\",\"tooth_from\":\"\",\"tooth_to\":\"\",\"estimated_insurance_payment\":\"148\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"},\"invoice_number\":\"\",\"invoice_status\":\"\",\"invoice_item\":\"\",\"quantity\":\"\",\"claim_sr_no\":\"41014\",\"claim\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/claims\\/41014\"},\"pre_authorization_id\":\"\",\"payment_type\":\"Ins\",\"surface\":\"\",\"note\":\"for claim from 12\\/29\\/2015\",\"is_group_transaction\":\"\",\"cheque_no\":\"\",\"clinical_condition_id\":\"\",\"collection_provider_id\":\"\",\"created_by\":\"\",\"last_updated_by\":\"\",\"primary_insurance_estimate\":\"\",\"secondary_insurance_estimate\":\"\",\"surface_quadrant_type\":\"\",\"appointment_sr_no\":\"432354\"},{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/transactions\\/544687\",\"transaction_sr_no\":\"544687\",\"patient_id\":\"4277\",\"patient\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/4277\"},\"guarantor_id\":\"4277\",\"guarantor\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/guarantors\\/4277\"},\"transaction_type\":\"Payment\",\"transaction_date\":\"2016-04-22\",\"transaction_entry_date\":\"2016-04-22\",\"procedure_code\":\"2\",\"procedure_description\":\"Check\",\"provider_id\":\"DR\",\"provider\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/DR\"},\"amount\":\"0.0000\",\"tooth_from\":\"\",\"tooth_to\":\"\",\"estimated_insurance_payment\":\"0\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"},\"invoice_number\":\"\",\"invoice_status\":\"\",\"invoice_item\":\"\",\"quantity\":\"\",\"claim_sr_no\":\"40709\",\"claim\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/claims\\/40709\"},\"pre_authorization_id\":\"\",\"payment_type\":\"Ins\",\"surface\":\"\",\"note\":\"for claim from 11\\/4\\/2015\",\"is_group_transaction\":\"\",\"cheque_no\":\"\",\"clinical_condition_id\":\"\",\"collection_provider_id\":\"\",\"created_by\":\"\",\"last_updated_by\":\"\",\"primary_insurance_estimate\":\"\",\"secondary_insurance_estimate\":\"\",\"surface_quadrant_type\":\"\",\"appointment_sr_no\":\"4325467\"}]}]\r\n"
             }
           ]
         },
@@ -16738,10 +16860,6 @@
               "originalRequest": {
                 "method": "GET",
                 "header": [],
-                "body": {
-                  "mode": "formdata",
-                  "formdata": []
-                },
                 "url": {
                   "raw": "{{url}}/transactions/{transaction_sr_no}?request_key={{request_key}}",
                   "host": [
@@ -16832,7 +16950,7 @@
               ],
               "cookie": [],
               "responseTime": "1869",
-              "body": "{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/transactions\\/544688\",\"transaction_sr_no\":\"544688\",\"patient_id\":\"3369\",\"patient\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/3369\"},\"guarantor_id\":\"1215\",\"guarantor\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/guarantors\\/1215\"},\"transaction_type\":\"Payment\",\"transaction_date\":\"2016-04-22\",\"transaction_entry_date\":\"2016-04-22\",\"procedure_code\":\"2\",\"procedure_description\":\"Check\",\"provider_id\":\"DR\",\"provider\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/DR\"},\"amount\":\"0.0000\",\"tooth_from\":\"\",\"tooth_to\":\"\",\"estimated_insurance_payment\":\"148\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"},\"invoice_number\":\"\",\"invoice_status\":\"\",\"invoice_item\":\"\",\"quantity\":\"\",\"claim_sr_no\":\"41014\",\"claim\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/claims\\/41014\"},\"pre_authorization_id\":\"\",\"payment_type\":\"Ins\",\"surface\":\"\",\"note\":\"for claim from 12\\/29\\/2015\",\"is_group_transaction\":\"\",\"cheque_no\":\"\",\"clinical_condition_id\":\"\",\"collection_provider_id\":\"\",\"created_by\":\"\",\"last_updated_by\":\"\",\"primary_insurance_estimate\":\"\",\"secondary_insurance_estimate\":\"\",\"surface_quadrant_type\":\"\"}\r\n"
+              "body": "{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/transactions\\/544688\",\"transaction_sr_no\":\"544688\",\"patient_id\":\"3369\",\"patient\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/3369\"},\"guarantor_id\":\"1215\",\"guarantor\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/guarantors\\/1215\"},\"transaction_type\":\"Payment\",\"transaction_date\":\"2016-04-22\",\"transaction_entry_date\":\"2016-04-22\",\"procedure_code\":\"2\",\"procedure_description\":\"Check\",\"provider_id\":\"DR\",\"provider\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/DR\"},\"amount\":\"0.0000\",\"tooth_from\":\"\",\"tooth_to\":\"\",\"estimated_insurance_payment\":\"148\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"},\"invoice_number\":\"\",\"invoice_status\":\"\",\"invoice_item\":\"\",\"quantity\":\"\",\"claim_sr_no\":\"41014\",\"claim\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/claims\\/41014\"},\"pre_authorization_id\":\"\",\"payment_type\":\"Ins\",\"surface\":\"\",\"note\":\"for claim from 12\\/29\\/2015\",\"is_group_transaction\":\"\",\"cheque_no\":\"\",\"clinical_condition_id\":\"\",\"collection_provider_id\":\"\",\"created_by\":\"\",\"last_updated_by\":\"\",\"primary_insurance_estimate\":\"\",\"secondary_insurance_estimate\":\"\",\"surface_quadrant_type\":\"\",\"appointment_sr_no\":\"432354\"}\r\n"
             }
           ]
         },
@@ -16870,10 +16988,6 @@
               "originalRequest": {
                 "method": "GET",
                 "header": [],
-                "body": {
-                  "mode": "formdata",
-                  "formdata": []
-                },
                 "url": {
                   "raw": "{{url}}/treatment_plans?request_key={{request_key}}",
                   "host": [
@@ -16963,7 +17077,7 @@
               ],
               "cookie": [],
               "responseTime": "2226",
-              "body": "[{\"offset\":\"0\",\"limit\":\"2\",\"total_count\":\"65957\",\"items\":[{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/treatment_plans\\/999956215\",\"plan_sr_no\":\"999956215\",\"patient_id\":\"3090\",\"patient\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/3090\"},\"guarantor_id\":\"3090\",\"procedure_code\":\"01110\",\"description\":\"CLEANING-(ROUTINE) AGE 12 & OVER\",\"provider_id\":\"LAF\",\"provider\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/LAF\"},\"amount\":\"94.0000\",\"entry_date\":\"2015-12-29\",\"insurance_payment\":\"0\",\"treatment_plan_status\":\"Completed\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"},\"guarantor\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/guarantors\\/3090\"},\"procedure_date\":\"2015-08-26\",\"tooth_from\":\"\",\"tooth_to\":\"\",\"surface\":\"\",\"clinical_condition_id\":\"\",\"collection_provider_id\":\"\",\"created_by\":\"\",\"last_updated_by\":\"\",\"primary_insurance_estimate\":\"\",\"secondary_insurance_estimate\":\"\",\"surface_quadrant_type\":\"\"},{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/treatment_plans\\/999925494\",\"plan_sr_no\":\"999925494\",\"patient_id\":\"3421\",\"patient\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/3421\"},\"guarantor_id\":\"3421\",\"procedure_code\":\"OHI\",\"description\":\"ORAL HYGIENE INSTRUCTIONS\",\"provider_id\":\"DR\",\"provider\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/DR\"},\"amount\":\"0.0000\",\"entry_date\":\"2015-03-17\",\"insurance_payment\":\"0\",\"treatment_plan_status\":\"Completed\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"},\"guarantor\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/guarantors\\/3421\"},\"procedure_date\":\"2015-01-08\",\"tooth_from\":\"\",\"tooth_to\":\"\",\"surface\":\"\",\"clinical_condition_id\":\"\",\"collection_provider_id\":\"\",\"created_by\":\"\",\"last_updated_by\":\"\",\"primary_insurance_estimate\":\"\",\"secondary_insurance_estimate\":\"\",\"surface_quadrant_type\":\"\"}]}]\r\n"
+              "body": "[{\"offset\":\"0\",\"limit\":\"2\",\"total_count\":\"65957\",\"items\":[{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/treatment_plans\\/999956215\",\"plan_sr_no\":\"999956215\",\"patient_id\":\"3090\",\"patient\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/3090\"},\"guarantor_id\":\"3090\",\"procedure_code\":\"01110\",\"description\":\"CLEANING-(ROUTINE) AGE 12 & OVER\",\"provider_id\":\"LAF\",\"provider\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/LAF\"},\"amount\":\"94.0000\",\"entry_date\":\"2015-12-29\",\"insurance_payment\":\"0\",\"treatment_plan_status\":\"Completed\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"},\"guarantor\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/guarantors\\/3090\"},\"procedure_date\":\"2015-08-26\",\"tooth_from\":\"\",\"tooth_to\":\"\",\"surface\":\"\",\"clinical_condition_id\":\"\",\"collection_provider_id\":\"\",\"created_by\":\"\",\"last_updated_by\":\"\",\"primary_insurance_estimate\":\"\",\"secondary_insurance_estimate\":\"\",\"surface_quadrant_type\":\"\",\"appointment_sr_no\":\"4322354\"},{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/treatment_plans\\/999925494\",\"plan_sr_no\":\"999925494\",\"patient_id\":\"3421\",\"patient\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/3421\"},\"guarantor_id\":\"3421\",\"procedure_code\":\"OHI\",\"description\":\"ORAL HYGIENE INSTRUCTIONS\",\"provider_id\":\"DR\",\"provider\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/DR\"},\"amount\":\"0.0000\",\"entry_date\":\"2015-03-17\",\"insurance_payment\":\"0\",\"treatment_plan_status\":\"Completed\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"},\"guarantor\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/guarantors\\/3421\"},\"procedure_date\":\"2015-01-08\",\"tooth_from\":\"\",\"tooth_to\":\"\",\"surface\":\"\",\"clinical_condition_id\":\"\",\"collection_provider_id\":\"\",\"created_by\":\"\",\"last_updated_by\":\"\",\"primary_insurance_estimate\":\"\",\"secondary_insurance_estimate\":\"\",\"surface_quadrant_type\":\"\",\"appointment_sr_no\":\"432354\"}]}]\r\n"
             }
           ]
         },
@@ -17002,10 +17116,6 @@
               "originalRequest": {
                 "method": "GET",
                 "header": [],
-                "body": {
-                  "mode": "formdata",
-                  "formdata": []
-                },
                 "url": {
                   "raw": "{{url}}/treatment_plans/{treatment_plan_sr_no}?request_key={{request_key}}",
                   "host": [
@@ -17096,7 +17206,7 @@
               ],
               "cookie": [],
               "responseTime": "1724",
-              "body": "{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/treatment_plans\\/999956215\",\"plan_sr_no\":\"999956215\",\"patient_id\":\"3090\",\"patient\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/3090\"},\"guarantor_id\":\"3090\",\"procedure_code\":\"01110\",\"description\":\"CLEANING-(ROUTINE) AGE 12 & OVER\",\"provider_id\":\"LAF\",\"provider\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/LAF\"},\"amount\":\"94.0000\",\"entry_date\":\"2015-12-29\",\"insurance_payment\":\"0\",\"treatment_plan_status\":\"Completed\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"},\"guarantor\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/guarantors\\/3090\"},\"procedure_date\":\"2015-08-26\",\"tooth_from\":\"\",\"tooth_to\":\"\",\"surface\":\"\",\"clinical_condition_id\":\"\",\"collection_provider_id\":\"\",\"created_by\":\"\",\"last_updated_by\":\"\",\"primary_insurance_estimate\":\"\",\"secondary_insurance_estimate\":\"\",\"surface_quadrant_type\":\"\"}\r\n"
+              "body": "{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/treatment_plans\\/999956215\",\"plan_sr_no\":\"999956215\",\"patient_id\":\"3090\",\"patient\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/3090\"},\"guarantor_id\":\"3090\",\"procedure_code\":\"01110\",\"description\":\"CLEANING-(ROUTINE) AGE 12 & OVER\",\"provider_id\":\"LAF\",\"provider\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/LAF\"},\"amount\":\"94.0000\",\"entry_date\":\"2015-12-29\",\"insurance_payment\":\"0\",\"treatment_plan_status\":\"Completed\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"},\"guarantor\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/guarantors\\/3090\"},\"procedure_date\":\"2015-08-26\",\"tooth_from\":\"\",\"tooth_to\":\"\",\"surface\":\"\",\"clinical_condition_id\":\"\",\"collection_provider_id\":\"\",\"created_by\":\"\",\"last_updated_by\":\"\",\"primary_insurance_estimate\":\"\",\"secondary_insurance_estimate\":\"\",\"surface_quadrant_type\":\"\",\"appointment_sr_no\":\"432354\"}\r\n"
             }
           ]
         },
