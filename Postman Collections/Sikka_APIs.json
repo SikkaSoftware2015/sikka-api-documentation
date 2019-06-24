@@ -19077,7 +19077,7 @@
           ]
         },
         {
-          "name": "patient_contract_roll_charges Copy",
+          "name": "patient_contract_roll_charges by  patient_id",
           "_postman_id": "a370f716-7c3b-487d-a466-ce211f3e114b",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -19086,12 +19086,13 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{url}}/pet_documents?request_key={{request_key}}",
+              "raw": "{{url}}/pet_documents/{patient_id}?request_key={{request_key}}",
               "host": [
                 "{{url}}"
               ],
               "path": [
-                "pet_documents"
+                "pet_documents",
+                "{patient_id}"
               ],
               "query": [
                 {
