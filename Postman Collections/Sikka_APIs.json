@@ -19289,7 +19289,7 @@
           ]
         },
         {
-          "name": "pet_nutrition Copy",
+          "name": "pet_nutrition by patient_id",
           "_postman_id": "4a4e77c8-2de8-4214-ba4f-758920f59669",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
