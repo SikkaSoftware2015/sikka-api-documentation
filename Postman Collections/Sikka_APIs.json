@@ -19228,7 +19228,7 @@
                 }
               ]
             },
-            "description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|patient_id|Patient ID as per the management system|No|\r\n|guarantor_id|Guarantor ID as per the management system|No|\r\n|code|code|No|\r\n|startdate|startdate for prescription_date, format: yyyy-mm-dd|No|\r\n|enddate|enddate for prescription_date, format: yyyy-mm-dd|No|\r\n|practice_id|Practice ID|No|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|patient_id|Patient ID as per the management system|\r\n|practice_id|Practice ID|"
+            "description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|patient_id|Patient ID as per the management system|No|\r\n|guarantor_id|Guarantor ID as per the management system|No|\r\n|code|code|No|\r\n|startdate|startdate for prescription_date, format: yyyy-mm-dd|No|\r\n|enddate|enddate for prescription_date, format: yyyy-mm-dd|No|\r\n|date_filter_on|Field name on which stardate and enddate filter will be applied, valid values are: prescription_date-default, inserted_on_date|No|\r\n|practice_id|Practice ID|No|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|patient_id|Patient ID as per the management system|\r\n|practice_id|Practice ID|"
           },
           "response": [
             {
@@ -19313,7 +19313,7 @@
                 }
               ]
             },
-            "description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|patient_id|Patient ID as per the management system|No|\r\n|guarantor_id|Guarantor ID as per the management system|No|\r\n|code|code|No|\r\n|startdate|startdate for prescription_date, format: yyyy-mm-dd|No|\r\n|enddate|enddate for prescription_date, format: yyyy-mm-dd|No|\r\n|practice_id|Practice ID|No|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|patient_id|Patient ID as per the management system|\r\n|practice_id|Practice ID|"
+            "description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|patient_id|Patient ID as per the management system|No|\r\n|guarantor_id|Guarantor ID as per the management system|No|\r\n|code|code|No|\r\n|startdate|startdate for prescription_date, format: yyyy-mm-dd|No|\r\n|enddate|enddate for prescription_date, format: yyyy-mm-dd|No|\r\n|date_filter_on|Field name on which stardate and enddate filter will be applied, valid values are: prescription_date-default, inserted_on_date|No|\r\n|practice_id|Practice ID|No|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|patient_id|Patient ID as per the management system|\r\n|practice_id|Practice ID|"
           },
           "response": [
             {
