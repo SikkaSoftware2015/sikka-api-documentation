@@ -19042,12 +19042,12 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{url}}/pet_documents/{patient_id}?request_key={{request_key}}",
+              "raw": "{{url}}/patient_contract_roll_charges/{patient_id}?request_key={{request_key}}",
               "host": [
                 "{{url}}"
               ],
               "path": [
-                "pet_documents",
+                "patient_contract_roll_charges",
                 "{patient_id}"
               ],
               "query": [
