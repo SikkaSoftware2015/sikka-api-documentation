@@ -19,7 +19,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.sikkasoft.com/auth/v2/health_check/D10061?app_id=cf345eef7cb42a39cff6972d57fe6149&app_key=8003044355153fe930ec82ca091e334e",
+              "raw": "https://api.sikkasoft.com/auth/v2/health_check/D10061?app_id=&app_key=",
               "protocol": "https",
               "host": [
                 "api",
@@ -35,17 +35,115 @@
               "query": [
                 {
                   "key": "app_id",
-                  "value": "cf345eef7cb42a39cff6972d57fe6149"
+                  "value": ""
                 },
                 {
                   "key": "app_key",
-                  "value": "8003044355153fe930ec82ca091e334e"
+                  "value": ""
                 }
               ]
             },
             "description": "\u2018health_check\u2019 API provides detailed information about SPC and machine, SPC is installed on. \r\nIt contains error log information , PMS , machine , SPC and data synchronization dates \r\n"
           },
-          "response": []
+          "response": [
+            {
+              "id": "f1f5dbaa-8319-4547-b422-b2941c998b35",
+              "name": "health_check",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://api.sikkasoft.com/auth/v2/health_check/{{office_id}}?app_id={{app_id}}&app_key={{app_key}}",
+                  "protocol": "https",
+                  "host": [
+                    "api",
+                    "sikkasoft",
+                    "com"
+                  ],
+                  "path": [
+                    "auth",
+                    "v2",
+                    "health_check",
+                    "{{office_id}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "app_id",
+                      "value": "{{app_id}}"
+                    },
+                    {
+                      "key": "app_key",
+                      "value": "{{app_key}}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "private"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5"
+                },
+                {
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+                },
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "accept, authorization, Content-Type, X-Session-Id"
+                },
+                {
+                  "key": "X-Api-Server-Version",
+                  "value": "1"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 13 Sep 2019 21:56:43 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "1559"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=16000000; includeSubDomains; preload;"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n                \"office_id\": \"D10061\",\n                \"href\": \"\",\n                \"spc_id\": \"24603\",\n                \"practice_id\": \"1\",\n                \"refresh_time\": \"2018-01-19 13:19:46\",\n                \"teamviwer_id\": \"247298282\",\n                \"teamviwer_version\": \"TeamViewer7\",\n                \"spc_version\": \"4.0.0.0\",\n                \"practice_management_system\": \"Softdent\",\n                \"practice_management_system_version\": \"V14.2\",\n                \"practice_management_system_version_detected\": \"V14.2\",\n                \"practice_management_system_data_path\": \"C:\\\\SoftDent\",\n                \"financial_management_system\": \"\",\n                \"financial_management_system_version\": \"\",\n                \"financial_management_system_version_detected\": \"\",\n                \"financial_management_system_data_path\": \"\",\n                \"spc_schedule_time\": \"2:00 AM\",\n                \"spc_schedule_type\": \"Daily\",\n                \"spc_schedule_interval\": \"1 Days\",\n                \"is_spc_update_locked\": \"True\",\n                \"spc_update_lock_note\": \"Parser is not released yet\",\n                \"last_spc_updated_checked\": \"\",\n                \"is_delta_import_enable\": \"False\",\n                \"etl_start\": \"2018-01-19 12:30:14\",\n                \"etl_end\": \"2018-01-19 12:36:37\",\n                \"web_upload_start\": \"2018-01-19 12:36:37\",\n                \"web_upload_end\": \"2018-01-19 13:19:46\",\n                \"financial_etl_start\": \"2018-01-19 12:36:37\",\n                \"financial_etl_end\": \"2018-01-19 12:36:37\",\n                \"etl_error_log\": \"\",\n                \"etl_error_priority\": \"\",\n                \"etl_error_description\": \"\",\n                \"etl_cpu_utilization\": \"93.8437235278393\",\n                \"etl_memory_utilization\": \"351834112\",\n                \"financial_error_priority\": \"\",\n                \"financial_error_description\": \"\",\n                \"financial_etl_cpu_utilization\": \"\",\n                \"financial_etl_memory_utilization\": \"\",\n                \"local_insert_error_log\": \"\",\n                \"local_insert_error_priority\": \"\",\n                \"local_insert_cpu_utilization\": \"0\",\n                \"local_insert_memory_utilization\": \"0\",\n                \"local_upload_error_description\": \"\",\n                \"web_upload_error_flag\": \"\",\n                \"web_upload_error_priority\": \"High\",\n                \"web_upload_bandwidth_utilization\": \"14311314\",\n                \"web_upload_error_description\": \"Error: The remote name could not be resolved\",\n                \"upload_to_server\": \"2018-01-19 18:20:35\",\n                \"upload_to_client\": \"2018-01-19 13:19:53\",\n                \"domain\": \"Dental\",\n                \"spc_error_flag\": \"\",\n                \"spc_error_priority\": \"\",\n                \"spc_error_description\": \"\",\n                \"timezone\": \"Eastern Standard Time\",\n                \"etl_version\": \"3.0.2.0\",\n                \"isinactive\": \"True\"\n            }"
+            }
+          ]
         }
       ],
       "_postman_id": "593510e3-c832-4c6b-90e6-3976dbc7e413"
