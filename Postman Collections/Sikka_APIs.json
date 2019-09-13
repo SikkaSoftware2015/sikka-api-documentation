@@ -19,7 +19,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://api.sikkasoft.com/auth/v2/health_check/D10061?app_id=&app_key=",
+              "raw": "https://api.sikkasoft.com/auth/v2/health_check/{{office_id}}?app_id={{app_id}}&app_key={{app_key}}",
               "protocol": "https",
               "host": [
                 "api",
@@ -30,16 +30,16 @@
                 "auth",
                 "v2",
                 "health_check",
-                "D10061"
+                "{{office_id}}"
               ],
               "query": [
                 {
                   "key": "app_id",
-                  "value": ""
+                  "value": "{{app_id}}"
                 },
                 {
                   "key": "app_key",
-                  "value": ""
+                  "value": "{{app_key}}"
                 }
               ]
             },
