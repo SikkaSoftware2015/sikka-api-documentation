@@ -8,7 +8,46 @@
   "item": [
     {
       "name": "SPC support APIs",
-      "item": [],
+      "item": [
+        {
+          "name": "health_check",
+          "_postman_id": "dc91bb6b-a6ba-4b2a-b31d-338347c18aa1",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://api.sikkasoft.com/auth/v2/health_check/D10061?app_id=cf345eef7cb42a39cff6972d57fe6149&app_key=8003044355153fe930ec82ca091e334e",
+              "protocol": "https",
+              "host": [
+                "api",
+                "sikkasoft",
+                "com"
+              ],
+              "path": [
+                "auth",
+                "v2",
+                "health_check",
+                "D10061"
+              ],
+              "query": [
+                {
+                  "key": "app_id",
+                  "value": "cf345eef7cb42a39cff6972d57fe6149"
+                },
+                {
+                  "key": "app_key",
+                  "value": "8003044355153fe930ec82ca091e334e"
+                }
+              ]
+            },
+            "description": "\u2018health_check\u2019 API provides detailed information about SPC and machine, SPC is installed on. \r\nIt contains error log information , PMS , machine , SPC and data synchronization dates \r\n"
+          },
+          "response": []
+        }
+      ],
       "_postman_id": "593510e3-c832-4c6b-90e6-3976dbc7e413"
     },
     {
