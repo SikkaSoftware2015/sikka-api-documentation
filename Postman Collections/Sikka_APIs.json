@@ -7,6 +7,11 @@
   },
   "item": [
     {
+      "name": "SPC support APIs",
+      "item": [],
+      "_postman_id": "593510e3-c832-4c6b-90e6-3976dbc7e413"
+    },
+    {
       "name": "Authentication API",
       "item": [
         {
@@ -26832,11 +26837,6 @@
         }
       ],
       "_postman_id": "254ec02f-07c4-4322-89cc-8d3afdf3865e"
-    },
-    {
-      "name": "SPC support APIs",
-      "item": [],
-      "_postman_id": "593510e3-c832-4c6b-90e6-3976dbc7e413"
     },
     {
       "name": "start",
