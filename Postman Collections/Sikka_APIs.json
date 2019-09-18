@@ -2124,7 +2124,29 @@
         }
       ],
       "_postman_id": "ef222857-1c8a-67ad-5c2c-9582a7fca19e",
-      "description": "Sikka authentication API contains all API related with Sikka authentication. Like account log in ,singup , update and delete.\nAlso about request key information , application details , authentication etc."
+      "description": "Sikka authentication API contains all API related with Sikka authentication. Like account log in ,sign up , update and delete.\nAlso about request key information , application details , authentication etc.",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "7906aeb0-00f4-41a4-8358-e0f196165510",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "c103b5b1-f525-4d29-b77a-8d2b97679d2d",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
     },
     {
       "name": "Finance",
