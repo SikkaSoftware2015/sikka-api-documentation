@@ -1306,7 +1306,7 @@
           ]
         },
         {
-          "name": "detail activity about perticular request_key",
+          "name": "detail activity about particular request_key",
           "_postman_id": "cdb636a5-0ed4-3ca1-fca8-0bff6d174f39",
           "request": {
             "method": "GET",
