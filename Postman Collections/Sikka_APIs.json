@@ -1311,10 +1311,6 @@
           "request": {
             "method": "GET",
             "header": [],
-            "body": {
-              "mode": "formdata",
-              "formdata": []
-            },
             "url": {
               "raw": "{{authurl}}/request_keys_details/{{request_key}}?app_id={{app_id}}&app_key={{app_key}}",
               "host": [
