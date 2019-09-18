@@ -195,7 +195,7 @@
                 }
               ]
             },
-            "description": "This endpoint will return the application details. Including developers assign to this applications , allowed APIs list and other information.\n\n|Parameter|Description|Required|\n|---|---|---|\n|app_id|This is the ID assigned to the application when the application is registered on API portal|Yes|\n|app_key|This is the unique key generated when the application is registered on API portal|Yes|"
+            "description": "This endpoint will return the application details. Including developers assigned to these applications, allowed APIs list and other information.\n\n|Parameter|Description|Required|\n|---|---|---|\n|app_id|This is the ID assigned to the application when the application is registered on API portal|Yes|\n|app_key|This is the unique key generated when the application is registered on API portal|Yes|"
           },
           "response": [
             {
