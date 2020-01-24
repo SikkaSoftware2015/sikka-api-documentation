@@ -17359,6 +17359,134 @@
           ]
         },
         {
+          "name": "treatment_plans by treatment_plan_sr_no Copy",
+          "_postman_id": "e312a877-03bd-49b8-9f08-7a46ef63b794",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/treatment_plans/{treatment_plan_sr_no}?request_key={{request_key}}",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "treatment_plans",
+                "{treatment_plan_sr_no}"
+              ],
+              "query": [
+                {
+                  "key": "request_key",
+                  "value": "{{request_key}}"
+                }
+              ]
+            },
+            "description": "Get the information about treatment plan as per plan serial number. Like patient id , guarantor id,provider id,amount , entry date , procedure date etc.\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|guarantor_id|Guarantor id as per practice management systems|No|\n|provider_id|Provider id as per practice management system|No|\n|patient_id|Patient ID as per the management system|No|\n|practice_id|Practice ID|No|\n|procedure_code|Procedure code as per practice management system|No|\n|treatment_plan_status|Filter by Treatment plan status |No|\n|startdate|format: yyyy-mm-dd, start date|No|\n|enddate|format: yyyy-mm-dd, end date|No|\n|date_filter_on|Field name on which stardate and enddate filter will be applied, valid values are: procedure_date-default, entry_date, last_updated_by|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|treatment_plan_sr_no|Treatment plan serial number from Practice management System|\n|amount|Amount|\n|procedure_date|Procedure Date|\n|entry_date|Entry Date|"
+          },
+          "response": [
+            {
+              "id": "7feadf92-a285-463f-a7b5-aca72a6e85b9",
+              "name": "request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{url}}/treatment_plans/{treatment_plan_sr_no}?request_key={{request_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "treatment_plans",
+                    "{treatment_plan_sr_no}"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "{{request_key}}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "Access-Control-Allow-Headers",
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "accept, authorization, Content-Type, X-Session-Id",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Methods",
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Origin",
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "description": ""
+                },
+                {
+                  "name": "Cache-Control",
+                  "key": "Cache-Control",
+                  "value": "private",
+                  "description": ""
+                },
+                {
+                  "name": "Connection",
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Length",
+                  "key": "Content-Length",
+                  "value": "950",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Type",
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": ""
+                },
+                {
+                  "name": "Date",
+                  "key": "Date",
+                  "value": "Thu, 27 Apr 2017 09:08:08 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "Server",
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5",
+                  "description": ""
+                },
+                {
+                  "name": "X-AspNet-Version",
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "description": ""
+                },
+                {
+                  "name": "X-Powered-By",
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/treatment_plans\\/999956215\",\"plan_sr_no\":\"999956215\",\"patient_id\":\"3090\",\"patient\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/3090\"},\"guarantor_id\":\"3090\",\"procedure_code\":\"01110\",\"description\":\"CLEANING-(ROUTINE) AGE 12 & OVER\",\"provider_id\":\"LAF\",\"provider\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/LAF\"},\"amount\":\"94.0000\",\"entry_date\":\"2015-12-29\",\"insurance_payment\":\"0\",\"treatment_plan_status\":\"Completed\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"},\"guarantor\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/guarantors\\/3090\"},\"procedure_date\":\"2015-08-26\",\"tooth_from\":\"\",\"tooth_to\":\"\",\"surface\":\"\",\"clinical_condition_id\":\"\",\"collection_provider_id\":\"\",\"created_by\":\"\",\"last_updated_by\":\"\",\"primary_insurance_estimate\":\"\",\"secondary_insurance_estimate\":\"\",\"surface_quadrant_type\":\"\",\"appointment_sr_no\":\"432354\"}\r\n"
+            }
+          ]
+        },
+        {
           "name": "treatment_plan_statuses",
           "_postman_id": "88559fc7-0c31-5bd5-dcaa-426f1a5030f4",
           "request": {
