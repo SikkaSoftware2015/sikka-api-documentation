@@ -17104,132 +17104,6 @@
           ]
         },
         {
-          "name": "treatment_plans Copy",
-          "_postman_id": "d671c9f3-e9e8-48a7-974e-d127d595df02",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "{{url}}/treatment_plans?request_key={{request_key}}",
-              "host": [
-                "{{url}}"
-              ],
-              "path": [
-                "treatment_plans"
-              ],
-              "query": [
-                {
-                  "key": "request_key",
-                  "value": "{{request_key}}"
-                }
-              ]
-            },
-            "description": "Get the full collection of all the treatment plans scheduled in practice management system\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|guarantor_id|Guarantor id as per practice management systems|No|\n|provider_id|Provider id as per practice management system|No|\n|patient_id|Patient ID as per the management system|No|\n|practice_id|Practice ID|No|\n|procedure_code|Procedure code as per practice management system|No|\n|treatment_plan_status|Filter by Treatment plan status |No|\n|startdate|format: yyyy-mm-dd, start date|No|\n|enddate|format: yyyy-mm-dd, end date|No|\n|date_filter_on|Field name on which stardate and enddate filter will be applied, valid values are: procedure_date-default, entry_date, last_updated_by|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|treatment_plan_sr_no|Treatment plan serial number from Practice management System|\n|amount|Amount|\n|procedure_date|Procedure Date|\n|entry_date|Entry Date|"
-          },
-          "response": [
-            {
-              "id": "712b3a3a-7d19-49cc-80e6-9a297b0f686d",
-              "name": "request",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "url": {
-                  "raw": "{{url}}/treatment_plans?request_key={{request_key}}",
-                  "host": [
-                    "{{url}}"
-                  ],
-                  "path": [
-                    "treatment_plans"
-                  ],
-                  "query": [
-                    {
-                      "key": "request_key",
-                      "value": "{{request_key}}"
-                    }
-                  ]
-                }
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "name": "Access-Control-Allow-Headers",
-                  "key": "Access-Control-Allow-Headers",
-                  "value": "accept, authorization, Content-Type, X-Session-Id",
-                  "description": ""
-                },
-                {
-                  "name": "Access-Control-Allow-Methods",
-                  "key": "Access-Control-Allow-Methods",
-                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
-                  "description": ""
-                },
-                {
-                  "name": "Access-Control-Allow-Origin",
-                  "key": "Access-Control-Allow-Origin",
-                  "value": "*",
-                  "description": ""
-                },
-                {
-                  "name": "Cache-Control",
-                  "key": "Cache-Control",
-                  "value": "private",
-                  "description": ""
-                },
-                {
-                  "name": "Connection",
-                  "key": "Connection",
-                  "value": "keep-alive",
-                  "description": ""
-                },
-                {
-                  "name": "Content-Length",
-                  "key": "Content-Length",
-                  "value": "1948",
-                  "description": ""
-                },
-                {
-                  "name": "Content-Type",
-                  "key": "Content-Type",
-                  "value": "application/json",
-                  "description": ""
-                },
-                {
-                  "name": "Date",
-                  "key": "Date",
-                  "value": "Thu, 27 Apr 2017 09:03:03 GMT",
-                  "description": ""
-                },
-                {
-                  "name": "Server",
-                  "key": "Server",
-                  "value": "Microsoft-IIS/8.5",
-                  "description": ""
-                },
-                {
-                  "name": "X-AspNet-Version",
-                  "key": "X-AspNet-Version",
-                  "value": "4.0.30319",
-                  "description": ""
-                },
-                {
-                  "name": "X-Powered-By",
-                  "key": "X-Powered-By",
-                  "value": "ASP.NET",
-                  "description": ""
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "[{\"offset\":\"0\",\"limit\":\"2\",\"total_count\":\"65957\",\"items\":[{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/treatment_plans\\/999956215\",\"plan_sr_no\":\"999956215\",\"patient_id\":\"3090\",\"patient\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/3090\"},\"guarantor_id\":\"3090\",\"procedure_code\":\"01110\",\"description\":\"CLEANING-(ROUTINE) AGE 12 & OVER\",\"provider_id\":\"LAF\",\"provider\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/LAF\"},\"amount\":\"94.0000\",\"entry_date\":\"2015-12-29\",\"insurance_payment\":\"0\",\"treatment_plan_status\":\"Completed\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"},\"guarantor\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/guarantors\\/3090\"},\"procedure_date\":\"2015-08-26\",\"tooth_from\":\"\",\"tooth_to\":\"\",\"surface\":\"\",\"clinical_condition_id\":\"\",\"collection_provider_id\":\"\",\"created_by\":\"\",\"last_updated_by\":\"\",\"primary_insurance_estimate\":\"\",\"secondary_insurance_estimate\":\"\",\"surface_quadrant_type\":\"\",\"appointment_sr_no\":\"4322354\"},{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/treatment_plans\\/999925494\",\"plan_sr_no\":\"999925494\",\"patient_id\":\"3421\",\"patient\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/3421\"},\"guarantor_id\":\"3421\",\"procedure_code\":\"OHI\",\"description\":\"ORAL HYGIENE INSTRUCTIONS\",\"provider_id\":\"DR\",\"provider\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/DR\"},\"amount\":\"0.0000\",\"entry_date\":\"2015-03-17\",\"insurance_payment\":\"0\",\"treatment_plan_status\":\"Completed\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"},\"guarantor\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/guarantors\\/3421\"},\"procedure_date\":\"2015-01-08\",\"tooth_from\":\"\",\"tooth_to\":\"\",\"surface\":\"\",\"clinical_condition_id\":\"\",\"collection_provider_id\":\"\",\"created_by\":\"\",\"last_updated_by\":\"\",\"primary_insurance_estimate\":\"\",\"secondary_insurance_estimate\":\"\",\"surface_quadrant_type\":\"\",\"appointment_sr_no\":\"432354\"}]}]\r\n"
-            }
-          ]
-        },
-        {
           "name": "treatment_plans by treatment_plan_sr_no",
           "_postman_id": "a800f068-508c-cea0-54df-6093aed3951b",
           "request": {
@@ -17355,6 +17229,132 @@
               "cookie": [],
               "responseTime": "1724",
               "body": "{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/treatment_plans\\/999956215\",\"plan_sr_no\":\"999956215\",\"patient_id\":\"3090\",\"patient\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/3090\"},\"guarantor_id\":\"3090\",\"procedure_code\":\"01110\",\"description\":\"CLEANING-(ROUTINE) AGE 12 & OVER\",\"provider_id\":\"LAF\",\"provider\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/LAF\"},\"amount\":\"94.0000\",\"entry_date\":\"2015-12-29\",\"insurance_payment\":\"0\",\"treatment_plan_status\":\"Completed\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"},\"guarantor\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/guarantors\\/3090\"},\"procedure_date\":\"2015-08-26\",\"tooth_from\":\"\",\"tooth_to\":\"\",\"surface\":\"\",\"clinical_condition_id\":\"\",\"collection_provider_id\":\"\",\"created_by\":\"\",\"last_updated_by\":\"\",\"primary_insurance_estimate\":\"\",\"secondary_insurance_estimate\":\"\",\"surface_quadrant_type\":\"\",\"appointment_sr_no\":\"432354\"}\r\n"
+            }
+          ]
+        },
+        {
+          "name": "treatment_plan_phases",
+          "_postman_id": "d671c9f3-e9e8-48a7-974e-d127d595df02",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/treatment_plan_phases?request_key={{request_key}}",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "treatment_plan_phases"
+              ],
+              "query": [
+                {
+                  "key": "request_key",
+                  "value": "{{request_key}}"
+                }
+              ]
+            },
+            "description": "Get the full collection of all the treatment plans with phases scheduled in practice management system\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|guarantor_id|Guarantor id as per practice management systems|No|\n|provider_id|Provider id as per practice management system|No|\n|patient_id|Patient ID as per the management system|No|\n|practice_id|Practice ID|No|\n|procedure_code|Procedure code as per practice management system|No|\n|treatment_plan_status|Filter by Treatment plan status |No|\n|startdate|format: yyyy-mm-dd, start date|No|\n|enddate|format: yyyy-mm-dd, end date|No|\n|date_filter_on|Field name on which stardate and enddate filter will be applied, valid values are: procedure_date-default, entry_date, last_updated_by|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|treatment_plan_sr_no|Treatment plan serial number from Practice management System|\n|amount|Amount|\n|procedure_date|Procedure Date|\n|entry_date|Entry Date|"
+          },
+          "response": [
+            {
+              "id": "712b3a3a-7d19-49cc-80e6-9a297b0f686d",
+              "name": "request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{url}}/treatment_plan_phases?request_key={{request_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "treatment_plan_phases"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "{{request_key}}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "Access-Control-Allow-Headers",
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "accept, authorization, Content-Type, X-Session-Id",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Methods",
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Origin",
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "description": ""
+                },
+                {
+                  "name": "Cache-Control",
+                  "key": "Cache-Control",
+                  "value": "private",
+                  "description": ""
+                },
+                {
+                  "name": "Connection",
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Length",
+                  "key": "Content-Length",
+                  "value": "1948",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Type",
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": ""
+                },
+                {
+                  "name": "Date",
+                  "key": "Date",
+                  "value": "Thu, 27 Apr 2017 09:03:03 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "Server",
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5",
+                  "description": ""
+                },
+                {
+                  "name": "X-AspNet-Version",
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "description": ""
+                },
+                {
+                  "name": "X-Powered-By",
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\r\n{\r\n\"offset\": \"0\",\r\n\"limit\": \"2\",\r\n\"total_count\": \"8765\",\r\n\"execution_time\": \"2553\",\r\n\"pagination\": {\r\n\"first\": \"https://api.sikkasoft.com/v2/treatment_plan_phases?offset=0&limit=2\",\r\n\"previous\": \"\",\r\n\"current\": \"https://api.sikkasoft.com/v2/treatment_plan_phases?offset=0&limit=2\",\r\n\"next\": \"https://api.sikkasoft.com/v2/treatment_plan_phases?offset=1&limit=2\",\r\n\"last\": \"https://api.sikkasoft.com/v2/treatment_plan_phases?offset=4382&limit=2\"\r\n},\r\n\"items\": [\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v2/practices/1/treatment_plan_phases/999985390\",\r\n\"plan_sr_no\": \"999985390\",\r\n\"patient_id\": \"21785\",\r\n\"patient\": {\r\n\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/21785\"\r\n},\r\n\"guarantor_id\": \"21785\",\r\n\"procedure_code\": \"D2393\",\r\n\"description\": \"COMPOSITE REST. 3 SURF POST\",\r\n\"provider_id\": \"1\",\r\n\"provider\": {\r\n\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/1\"\r\n},\r\n\"amount\": \"325.0000\",\r\n\"entry_date\": \"2012-04-30\",\r\n\"insurance_payment\": \"0\",\r\n\"treatment_plan_status\": \"Presented\",\r\n\"practice_id\": \"1\",\r\n\"practice\": {\r\n\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n},\r\n\"guarantor\": {\r\n\"href\": \"https://api.sikkasoft.com/v2/practices/1/guarantors/21785\"\r\n},\r\n\"procedure_date\": \"2012-04-30\",\r\n\"tooth_from\": \"4\",\r\n\"tooth_to\": \"4\",\r\n\"surface\": \"MOD\",\r\n\"clinical_condition_id\": \"\",\r\n\"collection_provider_id\": \"\",\r\n\"created_by\": \"\",\r\n\"last_updated_by\": \"\",\r\n\"primary_insurance_estimate\": \"0.0000\",\r\n\"secondary_insurance_estimate\": \"0.0000\",\r\n\"surface_quadrant_type\": \"\",\r\n\"appointment_sr_no\": \"\",\r\n\"phase\": \"\",\r\n\"treatment_plan_id\": \"\",\r\n\"plan_name\": \"\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v2/practices/1/treatment_plan_phases/999933351\",\r\n\"plan_sr_no\": \"999933351\",\r\n\"patient_id\": \"21496\",\r\n\"patient\": {\r\n\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/21496\"\r\n},\r\n\"guarantor_id\": \"21496\",\r\n\"procedure_code\": \"D2393\",\r\n\"description\": \"COMPOSITE REST. 3 SURF POST\",\r\n\"provider_id\": \"1\",\r\n\"provider\": {\r\n\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/1\"\r\n},\r\n\"amount\": \"325.0000\",\r\n\"entry_date\": \"2011-07-07\",\r\n\"insurance_payment\": \"0\",\r\n\"treatment_plan_status\": \"Presented\",\r\n\"practice_id\": \"1\",\r\n\"practice\": {\r\n\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n},\r\n\"guarantor\": {\r\n\"href\": \"https://api.sikkasoft.com/v2/practices/1/guarantors/21496\"\r\n},\r\n\"procedure_date\": \"2011-07-07\",\r\n\"tooth_from\": \"13\",\r\n\"tooth_to\": \"13\",\r\n\"surface\": \"MOD\",\r\n\"clinical_condition_id\": \"\",\r\n\"collection_provider_id\": \"\",\r\n\"created_by\": \"\",\r\n\"last_updated_by\": \"\",\r\n\"primary_insurance_estimate\": \"0.0000\",\r\n\"secondary_insurance_estimate\": \"0.0000\",\r\n\"surface_quadrant_type\": \"\",\r\n\"appointment_sr_no\": \"\",\r\n\"phase\": \"\",\r\n\"treatment_plan_id\": \"\",\r\n\"plan_name\": \"\"\r\n}\r\n]\r\n}\r\n]"
             }
           ]
         },
