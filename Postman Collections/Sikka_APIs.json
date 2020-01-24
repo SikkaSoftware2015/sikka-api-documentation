@@ -16972,7 +16972,7 @@
               ],
               "cookie": [],
               "responseTime": "1869",
-              "body": "{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/transactions\\/544688\",\"transaction_sr_no\":\"544688\",\"patient_id\":\"3369\",\"patient\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/3369\"},\"guarantor_id\":\"1215\",\"guarantor\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/guarantors\\/1215\"},\"transaction_type\":\"Payment\",\"transaction_date\":\"2016-04-22\",\"transaction_entry_date\":\"2016-04-22\",\"procedure_code\":\"2\",\"procedure_description\":\"Check\",\"provider_id\":\"DR\",\"provider\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/DR\"},\"amount\":\"0.0000\",\"tooth_from\":\"\",\"tooth_to\":\"\",\"estimated_insurance_payment\":\"148\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"},\"invoice_number\":\"\",\"invoice_status\":\"\",\"invoice_item\":\"\",\"quantity\":\"\",\"claim_sr_no\":\"41014\",\"claim\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/claims\\/41014\"},\"pre_authorization_id\":\"\",\"payment_type\":\"Ins\",\"surface\":\"\",\"note\":\"for claim from 12\\/29\\/2015\",\"is_group_transaction\":\"\",\"cheque_no\":\"\",\"clinical_condition_id\":\"\",\"collection_provider_id\":\"\",\"created_by\":\"\",\"last_updated_by\":\"\",\"primary_insurance_estimate\":\"\",\"secondary_insurance_estimate\":\"\",\"surface_quadrant_type\":\"\",\"appointment_sr_no\":\"432354\"}\r\n"
+              "body": "{\n    \"href\": \"https://api.sikkasoft.com/v2/practices/1/transactions/544688\",\n    \"transaction_sr_no\": \"544688\",\n    \"patient_id\": \"3369\",\n    \"patient\": {\n        \"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/3369\"\n    },\n    \"guarantor_id\": \"1215\",\n    \"guarantor\": {\n        \"href\": \"https://api.sikkasoft.com/v2/practices/1/guarantors/1215\"\n    },\n    \"transaction_type\": \"Payment\",\n    \"transaction_date\": \"2016-04-22\",\n    \"transaction_entry_date\": \"2016-04-22\",\n    \"procedure_code\": \"2\",\n    \"procedure_description\": \"Check\",\n    \"provider_id\": \"DR\",\n    \"provider\": {\n        \"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/DR\"\n    },\n    \"amount\": \"0.0000\",\n    \"tooth_from\": \"\",\n    \"tooth_to\": \"\",\n    \"estimated_insurance_payment\": \"148\",\n    \"practice_id\": \"1\",\n    \"practice\": {\n        \"href\": \"https://api.sikkasoft.com/v2/practices/1\"\n    },\n    \"invoice_number\": \"\",\n    \"invoice_status\": \"\",\n    \"invoice_item\": \"\",\n    \"quantity\": \"\",\n    \"claim_sr_no\": \"41014\",\n    \"claim\": {\n        \"href\": \"https://api.sikkasoft.com/v2/practices/1/claims/41014\"\n    },\n    \"pre_authorization_id\": \"\",\n    \"payment_type\": \"Ins\",\n    \"surface\": \"\",\n    \"note\": \"for claim from 12/29/2015\",\n    \"is_group_transaction\": \"\",\n    \"cheque_no\": \"\",\n    \"clinical_condition_id\": \"\",\n    \"collection_provider_id\": \"\",\n    \"created_by\": \"\",\n    \"last_updated_by\": \"\",\n    \"primary_insurance_estimate\": \"\",\n    \"secondary_insurance_estimate\": \"\",\n    \"surface_quadrant_type\": \"\",\n    \"appointment_sr_no\": \"432354\",\n    \"due_amount\": \"321\"\n}"
             }
           ]
         },
@@ -19487,6 +19487,132 @@
               "cookie": [],
               "responseTime": null,
               "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"2\",\r\n\t\"total_count\": \"10\",\r\n\t\"execution_time\": \"292\",\r\n\t\"pagination\": {\r\n\t\t\"first\": \"https://api.sikkasoft.com/v2/pet_nutrition?offset=0&limit=2\",\r\n\t\t\"previous\": \"\",\r\n\t\t\"current\": \"https://api.sikkasoft.com/v2/pet_nutrition?offset=0&limit=2\",\r\n\t\t\"next\": \"https://api.sikkasoft.com/v2/pet_nutrition?offset=1&limit=2\",\r\n\t\t\"last\": \"https://api.sikkasoft.com/v2/pet_nutrition?offset=4&limit=2\"\r\n\t},\r\n\t\"items\": [{\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/pet_nutrition/0000\",\r\n\t\t\t\"patient_id\": \"0000\",\r\n\t\t\t\"patient\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/0000\"\r\n\t\t\t},\r\n\t\t\t\"petname\": \"MyPet\",\r\n\t\t\t\"breed\": \"Wolfhound Irish\",\r\n\t\t\t\"species\": \"Dog\",\r\n\t\t\t\"guarantor_id\": \"11111\",\r\n\t\t\t\"guarantor\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/11111\"\r\n\t\t\t},\r\n\t\t\t\"guarantor_last_name\": \"Pandya\",\r\n\t\t\t\"guarantor_first_name\": \"Satyen\",\r\n\t\t\t\"cell\": \"123-456-7890\",\r\n\t\t\t\"street\": \"Which St. No One Knows\",\r\n\t\t\t\"city\": \"Dummy\",\r\n\t\t\t\"state\": \"NV\",\r\n\t\t\t\"zipcode\": \"12345\",\r\n\t\t\t\"prescription_date\": \"2019-06-04\",\r\n\t\t\t\"code\": \"4706\",\r\n\t\t\t\"description\": \"Sentinel FlavTab Green 11-25 lbs Hills\",\r\n\t\t\t\"quantity\": \"1\",\r\n\t\t\t\"provider_id\": \"ABCD\",\r\n\t\t\t\"provider\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/ABCD\"\r\n\t\t\t},\r\n\t\t\t\"provider_title\": \"\",\r\n\t\t\t\"provider_lastname\": \"LastProvider\",\r\n\t\t\t\"provider_firstname\": \"FirstProvider\",\r\n\t\t\t\"measure\": \"Tablet\",\r\n\t\t\t\"inserted_on_date\": \"2019-06-12\",\r\n\t\t\t\"practice_id\": \"1\",\r\n\t\t\t\"practice\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t\t}\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/pet_nutrition/0000\",\r\n\t\t\t\"patient_id\": \"0000\",\r\n\t\t\t\"patient\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/0000\"\r\n\t\t\t},\r\n\t\t\t\"petname\": \"MyPet\",\r\n\t\t\t\"breed\": \"Wolfhound Irish\",\r\n\t\t\t\"species\": \"Dog\",\r\n\t\t\t\"guarantor_id\": \"11111\",\r\n\t\t\t\"guarantor\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/11111\"\r\n\t\t\t},\r\n\t\t\t\"guarantor_last_name\": \"Pandya\",\r\n\t\t\t\"guarantor_first_name\": \"Satyen\",\r\n\t\t\t\"cell\": \"123-456-7890\",\r\n\t\t\t\"street\": \"Which St. No One Knows\",\r\n\t\t\t\"city\": \"Dummy\",\r\n\t\t\t\"state\": \"NV\",\r\n\t\t\t\"zipcode\": \"12345\",\r\n\t\t\t\"prescription_date\": \"2019-06-06\",\r\n\t\t\t\"code\": \"4703\",\r\n\t\t\t\"description\": \"Sentinel White-51-100 lbs Hills\",\r\n\t\t\t\"quantity\": \"1\",\r\n\t\t\t\"provider_id\": \"ABCD\",\r\n\t\t\t\"provider\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/ABCD\"\r\n\t\t\t},\r\n\t\t\t\"provider_title\": \"\",\r\n\t\t\t\"provider_lastname\": \"LastProvider\",\r\n\t\t\t\"provider_firstname\": \"FirstProvider\",\r\n\t\t\t\"measure\": \"Tablet\",\r\n\t\t\t\"inserted_on_date\": \"2019-06-12\",\r\n\t\t\t\"practice_id\": \"1\",\r\n\t\t\t\"practice\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t\t}\r\n\t\t}\r\n\t]\r\n}]"
+            }
+          ]
+        },
+        {
+          "name": "treatment_plans Copy",
+          "_postman_id": "d671c9f3-e9e8-48a7-974e-d127d595df02",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/treatment_plans?request_key={{request_key}}",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "treatment_plans"
+              ],
+              "query": [
+                {
+                  "key": "request_key",
+                  "value": "{{request_key}}"
+                }
+              ]
+            },
+            "description": "Get the full collection of all the treatment plans scheduled in practice management system\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|guarantor_id|Guarantor id as per practice management systems|No|\n|provider_id|Provider id as per practice management system|No|\n|patient_id|Patient ID as per the management system|No|\n|practice_id|Practice ID|No|\n|procedure_code|Procedure code as per practice management system|No|\n|treatment_plan_status|Filter by Treatment plan status |No|\n|startdate|format: yyyy-mm-dd, start date|No|\n|enddate|format: yyyy-mm-dd, end date|No|\n|date_filter_on|Field name on which stardate and enddate filter will be applied, valid values are: procedure_date-default, entry_date, last_updated_by|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|treatment_plan_sr_no|Treatment plan serial number from Practice management System|\n|amount|Amount|\n|procedure_date|Procedure Date|\n|entry_date|Entry Date|"
+          },
+          "response": [
+            {
+              "id": "712b3a3a-7d19-49cc-80e6-9a297b0f686d",
+              "name": "request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{url}}/treatment_plans?request_key={{request_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "treatment_plans"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "{{request_key}}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "Access-Control-Allow-Headers",
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "accept, authorization, Content-Type, X-Session-Id",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Methods",
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Origin",
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "description": ""
+                },
+                {
+                  "name": "Cache-Control",
+                  "key": "Cache-Control",
+                  "value": "private",
+                  "description": ""
+                },
+                {
+                  "name": "Connection",
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Length",
+                  "key": "Content-Length",
+                  "value": "1948",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Type",
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": ""
+                },
+                {
+                  "name": "Date",
+                  "key": "Date",
+                  "value": "Thu, 27 Apr 2017 09:03:03 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "Server",
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5",
+                  "description": ""
+                },
+                {
+                  "name": "X-AspNet-Version",
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "description": ""
+                },
+                {
+                  "name": "X-Powered-By",
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[{\"offset\":\"0\",\"limit\":\"2\",\"total_count\":\"65957\",\"items\":[{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/treatment_plans\\/999956215\",\"plan_sr_no\":\"999956215\",\"patient_id\":\"3090\",\"patient\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/3090\"},\"guarantor_id\":\"3090\",\"procedure_code\":\"01110\",\"description\":\"CLEANING-(ROUTINE) AGE 12 & OVER\",\"provider_id\":\"LAF\",\"provider\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/LAF\"},\"amount\":\"94.0000\",\"entry_date\":\"2015-12-29\",\"insurance_payment\":\"0\",\"treatment_plan_status\":\"Completed\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"},\"guarantor\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/guarantors\\/3090\"},\"procedure_date\":\"2015-08-26\",\"tooth_from\":\"\",\"tooth_to\":\"\",\"surface\":\"\",\"clinical_condition_id\":\"\",\"collection_provider_id\":\"\",\"created_by\":\"\",\"last_updated_by\":\"\",\"primary_insurance_estimate\":\"\",\"secondary_insurance_estimate\":\"\",\"surface_quadrant_type\":\"\",\"appointment_sr_no\":\"4322354\"},{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/treatment_plans\\/999925494\",\"plan_sr_no\":\"999925494\",\"patient_id\":\"3421\",\"patient\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/3421\"},\"guarantor_id\":\"3421\",\"procedure_code\":\"OHI\",\"description\":\"ORAL HYGIENE INSTRUCTIONS\",\"provider_id\":\"DR\",\"provider\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/DR\"},\"amount\":\"0.0000\",\"entry_date\":\"2015-03-17\",\"insurance_payment\":\"0\",\"treatment_plan_status\":\"Completed\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"},\"guarantor\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/guarantors\\/3421\"},\"procedure_date\":\"2015-01-08\",\"tooth_from\":\"\",\"tooth_to\":\"\",\"surface\":\"\",\"clinical_condition_id\":\"\",\"collection_provider_id\":\"\",\"created_by\":\"\",\"last_updated_by\":\"\",\"primary_insurance_estimate\":\"\",\"secondary_insurance_estimate\":\"\",\"surface_quadrant_type\":\"\",\"appointment_sr_no\":\"432354\"}]}]\r\n"
             }
           ]
         }
