@@ -12552,6 +12552,35 @@
               "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"2\",\n        \"total_count\": \"2023\",\n        \"execution_time\": \"24\",\n        \"pagination\": {\n            \"first\": \"https://api.sikkasoft.com/v2/lab_cases?offset=0&limit=2\",\n            \"previous\": \"\",\n            \"current\": \"https://api.sikkasoft.com/v2/lab_cases?offset=0&limit=2\",\n            \"next\": \"https://api.sikkasoft.com/v2/lab_cases?offset=1&limit=2\",\n            \"last\": \"https://api.sikkasoft.com/v2/lab_cases?offset=1011&limit=2\"\n        },\n        \"items\": [\n            {\n                \"href\": \"https://api.sikkasoft.com/v2/practices/5/lab_cases/235\",\n                \"case_record_id\": \"235\",\n                \"lab_id\": \"10\",\n                \"lab_detail\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/lab_details/10\"\n                },\n                \"patient_id\": \"213\",\n                \"patient\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/patients/213\"\n                },\n                \"date_created\": \"2019-05-14\",\n                \"provider_id\": \"BB1822\",\n                \"provider\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/providers/BB1822\"\n                },\n                \"lab_case_category\": \"Partial\",\n                \"lab_assignment_number\": \"low\",\n                \"note\": \"\",\n                \"receive_date\": \"\",\n                \"finish_date\": \"\",\n                \"is_closed\": \"\",\n                \"transaction_sr_no\": \"\",\n                \"transaction\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/transactions\"\n                },\n                \"appointment_sr_no\": \"\",\n                \"appointment\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/appointments\"\n                },\n                \"ship_method\": \"Fed Ex\",\n                \"ship_trac_number\": \"\",\n                \"amount\": \"0.00\",\n                \"date_sent\": \"2019-05-14\",\n                \"practice_id\": \"5\",\n                \"practice\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5\"\n                }\n            },\n            {\n                \"href\": \"https://api.sikkasoft.com/v2/practices/5/lab_cases/235\",\n                \"case_record_id\": \"235\",\n                \"lab_id\": \"10\",\n                \"lab_detail\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/lab_details/10\"\n                },\n                \"patient_id\": \"213556\",\n                \"patient\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/patients/213556\"\n                },\n                \"date_created\": \"2019-05-14\",\n                \"provider_id\": \"BB1822\",\n                \"provider\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/providers/BB1822\"\n                },\n                \"lab_case_category\": \"Partial\",\n                \"lab_assignment_number\": \"up\",\n                \"note\": \"\",\n                \"receive_date\": \"\",\n                \"finish_date\": \"\",\n                \"is_closed\": \"\",\n                \"transaction_sr_no\": \"\",\n                \"transaction\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/transactions\"\n                },\n                \"appointment_sr_no\": \"\",\n                \"appointment\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/appointments\"\n                },\n                \"ship_method\": \"Fed Ex\",\n                \"ship_trac_number\": \"\",\n                \"amount\": \"0.00\",\n                \"date_sent\": \"2019-05-14\",\n                \"practice_id\": \"5\",\n                \"practice\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5\"\n                }\n            }\n        ]\n    }\n]"
             }
           ]
+        },
+        {
+          "name": "lab_cases by case_record_id",
+          "_postman_id": "8cbceaac-25be-4e41-985d-0af96dc1f3d6",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/lab_cases/{case_record_id}?request_key={{request_key}}",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "lab_cases",
+                "{case_record_id}"
+              ],
+              "query": [
+                {
+                  "key": "request_key",
+                  "value": "{{request_key}}"
+                }
+              ]
+            },
+            "description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|case_record_id|Case Record ID|No|\r\n|lab_id|Lab ID|No|\r\n|practice_id|Practice ID|No|\r\n|patient_id|Patient ID|No|\r\n|provider_id|Provider ID|No|\r\n|transaction_sr_no|Transaction Serial Number|No|\r\n|appointment_sr_no|Appointment Serial Number|No|\r\n|startdate|format: yyyy-mm-dd, start date|No|\r\n|enddate|format: yyyy-mm-dd, start date|No|\r\n|date_filter_on|Field name on which stardate and enddate filter will be applied, valid values are: date_created-default, receive_date, finish_date, date_sent|No|\r\n\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|case_record_id|case_record_id|\t"
+          },
+          "response": []
         }
       ],
       "_postman_id": "65c1c413-15c5-144b-5ef7-465fb4b7ce87",
