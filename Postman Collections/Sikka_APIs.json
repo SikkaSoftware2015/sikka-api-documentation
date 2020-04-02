@@ -12208,7 +12208,7 @@
           ]
         },
         {
-          "name": "lad_details by lab_id",
+          "name": "lab_details by lab_id",
           "_postman_id": "97f99615-060e-4861-8898-ff95b03c2bc4",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
