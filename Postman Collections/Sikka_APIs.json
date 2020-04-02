@@ -12206,6 +12206,35 @@
               "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"2\",\n        \"total_count\": \"22\",\n        \"execution_time\": \"49\",\n        \"pagination\": {\n            \"first\": \"https://api.sikkasoft.com/v2/lab_details?offset=0&limit=2\",\n            \"previous\": \"\",\n            \"current\": \"https://api.sikkasoft.com/v2/lab_details?offset=0&limit=2\",\n            \"next\": \"https://api.sikkasoft.com/v2/lab_details?offset=1&limit=2\",\n            \"last\": \"https://api.sikkasoft.com/v2/lab_details?offset=10&limit=2\"\n        },\n        \"items\": [\n            {\n                \"href\": \"https://api.sikkasoft.com/v2/practices/5/lab_details/12\",\n                \"lab_id\": \"12\",\n                \"lab_name\": \"Maverick\",\n                \"address\": \"\",\n                \"city\": \"\",\n                \"state\": \"\",\n                \"zipcode\": \"\",\n                \"phone\": \"\",\n                \"fax\": \"\",\n                \"email\": \"\",\n                \"note\": \"\",\n                \"website\": \"\",\n                \"cell_phone\": \"\",\n                \"contact\": \"\",\n                \"lab_slip\": \"\",\n                \"days_to_return\": \"\",\n                \"practice_id\": \"5\",\n                \"practice\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5\"\n                }\n            },\n            {\n                \"href\": \"https://api.sikkasoft.com/v2/practices/5/lab_details/11\",\n                \"lab_id\": \"11\",\n                \"lab_name\": \"First Choice Dental Lab\",\n                \"address\": \"\",\n                \"city\": \"\",\n                \"state\": \"\",\n                \"zipcode\": \"\",\n                \"phone\": \"\",\n                \"fax\": \"\",\n                \"email\": \"\",\n                \"note\": \"\",\n                \"website\": \"\",\n                \"cell_phone\": \"\",\n                \"contact\": \"\",\n                \"lab_slip\": \"\",\n                \"days_to_return\": \"\",\n                \"practice_id\": \"5\",\n                \"practice\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5\"\n                }\n            }\n        ]\n    }\n]"
             }
           ]
+        },
+        {
+          "name": "lad_details by lab_id",
+          "_postman_id": "97f99615-060e-4861-8898-ff95b03c2bc4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/lab_details/{lab_id}?request_key={{request_key}}",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "lab_details",
+                "{lab_id}"
+              ],
+              "query": [
+                {
+                  "key": "request_key",
+                  "value": "{{request_key}}"
+                }
+              ]
+            },
+            "description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|lab_id|Lab ID|No|\r\n|practice_id|Practice ID|No|\r\n|city|City|No|\r\n|state|State|No|\r\n|zipcode|Zip Code|No|\r\n|email|Email|No|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|lab_id|Lab ID|"
+          },
+          "response": []
         }
       ],
       "_postman_id": "65c1c413-15c5-144b-5ef7-465fb4b7ce87",
