@@ -19932,7 +19932,7 @@
                 }
               ]
             },
-            "description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|patient_id|Patient ID as per the management system|No|\r\n|lastname|Patient's last name|No|\r\n|firstname|Patient's first name|No|\r\n|startdate|startdate for contract_due_date, format: yyyy-mm-dd|No|\r\n|enddate|enddate for contract_due_date, format: yyyy-mm-dd|No|\r\n|practice_id|Practice ID|No|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|patient_id|Patient ID as per the management system|\r\n|contract_due_date|contract_due_date|\r\n|firstname|firstname|\r\n|lastname|lastname|\r\n|practice_id|Practice ID|"
+            "description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|patient_id|Patient ID as per the management system|No|\r\n|lastname|Patient's last name|No|\r\n|firstname|Patient's first name|No|\r\n|startdate|startdate for contract_due_date, format: yyyy-mm-dd|No|\r\n|enddate|enddate for contract_due_date, format: yyyy-mm-dd|No|\r\n|practice_id|Practice ID|No|\r\n|guarantor_id|Guarantor id as per practice management systems|No|\r\n|provider_id|Provider id as per practice management system|No|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|patient_id|Patient ID as per the management system|\r\n|contract_due_date|contract_due_date|\r\n|firstname|firstname|\r\n|lastname|lastname|\r\n|practice_id|Practice ID|"
           },
           "response": [
             {
