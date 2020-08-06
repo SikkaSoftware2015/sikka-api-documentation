@@ -6416,7 +6416,7 @@
                 }
               ]
             },
-            "description": "Get the list of all providers.\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|provider_type|Valid Provider type, coma separated for multiple|No|\n|provider_id|Provider id as per practice management system|No|\n|practice_id|Practice ID|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|provider_id|Provider id as per practice management system|\n"
+            "description": "Get the list of all providers.\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|provider_type|Valid Provider type, coma separated for multiple|No|\n|provider_id|Provider id as per practice management system|No|\n|practice_id|Practice ID|No|\n|national_provider_identifier|NPI|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|provider_id|Provider id as per practice management system|\n"
           },
           "response": [
             {
