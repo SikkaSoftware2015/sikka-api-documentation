@@ -25534,6 +25534,73 @@
               "body": "[\r\n    {\r\n        \"offset\": \"0\",\r\n        \"limit\": \"1000\",\r\n        \"total_count\": \"4\",\r\n        \"execution_time\": \"1304\",\r\n        \"items\": [\r\n            {\r\n                \"expiration_month\": \"04\",\r\n                \"expiration_year\": \"20xx\",\r\n                \"transaction_id\": \"039-0012681856\",\r\n                \"transaction_amount\": \"25.85\",\r\n                \"transaction_date\": \"2019-12-18 03:35:21\",\r\n                \"email\": \"info@sikkasoftware.com\",\r\n                \"city\": \"San Jose\",\r\n                \"state\": \"CA\",\r\n                \"zipcode\": \"95121\",\r\n                \"card_logo\": \"MasterCard\",\r\n                \"card_number_masked\": \"xx88\",\r\n                \"transaction_type\": \"sale\",\r\n                \"transaction_status\": \"approved\",\r\n                \"ticket\": \"111~110~1\",\r\n                \"authorized_amount\": \"25.85\",\r\n                \"billing_id\": \"\",\r\n                \"name\": \"Mia Elson\",\r\n                \"address1\": \"1323 Yolk Ct\",\r\n                \"address2\": \"\",\r\n                \"phone\": \"70xxxxxx94\"\r\n            },\r\n            {\r\n                \"expiration_month\": \"04\",\r\n                \"expiration_year\": \"20xx\",\r\n                \"transaction_id\": \"039-0012683142\",\r\n                \"transaction_amount\": \"15.95\",\r\n                \"transaction_date\": \"2019-12-18 03:46:09\",\r\n                \"email\": \"info@sikkasoftware.com\",\r\n                \"city\": \"San Jose\",\r\n                \"state\": \"CA\",\r\n                \"zipcode\": \"95121\",\r\n                \"card_logo\": \"MasterCard\",\r\n                \"card_number_masked\": \"xx88\",\r\n                \"transaction_type\": \"sale\",\r\n                \"transaction_status\": \"approved\",\r\n                \"ticket\": \"111~110~1\",\r\n                \"authorized_amount\": \"15.95\",\r\n                \"billing_id\": \"\",\r\n                \"name\": \"Mia Elson\",\r\n                \"address1\": \"1323 Yolk Ct\",\r\n                \"address2\": \"\",\r\n                \"phone\": \"70xxxxxx94\"\r\n            },\r\n            {\r\n                \"expiration_month\": \"\",\r\n                \"expiration_year\": \"\",\r\n                \"transaction_id\": \"039-0012683836\",\r\n                \"transaction_amount\": \"45.65\",\r\n                \"transaction_date\": \"2019-12-18 03:51:43\",\r\n                \"email\": \"\",\r\n                \"city\": \"\",\r\n                \"state\": \"\",\r\n                \"zipcode\": \"95121\",\r\n                \"card_logo\": \"ACH-D\",\r\n                \"card_number_masked\": \"78xxxxx24\",\r\n                \"transaction_type\": \"sale\",\r\n                \"transaction_status\": \"accepted\",\r\n                \"ticket\": \"111~110~1\",\r\n                \"authorized_amount\": \"45.65\",\r\n                \"billing_id\": \"\",\r\n                \"name\": \"Mia Elson\",\r\n                \"address1\": \"\",\r\n                \"address2\": \"\",\r\n                \"phone\": \"\"\r\n            },\r\n            {\r\n                \"expiration_month\": \"04\",\r\n                \"expiration_year\": \"20xx\",\r\n                \"transaction_id\": \"039-0012684312\",\r\n                \"transaction_amount\": \"35.75\",\r\n                \"transaction_date\": \"2019-12-18 03:55:09\",\r\n                \"email\": \"info@sikkasoftware.com\",\r\n                \"city\": \"San Jose\",\r\n                \"state\": \"CA\",\r\n                \"zipcode\": \"95121\",\r\n                \"card_logo\": \"MasterCard\",\r\n                \"card_number_masked\": \"xx15\",\r\n                \"transaction_type\": \"sale\",\r\n                \"transaction_status\": \"approved\",\r\n                \"ticket\": \"111~110~1\",\r\n                \"authorized_amount\": \"35.75\",\r\n                \"billing_id\": \"60EV9H\",\r\n                \"name\": \"Mia Elson\",\r\n                \"address1\": \"1323 Yolk Ct\",\r\n                \"address2\": \"\",\r\n                \"phone\": \"70xxxxxx94\"\r\n            }\r\n        ]\r\n    }\r\n]"
             }
           ]
+        },
+        {
+          "name": "Email receipts",
+          "_postman_id": "9c0168d3-dba9-4735-b6ca-49d7a5d82c48",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"request_key\": \"request_key - mandatory\",\n    \"send_email\": \"true/false - mandatory\",\n    \"send_text\": \"true/false - Optional\",\n    \"practice_name\": \"practice_name - mandatory\",\n    \"practice_address_line1\": \"practice_address_line1 - Optional\",\n    \"practice_address_line2\": \"practice_address_line2 - Optional\",\n    \"practice_phone\": \"practice_phone - Optional\",\n    \"patient_name\": \"patient_name - mandatory\",\n    \"payee_name\": \"payee_name - Optional, if payee is different from patient\",\n    \"patient_address_line1\": \"patient_address_line1 - Optional\",\n    \"patient_address_line2\": \"patient_address_line2 - Optional\",\n    \"patient_phone\": \"patient_phone - Optional\",\n    \"patient_emailid\": \"patient_emailid - if send_email=true then this is mandatory, else optional\",\n    \"patient_id\": \"patient_id - mandatory\",\n    \"transaction_description\": \"transaction_description - mandatory\",\n    \"transaction_amount\": \"transaction_amount with $ sign($xx.xx) - mandatory\",\n    \"transaction_id\": \"transaction_id - mandatory\",\n    \"card_number_masked\": \"card_number_masked - mandatory\",\n    \"card_logo\": \"card_logo - mandatory\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "https://api.sikkasoft.com/v2/payment/transaction_receipt",
+            "description": "Send transaction receipt in email and text message.\r\n\r\n    \"send_email\": \"true/false - mandatory,  if true then receipt email will be sent and html will be blank in response, if false then only html given in response and email will not be sent\"\r\n    \"send_text\": \"true/false - Optional,  if true then text message will be sent on patient_phone\"\r\n    \"patient_phone\": \"patient_phone - Optional,  - if send_text=true then this value will be used to send text meesage\"\r\n    \"patient_emailid\": \"patient_emailid - if send_email=true then this is mandatory, else optional\""
+          },
+          "response": [
+            {
+              "id": "66e2dd71-1c88-4ced-b451-402fa21b4a0b",
+              "name": "Email receipts",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"request_key\": \"3da1c1591f8934e3271fadc4212b7fe5\",\n    \"send_email\": \"true\",\n    \"practice_name\": \"Smile Dental\",\n    \"practice_address_line1\": \"1731 Technology Dr \",\n    \"practice_address_line2\": \"San Jose, CA, 95110\",\n    \"practice_phone\": \"40xxxxxx90\",\n    \"payee_name\": \"ROWzzz PHILIP\",\n    \"patient_name\": \"ROWzzz PHILIP\",\n    \"patient_address_line1\": \"1323 Yolk Ct\",\n    \"patient_address_line2\": \"\",\n    \"patient_phone\": \"99xxxxxx59\",\n    \"patient_emailid\": \"info@sikkasoftware.com\",\n    \"patient_id\": \"869\",\n    \"transaction_description\": \"Credit Card Sale\",\n    \"transaction_amount\": \"$9.99\",\n    \"transaction_id\": \"035-0016780107\",\n    \"card_number_masked\": \"0888\",\n    \"card_logo\": \"MasterCard\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "https://api.sikkasoft.com/v2/payment/transaction_receipt"
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"500\",\n        \"total_count\": \"1\",\n        \"execution_time\": \"2874\",\n        \"items\": [\n            {\n                \"html\": \"\",\n                \"is_email_sent\": \"true\",\n                \"is_text_sent\": \"false\"\n            }\n        ]\n    }\n]"
+            }
+          ]
         }
       ],
       "_postman_id": "d945a0d4-7607-442b-b8a5-31a58e004f0b",
