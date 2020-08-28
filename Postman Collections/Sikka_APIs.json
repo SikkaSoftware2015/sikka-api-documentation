@@ -24858,10 +24858,775 @@
               "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"1\",\n        \"total_count\": \"1\",\n        \"execution_time\": \"13260\",\n        \"items\": [\n            {\n                \"transaction_id\": \"039-0012683836\",\n                \"transaction_amount\": \"45.65\",\n                \"transaction_type\": \"sale\",\n                \"transaction_status\": \"accepted\",\n                \"ticket\": \"111~110~1\",\n                \"authorized_amount\": \"45.65\",\n                \"billing_id\": \"\"\n            }\n        ]\n    }\n]"
             }
           ]
+        },
+        {
+          "name": "Save a card",
+          "_postman_id": "1bf2cdb2-fef3-4c51-a53c-876015b45517",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"request_key\": \"request_key - mandatory\",\n    \"patient_id\": \"patient_id - mandatory\",\n    \"guarantor_id\": \"guarantor_id - mandatory\",\n    \"practice_id\": \"practice_id - mandatory\",\n    \"cust_id\": \"cust_id - mandatory\",\n    \"provider_id\": \"provider_id - optional\",\n    \"name\": \"name - mandatory\",\n    \"zipcode\": \"zipcode - mandatory\",\n    \"is_recurring_payments\": \"false - optional\",\n    \"card_number\": \"card_number - mandatory\",\n    \"expiration_month\": \"expiration_month(MM) - mandatory\",\n    \"expiration_year\": \"expiration_year(YYYY) - mandatory\",\n    \"address1\": \"address1 - optional\",\n    \"address2\": \"address2 - optional\",\n    \"city\": \"city- optional\",\n    \"state\": \"state- optional\",\n    \"phone\": \"phone - optional\",\n    \"email\": \"email - optional\",\n    \"is_default\": \"true/false - optional\"\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "https://api.sikkasoft.com/v2/payment/store_card",
+            "description": "> This feature allows merchants to submit a request to Store payment account details and receive a \"billing_id\". The \"billing_id\" is a token that can be used as a Cardholder primary account number (PAN) replacement for future one-time and subscription payments.\r\n\r\n\r\nEach \"billing_id\" is access controlled such that it can only be used by the merchant who created it and can be stored by the merchant in plain text.\r\n\r\n\r\n\"is_recurring_payments\": \"false - optional\" - if not passed then default value for this parameter \"false\" will be considered. \r\n\r\n\r\n\"is_default\": \"true/false - optional\" - if not passed then default value for this parameter \"true\" will be considered."
+          },
+          "response": [
+            {
+              "id": "40a0b5bc-67b9-4f8f-ad0c-51e328c5accc",
+              "name": "Save a card",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"request_key\": \"033c63a1446d9935f044dad11f796027\",\r\n    \"patient_id\": \"111\",\r\n    \"guarantor_id\": \"110\",\r\n    \"practice_id\": \"1\",\r\n    \"cust_id\": \"1\",\r\n    \"provider_id\": \"DT01\",\r\n    \"name\": \"Mia Elson\",\r\n    \"zipcode\": \"95121\",\r\n    \"is_recurring_payments\": \"false\",\r\n    \"card_number\": \"411xxxx111xxxx11\",\r\n    \"expiration_month\": \"04\",\r\n    \"expiration_year\": \"20xx\",\r\n    \"address1\": \"\",\r\n    \"address2\": \"\",\r\n    \"city\": \"\",\r\n    \"state\": \"\",\r\n    \"phone\": \"\",\r\n    \"email\": \"\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "https://api.sikkasoft.com/v2/payment/store_card"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"1\",\n        \"total_count\": \"1\",\n        \"execution_time\": \"7870\",\n        \"items\": [\n            {\n                \"guarantor_id\": \"110\",\n                \"patient_id\": \"111\",\n                \"provider_id\": \"DT01\",\n                \"practice_id\": \"1\",\n                \"expiration_month\": \"04\",\n                \"expiration_year\": \"20xx\",\n                \"transaction_id\": \"039-0012428197\",\n                \"is_default\": \"true\",\n                \"cust_id\": \"1\",\n                \"card_logo\": \"Visa\",\n                \"card_number_masked\": \"xx11\",\n                \"transaction_type\": \"store\",\n                \"transaction_status\": \"approved\",\n                \"billing_id\": \"60EV88\"\n            }\n        ]\n    }\n]"
+            }
+          ]
+        },
+        {
+          "name": "Retrive saved card",
+          "_postman_id": "0a2c44a1-9fdb-4a5f-95f6-0a40d83715b6",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://api.sikkasoft.com/v2/payment/store_card?request_key={request_key}&patient_id={patient_id}&guarantor_id={guarantor_id}&practice_id={practice_id}&startdate={startdate}&enddate={enddate}&billing_id={billing_id}&name={name}&card_number={card_number}&transaction_status={transaction_status}&is_active={is_active}&is_recurring_payments={is_recurring_payments}",
+              "protocol": "https",
+              "host": [
+                "api",
+                "sikkasoft",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "payment",
+                "store_card"
+              ],
+              "query": [
+                {
+                  "key": "request_key",
+                  "value": "{request_key}"
+                },
+                {
+                  "key": "patient_id",
+                  "value": "{patient_id}"
+                },
+                {
+                  "key": "guarantor_id",
+                  "value": "{guarantor_id}"
+                },
+                {
+                  "key": "practice_id",
+                  "value": "{practice_id}"
+                },
+                {
+                  "key": "startdate",
+                  "value": "{startdate}"
+                },
+                {
+                  "key": "enddate",
+                  "value": "{enddate}"
+                },
+                {
+                  "key": "billing_id",
+                  "value": "{billing_id}"
+                },
+                {
+                  "key": "name",
+                  "value": "{name}"
+                },
+                {
+                  "key": "card_number",
+                  "value": "{card_number}"
+                },
+                {
+                  "key": "transaction_status",
+                  "value": "{transaction_status}"
+                },
+                {
+                  "key": "is_active",
+                  "value": "{is_active}"
+                },
+                {
+                  "key": "is_recurring_payments",
+                  "value": "{is_recurring_payments}"
+                }
+              ]
+            },
+            "description": "Get saved card for patient.\n\nrequest_key - mandatory\n\npatient_id - mandatory\n\nguarantor_id - mandatory\n\npractice_id - mandatory\n\nstartdate - optional (format: yyyy-MM-dd HH:mm:ss)\n\nenddate - optional (format: yyyy-MM-dd HH:mm:ss)\n\nbilling_id - optional\n\nname - optional - Filters results to transactions referencing the specified cardholder name; includes partial matches.\n\ncard_number - optional - Filters results to transactions referencing the specified cc; this can be either the full credit card number or just the last four digits.\n\ntransaction_status - optional - possible values - approved, accepted, declined or all (default)\n\nis_active - optional - possible values - true, false or all (default)\n\nis_recurring_payments - optional - possible values - true, false or all (default)"
+          },
+          "response": [
+            {
+              "id": "71581e0e-2f94-4419-a9e6-6c3cfac37b10",
+              "name": "Retrive saved card",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://api.sikkasoft.com/v2/payment/store_card?request_key=033c63a1446d9935f044dad11f796027&guarantor_id=110&practice_id=1&is_active=true&patient_id=111",
+                  "protocol": "https",
+                  "host": [
+                    "api",
+                    "sikkasoft",
+                    "com"
+                  ],
+                  "path": [
+                    "v2",
+                    "payment",
+                    "store_card"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "033c63a1446d9935f044dad11f796027"
+                    },
+                    {
+                      "key": "guarantor_id",
+                      "value": "110"
+                    },
+                    {
+                      "key": "practice_id",
+                      "value": "1"
+                    },
+                    {
+                      "key": "is_active",
+                      "value": "true"
+                    },
+                    {
+                      "key": "patient_id",
+                      "value": "111"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"1000\",\n        \"total_count\": \"1\",\n        \"execution_time\": \"1472\",\n        \"items\": [\n            {\n                \"guarantor_id\": \"110\",\n                \"patient_id\": \"111\",\n                \"provider_id\": \"DT01\",\n                \"practice_id\": \"1\",\n                \"expiration_month\": \"04\",\n                \"expiration_year\": \"2029\",\n                \"is_default\": \"true\",\n                \"transaction_amount\": \"\",\n                \"run_cycles\": \"\",\n                \"cust_id\": \"1\",\n                \"transaction_date\": \"2019-12-17 10:18:25\",\n                \"email\": \"\",\n                \"city\": \"\",\n                \"state\": \"\",\n                \"zipcode\": \"95121\",\n                \"country\": \"\",\n                \"is_active\": \"true\",\n                \"card_logo\": \"Visa\",\n                \"card_number_masked\": \"1111\",\n                \"ticket\": \"111~110~1\",\n                \"is_recurring_payments\": \"false\",\n                \"number_of_payments\": \"\",\n                \"billing_id\": \"60EV9H\",\n                \"name\": \"Mia Elson\",\n                \"address1\": \"\",\n                \"address2\": \"\",\n                \"phone\": \"\",\n                \"run_cycle_interval\": \"\",\n                \"first_payment_amount\": \"\",\n                \"last_payment_amount\": \"\",\n                \"number_of_payments_completed\": \"\",\n                \"last_run_date\": \"\",\n                \"next_run_date\": \"\",\n                \"transaction_amount_due\": \"\",\n                \"api_host\": \"P\",\n                \"request_from_app\": \"Payment Test app\"\n            }\n        ]\n    }\n]"
+            }
+          ]
+        },
+        {
+          "name": "Delete saved card",
+          "_postman_id": "d876580d-7ee6-4240-b072-debdec22c972",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://api.sikkasoft.com/v2/payment/store_card/{billing_id}?request_key={request_key}",
+              "protocol": "https",
+              "host": [
+                "api",
+                "sikkasoft",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "payment",
+                "store_card",
+                "{billing_id}"
+              ],
+              "query": [
+                {
+                  "key": "request_key",
+                  "value": "{request_key}"
+                }
+              ]
+            },
+            "description": "This API will show message of the saved card is marked as inactive/unstore only for given \"billing_id\".\r\n\r\nThe card will also available in the GET \"store_card\" response for \"is_active\" - \"false/all\".\r\n\r\nrequest_key - mandatory\r\n\r\nbilling_id - mandatory"
+          },
+          "response": [
+            {
+              "id": "c9186776-ed48-48e3-b35f-ed9dfc258d3a",
+              "name": "Delete saved card",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "https://api.sikkasoft.com/v2/payment/store_card/60EVBU?request_key=033c63a1446d9935f044dad11f796027",
+                  "protocol": "https",
+                  "host": [
+                    "api",
+                    "sikkasoft",
+                    "com"
+                  ],
+                  "path": [
+                    "v2",
+                    "payment",
+                    "store_card",
+                    "60EVBU"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "033c63a1446d9935f044dad11f796027"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"http_code\": \"200\",\n    \"http_code_desc\": \"OK\",\n    \"error_code\": \"API4006\",\n    \"payment_provider_response_code\": \"\",\n    \"payment_provider_message\": \"\",\n    \"short_message\": \"\",\n    \"long_message\": \"billing_id marked as inactive.\",\n    \"more_information\": \"\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Update saved card",
+          "_postman_id": "3c29bbcd-145a-40f3-8f24-66b317e5e63f",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"request_key\": \"request_key - mandatory\",\n    \"patient_id\": \"patient_id - mandatory\",\n    \"guarantor_id\": \"guarantor_id - mandatory\",\n    \"practice_id\": \"practice_id - mandatory\",\n    \"cust_id\": \"cust_id - mandatory\",\n    \"provider_id\": \"provider_id - optional\",\n    \"name\": \"name - mandatory\",\n    \"zipcode\": \"zipcode - mandatory\",\n    \"card_number\": \"card_number - mandatory\",\n    \"billing_id\": \"billing_id - mandatory\",\n    \"expiration_month\": \"expiration_month(MM) - mandatory\",\n    \"expiration_year\": \"expiration_year(YYYY) - mandatory\",\n    \"is_update_default\": \"false- optional\",\n    \"address1\": \"address1 - optional\",\n    \"address2\": \"address2 - optional\",\n    \"city\": \"city- optional\",\n    \"state\": \"state- optional\",\n    \"phone\": \"phone - optional\",\n    \"email\": \"email - optional\"\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "https://api.sikkasoft.com/v2/payment/store_card",
+            "description": "To update all card details realted to given \"billing_id\", \"is_update_default\" must have value \"false\" as shown below: \r\n\r\n\"is_update_default\": \"false- optional\"\r\n\r\nThis parameter is optional so, if it is not available in request then by default request will be considered to update all card details."
+          },
+          "response": [
+            {
+              "id": "ff34d645-dae7-4a21-ad3f-3328a822c768",
+              "name": "Update saved card",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"request_key\": \"033c63a1446d9935f044dad11f796027\",\r\n    \"billing_id\": \"60EV9H\",\r\n    \"patient_id\": \"111\",\r\n    \"guarantor_id\": \"110\",\r\n    \"practice_id\": \"1\",\r\n    \"cust_id\": \"1\",\r\n    \"provider_id\": \"DT01\",\r\n    \"name\": \"Mia Elson\",\r\n    \"zipcode\": \"95121\",\r\n    \"card_number\": \"54xxxx11111xxxx5\",\r\n    \"expiration_month\": \"04\",\r\n    \"expiration_year\": \"20xx\",\r\n    \"address1\": \"1323 Yolk Ct\",\r\n    \"address2\": \"\",\r\n    \"city\": \"San Jose\",\r\n    \"state\": \"CA\",\r\n    \"phone\": \"70xxxxxx94\",\r\n    \"email\": \"info@sikkasoftware.com\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "https://api.sikkasoft.com/v2/payment/store_card"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"1000\",\n        \"total_count\": \"1\",\n        \"execution_time\": \"3734\",\n        \"items\": [\n            {\n                \"expiration_month\": \"04\",\n                \"expiration_year\": \"20xx\",\n                \"is_default\": \"true\",\n                \"transaction_amount\": \"\",\n                \"run_cycles\": \"\",\n                \"transaction_date\": \"2019-12-17 10:18:25\",\n                \"email\": \"info@sikkasoftware.com\",\n                \"city\": \"San Jose\",\n                \"state\": \"CA\",\n                \"zipcode\": \"95121\",\n                \"country\": \"\",\n                \"is_active\": \"true\",\n                \"card_logo\": \"MasterCard\",\n                \"card_number_masked\": \"xxx5\",\n                \"ticket\": \"111~110~1\",\n                \"is_recurring_payments\": \"false\",\n                \"number_of_payments\": \"\",\n                \"billing_id\": \"60EV9H\",\n                \"name\": \"Mia Elson\",\n                \"address1\": \"1323 Yolk Ct\",\n                \"address2\": \"\",\n                \"phone\": \"70xxxxxx94\",\n                \"run_cycle_interval\": \"\",\n                \"first_payment_amount\": \"\",\n                \"last_payment_amount\": \"\",\n                \"number_of_payments_completed\": \"\",\n                \"last_run_date\": \"\",\n                \"next_run_date\": \"\",\n                \"transaction_amount_due\": \"\",\n                \"api_host\": \"Q\"\n            }\n        ]\n    }\n]"
+            }
+          ]
+        },
+        {
+          "name": "Update is_default flag in saved card only",
+          "_postman_id": "1ca5fe92-28d1-46dc-aebb-f45504009a67",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"request_key\": \"request_key - mandatory\",\n    \"patient_id\": \"patient_id - mandatory\",\n    \"guarantor_id\": \"guarantor_id - mandatory\",\n    \"practice_id\": \"practice_id - mandatory\",\n    \"cust_id\": \"cust_id - mandatory\",\n    \"provider_id\": \"provider_id - optional\",\n    \"name\": \"name - mandatory\",\n    \"zipcode\": \"zipcode - mandatory\",\n    \"billing_id\": \"billing_id - mandatory\",\n    \"is_update_default\": \"true- mandatory\",\n    \"is_default\": \"true/false\"\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "https://api.sikkasoft.com/v2/payment/store_card",
+            "description": "Update PUT store_card end point to update only \"is_default\" flag at our end.\r\n\r\nTo update \"is_default\" flag for given \"billing_id\", \"is_update_default\" must have value \"true\" as shown below: \r\n\r\n\"is_update_default\": \"true- mandatory\"\r\n\r\nDefault value for \"is_default\" is \"true\", so if you pass \"is_update_default\"=\"true\", but don't pass \"is_default\" flag then given \"billing_id\" will be marked as default and all other saved cards will be marked as \"is_default\"=\"false\"."
+          },
+          "response": [
+            {
+              "id": "4828a55a-9923-4202-8fa9-ae101c12eef1",
+              "name": "Update default saved card",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"request_key\": \"033c63a1446d9935f044dad11f796027\",\n    \"patient_id\": \"111\",\n    \"guarantor_id\": \"110\",\n    \"practice_id\": \"1\",\n    \"cust_id\": \"1\",\n    \"provider_id\": \"DT01\",\n    \"name\": \"Mia Elson\",\n    \"zipcode\": \"95121\",\n    \"billing_id\": \"60EV9H\",\n    \"is_update_default\": \"true\",\n    \"is_default\": \"true\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "https://api.sikkasoft.com/v2/payment/store_card"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"1000\",\n        \"total_count\": \"1\",\n        \"execution_time\": \"47695\",\n        \"items\": [\n            {\n                \"expiration_month\": \"04\",\n                \"expiration_year\": \"2029\",\n                \"is_default\": \"true\",\n                \"transaction_amount\": \"\",\n                \"run_cycles\": \"\",\n                \"transaction_date\": \"2019-12-17 15:48:25\",\n                \"email\": \"\",\n                \"city\": \"\",\n                \"state\": \"\",\n                \"zipcode\": \"95121\",\n                \"country\": \"\",\n                \"is_active\": \"true\",\n                \"card_logo\": \"Visa\",\n                \"card_number_masked\": \"1111\",\n                \"ticket\": \"111~110~1\",\n                \"is_recurring_payments\": \"false\",\n                \"number_of_payments\": \"\",\n                \"billing_id\": \"60EV9H\",\n                \"name\": \"Mia Elson\",\n                \"address1\": \"\",\n                \"address2\": \"\",\n                \"phone\": \"\",\n                \"run_cycle_interval\": \"\",\n                \"first_payment_amount\": \"\",\n                \"last_payment_amount\": \"\",\n                \"number_of_payments_completed\": \"\",\n                \"last_run_date\": \"\",\n                \"next_run_date\": \"\",\n                \"transaction_amount_due\": \"\",\n                \"api_host\": \"Q\"\n            }\n        ]\n    }\n]"
+            }
+          ]
+        },
+        {
+          "name": "Sale by saved card",
+          "_postman_id": "982cc527-cb49-4518-a8af-92dc28b5ebcb",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"request_key\": \"request_key - mandatory\",\n    \"transaction_media\": \"billing_id - mandatory\",\n    \"patient_id\": \"patient_id - mandatory\",\n    \"guarantor_id\": \"guarantor_id - mandatory\",\n    \"practice_id\": \"practice_id - mandatory\",\n    \"cust_id\": \"cust_id - mandatory\",\n    \"provider_id\": \"provider_id - mandatory\",\n    \"name\": \"name - mandatory\",\n    \"zipcode\": \"zipcode - mandatory\",\n    \"transaction_amount\": \"transaction_amount(xx.xx) - mandatory\",\n    \"billing_id\": \"billing_id - mandatory\"\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "https://api.sikkasoft.com/v2/payment/sale",
+            "description": "A sale transaction by saved card is the simplest method to process a complete payment without providing actual credit card details. Upon submission, a Sale transaction attempts an authorization on provided \"billing_id\" and if approved, schedules capture, which initiates the process that results in funding.\r\n\r\n\r\nTo process transaction with saved credit card, \"transaction_media\" must have value \"billing_id\" as shown below:\r\n\r\n\r\n\"transaction_media\": \"billing_id\" - mandatory to do transaction with saved card credit card."
+          },
+          "response": [
+            {
+              "id": "4f831922-dfaf-467d-9138-f64985334c95",
+              "name": "Sale by saved card",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"request_key\": \"4db57ca3cf7d30304c85a94fd58d9210\",\n    \"transaction_media\": \"billing_id\",\n\t\"patient_id\": \"111\",\n\t\"guarantor_id\": \"112\",\n\t\"practice_id\": \"1\",\n\t\"cust_id\": \"1\",\n\t\"provider_id\":\"ABC1\",    \n    \"name\": \"Mia Elson\",\n    \"zipcode\": \"95121\",\n    \"transaction_amount\": \"35.75\",\n    \"billing_id\": \"60xx9H\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "https://api.sikkasoft.com/v2/payment/sale"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"1\",\n        \"total_count\": \"1\",\n        \"execution_time\": \"6551\",\n        \"items\": [\n            {\n                \"transaction_id\": \"039-0012684312\",\n                \"transaction_amount\": \"35.75\",\n                \"transaction_type\": \"sale\",\n                \"transaction_status\": \"approved\",\n                \"ticket\": \"111~110~1\",\n                \"authorized_amount\": \"35.75\",\n                \"billing_id\": \"60xx9H\"\n            }\n        ]\n    }\n]"
+            }
+          ]
+        },
+        {
+          "name": "Set up recurring payments",
+          "_postman_id": "a37a4626-e118-48f1-a3aa-944b8c4e94f4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"request_key\": \"request_key - mandatory\",\n    \"patient_id\": \"patient_id - mandatory\",\n    \"guarantor_id\": \"guarantor_id - mandatory\",\n    \"practice_id\": \"practice_id - mandatory\",\n    \"cust_id\": \"cust_id - mandatory\",\n    \"provider_id\": \"provider_id - optional\",\n    \"name\": \"name - mandatory\",\n    \"zipcode\": \"zipcode - mandatory\",\n    \"is_recurring_payments\": \"true - mandatory\",\n    \"card_number\": \"card_number - mandatory\",\n    \"expiration_month\": \"expiration_month(MM) - mandatory\",\n    \"expiration_year\": \"expiration_year(yyyy) - mandatory\",\n    \"address1\": \"address1 - mandatory\",\n    \"run_cycles\": \"run_cycles(duration of internval, e.g. 1,2,3)  - mandatory\",\n    \"run_startdate\": \"run_start_date(yyyy-MM-dd), should be greater than today - mandatory\",\n    \"number_of_payments\": \"number_of_payments(tenure) - mandatory\",\n    \"run_cycle_interval\": \"run_cycle_interval(d, w, m, y) - mandatory\",\n    \"total_amount\": \"total_amount(xx.xx) - mandatory\"\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "https://api.sikkasoft.com/v2/payment/store_card",
+            "description": "> This feature allows merchants to submit a request to Store payment account details with recurring payment plan and receive a \"billing_id\". The \"billing_id\" is a token that can be used as a Cardholder primary account number (PAN) replacement for future retrieval.\r\n\r\n\r\nEach \"billing_id\" is access controlled such that it can only be used by the merchant who created it and can be stored by the merchant in plain text.\r\n\r\n\r\n\"is_recurring_payments\": \"true - optional\" - if this is for recurring payment then value for this parameter must be passed as \"true\".\r\n\r\nExample:\r\nIf merchant want to setup recurring payment for $50.00 for 5 months on monthly basis then request should have values as below:\r\n\r\n    \"run_cycles\": \"1\"\r\n    \"number_of_payments\": \"5\",\r\n    \"run_cycle_interval\": \"m\",\r\n    \"total_amount\": \"50.00\"\r\n\r\nAbove values will be considered as 5 installments every 1 month."
+          },
+          "response": [
+            {
+              "id": "8dadb225-fe09-4b2c-bea3-073dcacd4eae",
+              "name": "Set up recurring payments",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"request_key\": \"f0de9e3a35686afc4b0b75ef2d20ba6e\",\r\n    \"patient_id\": \"24\",\r\n    \"guarantor_id\": \"24\",\r\n    \"practice_id\": \"1\",\r\n    \"cust_id\": \"1\",\r\n    \"provider_id\": \"XXX1\",\r\n    \"name\": \"Walzzz Andrea\",\r\n    \"zipcode\": \"84003\",\r\n    \"is_recurring_payments\": \"true\",\r\n    \"card_number\": \"54xxxxxxxxxxxx15\",\r\n    \"expiration_month\": \"0x\",\r\n    \"expiration_year\": \"2xx9\",\r\n    \"address1\": \"16 POLLARD RD.\",\r\n    \"run_cycles\": \"1\",\r\n    \"run_startdate\": \"2020-05-07\",\r\n    \"number_of_payments\": \"5\",\r\n    \"run_cycle_interval\": \"m\",\r\n    \"total_amount\": \"50.00\",\r\n    \"address2\": \"16 POLLARD RD.\",\r\n    \"city\": \"Fakeyvelle\",\r\n    \"state\": \"UT\",\r\n    \"phone\": \"99xxxxxx59\",\r\n    \"email\": \"info@sikkasoftware.com\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "https://api.sikkasoft.com/v2/payment/store_card"
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\r\n    {\r\n        \"offset\": \"0\",\r\n        \"limit\": \"1\",\r\n        \"total_count\": \"1\",\r\n        \"execution_time\": \"3185\",\r\n        \"items\": [\r\n            {\r\n                \"guarantor_id\": \"24\",\r\n                \"patient_id\": \"24\",\r\n                \"provider_id\": \"XXX1\",\r\n                \"practice_id\": \"1\",\r\n                \"expiration_month\": \"0x\",\r\n                \"expiration_year\": \"2xx9\",\r\n                \"transaction_id\": \"035-0015398451\",\r\n                \"transaction_amount\": \"10.00\",\r\n                \"run_startdate\": \"2020-05-07\",\r\n                \"run_cycles\": \"1\",\r\n                \"total_amount\": \"50\",\r\n                \"cust_id\": \"1\",\r\n                \"card_logo\": \"MasterCard\",\r\n                \"card_number_masked\": \"xx15\",\r\n                \"transaction_type\": \"store\",\r\n                \"transaction_status\": \"approved\",\r\n                \"number_of_payments\": \"5\",\r\n                \"billing_id\": \"211PN7\",\r\n                \"run_cycle_interval\": \"m\",\r\n                \"api_host\": \"Q\"\r\n            }\r\n        ]\r\n    }\r\n]"
+            }
+          ]
+        },
+        {
+          "name": "Retrive transactions",
+          "_postman_id": "c63062cf-4b19-44a4-a31d-ac4f923d79d4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://api.sikkasoft.com/v2/payment/transactions?request_key={request_key}&patient_id={patient_id}&guarantor_id={guarantor_id}&practice_id={practice_id}&startdate={startdate}&enddate={enddate}&transaction_id={transaction_id}&billing_id={billing_id}&name={name}&card_number={card_number}&transaction_type={transaction_type}&transaction_status={transaction_status}&transaction_media={transaction_media}",
+              "protocol": "https",
+              "host": [
+                "api",
+                "sikkasoft",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "payment",
+                "transactions"
+              ],
+              "query": [
+                {
+                  "key": "request_key",
+                  "value": "{request_key}"
+                },
+                {
+                  "key": "patient_id",
+                  "value": "{patient_id}"
+                },
+                {
+                  "key": "guarantor_id",
+                  "value": "{guarantor_id}"
+                },
+                {
+                  "key": "practice_id",
+                  "value": "{practice_id}"
+                },
+                {
+                  "key": "startdate",
+                  "value": "{startdate}"
+                },
+                {
+                  "key": "enddate",
+                  "value": "{enddate}"
+                },
+                {
+                  "key": "transaction_id",
+                  "value": "{transaction_id}"
+                },
+                {
+                  "key": "billing_id",
+                  "value": "{billing_id}"
+                },
+                {
+                  "key": "name",
+                  "value": "{name}"
+                },
+                {
+                  "key": "card_number",
+                  "value": "{card_number}"
+                },
+                {
+                  "key": "transaction_type",
+                  "value": "{transaction_type}"
+                },
+                {
+                  "key": "transaction_status",
+                  "value": "{transaction_status}"
+                },
+                {
+                  "key": "transaction_media",
+                  "value": "{transaction_media}"
+                }
+              ]
+            },
+            "description": "request_key - mandatory\r\n\r\npatient_id - mandatory\r\n\r\nguarantor_id - mandatory\r\n\r\npractice_id - mandatory\r\n\r\nstartdate - optional (format: yyyy-MM-dd HH:mm:ss)\r\n\r\nenddate - optional (format: yyyy-MM-dd HH:mm:ss)\r\n\r\ntransaction_id - optional\r\n\r\nbilling_id - optional\r\n\r\nname - optional - Filters results to transactions referencing the specified cardholder name; includes partial matches.\r\n\r\ncard_number - optional - Filters results to transactions referencing the specified cc; this can be either the full credit card number or just the last four digits.\r\n\r\ntransaction_type - optional - possible values - preauth, sale, credit or all (default)\r\n\r\ntransaction_status - optional - possible values - approved, accepted, declined or all (default)\r\n\r\ntransaction_media - optional - possible values - credit_card, ach or all (default)\r\n\r\nIf request don't have startdate and enddate, then last 30 days records will be retrieved with other given parameters"
+          },
+          "response": [
+            {
+              "id": "2ff082e3-dae4-4447-95c3-0174ee2f1667",
+              "name": "Retrive transactions",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://api.sikkasoft.com/v2/payment/transactions?request_key=4db57ca3cf7d30304c85a94fd58d9210&patient_id=111&guarantor_id=110&practice_id=1",
+                  "protocol": "https",
+                  "host": [
+                    "api",
+                    "sikkasoft",
+                    "com"
+                  ],
+                  "path": [
+                    "v2",
+                    "payment",
+                    "transactions"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "4db57ca3cf7d30304c85a94fd58d9210"
+                    },
+                    {
+                      "key": "patient_id",
+                      "value": "111"
+                    },
+                    {
+                      "key": "guarantor_id",
+                      "value": "110"
+                    },
+                    {
+                      "key": "practice_id",
+                      "value": "1"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": null,
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\r\n    {\r\n        \"offset\": \"0\",\r\n        \"limit\": \"1000\",\r\n        \"total_count\": \"4\",\r\n        \"execution_time\": \"1304\",\r\n        \"items\": [\r\n            {\r\n                \"expiration_month\": \"04\",\r\n                \"expiration_year\": \"20xx\",\r\n                \"transaction_id\": \"039-0012681856\",\r\n                \"transaction_amount\": \"25.85\",\r\n                \"transaction_date\": \"2019-12-18 03:35:21\",\r\n                \"email\": \"info@sikkasoftware.com\",\r\n                \"city\": \"San Jose\",\r\n                \"state\": \"CA\",\r\n                \"zipcode\": \"95121\",\r\n                \"card_logo\": \"MasterCard\",\r\n                \"card_number_masked\": \"xx88\",\r\n                \"transaction_type\": \"sale\",\r\n                \"transaction_status\": \"approved\",\r\n                \"ticket\": \"111~110~1\",\r\n                \"authorized_amount\": \"25.85\",\r\n                \"billing_id\": \"\",\r\n                \"name\": \"Mia Elson\",\r\n                \"address1\": \"1323 Yolk Ct\",\r\n                \"address2\": \"\",\r\n                \"phone\": \"70xxxxxx94\"\r\n            },\r\n            {\r\n                \"expiration_month\": \"04\",\r\n                \"expiration_year\": \"20xx\",\r\n                \"transaction_id\": \"039-0012683142\",\r\n                \"transaction_amount\": \"15.95\",\r\n                \"transaction_date\": \"2019-12-18 03:46:09\",\r\n                \"email\": \"info@sikkasoftware.com\",\r\n                \"city\": \"San Jose\",\r\n                \"state\": \"CA\",\r\n                \"zipcode\": \"95121\",\r\n                \"card_logo\": \"MasterCard\",\r\n                \"card_number_masked\": \"xx88\",\r\n                \"transaction_type\": \"sale\",\r\n                \"transaction_status\": \"approved\",\r\n                \"ticket\": \"111~110~1\",\r\n                \"authorized_amount\": \"15.95\",\r\n                \"billing_id\": \"\",\r\n                \"name\": \"Mia Elson\",\r\n                \"address1\": \"1323 Yolk Ct\",\r\n                \"address2\": \"\",\r\n                \"phone\": \"70xxxxxx94\"\r\n            },\r\n            {\r\n                \"expiration_month\": \"\",\r\n                \"expiration_year\": \"\",\r\n                \"transaction_id\": \"039-0012683836\",\r\n                \"transaction_amount\": \"45.65\",\r\n                \"transaction_date\": \"2019-12-18 03:51:43\",\r\n                \"email\": \"\",\r\n                \"city\": \"\",\r\n                \"state\": \"\",\r\n                \"zipcode\": \"95121\",\r\n                \"card_logo\": \"ACH-D\",\r\n                \"card_number_masked\": \"78xxxxx24\",\r\n                \"transaction_type\": \"sale\",\r\n                \"transaction_status\": \"accepted\",\r\n                \"ticket\": \"111~110~1\",\r\n                \"authorized_amount\": \"45.65\",\r\n                \"billing_id\": \"\",\r\n                \"name\": \"Mia Elson\",\r\n                \"address1\": \"\",\r\n                \"address2\": \"\",\r\n                \"phone\": \"\"\r\n            },\r\n            {\r\n                \"expiration_month\": \"04\",\r\n                \"expiration_year\": \"20xx\",\r\n                \"transaction_id\": \"039-0012684312\",\r\n                \"transaction_amount\": \"35.75\",\r\n                \"transaction_date\": \"2019-12-18 03:55:09\",\r\n                \"email\": \"info@sikkasoftware.com\",\r\n                \"city\": \"San Jose\",\r\n                \"state\": \"CA\",\r\n                \"zipcode\": \"95121\",\r\n                \"card_logo\": \"MasterCard\",\r\n                \"card_number_masked\": \"xx15\",\r\n                \"transaction_type\": \"sale\",\r\n                \"transaction_status\": \"approved\",\r\n                \"ticket\": \"111~110~1\",\r\n                \"authorized_amount\": \"35.75\",\r\n                \"billing_id\": \"60EV9H\",\r\n                \"name\": \"Mia Elson\",\r\n                \"address1\": \"1323 Yolk Ct\",\r\n                \"address2\": \"\",\r\n                \"phone\": \"70xxxxxx94\"\r\n            }\r\n        ]\r\n    }\r\n]"
+            }
+          ]
+        },
+        {
+          "name": "Email receipts",
+          "_postman_id": "9c0168d3-dba9-4735-b6ca-49d7a5d82c48",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"request_key\": \"request_key - mandatory\",\n    \"send_email\": \"true/false - mandatory\",\n    \"send_text\": \"true/false - Optional\",\n    \"practice_name\": \"practice_name - mandatory\",\n    \"practice_address_line1\": \"practice_address_line1 - Optional\",\n    \"practice_address_line2\": \"practice_address_line2 - Optional\",\n    \"practice_phone\": \"practice_phone - Optional\",\n    \"patient_name\": \"patient_name - mandatory\",\n    \"payee_name\": \"payee_name - Optional, if payee is different from patient\",\n    \"patient_address_line1\": \"patient_address_line1 - Optional\",\n    \"patient_address_line2\": \"patient_address_line2 - Optional\",\n    \"patient_phone\": \"patient_phone - Optional\",\n    \"patient_emailid\": \"patient_emailid - if send_email=true then this is mandatory, else optional\",\n    \"patient_id\": \"patient_id - mandatory\",\n    \"transaction_description\": \"transaction_description - mandatory\",\n    \"transaction_amount\": \"transaction_amount with $ sign($xx.xx) - mandatory\",\n    \"transaction_id\": \"transaction_id - mandatory\",\n    \"card_number_masked\": \"card_number_masked - mandatory\",\n    \"card_logo\": \"card_logo - mandatory\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "https://api.sikkasoft.com/v2/payment/transaction_receipt",
+            "description": "Send transaction receipt in email and text message.\r\n\r\n    \"send_email\": \"true/false - mandatory,  if true then receipt email will be sent and html will be blank in response, if false then only html given in response and email will not be sent\"\r\n    \"send_text\": \"true/false - Optional,  if true then text message will be sent on patient_phone\"\r\n    \"patient_phone\": \"patient_phone - Optional,  - if send_text=true then this value will be used to send text meesage\"\r\n    \"patient_emailid\": \"patient_emailid - if send_email=true then this is mandatory, else optional\""
+          },
+          "response": [
+            {
+              "id": "66e2dd71-1c88-4ced-b451-402fa21b4a0b",
+              "name": "Email receipts",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"request_key\": \"3da1c1591f8934e3271fadc4212b7fe5\",\n    \"send_email\": \"true\",\n    \"practice_name\": \"Smile Dental\",\n    \"practice_address_line1\": \"1731 Technology Dr \",\n    \"practice_address_line2\": \"San Jose, CA, 95110\",\n    \"practice_phone\": \"40xxxxxx90\",\n    \"payee_name\": \"ROWzzz PHILIP\",\n    \"patient_name\": \"ROWzzz PHILIP\",\n    \"patient_address_line1\": \"1323 Yolk Ct\",\n    \"patient_address_line2\": \"\",\n    \"patient_phone\": \"99xxxxxx59\",\n    \"patient_emailid\": \"info@sikkasoftware.com\",\n    \"patient_id\": \"869\",\n    \"transaction_description\": \"Credit Card Sale\",\n    \"transaction_amount\": \"$9.99\",\n    \"transaction_id\": \"035-0016780107\",\n    \"card_number_masked\": \"0888\",\n    \"card_logo\": \"MasterCard\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "https://api.sikkasoft.com/v2/payment/transaction_receipt"
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"500\",\n        \"total_count\": \"1\",\n        \"execution_time\": \"2874\",\n        \"items\": [\n            {\n                \"html\": \"\",\n                \"is_email_sent\": \"true\",\n                \"is_text_sent\": \"false\"\n            }\n        ]\n    }\n]"
+            }
+          ]
         }
       ],
       "_postman_id": "d945a0d4-7607-442b-b8a5-31a58e004f0b",
-      "description": "Sikka Payment APIs\r\n\r\n#### Integrate online payments using the Sikka APIs.\r\n\r\n#### Overview\r\nSikka Payments API enables healthcare practices to process payments through the secured payment gateway. A payment can be taken from patients.\r\n\r\n#### Base URL \r\n[https://api.sikkasoft.com/v2/payments](https://api.sikkasoft.com/v2/payments)\r\n\r\n#### Sandbox URL \r\n[https://api.sikkasoft.com/v2/sandbox/payments](https://api.sikkasoft.com/v2/sandbox/payments)\r\n\r\n#### PCI Compliance\r\nSikka Software is only responsible for the security of credit card to the extent that it is directly in the route of the payment request to payment processors during a payment processing request. To ensure secure handling of payment instruments, as a third-party developer, you are responsible for developing the front ends in a PCI compliant manner and maintaining a PCI compliance.\r\n> NOTE : If your application handles credit card data, you will need to be PCI Compliant.\r\n\r\n##### Rules\r\n- Non-printable characters, such as CR, LF, and other control characters, must not be submitted. \r\n- Spaces at the beginning and end of fields are not preserved; spaces in the middle are preserved. \r\n- Dates must be submitted as \"YYYY-MM-DD\" where \"YYYY\" is the four-digit year, \"MM\" is the two-digit month, and \"DD\" is the two-digit day. For example, February 1, 2015 is submitted as \"2015-02-01\". \r\n\r\n#### Testing Your Application\r\n- The Sikka payment APIs sandbox environment is fully functional and available 24/7. Your Sikka API account in our sandbox environment is available for as long as you want to use it. Many of our API partners / users continue to use the test account for future development projects & evaluation of new products. \r\n- If your account is in production (live), you can use : 'https://api.sikkasoft.com/v2/payments\r\n- If you want to use our sandbox environment , you can use : https://api.sikkasoft.com/v2/sandbox/payments\r\n\r\n##### Sandbox environment data \r\n- While testing, you may want to experiment with the different responses that can be generated. The following table provides test card numbers that will produce an approval and includes address data for testing. If you want to test CVV, the code listed in the right-hand column is the correct CVV code. Please note that for these test cards the EXP Date is flexible and can be any future date.\r\n\r\n\r\n##### Test Cards - Approved\r\n|Card Type | Card Number | Exp Date | Address | CVV\r\n|--|--|--|--|--|\r\n|Visa  |4111111111111111  |04/2029 |123 Test St., Somewhere, CA, 90001| 123|\r\n|MasterCard|5411111111111115  |04/2029 |4000 Main St., Anytown, AZ, 85001| 777|\r\n|MasterCard|2223000010020888  |04/2029 |4001 Main St., Anytown, AZ 85002| 657|\r\n|American Express|341111111111111|04/2029 |12 Colorado Blvd., Elsewhere, IL, 40000| 4000|\r\n|Discover|6011000000000012|04/2029 |6789 Green Ave., Nowhere, MA, 12345| 298|\r\n|Diners Club|36484444444446|04/2029 |7390 Del Mar Blvd, Anytown, NY, 01101| 456|\r\n|JCB|213122222222221|04/2029 |350 Madison Ave., Springfield, OH, 40000| 281|\r\n\r\nThe test card numbers from the above table are duplicated below without spaces for use with copy and paste. \r\n\r\n    Visa: 4111111111111111 \r\n    MasterCard: 5411111111111115 \r\n    American Express: 341111111111111 \r\n    Discover: 6011000000000012 \r\n    Diner's Club: 36484444444446 \r\n    JCB: 213122222222221\r\n \r\n\r\n\r\n##### Test Cards - Declined\r\nThe following card numbers will generate a decline, with the declinetype as listed below. You may use this to test code which takes different paths dependent upon the type of decline.\r\n\r\n|Card Number | Exp Date | Decline Type | Without Spaces\r\n|--|--|--|--|\r\n|4012 3456 7890 9  |04/2029 |decline| 4012345678909|\r\n|5555 4444 3333 2226  |04/2029 |call| 5555444433332226|\r\n|4444 1111 4444 1111  |04/2029 |carderror| 4444111144441111|\r\n\r\n\r\n##### ACH Test Numbers\r\n|Routing Number|Account Number  |\r\n|--|--|\r\n|789456124|55544433221|\r\n\r\n#### Getting started \r\n\r\n![](https://api.sikkasoft.com/portal/images/sikkapaymentapi.png)\r\n\r\n 1. Setup sphere merchant account First, you need a Sphere merchant account. Register now. \r\n 2. After creating account with Sphere ,log into Sikka API Portal\r\n 3. Go to API testing tool and select base url ('/payments' for production & '/sandbox' for testing) for payments. \r\n 4. Select POST sale API and execute it with required parameters\r\n 5. Check response of API.\r\n\r\n Congratulations! You completed a basic payments integration with the Sikka payment APIs."
+      "description": "Sikka Payment APIs\r\n\r\n#### Integrate online payments using the Sikka APIs.\r\n\r\n#### Overview\r\nSikka Payments API enables healthcare practices to process payments through the secured payment gateway. A payment can be taken from patients.\r\n\r\n#### Base URL \r\n[https://api.sikkasoft.com/v2/payments](https://api.sikkasoft.com/v2/payments)\r\n\r\n#### Sandbox URL \r\n[https://api.sikkasoft.com/v2/sandbox/payments](https://api.sikkasoft.com/v2/sandbox/payments)\r\n\r\n#### PCI Compliance\r\nSikka Software is only responsible for the security of credit card to the extent that it is directly in the route of the payment request to payment processors during a payment processing request. To ensure secure handling of payment instruments, as a third-party developer, you are responsible for developing the front ends in a PCI compliant manner and maintaining a PCI compliance.\r\n> NOTE : If your application handles credit card data, you will need to be PCI Compliant.\r\n\r\n##### Rules\r\n- Non-printable characters, such as CR, LF, and other control characters, must not be submitted. \r\n- Spaces at the beginning and end of fields are not preserved; spaces in the middle are preserved. \r\n- Dates must be submitted as \"YYYY-MM-DD\" where \"YYYY\" is the four-digit year, \"MM\" is the two-digit month, and \"DD\" is the two-digit day. For example, February 1, 2015 is submitted as \"2015-02-01\". \r\n\r\n#### Testing Your Application\r\n- The Sikka payment APIs sandbox environment is fully functional and available 24/7. Your Sikka API account in our sandbox environment is available for as long as you want to use it. Many of our API partners / users continue to use the test account for future development projects & evaluation of new products. \r\n- If your account is in production (live), you can use : 'https://api.sikkasoft.com/v2/payments\r\n- If you want to use our sandbox environment , you can use : https://api.sikkasoft.com/v2/sandbox/payments\r\n\r\n##### Sandbox environment data \r\n- While testing, you may want to experiment with the different responses that can be generated. The following table provides test card numbers that will produce an approval and includes address data for testing. If you want to test CVV, the code listed in the right-hand column is the correct CVV code. Please note that for these test cards the EXP Date is flexible and can be any future date.\r\n\r\n\r\n##### Test Cards - Approved\r\n|Card Type | Card Number | Exp Date | Address | CVV\r\n|--|--|--|--|--|\r\n|Visa  |4111111111111111  |04/2029 |123 Test St., Somewhere, CA, 90001| 123|\r\n|MasterCard|5411111111111115  |04/2029 |4000 Main St., Anytown, AZ, 85001| 777|\r\n|MasterCard|2223000010020888  |04/2029 |4001 Main St., Anytown, AZ 85002| 657|\r\n|American Express|341111111111111|04/2029 |12 Colorado Blvd., Elsewhere, IL, 40000| 4000|\r\n|Discover|6011000000000012|04/2029 |6789 Green Ave., Nowhere, MA, 12345| 298|\r\n|Diners Club|36484444444446|04/2029 |7390 Del Mar Blvd, Anytown, NY, 01101| 456|\r\n|JCB|213122222222221|04/2029 |350 Madison Ave., Springfield, OH, 40000| 281|\r\n\r\nThe test card numbers from the above table are duplicated below without spaces for use with copy and paste. \r\n\r\n    Visa: 4111111111111111 \r\n    MasterCard: 5411111111111115 \r\n    American Express: 341111111111111 \r\n    Discover: 6011000000000012 \r\n    Diner's Club: 36484444444446 \r\n    JCB: 213122222222221\r\n \r\n\r\n\r\n##### Test Cards - Declined\r\nThe following card numbers will generate a decline, with the declinetype as listed below. You may use this to test code which takes different paths dependent upon the type of decline.\r\n\r\n|Card Number | Exp Date | Decline Type | Without Spaces\r\n|--|--|--|--|\r\n|4012 3456 7890 9  |04/2029 |decline| 4012345678909|\r\n|5555 4444 3333 2226  |04/2029 |call| 5555444433332226|\r\n|4444 1111 4444 1111  |04/2029 |carderror| 4444111144441111|\r\n\r\n\r\n##### ACH Test Numbers\r\n|Routing Number|Account Number  |\r\n|--|--|\r\n|789456124|55544433221|\r\n\r\n#### Getting started \r\n\r\n![](https://api.sikkasoft.com/portal/images/sikkapaymentapi.png)\r\n\r\n 1. Practice must have sphere merchant account First, you need a Sphere merchant account. ![Register now](https://www.spherecommerce.com/). \r\n 2. After creating account with Sphere ,log into Sikka API Portal\r\n 3. Go to API testing tool and select base url ('/payments' for production & '/sandbox' for testing) for payments. \r\n 4. Select POST sale API and execute it with required parameters\r\n 5. Check response of API.\r\n\r\n Congratulations! You completed a basic payments integration with the Sikka payment APIs.",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "090cb3a0-635d-441e-9f15-1965f54d4ec9",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "0b8d0a3e-a4eb-444f-8f1f-dbf8d6664eaa",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
     },
     {
       "name": "start",
