@@ -24790,6 +24790,74 @@
               "body": "[\r\n    {\r\n        \"offset\": \"0\",\r\n        \"limit\": \"1\",\r\n        \"total_count\": \"1\",\r\n        \"execution_time\": \"3218\",\r\n        \"items\": [\r\n            {\r\n                \"expiration_month\": \"04\",\r\n                \"expiration_year\": \"2029\",\r\n                \"transaction_id\": \"039-0012681856\",\r\n                \"transaction_amount\": \"25.85\",\r\n                \"card_number_masked\": \"0888\",\r\n                \"transaction_type\": \"sale\",\r\n                \"transaction_status\": \"approved\",\r\n                \"ticket\": \"111~110~1\",\r\n                \"authorized_amount\": \"25.85\",\r\n                \"billing_id\": \"\"\r\n            }\r\n        ]\r\n    }\r\n]"
             }
           ]
+        },
+        {
+          "name": "Sale by ACH",
+          "_postman_id": "b9808998-182d-4d33-91a0-4da7278e7a69",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"request_key\": \"request_key - mandatory\",\n    \"transaction_media\": \"ach - mandatory\",\n    \"patient_id\": \"patient_id - mandatory\",\n    \"guarantor_id\": \"guarantor_id - mandatory\",\n    \"practice_id\": \"practice_id - mandatory\",\n    \"cust_id\": \"cust_id - mandatory\",\n    \"provider_id\": \"provider_id - mandatory\",\n    \"name\": \"name - mandatory\",\n    \"zipcode\": \"zipcode - mandatory\",\n    \"transaction_amount\": \"transaction_amount(xx.xx) - mandatory\",\n    \"routing_number\": \"routing_number - mandatory\",\n    \"account_number\": \"account_number - mandatory\",\n    \"is_savings_account_number\": \"y OR n - mandatory\"\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "https://api.sikkasoft.com/v2/payment/sale",
+            "description": "Automated Clearing House (ACH) is the back-end process through which electronic checks may be processed. ACH is purely a money transfer. ACH \"sale\" use the same fields as \"sale\" by \"credit_card\", with the exception of the \"card_number\", \"expiration_month\", \"expiration_year\" and address verification system (AVS) fields. Instead, they use the following fields: \"account\", \"routing\".\r\n\r\n\r\nTo process transaction with ACH, \"transaction_media\" must have value \"ach\" as shown below:\r\n\r\n\r\n\"transaction_media\": \"ach\" mandatory to do transaction with ach."
+          },
+          "response": [
+            {
+              "id": "437ad405-d39f-4cf3-8a6d-4ec72ec73653",
+              "name": "Sale by ACH",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n\t\"request_key\": \"4db57ca3cf7d30304c85a94fd58d9210\",\r\n\t\"transaction_media\": \"ach\",\r\n\t\"name\": \"Mia Elson\",\r\n    \"zipcode\": \"95121\",\r\n\t\"transaction_amount\": \"45.65\",\r\n\t\"routing_number\": \"78xxxxx24\",\r\n\t\"account_number\": \"5xxxx4xxxx1\",\r\n\t\"is_savings_account_number\": \"n\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "https://api.sikkasoft.com/v2/payment/sale"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"1\",\n        \"total_count\": \"1\",\n        \"execution_time\": \"13260\",\n        \"items\": [\n            {\n                \"transaction_id\": \"039-0012683836\",\n                \"transaction_amount\": \"45.65\",\n                \"transaction_type\": \"sale\",\n                \"transaction_status\": \"accepted\",\n                \"ticket\": \"111~110~1\",\n                \"authorized_amount\": \"45.65\",\n                \"billing_id\": \"\"\n            }\n        ]\n    }\n]"
+            }
+          ]
         }
       ],
       "_postman_id": "d945a0d4-7607-442b-b8a5-31a58e004f0b",
