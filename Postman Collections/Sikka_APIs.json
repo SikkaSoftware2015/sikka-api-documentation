@@ -25274,6 +25274,74 @@
               "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"1000\",\n        \"total_count\": \"1\",\n        \"execution_time\": \"47695\",\n        \"items\": [\n            {\n                \"expiration_month\": \"04\",\n                \"expiration_year\": \"2029\",\n                \"is_default\": \"true\",\n                \"transaction_amount\": \"\",\n                \"run_cycles\": \"\",\n                \"transaction_date\": \"2019-12-17 15:48:25\",\n                \"email\": \"\",\n                \"city\": \"\",\n                \"state\": \"\",\n                \"zipcode\": \"95121\",\n                \"country\": \"\",\n                \"is_active\": \"true\",\n                \"card_logo\": \"Visa\",\n                \"card_number_masked\": \"1111\",\n                \"ticket\": \"111~110~1\",\n                \"is_recurring_payments\": \"false\",\n                \"number_of_payments\": \"\",\n                \"billing_id\": \"60EV9H\",\n                \"name\": \"Mia Elson\",\n                \"address1\": \"\",\n                \"address2\": \"\",\n                \"phone\": \"\",\n                \"run_cycle_interval\": \"\",\n                \"first_payment_amount\": \"\",\n                \"last_payment_amount\": \"\",\n                \"number_of_payments_completed\": \"\",\n                \"last_run_date\": \"\",\n                \"next_run_date\": \"\",\n                \"transaction_amount_due\": \"\",\n                \"api_host\": \"Q\"\n            }\n        ]\n    }\n]"
             }
           ]
+        },
+        {
+          "name": "Sale by saved card",
+          "_postman_id": "982cc527-cb49-4518-a8af-92dc28b5ebcb",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"request_key\": \"request_key - mandatory\",\n    \"transaction_media\": \"billing_id - mandatory\",\n    \"patient_id\": \"patient_id - mandatory\",\n    \"guarantor_id\": \"guarantor_id - mandatory\",\n    \"practice_id\": \"practice_id - mandatory\",\n    \"cust_id\": \"cust_id - mandatory\",\n    \"provider_id\": \"provider_id - mandatory\",\n    \"name\": \"name - mandatory\",\n    \"zipcode\": \"zipcode - mandatory\",\n    \"transaction_amount\": \"transaction_amount(xx.xx) - mandatory\",\n    \"billing_id\": \"billing_id - mandatory\"\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "https://api.sikkasoft.com/v2/payment/sale",
+            "description": "A sale transaction by saved card is the simplest method to process a complete payment without providing actual credit card details. Upon submission, a Sale transaction attempts an authorization on provided \"billing_id\" and if approved, schedules capture, which initiates the process that results in funding.\r\n\r\n\r\nTo process transaction with saved credit card, \"transaction_media\" must have value \"billing_id\" as shown below:\r\n\r\n\r\n\"transaction_media\": \"billing_id\" - mandatory to do transaction with saved card credit card."
+          },
+          "response": [
+            {
+              "id": "4f831922-dfaf-467d-9138-f64985334c95",
+              "name": "Sale by saved card",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"request_key\": \"4db57ca3cf7d30304c85a94fd58d9210\",\n    \"transaction_media\": \"billing_id\",\n\t\"patient_id\": \"111\",\n\t\"guarantor_id\": \"112\",\n\t\"practice_id\": \"1\",\n\t\"cust_id\": \"1\",\n\t\"provider_id\":\"ABC1\",    \n    \"name\": \"Mia Elson\",\n    \"zipcode\": \"95121\",\n    \"transaction_amount\": \"35.75\",\n    \"billing_id\": \"60xx9H\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "https://api.sikkasoft.com/v2/payment/sale"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"1\",\n        \"total_count\": \"1\",\n        \"execution_time\": \"6551\",\n        \"items\": [\n            {\n                \"transaction_id\": \"039-0012684312\",\n                \"transaction_amount\": \"35.75\",\n                \"transaction_type\": \"sale\",\n                \"transaction_status\": \"approved\",\n                \"ticket\": \"111~110~1\",\n                \"authorized_amount\": \"35.75\",\n                \"billing_id\": \"60xx9H\"\n            }\n        ]\n    }\n]"
+            }
+          ]
         }
       ],
       "_postman_id": "d945a0d4-7607-442b-b8a5-31a58e004f0b",
