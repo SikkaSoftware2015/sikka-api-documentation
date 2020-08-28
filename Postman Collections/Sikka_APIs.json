@@ -24719,7 +24719,7 @@
             "method": "GET",
             "header": [],
             "url": "",
-            "description": "#### Accept online payments from your customers.\n\n1. > Setup sphere merchant account\n    First, you need a Sphere merchant account. Register now.\n\n2. > Once your get merchant account id from Sphere. Follow step 3\n\n3. > Log in to Sikka API portal --> API testing tool"
+            "description": "#### Accept online payments from your customers.\n\n1. > Practice needs to setup sphere merchant account.\n    [Register now](https://www.spherecommerce.com/)\n\n2. > Once your get merchant account id from Sphere. Follow step 3\n\n3. > Log in to Sikka API portal --> API testing tool"
           },
           "response": []
         },
