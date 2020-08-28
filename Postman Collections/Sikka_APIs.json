@@ -24858,6 +24858,73 @@
               "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"1\",\n        \"total_count\": \"1\",\n        \"execution_time\": \"13260\",\n        \"items\": [\n            {\n                \"transaction_id\": \"039-0012683836\",\n                \"transaction_amount\": \"45.65\",\n                \"transaction_type\": \"sale\",\n                \"transaction_status\": \"accepted\",\n                \"ticket\": \"111~110~1\",\n                \"authorized_amount\": \"45.65\",\n                \"billing_id\": \"\"\n            }\n        ]\n    }\n]"
             }
           ]
+        },
+        {
+          "name": "Save a card",
+          "_postman_id": "1bf2cdb2-fef3-4c51-a53c-876015b45517",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"request_key\": \"request_key - mandatory\",\n    \"patient_id\": \"patient_id - mandatory\",\n    \"guarantor_id\": \"guarantor_id - mandatory\",\n    \"practice_id\": \"practice_id - mandatory\",\n    \"cust_id\": \"cust_id - mandatory\",\n    \"provider_id\": \"provider_id - optional\",\n    \"name\": \"name - mandatory\",\n    \"zipcode\": \"zipcode - mandatory\",\n    \"is_recurring_payments\": \"false - optional\",\n    \"card_number\": \"card_number - mandatory\",\n    \"expiration_month\": \"expiration_month(MM) - mandatory\",\n    \"expiration_year\": \"expiration_year(YYYY) - mandatory\",\n    \"address1\": \"address1 - optional\",\n    \"address2\": \"address2 - optional\",\n    \"city\": \"city- optional\",\n    \"state\": \"state- optional\",\n    \"phone\": \"phone - optional\",\n    \"email\": \"email - optional\",\n    \"is_default\": \"true/false - optional\"\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "https://api.sikkasoft.com/v2/payment/store_card",
+            "description": "> This feature allows merchants to submit a request to Store payment account details and receive a \"billing_id\". The \"billing_id\" is a token that can be used as a Cardholder primary account number (PAN) replacement for future one-time and subscription payments.\r\n\r\n\r\nEach \"billing_id\" is access controlled such that it can only be used by the merchant who created it and can be stored by the merchant in plain text.\r\n\r\n\r\n\"is_recurring_payments\": \"false - optional\" - if not passed then default value for this parameter \"false\" will be considered. \r\n\r\n\r\n\"is_default\": \"true/false - optional\" - if not passed then default value for this parameter \"true\" will be considered."
+          },
+          "response": [
+            {
+              "id": "40a0b5bc-67b9-4f8f-ad0c-51e328c5accc",
+              "name": "Save a card",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"request_key\": \"033c63a1446d9935f044dad11f796027\",\r\n    \"patient_id\": \"111\",\r\n    \"guarantor_id\": \"110\",\r\n    \"practice_id\": \"1\",\r\n    \"cust_id\": \"1\",\r\n    \"provider_id\": \"DT01\",\r\n    \"name\": \"Mia Elson\",\r\n    \"zipcode\": \"95121\",\r\n    \"is_recurring_payments\": \"false\",\r\n    \"card_number\": \"411xxxx111xxxx11\",\r\n    \"expiration_month\": \"04\",\r\n    \"expiration_year\": \"20xx\",\r\n    \"address1\": \"\",\r\n    \"address2\": \"\",\r\n    \"city\": \"\",\r\n    \"state\": \"\",\r\n    \"phone\": \"\",\r\n    \"email\": \"\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "https://api.sikkasoft.com/v2/payment/store_card"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": "",
+                  "type": "text"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"1\",\n        \"total_count\": \"1\",\n        \"execution_time\": \"7870\",\n        \"items\": [\n            {\n                \"guarantor_id\": \"110\",\n                \"patient_id\": \"111\",\n                \"provider_id\": \"DT01\",\n                \"practice_id\": \"1\",\n                \"expiration_month\": \"04\",\n                \"expiration_year\": \"20xx\",\n                \"transaction_id\": \"039-0012428197\",\n                \"is_default\": \"true\",\n                \"cust_id\": \"1\",\n                \"card_logo\": \"Visa\",\n                \"card_number_masked\": \"xx11\",\n                \"transaction_type\": \"store\",\n                \"transaction_status\": \"approved\",\n                \"billing_id\": \"60EV88\"\n            }\n        ]\n    }\n]"
+            }
+          ]
         }
       ],
       "_postman_id": "d945a0d4-7607-442b-b8a5-31a58e004f0b",
