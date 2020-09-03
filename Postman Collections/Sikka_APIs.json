@@ -18930,13 +18930,13 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{url}}/medical_history/{patient_id}?request_key={{request_key}}",
+              "raw": "{{url}}/medical_notes/{type}?request_key={{request_key}}",
               "host": [
                 "{{url}}"
               ],
               "path": [
-                "medical_history",
-                "{patient_id}"
+                "medical_notes",
+                "{type}"
               ],
               "query": [
                 {
