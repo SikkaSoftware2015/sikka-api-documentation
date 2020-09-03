@@ -18671,12 +18671,12 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{url}}/medical_history?request_key={{request_key}}",
+              "raw": "{{url}}/medical_notes?request_key={{request_key}}",
               "host": [
                 "{{url}}"
               ],
               "path": [
-                "medical_history"
+                "medical_notes"
               ],
               "query": [
                 {
