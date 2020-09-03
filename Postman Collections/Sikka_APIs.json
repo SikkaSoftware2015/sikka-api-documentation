@@ -18662,7 +18662,7 @@
           ]
         },
         {
-          "name": "medical_history Copy",
+          "name": "note_types",
           "_postman_id": "64fbeb13-da47-4ecb-a89b-d64b2e7ec46f",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
