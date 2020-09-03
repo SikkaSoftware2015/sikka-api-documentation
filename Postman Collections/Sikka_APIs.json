@@ -20172,6 +20172,241 @@
               "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"2\",\r\n\t\"total_count\": \"10\",\r\n\t\"execution_time\": \"292\",\r\n\t\"pagination\": {\r\n\t\t\"first\": \"https://api.sikkasoft.com/v2/pet_nutrition?offset=0&limit=2\",\r\n\t\t\"previous\": \"\",\r\n\t\t\"current\": \"https://api.sikkasoft.com/v2/pet_nutrition?offset=0&limit=2\",\r\n\t\t\"next\": \"https://api.sikkasoft.com/v2/pet_nutrition?offset=1&limit=2\",\r\n\t\t\"last\": \"https://api.sikkasoft.com/v2/pet_nutrition?offset=4&limit=2\"\r\n\t},\r\n\t\"items\": [{\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/pet_nutrition/0000\",\r\n\t\t\t\"patient_id\": \"0000\",\r\n\t\t\t\"patient\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/0000\"\r\n\t\t\t},\r\n\t\t\t\"petname\": \"MyPet\",\r\n\t\t\t\"breed\": \"Wolfhound Irish\",\r\n\t\t\t\"species\": \"Dog\",\r\n\t\t\t\"guarantor_id\": \"11111\",\r\n\t\t\t\"guarantor\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/11111\"\r\n\t\t\t},\r\n\t\t\t\"guarantor_last_name\": \"Pandya\",\r\n\t\t\t\"guarantor_first_name\": \"Satyen\",\r\n\t\t\t\"cell\": \"123-456-7890\",\r\n\t\t\t\"street\": \"Which St. No One Knows\",\r\n\t\t\t\"city\": \"Dummy\",\r\n\t\t\t\"state\": \"NV\",\r\n\t\t\t\"zipcode\": \"12345\",\r\n\t\t\t\"prescription_date\": \"2019-06-04\",\r\n\t\t\t\"code\": \"4706\",\r\n\t\t\t\"description\": \"Sentinel FlavTab Green 11-25 lbs Hills\",\r\n\t\t\t\"quantity\": \"1\",\r\n\t\t\t\"provider_id\": \"ABCD\",\r\n\t\t\t\"provider\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/ABCD\"\r\n\t\t\t},\r\n\t\t\t\"provider_title\": \"\",\r\n\t\t\t\"provider_lastname\": \"LastProvider\",\r\n\t\t\t\"provider_firstname\": \"FirstProvider\",\r\n\t\t\t\"measure\": \"Tablet\",\r\n\t\t\t\"inserted_on_date\": \"2019-06-12\",\r\n\t\t\t\"practice_id\": \"1\",\r\n\t\t\t\"practice\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t\t}\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/pet_nutrition/0000\",\r\n\t\t\t\"patient_id\": \"0000\",\r\n\t\t\t\"patient\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/0000\"\r\n\t\t\t},\r\n\t\t\t\"petname\": \"MyPet\",\r\n\t\t\t\"breed\": \"Wolfhound Irish\",\r\n\t\t\t\"species\": \"Dog\",\r\n\t\t\t\"guarantor_id\": \"11111\",\r\n\t\t\t\"guarantor\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/11111\"\r\n\t\t\t},\r\n\t\t\t\"guarantor_last_name\": \"Pandya\",\r\n\t\t\t\"guarantor_first_name\": \"Satyen\",\r\n\t\t\t\"cell\": \"123-456-7890\",\r\n\t\t\t\"street\": \"Which St. No One Knows\",\r\n\t\t\t\"city\": \"Dummy\",\r\n\t\t\t\"state\": \"NV\",\r\n\t\t\t\"zipcode\": \"12345\",\r\n\t\t\t\"prescription_date\": \"2019-06-06\",\r\n\t\t\t\"code\": \"4703\",\r\n\t\t\t\"description\": \"Sentinel White-51-100 lbs Hills\",\r\n\t\t\t\"quantity\": \"1\",\r\n\t\t\t\"provider_id\": \"ABCD\",\r\n\t\t\t\"provider\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/ABCD\"\r\n\t\t\t},\r\n\t\t\t\"provider_title\": \"\",\r\n\t\t\t\"provider_lastname\": \"LastProvider\",\r\n\t\t\t\"provider_firstname\": \"FirstProvider\",\r\n\t\t\t\"measure\": \"Tablet\",\r\n\t\t\t\"inserted_on_date\": \"2019-06-12\",\r\n\t\t\t\"practice_id\": \"1\",\r\n\t\t\t\"practice\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t\t}\r\n\t\t}\r\n\t]\r\n}]"
             }
           ]
+        },
+        {
+          "name": "medical_notes Copy",
+          "_postman_id": "98071dc6-4fa2-46f8-b7d5-c7ac4ce47e88",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/medical_notes?request_key={{request_key}}",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "medical_notes"
+              ],
+              "query": [
+                {
+                  "key": "request_key",
+                  "value": "{{request_key}}"
+                }
+              ]
+            },
+            "description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|patient_id|Patient ID as per the management system|No|\r\n|practice_id|Practice ID|No|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|patient_id|Patient ID as per the management system|"
+          },
+          "response": [
+            {
+              "id": "4ca62250-8a0b-4c05-b6b6-a963916beb1c",
+              "name": "sample response",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{url}}/medical_notes?request_key={{request_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "medical_notes"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "{{request_key}}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "Access-Control-Allow-Headers",
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "accept, authorization, Content-Type, X-Session-Id",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Methods",
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Origin",
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "description": ""
+                },
+                {
+                  "name": "Cache-Control",
+                  "key": "Cache-Control",
+                  "value": "private, no-cache=\"set-cookie\"",
+                  "description": ""
+                },
+                {
+                  "name": "Connection",
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Length",
+                  "key": "Content-Length",
+                  "value": "1272",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Type",
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": ""
+                },
+                {
+                  "name": "Date",
+                  "key": "Date",
+                  "value": "Mon, 24 Apr 2017 12:14:33 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "Server",
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5",
+                  "description": ""
+                },
+                {
+                  "name": "X-AspNet-Version",
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "description": ""
+                },
+                {
+                  "name": "X-Powered-By",
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"2\",\r\n\t\"total_count\": \"215110\",\r\n\t\"items\": [{\r\n\t\t\"href\": \"\",\r\n\t\t\"patient_id\": \"6066\",\r\n\t\t\"patient\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/6066\"\r\n\t\t},\r\n\t\t\"type\": \"General Note\",\r\n\t\t\"date\": \"2016-04-19\",\r\n\t\t\"text\": \"DOS4-19-16Pt presents to the office as a new patient.Took 2 PAS #15Reviewed medical history with patient.Completed new patient interview.Took new patient photo.Dr Mathes performed comprehensive exam- completed dental chart perio chart and took intra oral pictures. Treatment plan established today for start with referral to DR. Dale for #15 and then crown?? Pt. needs a comprehensive treatment plan soon has extra insurance for 1 month so needs to get the higher priced treatment now. Dr. to give to Kim so she can give to Melissa.NV:Refer to Dr. Dale for #15LW\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t},\r\n\t\t\"description\": \"\"\r\n\t}, {\r\n\t\t\"href\": \"\",\r\n\t\t\"patient_id\": \"6066\",\r\n\t\t\"patient\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/6066\"\r\n\t\t},\r\n\t\t\"type\": \"Primary Insurace Note\",\r\n\t\t\"date\": \"2016-04-19\",\r\n\t\t\"text\": \"Insurance Claim from April 19 2016 was Submitted to Prim. Insurance Company: CIGNA Payer ID: 62308\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t},\r\n\t\t\"description\": \"\"\r\n\t}]\r\n}]"
+            },
+            {
+              "id": "66c5197b-94cb-4f32-8112-849f7e36cf5a",
+              "name": "request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{url}}/medical_notes?request_key={{request_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "medical_notes"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "{{request_key}}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "Access-Control-Allow-Headers",
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "accept, authorization, Content-Type, X-Session-Id",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Methods",
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Origin",
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "description": ""
+                },
+                {
+                  "name": "Cache-Control",
+                  "key": "Cache-Control",
+                  "value": "private,max-age=86400",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Encoding",
+                  "key": "Content-Encoding",
+                  "value": "gzip",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Length",
+                  "key": "Content-Length",
+                  "value": "524",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Type",
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": ""
+                },
+                {
+                  "name": "Date",
+                  "key": "Date",
+                  "value": "Thu, 18 May 2017 06:29:57 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "Expires",
+                  "key": "Expires",
+                  "value": "Wed, 01 Jan 1997 12:00:00 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "Server",
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5",
+                  "description": ""
+                },
+                {
+                  "name": "Vary",
+                  "key": "Vary",
+                  "value": "Accept-Encoding",
+                  "description": ""
+                },
+                {
+                  "name": "X-AspNet-Version",
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "description": ""
+                },
+                {
+                  "name": "X-Powered-By",
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"500\",\r\n\t\"total_count\": \"3\",\r\n\t\"items\": [{\r\n\t\t\"href\": \"\",\r\n\t\t\"patient_id\": \"445501\",\r\n\t\t\"patient\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/445501\"\r\n\t\t},\r\n\t\t\"type\": \"PatNote\",\r\n\t\t\"date\": \"2016-01-01\",\r\n\t\t\"text\": \"Check gums on next visit\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t},\r\n\t\t\"description\": \"\",\r\n\t\t\"provider_id\": \"\",\r\n\t\t\"procedure_date\": \"\",\r\n\t\t\"transaction_sr_no\": \"0\",\r\n\t\t\"transaction\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/transactions/0\"\r\n\t\t},\r\n\t\t\"procedure_code_id\": \"\",\r\n\t\t\"clinical_condition_id\": \"\",\r\n\t\t\"tooth_number\": \"\",\r\n\t\t\"surface\": \"\"\r\n\t}, {\r\n\t\t\"href\": \"\",\r\n\t\t\"patient_id\": \"111001\",\r\n\t\t\"patient\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/111001\"\r\n\t\t},\r\n\t\t\"type\": \"PatNote\",\r\n\t\t\"date\": \"2016-01-01\",\r\n\t\t\"text\": \"Xrays were normal\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t},\r\n\t\t\"description\": \"\",\r\n\t\t\"provider_id\": \"\",\r\n\t\t\"procedure_date\": \"\",\r\n\t\t\"transaction_sr_no\": \"0\",\r\n\t\t\"transaction\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/transactions/0\"\r\n\t\t},\r\n\t\t\"procedure_code_id\": \"\",\r\n\t\t\"clinical_condition_id\": \"\",\r\n\t\t\"tooth_number\": \"\",\r\n\t\t\"surface\": \"\"\r\n\t}, {\r\n\t\t\"href\": \"\",\r\n\t\t\"patient_id\": \"111001\",\r\n\t\t\"patient\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/111001\"\r\n\t\t},\r\n\t\t\"type\": \"PatNote\",\r\n\t\t\"date\": \"2016-02-02\",\r\n\t\t\"text\": \"Check gums on next visit\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t},\r\n\t\t\"description\": \"\",\r\n\t\t\"provider_id\": \"\",\r\n\t\t\"procedure_date\": \"\",\r\n\t\t\"transaction_sr_no\": \"0\",\r\n\t\t\"transaction\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/transactions/0\"\r\n\t\t},\r\n\t\t\"procedure_code_id\": \"\",\r\n\t\t\"clinical_condition_id\": \"\",\r\n\t\t\"tooth_number\": \"\",\r\n\t\t\"surface\": \"\"\r\n\t}]\r\n}]"
+            }
+          ]
         }
       ],
       "_postman_id": "038d9327-a669-f7cd-8c74-eb8b3809a63e",
