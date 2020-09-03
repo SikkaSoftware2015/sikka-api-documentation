@@ -18662,6 +18662,132 @@
           ]
         },
         {
+          "name": "medical_history Copy",
+          "_postman_id": "64fbeb13-da47-4ecb-a89b-d64b2e7ec46f",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/medical_history?request_key={{request_key}}",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "medical_history"
+              ],
+              "query": [
+                {
+                  "key": "request_key",
+                  "value": "{{request_key}}"
+                }
+              ]
+            },
+            "description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|patient_id|Patient ID as per the management system|No|\r\n|practice_id|Practice ID|No|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|patient_id|Patient ID as per the management system|"
+          },
+          "response": [
+            {
+              "id": "6e1c5033-60fb-4b60-8a25-08bb29c2079c",
+              "name": "request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{url}}/medical_history?request_key={{request_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "medical_history"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "{{request_key}}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "Access-Control-Allow-Headers",
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "accept, authorization, Content-Type, X-Session-Id",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Methods",
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Origin",
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "description": ""
+                },
+                {
+                  "name": "Cache-Control",
+                  "key": "Cache-Control",
+                  "value": "private",
+                  "description": ""
+                },
+                {
+                  "name": "Connection",
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Length",
+                  "key": "Content-Length",
+                  "value": "888",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Type",
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": ""
+                },
+                {
+                  "name": "Date",
+                  "key": "Date",
+                  "value": "Mon, 24 Apr 2017 12:03:40 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "Server",
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5",
+                  "description": ""
+                },
+                {
+                  "name": "X-AspNet-Version",
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "description": ""
+                },
+                {
+                  "name": "X-Powered-By",
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[{\"offset\":\"0\",\"limit\":\"2\",\"total_count\":\"228960\",\"items\":[{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/medical_history\\/355301\",\"patient_id\":\"355301\",\"patient\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/355301\"},\"type\":\"Allergy\",\"name\":\"Metals\",\"value\":\"Inactive\",\"description\":\"\",\"created_date\":\"2016-12-27\",\"updated_date\":\"2016-12-30\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"}},{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/medical_history\\/355301\",\"patient_id\":\"355301\",\"patient\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/355301\"},\"type\":\"Medicaid\",\"name\":\"Amoxicillin 500 mg\",\"value\":\"62\",\"description\":\"Medicine ID & Name\",\"created_date\":\"2016-12-27\",\"updated_date\":\"2016-12-30\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"}}]}]\r\n"
+            }
+          ]
+        },
+        {
           "name": "medical_history by patient_id",
           "_postman_id": "213e06b7-10d4-a31b-ffd4-b620fba6f631",
           "request": {
@@ -20170,132 +20296,6 @@
               "cookie": [],
               "responseTime": null,
               "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"2\",\r\n\t\"total_count\": \"10\",\r\n\t\"execution_time\": \"292\",\r\n\t\"pagination\": {\r\n\t\t\"first\": \"https://api.sikkasoft.com/v2/pet_nutrition?offset=0&limit=2\",\r\n\t\t\"previous\": \"\",\r\n\t\t\"current\": \"https://api.sikkasoft.com/v2/pet_nutrition?offset=0&limit=2\",\r\n\t\t\"next\": \"https://api.sikkasoft.com/v2/pet_nutrition?offset=1&limit=2\",\r\n\t\t\"last\": \"https://api.sikkasoft.com/v2/pet_nutrition?offset=4&limit=2\"\r\n\t},\r\n\t\"items\": [{\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/pet_nutrition/0000\",\r\n\t\t\t\"patient_id\": \"0000\",\r\n\t\t\t\"patient\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/0000\"\r\n\t\t\t},\r\n\t\t\t\"petname\": \"MyPet\",\r\n\t\t\t\"breed\": \"Wolfhound Irish\",\r\n\t\t\t\"species\": \"Dog\",\r\n\t\t\t\"guarantor_id\": \"11111\",\r\n\t\t\t\"guarantor\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/11111\"\r\n\t\t\t},\r\n\t\t\t\"guarantor_last_name\": \"Pandya\",\r\n\t\t\t\"guarantor_first_name\": \"Satyen\",\r\n\t\t\t\"cell\": \"123-456-7890\",\r\n\t\t\t\"street\": \"Which St. No One Knows\",\r\n\t\t\t\"city\": \"Dummy\",\r\n\t\t\t\"state\": \"NV\",\r\n\t\t\t\"zipcode\": \"12345\",\r\n\t\t\t\"prescription_date\": \"2019-06-04\",\r\n\t\t\t\"code\": \"4706\",\r\n\t\t\t\"description\": \"Sentinel FlavTab Green 11-25 lbs Hills\",\r\n\t\t\t\"quantity\": \"1\",\r\n\t\t\t\"provider_id\": \"ABCD\",\r\n\t\t\t\"provider\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/ABCD\"\r\n\t\t\t},\r\n\t\t\t\"provider_title\": \"\",\r\n\t\t\t\"provider_lastname\": \"LastProvider\",\r\n\t\t\t\"provider_firstname\": \"FirstProvider\",\r\n\t\t\t\"measure\": \"Tablet\",\r\n\t\t\t\"inserted_on_date\": \"2019-06-12\",\r\n\t\t\t\"practice_id\": \"1\",\r\n\t\t\t\"practice\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t\t}\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/pet_nutrition/0000\",\r\n\t\t\t\"patient_id\": \"0000\",\r\n\t\t\t\"patient\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/0000\"\r\n\t\t\t},\r\n\t\t\t\"petname\": \"MyPet\",\r\n\t\t\t\"breed\": \"Wolfhound Irish\",\r\n\t\t\t\"species\": \"Dog\",\r\n\t\t\t\"guarantor_id\": \"11111\",\r\n\t\t\t\"guarantor\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/11111\"\r\n\t\t\t},\r\n\t\t\t\"guarantor_last_name\": \"Pandya\",\r\n\t\t\t\"guarantor_first_name\": \"Satyen\",\r\n\t\t\t\"cell\": \"123-456-7890\",\r\n\t\t\t\"street\": \"Which St. No One Knows\",\r\n\t\t\t\"city\": \"Dummy\",\r\n\t\t\t\"state\": \"NV\",\r\n\t\t\t\"zipcode\": \"12345\",\r\n\t\t\t\"prescription_date\": \"2019-06-06\",\r\n\t\t\t\"code\": \"4703\",\r\n\t\t\t\"description\": \"Sentinel White-51-100 lbs Hills\",\r\n\t\t\t\"quantity\": \"1\",\r\n\t\t\t\"provider_id\": \"ABCD\",\r\n\t\t\t\"provider\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/ABCD\"\r\n\t\t\t},\r\n\t\t\t\"provider_title\": \"\",\r\n\t\t\t\"provider_lastname\": \"LastProvider\",\r\n\t\t\t\"provider_firstname\": \"FirstProvider\",\r\n\t\t\t\"measure\": \"Tablet\",\r\n\t\t\t\"inserted_on_date\": \"2019-06-12\",\r\n\t\t\t\"practice_id\": \"1\",\r\n\t\t\t\"practice\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t\t}\r\n\t\t}\r\n\t]\r\n}]"
-            }
-          ]
-        },
-        {
-          "name": "medical_history Copy",
-          "_postman_id": "64fbeb13-da47-4ecb-a89b-d64b2e7ec46f",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "{{url}}/medical_history?request_key={{request_key}}",
-              "host": [
-                "{{url}}"
-              ],
-              "path": [
-                "medical_history"
-              ],
-              "query": [
-                {
-                  "key": "request_key",
-                  "value": "{{request_key}}"
-                }
-              ]
-            },
-            "description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|patient_id|Patient ID as per the management system|No|\r\n|practice_id|Practice ID|No|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|patient_id|Patient ID as per the management system|"
-          },
-          "response": [
-            {
-              "id": "6e1c5033-60fb-4b60-8a25-08bb29c2079c",
-              "name": "request",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "url": {
-                  "raw": "{{url}}/medical_history?request_key={{request_key}}",
-                  "host": [
-                    "{{url}}"
-                  ],
-                  "path": [
-                    "medical_history"
-                  ],
-                  "query": [
-                    {
-                      "key": "request_key",
-                      "value": "{{request_key}}"
-                    }
-                  ]
-                }
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "name": "Access-Control-Allow-Headers",
-                  "key": "Access-Control-Allow-Headers",
-                  "value": "accept, authorization, Content-Type, X-Session-Id",
-                  "description": ""
-                },
-                {
-                  "name": "Access-Control-Allow-Methods",
-                  "key": "Access-Control-Allow-Methods",
-                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
-                  "description": ""
-                },
-                {
-                  "name": "Access-Control-Allow-Origin",
-                  "key": "Access-Control-Allow-Origin",
-                  "value": "*",
-                  "description": ""
-                },
-                {
-                  "name": "Cache-Control",
-                  "key": "Cache-Control",
-                  "value": "private",
-                  "description": ""
-                },
-                {
-                  "name": "Connection",
-                  "key": "Connection",
-                  "value": "keep-alive",
-                  "description": ""
-                },
-                {
-                  "name": "Content-Length",
-                  "key": "Content-Length",
-                  "value": "888",
-                  "description": ""
-                },
-                {
-                  "name": "Content-Type",
-                  "key": "Content-Type",
-                  "value": "application/json",
-                  "description": ""
-                },
-                {
-                  "name": "Date",
-                  "key": "Date",
-                  "value": "Mon, 24 Apr 2017 12:03:40 GMT",
-                  "description": ""
-                },
-                {
-                  "name": "Server",
-                  "key": "Server",
-                  "value": "Microsoft-IIS/8.5",
-                  "description": ""
-                },
-                {
-                  "name": "X-AspNet-Version",
-                  "key": "X-AspNet-Version",
-                  "value": "4.0.30319",
-                  "description": ""
-                },
-                {
-                  "name": "X-Powered-By",
-                  "key": "X-Powered-By",
-                  "value": "ASP.NET",
-                  "description": ""
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "[{\"offset\":\"0\",\"limit\":\"2\",\"total_count\":\"228960\",\"items\":[{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/medical_history\\/355301\",\"patient_id\":\"355301\",\"patient\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/355301\"},\"type\":\"Allergy\",\"name\":\"Metals\",\"value\":\"Inactive\",\"description\":\"\",\"created_date\":\"2016-12-27\",\"updated_date\":\"2016-12-30\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"}},{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/medical_history\\/355301\",\"patient_id\":\"355301\",\"patient\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/355301\"},\"type\":\"Medicaid\",\"name\":\"Amoxicillin 500 mg\",\"value\":\"62\",\"description\":\"Medicine ID & Name\",\"created_date\":\"2016-12-27\",\"updated_date\":\"2016-12-30\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"}}]}]\r\n"
             }
           ]
         }
