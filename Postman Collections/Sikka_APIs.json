@@ -8796,7 +8796,7 @@
                 }
               ]
             },
-            "description": "Get the collection of all guarantors from practice management system\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|email|Email id of patient / provider|No|\n|patient_id|Patient ID as per the management system|No|\n|firstname|First name of patient, provider or guarantor|No|\n|practice_id|Practice ID|No|\n|lastname|Last name of patient, provider or guarantor|No|\n|cell|Cell Number|No|\n|phone|Phone Number|No|\n|workphone|Work Phone Number|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|guarantor_id|Guarantor id as per practice management systems|\n|firstname|First name of patient, provider or guarantor|\n|lastname|Last name of patient, provider or guarantor|\n|zipcode|Zipcode|"
+            "description": "Get the collection of all guarantors from practice management system\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|email|Email id of guarantor|No|\n|patient_id|Patient ID as per the management system|No|\n|firstname|First name of guarantor|No|\n|practice_id|Practice ID|No|\n|lastname|Last name of guarantor|No|\n|cell|Cell Number|No|\n|phone|Phone Number|No|\n|workphone|Work Phone Number|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|guarantor_id|Guarantor id as per practice management systems|\n|firstname|First name of guarantor|\n|lastname|Last name of guarantor|\n|zipcode|Zipcode|"
           },
           "response": [
             {
@@ -18564,12 +18564,12 @@
                 "method": "GET",
                 "header": [],
                 "url": {
-                  "raw": "{{url}}/medical_history?request_key={{request_key}}",
+                  "raw": "{{url}}/note_types?request_key={{request_key}}",
                   "host": [
                     "{{url}}"
                   ],
                   "path": [
-                    "medical_history"
+                    "note_types"
                   ],
                   "query": [
                     {
@@ -18652,7 +18652,7 @@
               ],
               "cookie": [],
               "responseTime": null,
-              "body": "[{\"offset\":\"0\",\"limit\":\"2\",\"total_count\":\"228960\",\"items\":[{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/medical_history\\/355301\",\"patient_id\":\"355301\",\"patient\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/355301\"},\"type\":\"Allergy\",\"name\":\"Metals\",\"value\":\"Inactive\",\"description\":\"\",\"created_date\":\"2016-12-27\",\"updated_date\":\"2016-12-30\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"}},{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/medical_history\\/355301\",\"patient_id\":\"355301\",\"patient\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/355301\"},\"type\":\"Medicaid\",\"name\":\"Amoxicillin 500 mg\",\"value\":\"62\",\"description\":\"Medicine ID & Name\",\"created_date\":\"2016-12-27\",\"updated_date\":\"2016-12-30\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"}}]}]\r\n"
+              "body": "[\r\n\t{\r\n\t\t\"offset\": \"0\",\r\n\t\t\"limit\": \"2\",\r\n\t\t\"total_count\": \"7\",\r\n\t\t\"execution_time\": \"16\",\r\n\t\t\"pagination\": {\r\n\t\t\t\"first\": \"https://api.sikkasoft.com/v2/note_types?offset=0&limit=2\",\r\n\t\t\t\"previous\": \"\",\r\n\t\t\t\"current\": \"https://api.sikkasoft.com/v2/note_types?offset=0&limit=2\",\r\n\t\t\t\"next\": \"https://api.sikkasoft.com/v2/note_types?offset=1&limit=2\",\r\n\t\t\t\"last\": \"https://api.sikkasoft.com/v2/note_types?offset=3&limit=2\"\r\n\t\t},\r\n\t\t\"items\": [\r\n\t\t\t{\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/note_types/Treatment note\",\r\n\t\t\t\t\"type\": \"Treatment note\",\r\n\t\t\t\t\"item\": \"\",\r\n\t\t\t\t\"description\": \"\",\r\n\t\t\t\t\"practice_id\": \"1\",\r\n\t\t\t\t\"practice\": {\r\n\t\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/note_types/Service note\",\r\n\t\t\t\t\"type\": \"Service note\",\r\n\t\t\t\t\"item\": \"\",\r\n\t\t\t\t\"description\": \"\",\r\n\t\t\t\t\"practice_id\": \"1\",\r\n\t\t\t\t\"practice\": {\r\n\t\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t]\r\n\t}\r\n]\r\n"
             }
           ]
         },
@@ -18691,13 +18691,13 @@
                 "method": "GET",
                 "header": [],
                 "url": {
-                  "raw": "{{url}}/medical_history/{patient_id}?request_key={{request_key}}",
+                  "raw": "{{url}}/note_types/{type}?request_key={{request_key}}",
                   "host": [
                     "{{url}}"
                   ],
                   "path": [
-                    "medical_history",
-                    "{patient_id}"
+                    "note_types",
+                    "{type}"
                   ],
                   "query": [
                     {
@@ -18780,7 +18780,7 @@
               ],
               "cookie": [],
               "responseTime": null,
-              "body": "[{\"offset\":\"0\",\"limit\":\"1\",\"total_count\":\"20\",\"items\":[{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/medical_history\\/355301\",\"patient_id\":\"355301\",\"patient\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/355301\"},\"type\":\"Allergy\",\"name\":\"Metals\",\"value\":\"Inactive\",\"description\":\"\",\"created_date\":\"2016-12-27\",\"updated_date\":\"2016-12-30\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"}}]}]\r\n"
+              "body": "[\r\n\t{\r\n\t\t\"offset\": \"0\",\r\n\t\t\"limit\": \"500\",\r\n\t\t\"total_count\": \"1\",\r\n\t\t\"execution_time\": \"16\",\r\n\t\t\"pagination\": {\r\n\t\t\t\"first\": \"https://api.sikkasoft.com/v2/note_types?offset=0&limit=500\",\r\n\t\t\t\"previous\": \"\",\r\n\t\t\t\"current\": \"https://api.sikkasoft.com/v2/note_types?offset=0&limit=500\",\r\n\t\t\t\"next\": \"\",\r\n\t\t\t\"last\": \"https://api.sikkasoft.com/v2/note_types?offset=0&limit=500\"\r\n\t\t},\r\n\t\t\"items\": [\r\n\t\t\t{\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/note_types/Medical history note\",\r\n\t\t\t\t\"type\": \"Medical history note\",\r\n\t\t\t\t\"item\": \"\",\r\n\t\t\t\t\"description\": \"\",\r\n\t\t\t\t\"practice_id\": \"1\",\r\n\t\t\t\t\"practice\": {\r\n\t\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t]\r\n\t}\r\n]"
             }
           ]
         },
