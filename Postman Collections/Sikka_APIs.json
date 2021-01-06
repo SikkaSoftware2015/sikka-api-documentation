@@ -7041,6 +7041,19 @@
               "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"500\",\r\n\t\"total_count\": \"4\",\r\n\t\"execution_time\": \"35\",\r\n\t\"items\": [{\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/practice_variables\",\r\n\t\t\"service_name\": \"Appointment Status\",\r\n\t\t\"value\": \"open.unconfirm\",\r\n\t\t\"description\": \"open.unconfirm\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t}\r\n\t}, {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/practice_variables\",\r\n\t\t\"service_name\": \"Appointment Status\",\r\n\t\t\"value\": \"open.confirm\",\r\n\t\t\"description\": \"open.confirm\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t}\r\n\t}, {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/practice_variables\",\r\n\t\t\"service_name\": \"Appointment Status\",\r\n\t\t\"value\": \"complete.unconfirm\",\r\n\t\t\"description\": \"complete.unconfirm\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t}\r\n\t}, {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/practice_variables\",\r\n\t\t\"service_name\": \"Appointment Status\",\r\n\t\t\"value\": \"complete.confirm\",\r\n\t\t\"description\": \"complete.confirm\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t}\r\n\t}]\r\n}]"
             }
           ]
+        },
+        {
+          "name": "practice_resources",
+          "_postman_id": "b6055f8e-9211-46d8-baa2-8a83f64f7e5c",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": ""
+          },
+          "response": []
         }
       ],
       "_postman_id": "1eb03e83-8c45-9dc7-73c7-cc595aa122fd",
