@@ -7051,7 +7051,8 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": ""
+            "url": "",
+            "description": "**When to use this api ?**\r\nIn case of multi location practice and in Sikka API if all providers are showing under one location , in that case 'practice_resources' api helps to map providers and other entities with location\r\n\r\n"
           },
           "response": []
         }
