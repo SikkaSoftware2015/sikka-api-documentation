@@ -7052,7 +7052,7 @@
             "method": "GET",
             "header": [],
             "url": "",
-            "description": "**When to use this api ?**\r\nIn case of multi location practice and in Sikka API if all providers are showing under one location , in that case 'practice_resources' api helps to map providers and other entities with location\r\n\r\n"
+            "description": "**When to use this api ?**\r\nIn case of multi location practice and in Sikka API if all providers are showing under one location , in that case 'practice_resources' api helps to map providers and other entities with location\r\n\r\n** Explanation **\r\n**id: **\r\nIt will depend on the resource. If the resource is provider then it will be provider id from provider\r\n**resource:**\r\nIt will help us to find out which resource the id belongs to.\r\n**practice_id:**\r\nAssociated practice id.\r\n**common_resource:** If T then that resource is available for all the practices. If F then that resource is available for that specific practice location.  \r\n\r\n|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|practice_id|Practice ID|No|\r\n|id|id as per the response|No|\r\n|resource| resource is api name |No|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|practice_id|Practice ID|\r\n|resource|resource is api name|\r\n\r\n"
           },
           "response": []
         }
