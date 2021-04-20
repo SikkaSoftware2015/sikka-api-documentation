@@ -11,7 +11,7 @@
       "item": [
         {
           "name": "health_check",
-          "_postman_id": "dc91bb6b-a6ba-4b2a-b31d-338347c18aa1",
+          "id": "dc91bb6b-a6ba-4b2a-b31d-338347c18aa1",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -146,7 +146,7 @@
           ]
         }
       ],
-      "_postman_id": "593510e3-c832-4c6b-90e6-3976dbc7e413"
+      "id": "593510e3-c832-4c6b-90e6-3976dbc7e413"
     },
     {
       "name": "Authentication API",
@@ -168,7 +168,7 @@
               }
             }
           ],
-          "_postman_id": "32279b62-5ad4-bc28-fce9-26f22e2e9080",
+          "id": "32279b62-5ad4-bc28-fce9-26f22e2e9080",
           "request": {
             "method": "GET",
             "header": [],
@@ -329,7 +329,7 @@
         },
         {
           "name": "list of authorized practices",
-          "_postman_id": "15a628ad-7502-4062-4f94-2bdaa9718df0",
+          "id": "15a628ad-7502-4062-4f94-2bdaa9718df0",
           "request": {
             "method": "GET",
             "header": [],
@@ -527,7 +527,7 @@
               }
             }
           ],
-          "_postman_id": "f8835107-bca2-f708-1eaa-165e3f7b62d9",
+          "id": "f8835107-bca2-f708-1eaa-165e3f7b62d9",
           "request": {
             "method": "GET",
             "header": [],
@@ -703,7 +703,7 @@
         },
         {
           "name": "request_key_info",
-          "_postman_id": "a31b027f-33eb-ede4-1519-1f86be65f3a6",
+          "id": "a31b027f-33eb-ede4-1519-1f86be65f3a6",
           "request": {
             "method": "GET",
             "header": [],
@@ -834,7 +834,7 @@
         },
         {
           "name": "request_key",
-          "_postman_id": "35a7444b-74dd-d84e-5dd2-f9125ea47848",
+          "id": "35a7444b-74dd-d84e-5dd2-f9125ea47848",
           "request": {
             "method": "GET",
             "header": [],
@@ -989,7 +989,7 @@
         },
         {
           "name": "list of all request keys made by application",
-          "_postman_id": "41e11422-50cf-f41f-bc26-695725c380ef",
+          "id": "41e11422-50cf-f41f-bc26-695725c380ef",
           "request": {
             "method": "GET",
             "header": [],
@@ -1128,7 +1128,7 @@
         },
         {
           "name": "reset password",
-          "_postman_id": "7545999b-4705-15d4-3de2-70b2e8d37d12",
+          "id": "7545999b-4705-15d4-3de2-70b2e8d37d12",
           "request": {
             "method": "GET",
             "header": [],
@@ -1307,7 +1307,7 @@
         },
         {
           "name": "detail activity about particular request_key",
-          "_postman_id": "cdb636a5-0ed4-3ca1-fca8-0bff6d174f39",
+          "id": "cdb636a5-0ed4-3ca1-fca8-0bff6d174f39",
           "request": {
             "method": "GET",
             "header": [],
@@ -1444,7 +1444,7 @@
         },
         {
           "name": "send verification code",
-          "_postman_id": "d7b77b85-5cf2-e3b9-1a2a-8c08ddc05f32",
+          "id": "d7b77b85-5cf2-e3b9-1a2a-8c08ddc05f32",
           "request": {
             "method": "GET",
             "header": [],
@@ -1607,7 +1607,7 @@
         },
         {
           "name": "sikka practice utility details",
-          "_postman_id": "8b29d208-d98a-0e8e-2573-76d5dd38fdea",
+          "id": "8b29d208-d98a-0e8e-2573-76d5dd38fdea",
           "request": {
             "method": "GET",
             "header": [],
@@ -1740,7 +1740,7 @@
         },
         {
           "name": "sikka practice utility details by office id",
-          "_postman_id": "29a4a54d-b209-1f26-2249-abeb7a4d1c67",
+          "id": "29a4a54d-b209-1f26-2249-abeb7a4d1c67",
           "request": {
             "method": "GET",
             "header": [],
@@ -1875,7 +1875,7 @@
         },
         {
           "name": "pms_environment",
-          "_postman_id": "4076cada-524b-a921-5187-b1511d28d7f7",
+          "id": "4076cada-524b-a921-5187-b1511d28d7f7",
           "request": {
             "method": "GET",
             "header": [],
@@ -2020,7 +2020,7 @@
         },
         {
           "name": "remove_access",
-          "_postman_id": "073d4daa-0489-3db2-a3d9-551b8b2c7631",
+          "id": "073d4daa-0489-3db2-a3d9-551b8b2c7631",
           "request": {
             "method": "POST",
             "header": [
@@ -2115,7 +2115,7 @@
           ]
         }
       ],
-      "_postman_id": "ef222857-1c8a-67ad-5c2c-9582a7fca19e",
+      "id": "ef222857-1c8a-67ad-5c2c-9582a7fca19e",
       "description": "Sikka authentication API contains all API related with Sikka authentication. Like account log in ,sign up , update and delete.\nAlso about request key information , application details , authentication etc.",
       "event": [
         {
@@ -2145,7 +2145,7 @@
       "item": [
         {
           "name": "finance/accounts",
-          "_postman_id": "be8de4d7-18e0-7728-4b68-a374ff1d7076",
+          "id": "be8de4d7-18e0-7728-4b68-a374ff1d7076",
           "request": {
             "method": "GET",
             "header": [],
@@ -2278,7 +2278,7 @@
         },
         {
           "name": "finance/accounts by account_number",
-          "_postman_id": "a66bdd20-c98a-b808-780f-e4824ccd17e1",
+          "id": "a66bdd20-c98a-b808-780f-e4824ccd17e1",
           "request": {
             "method": "GET",
             "header": [],
@@ -2413,7 +2413,7 @@
         },
         {
           "name": "finance/balances",
-          "_postman_id": "9c2ae4cf-0da3-adbc-ee72-8910bf916bf9",
+          "id": "9c2ae4cf-0da3-adbc-ee72-8910bf916bf9",
           "request": {
             "method": "GET",
             "header": [],
@@ -2546,7 +2546,7 @@
         },
         {
           "name": "finance/balances by account_name",
-          "_postman_id": "8df01049-1ee6-fba9-b0ca-2e9ca0354166",
+          "id": "8df01049-1ee6-fba9-b0ca-2e9ca0354166",
           "request": {
             "method": "GET",
             "header": [],
@@ -2681,7 +2681,7 @@
         },
         {
           "name": "finance/budgets",
-          "_postman_id": "84f36f70-b1fe-d3fb-deb7-8773062f80a2",
+          "id": "84f36f70-b1fe-d3fb-deb7-8773062f80a2",
           "request": {
             "method": "GET",
             "header": [],
@@ -2818,7 +2818,7 @@
         },
         {
           "name": "finance/budgets by account_name",
-          "_postman_id": "72e2c0c8-97ca-e306-8935-5688ef4e50d1",
+          "id": "72e2c0c8-97ca-e306-8935-5688ef4e50d1",
           "request": {
             "method": "GET",
             "header": [],
@@ -2953,7 +2953,7 @@
         },
         {
           "name": "finance/customers",
-          "_postman_id": "632ccf2b-27f0-e271-2cbf-4ec91b8faaca",
+          "id": "632ccf2b-27f0-e271-2cbf-4ec91b8faaca",
           "request": {
             "method": "GET",
             "header": [],
@@ -3086,7 +3086,7 @@
         },
         {
           "name": "finance/customers by customer_id",
-          "_postman_id": "ae7428e7-1af9-acda-f3bd-803b000e92e9",
+          "id": "ae7428e7-1af9-acda-f3bd-803b000e92e9",
           "request": {
             "method": "GET",
             "header": [],
@@ -3221,7 +3221,7 @@
         },
         {
           "name": "finance/employee",
-          "_postman_id": "defd3b62-c409-8e36-537f-7c5ee2ece11a",
+          "id": "defd3b62-c409-8e36-537f-7c5ee2ece11a",
           "request": {
             "method": "GET",
             "header": [],
@@ -3354,7 +3354,7 @@
         },
         {
           "name": "finance/employee by account_number",
-          "_postman_id": "580467cb-e901-a905-2e73-426efc656aba",
+          "id": "580467cb-e901-a905-2e73-426efc656aba",
           "request": {
             "method": "GET",
             "header": [],
@@ -3489,7 +3489,7 @@
         },
         {
           "name": "finance/payroll_details",
-          "_postman_id": "ecf2db60-8fdc-2223-237e-a014873672e8",
+          "id": "ecf2db60-8fdc-2223-237e-a014873672e8",
           "request": {
             "method": "GET",
             "header": [],
@@ -3622,7 +3622,7 @@
         },
         {
           "name": "finance/payroll_details by ref_number",
-          "_postman_id": "75e7c61d-cb11-a98e-dcde-7aec0fb9ba63",
+          "id": "75e7c61d-cb11-a98e-dcde-7aec0fb9ba63",
           "request": {
             "method": "GET",
             "header": [],
@@ -3757,7 +3757,7 @@
         },
         {
           "name": "finance/transactions",
-          "_postman_id": "70cc3c5e-7cd2-147c-bf74-69ce70ec9ebf",
+          "id": "70cc3c5e-7cd2-147c-bf74-69ce70ec9ebf",
           "request": {
             "method": "GET",
             "header": [],
@@ -3890,7 +3890,7 @@
         },
         {
           "name": "finance/transactions by account_name",
-          "_postman_id": "cb235f93-da1b-e9ef-6b83-3ad0d950182a",
+          "id": "cb235f93-da1b-e9ef-6b83-3ad0d950182a",
           "request": {
             "method": "GET",
             "header": [],
@@ -4025,7 +4025,7 @@
         },
         {
           "name": "finance/vendors",
-          "_postman_id": "459e3474-fa29-9953-f7ff-fe88d2f2add6",
+          "id": "459e3474-fa29-9953-f7ff-fe88d2f2add6",
           "request": {
             "method": "GET",
             "header": [],
@@ -4158,7 +4158,7 @@
         },
         {
           "name": "finance/vendors by vendor",
-          "_postman_id": "4f7b15b6-6c00-ddc0-cd17-4b54084c53d1",
+          "id": "4f7b15b6-6c00-ddc0-cd17-4b54084c53d1",
           "request": {
             "method": "GET",
             "header": [],
@@ -4292,7 +4292,7 @@
           ]
         }
       ],
-      "_postman_id": "bddcb230-47be-ab64-6358-8ca8a7a250c1",
+      "id": "bddcb230-47be-ab64-6358-8ca8a7a250c1",
       "description": "Sikka APIs allows you to get the data extracted from financial systems like Quickbooks. Explore finance API for more details"
     },
     {
@@ -4300,7 +4300,7 @@
       "item": [
         {
           "name": "practices",
-          "_postman_id": "31e0a755-e03a-ffff-8d38-1a50dd760a25",
+          "id": "31e0a755-e03a-ffff-8d38-1a50dd760a25",
           "request": {
             "method": "GET",
             "header": [],
@@ -4427,7 +4427,7 @@
         },
         {
           "name": "practices by practice_id",
-          "_postman_id": "a3f4ad6a-0857-b614-1d65-9cc8a8eceb3e",
+          "id": "a3f4ad6a-0857-b614-1d65-9cc8a8eceb3e",
           "request": {
             "method": "GET",
             "header": [],
@@ -4556,7 +4556,7 @@
         },
         {
           "name": "veterinary_clinics",
-          "_postman_id": "1b7af399-6d3b-806b-9636-51cddec7df3c",
+          "id": "1b7af399-6d3b-806b-9636-51cddec7df3c",
           "request": {
             "method": "GET",
             "header": [],
@@ -4687,7 +4687,7 @@
         },
         {
           "name": "veterinary_clinics by veterinary_clinic_id",
-          "_postman_id": "9257141e-70e9-6ab5-482b-1c941640afa0",
+          "id": "9257141e-70e9-6ab5-482b-1c941640afa0",
           "request": {
             "method": "GET",
             "header": [],
@@ -4820,7 +4820,7 @@
         },
         {
           "name": "accounts_receivables",
-          "_postman_id": "47dcd6bf-c7bb-8611-9d74-9dffab88d95d",
+          "id": "47dcd6bf-c7bb-8611-9d74-9dffab88d95d",
           "request": {
             "method": "GET",
             "header": [],
@@ -4951,7 +4951,7 @@
         },
         {
           "name": "accounts_receivables by guarantor_id",
-          "_postman_id": "63fdec3d-84bb-9aca-4553-128aa76da4a1",
+          "id": "63fdec3d-84bb-9aca-4553-128aa76da4a1",
           "request": {
             "method": "GET",
             "header": [],
@@ -5084,7 +5084,7 @@
         },
         {
           "name": "clinical_conditions",
-          "_postman_id": "875e4334-9fa1-7315-b151-2758ef2b0d39",
+          "id": "875e4334-9fa1-7315-b151-2758ef2b0d39",
           "request": {
             "method": "GET",
             "header": [],
@@ -5215,7 +5215,7 @@
         },
         {
           "name": "clinical_conditions by id",
-          "_postman_id": "b9351dbd-f4dd-f577-10b1-48008e51bbf0",
+          "id": "b9351dbd-f4dd-f577-10b1-48008e51bbf0",
           "request": {
             "method": "GET",
             "header": [],
@@ -5348,7 +5348,7 @@
         },
         {
           "name": "contact_details",
-          "_postman_id": "c60eae97-a539-4c96-8cff-499d91f6b63c",
+          "id": "c60eae97-a539-4c96-8cff-499d91f6b63c",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -5474,7 +5474,7 @@
         },
         {
           "name": "contact_details by uid",
-          "_postman_id": "6944d426-e359-4d9d-aaf6-13f9457a1e79",
+          "id": "6944d426-e359-4d9d-aaf6-13f9457a1e79",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -5601,7 +5601,7 @@
         },
         {
           "name": "drugs",
-          "_postman_id": "e107d7f8-5e16-e64d-36b8-abeea5fc8a72",
+          "id": "e107d7f8-5e16-e64d-36b8-abeea5fc8a72",
           "request": {
             "method": "GET",
             "header": [],
@@ -5732,7 +5732,7 @@
         },
         {
           "name": "drugs by drug_id",
-          "_postman_id": "45c69e6a-860c-a4a6-aa31-daa0f96f8ecf",
+          "id": "45c69e6a-860c-a4a6-aa31-daa0f96f8ecf",
           "request": {
             "method": "GET",
             "header": [],
@@ -5865,7 +5865,7 @@
         },
         {
           "name": "employers",
-          "_postman_id": "f79b1533-8b93-f8ae-c803-307d38fa685b",
+          "id": "f79b1533-8b93-f8ae-c803-307d38fa685b",
           "request": {
             "method": "GET",
             "header": [],
@@ -5996,7 +5996,7 @@
         },
         {
           "name": "employers by employer_id",
-          "_postman_id": "24b0496d-b4ad-c78c-da5f-85d4cad9b1cc",
+          "id": "24b0496d-b4ad-c78c-da5f-85d4cad9b1cc",
           "request": {
             "method": "GET",
             "header": [],
@@ -6129,7 +6129,7 @@
         },
         {
           "name": "payment_types",
-          "_postman_id": "aa46ab99-a726-307a-ed2a-a0baa988ad16",
+          "id": "aa46ab99-a726-307a-ed2a-a0baa988ad16",
           "request": {
             "method": "GET",
             "header": [],
@@ -6260,7 +6260,7 @@
         },
         {
           "name": "payment_types by code",
-          "_postman_id": "1d25b37b-523b-7aeb-b53c-926b77bc258f",
+          "id": "1d25b37b-523b-7aeb-b53c-926b77bc258f",
           "request": {
             "method": "GET",
             "header": [],
@@ -6393,7 +6393,7 @@
         },
         {
           "name": "providers",
-          "_postman_id": "979fe163-4183-899e-c780-949497d05e85",
+          "id": "979fe163-4183-899e-c780-949497d05e85",
           "request": {
             "method": "GET",
             "header": [],
@@ -6520,7 +6520,7 @@
         },
         {
           "name": "providers by provider_id",
-          "_postman_id": "b0e9b95a-e189-54ee-a5c0-0599e0816383",
+          "id": "b0e9b95a-e189-54ee-a5c0-0599e0816383",
           "request": {
             "method": "GET",
             "header": [],
@@ -6649,7 +6649,7 @@
         },
         {
           "name": "referrals",
-          "_postman_id": "92d7ec5d-8b69-a2a5-8d9b-b8c6d18a73e1",
+          "id": "92d7ec5d-8b69-a2a5-8d9b-b8c6d18a73e1",
           "request": {
             "method": "GET",
             "header": [],
@@ -6780,7 +6780,7 @@
         },
         {
           "name": "referrals by referral_id",
-          "_postman_id": "2313bad2-e36b-7a77-bb63-f2762a7e056c",
+          "id": "2313bad2-e36b-7a77-bb63-f2762a7e056c",
           "request": {
             "method": "GET",
             "header": [],
@@ -6913,7 +6913,7 @@
         },
         {
           "name": "practice_variables",
-          "_postman_id": "ded22929-f169-402b-ce33-22048ba58ff8",
+          "id": "ded22929-f169-402b-ce33-22048ba58ff8",
           "request": {
             "method": "GET",
             "header": [],
@@ -7044,7 +7044,7 @@
         },
         {
           "name": "practice_resources",
-          "_postman_id": "b6055f8e-9211-46d8-baa2-8a83f64f7e5c",
+          "id": "b6055f8e-9211-46d8-baa2-8a83f64f7e5c",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -7110,7 +7110,7 @@
           ]
         }
       ],
-      "_postman_id": "1eb03e83-8c45-9dc7-73c7-cc595aa122fd",
+      "id": "1eb03e83-8c45-9dc7-73c7-cc595aa122fd",
       "description": "These APIs contain information about practice status , reports , account receivables , drugs , employers , providers etc."
     },
     {
@@ -7118,7 +7118,7 @@
       "item": [
         {
           "name": "appointments",
-          "_postman_id": "3bf9ebcb-12e6-3b09-061c-8008432bf608",
+          "id": "3bf9ebcb-12e6-3b09-061c-8008432bf608",
           "request": {
             "method": "GET",
             "header": [],
@@ -7245,7 +7245,7 @@
         },
         {
           "name": "appointments by appointment_sr_no",
-          "_postman_id": "08050c2f-ede5-0b78-aaee-3e359bf6b1c9",
+          "id": "08050c2f-ede5-0b78-aaee-3e359bf6b1c9",
           "request": {
             "method": "GET",
             "header": [],
@@ -7374,7 +7374,7 @@
         },
         {
           "name": "appointments/{appointment_sr_no}",
-          "_postman_id": "c916b6de-4623-3383-bb20-95baca7adce8",
+          "id": "c916b6de-4623-3383-bb20-95baca7adce8",
           "request": {
             "method": "DELETE",
             "header": [],
@@ -7507,7 +7507,7 @@
         },
         {
           "name": "appointment_statuses",
-          "_postman_id": "8b24d706-3a0e-a1aa-2723-0c3daf68085d",
+          "id": "8b24d706-3a0e-a1aa-2723-0c3daf68085d",
           "request": {
             "method": "GET",
             "header": [],
@@ -7638,7 +7638,7 @@
         },
         {
           "name": "appointment_statuses by status",
-          "_postman_id": "2f1de7f3-6d6d-36ae-b8a6-79ba0eaf32d3",
+          "id": "2f1de7f3-6d6d-36ae-b8a6-79ba0eaf32d3",
           "request": {
             "method": "GET",
             "header": [],
@@ -7770,7 +7770,7 @@
           ]
         }
       ],
-      "_postman_id": "b41c14bb-089a-7723-0d1a-7be93cc2cd63",
+      "id": "b41c14bb-089a-7723-0d1a-7be93cc2cd63",
       "description": "It contains all APIs related with appointments in practice. "
     },
     {
@@ -7778,7 +7778,7 @@
       "item": [
         {
           "name": "claims",
-          "_postman_id": "39ca11f1-e01f-36d8-25d3-95ab56b4d5c3",
+          "id": "39ca11f1-e01f-36d8-25d3-95ab56b4d5c3",
           "request": {
             "method": "GET",
             "header": [],
@@ -7899,13 +7899,13 @@
               ],
               "cookie": [],
               "responseTime": "1501",
-              "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"2\",\r\n\t\"total_count\": \"40464\",\r\n\t\"items\": [{\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/claims/41660\",\r\n\t\t\"claim_sr_no\": \"41660\",\r\n\t\t\"claim_description_id\": \"41660\",\r\n\t\t\"patient_id\": \"2963\",\r\n\t\t\"patient\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/2963\"\r\n\t\t},\r\n\t\t\"guarantor_id\": \"2963\",\r\n\t\t\"guarantor\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/guarantors/2963\"\r\n\t\t},\r\n\t\t\"provider_id\": \"DR\",\r\n\t\t\"provider\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/DR\"\r\n\t\t},\r\n\t\t\"claim_sent_date\": \"\",\r\n\t\t\"total_billed_amount\": \"186.0000\",\r\n\t\t\"estimated_amount\": \"72.0000\",\r\n\t\t\"claim_payment_date\": \"\",\r\n\t\t\"payment_amount\": \"0.0000\",\r\n\t\t\"claim_status\": \"U\",\r\n\t\t\"primary_or_secondary\": \"Secondary\",\r\n\t\t\"insurance_company_id\": \"995\",\r\n\t\t\"insurance_company\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/insurance_companies/995\"\r\n\t\t},\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t},\r\n\t\t\"claim_description\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/claim_descriptions/41660\"\r\n\t\t},\r\n\t\t\"insurance_company_name\": \"Met Life-TDP Dental Unit\",\r\n\t\t\"claim_channel\": \"Unsubmitted\",\r\n\t\t\"note\": \"\",\r\n\t\t\"rendering_provider\": \"DR\",\r\n\t\t\"payer_id\": \"65978\",\r\n\t\t\"on_hold_date\": \"\",\r\n\t\t\"resent_date\": \"\",\r\n\t\t\"creation_date\": \"2019-04-18\",\r\n\t\t\"total_paid_amount\": \"0.0000\",\r\n\t\t\"cheque_no\": \"\",\r\n\t\t\"bank_no\": \"\",\r\n\t\t\"standard\": \"0.0000\",\r\n\t\t\"preventive\": \"0.0000\",\r\n\t\t\"others\": \"0.0000\",\r\n\t\t\"pay_to_provider\": \"1\",\r\n\t\t\"tp\": \"2\"\r\n\t}, {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/claims/41660\",\r\n\t\t\"claim_sr_no\": \"41660\",\r\n\t\t\"claim_description_id\": \"41660\",\r\n\t\t\"patient_id\": \"2963\",\r\n\t\t\"patient\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/2963\"\r\n\t\t},\r\n\t\t\"guarantor_id\": \"2963\",\r\n\t\t\"guarantor\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/guarantors/2963\"\r\n\t\t},\r\n\t\t\"provider_id\": \"DR\",\r\n\t\t\"provider\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/DR\"\r\n\t\t},\r\n\t\t\"claim_sent_date\": \"2016-04-21\",\r\n\t\t\"total_billed_amount\": \"186.0000\",\r\n\t\t\"estimated_amount\": \"72.0000\",\r\n\t\t\"claim_payment_date\": \"\",\r\n\t\t\"payment_amount\": \"0.0000\",\r\n\t\t\"claim_status\": \"O\",\r\n\t\t\"primary_or_secondary\": \"Primary\",\r\n\t\t\"insurance_company_id\": \"257\",\r\n\t\t\"insurance_company\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/insurance_companies/257\"\r\n\t\t},\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t},\r\n\t\t\"claim_description\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/claim_descriptions/41660\"\r\n\t\t},\r\n\t\t\"insurance_company_name\": \"Blue Cross And Blue Shield Of Illinois\",\r\n\t\t\"claim_channel\": \"Printed\",\r\n\t\t\"note\": \"\",\r\n\t\t\"rendering_provider\": \"DR\",\r\n\t\t\"payer_id\": \"00621\",\r\n\t\t\"on_hold_date\": \"\",\r\n\t\t\"resent_date\": \"\",\r\n\t\t\"creation_date\": \"2019-04-18\",\r\n\t\t\"total_paid_amount\": \"0.0000\",\r\n\t\t\"cheque_no\": \"\",\r\n\t\t\"bank_no\": \"\",\r\n\t\t\"standard\": \"0.0000\",\r\n\t\t\"preventive\": \"0.0000\",\r\n\t\t\"others\": \"0.0000\",\r\n\t\t\"pay_to_provider\": \"1\",\r\n\t\t\"tp\": \"2\"\r\n\t}]\r\n}]"
+              "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"2\",\r\n\t\"total_count\": \"40464\",\r\n\t\"items\": [{\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/claims/41660\",\r\n\t\t\"claim_sr_no\": \"41660\",\r\n\t\t\"claim_description_id\": \"41660\",\r\n\t\t\"patient_id\": \"2963\",\r\n\t\t\"patient\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/2963\"\r\n\t\t},\r\n\t\t\"guarantor_id\": \"2963\",\r\n\t\t\"guarantor\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/guarantors/2963\"\r\n\t\t},\r\n\t\t\"provider_id\": \"DR\",\r\n\t\t\"provider\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/DR\"\r\n\t\t},\r\n\t\t\"claim_sent_date\": \"\",\r\n\t\t\"total_billed_amount\": \"186.0000\",\r\n\t\t\"estimated_amount\": \"72.0000\",\r\n\t\t\"claim_payment_date\": \"\",\r\n\t\t\"payment_amount\": \"0.0000\",\r\n\t\t\"claim_status\": \"U\",\r\n\t\t\"primary_or_secondary\": \"Secondary\",\r\n\t\t\"insurance_company_id\": \"995\",\r\n\t\t\"insurance_company\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/insurance_companies/995\"\r\n\t\t},\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t},\r\n\t\t\"claim_description\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/claim_descriptions/41660\"\r\n\t\t},\r\n\t\t\"insurance_company_name\": \"Met Life-TDP Dental Unit\",\r\n\t\t\"claim_channel\": \"Unsubmitted\",\r\n\t\t\"note\": \"\",\r\n\t\t\"rendering_provider\": \"DR\",\r\n\t\t\"payer_id\": \"65978\",\r\n\t\t\"on_hold_date\": \"\",\r\n\t\t\"resent_date\": \"\",\r\n\t\t\"creation_date\": \"2019-04-18\",\r\n\t\t\"total_paid_amount\": \"0.0000\",\r\n\t\t\"cheque_no\": \"\",\r\n\t\t\"bank_no\": \"\",\r\n\t\t\"standard\": \"0.0000\",\r\n\t\t\"preventive\": \"0.0000\",\r\n\t\t\"others\": \"0.0000\",\r\n\t\t\"pay_to_provider\": \"1\",\r\n\t\t\"tp\": \"2\",\r\n        \"sent_claim_status\":\"Sent Electronically\",\r\n        \"primary_claim_id\":\"123\",\r\n        \"carriier_id\":\"1008\"\r\n\t}, {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/claims/41660\",\r\n\t\t\"claim_sr_no\": \"41660\",\r\n\t\t\"claim_description_id\": \"41660\",\r\n\t\t\"patient_id\": \"2963\",\r\n\t\t\"patient\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/2963\"\r\n\t\t},\r\n\t\t\"guarantor_id\": \"2963\",\r\n\t\t\"guarantor\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/guarantors/2963\"\r\n\t\t},\r\n\t\t\"provider_id\": \"DR\",\r\n\t\t\"provider\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/DR\"\r\n\t\t},\r\n\t\t\"claim_sent_date\": \"2016-04-21\",\r\n\t\t\"total_billed_amount\": \"186.0000\",\r\n\t\t\"estimated_amount\": \"72.0000\",\r\n\t\t\"claim_payment_date\": \"\",\r\n\t\t\"payment_amount\": \"0.0000\",\r\n\t\t\"claim_status\": \"O\",\r\n\t\t\"primary_or_secondary\": \"Primary\",\r\n\t\t\"insurance_company_id\": \"257\",\r\n\t\t\"insurance_company\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/insurance_companies/257\"\r\n\t\t},\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t},\r\n\t\t\"claim_description\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/claim_descriptions/41660\"\r\n\t\t},\r\n\t\t\"insurance_company_name\": \"Blue Cross And Blue Shield Of Illinois\",\r\n\t\t\"claim_channel\": \"Printed\",\r\n\t\t\"note\": \"\",\r\n\t\t\"rendering_provider\": \"DR\",\r\n\t\t\"payer_id\": \"00621\",\r\n\t\t\"on_hold_date\": \"\",\r\n\t\t\"resent_date\": \"\",\r\n\t\t\"creation_date\": \"2019-04-18\",\r\n\t\t\"total_paid_amount\": \"0.0000\",\r\n\t\t\"cheque_no\": \"\",\r\n\t\t\"bank_no\": \"\",\r\n\t\t\"standard\": \"0.0000\",\r\n\t\t\"preventive\": \"0.0000\",\r\n\t\t\"others\": \"0.0000\",\r\n\t\t\"pay_to_provider\": \"1\",\r\n\t\t\"tp\": \"2\",\r\n        \"sent_claim_status\":\"Sent Electronically\",\r\n        \"primary_claim_id\":\"123\",\r\n        \"carriier_id\":\"1008\"\r\n\t}]\r\n}]"
             }
           ]
         },
         {
           "name": "claims by claim_sr_no",
-          "_postman_id": "9a72d020-e0c3-bad2-f32e-fa6cffad0444",
+          "id": "9a72d020-e0c3-bad2-f32e-fa6cffad0444",
           "request": {
             "method": "GET",
             "header": [],
@@ -8028,13 +8028,13 @@
               ],
               "cookie": [],
               "responseTime": "2026",
-              "body": "{\r\n\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/claims/41659\",\r\n\t\"claim_sr_no\": \"41659\",\r\n\t\"claim_description_id\": \"41659\",\r\n\t\"patient_id\": \"2780\",\r\n\t\"patient\": {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/2780\"\r\n\t},\r\n\t\"guarantor_id\": \"2780\",\r\n\t\"guarantor\": {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/guarantors/2780\"\r\n\t},\r\n\t\"provider_id\": \"DR\",\r\n\t\"provider\": {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/DR\"\r\n\t},\r\n\t\"claim_sent_date\": \"2016-04-21\",\r\n\t\"total_billed_amount\": \"291.0000\",\r\n\t\"estimated_amount\": \"160.8000\",\r\n\t\"claim_payment_date\": \"\",\r\n\t\"payment_amount\": \"0.0000\",\r\n\t\"claim_status\": \"O\",\r\n\t\"primary_or_secondary\": \"Primary\",\r\n\t\"insurance_company_id\": \"1118\",\r\n\t\"insurance_company\": {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/insurance_companies/1118\"\r\n\t},\r\n\t\"practice_id\": \"1\",\r\n\t\"practice\": {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t},\r\n\t\"claim_description\": {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/claim_descriptions/41659\"\r\n\t},\r\n\t\"insurance_company_name\": \"American Republic Insurance Company\",\r\n\t\"claim_channel\": \"Printed\",\r\n\t\"note\": \"\",\r\n\t\"rendering_provider\": \"DR\",\r\n\t\"payer_id\": \"CX092\",\r\n\t\"on_hold_date\": \"\",\r\n\t\"resent_date\": \"\",\r\n\t\"creation_date\": \"2019-04-18\",\r\n\t\"total_paid_amount\": \"0.0000\",\r\n\t\"cheque_no\": \"\",\r\n\t\"bank_no\": \"\",\r\n\t\"standard\": \"0.0000\",\r\n\t\"preventive\": \"0.0000\",\r\n\t\"others\": \"0.0000\",\r\n\t\"pay_to_provider\": \"1\",\r\n\t\"tp\": \"2\"\r\n}"
+              "body": "{\r\n\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/claims/41659\",\r\n\t\"claim_sr_no\": \"41659\",\r\n\t\"claim_description_id\": \"41659\",\r\n\t\"patient_id\": \"2780\",\r\n\t\"patient\": {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/2780\"\r\n\t},\r\n\t\"guarantor_id\": \"2780\",\r\n\t\"guarantor\": {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/guarantors/2780\"\r\n\t},\r\n\t\"provider_id\": \"DR\",\r\n\t\"provider\": {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/DR\"\r\n\t},\r\n\t\"claim_sent_date\": \"2016-04-21\",\r\n\t\"total_billed_amount\": \"291.0000\",\r\n\t\"estimated_amount\": \"160.8000\",\r\n\t\"claim_payment_date\": \"\",\r\n\t\"payment_amount\": \"0.0000\",\r\n\t\"claim_status\": \"O\",\r\n\t\"primary_or_secondary\": \"Primary\",\r\n\t\"insurance_company_id\": \"1118\",\r\n\t\"insurance_company\": {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/insurance_companies/1118\"\r\n\t},\r\n\t\"practice_id\": \"1\",\r\n\t\"practice\": {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t},\r\n\t\"claim_description\": {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/claim_descriptions/41659\"\r\n\t},\r\n\t\"insurance_company_name\": \"American Republic Insurance Company\",\r\n\t\"claim_channel\": \"Printed\",\r\n\t\"note\": \"\",\r\n\t\"rendering_provider\": \"DR\",\r\n\t\"payer_id\": \"CX092\",\r\n\t\"on_hold_date\": \"\",\r\n\t\"resent_date\": \"\",\r\n\t\"creation_date\": \"2019-04-18\",\r\n\t\"total_paid_amount\": \"0.0000\",\r\n\t\"cheque_no\": \"\",\r\n\t\"bank_no\": \"\",\r\n\t\"standard\": \"0.0000\",\r\n\t\"preventive\": \"0.0000\",\r\n\t\"others\": \"0.0000\",\r\n\t\"pay_to_provider\": \"1\",\r\n\t\"tp\": \"2\",\r\n    \"sent_claim_status\":\"Sent Electronically\",\r\n    \"primary_claim_id\":\"123\",\r\n    \"carriier_id\":\"1008\"\r\n}"
             }
           ]
         },
         {
           "name": "claim_descriptions",
-          "_postman_id": "3f6f5454-78b9-33ee-b2c6-71da3803ba52",
+          "id": "3f6f5454-78b9-33ee-b2c6-71da3803ba52",
           "request": {
             "method": "GET",
             "header": [],
@@ -8066,10 +8066,6 @@
               "originalRequest": {
                 "method": "GET",
                 "header": [],
-                "body": {
-                  "mode": "formdata",
-                  "formdata": []
-                },
                 "url": {
                   "raw": "{{url}}/claim_descriptions?request_key={{request_key}}",
                   "host": [
@@ -8159,13 +8155,13 @@
               ],
               "cookie": [],
               "responseTime": "1656",
-              "body": "[{\"offset\":\"0\",\"limit\":\"2\",\"total_count\":\"38816\",\"items\":[{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/claim_descriptions\\/41660\",\"claim_description_id\":\"41660\",\"ortho_treatment_plan_date\":\"\",\"first_visit_date_current_series\":\"\",\"occupant_status\":\"N\",\"occupant_description\":\"\",\"accident_status\":\"\",\"accident_description\":\"\",\"prosthesis\":\"\",\"replace_reason\":\"\",\"orthodontic_treat\":\"N\",\"mos_remian\":\"\",\"another_plan\":\"\",\"plan_desc\":\"\",\"place_of_treat\":\"Office\",\"xray_model_how_many\":\"\",\"school_city\":\"\",\"student_status\":\"\",\"auto_accident_date\":\"\",\"pre_autho_no\":\"\",\"prior_date\":\"\",\"oral\":\"N\",\"special\":\"\",\"ordered_date\":\"\",\"eligibility\":\"\",\"medicare\":\"\",\"retroactive\":\"\",\"chdp\":\"\",\"ccs\":\"\",\"re_eval\":\"\",\"ext\":\"\",\"orig_ref_no\":\"\",\"pla_of_treat\":\"\",\"occurance_date\":\"\",\"ins_ref\":\"\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"}},{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/claim_descriptions\\/41659\",\"claim_description_id\":\"41659\",\"ortho_treatment_plan_date\":\"\",\"first_visit_date_current_series\":\"\",\"occupant_status\":\"N\",\"occupant_description\":\"\",\"accident_status\":\"\",\"accident_description\":\"\",\"prosthesis\":\"\",\"replace_reason\":\"\",\"orthodontic_treat\":\"N\",\"mos_remian\":\"\",\"another_plan\":\"\",\"plan_desc\":\"\",\"place_of_treat\":\"Office\",\"xray_model_how_many\":\"\",\"school_city\":\"\",\"student_status\":\"\",\"auto_accident_date\":\"\",\"pre_autho_no\":\"\",\"prior_date\":\"\",\"oral\":\"N\",\"special\":\"\",\"ordered_date\":\"\",\"eligibility\":\"\",\"medicare\":\"\",\"retroactive\":\"\",\"chdp\":\"\",\"ccs\":\"\",\"re_eval\":\"\",\"ext\":\"\",\"orig_ref_no\":\"\",\"pla_of_treat\":\"\",\"occurance_date\":\"\",\"ins_ref\":\"\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"}}]}]\r\n"
+              "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"2\",\r\n\t\"total_count\": \"38816\",\r\n\t\"items\": [{\r\n\t\t\"href\": \"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/claim_descriptions\\/41660\",\r\n\t\t\"claim_description_id\": \"41660\",\r\n\t\t\"ortho_treatment_plan_date\": \"\",\r\n\t\t\"first_visit_date_current_series\": \"\",\r\n\t\t\"occupant_status\": \"N\",\r\n\t\t\"occupant_description\": \"\",\r\n\t\t\"accident_status\": \"\",\r\n\t\t\"accident_description\": \"\",\r\n\t\t\"prosthesis\": \"\",\r\n\t\t\"replace_reason\": \"\",\r\n\t\t\"orthodontic_treat\": \"N\",\r\n\t\t\"mos_remian\": \"\",\r\n\t\t\"another_plan\": \"\",\r\n\t\t\"plan_desc\": \"\",\r\n\t\t\"place_of_treat\": \"Office\",\r\n\t\t\"xray_model_how_many\": \"\",\r\n\t\t\"school_city\": \"\",\r\n\t\t\"student_status\": \"\",\r\n\t\t\"auto_accident_date\": \"\",\r\n\t\t\"pre_autho_no\": \"\",\r\n\t\t\"prior_date\": \"\",\r\n\t\t\"oral\": \"N\",\r\n\t\t\"special\": \"\",\r\n\t\t\"ordered_date\": \"\",\r\n\t\t\"eligibility\": \"\",\r\n\t\t\"medicare\": \"\",\r\n\t\t\"retroactive\": \"\",\r\n\t\t\"chdp\": \"\",\r\n\t\t\"ccs\": \"\",\r\n\t\t\"re_eval\": \"\",\r\n\t\t\"ext\": \"\",\r\n\t\t\"orig_ref_no\": \"\",\r\n\t\t\"pla_of_treat\": \"\",\r\n\t\t\"occurance_date\": \"\",\r\n\t\t\"ins_ref\": \"\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"\r\n\t\t},\r\n\t\t\"appliance_date\": \"\",\r\n\t\t\"accident_date\": \"\",\r\n\t\t\"month_of_treatment\": \"0\"\r\n\t}, {\r\n\t\t\"href\": \"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/claim_descriptions\\/41659\",\r\n\t\t\"claim_description_id\": \"41659\",\r\n\t\t\"ortho_treatment_plan_date\": \"\",\r\n\t\t\"first_visit_date_current_series\": \"\",\r\n\t\t\"occupant_status\": \"N\",\r\n\t\t\"occupant_description\": \"\",\r\n\t\t\"accident_status\": \"\",\r\n\t\t\"accident_description\": \"\",\r\n\t\t\"prosthesis\": \"\",\r\n\t\t\"replace_reason\": \"\",\r\n\t\t\"orthodontic_treat\": \"N\",\r\n\t\t\"mos_remian\": \"\",\r\n\t\t\"another_plan\": \"\",\r\n\t\t\"plan_desc\": \"\",\r\n\t\t\"place_of_treat\": \"Office\",\r\n\t\t\"xray_model_how_many\": \"\",\r\n\t\t\"school_city\": \"\",\r\n\t\t\"student_status\": \"\",\r\n\t\t\"auto_accident_date\": \"\",\r\n\t\t\"pre_autho_no\": \"\",\r\n\t\t\"prior_date\": \"\",\r\n\t\t\"oral\": \"N\",\r\n\t\t\"special\": \"\",\r\n\t\t\"ordered_date\": \"\",\r\n\t\t\"eligibility\": \"\",\r\n\t\t\"medicare\": \"\",\r\n\t\t\"retroactive\": \"\",\r\n\t\t\"chdp\": \"\",\r\n\t\t\"ccs\": \"\",\r\n\t\t\"re_eval\": \"\",\r\n\t\t\"ext\": \"\",\r\n\t\t\"orig_ref_no\": \"\",\r\n\t\t\"pla_of_treat\": \"\",\r\n\t\t\"occurance_date\": \"\",\r\n\t\t\"ins_ref\": \"\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"\r\n\t\t},\r\n\t\t\"appliance_date\": \"\",\r\n\t\t\"accident_date\": \"\",\r\n\t\t\"month_of_treatment\": \"0\"\r\n\t}]\r\n}]"
             }
           ]
         },
         {
           "name": "claim_descriptions by claim_description_id",
-          "_postman_id": "c12dcdbe-58db-5e48-d0b5-50f2e2867ced",
+          "id": "c12dcdbe-58db-5e48-d0b5-50f2e2867ced",
           "request": {
             "method": "GET",
             "header": [],
@@ -8198,10 +8194,6 @@
               "originalRequest": {
                 "method": "GET",
                 "header": [],
-                "body": {
-                  "mode": "formdata",
-                  "formdata": []
-                },
                 "url": {
                   "raw": "{{url}}/claim_descriptions/{{claim_description_id}}?request_key={{request_key}}",
                   "host": [
@@ -8292,12 +8284,12 @@
               ],
               "cookie": [],
               "responseTime": "1191",
-              "body": "[{\"offset\":\"0\",\"limit\":\"500\",\"total_count\":\"1\",\"items\":[{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/claim_descriptions\\/41660\",\"claim_description_id\":\"41660\",\"ortho_treatment_plan_date\":\"\",\"first_visit_date_current_series\":\"\",\"occupant_status\":\"N\",\"occupant_description\":\"\",\"accident_status\":\"\",\"accident_description\":\"\",\"prosthesis\":\"\",\"replace_reason\":\"\",\"orthodontic_treat\":\"N\",\"mos_remian\":\"\",\"another_plan\":\"\",\"plan_desc\":\"\",\"place_of_treat\":\"Office\",\"xray_model_how_many\":\"\",\"school_city\":\"\",\"student_status\":\"\",\"auto_accident_date\":\"\",\"pre_autho_no\":\"\",\"prior_date\":\"\",\"oral\":\"N\",\"special\":\"\",\"ordered_date\":\"\",\"eligibility\":\"\",\"medicare\":\"\",\"retroactive\":\"\",\"chdp\":\"\",\"ccs\":\"\",\"re_eval\":\"\",\"ext\":\"\",\"orig_ref_no\":\"\",\"pla_of_treat\":\"\",\"occurance_date\":\"\",\"ins_ref\":\"\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"}}]}]\r\n"
+              "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"500\",\r\n\t\"total_count\": \"1\",\r\n\t\"items\": [{\r\n\t\t\"href\": \"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/claim_descriptions\\/41660\",\r\n\t\t\"claim_description_id\": \"41660\",\r\n\t\t\"ortho_treatment_plan_date\": \"\",\r\n\t\t\"first_visit_date_current_series\": \"\",\r\n\t\t\"occupant_status\": \"N\",\r\n\t\t\"occupant_description\": \"\",\r\n\t\t\"accident_status\": \"\",\r\n\t\t\"accident_description\": \"\",\r\n\t\t\"prosthesis\": \"\",\r\n\t\t\"replace_reason\": \"\",\r\n\t\t\"orthodontic_treat\": \"N\",\r\n\t\t\"mos_remian\": \"\",\r\n\t\t\"another_plan\": \"\",\r\n\t\t\"plan_desc\": \"\",\r\n\t\t\"place_of_treat\": \"Office\",\r\n\t\t\"xray_model_how_many\": \"\",\r\n\t\t\"school_city\": \"\",\r\n\t\t\"student_status\": \"\",\r\n\t\t\"auto_accident_date\": \"\",\r\n\t\t\"pre_autho_no\": \"\",\r\n\t\t\"prior_date\": \"\",\r\n\t\t\"oral\": \"N\",\r\n\t\t\"special\": \"\",\r\n\t\t\"ordered_date\": \"\",\r\n\t\t\"eligibility\": \"\",\r\n\t\t\"medicare\": \"\",\r\n\t\t\"retroactive\": \"\",\r\n\t\t\"chdp\": \"\",\r\n\t\t\"ccs\": \"\",\r\n\t\t\"re_eval\": \"\",\r\n\t\t\"ext\": \"\",\r\n\t\t\"orig_ref_no\": \"\",\r\n\t\t\"pla_of_treat\": \"\",\r\n\t\t\"occurance_date\": \"\",\r\n\t\t\"ins_ref\": \"\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"\r\n\t\t},\r\n\t\t\"appliance_date\": \"\",\r\n\t\t\"accident_date\": \"\",\r\n\t\t\"month_of_treatment\": \"0\"\r\n\t}]\r\n}]\r\n"
             }
           ]
         }
       ],
-      "_postman_id": "ae1b7591-edd8-f46c-1829-b557d0425534",
+      "id": "ae1b7591-edd8-f46c-1829-b557d0425534",
       "description": "It contains APIs related with claim information"
     },
     {
@@ -8305,7 +8297,7 @@
       "item": [
         {
           "name": "fee_schedules",
-          "_postman_id": "28490d30-33ca-e17f-fcbe-28a87fe53fe5",
+          "id": "28490d30-33ca-e17f-fcbe-28a87fe53fe5",
           "request": {
             "method": "GET",
             "header": [],
@@ -8436,7 +8428,7 @@
         },
         {
           "name": "fee_schedules by procedure_code",
-          "_postman_id": "ee200bcc-1f36-6b40-4bb3-2748148e845c",
+          "id": "ee200bcc-1f36-6b40-4bb3-2748148e845c",
           "request": {
             "method": "GET",
             "header": [],
@@ -8569,7 +8561,7 @@
         },
         {
           "name": "fee_schedule_bluebook",
-          "_postman_id": "5690a2ef-461b-55c5-ac7d-b01ab5cc58bd",
+          "id": "5690a2ef-461b-55c5-ac7d-b01ab5cc58bd",
           "request": {
             "method": "GET",
             "header": [],
@@ -8700,7 +8692,7 @@
         },
         {
           "name": "fee_schedule_bluebook by procedure_code",
-          "_postman_id": "a1d3dceb-54c7-b83c-ad48-97d8938c2e13",
+          "id": "a1d3dceb-54c7-b83c-ad48-97d8938c2e13",
           "request": {
             "method": "GET",
             "header": [],
@@ -8832,7 +8824,7 @@
           ]
         }
       ],
-      "_postman_id": "80a645d6-cf93-1cff-865e-52ca475790b0",
+      "id": "80a645d6-cf93-1cff-865e-52ca475790b0",
       "description": "It contains all APIs related with practice's fee schedule information"
     },
     {
@@ -8840,7 +8832,7 @@
       "item": [
         {
           "name": "guarantors",
-          "_postman_id": "f94276dd-5a43-f57d-a284-ccd96fc504ed",
+          "id": "f94276dd-5a43-f57d-a284-ccd96fc504ed",
           "request": {
             "method": "GET",
             "header": [],
@@ -8971,7 +8963,7 @@
         },
         {
           "name": "guarantors by guarantor_id",
-          "_postman_id": "fc05601d-b20e-3d4e-371c-a307002a8897",
+          "id": "fc05601d-b20e-3d4e-371c-a307002a8897",
           "request": {
             "method": "GET",
             "header": [],
@@ -9104,7 +9096,7 @@
         },
         {
           "name": "guarantor_accounts",
-          "_postman_id": "ca207bfa-b71d-4d52-c341-b03929109efb",
+          "id": "ca207bfa-b71d-4d52-c341-b03929109efb",
           "request": {
             "method": "GET",
             "header": [],
@@ -9235,7 +9227,7 @@
         },
         {
           "name": "guarantor_accounts using guarantor_id",
-          "_postman_id": "44829592-fb68-4fb2-6a70-b570fd93c063",
+          "id": "44829592-fb68-4fb2-6a70-b570fd93c063",
           "request": {
             "method": "GET",
             "header": [],
@@ -9368,7 +9360,7 @@
         },
         {
           "name": "guarantor_patient_mapping",
-          "_postman_id": "b1b44fb5-6a28-3255-b294-2c90aa2f2d5b",
+          "id": "b1b44fb5-6a28-3255-b294-2c90aa2f2d5b",
           "request": {
             "method": "GET",
             "header": [],
@@ -9499,7 +9491,7 @@
         },
         {
           "name": "guarantor_patient_mapping by guarantor_id",
-          "_postman_id": "1fb48740-c86d-50e1-a2b2-2b9210c54634",
+          "id": "1fb48740-c86d-50e1-a2b2-2b9210c54634",
           "request": {
             "method": "GET",
             "header": [],
@@ -9632,7 +9624,7 @@
         },
         {
           "name": "guarantors_v2",
-          "_postman_id": "345f6121-cc24-0cd2-120f-b6d68740589a",
+          "id": "345f6121-cc24-0cd2-120f-b6d68740589a",
           "request": {
             "method": "GET",
             "header": [],
@@ -9763,7 +9755,7 @@
         },
         {
           "name": "guarantors_v2 by guarantor_id",
-          "_postman_id": "c23c9499-d0e0-f3f3-6635-2cb5a1ff3a54",
+          "id": "c23c9499-d0e0-f3f3-6635-2cb5a1ff3a54",
           "request": {
             "method": "GET",
             "header": [],
@@ -9895,7 +9887,7 @@
           ]
         }
       ],
-      "_postman_id": "1adc2398-bcbc-eee8-1a84-f0fdeaaceeb7",
+      "id": "1adc2398-bcbc-eee8-1a84-f0fdeaaceeb7",
       "description": "It contians all APIs related guarantors information"
     },
     {
@@ -9903,7 +9895,7 @@
       "item": [
         {
           "name": "insurance_accounts_receivables",
-          "_postman_id": "359a0ecf-e777-ac5b-7fd0-b934d41171d0",
+          "id": "359a0ecf-e777-ac5b-7fd0-b934d41171d0",
           "request": {
             "method": "GET",
             "header": [],
@@ -10034,7 +10026,7 @@
         },
         {
           "name": "insurance_accounts_receivables by patient_id",
-          "_postman_id": "2f09d452-4549-73e1-6ccf-e41f734a2c62",
+          "id": "2f09d452-4549-73e1-6ccf-e41f734a2c62",
           "request": {
             "method": "GET",
             "header": [],
@@ -10167,7 +10159,7 @@
         },
         {
           "name": "insurance_companies",
-          "_postman_id": "73eadb68-2008-1354-4303-3c6ac6eea0bb",
+          "id": "73eadb68-2008-1354-4303-3c6ac6eea0bb",
           "request": {
             "method": "GET",
             "header": [],
@@ -10298,7 +10290,7 @@
         },
         {
           "name": "insurance_companies by insurance_company_id",
-          "_postman_id": "be38fde7-01e2-834a-6068-18a42178e05b",
+          "id": "be38fde7-01e2-834a-6068-18a42178e05b",
           "request": {
             "method": "GET",
             "header": [],
@@ -10431,7 +10423,7 @@
         },
         {
           "name": "insurance_plan_coverage",
-          "_postman_id": "da55f0cf-5a00-3617-10eb-18c6a3611f0f",
+          "id": "da55f0cf-5a00-3617-10eb-18c6a3611f0f",
           "request": {
             "method": "GET",
             "header": [],
@@ -10562,7 +10554,7 @@
         },
         {
           "name": "insurance_plan_coverage by insurance_company_id",
-          "_postman_id": "ef7c8cb1-cc35-50db-45cc-36cd3eaccf65",
+          "id": "ef7c8cb1-cc35-50db-45cc-36cd3eaccf65",
           "request": {
             "method": "GET",
             "header": [],
@@ -10695,7 +10687,7 @@
         },
         {
           "name": "payors",
-          "_postman_id": "273ca558-da35-3830-b5f0-4ec7740cf631",
+          "id": "273ca558-da35-3830-b5f0-4ec7740cf631",
           "request": {
             "method": "GET",
             "header": [],
@@ -10826,7 +10818,7 @@
         },
         {
           "name": "payors by insurance_company_id",
-          "_postman_id": "ae4195ce-5ebf-0f77-a27c-b18c3392a72a",
+          "id": "ae4195ce-5ebf-0f77-a27c-b18c3392a72a",
           "request": {
             "method": "GET",
             "header": [],
@@ -10959,7 +10951,7 @@
         },
         {
           "name": "subscribers",
-          "_postman_id": "60c8a9f5-4734-00b4-36ca-729a9dfef913",
+          "id": "60c8a9f5-4734-00b4-36ca-729a9dfef913",
           "request": {
             "method": "GET",
             "header": [],
@@ -11090,7 +11082,7 @@
         },
         {
           "name": "subscribers by patient_id",
-          "_postman_id": "dfaeca28-a968-152b-d0eb-db787729f86d",
+          "id": "dfaeca28-a968-152b-d0eb-db787729f86d",
           "request": {
             "method": "GET",
             "header": [],
@@ -11223,7 +11215,7 @@
         },
         {
           "name": "insurance_estimate ",
-          "_postman_id": "ffb3672a-0246-ea0a-6cf9-89746069527a",
+          "id": "ffb3672a-0246-ea0a-6cf9-89746069527a",
           "request": {
             "method": "GET",
             "header": [],
@@ -11350,7 +11342,7 @@
         },
         {
           "name": "insurance_estimate by guarantor_id",
-          "_postman_id": "3a6f8a0f-51ce-0397-0419-49fc4195989a",
+          "id": "3a6f8a0f-51ce-0397-0419-49fc4195989a",
           "request": {
             "method": "GET",
             "header": [],
@@ -11479,7 +11471,7 @@
         },
         {
           "name": "insurance_company_details",
-          "_postman_id": "abb819f3-be65-ded9-e0af-239928ce21f4",
+          "id": "abb819f3-be65-ded9-e0af-239928ce21f4",
           "request": {
             "method": "GET",
             "header": [],
@@ -11543,7 +11535,7 @@
         },
         {
           "name": "insurance_company_details by insurance_company_id",
-          "_postman_id": "b217d910-25f4-4ab1-a21b-4dd847fdac71",
+          "id": "b217d910-25f4-4ab1-a21b-4dd847fdac71",
           "request": {
             "method": "GET",
             "header": [],
@@ -11608,7 +11600,7 @@
           ]
         }
       ],
-      "_postman_id": "9f4e4783-cf9a-d657-1134-4b7919bb0a7e",
+      "id": "9f4e4783-cf9a-d657-1134-4b7919bb0a7e",
       "description": "It contains all APIs related with insurance information. "
     },
     {
@@ -11616,7 +11608,7 @@
       "item": [
         {
           "name": "lab_panels",
-          "_postman_id": "3b25d07b-bde6-b048-20fa-42dc1b69c6d4",
+          "id": "3b25d07b-bde6-b048-20fa-42dc1b69c6d4",
           "request": {
             "method": "GET",
             "header": [],
@@ -11747,7 +11739,7 @@
         },
         {
           "name": "lab_panels by lab_panel_id",
-          "_postman_id": "fec4ca5b-39c7-b106-1b7f-c6eadb17ddd5",
+          "id": "fec4ca5b-39c7-b106-1b7f-c6eadb17ddd5",
           "request": {
             "method": "GET",
             "header": [],
@@ -11880,7 +11872,7 @@
         },
         {
           "name": "lab_results",
-          "_postman_id": "f546df6a-c125-e575-6b99-7251d80eac0a",
+          "id": "f546df6a-c125-e575-6b99-7251d80eac0a",
           "request": {
             "method": "GET",
             "header": [],
@@ -12011,7 +12003,7 @@
         },
         {
           "name": "lab_results by lab_panel_id",
-          "_postman_id": "889b55cd-4e5c-60b7-d4a0-74c0fb07f275",
+          "id": "889b55cd-4e5c-60b7-d4a0-74c0fb07f275",
           "request": {
             "method": "GET",
             "header": [],
@@ -12144,7 +12136,7 @@
         },
         {
           "name": "lab_details",
-          "_postman_id": "ac187fe1-0ee2-44d9-a82a-f258809ba579",
+          "id": "ac187fe1-0ee2-44d9-a82a-f258809ba579",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -12268,7 +12260,7 @@
         },
         {
           "name": "lab_details by lab_id",
-          "_postman_id": "97f99615-060e-4861-8898-ff95b03c2bc4",
+          "id": "97f99615-060e-4861-8898-ff95b03c2bc4",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -12490,7 +12482,7 @@
         },
         {
           "name": "lab_cases",
-          "_postman_id": "7be79ad9-83bb-4bb1-9807-33e8003ec425",
+          "id": "7be79ad9-83bb-4bb1-9807-33e8003ec425",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -12614,7 +12606,7 @@
         },
         {
           "name": "lab_cases by case_record_id",
-          "_postman_id": "8cbceaac-25be-4e41-985d-0af96dc1f3d6",
+          "id": "8cbceaac-25be-4e41-985d-0af96dc1f3d6",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -12739,7 +12731,7 @@
           ]
         }
       ],
-      "_postman_id": "65c1c413-15c5-144b-5ef7-465fb4b7ce87",
+      "id": "65c1c413-15c5-144b-5ef7-465fb4b7ce87",
       "description": "It contains all APIs related with lab informaion in practice"
     },
     {
@@ -12747,7 +12739,7 @@
       "item": [
         {
           "name": "patients",
-          "_postman_id": "958c7bd8-67dd-b1b6-46bb-5948d4de9fce",
+          "id": "958c7bd8-67dd-b1b6-46bb-5948d4de9fce",
           "request": {
             "method": "GET",
             "header": [],
@@ -12874,7 +12866,7 @@
         },
         {
           "name": "patients by patient_id",
-          "_postman_id": "2f1ff880-3d44-499f-eb15-64be434e5a6f",
+          "id": "2f1ff880-3d44-499f-eb15-64be434e5a6f",
           "request": {
             "method": "GET",
             "header": [],
@@ -13003,7 +12995,7 @@
         },
         {
           "name": "patients/dental_patients",
-          "_postman_id": "d1c2a1cb-6f97-a686-05ce-344a466b036e",
+          "id": "d1c2a1cb-6f97-a686-05ce-344a466b036e",
           "request": {
             "method": "GET",
             "header": [],
@@ -13132,7 +13124,7 @@
         },
         {
           "name": "patients/dental_patients by patient_id",
-          "_postman_id": "5db405cb-740d-7e12-a6cf-afec6299df90",
+          "id": "5db405cb-740d-7e12-a6cf-afec6299df90",
           "request": {
             "method": "GET",
             "header": [],
@@ -13263,7 +13255,7 @@
         },
         {
           "name": "patients/audiology_patients",
-          "_postman_id": "2c264e43-d9de-34d0-559a-9f71a657905e",
+          "id": "2c264e43-d9de-34d0-559a-9f71a657905e",
           "request": {
             "method": "GET",
             "header": [],
@@ -13392,7 +13384,7 @@
         },
         {
           "name": "patients/audiology_patients by patient_id",
-          "_postman_id": "e3f873c6-dd6b-df50-d108-ba76173e2e98",
+          "id": "e3f873c6-dd6b-df50-d108-ba76173e2e98",
           "request": {
             "method": "GET",
             "header": [],
@@ -13523,7 +13515,7 @@
         },
         {
           "name": "patients/shelter_patients",
-          "_postman_id": "d89a513a-7ce3-1f70-812f-69ca90fd0427",
+          "id": "d89a513a-7ce3-1f70-812f-69ca90fd0427",
           "request": {
             "method": "GET",
             "header": [],
@@ -13652,7 +13644,7 @@
         },
         {
           "name": "patients/shelter_patients by patient_id",
-          "_postman_id": "0adc3bc3-e49a-e562-d32f-386dd89208da",
+          "id": "0adc3bc3-e49a-e562-d32f-386dd89208da",
           "request": {
             "method": "GET",
             "header": [],
@@ -13716,7 +13708,7 @@
         },
         {
           "name": "patients/veterinary_patients",
-          "_postman_id": "874a48d6-c86f-6fd3-50c9-96150135b0d1",
+          "id": "874a48d6-c86f-6fd3-50c9-96150135b0d1",
           "request": {
             "method": "GET",
             "header": [],
@@ -13845,7 +13837,7 @@
         },
         {
           "name": "patients/veterinary_patients by patient_id",
-          "_postman_id": "a500f9cf-8381-a910-ed17-7df54e930acd",
+          "id": "a500f9cf-8381-a910-ed17-7df54e930acd",
           "request": {
             "method": "GET",
             "header": [],
@@ -13976,7 +13968,7 @@
         },
         {
           "name": "patient_addresses",
-          "_postman_id": "4fb108b3-8e40-f4b2-f983-f9ead9b74137",
+          "id": "4fb108b3-8e40-f4b2-f983-f9ead9b74137",
           "request": {
             "method": "GET",
             "header": [],
@@ -14107,7 +14099,7 @@
         },
         {
           "name": "patient_addresses by patient_id",
-          "_postman_id": "f7d240c3-d7e9-a387-9a0d-1259755910aa",
+          "id": "f7d240c3-d7e9-a387-9a0d-1259755910aa",
           "request": {
             "method": "GET",
             "header": [],
@@ -14173,7 +14165,7 @@
         },
         {
           "name": "patient_charts",
-          "_postman_id": "467decef-4035-1b5e-a0e2-1265cc94daac",
+          "id": "467decef-4035-1b5e-a0e2-1265cc94daac",
           "request": {
             "method": "GET",
             "header": [],
@@ -14304,7 +14296,7 @@
         },
         {
           "name": "patient_charts by patient_id",
-          "_postman_id": "27677fad-9fc3-b482-72ac-48877f335ba3",
+          "id": "27677fad-9fc3-b482-72ac-48877f335ba3",
           "request": {
             "method": "GET",
             "header": [],
@@ -14437,7 +14429,7 @@
         },
         {
           "name": "patient_conditions",
-          "_postman_id": "5ed7e672-5cba-7706-aaf2-f2e7762b6655",
+          "id": "5ed7e672-5cba-7706-aaf2-f2e7762b6655",
           "request": {
             "method": "GET",
             "header": [],
@@ -14568,7 +14560,7 @@
         },
         {
           "name": "patient_conditions by patient_condition_id",
-          "_postman_id": "975b0602-65cb-0fc3-c740-93cc8519c24a",
+          "id": "975b0602-65cb-0fc3-c740-93cc8519c24a",
           "request": {
             "method": "GET",
             "header": [],
@@ -14701,7 +14693,7 @@
         },
         {
           "name": "patient_contracts",
-          "_postman_id": "0f32a71e-9134-55fc-ea69-9fc215c4a9d1",
+          "id": "0f32a71e-9134-55fc-ea69-9fc215c4a9d1",
           "request": {
             "method": "GET",
             "header": [],
@@ -14828,7 +14820,7 @@
         },
         {
           "name": "patient_contracts by patient_id",
-          "_postman_id": "d72f8c87-1f26-4180-6451-371d65e0abcd",
+          "id": "d72f8c87-1f26-4180-6451-371d65e0abcd",
           "request": {
             "method": "GET",
             "header": [],
@@ -14957,7 +14949,7 @@
         },
         {
           "name": "patient_documents",
-          "_postman_id": "ee03576b-88c2-284d-c49e-9933ac51eb17",
+          "id": "ee03576b-88c2-284d-c49e-9933ac51eb17",
           "request": {
             "method": "GET",
             "header": [],
@@ -15088,7 +15080,7 @@
         },
         {
           "name": "patient_documents by patient_id",
-          "_postman_id": "c1b80b91-f83c-aa3b-dcbb-0181ea1a13e6",
+          "id": "c1b80b91-f83c-aa3b-dcbb-0181ea1a13e6",
           "request": {
             "method": "GET",
             "header": [],
@@ -15221,7 +15213,7 @@
         },
         {
           "name": "patient_existing_services",
-          "_postman_id": "7f1fc21f-f69c-7e3b-d7e8-c39ad067fba0",
+          "id": "7f1fc21f-f69c-7e3b-d7e8-c39ad067fba0",
           "request": {
             "method": "GET",
             "header": [],
@@ -15352,7 +15344,7 @@
         },
         {
           "name": "patient_existing_services by patient_id",
-          "_postman_id": "9e773f1d-f03e-c0e4-a126-f23c68a32605",
+          "id": "9e773f1d-f03e-c0e4-a126-f23c68a32605",
           "request": {
             "method": "GET",
             "header": [],
@@ -15485,7 +15477,7 @@
         },
         {
           "name": "patient_images",
-          "_postman_id": "c00eea28-5a42-20ea-07f7-e20e13034374",
+          "id": "c00eea28-5a42-20ea-07f7-e20e13034374",
           "request": {
             "method": "GET",
             "header": [],
@@ -15616,7 +15608,7 @@
         },
         {
           "name": "patient_images by patient_id",
-          "_postman_id": "efc6f345-d295-d7dc-2441-18e1ac7f307d",
+          "id": "efc6f345-d295-d7dc-2441-18e1ac7f307d",
           "request": {
             "method": "GET",
             "header": [],
@@ -15749,7 +15741,7 @@
         },
         {
           "name": "patient_statuses",
-          "_postman_id": "82707a96-ca53-7a89-311f-9db743c0ff27",
+          "id": "82707a96-ca53-7a89-311f-9db743c0ff27",
           "request": {
             "method": "GET",
             "header": [],
@@ -15880,7 +15872,7 @@
         },
         {
           "name": "patient_statuses by status",
-          "_postman_id": "5416eb8e-ae51-f218-9318-37e78671cc3d",
+          "id": "5416eb8e-ae51-f218-9318-37e78671cc3d",
           "request": {
             "method": "GET",
             "header": [],
@@ -16013,7 +16005,7 @@
         },
         {
           "name": "patients_v2",
-          "_postman_id": "179e7834-b222-1e48-1a37-81be52894d09",
+          "id": "179e7834-b222-1e48-1a37-81be52894d09",
           "request": {
             "method": "GET",
             "header": [],
@@ -16144,7 +16136,7 @@
         },
         {
           "name": "patients_v2 by patient_id",
-          "_postman_id": "eca42acd-5844-b987-1429-fada9ba6e557",
+          "id": "eca42acd-5844-b987-1429-fada9ba6e557",
           "request": {
             "method": "GET",
             "header": [],
@@ -16277,7 +16269,7 @@
         },
         {
           "name": "perio_charts",
-          "_postman_id": "c7cbb5c9-5a15-2990-a6eb-5b9e8a70da82",
+          "id": "c7cbb5c9-5a15-2990-a6eb-5b9e8a70da82",
           "request": {
             "method": "GET",
             "header": [],
@@ -16408,7 +16400,7 @@
         },
         {
           "name": "perio_charts by patient_id",
-          "_postman_id": "69afaaf5-f67e-c01c-fb97-e2acb4cbb4ad",
+          "id": "69afaaf5-f67e-c01c-fb97-e2acb4cbb4ad",
           "request": {
             "method": "GET",
             "header": [],
@@ -16541,7 +16533,7 @@
         },
         {
           "name": "prescriptions",
-          "_postman_id": "1f747079-9ba1-0038-86e9-0bd7c0801527",
+          "id": "1f747079-9ba1-0038-86e9-0bd7c0801527",
           "request": {
             "method": "GET",
             "header": [],
@@ -16672,7 +16664,7 @@
         },
         {
           "name": "prescriptions by prescription_id",
-          "_postman_id": "3fbe4c02-be46-79f7-1eed-ecc94ddf938a",
+          "id": "3fbe4c02-be46-79f7-1eed-ecc94ddf938a",
           "request": {
             "method": "GET",
             "header": [],
@@ -16805,7 +16797,7 @@
         },
         {
           "name": "reminders",
-          "_postman_id": "faecaa2a-9da5-1e65-e80b-6ba99744e79a",
+          "id": "faecaa2a-9da5-1e65-e80b-6ba99744e79a",
           "request": {
             "method": "GET",
             "header": [],
@@ -16936,7 +16928,7 @@
         },
         {
           "name": "reminders by id",
-          "_postman_id": "097f29b6-3f0f-71de-05c1-3e6bb4fb06db",
+          "id": "097f29b6-3f0f-71de-05c1-3e6bb4fb06db",
           "request": {
             "method": "GET",
             "header": [],
@@ -17069,7 +17061,7 @@
         },
         {
           "name": "xrays",
-          "_postman_id": "792c2e96-17fb-e7a2-363a-b4bba88f404f",
+          "id": "792c2e96-17fb-e7a2-363a-b4bba88f404f",
           "request": {
             "method": "GET",
             "header": [],
@@ -17200,7 +17192,7 @@
         },
         {
           "name": "xrays by patient_id",
-          "_postman_id": "6eb6c105-61bf-e3a6-e241-8d45bb639d17",
+          "id": "6eb6c105-61bf-e3a6-e241-8d45bb639d17",
           "request": {
             "method": "GET",
             "header": [],
@@ -17333,7 +17325,7 @@
         },
         {
           "name": "transactions",
-          "_postman_id": "088e2390-26ac-ecc4-98fd-336ee57189e0",
+          "id": "088e2390-26ac-ecc4-98fd-336ee57189e0",
           "request": {
             "method": "GET",
             "header": [],
@@ -17460,7 +17452,7 @@
         },
         {
           "name": "transactions  by transaction_sr_no",
-          "_postman_id": "2612cbc1-63af-70c5-b506-debfb36680e3",
+          "id": "2612cbc1-63af-70c5-b506-debfb36680e3",
           "request": {
             "method": "GET",
             "header": [],
@@ -17589,7 +17581,7 @@
         },
         {
           "name": "treatment_plans",
-          "_postman_id": "c02d3c6c-cacc-fa52-49f8-200f13bc5069",
+          "id": "c02d3c6c-cacc-fa52-49f8-200f13bc5069",
           "request": {
             "method": "GET",
             "header": [],
@@ -17716,7 +17708,7 @@
         },
         {
           "name": "treatment_plans by treatment_plan_sr_no",
-          "_postman_id": "a800f068-508c-cea0-54df-6093aed3951b",
+          "id": "a800f068-508c-cea0-54df-6093aed3951b",
           "request": {
             "method": "GET",
             "header": [],
@@ -17845,7 +17837,7 @@
         },
         {
           "name": "treatment_plan_phases",
-          "_postman_id": "d671c9f3-e9e8-48a7-974e-d127d595df02",
+          "id": "d671c9f3-e9e8-48a7-974e-d127d595df02",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -17971,7 +17963,7 @@
         },
         {
           "name": "treatment_plan_phases by treatment_plan_sr_no",
-          "_postman_id": "e312a877-03bd-49b8-9f08-7a46ef63b794",
+          "id": "e312a877-03bd-49b8-9f08-7a46ef63b794",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -18099,7 +18091,7 @@
         },
         {
           "name": "treatment_plan_statuses",
-          "_postman_id": "88559fc7-0c31-5bd5-dcaa-426f1a5030f4",
+          "id": "88559fc7-0c31-5bd5-dcaa-426f1a5030f4",
           "request": {
             "method": "GET",
             "header": [],
@@ -18230,7 +18222,7 @@
         },
         {
           "name": "treatment_plan_statuses by status",
-          "_postman_id": "a2026e17-9312-06d1-8c6a-99644336debf",
+          "id": "a2026e17-9312-06d1-8c6a-99644336debf",
           "request": {
             "method": "GET",
             "header": [],
@@ -18363,7 +18355,7 @@
         },
         {
           "name": "medical_notes",
-          "_postman_id": "34f63a69-0614-b648-d8c1-4bc4c673f485",
+          "id": "34f63a69-0614-b648-d8c1-4bc4c673f485",
           "request": {
             "method": "GET",
             "header": [],
@@ -18599,7 +18591,7 @@
         },
         {
           "name": "note_types",
-          "_postman_id": "64fbeb13-da47-4ecb-a89b-d64b2e7ec46f",
+          "id": "64fbeb13-da47-4ecb-a89b-d64b2e7ec46f",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -18725,7 +18717,7 @@
         },
         {
           "name": "note_types by type",
-          "_postman_id": "59642375-cf78-42f8-8bef-84e2411cac4e",
+          "id": "59642375-cf78-42f8-8bef-84e2411cac4e",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -18853,7 +18845,7 @@
         },
         {
           "name": "medical_history",
-          "_postman_id": "77bcb73c-d1c4-2a30-fe60-3af1986de266",
+          "id": "77bcb73c-d1c4-2a30-fe60-3af1986de266",
           "request": {
             "method": "GET",
             "header": [],
@@ -18984,7 +18976,7 @@
         },
         {
           "name": "medical_history by patient_id",
-          "_postman_id": "213e06b7-10d4-a31b-ffd4-b620fba6f631",
+          "id": "213e06b7-10d4-a31b-ffd4-b620fba6f631",
           "request": {
             "method": "GET",
             "header": [],
@@ -19117,7 +19109,7 @@
         },
         {
           "name": "animal_vital_signs",
-          "_postman_id": "ba25a8c2-b74b-7054-3a37-ceadb0ea7a92",
+          "id": "ba25a8c2-b74b-7054-3a37-ceadb0ea7a92",
           "request": {
             "method": "GET",
             "header": [],
@@ -19244,7 +19236,7 @@
         },
         {
           "name": "animal_vital_signs by patient_id",
-          "_postman_id": "d7ae6677-ae59-3216-f1b1-8e71cbb1214a",
+          "id": "d7ae6677-ae59-3216-f1b1-8e71cbb1214a",
           "request": {
             "method": "GET",
             "header": [],
@@ -19373,7 +19365,7 @@
         },
         {
           "name": "pet_documents",
-          "_postman_id": "65d7242c-45a1-1a34-d949-2a6004cf2924",
+          "id": "65d7242c-45a1-1a34-d949-2a6004cf2924",
           "request": {
             "method": "GET",
             "header": [],
@@ -19500,7 +19492,7 @@
         },
         {
           "name": "pet_documents by patient_id",
-          "_postman_id": "33c639ac-caa4-64bd-6df3-8ca2333062cf",
+          "id": "33c639ac-caa4-64bd-6df3-8ca2333062cf",
           "request": {
             "method": "GET",
             "header": [],
@@ -19629,7 +19621,7 @@
         },
         {
           "name": "many_guarantors_one_patient",
-          "_postman_id": "78ea33a3-c672-0dff-e57f-d77336ae815e",
+          "id": "78ea33a3-c672-0dff-e57f-d77336ae815e",
           "request": {
             "method": "GET",
             "header": [],
@@ -19756,7 +19748,7 @@
         },
         {
           "name": "many_guarantors_one_patient by patient_id",
-          "_postman_id": "caa3b352-b220-8cd6-5769-42e0bc535579",
+          "id": "caa3b352-b220-8cd6-5769-42e0bc535579",
           "request": {
             "method": "GET",
             "header": [],
@@ -19818,7 +19810,7 @@
         },
         {
           "name": "payment_plans",
-          "_postman_id": "97ce20bf-a1ce-484a-9192-1d27a6555ef6",
+          "id": "97ce20bf-a1ce-484a-9192-1d27a6555ef6",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -19944,7 +19936,7 @@
         },
         {
           "name": "payment_plans by agreement_id",
-          "_postman_id": "1199ac94-1aae-41dc-9aa5-9fc3c941409e",
+          "id": "1199ac94-1aae-41dc-9aa5-9fc3c941409e",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -20072,7 +20064,7 @@
         },
         {
           "name": "patient_contract_roll_charges",
-          "_postman_id": "33e4f446-745c-429e-9d29-85439154530b",
+          "id": "33e4f446-745c-429e-9d29-85439154530b",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -20198,7 +20190,7 @@
         },
         {
           "name": "patient_contract_roll_charges by patient_id",
-          "_postman_id": "a370f716-7c3b-487d-a466-ce211f3e114b",
+          "id": "a370f716-7c3b-487d-a466-ce211f3e114b",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -20326,7 +20318,7 @@
         },
         {
           "name": "pet_nutrition",
-          "_postman_id": "f1ad2d72-21cd-4306-b7fc-d8a999b707d1",
+          "id": "f1ad2d72-21cd-4306-b7fc-d8a999b707d1",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -20410,7 +20402,7 @@
         },
         {
           "name": "pet_nutrition by patient_id",
-          "_postman_id": "4a4e77c8-2de8-4214-ba4f-758920f59669",
+          "id": "4a4e77c8-2de8-4214-ba4f-758920f59669",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -20495,7 +20487,7 @@
           ]
         }
       ],
-      "_postman_id": "038d9327-a669-f7cd-8c74-eb8b3809a63e",
+      "id": "038d9327-a669-f7cd-8c74-eb8b3809a63e",
       "description": "It contains all APIs related with patient information , like patient name , address ,  perio charts , documents , medical history,prescriptions ,x-rays , reminders etc. Exlore the document for more details"
     },
     {
@@ -20503,7 +20495,7 @@
       "item": [
         {
           "name": "procedure_codes",
-          "_postman_id": "01eb64d4-a4d9-8c5e-ca39-9a12fe29291e",
+          "id": "01eb64d4-a4d9-8c5e-ca39-9a12fe29291e",
           "request": {
             "method": "GET",
             "header": [],
@@ -20634,7 +20626,7 @@
         },
         {
           "name": "procedure_codes by procedure_code",
-          "_postman_id": "8c54026c-3e1f-351c-af91-c3f4b8497552",
+          "id": "8c54026c-3e1f-351c-af91-c3f4b8497552",
           "request": {
             "method": "GET",
             "header": [],
@@ -20767,7 +20759,7 @@
         },
         {
           "name": "procedure_categories",
-          "_postman_id": "7111b61a-25b4-a386-3b5b-2eb5ef473bdb",
+          "id": "7111b61a-25b4-a386-3b5b-2eb5ef473bdb",
           "request": {
             "method": "GET",
             "header": [],
@@ -20898,7 +20890,7 @@
         },
         {
           "name": "procedure_categories by category",
-          "_postman_id": "829459cf-3fa3-e6a3-c48b-ca26053567ef",
+          "id": "829459cf-3fa3-e6a3-c48b-ca26053567ef",
           "request": {
             "method": "GET",
             "header": [],
@@ -21031,7 +21023,7 @@
         },
         {
           "name": "procedure_category_mapping",
-          "_postman_id": "ffc88d9b-7be1-4000-5d8e-6f6ab41a3fa7",
+          "id": "ffc88d9b-7be1-4000-5d8e-6f6ab41a3fa7",
           "request": {
             "method": "GET",
             "header": [],
@@ -21162,7 +21154,7 @@
         },
         {
           "name": "procedure_category_mapping  by category",
-          "_postman_id": "087b95a6-a83a-aac6-9ad3-632d5f71b23a",
+          "id": "087b95a6-a83a-aac6-9ad3-632d5f71b23a",
           "request": {
             "method": "GET",
             "header": [],
@@ -21294,7 +21286,7 @@
           ]
         }
       ],
-      "_postman_id": "cdfdcc2d-d19e-cb7f-f5be-ebe384fae62f",
+      "id": "cdfdcc2d-d19e-cb7f-f5be-ebe384fae62f",
       "description": "It contains all APIs related with procedure codes in practice like procedure code list , category , mapping etc."
     },
     {
@@ -21302,7 +21294,7 @@
       "item": [
         {
           "name": "products",
-          "_postman_id": "43641099-aeba-f25c-ca8b-d4f1f207535a",
+          "id": "43641099-aeba-f25c-ca8b-d4f1f207535a",
           "request": {
             "method": "GET",
             "header": [],
@@ -21433,7 +21425,7 @@
         },
         {
           "name": "products by product_id",
-          "_postman_id": "528ae3b6-67a8-4942-936f-b5aea27d25b3",
+          "id": "528ae3b6-67a8-4942-936f-b5aea27d25b3",
           "request": {
             "method": "GET",
             "header": [],
@@ -21566,7 +21558,7 @@
         },
         {
           "name": "hearing_aid_products",
-          "_postman_id": "613e1e9d-2028-5cd1-1566-847d2c6b218d",
+          "id": "613e1e9d-2028-5cd1-1566-847d2c6b218d",
           "request": {
             "method": "GET",
             "header": [],
@@ -21697,7 +21689,7 @@
         },
         {
           "name": "hearing_aid_products by model_id",
-          "_postman_id": "0cfd015e-a775-36f4-5d06-ab8ee3754b92",
+          "id": "0cfd015e-a775-36f4-5d06-ab8ee3754b92",
           "request": {
             "method": "GET",
             "header": [],
@@ -21830,7 +21822,7 @@
         },
         {
           "name": "hearing_care_product_details",
-          "_postman_id": "66388dd3-9e30-5d1f-63ba-cf325f6fa220",
+          "id": "66388dd3-9e30-5d1f-63ba-cf325f6fa220",
           "request": {
             "method": "GET",
             "header": [],
@@ -21965,7 +21957,7 @@
         },
         {
           "name": "hearing_care_product_details by product_id",
-          "_postman_id": "5b58747c-f51e-1fb8-59fa-3561fdd1baa1",
+          "id": "5b58747c-f51e-1fb8-59fa-3561fdd1baa1",
           "request": {
             "method": "GET",
             "header": [],
@@ -22098,7 +22090,7 @@
         },
         {
           "name": "manufacturers",
-          "_postman_id": "b6435706-bff3-e299-726f-af9c894bf0e6",
+          "id": "b6435706-bff3-e299-726f-af9c894bf0e6",
           "request": {
             "method": "GET",
             "header": [],
@@ -22229,7 +22221,7 @@
         },
         {
           "name": "manufacturers by manufacturer_id",
-          "_postman_id": "2a6e9743-6cd3-5380-295f-c8a6a3bb2c64",
+          "id": "2a6e9743-6cd3-5380-295f-c8a6a3bb2c64",
           "request": {
             "method": "GET",
             "header": [],
@@ -22362,7 +22354,7 @@
         },
         {
           "name": "optometry_product_details",
-          "_postman_id": "582eb855-6133-60b4-071a-f234807313b0",
+          "id": "582eb855-6133-60b4-071a-f234807313b0",
           "request": {
             "method": "GET",
             "header": [],
@@ -22493,7 +22485,7 @@
         },
         {
           "name": "optometry_product_details by product_id",
-          "_postman_id": "be93a302-9e5b-88a3-9ec8-bab5e16c64cb",
+          "id": "be93a302-9e5b-88a3-9ec8-bab5e16c64cb",
           "request": {
             "method": "GET",
             "header": [],
@@ -22626,7 +22618,7 @@
         },
         {
           "name": "veterinary_product_details",
-          "_postman_id": "ea5839af-14b1-adf0-5ca6-04696f9c0a68",
+          "id": "ea5839af-14b1-adf0-5ca6-04696f9c0a68",
           "request": {
             "method": "GET",
             "header": [],
@@ -22757,7 +22749,7 @@
         },
         {
           "name": "veterinary_product_details by product_id",
-          "_postman_id": "59dc6df6-6b49-6f42-5a33-c4fe8152ba0e",
+          "id": "59dc6df6-6b49-6f42-5a33-c4fe8152ba0e",
           "request": {
             "method": "GET",
             "header": [],
@@ -22890,7 +22882,7 @@
         },
         {
           "name": "veterinary_product_inventory",
-          "_postman_id": "7bde5bbf-7112-acb9-7efa-363e749d7474",
+          "id": "7bde5bbf-7112-acb9-7efa-363e749d7474",
           "request": {
             "method": "GET",
             "header": [],
@@ -23021,7 +23013,7 @@
         },
         {
           "name": "veterinary_product_inventory by product_id",
-          "_postman_id": "35c5be4c-76e2-a93c-a02d-ac833189c424",
+          "id": "35c5be4c-76e2-a93c-a02d-ac833189c424",
           "request": {
             "method": "GET",
             "header": [],
@@ -23154,7 +23146,7 @@
         },
         {
           "name": "vendors",
-          "_postman_id": "dae458d8-696e-814f-af62-f5bbecc39610",
+          "id": "dae458d8-696e-814f-af62-f5bbecc39610",
           "request": {
             "method": "GET",
             "header": [],
@@ -23285,7 +23277,7 @@
         },
         {
           "name": "vendors by vendor_id",
-          "_postman_id": "c053503d-0297-fd34-2b67-65e7aea47cdf",
+          "id": "c053503d-0297-fd34-2b67-65e7aea47cdf",
           "request": {
             "method": "GET",
             "header": [],
@@ -23418,7 +23410,7 @@
         },
         {
           "name": "purchase_orders",
-          "_postman_id": "9112e506-40be-0854-5c0f-b3f29aea3a74",
+          "id": "9112e506-40be-0854-5c0f-b3f29aea3a74",
           "request": {
             "method": "GET",
             "header": [],
@@ -23549,7 +23541,7 @@
         },
         {
           "name": "purchase_orders by vendor_id",
-          "_postman_id": "79d58df8-6a3d-0d04-57b4-a0be454d3294",
+          "id": "79d58df8-6a3d-0d04-57b4-a0be454d3294",
           "request": {
             "method": "GET",
             "header": [],
@@ -23681,7 +23673,7 @@
           ]
         }
       ],
-      "_postman_id": "76b43628-7bc8-0df1-82cc-d8da13990b1e",
+      "id": "76b43628-7bc8-0df1-82cc-d8da13990b1e",
       "description": "It contains all APIs related with products in practice, like hearing aid , optometry products , veterinary products , manufacturers etc.."
     },
     {
@@ -23689,7 +23681,7 @@
       "item": [
         {
           "name": "fee_schedule_optimizer",
-          "_postman_id": "1de6de0a-ccb1-368a-a0b6-50c80861b7cd",
+          "id": "1de6de0a-ccb1-368a-a0b6-50c80861b7cd",
           "request": {
             "method": "GET",
             "header": [],
@@ -23777,7 +23769,7 @@
         },
         {
           "name": "messages",
-          "_postman_id": "5a84c3c0-cbbd-f720-7d52-64401d291271",
+          "id": "5a84c3c0-cbbd-f720-7d52-64401d291271",
           "request": {
             "method": "GET",
             "header": [],
@@ -23908,7 +23900,7 @@
         },
         {
           "name": "messages by message_id",
-          "_postman_id": "979696d6-b164-1db6-ce73-14963b1bf73e",
+          "id": "979696d6-b164-1db6-ce73-14963b1bf73e",
           "request": {
             "method": "GET",
             "header": [],
@@ -24041,7 +24033,7 @@
         },
         {
           "name": "messaging_invites",
-          "_postman_id": "6cdcae64-17cc-1a82-1115-d70cc191b163",
+          "id": "6cdcae64-17cc-1a82-1115-d70cc191b163",
           "request": {
             "method": "GET",
             "header": [],
@@ -24172,7 +24164,7 @@
         },
         {
           "name": "messaging_invites by patient_id",
-          "_postman_id": "c9aa213e-5e01-5e6e-a797-ceadbe4b6654",
+          "id": "c9aa213e-5e01-5e6e-a797-ceadbe4b6654",
           "request": {
             "method": "GET",
             "header": [],
@@ -24305,7 +24297,7 @@
         },
         {
           "name": "practice_mobilizer_menus",
-          "_postman_id": "d34bb8b6-be4f-1d12-c963-850a161b4fa6",
+          "id": "d34bb8b6-be4f-1d12-c963-850a161b4fa6",
           "request": {
             "method": "GET",
             "header": [],
@@ -24436,7 +24428,7 @@
         },
         {
           "name": "Free fee survey ",
-          "_postman_id": "24b52ebd-b509-f788-3cf5-5cb7bed725bc",
+          "id": "24b52ebd-b509-f788-3cf5-5cb7bed725bc",
           "request": {
             "method": "GET",
             "header": [],
@@ -24606,7 +24598,7 @@
           ]
         }
       ],
-      "_postman_id": "30d11c04-e283-c2aa-1f99-d5327f22c818",
+      "id": "30d11c04-e283-c2aa-1f99-d5327f22c818",
       "description": "Sikka Practice Mobilizer is an integrated suite of tools offering full control of your practice on your mobile device.For more details : https://practicemobilizer.com/"
     },
     {
@@ -24614,7 +24606,7 @@
       "item": [
         {
           "name": "Key Performance Indicators list",
-          "_postman_id": "e440b6d0-7a34-8b58-4167-e844b033cae3",
+          "id": "e440b6d0-7a34-8b58-4167-e844b033cae3",
           "request": {
             "method": "GET",
             "header": [],
@@ -24745,7 +24737,7 @@
         },
         {
           "name": "Data of Key Performance Indicators",
-          "_postman_id": "751e14b9-df9e-fdba-f2d3-06866342c301",
+          "id": "751e14b9-df9e-fdba-f2d3-06866342c301",
           "request": {
             "method": "GET",
             "header": [],
@@ -24909,7 +24901,7 @@
           ]
         }
       ],
-      "_postman_id": "42560a85-eccb-89f2-fb2b-c86b0574f3b7",
+      "id": "42560a85-eccb-89f2-fb2b-c86b0574f3b7",
       "description": "A key performance indicator (KPI) is a business metric used to evaluate factors that are crucial to the success of an organization.KPIs give you unique views of practice data that lead to action items to drive increased revenue and save valuable practice time. \nFor more information : https://sikkasoft.zendesk.com/hc/en-us/articles/212443746-Key-Performance-Indicator-KPI-"
     },
     {
@@ -24917,7 +24909,7 @@
       "item": [
         {
           "name": "Accept Payment",
-          "_postman_id": "1cf44402-9273-48e8-8ed5-5461942d4864",
+          "id": "1cf44402-9273-48e8-8ed5-5461942d4864",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -24931,7 +24923,7 @@
         },
         {
           "name": "Sale by Credit Card",
-          "_postman_id": "9a8dd170-5f54-4aee-8b58-54aaf4f51664",
+          "id": "9a8dd170-5f54-4aee-8b58-54aaf4f51664",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -24947,10 +24939,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n\t\"request_key\": \"request_key - mandatory\",\r\n\t\"transaction_media\": \"credit_card - mandatory\",\r\n\t\"patient_id\": \"patient_id - mandatory\",\r\n\t\"guarantor_id\": \"guarantor_id - mandatory\",\r\n\t\"practice_id\": \"practice_id - mandatory\",\r\n\t\"cust_id\": \"cust_id - mandatory\",\r\n\t\"provider_id\":\"provider_id - mandatory\",\r\n\t\"transaction_amount\": \"transaction_amount(xx.xx) - mandatory\",\r\n\t\"card_number\": \"card_number - mandatory\",\r\n\t\"expiration_month\": \"expiration_month(MM) - mandatory\",\r\n\t\"expiration_year\": \"expiration_year(YYYY) - mandatory\",\r\n\t\"name\": \"name - mandatory\",\r\n\t\"zipcode\": \"zipcode - mandatory\",\r\n\t\"address1\": \"address1 - optional\",\r\n\t\"address2\": \"address2 - optional\",\r\n\t\"city\": \"city- optional\",\r\n\t\"state\": \"state- optional\",\r\n\t\"phone\": \"phone - optional\",\r\n\t\"email\": \"email - optional\",\r\n\t\"cvv\": \"cvv (XXX)- optional\"\r\n}",
-              "options": {
-                "raw": {}
-              }
+              "raw": "{\r\n\t\"request_key\": \"request_key - mandatory\",\r\n\t\"transaction_media\": \"credit_card - mandatory\",\r\n\t\"patient_id\": \"patient_id - mandatory\",\r\n\t\"guarantor_id\": \"guarantor_id - mandatory\",\r\n\t\"practice_id\": \"practice_id - mandatory\",\r\n\t\"cust_id\": \"cust_id - mandatory\",\r\n\t\"provider_id\":\"provider_id - mandatory\",\r\n\t\"transaction_amount\": \"transaction_amount(xx.xx) - mandatory\",\r\n\t\"card_number\": \"card_number - mandatory\",\r\n\t\"expiration_month\": \"expiration_month(MM) - mandatory\",\r\n\t\"expiration_year\": \"expiration_year(YYYY) - mandatory\",\r\n\t\"name\": \"name - mandatory\",\r\n\t\"zipcode\": \"zipcode - mandatory\",\r\n\t\"address1\": \"address1 - optional\",\r\n\t\"address2\": \"address2 - optional\",\r\n\t\"city\": \"city- optional\",\r\n\t\"state\": \"state- optional\",\r\n\t\"phone\": \"phone - optional\",\r\n\t\"email\": \"email - optional\",\r\n\t\"cvv\": \"cvv (XXX)- optional\"\r\n}"
             },
             "url": "https://api.sikkasoft.com/v2/payment/sale",
             "description": "A sale transaction by credit card is the simplest method to process a complete payment. Upon submission, a Sale transaction attempts an authorization and if approved, schedules capture, which initiates the process that results in funding.\r\n\r\n\r\nTo process transaction with credit card, \"transaction_media\" must have value \"credit_card\" as shown below:\r\n\r\n\r\n\"transaction_media\": \"credit_card\" - mandatory to do transaction with credit card."
@@ -24999,7 +24988,7 @@
         },
         {
           "name": "Sale by ACH",
-          "_postman_id": "b9808998-182d-4d33-91a0-4da7278e7a69",
+          "id": "b9808998-182d-4d33-91a0-4da7278e7a69",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -25015,10 +25004,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"request_key\": \"request_key - mandatory\",\n    \"transaction_media\": \"ach - mandatory\",\n    \"patient_id\": \"patient_id - mandatory\",\n    \"guarantor_id\": \"guarantor_id - mandatory\",\n    \"practice_id\": \"practice_id - mandatory\",\n    \"cust_id\": \"cust_id - mandatory\",\n    \"provider_id\": \"provider_id - mandatory\",\n    \"name\": \"name - mandatory\",\n    \"zipcode\": \"zipcode - mandatory\",\n    \"transaction_amount\": \"transaction_amount(xx.xx) - mandatory\",\n    \"routing_number\": \"routing_number - mandatory\",\n    \"account_number\": \"account_number - mandatory\",\n    \"is_savings_account_number\": \"y OR n - mandatory\"\n}",
-              "options": {
-                "raw": {}
-              }
+              "raw": "{\n    \"request_key\": \"request_key - mandatory\",\n    \"transaction_media\": \"ach - mandatory\",\n    \"patient_id\": \"patient_id - mandatory\",\n    \"guarantor_id\": \"guarantor_id - mandatory\",\n    \"practice_id\": \"practice_id - mandatory\",\n    \"cust_id\": \"cust_id - mandatory\",\n    \"provider_id\": \"provider_id - mandatory\",\n    \"name\": \"name - mandatory\",\n    \"zipcode\": \"zipcode - mandatory\",\n    \"transaction_amount\": \"transaction_amount(xx.xx) - mandatory\",\n    \"routing_number\": \"routing_number - mandatory\",\n    \"account_number\": \"account_number - mandatory\",\n    \"is_savings_account_number\": \"y OR n - mandatory\"\n}"
             },
             "url": "https://api.sikkasoft.com/v2/payment/sale",
             "description": "Automated Clearing House (ACH) is the back-end process through which electronic checks may be processed. ACH is purely a money transfer. ACH \"sale\" use the same fields as \"sale\" by \"credit_card\", with the exception of the \"card_number\", \"expiration_month\", \"expiration_year\" and address verification system (AVS) fields. Instead, they use the following fields: \"account\", \"routing\".\r\n\r\n\r\nTo process transaction with ACH, \"transaction_media\" must have value \"ach\" as shown below:\r\n\r\n\r\n\"transaction_media\": \"ach\" mandatory to do transaction with ach."
@@ -25067,7 +25053,7 @@
         },
         {
           "name": "Save a card",
-          "_postman_id": "1bf2cdb2-fef3-4c51-a53c-876015b45517",
+          "id": "1bf2cdb2-fef3-4c51-a53c-876015b45517",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -25082,10 +25068,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"request_key\": \"request_key - mandatory\",\n    \"patient_id\": \"patient_id - mandatory\",\n    \"guarantor_id\": \"guarantor_id - mandatory\",\n    \"practice_id\": \"practice_id - mandatory\",\n    \"cust_id\": \"cust_id - mandatory\",\n    \"provider_id\": \"provider_id - optional\",\n    \"name\": \"name - mandatory\",\n    \"zipcode\": \"zipcode - mandatory\",\n    \"is_recurring_payments\": \"false - optional\",\n    \"card_number\": \"card_number - mandatory\",\n    \"expiration_month\": \"expiration_month(MM) - mandatory\",\n    \"expiration_year\": \"expiration_year(YYYY) - mandatory\",\n    \"address1\": \"address1 - optional\",\n    \"address2\": \"address2 - optional\",\n    \"city\": \"city- optional\",\n    \"state\": \"state- optional\",\n    \"phone\": \"phone - optional\",\n    \"email\": \"email - optional\",\n    \"is_default\": \"true/false - optional\"\n}",
-              "options": {
-                "raw": {}
-              }
+              "raw": "{\n    \"request_key\": \"request_key - mandatory\",\n    \"patient_id\": \"patient_id - mandatory\",\n    \"guarantor_id\": \"guarantor_id - mandatory\",\n    \"practice_id\": \"practice_id - mandatory\",\n    \"cust_id\": \"cust_id - mandatory\",\n    \"provider_id\": \"provider_id - optional\",\n    \"name\": \"name - mandatory\",\n    \"zipcode\": \"zipcode - mandatory\",\n    \"is_recurring_payments\": \"false - optional\",\n    \"card_number\": \"card_number - mandatory\",\n    \"expiration_month\": \"expiration_month(MM) - mandatory\",\n    \"expiration_year\": \"expiration_year(YYYY) - mandatory\",\n    \"address1\": \"address1 - optional\",\n    \"address2\": \"address2 - optional\",\n    \"city\": \"city- optional\",\n    \"state\": \"state- optional\",\n    \"phone\": \"phone - optional\",\n    \"email\": \"email - optional\",\n    \"is_default\": \"true/false - optional\"\n}"
             },
             "url": "https://api.sikkasoft.com/v2/payment/store_card",
             "description": "> This feature allows merchants to submit a request to Store payment account details and receive a \"billing_id\". The \"billing_id\" is a token that can be used as a Cardholder primary account number (PAN) replacement for future one-time and subscription payments.\r\n\r\n\r\nEach \"billing_id\" is access controlled such that it can only be used by the merchant who created it and can be stored by the merchant in plain text.\r\n\r\n\r\n\"is_recurring_payments\": \"false - optional\" - if not passed then default value for this parameter \"false\" will be considered. \r\n\r\n\r\n\"is_default\": \"true/false - optional\" - if not passed then default value for this parameter \"true\" will be considered."
@@ -25134,7 +25117,7 @@
         },
         {
           "name": "Retrive saved card",
-          "_postman_id": "0a2c44a1-9fdb-4a5f-95f6-0a40d83715b6",
+          "id": "0a2c44a1-9fdb-4a5f-95f6-0a40d83715b6",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -25270,7 +25253,7 @@
         },
         {
           "name": "Delete saved card",
-          "_postman_id": "d876580d-7ee6-4240-b072-debdec22c972",
+          "id": "d876580d-7ee6-4240-b072-debdec22c972",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -25348,7 +25331,7 @@
         },
         {
           "name": "Update saved card",
-          "_postman_id": "3c29bbcd-145a-40f3-8f24-66b317e5e63f",
+          "id": "3c29bbcd-145a-40f3-8f24-66b317e5e63f",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -25364,10 +25347,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"request_key\": \"request_key - mandatory\",\n    \"patient_id\": \"patient_id - mandatory\",\n    \"guarantor_id\": \"guarantor_id - mandatory\",\n    \"practice_id\": \"practice_id - mandatory\",\n    \"cust_id\": \"cust_id - mandatory\",\n    \"provider_id\": \"provider_id - optional\",\n    \"name\": \"name - mandatory\",\n    \"zipcode\": \"zipcode - mandatory\",\n    \"card_number\": \"card_number - mandatory\",\n    \"billing_id\": \"billing_id - mandatory\",\n    \"expiration_month\": \"expiration_month(MM) - mandatory\",\n    \"expiration_year\": \"expiration_year(YYYY) - mandatory\",\n    \"is_update_default\": \"false- optional\",\n    \"address1\": \"address1 - optional\",\n    \"address2\": \"address2 - optional\",\n    \"city\": \"city- optional\",\n    \"state\": \"state- optional\",\n    \"phone\": \"phone - optional\",\n    \"email\": \"email - optional\"\n}",
-              "options": {
-                "raw": {}
-              }
+              "raw": "{\n    \"request_key\": \"request_key - mandatory\",\n    \"patient_id\": \"patient_id - mandatory\",\n    \"guarantor_id\": \"guarantor_id - mandatory\",\n    \"practice_id\": \"practice_id - mandatory\",\n    \"cust_id\": \"cust_id - mandatory\",\n    \"provider_id\": \"provider_id - optional\",\n    \"name\": \"name - mandatory\",\n    \"zipcode\": \"zipcode - mandatory\",\n    \"card_number\": \"card_number - mandatory\",\n    \"billing_id\": \"billing_id - mandatory\",\n    \"expiration_month\": \"expiration_month(MM) - mandatory\",\n    \"expiration_year\": \"expiration_year(YYYY) - mandatory\",\n    \"is_update_default\": \"false- optional\",\n    \"address1\": \"address1 - optional\",\n    \"address2\": \"address2 - optional\",\n    \"city\": \"city- optional\",\n    \"state\": \"state- optional\",\n    \"phone\": \"phone - optional\",\n    \"email\": \"email - optional\"\n}"
             },
             "url": "https://api.sikkasoft.com/v2/payment/store_card",
             "description": "To update all card details realted to given \"billing_id\", \"is_update_default\" must have value \"false\" as shown below: \r\n\r\n\"is_update_default\": \"false- optional\"\r\n\r\nThis parameter is optional so, if it is not available in request then by default request will be considered to update all card details."
@@ -25416,7 +25396,7 @@
         },
         {
           "name": "Update is_default flag in saved card only",
-          "_postman_id": "1ca5fe92-28d1-46dc-aebb-f45504009a67",
+          "id": "1ca5fe92-28d1-46dc-aebb-f45504009a67",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -25431,10 +25411,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"request_key\": \"request_key - mandatory\",\n    \"patient_id\": \"patient_id - mandatory\",\n    \"guarantor_id\": \"guarantor_id - mandatory\",\n    \"practice_id\": \"practice_id - mandatory\",\n    \"cust_id\": \"cust_id - mandatory\",\n    \"provider_id\": \"provider_id - optional\",\n    \"name\": \"name - mandatory\",\n    \"zipcode\": \"zipcode - mandatory\",\n    \"billing_id\": \"billing_id - mandatory\",\n    \"is_update_default\": \"true- mandatory\",\n    \"is_default\": \"true/false\"\n}",
-              "options": {
-                "raw": {}
-              }
+              "raw": "{\n    \"request_key\": \"request_key - mandatory\",\n    \"patient_id\": \"patient_id - mandatory\",\n    \"guarantor_id\": \"guarantor_id - mandatory\",\n    \"practice_id\": \"practice_id - mandatory\",\n    \"cust_id\": \"cust_id - mandatory\",\n    \"provider_id\": \"provider_id - optional\",\n    \"name\": \"name - mandatory\",\n    \"zipcode\": \"zipcode - mandatory\",\n    \"billing_id\": \"billing_id - mandatory\",\n    \"is_update_default\": \"true- mandatory\",\n    \"is_default\": \"true/false\"\n}"
             },
             "url": "https://api.sikkasoft.com/v2/payment/store_card",
             "description": "Update PUT store_card end point to update only \"is_default\" flag at our end.\r\n\r\nTo update \"is_default\" flag for given \"billing_id\", \"is_update_default\" must have value \"true\" as shown below: \r\n\r\n\"is_update_default\": \"true- mandatory\"\r\n\r\nDefault value for \"is_default\" is \"true\", so if you pass \"is_update_default\"=\"true\", but don't pass \"is_default\" flag then given \"billing_id\" will be marked as default and all other saved cards will be marked as \"is_default\"=\"false\"."
@@ -25483,7 +25460,7 @@
         },
         {
           "name": "Sale by saved card",
-          "_postman_id": "982cc527-cb49-4518-a8af-92dc28b5ebcb",
+          "id": "982cc527-cb49-4518-a8af-92dc28b5ebcb",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -25499,10 +25476,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"request_key\": \"request_key - mandatory\",\n    \"transaction_media\": \"billing_id - mandatory\",\n    \"patient_id\": \"patient_id - mandatory\",\n    \"guarantor_id\": \"guarantor_id - mandatory\",\n    \"practice_id\": \"practice_id - mandatory\",\n    \"cust_id\": \"cust_id - mandatory\",\n    \"provider_id\": \"provider_id - mandatory\",\n    \"name\": \"name - mandatory\",\n    \"zipcode\": \"zipcode - mandatory\",\n    \"transaction_amount\": \"transaction_amount(xx.xx) - mandatory\",\n    \"billing_id\": \"billing_id - mandatory\"\n}",
-              "options": {
-                "raw": {}
-              }
+              "raw": "{\n    \"request_key\": \"request_key - mandatory\",\n    \"transaction_media\": \"billing_id - mandatory\",\n    \"patient_id\": \"patient_id - mandatory\",\n    \"guarantor_id\": \"guarantor_id - mandatory\",\n    \"practice_id\": \"practice_id - mandatory\",\n    \"cust_id\": \"cust_id - mandatory\",\n    \"provider_id\": \"provider_id - mandatory\",\n    \"name\": \"name - mandatory\",\n    \"zipcode\": \"zipcode - mandatory\",\n    \"transaction_amount\": \"transaction_amount(xx.xx) - mandatory\",\n    \"billing_id\": \"billing_id - mandatory\"\n}"
             },
             "url": "https://api.sikkasoft.com/v2/payment/sale",
             "description": "A sale transaction by saved card is the simplest method to process a complete payment without providing actual credit card details. Upon submission, a Sale transaction attempts an authorization on provided \"billing_id\" and if approved, schedules capture, which initiates the process that results in funding.\r\n\r\n\r\nTo process transaction with saved credit card, \"transaction_media\" must have value \"billing_id\" as shown below:\r\n\r\n\r\n\"transaction_media\": \"billing_id\" - mandatory to do transaction with saved card credit card."
@@ -25551,7 +25525,7 @@
         },
         {
           "name": "Set up recurring payments",
-          "_postman_id": "a37a4626-e118-48f1-a3aa-944b8c4e94f4",
+          "id": "a37a4626-e118-48f1-a3aa-944b8c4e94f4",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -25566,10 +25540,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"request_key\": \"request_key - mandatory\",\n    \"patient_id\": \"patient_id - mandatory\",\n    \"guarantor_id\": \"guarantor_id - mandatory\",\n    \"practice_id\": \"practice_id - mandatory\",\n    \"cust_id\": \"cust_id - mandatory\",\n    \"provider_id\": \"provider_id - optional\",\n    \"name\": \"name - mandatory\",\n    \"zipcode\": \"zipcode - mandatory\",\n    \"is_recurring_payments\": \"true - mandatory\",\n    \"card_number\": \"card_number - mandatory\",\n    \"expiration_month\": \"expiration_month(MM) - mandatory\",\n    \"expiration_year\": \"expiration_year(yyyy) - mandatory\",\n    \"address1\": \"address1 - mandatory\",\n    \"run_cycles\": \"run_cycles(duration of internval, e.g. 1,2,3)  - mandatory\",\n    \"run_startdate\": \"run_start_date(yyyy-MM-dd), should be greater than today - mandatory\",\n    \"number_of_payments\": \"number_of_payments(tenure) - mandatory\",\n    \"run_cycle_interval\": \"run_cycle_interval(d, w, m, y) - mandatory\",\n    \"total_amount\": \"total_amount(xx.xx) - mandatory\"\n}",
-              "options": {
-                "raw": {}
-              }
+              "raw": "{\n    \"request_key\": \"request_key - mandatory\",\n    \"patient_id\": \"patient_id - mandatory\",\n    \"guarantor_id\": \"guarantor_id - mandatory\",\n    \"practice_id\": \"practice_id - mandatory\",\n    \"cust_id\": \"cust_id - mandatory\",\n    \"provider_id\": \"provider_id - optional\",\n    \"name\": \"name - mandatory\",\n    \"zipcode\": \"zipcode - mandatory\",\n    \"is_recurring_payments\": \"true - mandatory\",\n    \"card_number\": \"card_number - mandatory\",\n    \"expiration_month\": \"expiration_month(MM) - mandatory\",\n    \"expiration_year\": \"expiration_year(yyyy) - mandatory\",\n    \"address1\": \"address1 - mandatory\",\n    \"run_cycles\": \"run_cycles(duration of internval, e.g. 1,2,3)  - mandatory\",\n    \"run_startdate\": \"run_start_date(yyyy-MM-dd), should be greater than today - mandatory\",\n    \"number_of_payments\": \"number_of_payments(tenure) - mandatory\",\n    \"run_cycle_interval\": \"run_cycle_interval(d, w, m, y) - mandatory\",\n    \"total_amount\": \"total_amount(xx.xx) - mandatory\"\n}"
             },
             "url": "https://api.sikkasoft.com/v2/payment/store_card",
             "description": "> This feature allows merchants to submit a request to Store payment account details with recurring payment plan and receive a \"billing_id\". The \"billing_id\" is a token that can be used as a Cardholder primary account number (PAN) replacement for future retrieval.\r\n\r\n\r\nEach \"billing_id\" is access controlled such that it can only be used by the merchant who created it and can be stored by the merchant in plain text.\r\n\r\n\r\n\"is_recurring_payments\": \"true - optional\" - if this is for recurring payment then value for this parameter must be passed as \"true\".\r\n\r\nExample:\r\nIf merchant want to setup recurring payment for $50.00 for 5 months on monthly basis then request should have values as below:\r\n\r\n    \"run_cycles\": \"1\"\r\n    \"number_of_payments\": \"5\",\r\n    \"run_cycle_interval\": \"m\",\r\n    \"total_amount\": \"50.00\"\r\n\r\nAbove values will be considered as 5 installments every 1 month."
@@ -25616,7 +25587,7 @@
         },
         {
           "name": "Retrive transactions",
-          "_postman_id": "c63062cf-4b19-44a4-a31d-ac4f923d79d4",
+          "id": "c63062cf-4b19-44a4-a31d-ac4f923d79d4",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -25743,7 +25714,7 @@
         },
         {
           "name": "Email receipts",
-          "_postman_id": "9c0168d3-dba9-4735-b6ca-49d7a5d82c48",
+          "id": "9c0168d3-dba9-4735-b6ca-49d7a5d82c48",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -25809,7 +25780,7 @@
           ]
         }
       ],
-      "_postman_id": "d945a0d4-7607-442b-b8a5-31a58e004f0b",
+      "id": "d945a0d4-7607-442b-b8a5-31a58e004f0b",
       "description": "Sikka Payment APIs\r\n\r\n#### Integrate online payments using the Sikka APIs.\r\n\r\n#### Overview\r\nSikka Payments API enables healthcare practices to process payments through the secured payment gateway. A payment can be taken from patients.\r\n\r\n#### Base URL \r\n[https://api.sikkasoft.com/v2/payment](https://api.sikkasoft.com/v2/payment)\r\n\r\n#### Sandbox URL \r\n[https://api.sikkasoft.com/v2/sandbox/payment](https://api.sikkasoft.com/v2/sandbox/payment)\r\n\r\n#### PCI Compliance\r\nSikka Software is only responsible for the security of credit card to the extent that it is directly in the route of the payment request to payment processors during a payment processing request. To ensure secure handling of payment instruments, as a third-party developer, you are responsible for developing the front ends in a PCI compliant manner and maintaining a PCI compliance.\r\n> NOTE : If your application handles credit card data, you will need to be PCI Compliant.\r\n\r\n##### Rules\r\n- Non-printable characters, such as CR, LF, and other control characters, must not be submitted. \r\n- Spaces at the beginning and end of fields are not preserved; spaces in the middle are preserved. \r\n- Dates must be submitted as \"YYYY-MM-DD\" where \"YYYY\" is the four-digit year, \"MM\" is the two-digit month, and \"DD\" is the two-digit day. For example, February 1, 2015 is submitted as \"2015-02-01\". \r\n\r\n#### Testing Your Application\r\n- The Sikka payment APIs sandbox environment is fully functional and available 24/7. Your Sikka API account in our sandbox environment is available for as long as you want to use it. Many of our API partners / users continue to use the test account for future development projects & evaluation of new products. \r\n- If your account is in production (live), you can use : 'https://api.sikkasoft.com/v2/payment\r\n- If you want to use our sandbox environment , you can use : https://api.sikkasoft.com/v2/sandbox/payment\r\n\r\n##### Sandbox environment data \r\n- While testing, you may want to experiment with the different responses that can be generated. The following table provides test card numbers that will produce an approval and includes address data for testing. If you want to test CVV, the code listed in the right-hand column is the correct CVV code. Please note that for these test cards the EXP Date is flexible and can be any future date.\r\n\r\n\r\n##### Test Cards - Approved\r\n|Card Type | Card Number | Exp Date | Address | CVV\r\n|--|--|--|--|--|\r\n|Visa  |4111111111111111  |04/2029 |123 Test St., Somewhere, CA, 90001| 123|\r\n|MasterCard|5411111111111115  |04/2029 |4000 Main St., Anytown, AZ, 85001| 777|\r\n|MasterCard|2223000010020888  |04/2029 |4001 Main St., Anytown, AZ 85002| 657|\r\n|American Express|341111111111111|04/2029 |12 Colorado Blvd., Elsewhere, IL, 40000| 4000|\r\n|Discover|6011000000000012|04/2029 |6789 Green Ave., Nowhere, MA, 12345| 298|\r\n|Diners Club|36484444444446|04/2029 |7390 Del Mar Blvd, Anytown, NY, 01101| 456|\r\n|JCB|213122222222221|04/2029 |350 Madison Ave., Springfield, OH, 40000| 281|\r\n\r\nThe test card numbers from the above table are duplicated below without spaces for use with copy and paste. \r\n\r\n    Visa: 4111111111111111 \r\n    MasterCard: 5411111111111115 \r\n    American Express: 341111111111111 \r\n    Discover: 6011000000000012 \r\n    Diner's Club: 36484444444446 \r\n    JCB: 213122222222221\r\n \r\n\r\n\r\n##### Test Cards - Declined\r\nThe following card numbers will generate a decline, with the declinetype as listed below. You may use this to test code which takes different paths dependent upon the type of decline.\r\n\r\n|Card Number | Exp Date | Decline Type | Without Spaces\r\n|--|--|--|--|\r\n|4012 3456 7890 9  |04/2029 |decline| 4012345678909|\r\n|5555 4444 3333 2226  |04/2029 |call| 5555444433332226|\r\n|4444 1111 4444 1111  |04/2029 |carderror| 4444111144441111|\r\n\r\n\r\n##### ACH Test Numbers\r\n|Routing Number|Account Number  |\r\n|--|--|\r\n|789456124|55544433221|\r\n\r\n#### Getting started \r\n\r\n![](https://api.sikkasoft.com/portal/images/sikkapaymentapi.png)\r\n\r\n 1. Practice must have sphere merchant account , you need a Sphere merchant account. [Register now](https://www.spherecommerce.com/). \r\n 2. After creating account with Sphere ,log into Sikka API Portal\r\n 3. Go to API testing tool and select base url ('/payment' for production & '/sandbox' for testing) for payments. \r\n 4. Select POST sale API and execute it with required parameters\r\n 5. Check response of API.\r\n\r\n Congratulations! You completed a basic payments integration with the Sikka payment APIs.",
       "event": [
         {
@@ -25836,7 +25807,7 @@
     },
     {
       "name": "start",
-      "_postman_id": "9dce4284-fec5-9724-4055-0e0e946d593b",
+      "id": "9dce4284-fec5-9724-4055-0e0e946d593b",
       "request": {
         "method": "GET",
         "header": [],
@@ -26092,7 +26063,7 @@
     },
     {
       "name": "end",
-      "_postman_id": "0ff06640-71a1-5e37-4609-eb82db9039a8",
+      "id": "0ff06640-71a1-5e37-4609-eb82db9039a8",
       "request": {
         "method": "GET",
         "header": [],
@@ -26223,7 +26194,7 @@
     },
     {
       "name": "data_check",
-      "_postman_id": "4c3d6e98-02e1-2ebc-77c4-019a463e56a1",
+      "id": "4c3d6e98-02e1-2ebc-77c4-019a463e56a1",
       "request": {
         "method": "GET",
         "header": [],
@@ -26354,7 +26325,7 @@
     },
     {
       "name": "practice_events",
-      "_postman_id": "bad9ce36-3371-aed9-bc1f-b300b79faa69",
+      "id": "bad9ce36-3371-aed9-bc1f-b300b79faa69",
       "request": {
         "method": "GET",
         "header": [],
@@ -26393,7 +26364,7 @@
             }
           ]
         },
-        "description": "<a href='#markdown-header-practice-events'></a>\r\nThis api will return what data has been changed in practice between given date range. \r\nIn response you will get data with flags Deleted , Added  & Updated. Response also contains field name , old value and new value of that field.\r\n\r\n|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|loaded_startdate|Start date for getting only changed record set. Date format : yyyy-mm-dd or yyyy-MM-ddTHH:mm:ss|No|\r\n|loaded_enddate|End date for getting only changed record set. Date format : yyyy-mm-dd or yyyy-MM-ddTHH:mm:ss|No|\r\n|events|Name of the events you want to get modified records. Events name must match with API name|yes|\r\n|interval|Value must be integer.<br />'interval' parameter allows user to fetch records , which has been changed in last <interval> minutes.<br />This will be helpful when user does not know loaded_startdate/loaded_enddate and just want to fetch records which has been changed in last minutes (let say 5,10,15.. etc minutes). Maximun value for interval is 1440. You can fetch data which has been changed in last 24 hours (1440 minutes, interval=1440) without specifying loaded_startdate and loaded_enddate.<br /><b>Note : Make sure Sikka platform utility is up and running on client machine. To check when Sikka platform utility (SPU) has refreshed, call 'authorized_practices' and get 'data_insert_date'.</b>|No|\r\n\r\n##### API to find change logs of records : \r\n\r\nTo find patient’s modified records : \r\n<code>https://api.sikkasoft.com/v2/patients?request_key={ }&loaded_startdate={}&loaded_enddate={ }</code>\r\n\r\nTo find appointments modified records : \r\nhttps://api.sikkasoft.com/v2/appointments?request_key={ }&loaded_startdate={}&loaded_enddate={ }\r\n\r\nTo find transaction’s modified records : \r\nhttps://api.sikkasoft.com/v2/transactions?request_key={ }&loaded_startdate={}&loaded_enddate={ }\r\n\r\n##### In practice_events API \r\n\r\nhttps://api.sikkasoft.com/v2/practice_events?request_key={ }&loaded_startdate={}&loaded_enddate={ }&events={name of data you want to retrieve }\r\n\r\nFor example , if you want to retrive patients , appointments and transactions modified records \r\n\r\nhttps://api.sikkasoft.com/v2/practice_events?request_key={ }&loaded_startdate={}&loaded_enddate={ }&events=patients/appointments/transactions\r\n\r\nResponse : \r\n```javascript\r\n[\r\n\t{\r\n\t\t\"accounts_receivables\": [],\r\n\t\t\"appointments\": [],\r\n\t\t\"guarantors\": [],\r\n\t\t\"guarantors_v2\": [],\r\n\t\t\"patients\": [],\r\n\t\t\"pet_nutritions\": [],\r\n\t\t\"practices\": [],\r\n\t\t\"prescriptions\": [],\r\n\t\t\"prescriptions_dental\": [],\r\n\t\t\"providers\": [],\r\n\t\t\"transactions\": [],\r\n\t\t\"treatment_plans\": []\r\n\t}\r\n]\r\n```\r\n##### When to use practice_events API ? \r\n\r\nIf you want to get list of modified record using one API\r\nDon't want to process raw data on your side and just get updated records \r\n\r\n##### Recommandation \r\n<ul>\r\n<li>Use it for short time range. like 24 hrs or less.</li>\r\n<li>It will work for maximum 3 days date range but response will be slow and data accuracy will be affected</li>\r\n<li>In single call you can fetch changes for maximum 3 days </li>\r\n<li>Use either interval and flag or loaded_startdate, loaded_enddate and flag comobination</li>\r\n<li>If interval parameter is passed then loaded_startdate and loaded_enddate parameters will not be captured</li>\r\n</ul>\r\n##### Limitation : \r\n\r\nCurrently you will be able to get events from \r\n             a ) Patients \r\n             b ) Appointments\r\n             c ) Transactions \r\n             d ) Accounts Receivables\r\n             e ) Guarantors\r\n             f ) Guarantors_v2\r\n             g ) Practices\r\n             h ) Providers\r\n             i ) Treatment Plans\r\nWe will update the list of events as we add in API"
+        "description": "<a href='#markdown-header-practice-events'></a>\nThis api will return what data has been changed in practice between given date range. \nIn response you will get data with flags Deleted , Added  & Updated. Response also contains field name , old value and new value of that field.\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|loaded_startdate|Start date for getting only changed record set. Date format : yyyy-mm-dd or yyyy-MM-ddTHH:mm:ss|No|\n|loaded_enddate|End date for getting only changed record set. Date format : yyyy-mm-dd or yyyy-MM-ddTHH:mm:ss|No|\n|events|Name of the events you want to get modified records. Events name must match with API name|yes|\n|interval|Value must be integer.<br />'interval' parameter allows user to fetch records , which has been changed in last <interval> minutes.<br />This will be helpful when user does not know loaded_startdate/loaded_enddate and just want to fetch records which has been changed in last minutes (let say 5,10,15.. etc minutes). Maximun value for interval is 1440. You can fetch data which has been changed in last 24 hours (1440 minutes, interval=1440) without specifying loaded_startdate and loaded_enddate.<br /><b>Note : Make sure Sikka platform utility is up and running on client machine. To check when Sikka platform utility (SPU) has refreshed, call 'authorized_practices' and get 'data_insert_date'.</b>|No|\n\n##### API to find change logs of records : \n\nTo find patient’s modified records : \n<code>https://api.sikkasoft.com/v2/patients?request_key={ }&loaded_startdate={}&loaded_enddate={ }</code>\n\nTo find appointments modified records : \nhttps://api.sikkasoft.com/v2/appointments?request_key={ }&loaded_startdate={}&loaded_enddate={ }\n\nTo find transaction’s modified records : \nhttps://api.sikkasoft.com/v2/transactions?request_key={ }&loaded_startdate={}&loaded_enddate={ }\n\n##### In practice_events API \n\nhttps://api.sikkasoft.com/v2/practice_events?request_key={ }&loaded_startdate={}&loaded_enddate={ }&events={name of data you want to retrieve }\n\nFor example , if you want to retrive patients , appointments and transactions modified records \n\nhttps://api.sikkasoft.com/v2/practice_events?request_key={ }&loaded_startdate={}&loaded_enddate={ }&events=patients,appointments,transactions\n\nResponse : \n```javascript\n[\n\t{\n\t\t\"accounts_receivables\": [],\n\t\t\"appointments\": [],\n\t\t\"guarantors\": [],\n\t\t\"guarantors_v2\": [],\n\t\t\"patients\": [],\n\t\t\"pet_nutritions\": [],\n\t\t\"practices\": [],\n\t\t\"prescriptions\": [],\n\t\t\"prescriptions_dental\": [],\n\t\t\"providers\": [],\n\t\t\"transactions\": [],\n\t\t\"treatment_plans\": []\n\t}\n]\n```\n##### When to use practice_events API ? \n\nIf you want to get list of modified record using one API\nDon't want to process raw data on your side and just get updated records \n\n##### Recommandation \n<ul>\n<li>Use it for short time range. like 24 hrs or less.</li>\n<li>It will work for maximum 3 days date range but response will be slow and data accuracy will be affected</li>\n<li>In single call you can fetch changes for maximum 3 days </li>\n<li>Use either interval and flag or loaded_startdate, loaded_enddate and flag comobination</li>\n<li>If interval parameter is passed then loaded_startdate and loaded_enddate parameters will not be captured</li>\n</ul>\n##### Limitation : \n\nCurrently you will be able to get events from \n             a ) Patients \n             b ) Appointments\n             c ) Transactions \n             d ) Accounts Receivables\n             e ) Guarantors\n             f ) Guarantors_v2\n             g ) Practices\n             h ) Providers\n             i ) Treatment Plans\nWe will update the list of events as we add in API"
       },
       "response": [
         {
