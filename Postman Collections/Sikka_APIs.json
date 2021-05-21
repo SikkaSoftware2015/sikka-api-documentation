@@ -18356,12 +18356,13 @@
         {
           "name": "medical_notes",
           "id": "34f63a69-0614-b648-d8c1-4bc4c673f485",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
           "request": {
             "method": "GET",
             "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
             "url": {
               "raw": "{{url}}/medical_notes?request_key={{request_key}}",
               "host": [
