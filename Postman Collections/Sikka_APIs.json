@@ -7136,7 +7136,8 @@
                   "value": "{{request_key}}"
                 }
               ]
-            }
+            },
+            "description": "Get the schedule of practice, operatory & provider working hours if it is available in practice management system"
           },
           "response": [
             {
