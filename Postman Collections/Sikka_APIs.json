@@ -7108,6 +7108,37 @@
               "body": "[\r\n    {\r\n        \"offset\": \"xx\",\r\n        \"limit\": \"xx\",\r\n        \"total_count\": \"xxxx\",\r\n        \"execution_time\": \"xxx\",\r\n        \"pagination\": {\r\n            \"first\": \"https://api.sikkasoft.com/v2/practice_resources?offset=0&limit=xx\",\r\n            \"previous\": \"\",\r\n            \"current\": \"https://api.sikkasoft.com/v2/practice_resources?offset=0&limit=xx\",\r\n            \"next\": \"https://api.sikkasoft.com/v2/practice_resources?offset=xx&limit=xx\",\r\n            \"last\": \"https://api.sikkasoft.com/v2/practice_resources?offset=xx&limit=xx\"\r\n        },\r\n        \"items\": [\r\n            {\r\n                \"href\": \"https://api.sikkasoft.com/v2/practices/1/practice_resources/1xx958\",\r\n                \"id\": \"1xx958\",\r\n                \"resource\": \"providers\",\r\n                \"practice_id\": \"1\",\r\n                \"common_resource\": \"T\",\r\n                \"practice\": {\r\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n                },\r\n                \"insurance_company\": {\r\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/1/insurance_companies/1xx958\"\r\n                }\r\n            }\r\n        ]\r\n    }\r\n]"
             }
           ]
+        },
+        {
+          "name": "https://api.sikkasoft.com/v2/practice_schedule?request_key={{request_key}}",
+          "id": "eb0592e4-e05f-4685-ab9e-1b0e9defbb68",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://api.sikkasoft.com/v2/practice_schedule?request_key={{request_key}}",
+              "protocol": "https",
+              "host": [
+                "api",
+                "sikkasoft",
+                "com"
+              ],
+              "path": [
+                "v2",
+                "practice_schedule"
+              ],
+              "query": [
+                {
+                  "key": "request_key",
+                  "value": "{{request_key}}"
+                }
+              ]
+            }
+          },
+          "response": []
         }
       ],
       "id": "1eb03e83-8c45-9dc7-73c7-cc595aa122fd",
