@@ -7138,7 +7138,123 @@
               ]
             }
           },
-          "response": []
+          "response": [
+            {
+              "id": "ff1e295a-e919-49e0-afc3-a7c5937319d3",
+              "name": "https://api.sikkasoft.com/v2/practice_schedule?request_key={{request_key}}",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://api.sikkasoft.com/v2/practice_schedule?request_key={{request_key}}",
+                  "protocol": "https",
+                  "host": [
+                    "api",
+                    "sikkasoft",
+                    "com"
+                  ],
+                  "path": [
+                    "v2",
+                    "practice_schedule"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "{{request_key}}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "private"
+                },
+                {
+                  "key": "Allow",
+                  "value": "OPTIONS, TRACE, GET, HEAD, POST"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5"
+                },
+                {
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319"
+                },
+                {
+                  "key": "X-Rate-Limit-Limit",
+                  "value": "120"
+                },
+                {
+                  "key": "X-Rate-Limit-Remaining",
+                  "value": "118"
+                },
+                {
+                  "key": "X-Rate-Limit-Reset",
+                  "value": "52"
+                },
+                {
+                  "key": "Request-Key-Expires",
+                  "value": "Thu, 08 Jul 2021 22:10:05 GMT"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+                },
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "accept, authorization, Content-Type, X-Session-Id,X-PINGOTHER"
+                },
+                {
+                  "key": "Public",
+                  "value": "OPTIONS, TRACE, GET, HEAD, POST"
+                },
+                {
+                  "key": "X-Api-Server-Version",
+                  "value": "1"
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 08 Jul 2021 21:07:41 GMT"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000; includeSubDomains; preload;"
+                },
+                {
+                  "key": "Content-Security-Policy",
+                  "value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"1\",\n        \"total_count\": \"1136\",\n        \"execution_time\": \"168\",\n        \"pagination\": {\n            \"first\": \"https://api.sikkasoft.com/v2/practice_schedule?offset=0&limit=1\",\n            \"previous\": \"\",\n            \"current\": \"https://api.sikkasoft.com/v2/practice_schedule?offset=0&limit=1\",\n            \"next\": \"https://api.sikkasoft.com/v2/practice_schedule?offset=1&limit=1\",\n            \"last\": \"https://api.sikkasoft.com/v2/practice_schedule?offset=1135&limit=1\"\n        },\n        \"items\": [\n            {\n                \"href\": \"https://api.sikkasoft.com/v2/practices/1-1000627/practice_schedule/AAGGARWAL\",\n                \"date\": \"\",\n                \"resource_type\": \"1\",\n                \"resource_id\": \"AAGGARWAL\",\n                \"sunday_start_1\": \"00:00AM\",\n                \"sunday_end_1\": \"00:00AM\",\n                \"sunday_start_2\": \"00:00AM\",\n                \"sunday_end_2\": \"00:00AM\",\n                \"sunday_start_3\": \"00:00AM\",\n                \"sunday_end_3\": \"00:00AM\",\n                \"monday_start_1\": \"9:30AM\",\n                \"monday_end_1\": \"1:00PM\",\n                \"monday_start_2\": \"1:30PM\",\n                \"monday_end_2\": \"5:00PM\",\n                \"monday_start_3\": \"00:00AM\",\n                \"monday_end_3\": \"00:00AM\",\n                \"tuesday_start_1\": \"9:30AM\",\n                \"tuesday_end_1\": \"1:00PM\",\n                \"tuesday_start_2\": \"1:30PM\",\n                \"tuesday_end_2\": \"5:00PM\",\n                \"tuesday_start_3\": \"00:00AM\",\n                \"tuesday_end_3\": \"00:00AM\",\n                \"wednesday_start_1\": \"00:00AM\",\n                \"wednesday_end_1\": \"00:00AM\",\n                \"wednesday_start_2\": \"00:00AM\",\n                \"wednesday_end_2\": \"00:00AM\",\n                \"wednesday_start_3\": \"00:00AM\",\n                \"wednesday_end_3\": \"00:00AM\",\n                \"thursday_start_1\": \"9:30AM\",\n                \"thursday_end_1\": \"1:00PM\",\n                \"thursday_start_2\": \"1:30PM\",\n                \"thursday_end_2\": \"5:00PM\",\n                \"thursday_start_3\": \"00:00AM\",\n                \"thursday_end_3\": \"00:00AM\",\n                \"friday_start_1\": \"00:00AM\",\n                \"friday_end_1\": \"00:00AM\",\n                \"friday_start_2\": \"00:00AM\",\n                \"friday_end_2\": \"00:00AM\",\n                \"friday_start_3\": \"00:00AM\",\n                \"friday_end_3\": \"00:00AM\",\n                \"saturday_start_1\": \"8:00AM\",\n                \"saturday_end_1\": \"12:00PM\",\n                \"saturday_start_2\": \"00:00AM\",\n                \"saturday_end_2\": \"00:00AM\",\n                \"saturday_start_3\": \"00:00AM\",\n                \"saturday_end_3\": \"00:00AM\",\n                \"sunday_holiday\": \"True\",\n                \"monday_holiday\": \"\",\n                \"tuesday_holiday\": \"\",\n                \"wednesday_holiday\": \"\",\n                \"thursday_holiday\": \"\",\n                \"friday_holiday\": \"\",\n                \"saturday_holiday\": \"\",\n                \"practice_id\": \"1-1000627\",\n                \"practice\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/1-1000627\"\n                },\n                \"customer_id\": \"1\"\n            }\n        ]\n    }\n]"
+            }
+          ]
         }
       ],
       "id": "1eb03e83-8c45-9dc7-73c7-cc595aa122fd",
