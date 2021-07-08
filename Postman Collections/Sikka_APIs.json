@@ -7137,7 +7137,7 @@
                 }
               ]
             },
-            "description": "Get the schedule of practice, operatory & provider working hours if it is available in practice management system"
+            "description": "Get the schedule of practice, operatory & provider working hours if it is available in practice management system\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|date|\"date\" field in the response contains the start date for a week|No|\n|resource_id|it can be practice_id , operatory id , provider_id |No|\n|practice_id|Practice ID|No|"
           },
           "response": [
             {
