@@ -7,666 +7,6 @@
   },
   "item": [
     {
-      "name": "Appointments ",
-      "item": [
-        {
-          "name": "appointments",
-          "id": "3bf9ebcb-12e6-3b09-061c-8008432bf608",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "body": {
-              "mode": "formdata",
-              "formdata": []
-            },
-            "url": {
-              "raw": "{{url}}/appointments?request_key={{request_key}}",
-              "host": [
-                "{{url}}"
-              ],
-              "path": [
-                "appointments"
-              ],
-              "query": [
-                {
-                  "key": "request_key",
-                  "value": "{{request_key}}"
-                }
-              ]
-            },
-            "description": "Get the list of all appointments available in practice management system.\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|provider_id|Provider id as per practice management system|No|\n|patient_id|Patient ID as per the management system|No|\n|practice_id|Practice ID|No|\n|startdate|format: yyyy-mm-dd, start date|No|\n|enddate|format: yyyy-mm-dd, end date|No|\n|date_filter_on|Field name on which stardate and enddate filter will be applied, valid values are: appointment_date-default, last_changed_date, appointment_made_date, confirmed_on_date|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|appointment_sr_no|Appointment serial number|\n|patient_id|Patient ID as per the management system|\n|appointment_date|Appointment Date|\n|appointment_time|Appointment Time|"
-          },
-          "response": [
-            {
-              "id": "e4b65320-220e-cd76-d01b-a41f8f88be42",
-              "name": "request",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "url": {
-                  "raw": "{{url}}/appointments?request_key={{request_key}}",
-                  "host": [
-                    "{{url}}"
-                  ],
-                  "path": [
-                    "appointments"
-                  ],
-                  "query": [
-                    {
-                      "key": "request_key",
-                      "value": "{{request_key}}"
-                    }
-                  ]
-                }
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "name": "Access-Control-Allow-Headers",
-                  "key": "Access-Control-Allow-Headers",
-                  "value": "accept, authorization, Content-Type, X-Session-Id",
-                  "description": ""
-                },
-                {
-                  "name": "Access-Control-Allow-Methods",
-                  "key": "Access-Control-Allow-Methods",
-                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
-                  "description": ""
-                },
-                {
-                  "name": "Access-Control-Allow-Origin",
-                  "key": "Access-Control-Allow-Origin",
-                  "value": "*",
-                  "description": ""
-                },
-                {
-                  "name": "Cache-Control",
-                  "key": "Cache-Control",
-                  "value": "private",
-                  "description": ""
-                },
-                {
-                  "name": "Connection",
-                  "key": "Connection",
-                  "value": "keep-alive",
-                  "description": ""
-                },
-                {
-                  "name": "Content-Length",
-                  "key": "Content-Length",
-                  "value": "2936",
-                  "description": ""
-                },
-                {
-                  "name": "Content-Type",
-                  "key": "Content-Type",
-                  "value": "application/json",
-                  "description": ""
-                },
-                {
-                  "name": "Date",
-                  "key": "Date",
-                  "value": "Fri, 21 Apr 2017 10:20:30 GMT",
-                  "description": ""
-                },
-                {
-                  "name": "Server",
-                  "key": "Server",
-                  "value": "Microsoft-IIS/8.5",
-                  "description": ""
-                },
-                {
-                  "name": "X-AspNet-Version",
-                  "key": "X-AspNet-Version",
-                  "value": "4.0.30319",
-                  "description": ""
-                },
-                {
-                  "name": "X-Powered-By",
-                  "key": "X-Powered-By",
-                  "value": "ASP.NET",
-                  "description": ""
-                }
-              ],
-              "cookie": [],
-              "responseTime": "1111",
-              "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"2\",\r\n\t\"total_count\": \"28039\",\r\n\t\"items\": [{\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/appointments/99458\",\r\n\t\t\t\"appointment_sr_no\": \"99458\",\r\n\t\t\t\"patient_id\": \"2963\",\r\n\t\t\t\"patient\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/2963\"\r\n\t\t\t},\r\n\t\t\t\"operatory\": \"Lynns Room 2\",\r\n\t\t\t\"date\": \"2016-10-27\",\r\n\t\t\t\"time\": \"13:30\",\r\n\t\t\t\"length\": \"90\",\r\n\t\t\t\"description\": \"\",\r\n\t\t\t\"amount\": \"293.0000\",\r\n\t\t\t\"status\": \"Unconfirmed\",\r\n\t\t\t\"last_changed_date\": \"\",\r\n\t\t\t\"appointment_made_date\": \"2016-04-21\",\r\n\t\t\t\"type\": \"Prophy  Lynn\",\r\n\t\t\t\"procedure_code1\": \"00120\",\r\n\t\t\t\"procedure_code1_amount\": \"54\",\r\n\t\t\t\"procedure_code2\": \"00210\",\r\n\t\t\t\"procedure_code2_amount\": \"145\",\r\n\t\t\t\"procedure_code3\": \"01110\",\r\n\t\t\t\"procedure_code3_amount\": \"94\",\r\n\t\t\t\"procedure_code4\": \"\",\r\n\t\t\t\"procedure_code4_amount\": \"0\",\r\n\t\t\t\"procedure_code5\": \"\",\r\n\t\t\t\"procedure_code5_amount\": \"0\",\r\n\t\t\t\"procedure_code6\": \"\",\r\n\t\t\t\"procedure_code6_amount\": \"0\",\r\n\t\t\t\"procedure_code7\": \"\",\r\n\t\t\t\"procedure_code7_amount\": \"0\",\r\n\t\t\t\"hygienist\": \"\",\r\n\t\t\t\"provider_id\": \"LW\",\r\n\t\t\t\"provider\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/LW\"\r\n\t\t\t},\r\n\t\t\t\"practice_id\": \"1\",\r\n\t\t\t\"practice\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t\t},\r\n\t\t\t\"is_companion\": \"\",\r\n\t\t\t\"sooner_if_possible\": \"N\",\r\n\t\t\t\"confirmed_on_date\": \"\",\r\n\t\t\t\"note\": \"FMX 6MRC OHI OSHA TTHPS TBRSH CLEAN RECAL\",\r\n\t\t\t\"patient_name\": \"John Wiesbrock\",\r\n\t\t\t\"guarantor_id\": \"\",\r\n\t\t\t\"guarantor_name\": \"\",\r\n\t\t\t\"procedure_code1_time\": \"0\",\r\n\t\t\t\"procedure_code2_time\": \"0\",\r\n\t\t\t\"procedure_code3_time\": \"0\",\r\n\t\t\t\"procedure_code4_time\": \"0\",\r\n\t\t\t\"procedure_code5_time\": \"0\",\r\n\t\t\t\"procedure_code6_time\": \"0\",\r\n\t\t\t\"procedure_code7_time\": \"0\",\r\n\t\t\t\"tooth_number\": \"\",\r\n\t\t\t\"surface_quadrant\": \"\",\r\n\t\t\t\"surface_quadrant_type\": \"\",\r\n\t\t\t\"schedule\": \"Fixed\",\r\n\t\t\t\"treatment_class\": \"\",\r\n\t\t\t\"cancelled\": \"N\",\r\n\t\t\t\"book_code\": \"GV\",\r\n\t\t\t\"location\": \"1|testlocation\",\r\n            \"is_confirmed\": \"False\",\t\t\t\r\n\t\t\t\"procedure_codes\": [\r\n                    {\r\n                        \"href\": \"https://api.sikkasoft.com/v2/practices/1/procedure_codes/1110\",\r\n                        \"procedure_code\": \"1110\",\r\n                        \"procedure_code_amount\": \"0\",\r\n                        \"procedure_code_time_units\": \"\",\r\n                        \"provider_id\": \"20\",\r\n                        \"provider\": {\r\n                            \"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/20\"\r\n                        }\r\n                    }\r\n                ]\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/appointments/99457\",\r\n\t\t\t\"appointment_sr_no\": \"99457\",\r\n\t\t\t\"patient_id\": \"5867\",\r\n\t\t\t\"patient\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/5867\"\r\n\t\t\t},\r\n\t\t\t\"operatory\": \"Lynns Room 2\",\r\n\t\t\t\"date\": \"2016-08-18\",\r\n\t\t\t\"time\": \"08:00\",\r\n\t\t\t\"length\": \"60\",\r\n\t\t\t\"description\": \"\",\r\n\t\t\t\"amount\": \"213.0000\",\r\n\t\t\t\"status\": \"Unconfirmed\",\r\n\t\t\t\"last_changed_date\": \"\",\r\n\t\t\t\"appointment_made_date\": \"2016-04-21\",\r\n\t\t\t\"type\": \"Prophy  Lynn\",\r\n\t\t\t\"procedure_code1\": \"00120\",\r\n\t\t\t\"procedure_code1_amount\": \"54\",\r\n\t\t\t\"procedure_code2\": \"04910\",\r\n\t\t\t\"procedure_code2_amount\": \"159\",\r\n\t\t\t\"procedure_code3\": \"\",\r\n\t\t\t\"procedure_code3_amount\": \"0\",\r\n\t\t\t\"procedure_code4\": \"\",\r\n\t\t\t\"procedure_code4_amount\": \"0\",\r\n\t\t\t\"procedure_code5\": \"\",\r\n\t\t\t\"procedure_code5_amount\": \"0\",\r\n\t\t\t\"procedure_code6\": \"\",\r\n\t\t\t\"procedure_code6_amount\": \"0\",\r\n\t\t\t\"procedure_code7\": \"\",\r\n\t\t\t\"procedure_code7_amount\": \"0\",\r\n\t\t\t\"hygienist\": \"\",\r\n\t\t\t\"provider_id\": \"LW\",\r\n\t\t\t\"provider\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/LW\"\r\n\t\t\t},\r\n\t\t\t\"practice_id\": \"1\",\r\n\t\t\t\"practice\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t\t},\r\n\t\t\t\"is_companion\": \"\",\r\n\t\t\t\"sooner_if_possible\": \"N\",\r\n\t\t\t\"confirmed_on_date\": \"\",\r\n\t\t\t\"note\": \"OHI 4MRC OSHA TTHPS TBRSH RECAL 04910\",\r\n\t\t\t\"patient_name\": \"James Evenhuis\",\r\n\t\t\t\"guarantor_id\": \"\",\r\n\t\t\t\"guarantor_name\": \"\",\r\n\t\t\t\"procedure_code1_time\": \"0\",\r\n\t\t\t\"procedure_code2_time\": \"0\",\r\n\t\t\t\"procedure_code3_time\": \"0\",\r\n\t\t\t\"procedure_code4_time\": \"0\",\r\n\t\t\t\"procedure_code5_time\": \"0\",\r\n\t\t\t\"procedure_code6_time\": \"0\",\r\n\t\t\t\"procedure_code7_time\": \"0\",\r\n\t\t\t\"tooth_number\": \"\",\r\n\t\t\t\"surface_quadrant\": \"\",\r\n\t\t\t\"surface_quadrant_type\": \"\",\r\n\t\t\t\"schedule\": \"Fixed\",\r\n\t\t\t\"treatment_class\": \"\",\r\n\t\t\t\"cancelled\": \"N\",\r\n\t\t\t\"book_code\": \"GV\",\r\n\t\t\t\"location\": \"1|testlocation\",\r\n            \"is_confirmed\": \"False\",\r\n\t\t\t\"procedure_codes\": [\r\n\t\t\t{\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/procedure_codes/ZW912\",\r\n\t\t\t\t\"procedure_code\": \"ZW912\",\r\n\t\t\t\t\"procedure_code_amount\": \"10\",\r\n\t\t\t\t\"procedure_code_time_units\": \"value\",\r\n\t\t\t\t\"provider_id\": \"LW\",\r\n\t\t\t\t\"provider\": \r\n\t\t\t\t{\r\n\t\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/LW\"\r\n\t        \t}\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/procedure_codes/ZW912\",\r\n\t\t\t\t\"procedure_code\": \"ZW912\",\r\n\t\t\t\t\"procedure_code_amount\": \"20\",\r\n\t\t\t\t\"procedure_code_time_units\": \"value\",\r\n\t\t\t\t\"provider_id\": \"LW\",\r\n\t\t\t\t\"provider\": \r\n\t\t\t\t{\r\n\t\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/LW\"\r\n\t\t\t\t}\r\n\t\t\t}]\r\n\t\t}\r\n\t]\r\n}]"
-            }
-          ]
-        },
-        {
-          "name": "appointments by appointment_sr_no",
-          "id": "08050c2f-ede5-0b78-aaee-3e359bf6b1c9",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "body": {
-              "mode": "formdata",
-              "formdata": []
-            },
-            "url": {
-              "raw": "{{url}}/appointments/{appointment_sr_no}?request_key={{request_key}}",
-              "host": [
-                "{{url}}"
-              ],
-              "path": [
-                "appointments",
-                "{appointment_sr_no}"
-              ],
-              "query": [
-                {
-                  "key": "request_key",
-                  "value": "{{request_key}}"
-                }
-              ]
-            },
-            "description": "Get the appointment available in practice management system.\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|provider_id|Provider id as per practice management system|No|\n|patient_id|Patient ID as per the management system|No|\n|practice_id|Practice ID|No|\n|startdate|format: yyyy-mm-dd, start date|No|\n|enddate|format: yyyy-mm-dd, end date|No|\n|date_filter_on|Field name on which stardate and enddate filter will be applied, valid values are: appointment_date-default, last_changed_date, appointment_made_date, confirmed_on_date|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|appointment_sr_no|Appointment serial number|\n|patient_id|Patient ID as per the management system|\n|appointment_date|Appointment Date|\n|appointment_time|Appointment Time|"
-          },
-          "response": [
-            {
-              "id": "f8e7ff31-46b2-3976-d510-d9b1409d39d4",
-              "name": "request",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "url": {
-                  "raw": "{{url}}/appointments/{{appointment_sr_no}}?request_key={{request_key}}",
-                  "host": [
-                    "{{url}}"
-                  ],
-                  "path": [
-                    "appointments",
-                    "{{appointment_sr_no}}"
-                  ],
-                  "query": [
-                    {
-                      "key": "request_key",
-                      "value": "{{request_key}}"
-                    }
-                  ]
-                }
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "name": "Access-Control-Allow-Headers",
-                  "key": "Access-Control-Allow-Headers",
-                  "value": "accept, authorization, Content-Type, X-Session-Id",
-                  "description": ""
-                },
-                {
-                  "name": "Access-Control-Allow-Methods",
-                  "key": "Access-Control-Allow-Methods",
-                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
-                  "description": ""
-                },
-                {
-                  "name": "Access-Control-Allow-Origin",
-                  "key": "Access-Control-Allow-Origin",
-                  "value": "*",
-                  "description": ""
-                },
-                {
-                  "name": "Cache-Control",
-                  "key": "Cache-Control",
-                  "value": "private, no-cache=\"set-cookie\"",
-                  "description": ""
-                },
-                {
-                  "name": "Connection",
-                  "key": "Connection",
-                  "value": "keep-alive",
-                  "description": ""
-                },
-                {
-                  "name": "Content-Length",
-                  "key": "Content-Length",
-                  "value": "1443",
-                  "description": ""
-                },
-                {
-                  "name": "Content-Type",
-                  "key": "Content-Type",
-                  "value": "application/json",
-                  "description": ""
-                },
-                {
-                  "name": "Date",
-                  "key": "Date",
-                  "value": "Fri, 21 Apr 2017 10:24:56 GMT",
-                  "description": ""
-                },
-                {
-                  "name": "Server",
-                  "key": "Server",
-                  "value": "Microsoft-IIS/8.5",
-                  "description": ""
-                },
-                {
-                  "name": "X-AspNet-Version",
-                  "key": "X-AspNet-Version",
-                  "value": "4.0.30319",
-                  "description": ""
-                },
-                {
-                  "name": "X-Powered-By",
-                  "key": "X-Powered-By",
-                  "value": "ASP.NET",
-                  "description": ""
-                }
-              ],
-              "cookie": [],
-              "responseTime": "1005",
-              "body": "{\r\n\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/appointments/99458\",\r\n\t\"appointment_sr_no\": \"99458\",\r\n\t\"patient_id\": \"2963\",\r\n\t\"patient\": {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/2963\"\r\n\t},\r\n\t\"operatory\": \"Lynns Room 2\",\r\n\t\"date\": \"2016-10-27\",\r\n\t\"time\": \"13:30\",\r\n\t\"length\": \"90\",\r\n\t\"description\": \"\",\r\n\t\"amount\": \"293.0000\",\r\n\t\"status\": \"Unconfirmed\",\r\n\t\"last_changed_date\": \"\",\r\n\t\"appointment_made_date\": \"2016-04-21\",\r\n\t\"type\": \"Prophy  Lynn\",\r\n\t\"procedure_code1\": \"00120\",\r\n\t\"procedure_code1_amount\": \"54\",\r\n\t\"procedure_code2\": \"00210\",\r\n\t\"procedure_code2_amount\": \"145\",\r\n\t\"procedure_code3\": \"01110\",\r\n\t\"procedure_code3_amount\": \"94\",\r\n\t\"procedure_code4\": \"\",\r\n\t\"procedure_code4_amount\": \"0\",\r\n\t\"procedure_code5\": \"\",\r\n\t\"procedure_code5_amount\": \"0\",\r\n\t\"procedure_code6\": \"\",\r\n\t\"procedure_code6_amount\": \"0\",\r\n\t\"procedure_code7\": \"\",\r\n\t\"procedure_code7_amount\": \"0\",\r\n\t\"hygienist\": \"\",\r\n\t\"provider_id\": \"LW\",\r\n\t\"provider\": {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/LW\"\r\n\t},\r\n\t\"practice_id\": \"1\",\r\n\t\"practice\": {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t},\r\n\t\"is_companion\": \"\",\r\n\t\"sooner_if_possible\": \"N\",\r\n\t\"confirmed_on_date\": \"\",\r\n\t\"note\": \"FMX 6MRC OHI OSHA TTHPS TBRSH CLEAN RECAL\",\r\n\t\"patient_name\": \"John Wiesbrock\",\r\n\t\"guarantor_id\": \"\",\r\n\t\"guarantor_name\": \"\",\r\n\t\"procedure_code1_time\": \"0\",\r\n\t\"procedure_code2_time\": \"0\",\r\n\t\"procedure_code3_time\": \"0\",\r\n\t\"procedure_code4_time\": \"0\",\r\n\t\"procedure_code5_time\": \"0\",\r\n\t\"procedure_code6_time\": \"0\",\r\n\t\"procedure_code7_time\": \"0\",\r\n\t\"tooth_number\": \"\",\r\n\t\"surface_quadrant\": \"\",\r\n\t\"surface_quadrant_type\": \"\",\r\n\t\"schedule\": \"Fixed\",\r\n\t\"treatment_class\": \"\",\r\n\t\"cancelled\": \"N\",\r\n\t\"book_code\": \"GV\",\r\n\t\"location\": \"1|testlocation\",\r\n\t\"is_confirmed\": \"False\",\r\n\t\"procedure_codes\": [{\r\n        \t\"href\": \"https://api.sikkasoft.com/v2/practices/1/procedure_codes/1110\",\r\n            \"procedure_code\": \"1110\",\r\n            \"procedure_code_amount\": \"0\",\r\n            \"procedure_code_time_units\": \"\",\r\n            \"provider_id\": \"20\",\r\n            \"provider\": {\r\n            \t\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/20\"\r\n            }\r\n        }]\r\n}"
-            }
-          ]
-        },
-        {
-          "name": "appointments/{appointment_sr_no}",
-          "id": "c916b6de-4623-3383-bb20-95baca7adce8",
-          "request": {
-            "method": "DELETE",
-            "header": [],
-            "body": {
-              "mode": "formdata",
-              "formdata": []
-            },
-            "url": {
-              "raw": "{{url}}/appointments/{appointment_sr_no}?request_key={{request_key}}",
-              "host": [
-                "{{url}}"
-              ],
-              "path": [
-                "appointments",
-                "{appointment_sr_no}"
-              ],
-              "query": [
-                {
-                  "key": "request_key",
-                  "value": "{{request_key}}"
-                }
-              ]
-            },
-            "description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|"
-          },
-          "response": [
-            {
-              "id": "eb8bc508-8b21-6414-66ed-ac0e83c6122f",
-              "name": "request",
-              "originalRequest": {
-                "method": "DELETE",
-                "header": [],
-                "body": {
-                  "mode": "formdata",
-                  "formdata": []
-                },
-                "url": {
-                  "raw": "{{url}}/appointments/{{appointment_sr_no}}?request_key={{request_key}}",
-                  "host": [
-                    "{{url}}"
-                  ],
-                  "path": [
-                    "appointments",
-                    "{{appointment_sr_no}}"
-                  ],
-                  "query": [
-                    {
-                      "key": "request_key",
-                      "value": "{{request_key}}"
-                    }
-                  ]
-                }
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "name": "Access-Control-Allow-Headers",
-                  "key": "Access-Control-Allow-Headers",
-                  "value": "accept, authorization, Content-Type, X-Session-Id",
-                  "description": ""
-                },
-                {
-                  "name": "Access-Control-Allow-Methods",
-                  "key": "Access-Control-Allow-Methods",
-                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
-                  "description": ""
-                },
-                {
-                  "name": "Access-Control-Allow-Origin",
-                  "key": "Access-Control-Allow-Origin",
-                  "value": "*",
-                  "description": ""
-                },
-                {
-                  "name": "Cache-Control",
-                  "key": "Cache-Control",
-                  "value": "private",
-                  "description": ""
-                },
-                {
-                  "name": "Connection",
-                  "key": "Connection",
-                  "value": "keep-alive",
-                  "description": ""
-                },
-                {
-                  "name": "Content-Length",
-                  "key": "Content-Length",
-                  "value": "177",
-                  "description": ""
-                },
-                {
-                  "name": "Content-Type",
-                  "key": "Content-Type",
-                  "value": "application/json",
-                  "description": ""
-                },
-                {
-                  "name": "Date",
-                  "key": "Date",
-                  "value": "Fri, 21 Apr 2017 10:31:24 GMT",
-                  "description": ""
-                },
-                {
-                  "name": "Server",
-                  "key": "Server",
-                  "value": "Microsoft-IIS/8.5",
-                  "description": ""
-                },
-                {
-                  "name": "X-AspNet-Version",
-                  "key": "X-AspNet-Version",
-                  "value": "4.0.30319",
-                  "description": ""
-                },
-                {
-                  "name": "X-Powered-By",
-                  "key": "X-Powered-By",
-                  "value": "ASP.NET",
-                  "description": ""
-                }
-              ],
-              "cookie": [],
-              "responseTime": "1379",
-              "body": "{\"http_code\":\"200\",\"http_code_desc\":\"OK\",\"sikka_status_code\":\"API4001\",\"short_message\":\"\",\"long_message\":\"appointment_sr_no: 99458 deleted successfully\",\"more_information\":\"\"}\r\n"
-            }
-          ]
-        },
-        {
-          "name": "appointment_statuses",
-          "id": "8b24d706-3a0e-a1aa-2723-0c3daf68085d",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "body": {
-              "mode": "formdata",
-              "formdata": []
-            },
-            "url": {
-              "raw": "{{url}}/appointment_statuses?request_key={{request_key}}",
-              "host": [
-                "{{url}}"
-              ],
-              "path": [
-                "appointment_statuses"
-              ],
-              "query": [
-                {
-                  "key": "request_key",
-                  "value": "{{request_key}}"
-                }
-              ]
-            },
-            "description": "Display all the appointment status available in practice management system\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|practice_id|Practice ID|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|practice_id|Practice ID|"
-          },
-          "response": [
-            {
-              "id": "b61d5bcb-1c8a-ffce-7df8-0d73efe231d0",
-              "name": "request",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "body": {
-                  "mode": "formdata",
-                  "formdata": []
-                },
-                "url": {
-                  "raw": "{{url}}/appointment_statuses?request_key={{request_key}}",
-                  "host": [
-                    "{{url}}"
-                  ],
-                  "path": [
-                    "appointment_statuses"
-                  ],
-                  "query": [
-                    {
-                      "key": "request_key",
-                      "value": "{{request_key}}"
-                    }
-                  ]
-                }
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "name": "Access-Control-Allow-Headers",
-                  "key": "Access-Control-Allow-Headers",
-                  "value": "accept, authorization, Content-Type, X-Session-Id",
-                  "description": ""
-                },
-                {
-                  "name": "Access-Control-Allow-Methods",
-                  "key": "Access-Control-Allow-Methods",
-                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
-                  "description": ""
-                },
-                {
-                  "name": "Access-Control-Allow-Origin",
-                  "key": "Access-Control-Allow-Origin",
-                  "value": "*",
-                  "description": ""
-                },
-                {
-                  "name": "Cache-Control",
-                  "key": "Cache-Control",
-                  "value": "private, no-cache=\"set-cookie\"",
-                  "description": ""
-                },
-                {
-                  "name": "Connection",
-                  "key": "Connection",
-                  "value": "keep-alive",
-                  "description": ""
-                },
-                {
-                  "name": "Content-Length",
-                  "key": "Content-Length",
-                  "value": "454",
-                  "description": ""
-                },
-                {
-                  "name": "Content-Type",
-                  "key": "Content-Type",
-                  "value": "application/json",
-                  "description": ""
-                },
-                {
-                  "name": "Date",
-                  "key": "Date",
-                  "value": "Fri, 21 Apr 2017 10:11:25 GMT",
-                  "description": ""
-                },
-                {
-                  "name": "Server",
-                  "key": "Server",
-                  "value": "Microsoft-IIS/8.5",
-                  "description": ""
-                },
-                {
-                  "name": "X-AspNet-Version",
-                  "key": "X-AspNet-Version",
-                  "value": "4.0.30319",
-                  "description": ""
-                },
-                {
-                  "name": "X-Powered-By",
-                  "key": "X-Powered-By",
-                  "value": "ASP.NET",
-                  "description": ""
-                }
-              ],
-              "cookie": [],
-              "responseTime": "1844",
-              "body": "[{\"offset\":\"0\",\"limit\":\"2\",\"total_count\":\"8\",\"items\":[{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/appointment_statuses\\/No Answer\",\"status\":\"No Answer\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"}},{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/appointment_statuses\\/Sent Email\",\"status\":\"Sent Email\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"}}]}]\r\n"
-            }
-          ]
-        },
-        {
-          "name": "appointment_statuses by status",
-          "id": "2f1de7f3-6d6d-36ae-b8a6-79ba0eaf32d3",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "body": {
-              "mode": "formdata",
-              "formdata": []
-            },
-            "url": {
-              "raw": "{{url}}/appointment_statuses/{status}?request_key={{request_key}}",
-              "host": [
-                "{{url}}"
-              ],
-              "path": [
-                "appointment_statuses",
-                "{status}"
-              ],
-              "query": [
-                {
-                  "key": "request_key",
-                  "value": "{{request_key}}"
-                }
-              ]
-            },
-            "description": "Get the resource of appointment status\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|practice_id|Practice ID|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|practice_id|Practice ID|"
-          },
-          "response": [
-            {
-              "id": "9803728d-46cc-7430-5f0e-738b2e4f87ff",
-              "name": "request",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "body": {
-                  "mode": "formdata",
-                  "formdata": []
-                },
-                "url": {
-                  "raw": "{{url}}/appointment_statuses/{{status}}?request_key={{request_key}}",
-                  "host": [
-                    "{{url}}"
-                  ],
-                  "path": [
-                    "appointment_statuses",
-                    "{{status}}"
-                  ],
-                  "query": [
-                    {
-                      "key": "request_key",
-                      "value": "{{request_key}}"
-                    }
-                  ]
-                }
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "name": "Access-Control-Allow-Headers",
-                  "key": "Access-Control-Allow-Headers",
-                  "value": "accept, authorization, Content-Type, X-Session-Id",
-                  "description": ""
-                },
-                {
-                  "name": "Access-Control-Allow-Methods",
-                  "key": "Access-Control-Allow-Methods",
-                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
-                  "description": ""
-                },
-                {
-                  "name": "Access-Control-Allow-Origin",
-                  "key": "Access-Control-Allow-Origin",
-                  "value": "*",
-                  "description": ""
-                },
-                {
-                  "name": "Cache-Control",
-                  "key": "Cache-Control",
-                  "value": "private",
-                  "description": ""
-                },
-                {
-                  "name": "Connection",
-                  "key": "Connection",
-                  "value": "keep-alive",
-                  "description": ""
-                },
-                {
-                  "name": "Content-Length",
-                  "key": "Content-Length",
-                  "value": "198",
-                  "description": ""
-                },
-                {
-                  "name": "Content-Type",
-                  "key": "Content-Type",
-                  "value": "application/json",
-                  "description": ""
-                },
-                {
-                  "name": "Date",
-                  "key": "Date",
-                  "value": "Fri, 21 Apr 2017 10:14:42 GMT",
-                  "description": ""
-                },
-                {
-                  "name": "Server",
-                  "key": "Server",
-                  "value": "Microsoft-IIS/8.5",
-                  "description": ""
-                },
-                {
-                  "name": "X-AspNet-Version",
-                  "key": "X-AspNet-Version",
-                  "value": "4.0.30319",
-                  "description": ""
-                },
-                {
-                  "name": "X-Powered-By",
-                  "key": "X-Powered-By",
-                  "value": "ASP.NET",
-                  "description": ""
-                }
-              ],
-              "cookie": [],
-              "responseTime": "2182",
-              "body": "{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/appointment_statuses\\/No Answer\",\"status\":\"No Answer\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"}}\r\n"
-            }
-          ]
-        }
-      ],
-      "id": "b41c14bb-089a-7723-0d1a-7be93cc2cd63",
-      "description": "It contains all APIs related with appointments in practice. "
-    },
-    {
       "name": "Claims",
       "item": [
         {
@@ -25853,6 +25193,666 @@
           ],
           "id": "1eb03e83-8c45-9dc7-73c7-cc595aa122fd",
           "description": "These APIs contain information about practice status , reports , account receivables , drugs , employers , providers etc."
+        },
+        {
+          "name": "Appointments ",
+          "item": [
+            {
+              "name": "appointments",
+              "id": "3bf9ebcb-12e6-3b09-061c-8008432bf608",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
+                "url": {
+                  "raw": "{{url}}/appointments?request_key={{request_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "appointments"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "{{request_key}}"
+                    }
+                  ]
+                },
+                "description": "Get the list of all appointments available in practice management system.\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|provider_id|Provider id as per practice management system|No|\n|patient_id|Patient ID as per the management system|No|\n|practice_id|Practice ID|No|\n|startdate|format: yyyy-mm-dd, start date|No|\n|enddate|format: yyyy-mm-dd, end date|No|\n|date_filter_on|Field name on which stardate and enddate filter will be applied, valid values are: appointment_date-default, last_changed_date, appointment_made_date, confirmed_on_date|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|appointment_sr_no|Appointment serial number|\n|patient_id|Patient ID as per the management system|\n|appointment_date|Appointment Date|\n|appointment_time|Appointment Time|"
+              },
+              "response": [
+                {
+                  "id": "e4b65320-220e-cd76-d01b-a41f8f88be42",
+                  "name": "request",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "{{url}}/appointments?request_key={{request_key}}",
+                      "host": [
+                        "{{url}}"
+                      ],
+                      "path": [
+                        "appointments"
+                      ],
+                      "query": [
+                        {
+                          "key": "request_key",
+                          "value": "{{request_key}}"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "name": "Access-Control-Allow-Headers",
+                      "key": "Access-Control-Allow-Headers",
+                      "value": "accept, authorization, Content-Type, X-Session-Id",
+                      "description": ""
+                    },
+                    {
+                      "name": "Access-Control-Allow-Methods",
+                      "key": "Access-Control-Allow-Methods",
+                      "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+                      "description": ""
+                    },
+                    {
+                      "name": "Access-Control-Allow-Origin",
+                      "key": "Access-Control-Allow-Origin",
+                      "value": "*",
+                      "description": ""
+                    },
+                    {
+                      "name": "Cache-Control",
+                      "key": "Cache-Control",
+                      "value": "private",
+                      "description": ""
+                    },
+                    {
+                      "name": "Connection",
+                      "key": "Connection",
+                      "value": "keep-alive",
+                      "description": ""
+                    },
+                    {
+                      "name": "Content-Length",
+                      "key": "Content-Length",
+                      "value": "2936",
+                      "description": ""
+                    },
+                    {
+                      "name": "Content-Type",
+                      "key": "Content-Type",
+                      "value": "application/json",
+                      "description": ""
+                    },
+                    {
+                      "name": "Date",
+                      "key": "Date",
+                      "value": "Fri, 21 Apr 2017 10:20:30 GMT",
+                      "description": ""
+                    },
+                    {
+                      "name": "Server",
+                      "key": "Server",
+                      "value": "Microsoft-IIS/8.5",
+                      "description": ""
+                    },
+                    {
+                      "name": "X-AspNet-Version",
+                      "key": "X-AspNet-Version",
+                      "value": "4.0.30319",
+                      "description": ""
+                    },
+                    {
+                      "name": "X-Powered-By",
+                      "key": "X-Powered-By",
+                      "value": "ASP.NET",
+                      "description": ""
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": "1111",
+                  "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"2\",\r\n\t\"total_count\": \"28039\",\r\n\t\"items\": [{\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/appointments/99458\",\r\n\t\t\t\"appointment_sr_no\": \"99458\",\r\n\t\t\t\"patient_id\": \"2963\",\r\n\t\t\t\"patient\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/2963\"\r\n\t\t\t},\r\n\t\t\t\"operatory\": \"Lynns Room 2\",\r\n\t\t\t\"date\": \"2016-10-27\",\r\n\t\t\t\"time\": \"13:30\",\r\n\t\t\t\"length\": \"90\",\r\n\t\t\t\"description\": \"\",\r\n\t\t\t\"amount\": \"293.0000\",\r\n\t\t\t\"status\": \"Unconfirmed\",\r\n\t\t\t\"last_changed_date\": \"\",\r\n\t\t\t\"appointment_made_date\": \"2016-04-21\",\r\n\t\t\t\"type\": \"Prophy  Lynn\",\r\n\t\t\t\"procedure_code1\": \"00120\",\r\n\t\t\t\"procedure_code1_amount\": \"54\",\r\n\t\t\t\"procedure_code2\": \"00210\",\r\n\t\t\t\"procedure_code2_amount\": \"145\",\r\n\t\t\t\"procedure_code3\": \"01110\",\r\n\t\t\t\"procedure_code3_amount\": \"94\",\r\n\t\t\t\"procedure_code4\": \"\",\r\n\t\t\t\"procedure_code4_amount\": \"0\",\r\n\t\t\t\"procedure_code5\": \"\",\r\n\t\t\t\"procedure_code5_amount\": \"0\",\r\n\t\t\t\"procedure_code6\": \"\",\r\n\t\t\t\"procedure_code6_amount\": \"0\",\r\n\t\t\t\"procedure_code7\": \"\",\r\n\t\t\t\"procedure_code7_amount\": \"0\",\r\n\t\t\t\"hygienist\": \"\",\r\n\t\t\t\"provider_id\": \"LW\",\r\n\t\t\t\"provider\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/LW\"\r\n\t\t\t},\r\n\t\t\t\"practice_id\": \"1\",\r\n\t\t\t\"practice\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t\t},\r\n\t\t\t\"is_companion\": \"\",\r\n\t\t\t\"sooner_if_possible\": \"N\",\r\n\t\t\t\"confirmed_on_date\": \"\",\r\n\t\t\t\"note\": \"FMX 6MRC OHI OSHA TTHPS TBRSH CLEAN RECAL\",\r\n\t\t\t\"patient_name\": \"John Wiesbrock\",\r\n\t\t\t\"guarantor_id\": \"\",\r\n\t\t\t\"guarantor_name\": \"\",\r\n\t\t\t\"procedure_code1_time\": \"0\",\r\n\t\t\t\"procedure_code2_time\": \"0\",\r\n\t\t\t\"procedure_code3_time\": \"0\",\r\n\t\t\t\"procedure_code4_time\": \"0\",\r\n\t\t\t\"procedure_code5_time\": \"0\",\r\n\t\t\t\"procedure_code6_time\": \"0\",\r\n\t\t\t\"procedure_code7_time\": \"0\",\r\n\t\t\t\"tooth_number\": \"\",\r\n\t\t\t\"surface_quadrant\": \"\",\r\n\t\t\t\"surface_quadrant_type\": \"\",\r\n\t\t\t\"schedule\": \"Fixed\",\r\n\t\t\t\"treatment_class\": \"\",\r\n\t\t\t\"cancelled\": \"N\",\r\n\t\t\t\"book_code\": \"GV\",\r\n\t\t\t\"location\": \"1|testlocation\",\r\n            \"is_confirmed\": \"False\",\t\t\t\r\n\t\t\t\"procedure_codes\": [\r\n                    {\r\n                        \"href\": \"https://api.sikkasoft.com/v2/practices/1/procedure_codes/1110\",\r\n                        \"procedure_code\": \"1110\",\r\n                        \"procedure_code_amount\": \"0\",\r\n                        \"procedure_code_time_units\": \"\",\r\n                        \"provider_id\": \"20\",\r\n                        \"provider\": {\r\n                            \"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/20\"\r\n                        }\r\n                    }\r\n                ]\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/appointments/99457\",\r\n\t\t\t\"appointment_sr_no\": \"99457\",\r\n\t\t\t\"patient_id\": \"5867\",\r\n\t\t\t\"patient\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/5867\"\r\n\t\t\t},\r\n\t\t\t\"operatory\": \"Lynns Room 2\",\r\n\t\t\t\"date\": \"2016-08-18\",\r\n\t\t\t\"time\": \"08:00\",\r\n\t\t\t\"length\": \"60\",\r\n\t\t\t\"description\": \"\",\r\n\t\t\t\"amount\": \"213.0000\",\r\n\t\t\t\"status\": \"Unconfirmed\",\r\n\t\t\t\"last_changed_date\": \"\",\r\n\t\t\t\"appointment_made_date\": \"2016-04-21\",\r\n\t\t\t\"type\": \"Prophy  Lynn\",\r\n\t\t\t\"procedure_code1\": \"00120\",\r\n\t\t\t\"procedure_code1_amount\": \"54\",\r\n\t\t\t\"procedure_code2\": \"04910\",\r\n\t\t\t\"procedure_code2_amount\": \"159\",\r\n\t\t\t\"procedure_code3\": \"\",\r\n\t\t\t\"procedure_code3_amount\": \"0\",\r\n\t\t\t\"procedure_code4\": \"\",\r\n\t\t\t\"procedure_code4_amount\": \"0\",\r\n\t\t\t\"procedure_code5\": \"\",\r\n\t\t\t\"procedure_code5_amount\": \"0\",\r\n\t\t\t\"procedure_code6\": \"\",\r\n\t\t\t\"procedure_code6_amount\": \"0\",\r\n\t\t\t\"procedure_code7\": \"\",\r\n\t\t\t\"procedure_code7_amount\": \"0\",\r\n\t\t\t\"hygienist\": \"\",\r\n\t\t\t\"provider_id\": \"LW\",\r\n\t\t\t\"provider\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/LW\"\r\n\t\t\t},\r\n\t\t\t\"practice_id\": \"1\",\r\n\t\t\t\"practice\": {\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t\t},\r\n\t\t\t\"is_companion\": \"\",\r\n\t\t\t\"sooner_if_possible\": \"N\",\r\n\t\t\t\"confirmed_on_date\": \"\",\r\n\t\t\t\"note\": \"OHI 4MRC OSHA TTHPS TBRSH RECAL 04910\",\r\n\t\t\t\"patient_name\": \"James Evenhuis\",\r\n\t\t\t\"guarantor_id\": \"\",\r\n\t\t\t\"guarantor_name\": \"\",\r\n\t\t\t\"procedure_code1_time\": \"0\",\r\n\t\t\t\"procedure_code2_time\": \"0\",\r\n\t\t\t\"procedure_code3_time\": \"0\",\r\n\t\t\t\"procedure_code4_time\": \"0\",\r\n\t\t\t\"procedure_code5_time\": \"0\",\r\n\t\t\t\"procedure_code6_time\": \"0\",\r\n\t\t\t\"procedure_code7_time\": \"0\",\r\n\t\t\t\"tooth_number\": \"\",\r\n\t\t\t\"surface_quadrant\": \"\",\r\n\t\t\t\"surface_quadrant_type\": \"\",\r\n\t\t\t\"schedule\": \"Fixed\",\r\n\t\t\t\"treatment_class\": \"\",\r\n\t\t\t\"cancelled\": \"N\",\r\n\t\t\t\"book_code\": \"GV\",\r\n\t\t\t\"location\": \"1|testlocation\",\r\n            \"is_confirmed\": \"False\",\r\n\t\t\t\"procedure_codes\": [\r\n\t\t\t{\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/procedure_codes/ZW912\",\r\n\t\t\t\t\"procedure_code\": \"ZW912\",\r\n\t\t\t\t\"procedure_code_amount\": \"10\",\r\n\t\t\t\t\"procedure_code_time_units\": \"value\",\r\n\t\t\t\t\"provider_id\": \"LW\",\r\n\t\t\t\t\"provider\": \r\n\t\t\t\t{\r\n\t\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/LW\"\r\n\t        \t}\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/procedure_codes/ZW912\",\r\n\t\t\t\t\"procedure_code\": \"ZW912\",\r\n\t\t\t\t\"procedure_code_amount\": \"20\",\r\n\t\t\t\t\"procedure_code_time_units\": \"value\",\r\n\t\t\t\t\"provider_id\": \"LW\",\r\n\t\t\t\t\"provider\": \r\n\t\t\t\t{\r\n\t\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/LW\"\r\n\t\t\t\t}\r\n\t\t\t}]\r\n\t\t}\r\n\t]\r\n}]"
+                }
+              ]
+            },
+            {
+              "name": "appointments by appointment_sr_no",
+              "id": "08050c2f-ede5-0b78-aaee-3e359bf6b1c9",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
+                "url": {
+                  "raw": "{{url}}/appointments/{appointment_sr_no}?request_key={{request_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "appointments",
+                    "{appointment_sr_no}"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "{{request_key}}"
+                    }
+                  ]
+                },
+                "description": "Get the appointment available in practice management system.\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|provider_id|Provider id as per practice management system|No|\n|patient_id|Patient ID as per the management system|No|\n|practice_id|Practice ID|No|\n|startdate|format: yyyy-mm-dd, start date|No|\n|enddate|format: yyyy-mm-dd, end date|No|\n|date_filter_on|Field name on which stardate and enddate filter will be applied, valid values are: appointment_date-default, last_changed_date, appointment_made_date, confirmed_on_date|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|appointment_sr_no|Appointment serial number|\n|patient_id|Patient ID as per the management system|\n|appointment_date|Appointment Date|\n|appointment_time|Appointment Time|"
+              },
+              "response": [
+                {
+                  "id": "f8e7ff31-46b2-3976-d510-d9b1409d39d4",
+                  "name": "request",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "{{url}}/appointments/{{appointment_sr_no}}?request_key={{request_key}}",
+                      "host": [
+                        "{{url}}"
+                      ],
+                      "path": [
+                        "appointments",
+                        "{{appointment_sr_no}}"
+                      ],
+                      "query": [
+                        {
+                          "key": "request_key",
+                          "value": "{{request_key}}"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "name": "Access-Control-Allow-Headers",
+                      "key": "Access-Control-Allow-Headers",
+                      "value": "accept, authorization, Content-Type, X-Session-Id",
+                      "description": ""
+                    },
+                    {
+                      "name": "Access-Control-Allow-Methods",
+                      "key": "Access-Control-Allow-Methods",
+                      "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+                      "description": ""
+                    },
+                    {
+                      "name": "Access-Control-Allow-Origin",
+                      "key": "Access-Control-Allow-Origin",
+                      "value": "*",
+                      "description": ""
+                    },
+                    {
+                      "name": "Cache-Control",
+                      "key": "Cache-Control",
+                      "value": "private, no-cache=\"set-cookie\"",
+                      "description": ""
+                    },
+                    {
+                      "name": "Connection",
+                      "key": "Connection",
+                      "value": "keep-alive",
+                      "description": ""
+                    },
+                    {
+                      "name": "Content-Length",
+                      "key": "Content-Length",
+                      "value": "1443",
+                      "description": ""
+                    },
+                    {
+                      "name": "Content-Type",
+                      "key": "Content-Type",
+                      "value": "application/json",
+                      "description": ""
+                    },
+                    {
+                      "name": "Date",
+                      "key": "Date",
+                      "value": "Fri, 21 Apr 2017 10:24:56 GMT",
+                      "description": ""
+                    },
+                    {
+                      "name": "Server",
+                      "key": "Server",
+                      "value": "Microsoft-IIS/8.5",
+                      "description": ""
+                    },
+                    {
+                      "name": "X-AspNet-Version",
+                      "key": "X-AspNet-Version",
+                      "value": "4.0.30319",
+                      "description": ""
+                    },
+                    {
+                      "name": "X-Powered-By",
+                      "key": "X-Powered-By",
+                      "value": "ASP.NET",
+                      "description": ""
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": "1005",
+                  "body": "{\r\n\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/appointments/99458\",\r\n\t\"appointment_sr_no\": \"99458\",\r\n\t\"patient_id\": \"2963\",\r\n\t\"patient\": {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/2963\"\r\n\t},\r\n\t\"operatory\": \"Lynns Room 2\",\r\n\t\"date\": \"2016-10-27\",\r\n\t\"time\": \"13:30\",\r\n\t\"length\": \"90\",\r\n\t\"description\": \"\",\r\n\t\"amount\": \"293.0000\",\r\n\t\"status\": \"Unconfirmed\",\r\n\t\"last_changed_date\": \"\",\r\n\t\"appointment_made_date\": \"2016-04-21\",\r\n\t\"type\": \"Prophy  Lynn\",\r\n\t\"procedure_code1\": \"00120\",\r\n\t\"procedure_code1_amount\": \"54\",\r\n\t\"procedure_code2\": \"00210\",\r\n\t\"procedure_code2_amount\": \"145\",\r\n\t\"procedure_code3\": \"01110\",\r\n\t\"procedure_code3_amount\": \"94\",\r\n\t\"procedure_code4\": \"\",\r\n\t\"procedure_code4_amount\": \"0\",\r\n\t\"procedure_code5\": \"\",\r\n\t\"procedure_code5_amount\": \"0\",\r\n\t\"procedure_code6\": \"\",\r\n\t\"procedure_code6_amount\": \"0\",\r\n\t\"procedure_code7\": \"\",\r\n\t\"procedure_code7_amount\": \"0\",\r\n\t\"hygienist\": \"\",\r\n\t\"provider_id\": \"LW\",\r\n\t\"provider\": {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/LW\"\r\n\t},\r\n\t\"practice_id\": \"1\",\r\n\t\"practice\": {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t},\r\n\t\"is_companion\": \"\",\r\n\t\"sooner_if_possible\": \"N\",\r\n\t\"confirmed_on_date\": \"\",\r\n\t\"note\": \"FMX 6MRC OHI OSHA TTHPS TBRSH CLEAN RECAL\",\r\n\t\"patient_name\": \"John Wiesbrock\",\r\n\t\"guarantor_id\": \"\",\r\n\t\"guarantor_name\": \"\",\r\n\t\"procedure_code1_time\": \"0\",\r\n\t\"procedure_code2_time\": \"0\",\r\n\t\"procedure_code3_time\": \"0\",\r\n\t\"procedure_code4_time\": \"0\",\r\n\t\"procedure_code5_time\": \"0\",\r\n\t\"procedure_code6_time\": \"0\",\r\n\t\"procedure_code7_time\": \"0\",\r\n\t\"tooth_number\": \"\",\r\n\t\"surface_quadrant\": \"\",\r\n\t\"surface_quadrant_type\": \"\",\r\n\t\"schedule\": \"Fixed\",\r\n\t\"treatment_class\": \"\",\r\n\t\"cancelled\": \"N\",\r\n\t\"book_code\": \"GV\",\r\n\t\"location\": \"1|testlocation\",\r\n\t\"is_confirmed\": \"False\",\r\n\t\"procedure_codes\": [{\r\n        \t\"href\": \"https://api.sikkasoft.com/v2/practices/1/procedure_codes/1110\",\r\n            \"procedure_code\": \"1110\",\r\n            \"procedure_code_amount\": \"0\",\r\n            \"procedure_code_time_units\": \"\",\r\n            \"provider_id\": \"20\",\r\n            \"provider\": {\r\n            \t\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/20\"\r\n            }\r\n        }]\r\n}"
+                }
+              ]
+            },
+            {
+              "name": "appointments/{appointment_sr_no}",
+              "id": "c916b6de-4623-3383-bb20-95baca7adce8",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
+                "url": {
+                  "raw": "{{url}}/appointments/{appointment_sr_no}?request_key={{request_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "appointments",
+                    "{appointment_sr_no}"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "{{request_key}}"
+                    }
+                  ]
+                },
+                "description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|"
+              },
+              "response": [
+                {
+                  "id": "eb8bc508-8b21-6414-66ed-ac0e83c6122f",
+                  "name": "request",
+                  "originalRequest": {
+                    "method": "DELETE",
+                    "header": [],
+                    "body": {
+                      "mode": "formdata",
+                      "formdata": []
+                    },
+                    "url": {
+                      "raw": "{{url}}/appointments/{{appointment_sr_no}}?request_key={{request_key}}",
+                      "host": [
+                        "{{url}}"
+                      ],
+                      "path": [
+                        "appointments",
+                        "{{appointment_sr_no}}"
+                      ],
+                      "query": [
+                        {
+                          "key": "request_key",
+                          "value": "{{request_key}}"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "name": "Access-Control-Allow-Headers",
+                      "key": "Access-Control-Allow-Headers",
+                      "value": "accept, authorization, Content-Type, X-Session-Id",
+                      "description": ""
+                    },
+                    {
+                      "name": "Access-Control-Allow-Methods",
+                      "key": "Access-Control-Allow-Methods",
+                      "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+                      "description": ""
+                    },
+                    {
+                      "name": "Access-Control-Allow-Origin",
+                      "key": "Access-Control-Allow-Origin",
+                      "value": "*",
+                      "description": ""
+                    },
+                    {
+                      "name": "Cache-Control",
+                      "key": "Cache-Control",
+                      "value": "private",
+                      "description": ""
+                    },
+                    {
+                      "name": "Connection",
+                      "key": "Connection",
+                      "value": "keep-alive",
+                      "description": ""
+                    },
+                    {
+                      "name": "Content-Length",
+                      "key": "Content-Length",
+                      "value": "177",
+                      "description": ""
+                    },
+                    {
+                      "name": "Content-Type",
+                      "key": "Content-Type",
+                      "value": "application/json",
+                      "description": ""
+                    },
+                    {
+                      "name": "Date",
+                      "key": "Date",
+                      "value": "Fri, 21 Apr 2017 10:31:24 GMT",
+                      "description": ""
+                    },
+                    {
+                      "name": "Server",
+                      "key": "Server",
+                      "value": "Microsoft-IIS/8.5",
+                      "description": ""
+                    },
+                    {
+                      "name": "X-AspNet-Version",
+                      "key": "X-AspNet-Version",
+                      "value": "4.0.30319",
+                      "description": ""
+                    },
+                    {
+                      "name": "X-Powered-By",
+                      "key": "X-Powered-By",
+                      "value": "ASP.NET",
+                      "description": ""
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": "1379",
+                  "body": "{\"http_code\":\"200\",\"http_code_desc\":\"OK\",\"sikka_status_code\":\"API4001\",\"short_message\":\"\",\"long_message\":\"appointment_sr_no: 99458 deleted successfully\",\"more_information\":\"\"}\r\n"
+                }
+              ]
+            },
+            {
+              "name": "appointment_statuses",
+              "id": "8b24d706-3a0e-a1aa-2723-0c3daf68085d",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
+                "url": {
+                  "raw": "{{url}}/appointment_statuses?request_key={{request_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "appointment_statuses"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "{{request_key}}"
+                    }
+                  ]
+                },
+                "description": "Display all the appointment status available in practice management system\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|practice_id|Practice ID|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|practice_id|Practice ID|"
+              },
+              "response": [
+                {
+                  "id": "b61d5bcb-1c8a-ffce-7df8-0d73efe231d0",
+                  "name": "request",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "body": {
+                      "mode": "formdata",
+                      "formdata": []
+                    },
+                    "url": {
+                      "raw": "{{url}}/appointment_statuses?request_key={{request_key}}",
+                      "host": [
+                        "{{url}}"
+                      ],
+                      "path": [
+                        "appointment_statuses"
+                      ],
+                      "query": [
+                        {
+                          "key": "request_key",
+                          "value": "{{request_key}}"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "name": "Access-Control-Allow-Headers",
+                      "key": "Access-Control-Allow-Headers",
+                      "value": "accept, authorization, Content-Type, X-Session-Id",
+                      "description": ""
+                    },
+                    {
+                      "name": "Access-Control-Allow-Methods",
+                      "key": "Access-Control-Allow-Methods",
+                      "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+                      "description": ""
+                    },
+                    {
+                      "name": "Access-Control-Allow-Origin",
+                      "key": "Access-Control-Allow-Origin",
+                      "value": "*",
+                      "description": ""
+                    },
+                    {
+                      "name": "Cache-Control",
+                      "key": "Cache-Control",
+                      "value": "private, no-cache=\"set-cookie\"",
+                      "description": ""
+                    },
+                    {
+                      "name": "Connection",
+                      "key": "Connection",
+                      "value": "keep-alive",
+                      "description": ""
+                    },
+                    {
+                      "name": "Content-Length",
+                      "key": "Content-Length",
+                      "value": "454",
+                      "description": ""
+                    },
+                    {
+                      "name": "Content-Type",
+                      "key": "Content-Type",
+                      "value": "application/json",
+                      "description": ""
+                    },
+                    {
+                      "name": "Date",
+                      "key": "Date",
+                      "value": "Fri, 21 Apr 2017 10:11:25 GMT",
+                      "description": ""
+                    },
+                    {
+                      "name": "Server",
+                      "key": "Server",
+                      "value": "Microsoft-IIS/8.5",
+                      "description": ""
+                    },
+                    {
+                      "name": "X-AspNet-Version",
+                      "key": "X-AspNet-Version",
+                      "value": "4.0.30319",
+                      "description": ""
+                    },
+                    {
+                      "name": "X-Powered-By",
+                      "key": "X-Powered-By",
+                      "value": "ASP.NET",
+                      "description": ""
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": "1844",
+                  "body": "[{\"offset\":\"0\",\"limit\":\"2\",\"total_count\":\"8\",\"items\":[{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/appointment_statuses\\/No Answer\",\"status\":\"No Answer\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"}},{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/appointment_statuses\\/Sent Email\",\"status\":\"Sent Email\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"}}]}]\r\n"
+                }
+              ]
+            },
+            {
+              "name": "appointment_statuses by status",
+              "id": "2f1de7f3-6d6d-36ae-b8a6-79ba0eaf32d3",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
+                "url": {
+                  "raw": "{{url}}/appointment_statuses/{status}?request_key={{request_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "appointment_statuses",
+                    "{status}"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "{{request_key}}"
+                    }
+                  ]
+                },
+                "description": "Get the resource of appointment status\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|practice_id|Practice ID|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|practice_id|Practice ID|"
+              },
+              "response": [
+                {
+                  "id": "9803728d-46cc-7430-5f0e-738b2e4f87ff",
+                  "name": "request",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "body": {
+                      "mode": "formdata",
+                      "formdata": []
+                    },
+                    "url": {
+                      "raw": "{{url}}/appointment_statuses/{{status}}?request_key={{request_key}}",
+                      "host": [
+                        "{{url}}"
+                      ],
+                      "path": [
+                        "appointment_statuses",
+                        "{{status}}"
+                      ],
+                      "query": [
+                        {
+                          "key": "request_key",
+                          "value": "{{request_key}}"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "name": "Access-Control-Allow-Headers",
+                      "key": "Access-Control-Allow-Headers",
+                      "value": "accept, authorization, Content-Type, X-Session-Id",
+                      "description": ""
+                    },
+                    {
+                      "name": "Access-Control-Allow-Methods",
+                      "key": "Access-Control-Allow-Methods",
+                      "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+                      "description": ""
+                    },
+                    {
+                      "name": "Access-Control-Allow-Origin",
+                      "key": "Access-Control-Allow-Origin",
+                      "value": "*",
+                      "description": ""
+                    },
+                    {
+                      "name": "Cache-Control",
+                      "key": "Cache-Control",
+                      "value": "private",
+                      "description": ""
+                    },
+                    {
+                      "name": "Connection",
+                      "key": "Connection",
+                      "value": "keep-alive",
+                      "description": ""
+                    },
+                    {
+                      "name": "Content-Length",
+                      "key": "Content-Length",
+                      "value": "198",
+                      "description": ""
+                    },
+                    {
+                      "name": "Content-Type",
+                      "key": "Content-Type",
+                      "value": "application/json",
+                      "description": ""
+                    },
+                    {
+                      "name": "Date",
+                      "key": "Date",
+                      "value": "Fri, 21 Apr 2017 10:14:42 GMT",
+                      "description": ""
+                    },
+                    {
+                      "name": "Server",
+                      "key": "Server",
+                      "value": "Microsoft-IIS/8.5",
+                      "description": ""
+                    },
+                    {
+                      "name": "X-AspNet-Version",
+                      "key": "X-AspNet-Version",
+                      "value": "4.0.30319",
+                      "description": ""
+                    },
+                    {
+                      "name": "X-Powered-By",
+                      "key": "X-Powered-By",
+                      "value": "ASP.NET",
+                      "description": ""
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": "2182",
+                  "body": "{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/appointment_statuses\\/No Answer\",\"status\":\"No Answer\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"}}\r\n"
+                }
+              ]
+            }
+          ],
+          "id": "b41c14bb-089a-7723-0d1a-7be93cc2cd63",
+          "description": "It contains all APIs related with appointments in practice. "
         }
       ],
       "id": "4a90818c-b880-4b29-b3a3-46e71331e73d"
