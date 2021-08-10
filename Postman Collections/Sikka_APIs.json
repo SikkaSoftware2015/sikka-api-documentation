@@ -25853,6 +25853,262 @@
           ],
           "id": "ae1b7591-edd8-f46c-1829-b557d0425534",
           "description": "It contains APIs related with claim information"
+        },
+        {
+          "name": "start",
+          "id": "9dce4284-fec5-9724-4055-0e0e946d593b",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "{{url}}/start?app_id={{app_id}}&app_key={{app_key}}&office_id={{office_id}}&secret_key={{secret_key}}",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "start"
+              ],
+              "query": [
+                {
+                  "key": "app_id",
+                  "value": "{{app_id}}"
+                },
+                {
+                  "key": "app_key",
+                  "value": "{{app_key}}"
+                },
+                {
+                  "key": "office_id",
+                  "value": "{{office_id}}"
+                },
+                {
+                  "key": "secret_key",
+                  "value": "{{secret_key}}"
+                }
+              ]
+            },
+            "description": "The \"start\" function is used to initiate the communication between the application and Sikka API. It generates a unique requestkey and starts the request session.\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|app_id|This is the ID assigned to the application when the application is registered on API portal|Yes|\n|app_key|This is the unique key generated when the application is registered on API portal|Yes|\n|office_id|Mastercustomerid, This is the ID assigned to a practice when that practice is added|Yes|\n|secret_key|This is the Secrete Key generated for that practice, when practice is added|Yes|"
+          },
+          "response": [
+            {
+              "id": "5ebafc62-5d67-128e-5470-dee111314ae4",
+              "name": "request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
+                "url": {
+                  "raw": "{{url}}/start?app_id={{app_id}}&app_key={{app_key}}&office_id={{office_id}}&secret_key={{secret_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "start"
+                  ],
+                  "query": [
+                    {
+                      "key": "app_id",
+                      "value": "{{app_id}}"
+                    },
+                    {
+                      "key": "app_key",
+                      "value": "{{app_key}}"
+                    },
+                    {
+                      "key": "office_id",
+                      "value": "{{office_id}}"
+                    },
+                    {
+                      "key": "secret_key",
+                      "value": "{{secret_key}}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "cache-control",
+                  "key": "cache-control",
+                  "value": "private",
+                  "description": ""
+                },
+                {
+                  "name": "content-encoding",
+                  "key": "content-encoding",
+                  "value": "gzip",
+                  "description": ""
+                },
+                {
+                  "name": "content-length",
+                  "key": "content-length",
+                  "value": "254",
+                  "description": ""
+                },
+                {
+                  "name": "content-type",
+                  "key": "content-type",
+                  "value": "application/json",
+                  "description": ""
+                },
+                {
+                  "name": "date",
+                  "key": "date",
+                  "value": "Wed, 27 Sep 2017 11:51:51 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "server",
+                  "key": "server",
+                  "value": "Microsoft-IIS/8.5",
+                  "description": ""
+                },
+                {
+                  "name": "vary",
+                  "key": "vary",
+                  "value": "Accept-Encoding",
+                  "description": ""
+                },
+                {
+                  "name": "x-aspnet-version",
+                  "key": "x-aspnet-version",
+                  "value": "4.0.30319",
+                  "description": ""
+                },
+                {
+                  "name": "x-powered-by",
+                  "key": "x-powered-by",
+                  "value": "ASP.NET",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": "1021",
+              "body": "[\n    {\n        \"scope\": \"https://api.sikkasoft.com/v2/\",\n        \"request_key\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\n        \"token_type\": \"Bearer\",\n        \"expires_in\": \"86400\"\n    }\n]"
+            },
+            {
+              "id": "4c0ff35e-6114-aab3-aa4f-5501e1c652ce",
+              "name": "start",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
+                "url": {
+                  "raw": "{{url}}/start?app_id={{app_id}}&app_key={{app_key}}&office_id={{office_id}}&secret_key={{secret_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "start"
+                  ],
+                  "query": [
+                    {
+                      "key": "app_id",
+                      "value": "{{app_id}}"
+                    },
+                    {
+                      "key": "app_key",
+                      "value": "{{app_key}}"
+                    },
+                    {
+                      "key": "office_id",
+                      "value": "{{office_id}}"
+                    },
+                    {
+                      "key": "secret_key",
+                      "value": "{{secret_key}}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "Access-Control-Allow-Headers",
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "accept, authorization, Content-Type, X-Session-Id",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Methods",
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Origin",
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "description": ""
+                },
+                {
+                  "name": "Cache-Control",
+                  "key": "Cache-Control",
+                  "value": "private",
+                  "description": ""
+                },
+                {
+                  "name": "Connection",
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Length",
+                  "key": "Content-Length",
+                  "value": "141",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Type",
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": ""
+                },
+                {
+                  "name": "Date",
+                  "key": "Date",
+                  "value": "Fri, 21 Apr 2017 06:48:56 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "Server",
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5",
+                  "description": ""
+                },
+                {
+                  "name": "X-AspNet-Version",
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "description": ""
+                },
+                {
+                  "name": "X-Powered-By",
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": "485",
+              "body": "[{\"scope\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/\",\"request_key\":\"ad9beb2883ed1a2277d1aac15fc9793d\",\"token_type\":\"Bearer\",\"expires_in\":\"86400\"}]\r\n"
+            }
+          ]
         }
       ],
       "id": "4a90818c-b880-4b29-b3a3-46e71331e73d"
@@ -25861,262 +26117,6 @@
       "name": "Sikka API v4",
       "item": [],
       "id": "603347df-cf60-4fcd-ab4c-9e047b36756d"
-    },
-    {
-      "name": "start",
-      "id": "9dce4284-fec5-9724-4055-0e0e946d593b",
-      "request": {
-        "method": "GET",
-        "header": [],
-        "body": {
-          "mode": "formdata",
-          "formdata": []
-        },
-        "url": {
-          "raw": "{{url}}/start?app_id={{app_id}}&app_key={{app_key}}&office_id={{office_id}}&secret_key={{secret_key}}",
-          "host": [
-            "{{url}}"
-          ],
-          "path": [
-            "start"
-          ],
-          "query": [
-            {
-              "key": "app_id",
-              "value": "{{app_id}}"
-            },
-            {
-              "key": "app_key",
-              "value": "{{app_key}}"
-            },
-            {
-              "key": "office_id",
-              "value": "{{office_id}}"
-            },
-            {
-              "key": "secret_key",
-              "value": "{{secret_key}}"
-            }
-          ]
-        },
-        "description": "The \"start\" function is used to initiate the communication between the application and Sikka API. It generates a unique requestkey and starts the request session.\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|app_id|This is the ID assigned to the application when the application is registered on API portal|Yes|\n|app_key|This is the unique key generated when the application is registered on API portal|Yes|\n|office_id|Mastercustomerid, This is the ID assigned to a practice when that practice is added|Yes|\n|secret_key|This is the Secrete Key generated for that practice, when practice is added|Yes|"
-      },
-      "response": [
-        {
-          "id": "5ebafc62-5d67-128e-5470-dee111314ae4",
-          "name": "request",
-          "originalRequest": {
-            "method": "GET",
-            "header": [],
-            "body": {
-              "mode": "formdata",
-              "formdata": []
-            },
-            "url": {
-              "raw": "{{url}}/start?app_id={{app_id}}&app_key={{app_key}}&office_id={{office_id}}&secret_key={{secret_key}}",
-              "host": [
-                "{{url}}"
-              ],
-              "path": [
-                "start"
-              ],
-              "query": [
-                {
-                  "key": "app_id",
-                  "value": "{{app_id}}"
-                },
-                {
-                  "key": "app_key",
-                  "value": "{{app_key}}"
-                },
-                {
-                  "key": "office_id",
-                  "value": "{{office_id}}"
-                },
-                {
-                  "key": "secret_key",
-                  "value": "{{secret_key}}"
-                }
-              ]
-            }
-          },
-          "status": "OK",
-          "code": 200,
-          "_postman_previewlanguage": "json",
-          "header": [
-            {
-              "name": "cache-control",
-              "key": "cache-control",
-              "value": "private",
-              "description": ""
-            },
-            {
-              "name": "content-encoding",
-              "key": "content-encoding",
-              "value": "gzip",
-              "description": ""
-            },
-            {
-              "name": "content-length",
-              "key": "content-length",
-              "value": "254",
-              "description": ""
-            },
-            {
-              "name": "content-type",
-              "key": "content-type",
-              "value": "application/json",
-              "description": ""
-            },
-            {
-              "name": "date",
-              "key": "date",
-              "value": "Wed, 27 Sep 2017 11:51:51 GMT",
-              "description": ""
-            },
-            {
-              "name": "server",
-              "key": "server",
-              "value": "Microsoft-IIS/8.5",
-              "description": ""
-            },
-            {
-              "name": "vary",
-              "key": "vary",
-              "value": "Accept-Encoding",
-              "description": ""
-            },
-            {
-              "name": "x-aspnet-version",
-              "key": "x-aspnet-version",
-              "value": "4.0.30319",
-              "description": ""
-            },
-            {
-              "name": "x-powered-by",
-              "key": "x-powered-by",
-              "value": "ASP.NET",
-              "description": ""
-            }
-          ],
-          "cookie": [],
-          "responseTime": "1021",
-          "body": "[\n    {\n        \"scope\": \"https://api.sikkasoft.com/v2/\",\n        \"request_key\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\n        \"token_type\": \"Bearer\",\n        \"expires_in\": \"86400\"\n    }\n]"
-        },
-        {
-          "id": "4c0ff35e-6114-aab3-aa4f-5501e1c652ce",
-          "name": "start",
-          "originalRequest": {
-            "method": "GET",
-            "header": [],
-            "body": {
-              "mode": "formdata",
-              "formdata": []
-            },
-            "url": {
-              "raw": "{{url}}/start?app_id={{app_id}}&app_key={{app_key}}&office_id={{office_id}}&secret_key={{secret_key}}",
-              "host": [
-                "{{url}}"
-              ],
-              "path": [
-                "start"
-              ],
-              "query": [
-                {
-                  "key": "app_id",
-                  "value": "{{app_id}}"
-                },
-                {
-                  "key": "app_key",
-                  "value": "{{app_key}}"
-                },
-                {
-                  "key": "office_id",
-                  "value": "{{office_id}}"
-                },
-                {
-                  "key": "secret_key",
-                  "value": "{{secret_key}}"
-                }
-              ]
-            }
-          },
-          "status": "OK",
-          "code": 200,
-          "_postman_previewlanguage": "json",
-          "header": [
-            {
-              "name": "Access-Control-Allow-Headers",
-              "key": "Access-Control-Allow-Headers",
-              "value": "accept, authorization, Content-Type, X-Session-Id",
-              "description": ""
-            },
-            {
-              "name": "Access-Control-Allow-Methods",
-              "key": "Access-Control-Allow-Methods",
-              "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
-              "description": ""
-            },
-            {
-              "name": "Access-Control-Allow-Origin",
-              "key": "Access-Control-Allow-Origin",
-              "value": "*",
-              "description": ""
-            },
-            {
-              "name": "Cache-Control",
-              "key": "Cache-Control",
-              "value": "private",
-              "description": ""
-            },
-            {
-              "name": "Connection",
-              "key": "Connection",
-              "value": "keep-alive",
-              "description": ""
-            },
-            {
-              "name": "Content-Length",
-              "key": "Content-Length",
-              "value": "141",
-              "description": ""
-            },
-            {
-              "name": "Content-Type",
-              "key": "Content-Type",
-              "value": "application/json",
-              "description": ""
-            },
-            {
-              "name": "Date",
-              "key": "Date",
-              "value": "Fri, 21 Apr 2017 06:48:56 GMT",
-              "description": ""
-            },
-            {
-              "name": "Server",
-              "key": "Server",
-              "value": "Microsoft-IIS/8.5",
-              "description": ""
-            },
-            {
-              "name": "X-AspNet-Version",
-              "key": "X-AspNet-Version",
-              "value": "4.0.30319",
-              "description": ""
-            },
-            {
-              "name": "X-Powered-By",
-              "key": "X-Powered-By",
-              "value": "ASP.NET",
-              "description": ""
-            }
-          ],
-          "cookie": [],
-          "responseTime": "485",
-          "body": "[{\"scope\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/\",\"request_key\":\"ad9beb2883ed1a2277d1aac15fc9793d\",\"token_type\":\"Bearer\",\"expires_in\":\"86400\"}]\r\n"
-        }
-      ]
     },
     {
       "name": "end",
