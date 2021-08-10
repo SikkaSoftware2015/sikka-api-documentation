@@ -25334,20 +25334,47 @@
               }
             }
           ]
-        },
+        }
+      ],
+      "id": "4a90818c-b880-4b29-b3a3-46e71331e73d"
+    },
+    {
+      "name": "Claims",
+      "item": [
         {
-          "name": "Claims",
-          "item": [
+          "name": "claims",
+          "id": "39ca11f1-e01f-36d8-25d3-95ab56b4d5c3",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "{{url}}/claims?request_key={{request_key}}",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "claims"
+              ],
+              "query": [
+                {
+                  "key": "request_key",
+                  "value": "{{request_key}}"
+                }
+              ]
+            },
+            "description": "Get the list of all claim information from practice management system\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|guarantor_id|Guarantor id as per practice management systems|No|\n|provider_id|Provider id as per practice management system|No|\n|patient_id|Patient ID as per the management system|No|\n|practice_id|Practice ID|No|\n|startdate|format: yyyy-mm-dd, start date|No|\n|enddate|format: yyyy-mm-dd, end date|No|\n|date_filter_on|Field name on which stardate and enddate filter will be applied, valid values are: claim_sent_date-default, claim_payment_date, on_hold_date, resent_date, creation_date|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|claim_sr_no|Claim serial number|\n|claim_sent_date|Claim Sent Date|\n|claim_payment_date|Claim Payment Date|\n|total_billed_amount|Total Billed Amount|\n|estimated_amount|Estimated Amount|\n|payment_amount|Payment Amount|"
+          },
+          "response": [
             {
-              "name": "claims",
-              "id": "39ca11f1-e01f-36d8-25d3-95ab56b4d5c3",
-              "request": {
+              "id": "78369d16-91ff-96af-6ae5-1c9aa5faea66",
+              "name": "request",
+              "originalRequest": {
                 "method": "GET",
                 "header": [],
-                "body": {
-                  "mode": "formdata",
-                  "formdata": []
-                },
                 "url": {
                   "raw": "{{url}}/claims?request_key={{request_key}}",
                   "host": [
@@ -25360,675 +25387,6 @@
                     {
                       "key": "request_key",
                       "value": "{{request_key}}"
-                    }
-                  ]
-                },
-                "description": "Get the list of all claim information from practice management system\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|guarantor_id|Guarantor id as per practice management systems|No|\n|provider_id|Provider id as per practice management system|No|\n|patient_id|Patient ID as per the management system|No|\n|practice_id|Practice ID|No|\n|startdate|format: yyyy-mm-dd, start date|No|\n|enddate|format: yyyy-mm-dd, end date|No|\n|date_filter_on|Field name on which stardate and enddate filter will be applied, valid values are: claim_sent_date-default, claim_payment_date, on_hold_date, resent_date, creation_date|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|claim_sr_no|Claim serial number|\n|claim_sent_date|Claim Sent Date|\n|claim_payment_date|Claim Payment Date|\n|total_billed_amount|Total Billed Amount|\n|estimated_amount|Estimated Amount|\n|payment_amount|Payment Amount|"
-              },
-              "response": [
-                {
-                  "id": "78369d16-91ff-96af-6ae5-1c9aa5faea66",
-                  "name": "request",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [],
-                    "url": {
-                      "raw": "{{url}}/claims?request_key={{request_key}}",
-                      "host": [
-                        "{{url}}"
-                      ],
-                      "path": [
-                        "claims"
-                      ],
-                      "query": [
-                        {
-                          "key": "request_key",
-                          "value": "{{request_key}}"
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "name": "Access-Control-Allow-Headers",
-                      "key": "Access-Control-Allow-Headers",
-                      "value": "accept, authorization, Content-Type, X-Session-Id",
-                      "description": ""
-                    },
-                    {
-                      "name": "Access-Control-Allow-Methods",
-                      "key": "Access-Control-Allow-Methods",
-                      "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
-                      "description": ""
-                    },
-                    {
-                      "name": "Access-Control-Allow-Origin",
-                      "key": "Access-Control-Allow-Origin",
-                      "value": "*",
-                      "description": ""
-                    },
-                    {
-                      "name": "Cache-Control",
-                      "key": "Cache-Control",
-                      "value": "private",
-                      "description": ""
-                    },
-                    {
-                      "name": "Connection",
-                      "key": "Connection",
-                      "value": "keep-alive",
-                      "description": ""
-                    },
-                    {
-                      "name": "Content-Length",
-                      "key": "Content-Length",
-                      "value": "2250",
-                      "description": ""
-                    },
-                    {
-                      "name": "Content-Type",
-                      "key": "Content-Type",
-                      "value": "application/json",
-                      "description": ""
-                    },
-                    {
-                      "name": "Date",
-                      "key": "Date",
-                      "value": "Fri, 21 Apr 2017 10:51:03 GMT",
-                      "description": ""
-                    },
-                    {
-                      "name": "Server",
-                      "key": "Server",
-                      "value": "Microsoft-IIS/8.5",
-                      "description": ""
-                    },
-                    {
-                      "name": "X-AspNet-Version",
-                      "key": "X-AspNet-Version",
-                      "value": "4.0.30319",
-                      "description": ""
-                    },
-                    {
-                      "name": "X-Powered-By",
-                      "key": "X-Powered-By",
-                      "value": "ASP.NET",
-                      "description": ""
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": "1501",
-                  "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"2\",\r\n\t\"total_count\": \"40464\",\r\n\t\"items\": [{\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/claims/41660\",\r\n\t\t\"claim_sr_no\": \"41660\",\r\n\t\t\"claim_description_id\": \"41660\",\r\n\t\t\"patient_id\": \"2963\",\r\n\t\t\"patient\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/2963\"\r\n\t\t},\r\n\t\t\"guarantor_id\": \"2963\",\r\n\t\t\"guarantor\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/guarantors/2963\"\r\n\t\t},\r\n\t\t\"provider_id\": \"DR\",\r\n\t\t\"provider\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/DR\"\r\n\t\t},\r\n\t\t\"claim_sent_date\": \"\",\r\n\t\t\"total_billed_amount\": \"186.0000\",\r\n\t\t\"estimated_amount\": \"72.0000\",\r\n\t\t\"claim_payment_date\": \"\",\r\n\t\t\"payment_amount\": \"0.0000\",\r\n\t\t\"claim_status\": \"U\",\r\n\t\t\"primary_or_secondary\": \"Secondary\",\r\n\t\t\"insurance_company_id\": \"995\",\r\n\t\t\"insurance_company\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/insurance_companies/995\"\r\n\t\t},\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t},\r\n\t\t\"claim_description\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/claim_descriptions/41660\"\r\n\t\t},\r\n\t\t\"insurance_company_name\": \"Met Life-TDP Dental Unit\",\r\n\t\t\"claim_channel\": \"Unsubmitted\",\r\n\t\t\"note\": \"\",\r\n\t\t\"rendering_provider\": \"DR\",\r\n\t\t\"payer_id\": \"65978\",\r\n\t\t\"on_hold_date\": \"\",\r\n\t\t\"resent_date\": \"\",\r\n\t\t\"creation_date\": \"2019-04-18\",\r\n\t\t\"total_paid_amount\": \"0.0000\",\r\n\t\t\"cheque_no\": \"\",\r\n\t\t\"bank_no\": \"\",\r\n\t\t\"standard\": \"0.0000\",\r\n\t\t\"preventive\": \"0.0000\",\r\n\t\t\"others\": \"0.0000\",\r\n\t\t\"pay_to_provider\": \"1\",\r\n\t\t\"tp\": \"2\",\r\n        \"sent_claim_status\":\"Sent Electronically\",\r\n        \"primary_claim_id\":\"123\",\r\n        \"carriier_id\":\"1008\"\r\n\t}, {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/claims/41660\",\r\n\t\t\"claim_sr_no\": \"41660\",\r\n\t\t\"claim_description_id\": \"41660\",\r\n\t\t\"patient_id\": \"2963\",\r\n\t\t\"patient\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/2963\"\r\n\t\t},\r\n\t\t\"guarantor_id\": \"2963\",\r\n\t\t\"guarantor\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/guarantors/2963\"\r\n\t\t},\r\n\t\t\"provider_id\": \"DR\",\r\n\t\t\"provider\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/DR\"\r\n\t\t},\r\n\t\t\"claim_sent_date\": \"2016-04-21\",\r\n\t\t\"total_billed_amount\": \"186.0000\",\r\n\t\t\"estimated_amount\": \"72.0000\",\r\n\t\t\"claim_payment_date\": \"\",\r\n\t\t\"payment_amount\": \"0.0000\",\r\n\t\t\"claim_status\": \"O\",\r\n\t\t\"primary_or_secondary\": \"Primary\",\r\n\t\t\"insurance_company_id\": \"257\",\r\n\t\t\"insurance_company\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/insurance_companies/257\"\r\n\t\t},\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t},\r\n\t\t\"claim_description\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/claim_descriptions/41660\"\r\n\t\t},\r\n\t\t\"insurance_company_name\": \"Blue Cross And Blue Shield Of Illinois\",\r\n\t\t\"claim_channel\": \"Printed\",\r\n\t\t\"note\": \"\",\r\n\t\t\"rendering_provider\": \"DR\",\r\n\t\t\"payer_id\": \"00621\",\r\n\t\t\"on_hold_date\": \"\",\r\n\t\t\"resent_date\": \"\",\r\n\t\t\"creation_date\": \"2019-04-18\",\r\n\t\t\"total_paid_amount\": \"0.0000\",\r\n\t\t\"cheque_no\": \"\",\r\n\t\t\"bank_no\": \"\",\r\n\t\t\"standard\": \"0.0000\",\r\n\t\t\"preventive\": \"0.0000\",\r\n\t\t\"others\": \"0.0000\",\r\n\t\t\"pay_to_provider\": \"1\",\r\n\t\t\"tp\": \"2\",\r\n        \"sent_claim_status\":\"Sent Electronically\",\r\n        \"primary_claim_id\":\"123\",\r\n        \"carriier_id\":\"1008\"\r\n\t}]\r\n}]"
-                }
-              ]
-            },
-            {
-              "name": "claims by claim_sr_no",
-              "id": "9a72d020-e0c3-bad2-f32e-fa6cffad0444",
-              "request": {
-                "method": "GET",
-                "header": [],
-                "body": {
-                  "mode": "formdata",
-                  "formdata": []
-                },
-                "url": {
-                  "raw": "{{url}}/claims/{claim_sr_no}?request_key={{request_key}}",
-                  "host": [
-                    "{{url}}"
-                  ],
-                  "path": [
-                    "claims",
-                    "{claim_sr_no}"
-                  ],
-                  "query": [
-                    {
-                      "key": "request_key",
-                      "value": "{{request_key}}"
-                    }
-                  ]
-                },
-                "description": "Get the information about claim as per claim serial number. Like claim status , sent date, payment amount , billed amount , estimated amount, provider id , patient id , guarantor id etc.\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|guarantor_id|Guarantor id as per practice management systems|No|\n|provider_id|Provider id as per practice management system|No|\n|patient_id|Patient ID as per the management system|No|\n|practice_id|Practice ID|No|\n|startdate|format: yyyy-mm-dd, start date|No|\n|enddate|format: yyyy-mm-dd, end date|No|\n|date_filter_on|Field name on which stardate and enddate filter will be applied, valid values are: claim_sent_date-default, claim_payment_date, on_hold_date, resent_date, creation_date|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|claim_sr_no|Claim serial number|\n|claim_sent_date|Claim Sent Date|\n|claim_payment_date|Claim Payment Date|\n|total_billed_amount|Total Billed Amount|\n|estimated_amount|Estimated Amount|\n|payment_amount|Payment Amount|"
-              },
-              "response": [
-                {
-                  "id": "5116fa00-3d57-13eb-c4ea-e02c18cd2546",
-                  "name": "request",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [],
-                    "url": {
-                      "raw": "{{url}}/claims/{{claim_sr_no}}?request_key={{request_key}}",
-                      "host": [
-                        "{{url}}"
-                      ],
-                      "path": [
-                        "claims",
-                        "{{claim_sr_no}}"
-                      ],
-                      "query": [
-                        {
-                          "key": "request_key",
-                          "value": "{{request_key}}"
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "name": "Access-Control-Allow-Headers",
-                      "key": "Access-Control-Allow-Headers",
-                      "value": "accept, authorization, Content-Type, X-Session-Id",
-                      "description": ""
-                    },
-                    {
-                      "name": "Access-Control-Allow-Methods",
-                      "key": "Access-Control-Allow-Methods",
-                      "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
-                      "description": ""
-                    },
-                    {
-                      "name": "Access-Control-Allow-Origin",
-                      "key": "Access-Control-Allow-Origin",
-                      "value": "*",
-                      "description": ""
-                    },
-                    {
-                      "name": "Cache-Control",
-                      "key": "Cache-Control",
-                      "value": "private",
-                      "description": ""
-                    },
-                    {
-                      "name": "Connection",
-                      "key": "Connection",
-                      "value": "keep-alive",
-                      "description": ""
-                    },
-                    {
-                      "name": "Content-Length",
-                      "key": "Content-Length",
-                      "value": "1104",
-                      "description": ""
-                    },
-                    {
-                      "name": "Content-Type",
-                      "key": "Content-Type",
-                      "value": "application/json",
-                      "description": ""
-                    },
-                    {
-                      "name": "Date",
-                      "key": "Date",
-                      "value": "Fri, 21 Apr 2017 10:55:26 GMT",
-                      "description": ""
-                    },
-                    {
-                      "name": "Server",
-                      "key": "Server",
-                      "value": "Microsoft-IIS/8.5",
-                      "description": ""
-                    },
-                    {
-                      "name": "X-AspNet-Version",
-                      "key": "X-AspNet-Version",
-                      "value": "4.0.30319",
-                      "description": ""
-                    },
-                    {
-                      "name": "X-Powered-By",
-                      "key": "X-Powered-By",
-                      "value": "ASP.NET",
-                      "description": ""
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": "2026",
-                  "body": "{\r\n\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/claims/41659\",\r\n\t\"claim_sr_no\": \"41659\",\r\n\t\"claim_description_id\": \"41659\",\r\n\t\"patient_id\": \"2780\",\r\n\t\"patient\": {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/2780\"\r\n\t},\r\n\t\"guarantor_id\": \"2780\",\r\n\t\"guarantor\": {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/guarantors/2780\"\r\n\t},\r\n\t\"provider_id\": \"DR\",\r\n\t\"provider\": {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/DR\"\r\n\t},\r\n\t\"claim_sent_date\": \"2016-04-21\",\r\n\t\"total_billed_amount\": \"291.0000\",\r\n\t\"estimated_amount\": \"160.8000\",\r\n\t\"claim_payment_date\": \"\",\r\n\t\"payment_amount\": \"0.0000\",\r\n\t\"claim_status\": \"O\",\r\n\t\"primary_or_secondary\": \"Primary\",\r\n\t\"insurance_company_id\": \"1118\",\r\n\t\"insurance_company\": {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/insurance_companies/1118\"\r\n\t},\r\n\t\"practice_id\": \"1\",\r\n\t\"practice\": {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t},\r\n\t\"claim_description\": {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/claim_descriptions/41659\"\r\n\t},\r\n\t\"insurance_company_name\": \"American Republic Insurance Company\",\r\n\t\"claim_channel\": \"Printed\",\r\n\t\"note\": \"\",\r\n\t\"rendering_provider\": \"DR\",\r\n\t\"payer_id\": \"CX092\",\r\n\t\"on_hold_date\": \"\",\r\n\t\"resent_date\": \"\",\r\n\t\"creation_date\": \"2019-04-18\",\r\n\t\"total_paid_amount\": \"0.0000\",\r\n\t\"cheque_no\": \"\",\r\n\t\"bank_no\": \"\",\r\n\t\"standard\": \"0.0000\",\r\n\t\"preventive\": \"0.0000\",\r\n\t\"others\": \"0.0000\",\r\n\t\"pay_to_provider\": \"1\",\r\n\t\"tp\": \"2\",\r\n    \"sent_claim_status\":\"Sent Electronically\",\r\n    \"primary_claim_id\":\"123\",\r\n    \"carriier_id\":\"1008\"\r\n}"
-                }
-              ]
-            },
-            {
-              "name": "claim_descriptions",
-              "id": "3f6f5454-78b9-33ee-b2c6-71da3803ba52",
-              "request": {
-                "method": "GET",
-                "header": [],
-                "body": {
-                  "mode": "formdata",
-                  "formdata": []
-                },
-                "url": {
-                  "raw": "{{url}}/claim_descriptions?request_key={{request_key}}",
-                  "host": [
-                    "{{url}}"
-                  ],
-                  "path": [
-                    "claim_descriptions"
-                  ],
-                  "query": [
-                    {
-                      "key": "request_key",
-                      "value": "{{request_key}}"
-                    }
-                  ]
-                },
-                "description": "Get the collections of all claim descriptions\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|practice_id|Practice ID|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|claim_description_id|Claim Description ID|"
-              },
-              "response": [
-                {
-                  "id": "3cc2e97a-11e3-2e5a-70cd-619cdaa75a63",
-                  "name": "request",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [],
-                    "url": {
-                      "raw": "{{url}}/claim_descriptions?request_key={{request_key}}",
-                      "host": [
-                        "{{url}}"
-                      ],
-                      "path": [
-                        "claim_descriptions"
-                      ],
-                      "query": [
-                        {
-                          "key": "request_key",
-                          "value": "{{request_key}}"
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "name": "Access-Control-Allow-Headers",
-                      "key": "Access-Control-Allow-Headers",
-                      "value": "accept, authorization, Content-Type, X-Session-Id",
-                      "description": ""
-                    },
-                    {
-                      "name": "Access-Control-Allow-Methods",
-                      "key": "Access-Control-Allow-Methods",
-                      "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
-                      "description": ""
-                    },
-                    {
-                      "name": "Access-Control-Allow-Origin",
-                      "key": "Access-Control-Allow-Origin",
-                      "value": "*",
-                      "description": ""
-                    },
-                    {
-                      "name": "Cache-Control",
-                      "key": "Cache-Control",
-                      "value": "private, no-cache=\"set-cookie\"",
-                      "description": ""
-                    },
-                    {
-                      "name": "Connection",
-                      "key": "Connection",
-                      "value": "keep-alive",
-                      "description": ""
-                    },
-                    {
-                      "name": "Content-Length",
-                      "key": "Content-Length",
-                      "value": "1698",
-                      "description": ""
-                    },
-                    {
-                      "name": "Content-Type",
-                      "key": "Content-Type",
-                      "value": "application/json",
-                      "description": ""
-                    },
-                    {
-                      "name": "Date",
-                      "key": "Date",
-                      "value": "Fri, 21 Apr 2017 10:37:36 GMT",
-                      "description": ""
-                    },
-                    {
-                      "name": "Server",
-                      "key": "Server",
-                      "value": "Microsoft-IIS/8.5",
-                      "description": ""
-                    },
-                    {
-                      "name": "X-AspNet-Version",
-                      "key": "X-AspNet-Version",
-                      "value": "4.0.30319",
-                      "description": ""
-                    },
-                    {
-                      "name": "X-Powered-By",
-                      "key": "X-Powered-By",
-                      "value": "ASP.NET",
-                      "description": ""
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": "1656",
-                  "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"2\",\r\n\t\"total_count\": \"38816\",\r\n\t\"items\": [{\r\n\t\t\"href\": \"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/claim_descriptions\\/41660\",\r\n\t\t\"claim_description_id\": \"41660\",\r\n\t\t\"ortho_treatment_plan_date\": \"\",\r\n\t\t\"first_visit_date_current_series\": \"\",\r\n\t\t\"occupant_status\": \"N\",\r\n\t\t\"occupant_description\": \"\",\r\n\t\t\"accident_status\": \"\",\r\n\t\t\"accident_description\": \"\",\r\n\t\t\"prosthesis\": \"\",\r\n\t\t\"replace_reason\": \"\",\r\n\t\t\"orthodontic_treat\": \"N\",\r\n\t\t\"mos_remian\": \"\",\r\n\t\t\"another_plan\": \"\",\r\n\t\t\"plan_desc\": \"\",\r\n\t\t\"place_of_treat\": \"Office\",\r\n\t\t\"xray_model_how_many\": \"\",\r\n\t\t\"school_city\": \"\",\r\n\t\t\"student_status\": \"\",\r\n\t\t\"auto_accident_date\": \"\",\r\n\t\t\"pre_autho_no\": \"\",\r\n\t\t\"prior_date\": \"\",\r\n\t\t\"oral\": \"N\",\r\n\t\t\"special\": \"\",\r\n\t\t\"ordered_date\": \"\",\r\n\t\t\"eligibility\": \"\",\r\n\t\t\"medicare\": \"\",\r\n\t\t\"retroactive\": \"\",\r\n\t\t\"chdp\": \"\",\r\n\t\t\"ccs\": \"\",\r\n\t\t\"re_eval\": \"\",\r\n\t\t\"ext\": \"\",\r\n\t\t\"orig_ref_no\": \"\",\r\n\t\t\"pla_of_treat\": \"\",\r\n\t\t\"occurance_date\": \"\",\r\n\t\t\"ins_ref\": \"\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"\r\n\t\t},\r\n\t\t\"appliance_date\": \"\",\r\n\t\t\"accident_date\": \"\",\r\n\t\t\"month_of_treatment\": \"0\"\r\n\t}, {\r\n\t\t\"href\": \"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/claim_descriptions\\/41659\",\r\n\t\t\"claim_description_id\": \"41659\",\r\n\t\t\"ortho_treatment_plan_date\": \"\",\r\n\t\t\"first_visit_date_current_series\": \"\",\r\n\t\t\"occupant_status\": \"N\",\r\n\t\t\"occupant_description\": \"\",\r\n\t\t\"accident_status\": \"\",\r\n\t\t\"accident_description\": \"\",\r\n\t\t\"prosthesis\": \"\",\r\n\t\t\"replace_reason\": \"\",\r\n\t\t\"orthodontic_treat\": \"N\",\r\n\t\t\"mos_remian\": \"\",\r\n\t\t\"another_plan\": \"\",\r\n\t\t\"plan_desc\": \"\",\r\n\t\t\"place_of_treat\": \"Office\",\r\n\t\t\"xray_model_how_many\": \"\",\r\n\t\t\"school_city\": \"\",\r\n\t\t\"student_status\": \"\",\r\n\t\t\"auto_accident_date\": \"\",\r\n\t\t\"pre_autho_no\": \"\",\r\n\t\t\"prior_date\": \"\",\r\n\t\t\"oral\": \"N\",\r\n\t\t\"special\": \"\",\r\n\t\t\"ordered_date\": \"\",\r\n\t\t\"eligibility\": \"\",\r\n\t\t\"medicare\": \"\",\r\n\t\t\"retroactive\": \"\",\r\n\t\t\"chdp\": \"\",\r\n\t\t\"ccs\": \"\",\r\n\t\t\"re_eval\": \"\",\r\n\t\t\"ext\": \"\",\r\n\t\t\"orig_ref_no\": \"\",\r\n\t\t\"pla_of_treat\": \"\",\r\n\t\t\"occurance_date\": \"\",\r\n\t\t\"ins_ref\": \"\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"\r\n\t\t},\r\n\t\t\"appliance_date\": \"\",\r\n\t\t\"accident_date\": \"\",\r\n\t\t\"month_of_treatment\": \"0\"\r\n\t}]\r\n}]"
-                }
-              ]
-            },
-            {
-              "name": "claim_descriptions by claim_description_id",
-              "id": "c12dcdbe-58db-5e48-d0b5-50f2e2867ced",
-              "request": {
-                "method": "GET",
-                "header": [],
-                "body": {
-                  "mode": "formdata",
-                  "formdata": []
-                },
-                "url": {
-                  "raw": "{{url}}/claim_descriptions/{claim_description_id}?request_key={{request_key}}",
-                  "host": [
-                    "{{url}}"
-                  ],
-                  "path": [
-                    "claim_descriptions",
-                    "{claim_description_id}"
-                  ],
-                  "query": [
-                    {
-                      "key": "request_key",
-                      "value": "{{request_key}}"
-                    }
-                  ]
-                },
-                "description": "Get the information about claim description as per claim description id. it contains claim description, status , date , accident description , reason for replace etc.\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|practice_id|Practice ID|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|claim_description_id|Claim Description ID|\n"
-              },
-              "response": [
-                {
-                  "id": "5cfab6bc-a365-5a59-d339-8a5daa6c9275",
-                  "name": "request",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [],
-                    "url": {
-                      "raw": "{{url}}/claim_descriptions/{{claim_description_id}}?request_key={{request_key}}",
-                      "host": [
-                        "{{url}}"
-                      ],
-                      "path": [
-                        "claim_descriptions",
-                        "{{claim_description_id}}"
-                      ],
-                      "query": [
-                        {
-                          "key": "request_key",
-                          "value": "{{request_key}}"
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "name": "Access-Control-Allow-Headers",
-                      "key": "Access-Control-Allow-Headers",
-                      "value": "accept, authorization, Content-Type, X-Session-Id",
-                      "description": ""
-                    },
-                    {
-                      "name": "Access-Control-Allow-Methods",
-                      "key": "Access-Control-Allow-Methods",
-                      "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
-                      "description": ""
-                    },
-                    {
-                      "name": "Access-Control-Allow-Origin",
-                      "key": "Access-Control-Allow-Origin",
-                      "value": "*",
-                      "description": ""
-                    },
-                    {
-                      "name": "Cache-Control",
-                      "key": "Cache-Control",
-                      "value": "private",
-                      "description": ""
-                    },
-                    {
-                      "name": "Connection",
-                      "key": "Connection",
-                      "value": "keep-alive",
-                      "description": ""
-                    },
-                    {
-                      "name": "Content-Length",
-                      "key": "Content-Length",
-                      "value": "878",
-                      "description": ""
-                    },
-                    {
-                      "name": "Content-Type",
-                      "key": "Content-Type",
-                      "value": "application/json",
-                      "description": ""
-                    },
-                    {
-                      "name": "Date",
-                      "key": "Date",
-                      "value": "Fri, 21 Apr 2017 10:40:03 GMT",
-                      "description": ""
-                    },
-                    {
-                      "name": "Server",
-                      "key": "Server",
-                      "value": "Microsoft-IIS/8.5",
-                      "description": ""
-                    },
-                    {
-                      "name": "X-AspNet-Version",
-                      "key": "X-AspNet-Version",
-                      "value": "4.0.30319",
-                      "description": ""
-                    },
-                    {
-                      "name": "X-Powered-By",
-                      "key": "X-Powered-By",
-                      "value": "ASP.NET",
-                      "description": ""
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": "1191",
-                  "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"500\",\r\n\t\"total_count\": \"1\",\r\n\t\"items\": [{\r\n\t\t\"href\": \"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/claim_descriptions\\/41660\",\r\n\t\t\"claim_description_id\": \"41660\",\r\n\t\t\"ortho_treatment_plan_date\": \"\",\r\n\t\t\"first_visit_date_current_series\": \"\",\r\n\t\t\"occupant_status\": \"N\",\r\n\t\t\"occupant_description\": \"\",\r\n\t\t\"accident_status\": \"\",\r\n\t\t\"accident_description\": \"\",\r\n\t\t\"prosthesis\": \"\",\r\n\t\t\"replace_reason\": \"\",\r\n\t\t\"orthodontic_treat\": \"N\",\r\n\t\t\"mos_remian\": \"\",\r\n\t\t\"another_plan\": \"\",\r\n\t\t\"plan_desc\": \"\",\r\n\t\t\"place_of_treat\": \"Office\",\r\n\t\t\"xray_model_how_many\": \"\",\r\n\t\t\"school_city\": \"\",\r\n\t\t\"student_status\": \"\",\r\n\t\t\"auto_accident_date\": \"\",\r\n\t\t\"pre_autho_no\": \"\",\r\n\t\t\"prior_date\": \"\",\r\n\t\t\"oral\": \"N\",\r\n\t\t\"special\": \"\",\r\n\t\t\"ordered_date\": \"\",\r\n\t\t\"eligibility\": \"\",\r\n\t\t\"medicare\": \"\",\r\n\t\t\"retroactive\": \"\",\r\n\t\t\"chdp\": \"\",\r\n\t\t\"ccs\": \"\",\r\n\t\t\"re_eval\": \"\",\r\n\t\t\"ext\": \"\",\r\n\t\t\"orig_ref_no\": \"\",\r\n\t\t\"pla_of_treat\": \"\",\r\n\t\t\"occurance_date\": \"\",\r\n\t\t\"ins_ref\": \"\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"\r\n\t\t},\r\n\t\t\"appliance_date\": \"\",\r\n\t\t\"accident_date\": \"\",\r\n\t\t\"month_of_treatment\": \"0\"\r\n\t}]\r\n}]\r\n"
-                }
-              ]
-            }
-          ],
-          "id": "ae1b7591-edd8-f46c-1829-b557d0425534",
-          "description": "It contains APIs related with claim information"
-        },
-        {
-          "name": "start",
-          "id": "9dce4284-fec5-9724-4055-0e0e946d593b",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "body": {
-              "mode": "formdata",
-              "formdata": []
-            },
-            "url": {
-              "raw": "{{url}}/start?app_id={{app_id}}&app_key={{app_key}}&office_id={{office_id}}&secret_key={{secret_key}}",
-              "host": [
-                "{{url}}"
-              ],
-              "path": [
-                "start"
-              ],
-              "query": [
-                {
-                  "key": "app_id",
-                  "value": "{{app_id}}"
-                },
-                {
-                  "key": "app_key",
-                  "value": "{{app_key}}"
-                },
-                {
-                  "key": "office_id",
-                  "value": "{{office_id}}"
-                },
-                {
-                  "key": "secret_key",
-                  "value": "{{secret_key}}"
-                }
-              ]
-            },
-            "description": "The \"start\" function is used to initiate the communication between the application and Sikka API. It generates a unique requestkey and starts the request session.\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|app_id|This is the ID assigned to the application when the application is registered on API portal|Yes|\n|app_key|This is the unique key generated when the application is registered on API portal|Yes|\n|office_id|Mastercustomerid, This is the ID assigned to a practice when that practice is added|Yes|\n|secret_key|This is the Secrete Key generated for that practice, when practice is added|Yes|"
-          },
-          "response": [
-            {
-              "id": "5ebafc62-5d67-128e-5470-dee111314ae4",
-              "name": "request",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "body": {
-                  "mode": "formdata",
-                  "formdata": []
-                },
-                "url": {
-                  "raw": "{{url}}/start?app_id={{app_id}}&app_key={{app_key}}&office_id={{office_id}}&secret_key={{secret_key}}",
-                  "host": [
-                    "{{url}}"
-                  ],
-                  "path": [
-                    "start"
-                  ],
-                  "query": [
-                    {
-                      "key": "app_id",
-                      "value": "{{app_id}}"
-                    },
-                    {
-                      "key": "app_key",
-                      "value": "{{app_key}}"
-                    },
-                    {
-                      "key": "office_id",
-                      "value": "{{office_id}}"
-                    },
-                    {
-                      "key": "secret_key",
-                      "value": "{{secret_key}}"
-                    }
-                  ]
-                }
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "name": "cache-control",
-                  "key": "cache-control",
-                  "value": "private",
-                  "description": ""
-                },
-                {
-                  "name": "content-encoding",
-                  "key": "content-encoding",
-                  "value": "gzip",
-                  "description": ""
-                },
-                {
-                  "name": "content-length",
-                  "key": "content-length",
-                  "value": "254",
-                  "description": ""
-                },
-                {
-                  "name": "content-type",
-                  "key": "content-type",
-                  "value": "application/json",
-                  "description": ""
-                },
-                {
-                  "name": "date",
-                  "key": "date",
-                  "value": "Wed, 27 Sep 2017 11:51:51 GMT",
-                  "description": ""
-                },
-                {
-                  "name": "server",
-                  "key": "server",
-                  "value": "Microsoft-IIS/8.5",
-                  "description": ""
-                },
-                {
-                  "name": "vary",
-                  "key": "vary",
-                  "value": "Accept-Encoding",
-                  "description": ""
-                },
-                {
-                  "name": "x-aspnet-version",
-                  "key": "x-aspnet-version",
-                  "value": "4.0.30319",
-                  "description": ""
-                },
-                {
-                  "name": "x-powered-by",
-                  "key": "x-powered-by",
-                  "value": "ASP.NET",
-                  "description": ""
-                }
-              ],
-              "cookie": [],
-              "responseTime": "1021",
-              "body": "[\n    {\n        \"scope\": \"https://api.sikkasoft.com/v2/\",\n        \"request_key\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\n        \"token_type\": \"Bearer\",\n        \"expires_in\": \"86400\"\n    }\n]"
-            },
-            {
-              "id": "4c0ff35e-6114-aab3-aa4f-5501e1c652ce",
-              "name": "start",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "body": {
-                  "mode": "formdata",
-                  "formdata": []
-                },
-                "url": {
-                  "raw": "{{url}}/start?app_id={{app_id}}&app_key={{app_key}}&office_id={{office_id}}&secret_key={{secret_key}}",
-                  "host": [
-                    "{{url}}"
-                  ],
-                  "path": [
-                    "start"
-                  ],
-                  "query": [
-                    {
-                      "key": "app_id",
-                      "value": "{{app_id}}"
-                    },
-                    {
-                      "key": "app_key",
-                      "value": "{{app_key}}"
-                    },
-                    {
-                      "key": "office_id",
-                      "value": "{{office_id}}"
-                    },
-                    {
-                      "key": "secret_key",
-                      "value": "{{secret_key}}"
                     }
                   ]
                 }
@@ -26070,7 +25428,7 @@
                 {
                   "name": "Content-Length",
                   "key": "Content-Length",
-                  "value": "141",
+                  "value": "2250",
                   "description": ""
                 },
                 {
@@ -26082,7 +25440,7 @@
                 {
                   "name": "Date",
                   "key": "Date",
-                  "value": "Fri, 21 Apr 2017 06:48:56 GMT",
+                  "value": "Fri, 21 Apr 2017 10:51:03 GMT",
                   "description": ""
                 },
                 {
@@ -26105,14 +25463,14 @@
                 }
               ],
               "cookie": [],
-              "responseTime": "485",
-              "body": "[{\"scope\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/\",\"request_key\":\"ad9beb2883ed1a2277d1aac15fc9793d\",\"token_type\":\"Bearer\",\"expires_in\":\"86400\"}]\r\n"
+              "responseTime": "1501",
+              "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"2\",\r\n\t\"total_count\": \"40464\",\r\n\t\"items\": [{\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/claims/41660\",\r\n\t\t\"claim_sr_no\": \"41660\",\r\n\t\t\"claim_description_id\": \"41660\",\r\n\t\t\"patient_id\": \"2963\",\r\n\t\t\"patient\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/2963\"\r\n\t\t},\r\n\t\t\"guarantor_id\": \"2963\",\r\n\t\t\"guarantor\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/guarantors/2963\"\r\n\t\t},\r\n\t\t\"provider_id\": \"DR\",\r\n\t\t\"provider\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/DR\"\r\n\t\t},\r\n\t\t\"claim_sent_date\": \"\",\r\n\t\t\"total_billed_amount\": \"186.0000\",\r\n\t\t\"estimated_amount\": \"72.0000\",\r\n\t\t\"claim_payment_date\": \"\",\r\n\t\t\"payment_amount\": \"0.0000\",\r\n\t\t\"claim_status\": \"U\",\r\n\t\t\"primary_or_secondary\": \"Secondary\",\r\n\t\t\"insurance_company_id\": \"995\",\r\n\t\t\"insurance_company\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/insurance_companies/995\"\r\n\t\t},\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t},\r\n\t\t\"claim_description\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/claim_descriptions/41660\"\r\n\t\t},\r\n\t\t\"insurance_company_name\": \"Met Life-TDP Dental Unit\",\r\n\t\t\"claim_channel\": \"Unsubmitted\",\r\n\t\t\"note\": \"\",\r\n\t\t\"rendering_provider\": \"DR\",\r\n\t\t\"payer_id\": \"65978\",\r\n\t\t\"on_hold_date\": \"\",\r\n\t\t\"resent_date\": \"\",\r\n\t\t\"creation_date\": \"2019-04-18\",\r\n\t\t\"total_paid_amount\": \"0.0000\",\r\n\t\t\"cheque_no\": \"\",\r\n\t\t\"bank_no\": \"\",\r\n\t\t\"standard\": \"0.0000\",\r\n\t\t\"preventive\": \"0.0000\",\r\n\t\t\"others\": \"0.0000\",\r\n\t\t\"pay_to_provider\": \"1\",\r\n\t\t\"tp\": \"2\",\r\n        \"sent_claim_status\":\"Sent Electronically\",\r\n        \"primary_claim_id\":\"123\",\r\n        \"carriier_id\":\"1008\"\r\n\t}, {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/claims/41660\",\r\n\t\t\"claim_sr_no\": \"41660\",\r\n\t\t\"claim_description_id\": \"41660\",\r\n\t\t\"patient_id\": \"2963\",\r\n\t\t\"patient\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/2963\"\r\n\t\t},\r\n\t\t\"guarantor_id\": \"2963\",\r\n\t\t\"guarantor\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/guarantors/2963\"\r\n\t\t},\r\n\t\t\"provider_id\": \"DR\",\r\n\t\t\"provider\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/DR\"\r\n\t\t},\r\n\t\t\"claim_sent_date\": \"2016-04-21\",\r\n\t\t\"total_billed_amount\": \"186.0000\",\r\n\t\t\"estimated_amount\": \"72.0000\",\r\n\t\t\"claim_payment_date\": \"\",\r\n\t\t\"payment_amount\": \"0.0000\",\r\n\t\t\"claim_status\": \"O\",\r\n\t\t\"primary_or_secondary\": \"Primary\",\r\n\t\t\"insurance_company_id\": \"257\",\r\n\t\t\"insurance_company\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/insurance_companies/257\"\r\n\t\t},\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t},\r\n\t\t\"claim_description\": {\r\n\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/claim_descriptions/41660\"\r\n\t\t},\r\n\t\t\"insurance_company_name\": \"Blue Cross And Blue Shield Of Illinois\",\r\n\t\t\"claim_channel\": \"Printed\",\r\n\t\t\"note\": \"\",\r\n\t\t\"rendering_provider\": \"DR\",\r\n\t\t\"payer_id\": \"00621\",\r\n\t\t\"on_hold_date\": \"\",\r\n\t\t\"resent_date\": \"\",\r\n\t\t\"creation_date\": \"2019-04-18\",\r\n\t\t\"total_paid_amount\": \"0.0000\",\r\n\t\t\"cheque_no\": \"\",\r\n\t\t\"bank_no\": \"\",\r\n\t\t\"standard\": \"0.0000\",\r\n\t\t\"preventive\": \"0.0000\",\r\n\t\t\"others\": \"0.0000\",\r\n\t\t\"pay_to_provider\": \"1\",\r\n\t\t\"tp\": \"2\",\r\n        \"sent_claim_status\":\"Sent Electronically\",\r\n        \"primary_claim_id\":\"123\",\r\n        \"carriier_id\":\"1008\"\r\n\t}]\r\n}]"
             }
           ]
         },
         {
-          "name": "end",
-          "id": "0ff06640-71a1-5e37-4609-eb82db9039a8",
+          "name": "claims by claim_sr_no",
+          "id": "9a72d020-e0c3-bad2-f32e-fa6cffad0444",
           "request": {
             "method": "GET",
             "header": [],
@@ -26121,12 +25479,13 @@
               "formdata": []
             },
             "url": {
-              "raw": "{{url}}/end?request_key={{request_key}}",
+              "raw": "{{url}}/claims/{claim_sr_no}?request_key={{request_key}}",
               "host": [
                 "{{url}}"
               ],
               "path": [
-                "end"
+                "claims",
+                "{claim_sr_no}"
               ],
               "query": [
                 {
@@ -26135,26 +25494,150 @@
                 }
               ]
             },
-            "description": "The \"end\" function is used to terminate the request session.\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|"
+            "description": "Get the information about claim as per claim serial number. Like claim status , sent date, payment amount , billed amount , estimated amount, provider id , patient id , guarantor id etc.\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|guarantor_id|Guarantor id as per practice management systems|No|\n|provider_id|Provider id as per practice management system|No|\n|patient_id|Patient ID as per the management system|No|\n|practice_id|Practice ID|No|\n|startdate|format: yyyy-mm-dd, start date|No|\n|enddate|format: yyyy-mm-dd, end date|No|\n|date_filter_on|Field name on which stardate and enddate filter will be applied, valid values are: claim_sent_date-default, claim_payment_date, on_hold_date, resent_date, creation_date|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|claim_sr_no|Claim serial number|\n|claim_sent_date|Claim Sent Date|\n|claim_payment_date|Claim Payment Date|\n|total_billed_amount|Total Billed Amount|\n|estimated_amount|Estimated Amount|\n|payment_amount|Payment Amount|"
           },
           "response": [
             {
-              "id": "0878ca64-cc91-411e-befe-c87d684ba978",
+              "id": "5116fa00-3d57-13eb-c4ea-e02c18cd2546",
               "name": "request",
               "originalRequest": {
                 "method": "GET",
                 "header": [],
-                "body": {
-                  "mode": "formdata",
-                  "formdata": []
-                },
                 "url": {
-                  "raw": "{{url}}/end?request_key={{request_key}}",
+                  "raw": "{{url}}/claims/{{claim_sr_no}}?request_key={{request_key}}",
                   "host": [
                     "{{url}}"
                   ],
                   "path": [
-                    "end"
+                    "claims",
+                    "{{claim_sr_no}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "{{request_key}}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "Access-Control-Allow-Headers",
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "accept, authorization, Content-Type, X-Session-Id",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Methods",
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Origin",
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "description": ""
+                },
+                {
+                  "name": "Cache-Control",
+                  "key": "Cache-Control",
+                  "value": "private",
+                  "description": ""
+                },
+                {
+                  "name": "Connection",
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Length",
+                  "key": "Content-Length",
+                  "value": "1104",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Type",
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": ""
+                },
+                {
+                  "name": "Date",
+                  "key": "Date",
+                  "value": "Fri, 21 Apr 2017 10:55:26 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "Server",
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5",
+                  "description": ""
+                },
+                {
+                  "name": "X-AspNet-Version",
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "description": ""
+                },
+                {
+                  "name": "X-Powered-By",
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": "2026",
+              "body": "{\r\n\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/claims/41659\",\r\n\t\"claim_sr_no\": \"41659\",\r\n\t\"claim_description_id\": \"41659\",\r\n\t\"patient_id\": \"2780\",\r\n\t\"patient\": {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/patients/2780\"\r\n\t},\r\n\t\"guarantor_id\": \"2780\",\r\n\t\"guarantor\": {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/guarantors/2780\"\r\n\t},\r\n\t\"provider_id\": \"DR\",\r\n\t\"provider\": {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/providers/DR\"\r\n\t},\r\n\t\"claim_sent_date\": \"2016-04-21\",\r\n\t\"total_billed_amount\": \"291.0000\",\r\n\t\"estimated_amount\": \"160.8000\",\r\n\t\"claim_payment_date\": \"\",\r\n\t\"payment_amount\": \"0.0000\",\r\n\t\"claim_status\": \"O\",\r\n\t\"primary_or_secondary\": \"Primary\",\r\n\t\"insurance_company_id\": \"1118\",\r\n\t\"insurance_company\": {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/insurance_companies/1118\"\r\n\t},\r\n\t\"practice_id\": \"1\",\r\n\t\"practice\": {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t},\r\n\t\"claim_description\": {\r\n\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/claim_descriptions/41659\"\r\n\t},\r\n\t\"insurance_company_name\": \"American Republic Insurance Company\",\r\n\t\"claim_channel\": \"Printed\",\r\n\t\"note\": \"\",\r\n\t\"rendering_provider\": \"DR\",\r\n\t\"payer_id\": \"CX092\",\r\n\t\"on_hold_date\": \"\",\r\n\t\"resent_date\": \"\",\r\n\t\"creation_date\": \"2019-04-18\",\r\n\t\"total_paid_amount\": \"0.0000\",\r\n\t\"cheque_no\": \"\",\r\n\t\"bank_no\": \"\",\r\n\t\"standard\": \"0.0000\",\r\n\t\"preventive\": \"0.0000\",\r\n\t\"others\": \"0.0000\",\r\n\t\"pay_to_provider\": \"1\",\r\n\t\"tp\": \"2\",\r\n    \"sent_claim_status\":\"Sent Electronically\",\r\n    \"primary_claim_id\":\"123\",\r\n    \"carriier_id\":\"1008\"\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "claim_descriptions",
+          "id": "3f6f5454-78b9-33ee-b2c6-71da3803ba52",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "{{url}}/claim_descriptions?request_key={{request_key}}",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "claim_descriptions"
+              ],
+              "query": [
+                {
+                  "key": "request_key",
+                  "value": "{{request_key}}"
+                }
+              ]
+            },
+            "description": "Get the collections of all claim descriptions\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|practice_id|Practice ID|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|claim_description_id|Claim Description ID|"
+          },
+          "response": [
+            {
+              "id": "3cc2e97a-11e3-2e5a-70cd-619cdaa75a63",
+              "name": "request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{url}}/claim_descriptions?request_key={{request_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "claim_descriptions"
                   ],
                   "query": [
                     {
@@ -26201,7 +25684,7 @@
                 {
                   "name": "Content-Length",
                   "key": "Content-Length",
-                  "value": "174",
+                  "value": "1698",
                   "description": ""
                 },
                 {
@@ -26213,7 +25696,7 @@
                 {
                   "name": "Date",
                   "key": "Date",
-                  "value": "Fri, 21 Apr 2017 09:21:28 GMT",
+                  "value": "Fri, 21 Apr 2017 10:37:36 GMT",
                   "description": ""
                 },
                 {
@@ -26236,18 +25719,535 @@
                 }
               ],
               "cookie": [],
-              "responseTime": "1097",
-              "body": "{\"http_code\":\"200\",\"http_code_desc\":\"OK\",\"sikka_status_code\":\"API0003\",\"short_message\":\"OK\",\"long_message\":\"Request Session terminated successfully.\",\"more_information\":\"\"}\r\n"
+              "responseTime": "1656",
+              "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"2\",\r\n\t\"total_count\": \"38816\",\r\n\t\"items\": [{\r\n\t\t\"href\": \"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/claim_descriptions\\/41660\",\r\n\t\t\"claim_description_id\": \"41660\",\r\n\t\t\"ortho_treatment_plan_date\": \"\",\r\n\t\t\"first_visit_date_current_series\": \"\",\r\n\t\t\"occupant_status\": \"N\",\r\n\t\t\"occupant_description\": \"\",\r\n\t\t\"accident_status\": \"\",\r\n\t\t\"accident_description\": \"\",\r\n\t\t\"prosthesis\": \"\",\r\n\t\t\"replace_reason\": \"\",\r\n\t\t\"orthodontic_treat\": \"N\",\r\n\t\t\"mos_remian\": \"\",\r\n\t\t\"another_plan\": \"\",\r\n\t\t\"plan_desc\": \"\",\r\n\t\t\"place_of_treat\": \"Office\",\r\n\t\t\"xray_model_how_many\": \"\",\r\n\t\t\"school_city\": \"\",\r\n\t\t\"student_status\": \"\",\r\n\t\t\"auto_accident_date\": \"\",\r\n\t\t\"pre_autho_no\": \"\",\r\n\t\t\"prior_date\": \"\",\r\n\t\t\"oral\": \"N\",\r\n\t\t\"special\": \"\",\r\n\t\t\"ordered_date\": \"\",\r\n\t\t\"eligibility\": \"\",\r\n\t\t\"medicare\": \"\",\r\n\t\t\"retroactive\": \"\",\r\n\t\t\"chdp\": \"\",\r\n\t\t\"ccs\": \"\",\r\n\t\t\"re_eval\": \"\",\r\n\t\t\"ext\": \"\",\r\n\t\t\"orig_ref_no\": \"\",\r\n\t\t\"pla_of_treat\": \"\",\r\n\t\t\"occurance_date\": \"\",\r\n\t\t\"ins_ref\": \"\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"\r\n\t\t},\r\n\t\t\"appliance_date\": \"\",\r\n\t\t\"accident_date\": \"\",\r\n\t\t\"month_of_treatment\": \"0\"\r\n\t}, {\r\n\t\t\"href\": \"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/claim_descriptions\\/41659\",\r\n\t\t\"claim_description_id\": \"41659\",\r\n\t\t\"ortho_treatment_plan_date\": \"\",\r\n\t\t\"first_visit_date_current_series\": \"\",\r\n\t\t\"occupant_status\": \"N\",\r\n\t\t\"occupant_description\": \"\",\r\n\t\t\"accident_status\": \"\",\r\n\t\t\"accident_description\": \"\",\r\n\t\t\"prosthesis\": \"\",\r\n\t\t\"replace_reason\": \"\",\r\n\t\t\"orthodontic_treat\": \"N\",\r\n\t\t\"mos_remian\": \"\",\r\n\t\t\"another_plan\": \"\",\r\n\t\t\"plan_desc\": \"\",\r\n\t\t\"place_of_treat\": \"Office\",\r\n\t\t\"xray_model_how_many\": \"\",\r\n\t\t\"school_city\": \"\",\r\n\t\t\"student_status\": \"\",\r\n\t\t\"auto_accident_date\": \"\",\r\n\t\t\"pre_autho_no\": \"\",\r\n\t\t\"prior_date\": \"\",\r\n\t\t\"oral\": \"N\",\r\n\t\t\"special\": \"\",\r\n\t\t\"ordered_date\": \"\",\r\n\t\t\"eligibility\": \"\",\r\n\t\t\"medicare\": \"\",\r\n\t\t\"retroactive\": \"\",\r\n\t\t\"chdp\": \"\",\r\n\t\t\"ccs\": \"\",\r\n\t\t\"re_eval\": \"\",\r\n\t\t\"ext\": \"\",\r\n\t\t\"orig_ref_no\": \"\",\r\n\t\t\"pla_of_treat\": \"\",\r\n\t\t\"occurance_date\": \"\",\r\n\t\t\"ins_ref\": \"\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"\r\n\t\t},\r\n\t\t\"appliance_date\": \"\",\r\n\t\t\"accident_date\": \"\",\r\n\t\t\"month_of_treatment\": \"0\"\r\n\t}]\r\n}]"
+            }
+          ]
+        },
+        {
+          "name": "claim_descriptions by claim_description_id",
+          "id": "c12dcdbe-58db-5e48-d0b5-50f2e2867ced",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "{{url}}/claim_descriptions/{claim_description_id}?request_key={{request_key}}",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "claim_descriptions",
+                "{claim_description_id}"
+              ],
+              "query": [
+                {
+                  "key": "request_key",
+                  "value": "{{request_key}}"
+                }
+              ]
+            },
+            "description": "Get the information about claim description as per claim description id. it contains claim description, status , date , accident description , reason for replace etc.\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|practice_id|Practice ID|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|claim_description_id|Claim Description ID|\n"
+          },
+          "response": [
+            {
+              "id": "5cfab6bc-a365-5a59-d339-8a5daa6c9275",
+              "name": "request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{url}}/claim_descriptions/{{claim_description_id}}?request_key={{request_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "claim_descriptions",
+                    "{{claim_description_id}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "{{request_key}}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "Access-Control-Allow-Headers",
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "accept, authorization, Content-Type, X-Session-Id",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Methods",
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Origin",
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "description": ""
+                },
+                {
+                  "name": "Cache-Control",
+                  "key": "Cache-Control",
+                  "value": "private",
+                  "description": ""
+                },
+                {
+                  "name": "Connection",
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Length",
+                  "key": "Content-Length",
+                  "value": "878",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Type",
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": ""
+                },
+                {
+                  "name": "Date",
+                  "key": "Date",
+                  "value": "Fri, 21 Apr 2017 10:40:03 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "Server",
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5",
+                  "description": ""
+                },
+                {
+                  "name": "X-AspNet-Version",
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "description": ""
+                },
+                {
+                  "name": "X-Powered-By",
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": "1191",
+              "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"500\",\r\n\t\"total_count\": \"1\",\r\n\t\"items\": [{\r\n\t\t\"href\": \"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/claim_descriptions\\/41660\",\r\n\t\t\"claim_description_id\": \"41660\",\r\n\t\t\"ortho_treatment_plan_date\": \"\",\r\n\t\t\"first_visit_date_current_series\": \"\",\r\n\t\t\"occupant_status\": \"N\",\r\n\t\t\"occupant_description\": \"\",\r\n\t\t\"accident_status\": \"\",\r\n\t\t\"accident_description\": \"\",\r\n\t\t\"prosthesis\": \"\",\r\n\t\t\"replace_reason\": \"\",\r\n\t\t\"orthodontic_treat\": \"N\",\r\n\t\t\"mos_remian\": \"\",\r\n\t\t\"another_plan\": \"\",\r\n\t\t\"plan_desc\": \"\",\r\n\t\t\"place_of_treat\": \"Office\",\r\n\t\t\"xray_model_how_many\": \"\",\r\n\t\t\"school_city\": \"\",\r\n\t\t\"student_status\": \"\",\r\n\t\t\"auto_accident_date\": \"\",\r\n\t\t\"pre_autho_no\": \"\",\r\n\t\t\"prior_date\": \"\",\r\n\t\t\"oral\": \"N\",\r\n\t\t\"special\": \"\",\r\n\t\t\"ordered_date\": \"\",\r\n\t\t\"eligibility\": \"\",\r\n\t\t\"medicare\": \"\",\r\n\t\t\"retroactive\": \"\",\r\n\t\t\"chdp\": \"\",\r\n\t\t\"ccs\": \"\",\r\n\t\t\"re_eval\": \"\",\r\n\t\t\"ext\": \"\",\r\n\t\t\"orig_ref_no\": \"\",\r\n\t\t\"pla_of_treat\": \"\",\r\n\t\t\"occurance_date\": \"\",\r\n\t\t\"ins_ref\": \"\",\r\n\t\t\"practice_id\": \"1\",\r\n\t\t\"practice\": {\r\n\t\t\t\"href\": \"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"\r\n\t\t},\r\n\t\t\"appliance_date\": \"\",\r\n\t\t\"accident_date\": \"\",\r\n\t\t\"month_of_treatment\": \"0\"\r\n\t}]\r\n}]\r\n"
             }
           ]
         }
       ],
-      "id": "4a90818c-b880-4b29-b3a3-46e71331e73d"
+      "id": "ae1b7591-edd8-f46c-1829-b557d0425534",
+      "description": "It contains APIs related with claim information"
     },
     {
       "name": "Sikka API v4",
       "item": [],
       "id": "603347df-cf60-4fcd-ab4c-9e047b36756d"
+    },
+    {
+      "name": "start",
+      "id": "9dce4284-fec5-9724-4055-0e0e946d593b",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": []
+        },
+        "url": {
+          "raw": "{{url}}/start?app_id={{app_id}}&app_key={{app_key}}&office_id={{office_id}}&secret_key={{secret_key}}",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "start"
+          ],
+          "query": [
+            {
+              "key": "app_id",
+              "value": "{{app_id}}"
+            },
+            {
+              "key": "app_key",
+              "value": "{{app_key}}"
+            },
+            {
+              "key": "office_id",
+              "value": "{{office_id}}"
+            },
+            {
+              "key": "secret_key",
+              "value": "{{secret_key}}"
+            }
+          ]
+        },
+        "description": "The \"start\" function is used to initiate the communication between the application and Sikka API. It generates a unique requestkey and starts the request session.\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|app_id|This is the ID assigned to the application when the application is registered on API portal|Yes|\n|app_key|This is the unique key generated when the application is registered on API portal|Yes|\n|office_id|Mastercustomerid, This is the ID assigned to a practice when that practice is added|Yes|\n|secret_key|This is the Secrete Key generated for that practice, when practice is added|Yes|"
+      },
+      "response": [
+        {
+          "id": "5ebafc62-5d67-128e-5470-dee111314ae4",
+          "name": "request",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "{{url}}/start?app_id={{app_id}}&app_key={{app_key}}&office_id={{office_id}}&secret_key={{secret_key}}",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "start"
+              ],
+              "query": [
+                {
+                  "key": "app_id",
+                  "value": "{{app_id}}"
+                },
+                {
+                  "key": "app_key",
+                  "value": "{{app_key}}"
+                },
+                {
+                  "key": "office_id",
+                  "value": "{{office_id}}"
+                },
+                {
+                  "key": "secret_key",
+                  "value": "{{secret_key}}"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "name": "cache-control",
+              "key": "cache-control",
+              "value": "private",
+              "description": ""
+            },
+            {
+              "name": "content-encoding",
+              "key": "content-encoding",
+              "value": "gzip",
+              "description": ""
+            },
+            {
+              "name": "content-length",
+              "key": "content-length",
+              "value": "254",
+              "description": ""
+            },
+            {
+              "name": "content-type",
+              "key": "content-type",
+              "value": "application/json",
+              "description": ""
+            },
+            {
+              "name": "date",
+              "key": "date",
+              "value": "Wed, 27 Sep 2017 11:51:51 GMT",
+              "description": ""
+            },
+            {
+              "name": "server",
+              "key": "server",
+              "value": "Microsoft-IIS/8.5",
+              "description": ""
+            },
+            {
+              "name": "vary",
+              "key": "vary",
+              "value": "Accept-Encoding",
+              "description": ""
+            },
+            {
+              "name": "x-aspnet-version",
+              "key": "x-aspnet-version",
+              "value": "4.0.30319",
+              "description": ""
+            },
+            {
+              "name": "x-powered-by",
+              "key": "x-powered-by",
+              "value": "ASP.NET",
+              "description": ""
+            }
+          ],
+          "cookie": [],
+          "responseTime": "1021",
+          "body": "[\n    {\n        \"scope\": \"https://api.sikkasoft.com/v2/\",\n        \"request_key\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\n        \"token_type\": \"Bearer\",\n        \"expires_in\": \"86400\"\n    }\n]"
+        },
+        {
+          "id": "4c0ff35e-6114-aab3-aa4f-5501e1c652ce",
+          "name": "start",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "{{url}}/start?app_id={{app_id}}&app_key={{app_key}}&office_id={{office_id}}&secret_key={{secret_key}}",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "start"
+              ],
+              "query": [
+                {
+                  "key": "app_id",
+                  "value": "{{app_id}}"
+                },
+                {
+                  "key": "app_key",
+                  "value": "{{app_key}}"
+                },
+                {
+                  "key": "office_id",
+                  "value": "{{office_id}}"
+                },
+                {
+                  "key": "secret_key",
+                  "value": "{{secret_key}}"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "name": "Access-Control-Allow-Headers",
+              "key": "Access-Control-Allow-Headers",
+              "value": "accept, authorization, Content-Type, X-Session-Id",
+              "description": ""
+            },
+            {
+              "name": "Access-Control-Allow-Methods",
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+              "description": ""
+            },
+            {
+              "name": "Access-Control-Allow-Origin",
+              "key": "Access-Control-Allow-Origin",
+              "value": "*",
+              "description": ""
+            },
+            {
+              "name": "Cache-Control",
+              "key": "Cache-Control",
+              "value": "private",
+              "description": ""
+            },
+            {
+              "name": "Connection",
+              "key": "Connection",
+              "value": "keep-alive",
+              "description": ""
+            },
+            {
+              "name": "Content-Length",
+              "key": "Content-Length",
+              "value": "141",
+              "description": ""
+            },
+            {
+              "name": "Content-Type",
+              "key": "Content-Type",
+              "value": "application/json",
+              "description": ""
+            },
+            {
+              "name": "Date",
+              "key": "Date",
+              "value": "Fri, 21 Apr 2017 06:48:56 GMT",
+              "description": ""
+            },
+            {
+              "name": "Server",
+              "key": "Server",
+              "value": "Microsoft-IIS/8.5",
+              "description": ""
+            },
+            {
+              "name": "X-AspNet-Version",
+              "key": "X-AspNet-Version",
+              "value": "4.0.30319",
+              "description": ""
+            },
+            {
+              "name": "X-Powered-By",
+              "key": "X-Powered-By",
+              "value": "ASP.NET",
+              "description": ""
+            }
+          ],
+          "cookie": [],
+          "responseTime": "485",
+          "body": "[{\"scope\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/\",\"request_key\":\"ad9beb2883ed1a2277d1aac15fc9793d\",\"token_type\":\"Bearer\",\"expires_in\":\"86400\"}]\r\n"
+        }
+      ]
+    },
+    {
+      "name": "end",
+      "id": "0ff06640-71a1-5e37-4609-eb82db9039a8",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": []
+        },
+        "url": {
+          "raw": "{{url}}/end?request_key={{request_key}}",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "end"
+          ],
+          "query": [
+            {
+              "key": "request_key",
+              "value": "{{request_key}}"
+            }
+          ]
+        },
+        "description": "The \"end\" function is used to terminate the request session.\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|"
+      },
+      "response": [
+        {
+          "id": "0878ca64-cc91-411e-befe-c87d684ba978",
+          "name": "request",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "{{url}}/end?request_key={{request_key}}",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "end"
+              ],
+              "query": [
+                {
+                  "key": "request_key",
+                  "value": "{{request_key}}"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "name": "Access-Control-Allow-Headers",
+              "key": "Access-Control-Allow-Headers",
+              "value": "accept, authorization, Content-Type, X-Session-Id",
+              "description": ""
+            },
+            {
+              "name": "Access-Control-Allow-Methods",
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+              "description": ""
+            },
+            {
+              "name": "Access-Control-Allow-Origin",
+              "key": "Access-Control-Allow-Origin",
+              "value": "*",
+              "description": ""
+            },
+            {
+              "name": "Cache-Control",
+              "key": "Cache-Control",
+              "value": "private, no-cache=\"set-cookie\"",
+              "description": ""
+            },
+            {
+              "name": "Connection",
+              "key": "Connection",
+              "value": "keep-alive",
+              "description": ""
+            },
+            {
+              "name": "Content-Length",
+              "key": "Content-Length",
+              "value": "174",
+              "description": ""
+            },
+            {
+              "name": "Content-Type",
+              "key": "Content-Type",
+              "value": "application/json",
+              "description": ""
+            },
+            {
+              "name": "Date",
+              "key": "Date",
+              "value": "Fri, 21 Apr 2017 09:21:28 GMT",
+              "description": ""
+            },
+            {
+              "name": "Server",
+              "key": "Server",
+              "value": "Microsoft-IIS/8.5",
+              "description": ""
+            },
+            {
+              "name": "X-AspNet-Version",
+              "key": "X-AspNet-Version",
+              "value": "4.0.30319",
+              "description": ""
+            },
+            {
+              "name": "X-Powered-By",
+              "key": "X-Powered-By",
+              "value": "ASP.NET",
+              "description": ""
+            }
+          ],
+          "cookie": [],
+          "responseTime": "1097",
+          "body": "{\"http_code\":\"200\",\"http_code_desc\":\"OK\",\"sikka_status_code\":\"API0003\",\"short_message\":\"OK\",\"long_message\":\"Request Session terminated successfully.\",\"more_information\":\"\"}\r\n"
+        }
+      ]
     },
     {
       "name": "data_check",
