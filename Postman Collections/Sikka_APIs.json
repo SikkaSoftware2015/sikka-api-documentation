@@ -7,6 +7,1998 @@
   },
   "item": [
     {
+      "name": "Authentication API",
+      "item": [
+        {
+          "name": "applications",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);\r",
+                  "postman.setEnvironmentVariable(\"request_key\", jsonData[0].request_key);\r",
+                  "\r",
+                  "\r",
+                  "tests[\"start\"] = responseCode.code === 200;"
+                ]
+              }
+            }
+          ],
+          "id": "32279b62-5ad4-bc28-fce9-26f22e2e9080",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "{{authurl}}/applications?app_id={{app_id}}&app_key={{app_key}}",
+              "host": [
+                "{{authurl}}"
+              ],
+              "path": [
+                "applications"
+              ],
+              "query": [
+                {
+                  "key": "app_id",
+                  "value": "{{app_id}}"
+                },
+                {
+                  "key": "app_key",
+                  "value": "{{app_key}}"
+                }
+              ]
+            },
+            "description": "This endpoint will return the application details. Including developers assigned to these applications, allowed APIs list and other information.\n\n|Parameter|Description|Required|\n|---|---|---|\n|app_id|This is the ID assigned to the application when the application is registered on API portal|Yes|\n|app_key|This is the unique key generated when the application is registered on API portal|Yes|"
+          },
+          "response": [
+            {
+              "id": "db4b963d-c6d6-52f8-329a-cbb156d84141",
+              "name": "request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
+                "url": {
+                  "raw": "{{authurl}}/applications?app_id={{app_id}}&app_key={{app_key}}",
+                  "host": [
+                    "{{authurl}}"
+                  ],
+                  "path": [
+                    "applications"
+                  ],
+                  "query": [
+                    {
+                      "key": "app_id",
+                      "value": "{{app_id}}"
+                    },
+                    {
+                      "key": "app_key",
+                      "value": "{{app_key}}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "accept, authorization, Content-Type, X-Session-Id",
+                  "name": "Access-Control-Allow-Headers",
+                  "description": ""
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+                  "name": "Access-Control-Allow-Methods",
+                  "description": ""
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "name": "Access-Control-Allow-Origin",
+                  "description": ""
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "private",
+                  "name": "Cache-Control",
+                  "description": ""
+                },
+                {
+                  "key": "Cache-control",
+                  "value": "no-cache=\"set-cookie\"",
+                  "name": "Cache-control",
+                  "description": ""
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "name": "Connection",
+                  "description": ""
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "724",
+                  "name": "Content-Length",
+                  "description": ""
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "name": "Content-Type",
+                  "description": ""
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 25 Apr 2017 23:30:29 GMT",
+                  "name": "Date",
+                  "description": ""
+                },
+                {
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5",
+                  "name": "Server",
+                  "description": ""
+                },
+                {
+                  "key": "Set-Cookie",
+                  "value": "AWSELB=9BC9DF5B1EBBA968D8DEF4EFAE98B9151A1F2918EDD932BA532722CED5F7401EC830205BFF7DECDA5BA0EB836EF66A5C1B610D6800639ED13A5163E99921596CFE61FCCD79;PATH=/;MAX-AGE=600",
+                  "name": "Set-Cookie",
+                  "description": ""
+                },
+                {
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "name": "X-AspNet-Version",
+                  "description": ""
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "name": "X-Powered-By",
+                  "description": ""
+                }
+              ],
+              "cookie": [
+                {
+                  "expires": "Wed Apr 26 2017 06:40:35 GMT+0000 (Coordinated Universal Time)",
+                  "httpOnly": false,
+                  "domain": "api.sikkasoft.com",
+                  "path": "/",
+                  "secure": false,
+                  "value": "9BC9DF5B1EBBA968D8DEF4EFAE98B9151A1F2918EDD932BA532722CED5F7401EC830205BFF7DECDA5BA0EB836EF66A5C1B610D6800639ED13A5163E99921596CFE61FCCD79",
+                  "key": "AWSELB"
+                }
+              ],
+              "responseTime": "503",
+              "body": "{\n    \"app_id\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\n    \"name\": \"BETA API TEST\",\n    \"registration_date\": \"2016-11-07\",\n    \"activation_date\": \"2016-11-07\",\n    \"expiry_date\": \"\",\n    \"status\": \"verified\",\n    \"description\": \"testing BETA SIKKASOFT APIs\",\n    \"website\": \"https://www.sikkasoft.com\",\n    \"scope\": \"all\",\n    \"parent_master_customer_id\": \"\",\n    \"logo\": \"\",\n    \"developers\": [\n        {\n            \"user_name\": \"test@sikkasoft.com\",\n            \"developer_id\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\n            \"registration_date\": \"3/28/2012 2:28:50 PM\",\n            \"status\": \"active\",\n            \"name\": \"Sikka Admin\",\n            \"address_line1\": \"830 Hillview Court\",\n            \"address_line2\": \"Suite 290\",\n            \"cell\": \"xxxxxxxxxx\",\n            \"city\": \"Milpitas\",\n            \"country\": \"United States\",\n            \"parent_developer_id\": \"\",\n            \"phone\": \"xxxxxxxxxx\",\n            \"state\": \"CA\",\n            \"user_type\": \"Super Admin\",\n            \"zipcode\": \"95035\"\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "list of authorized practices",
+          "id": "15a628ad-7502-4062-4f94-2bdaa9718df0",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "{{authurl}}/authorized_practices?app_id={{app_id}}&app_key={{app_key}}",
+              "host": [
+                "{{authurl}}"
+              ],
+              "path": [
+                "authorized_practices"
+              ],
+              "query": [
+                {
+                  "key": "app_id",
+                  "value": "{{app_id}}"
+                },
+                {
+                  "key": "app_key",
+                  "value": "{{app_key}}"
+                }
+              ]
+            },
+            "description": "Return the list of practices & your application has authorized to access data\n\n|Parameter|Description|Required|\n|---|---|---|\n|app_id|This is the ID assigned to the application when the application is registered on API portal|Yes|\n|app_key|This is the unique key generated when the application is registered on API portal|Yes|\n|practice_management_system_refresh_date_time_zone|Time Zone|No\n|show|Possible value for this parameter is \"all\" to show all practices|No|\n|practice_id|Practice ID, only works when show=all used|No|\n\n|Field | Note |\n|------|-------|\n|`office_id` | Unique office id in Sikka system. This will require in `start` API call|\n|`secret_key` | Unique secret key of office in Sikka system. This will require in `start` API call|\n|`domain` | domain / vertical of practice|\n|`practice_name` | Name of practice when user signed up for Sikka account |\n|`practice_management_system`| Practice management system of practice.| \n|`financial_system`| Financial system of practice when user signed up for Sikka account |\n|`practice_management_system_refresh_date`| This date indicates when SPC has sync. with practice management system.This is local time as per practice location. see below `practice_management_system_refresh_date_time_zone`  |\n|`data_synchronization_date`| This date indicates when SPC has sync. with sikka cloud database. This is local time as per practice location. see below `practice_management_system_refresh_date_time_zone`  |\n|`data_insert_date`| This date indicates when practice management system data inserted into sikka cloud database.This date shows latest data updated date. This is local time as per practice location. see below `practice_management_system_refresh_date_time_zone`  |\n|`practice_management_system_refresh_date_time_zone`| Time zone of practice location. |\n|`practice_id` | practice_id(Location ID) of the practice for office id in Sikka system. |\n\n> To make sure practice data is updated or not : check `data_insert_date` . if `data_insert_date` is latest or greater then last data insert date that means practice data is updated successfully. If `data_insert_date` is old or not changing please refresh SPC on client location."
+          },
+          "response": [
+            {
+              "id": "059cde54-3761-618e-e5f4-4ce2b5469f9e",
+              "name": "request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
+                "url": {
+                  "raw": "{{authurl}}/authorized_practices?app_id={{app_id}}&app_key={{app_key}}",
+                  "host": [
+                    "{{authurl}}"
+                  ],
+                  "path": [
+                    "authorized_practices"
+                  ],
+                  "query": [
+                    {
+                      "key": "app_id",
+                      "value": "{{app_id}}"
+                    },
+                    {
+                      "key": "app_key",
+                      "value": "{{app_key}}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Content-Type",
+                  "name": "Access-Control-Allow-Headers",
+                  "description": ""
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "name": "Access-Control-Allow-Origin",
+                  "description": ""
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "private",
+                  "name": "Cache-Control",
+                  "description": ""
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip",
+                  "name": "Content-Encoding",
+                  "description": ""
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "676",
+                  "name": "Content-Length",
+                  "description": ""
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "name": "Content-Type",
+                  "description": ""
+                },
+                {
+                  "key": "Date",
+                  "value": "Wed, 03 May 2017 20:42:21 GMT",
+                  "name": "Date",
+                  "description": ""
+                },
+                {
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5",
+                  "name": "Server",
+                  "description": ""
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding",
+                  "name": "Vary",
+                  "description": ""
+                },
+                {
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "name": "X-AspNet-Version",
+                  "description": ""
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "name": "X-Powered-By",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": "544",
+              "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"500\",\n        \"total_count\": \"2\",\n        \"items\": [\n            {\n                \"office_id\": \"xxxxx\",\n                \"domain\": \"Dental\",\n                \"href\": \"https://api.sikkasoft.com/auth/v2/authorized_practices/xxxxx\",\n                \"secret_key\": \"xxxxxxxxxxxxxxxxxxx\",\n                \"practice_name\": \"Demo Dental Care Testing Internal Use Only\",\n                \"address\": \"121 Main Street\",\n                \"city\": \"San Jose\",\n                \"state\": \"CA\",\n                \"zip\": \"95335\",\n                \"practice_management_system\": \"Dentrix\",\n                \"financial_system\": \"\",\n                \"practice_management_system_refresh_date\": \"2017-03-23 12:09:10\",\n                \"data_synchronization_date\": \"1900-01-01 00:00:00\",\n                \"data_insert_date\": \"2017-03-23 12:56:01\",\n                \"practice_management_system_version\": \"V16.2\",\n                \"practice_management_system_refresh_date_time_zone\": \"India Standard Time\",\n                \"practice_id\": \"1\"\n            },\n            {\n                \"office_id\": \"xxxxx\",\n                \"domain\": \"Veterinary\",\n                \"href\": \"https://api.sikkasoft.com/auth/v2/authorized_practices/xxxxx\",\n                \"secret_key\": \"xxxxxxxxxxxxxxxxxxx\",\n                \"practice_name\": \"SikkaAPI Vet Demo\",\n                \"address\": \"Street 123\",\n                \"city\": \"San JOse\",\n                \"state\": \"CA\",\n                \"zip\": \"95116\",\n                \"practice_management_system\": \"\",\n                \"financial_system\": \"\",\n                \"practice_management_system_refresh_date\": \"\",\n                \"data_synchronization_date\": \"\",\n                \"data_insert_date\": \"\",\n                \"practice_management_system_version\": \"\",\n                \"practice_management_system_refresh_date_time_zone\": \"\",\n                \"practice_id\": \"1\"\n            }\n        ]\n    }\n]"
+            },
+            {
+              "id": "3a0ffa4b-8259-06e4-cf70-6bd50def3536",
+              "name": "list of authorized practices with show=all",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
+                "url": {
+                  "raw": "{{authurl}}/authorized_practices?app_id={{app_id}}&app_key={{app_key}}&show=all&practice_id={practice_id}",
+                  "host": [
+                    "{{authurl}}"
+                  ],
+                  "path": [
+                    "authorized_practices"
+                  ],
+                  "query": [
+                    {
+                      "key": "app_id",
+                      "value": "{{app_id}}"
+                    },
+                    {
+                      "key": "app_key",
+                      "value": "{{app_key}}"
+                    },
+                    {
+                      "key": "show",
+                      "value": "all"
+                    },
+                    {
+                      "key": "practice_id",
+                      "value": "{practice_id}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "",
+              "header": [],
+              "cookie": [],
+              "responseTime": "0",
+              "body": "[\r\n  {\r\n    \"offset\": \"0\",\r\n    \"limit\": \"500\",\r\n    \"total_count\": \"2\",\r\n    \"items\": [\r\n      {\r\n        \"office_id\": \"xxxxx\",\r\n        \"domain\": \"Dental\",\r\n        \"href\": \"https://api.sikkasoft.com/auth/v2/authorized_practices/xxxxx\",\r\n        \"secret_key\": \"xxxxxxxxxxxxxxxxxxx\",\r\n        \"practice_name\": \"Demo Dental Care Testing Internal Use Only\",\r\n        \"address\": \"121 Main Street\",\r\n        \"city\": \"San Jose\",\r\n        \"state\": \"CA\",\r\n        \"zip\": \"95335\",\r\n        \"practice_management_system\": \"Dentrix\",\r\n        \"financial_system\": \"\",\r\n        \"practice_management_system_refresh_date\": \"2017-03-23 12:09:10\",\r\n        \"data_synchronization_date\": \"1900-01-01 00:00:00\",\r\n        \"data_insert_date\": \"2017-03-23 12:56:01\",\r\n        \"practice_management_system_version\": \"V16.2\",\r\n        \"practice_management_system_refresh_date_time_zone\": \"India Standard Time\",\r\n\t\t\"practice_id\": \"1\"\r\n      },\r\n      {\r\n        \"office_id\": \"xxxxx\",\r\n        \"domain\": \"Veterinary\",\r\n        \"href\": \"https://api.sikkasoft.com/auth/v2/authorized_practices/xxxxx\",\r\n        \"secret_key\": \"xxxxxxxxxxxxxxxxxxx\",\r\n        \"practice_name\": \"SikkaAPI Vet Demo\",\r\n        \"address\": \"Street 123\",\r\n        \"city\": \"San JOse\",\r\n        \"state\": \"CA\",\r\n        \"zip\": \"95116\",\r\n        \"practice_management_system\": \"\",\r\n        \"financial_system\": \"\",\r\n        \"practice_management_system_refresh_date\": \"\",\r\n        \"data_synchronization_date\": \"\",\r\n        \"data_insert_date\": \"\",\r\n        \"practice_management_system_version\": \"\",\r\n        \"practice_management_system_refresh_date_time_zone\": \"\",\r\n\t\t\"practice_id\": \"2\"\r\n      }\r\n    ]\r\n  }\r\n]"
+            }
+          ]
+        },
+        {
+          "name": "list of authorized practices by office id",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "tests[\"Response time is less than 200ms\"] = responseTime < 200;",
+                  "",
+                  "tests[\"Status code is 200\"] = responseCode.code === 200;"
+                ]
+              }
+            }
+          ],
+          "id": "f8835107-bca2-f708-1eaa-165e3f7b62d9",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "{{authurl}}/authorized_practices/{{office_id}}?app_id={{app_id}}&app_key={{app_key}}",
+              "host": [
+                "{{authurl}}"
+              ],
+              "path": [
+                "authorized_practices",
+                "{{office_id}}"
+              ],
+              "query": [
+                {
+                  "key": "app_id",
+                  "value": "{{app_id}}"
+                },
+                {
+                  "key": "app_key",
+                  "value": "{{app_key}}"
+                }
+              ]
+            },
+            "description": "Return the practice information, your application authorized to access data\n\n|Parameter|Description|Required|\n|---|---|---|\n|app_id|This is the ID assigned to the application when the application is registered on API portal|Yes|\n|app_key|This is the unique key generated when the application is registered on API portal|Yes|\n|show|Possible value for this parameter is \"all\" to show all practices|No|\n|practice_id|Practice ID, only works when show=all used|No|"
+          },
+          "response": [
+            {
+              "id": "2fb40165-6e58-9d15-6cf6-dbc635769f5f",
+              "name": "request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
+                "url": {
+                  "raw": "{{authurl}}/authorized_practices/{{office_id}}?app_id={{app_id}}&app_key={{app_key}}",
+                  "host": [
+                    "{{authurl}}"
+                  ],
+                  "path": [
+                    "authorized_practices",
+                    "{{office_id}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "app_id",
+                      "value": "{{app_id}}"
+                    },
+                    {
+                      "key": "app_key",
+                      "value": "{{app_key}}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "Cache-Control",
+                  "key": "Cache-Control",
+                  "value": "private",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Encoding",
+                  "key": "Content-Encoding",
+                  "value": "gzip",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Length",
+                  "key": "Content-Length",
+                  "value": "411",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Type",
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": ""
+                },
+                {
+                  "name": "Date",
+                  "key": "Date",
+                  "value": "Fri, 16 Jun 2017 07:25:06 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "Server",
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5",
+                  "description": ""
+                },
+                {
+                  "name": "Vary",
+                  "key": "Vary",
+                  "value": "Accept-Encoding",
+                  "description": ""
+                },
+                {
+                  "name": "X-AspNet-Version",
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "description": ""
+                },
+                {
+                  "name": "X-Powered-By",
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": "1160",
+              "body": "{\n    \"office_id\": \"xxxxx\",\n    \"domain\": \"Dental\",\n    \"href\": \"https://api.sikkasoft.com/auth/v2/authorized_practices/xxxxx\",\n    \"secret_key\": \"xxxxxxxxxxxxxxxxxxx\",\n    \"practice_name\": \"Loadtest Dental\",\n    \"address\": \"San jose\",\n    \"city\": \"San Jose\",\n    \"state\": \"California\",\n    \"zip\": \"95011\",\n    \"practice_management_system\": \"\",\n    \"financial_system\": \"\",\n    \"practice_management_system_refresh_date\": \"\",\n    \"data_synchronization_date\": \"\",\n    \"data_insert_date\": \"\",\n    \"practice_management_system_version\": \"\",\n    \"practice_management_system_refresh_date_time_zone\": \"\",\n    \"practice_id\": \"1\"\n}"
+            },
+            {
+              "id": "5c99bdf8-7bad-897a-084a-916196aa9940",
+              "name": "list of authorized practices by office id with show=all",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
+                "url": {
+                  "raw": "{{authurl}}/authorized_practices/{{office_id}}?app_id={{app_id}}&app_key={{app_key}}&show=all&practice_id={practice_id}",
+                  "host": [
+                    "{{authurl}}"
+                  ],
+                  "path": [
+                    "authorized_practices",
+                    "{{office_id}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "app_id",
+                      "value": "{{app_id}}"
+                    },
+                    {
+                      "key": "app_key",
+                      "value": "{{app_key}}"
+                    },
+                    {
+                      "key": "show",
+                      "value": "all"
+                    },
+                    {
+                      "key": "practice_id",
+                      "value": "{practice_id}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "",
+              "header": [],
+              "cookie": [],
+              "responseTime": "0",
+              "body": "[\r\n  {\r\n    \"offset\": \"0\",\r\n    \"limit\": \"500\",\r\n    \"total_count\": \"2\",\r\n    \"items\": [\r\n      {\r\n        \"office_id\": \"xxxxx\",\r\n        \"domain\": \"Dental\",\r\n        \"href\": \"https://api.sikkasoft.com/auth/v2/authorized_practices/xxxxx\",\r\n        \"secret_key\": \"xxxxxxxxxxxxxxxxxxx\",\r\n        \"practice_name\": \"Demo Dental Care Testing Internal Use Only\",\r\n        \"address\": \"121 Main Street\",\r\n        \"city\": \"San Jose\",\r\n        \"state\": \"CA\",\r\n        \"zip\": \"95335\",\r\n        \"practice_management_system\": \"Dentrix\",\r\n        \"financial_system\": \"\",\r\n        \"practice_management_system_refresh_date\": \"2017-03-23 12:09:10\",\r\n        \"data_synchronization_date\": \"1900-01-01 00:00:00\",\r\n        \"data_insert_date\": \"2017-03-23 12:56:01\",\r\n        \"practice_management_system_version\": \"V16.2\",\r\n        \"practice_management_system_refresh_date_time_zone\": \"India Standard Time\",\r\n\t\t\"practice_id\": \"1\"\r\n      },\r\n      {\r\n        \"office_id\": \"xxxxx\",\r\n        \"domain\": \"Veterinary\",\r\n        \"href\": \"https://api.sikkasoft.com/auth/v2/authorized_practices/xxxxx\",\r\n        \"secret_key\": \"xxxxxxxxxxxxxxxxxxx\",\r\n        \"practice_name\": \"SikkaAPI Vet Demo\",\r\n        \"address\": \"Street 123\",\r\n        \"city\": \"San JOse\",\r\n        \"state\": \"CA\",\r\n        \"zip\": \"95116\",\r\n        \"practice_management_system\": \"\",\r\n        \"financial_system\": \"\",\r\n        \"practice_management_system_refresh_date\": \"\",\r\n        \"data_synchronization_date\": \"\",\r\n        \"data_insert_date\": \"\",\r\n        \"practice_management_system_version\": \"\",\r\n        \"practice_management_system_refresh_date_time_zone\": \"\",\r\n\t\t\"practice_id\": \"2\"\r\n      }\r\n    ]\r\n  }\r\n]"
+            }
+          ]
+        },
+        {
+          "name": "request_key_info",
+          "id": "a31b027f-33eb-ede4-1519-1f86be65f3a6",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "{{url}}/request_key_info?request_key={{request_key}}",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "request_key_info"
+              ],
+              "query": [
+                {
+                  "key": "request_key",
+                  "value": "{{request_key}}"
+                }
+              ]
+            },
+            "description": "Accepts an request key and returns information about that request key including which office id was it issued to, the intended target of the request key, the scopes the user consented to, the remaining lifetime of the request key.\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|"
+          },
+          "response": [
+            {
+              "id": "e11c8760-cfed-a7d5-8f3e-baabd74a44f1",
+              "name": "request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
+                "url": {
+                  "raw": "{{url}}/request_key_info?request_key={{request_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "request_key_info"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "{{request_key}}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "Access-Control-Allow-Headers",
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "accept, authorization, Content-Type, X-Session-Id",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Methods",
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Origin",
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "description": ""
+                },
+                {
+                  "name": "Cache-Control",
+                  "key": "Cache-Control",
+                  "value": "private",
+                  "description": ""
+                },
+                {
+                  "name": "Connection",
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Length",
+                  "key": "Content-Length",
+                  "value": "312",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Type",
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": ""
+                },
+                {
+                  "name": "Date",
+                  "key": "Date",
+                  "value": "Thu, 27 Apr 2017 08:41:18 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "Server",
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5",
+                  "description": ""
+                },
+                {
+                  "name": "X-AspNet-Version",
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "description": ""
+                },
+                {
+                  "name": "X-Powered-By",
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": "1025",
+              "body": "{\n    \"href\": \"https://api.sikkasoft.com/v2/request_key_info?request_key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\n    \"request_key\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\n    \"start_time\": \"4/26/2017 8:59:06 AM\",\n    \"end_time\": \"\",\n    \"expires_in\": \"1068 second(s)\",\n    \"issued_to\": \"xxxxx\",\n    \"status\": \"active\",\n    \"request_count\": \"50\",\n    \"scope\": \"all\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "request_key",
+          "id": "35a7444b-74dd-d84e-5dd2-f9125ea47848",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "{{authurl}}/request_keys?app_id={{app_id}}&app_key={{app_key}}&office_id={{office_id}}&secret_key={{secret_key}}",
+              "host": [
+                "{{authurl}}"
+              ],
+              "path": [
+                "request_keys"
+              ],
+              "query": [
+                {
+                  "key": "app_id",
+                  "value": "{{app_id}}"
+                },
+                {
+                  "key": "app_key",
+                  "value": "{{app_key}}"
+                },
+                {
+                  "key": "office_id",
+                  "value": "{{office_id}}"
+                },
+                {
+                  "key": "secret_key",
+                  "value": "{{secret_key}}"
+                }
+              ]
+            },
+            "description": "Generate the request keys. This API is same as `start` API call . Both are same\n\n\n|Parameter\t|Description\t|Required?|\n|---|---|---|\n|app_id\t|This is the ID assigned to the application when the application is registered on API portal|\tYes|\n|app_key|\tThis is the unique key generated when the application is registered on API portal\t|Yes|\n|office_id|\tMastercustomerid, This is the ID assigned to a practice when that practice is added\t|Yes|\n|secret_key|\tThis is the Secrete Key generated for that practice, when practice is added\t|Yes|"
+          },
+          "response": [
+            {
+              "id": "e7e97e1a-28e9-e66a-23ef-594148bb8608",
+              "name": "request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
+                "url": {
+                  "raw": "{{authurl}}/request_keys?app_id={{app_id}}&app_key={{app_key}}&office_id={{office_id}}&secret_key={{secret_key}}",
+                  "host": [
+                    "{{authurl}}"
+                  ],
+                  "path": [
+                    "request_keys"
+                  ],
+                  "query": [
+                    {
+                      "key": "app_id",
+                      "value": "{{app_id}}"
+                    },
+                    {
+                      "key": "app_key",
+                      "value": "{{app_key}}"
+                    },
+                    {
+                      "key": "office_id",
+                      "value": "{{office_id}}"
+                    },
+                    {
+                      "key": "secret_key",
+                      "value": "{{secret_key}}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Content-Type",
+                  "name": "Access-Control-Allow-Headers",
+                  "description": ""
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "name": "Access-Control-Allow-Origin",
+                  "description": ""
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "private",
+                  "name": "Cache-Control",
+                  "description": ""
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip",
+                  "name": "Content-Encoding",
+                  "description": ""
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "250",
+                  "name": "Content-Length",
+                  "description": ""
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "name": "Content-Type",
+                  "description": ""
+                },
+                {
+                  "key": "Date",
+                  "value": "Wed, 03 May 2017 21:53:59 GMT",
+                  "name": "Date",
+                  "description": ""
+                },
+                {
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5",
+                  "name": "Server",
+                  "description": ""
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding",
+                  "name": "Vary",
+                  "description": ""
+                },
+                {
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "name": "X-AspNet-Version",
+                  "description": ""
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "name": "X-Powered-By",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": "513",
+              "body": "{\n    \"scope\": \"https://api.sikkasoft.com/v2/\",\n    \"request_key\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\n    \"token_type\": \"Bearer\",\n    \"expires_in\": \"86400\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "list of all request keys made by application",
+          "id": "41e11422-50cf-f41f-bc26-695725c380ef",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "{{authurl}}/request_keys_details?app_id={{app_id}}&app_key={{app_key}}",
+              "host": [
+                "{{authurl}}"
+              ],
+              "path": [
+                "request_keys_details"
+              ],
+              "query": [
+                {
+                  "key": "app_id",
+                  "value": "{{app_id}}"
+                },
+                {
+                  "key": "app_key",
+                  "value": "{{app_key}}"
+                }
+              ]
+            },
+            "description": "Accepts application id and application key and returns information about all the API calls made by application in last 24 hrs. It contains request keys , api name , response time , data size , time , request status , parameters , response time per request_key.\n\n|Parameter\t|Description\t|Required?|\n|---|---|---|\n|app_id\t|This is the ID assigned to the application when the application is registered on API portal|\tYes|\n|app_key|\tThis is the unique key generated when the application is registered on API portal\t|Yes|"
+          },
+          "response": [
+            {
+              "id": "ea2de191-d4f1-9e5d-0f86-580a4ecd12d9",
+              "name": "request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
+                "url": {
+                  "raw": "{{authurl}}/request_keys_details?app_id={{app_id}}&app_key={{app_key}}",
+                  "host": [
+                    "{{authurl}}"
+                  ],
+                  "path": [
+                    "request_keys_details"
+                  ],
+                  "query": [
+                    {
+                      "key": "app_id",
+                      "value": "{{app_id}}"
+                    },
+                    {
+                      "key": "app_key",
+                      "value": "{{app_key}}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Content-Type",
+                  "name": "Access-Control-Allow-Headers",
+                  "description": ""
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "name": "Access-Control-Allow-Origin",
+                  "description": ""
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "private",
+                  "name": "Cache-Control",
+                  "description": ""
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip",
+                  "name": "Content-Encoding",
+                  "description": ""
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "596",
+                  "name": "Content-Length",
+                  "description": ""
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "name": "Content-Type",
+                  "description": ""
+                },
+                {
+                  "key": "Date",
+                  "value": "Wed, 03 May 2017 21:59:30 GMT",
+                  "name": "Date",
+                  "description": ""
+                },
+                {
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5",
+                  "name": "Server",
+                  "description": ""
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding",
+                  "name": "Vary",
+                  "description": ""
+                },
+                {
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "name": "X-AspNet-Version",
+                  "description": ""
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "name": "X-Powered-By",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": "377",
+              "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"500\",\n        \"total_count\": \"2\",\n        \"items\": [\n            {\n                \"request_key\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\n                \"api\": \"start\",\n                \"time\": \"5/3/2017 9:53:59 PM\",\n                \"response_time_ms\": \"62\",\n                \"datasize_bytes\": \"139\",\n                \"request_ip\": \"24.104.64.134\",\n                \"parameters\": \"app_id=aU839ROq32PD58vUAFcssWoPPf6tHxtcIH8LpYcgYFASScM0mQBX/A==&app_key=uoVEPwnh9M63DKdgOsoh8DvPOCCSEIoPVqf30x/YSzsSScM0mQBX/A==&office_id=Ww+/CHlJiig=&secret_key=afRpggkgf9AT1G9s7XV9gmXnv0kLjeLd\",\n                \"request_status\": \"success\",\n                \"type\": \"json\"\n            },\n            {\n                \"request_key\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\n                \"api\": \"start\",\n                \"time\": \"5/3/2017 9:59:28 PM\",\n                \"response_time_ms\": \"32\",\n                \"datasize_bytes\": \"139\",\n                \"request_ip\": \"24.104.64.134\",\n                \"parameters\": \"app_id=aU839ROq32PD58vUAFcssWoPPf6tHxtcIH8LpYcgYFASScM0mQBX/A==&app_key=uoVEPwnh9M63DKdgOsoh8DvPOCCSEIoPVqf30x/YSzsSScM0mQBX/A==&office_id=Ww+/CHlJiig=&secret_key=afRpggkgf9AT1G9s7XV9gmXnv0kLjeLd\",\n                \"request_status\": \"success\",\n                \"type\": \"json\"\n            }\n        ]\n    }\n]"
+            }
+          ]
+        },
+        {
+          "name": "reset password",
+          "id": "7545999b-4705-15d4-3de2-70b2e8d37d12",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "{{authurl}}/reset_password?account_type=provider&pw={new password}&app_id={{app_id}}&app_key={{app_key}}&email={account owner 's email}&vcode={verification code}&encrypted={true/false}",
+              "host": [
+                "{{authurl}}"
+              ],
+              "path": [
+                "reset_password"
+              ],
+              "query": [
+                {
+                  "key": "account_type",
+                  "value": "provider"
+                },
+                {
+                  "key": "pw",
+                  "value": "{new password}"
+                },
+                {
+                  "key": "app_id",
+                  "value": "{{app_id}}"
+                },
+                {
+                  "key": "app_key",
+                  "value": "{{app_key}}"
+                },
+                {
+                  "key": "email",
+                  "value": "{account owner 's email}"
+                },
+                {
+                  "key": "vcode",
+                  "value": "{verification code}"
+                },
+                {
+                  "key": "encrypted",
+                  "value": "{true/false}"
+                }
+              ]
+            },
+            "description": "The `reset_password` API is used to change the password, after getting the verification code. After app request API to send verification code.In next step user should pass encrypted verification code and encrypted new password via `reset_password` API. This API will check for verification code and if it is correct then changes the password to the new one, or error message will be given. After password change user can log in with new password.\n\n|Parameter\t|Description\t|Required?|\n|---|---|---|\n|app_id\t|This is the ID assigned to the application when the application is registered on API portal|\tYes|\n|app_key|\tThis is the unique key generated when the application is registered on API portal\t|Yes|\n|account_type|\tprovider or patient\t|Yes|\n|pw|\tPassword. Use this parameter's value after encryption. please check the encrypt API call to encrypt value.\t|Yes|\n|email|\tEmail id of patient / provider\t|Yes|\n|vcode|\tverification code. Encrypt verification code before passing to request\t|Yes|\n|encrypted|\tEncrypted is string variable. It can be “true” or “false”. Default value is “true”. If you want to send encrypted username , password , verification code then set encrypted=true otherwise for plain text set it encrypted=false\t|No|"
+          },
+          "response": [
+            {
+              "id": "7187f74f-51ff-2b1e-38b0-03b855eb6b84",
+              "name": "request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
+                "url": {
+                  "raw": "{{authurl}}/reset_password?account_type=provider&pw={new password}&app_id={{app_id}}&app_key={{app_key}}&email={account owner 's email}&vcode={verification code}&encrypted={true/false}",
+                  "host": [
+                    "{{authurl}}"
+                  ],
+                  "path": [
+                    "reset_password"
+                  ],
+                  "query": [
+                    {
+                      "key": "account_type",
+                      "value": "provider"
+                    },
+                    {
+                      "key": "pw",
+                      "value": "{new password}"
+                    },
+                    {
+                      "key": "app_id",
+                      "value": "{{app_id}}"
+                    },
+                    {
+                      "key": "app_key",
+                      "value": "{{app_key}}"
+                    },
+                    {
+                      "key": "email",
+                      "value": "{account owner 's email}"
+                    },
+                    {
+                      "key": "vcode",
+                      "value": "{verification code}"
+                    },
+                    {
+                      "key": "encrypted",
+                      "value": "{true/false}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Content-Type",
+                  "name": "Access-Control-Allow-Headers",
+                  "description": ""
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "name": "Access-Control-Allow-Origin",
+                  "description": ""
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "private",
+                  "name": "Cache-Control",
+                  "description": ""
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip",
+                  "name": "Content-Encoding",
+                  "description": ""
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "266",
+                  "name": "Content-Length",
+                  "description": ""
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "name": "Content-Type",
+                  "description": ""
+                },
+                {
+                  "key": "Date",
+                  "value": "Wed, 03 May 2017 22:13:58 GMT",
+                  "name": "Date",
+                  "description": ""
+                },
+                {
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5",
+                  "name": "Server",
+                  "description": ""
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding",
+                  "name": "Vary",
+                  "description": ""
+                },
+                {
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "name": "X-AspNet-Version",
+                  "description": ""
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "name": "X-Powered-By",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": "1275",
+              "body": "{\"http_code\":\"200\",\"http_code_desc\":\"OK\",\"sikka_status_code\":\"API4001\",\"short_message\":\"\",\"long_message\":\" Password changed successfully. You can login with new password.\",\"more_information\":\"\"}\r\n"
+            }
+          ]
+        },
+        {
+          "name": "detail activity about particular request_key",
+          "id": "cdb636a5-0ed4-3ca1-fca8-0bff6d174f39",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{authurl}}/request_keys_details/{{request_key}}?app_id={{app_id}}&app_key={{app_key}}",
+              "host": [
+                "{{authurl}}"
+              ],
+              "path": [
+                "request_keys_details",
+                "{{request_key}}"
+              ],
+              "query": [
+                {
+                  "key": "app_id",
+                  "value": "{{app_id}}"
+                },
+                {
+                  "key": "app_key",
+                  "value": "{{app_key}}"
+                }
+              ]
+            },
+            "description": "Accepts application id and application key and returns detail activity information about all the API calls made by request key in last 24 hrs. It contains api name , response time , data size , time , request status , parameters , response time per request_key.\n\n|Parameter\t|Description\t|Required?|\n|---|---|---|\n|app_id\t|This is the ID assigned to the application when the application is registered on API portal|\tYes|\n|app_key|\tThis is the unique key generated when the application is registered on API portal\t|Yes|"
+          },
+          "response": [
+            {
+              "id": "440b8027-8d0f-d82b-a442-f8825ba93769",
+              "name": "request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
+                "url": {
+                  "raw": "{{authurl}}/request_keys_details/{{request_key}}?app_id={{app_id}}&app_key={{app_key}}",
+                  "host": [
+                    "{{authurl}}"
+                  ],
+                  "path": [
+                    "request_keys_details",
+                    "{{request_key}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "app_id",
+                      "value": "{{app_id}}"
+                    },
+                    {
+                      "key": "app_key",
+                      "value": "{{app_key}}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Content-Type",
+                  "name": "Access-Control-Allow-Headers",
+                  "description": ""
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "name": "Access-Control-Allow-Origin",
+                  "description": ""
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "private",
+                  "name": "Cache-Control",
+                  "description": ""
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip",
+                  "name": "Content-Encoding",
+                  "description": ""
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "598",
+                  "name": "Content-Length",
+                  "description": ""
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "name": "Content-Type",
+                  "description": ""
+                },
+                {
+                  "key": "Date",
+                  "value": "Wed, 03 May 2017 22:05:05 GMT",
+                  "name": "Date",
+                  "description": ""
+                },
+                {
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5",
+                  "name": "Server",
+                  "description": ""
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding",
+                  "name": "Vary",
+                  "description": ""
+                },
+                {
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "name": "X-AspNet-Version",
+                  "description": ""
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "name": "X-Powered-By",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": "94",
+              "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"500\",\n        \"total_count\": \"2\",\n        \"items\": [\n            {\n                \"request_key\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\n                \"api\": \"start\",\n                \"time\": \"5/3/2017 9:59:28 PM\",\n                \"response_time_ms\": \"32\",\n                \"datasize_bytes\": \"139\",\n                \"request_ip\": \"24.104.64.134\",\n                \"parameters\": \"app_id=aU839ROq32PD58vUAFcssWoPPf6tHxtcIH8LpYcgYFASScM0mQBX/A==&app_key=uoVEPwnh9M63DKdgOsoh8DvPOCCSEIoPVqf30x/YSzsSScM0mQBX/A==&office_id=Ww+/CHlJiig=&secret_key=afRpggkgf9AT1G9s7XV9gmXnv0kLjeLd\",\n                \"request_status\": \"success\",\n                \"type\": \"json\"\n            },\n            {\n                \"request_key\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\n                \"api\": \"transactions\",\n                \"time\": \"5/3/2017 10:05:00 PM\",\n                \"response_time_ms\": \"550\",\n                \"datasize_bytes\": \"619239\",\n                \"request_ip\": \"24.104.64.134\",\n                \"parameters\": \"request_key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\n                \"request_status\": \"success\",\n                \"type\": \"json\"\n            }\n        ]\n    }\n]"
+            }
+          ]
+        },
+        {
+          "name": "send verification code",
+          "id": "d7b77b85-5cf2-e3b9-1a2a-8c08ddc05f32",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "{{authurl}}/send_verification_code?account_type={account_type}&un={username}&app_id={{app_id}}&app_key={{app_key}}&encrypted={true/false}",
+              "host": [
+                "{{authurl}}"
+              ],
+              "path": [
+                "send_verification_code"
+              ],
+              "query": [
+                {
+                  "key": "account_type",
+                  "value": "{account_type}"
+                },
+                {
+                  "key": "un",
+                  "value": "{username}"
+                },
+                {
+                  "key": "app_id",
+                  "value": "{{app_id}}"
+                },
+                {
+                  "key": "app_key",
+                  "value": "{{app_key}}"
+                },
+                {
+                  "key": "encrypted",
+                  "value": "{true/false}"
+                }
+              ]
+            },
+            "description": "To change or reset the Sikka account password. First you need to send the verification code to user. User will receive the  verification code and you can use that code in `reset_password` API "
+          },
+          "response": [
+            {
+              "id": "4cdda7ca-aaee-3366-18f7-e8eb3fd440a7",
+              "name": "request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
+                "url": {
+                  "raw": "{{authurl}}/send_verification_code?account_type={account_type}&un={username}&app_id={{app_id}}&app_key={{app_key}}&encrypted={true/false}",
+                  "host": [
+                    "{{authurl}}"
+                  ],
+                  "path": [
+                    "send_verification_code"
+                  ],
+                  "query": [
+                    {
+                      "key": "account_type",
+                      "value": "{account_type}"
+                    },
+                    {
+                      "key": "un",
+                      "value": "{username}"
+                    },
+                    {
+                      "key": "app_id",
+                      "value": "{{app_id}}"
+                    },
+                    {
+                      "key": "app_key",
+                      "value": "{{app_key}}"
+                    },
+                    {
+                      "key": "encrypted",
+                      "value": "{true/false}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "Content-Type",
+                  "name": "Access-Control-Allow-Headers",
+                  "description": ""
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "name": "Access-Control-Allow-Origin",
+                  "description": ""
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "private",
+                  "name": "Cache-Control",
+                  "description": ""
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip",
+                  "name": "Content-Encoding",
+                  "description": ""
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "279",
+                  "name": "Content-Length",
+                  "description": ""
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "name": "Content-Type",
+                  "description": ""
+                },
+                {
+                  "key": "Date",
+                  "value": "Wed, 03 May 2017 22:10:35 GMT",
+                  "name": "Date",
+                  "description": ""
+                },
+                {
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5",
+                  "name": "Server",
+                  "description": ""
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding",
+                  "name": "Vary",
+                  "description": ""
+                },
+                {
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "name": "X-AspNet-Version",
+                  "description": ""
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "name": "X-Powered-By",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": "171",
+              "body": "{\"http_code\":\"200\",\"http_code_desc\":\"OK\",\"sikka_status_code\":\"API4001\",\"short_message\":\"\",\"long_message\":\"Verification code sent to 'demo@sikkasoftware.com'. Please check your inbox for code.\",\"more_information\":\"\"}\r\n"
+            }
+          ]
+        },
+        {
+          "name": "sikka practice utility details",
+          "id": "8b29d208-d98a-0e8e-2573-76d5dd38fdea",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "https://api.sikkasoft.com/auth/v2/sikka_practice_utility_details?app_id={app_id}&app_key={app_key}",
+              "protocol": "https",
+              "host": [
+                "api",
+                "sikkasoft",
+                "com"
+              ],
+              "path": [
+                "auth",
+                "v2",
+                "sikka_practice_utility_details"
+              ],
+              "query": [
+                {
+                  "key": "app_id",
+                  "value": "{app_id}"
+                },
+                {
+                  "key": "app_key",
+                  "value": "{app_key}"
+                }
+              ]
+            },
+            "description": "This API gives detail results about SPC.\n\n|Parameter  |Description  |Required?|\n|---|---|---|\n|app_id  |This is the ID assigned to the application when the application is registered on API portal|  Yes|\n|app_key|  This is the unique key generated when the application is registered on API portal  |Yes|"
+          },
+          "response": [
+            {
+              "id": "c33d6ddc-b288-ec21-1a18-b1c4bd6157f0",
+              "name": "sample",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://api.sikkasoft.com/auth/v2/sikka_practice_utility_details?app_id={app_id}&app_key={app_key}",
+                  "protocol": "https",
+                  "host": [
+                    "api",
+                    "sikkasoft",
+                    "com"
+                  ],
+                  "path": [
+                    "auth",
+                    "v2",
+                    "sikka_practice_utility_details"
+                  ],
+                  "query": [
+                    {
+                      "key": "app_id",
+                      "value": "{app_id}"
+                    },
+                    {
+                      "key": "app_key",
+                      "value": "{app_key}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "Cache-Control",
+                  "key": "Cache-Control",
+                  "value": "private",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Encoding",
+                  "key": "Content-Encoding",
+                  "value": "gzip",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Length",
+                  "key": "Content-Length",
+                  "value": "1236",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Type",
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": ""
+                },
+                {
+                  "name": "Date",
+                  "key": "Date",
+                  "value": "Sat, 22 Jul 2017 05:03:58 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "Server",
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5",
+                  "description": ""
+                },
+                {
+                  "name": "Vary",
+                  "key": "Vary",
+                  "value": "Accept-Encoding",
+                  "description": ""
+                },
+                {
+                  "name": "X-AspNet-Version",
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "description": ""
+                },
+                {
+                  "name": "X-Powered-By",
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": "1591",
+              "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"500\",\n        \"total_count\": \"55\",\n        \"items\": [\n            {\n                \"office_id\": \"A5138\",\n                \"href\": \"https://api.sikkasoft.com/auth/v2/sikka_practice_utility_details/A5138\",\n                \"spc_id\": \"11573\",\n                \"practice_id\": \"3\",\n                \"refresh_time\": \"2015-01-14 15:58:47\",\n                \"teamviwer_id\": \"586172796\",\n                \"teamviwer_version\": \"TeamViewer7\",\n                \"spc_version\": \"\",\n                \"practice_management_system\": \"Sycle.Net\",\n                \"practice_management_system_version\": \"Web\",\n                \"practice_management_system_version_detected\": \"\",\n                \"practice_management_system_data_path\": \"D:\\\\\",\n                \"financial_management_system\": \"\",\n                \"financial_management_system_version\": \"\",\n                \"financial_management_system_version_detected\": \"\",\n                \"financial_management_system_data_path\": \"\",\n                \"spc_schedule_time\": \"2:00 AM\",\n                \"spc_schedule_type\": \"Daily\",\n                \"spc_schedule_interval\": \"6 Hours\",\n                \"is_spc_update_locked\": \"False\",\n                \"spc_update_lock_note\": \"\",\n                \"last_spc_updated_checked\": \"\",\n                \"is_delta_import_enable\": \"False\",\n                \"etl_start\": \"2015-01-14 15:45:04\",\n                \"etl_end\": \"2015-01-14 15:54:57\",\n                \"web_upload_start\": \"2015-01-14 15:55:11\",\n                \"web_upload_end\": \"2015-01-14 15:58:47\",\n                \"local_upload_start\": \"2015-01-14 15:55:11\",\n                \"local_upload_end\": \"2015-01-14 15:55:11\",\n                \"financial_etl_start\": \"2015-01-14 14:00:06\",\n                \"financial_etl_end\": \"2015-01-14 14:00:06\",\n                \"etl_error_log\": \"\",\n                \"etl_error_priority\": \"\",\n                \"etl_error_description\": \"\",\n                \"etl_cpu_utilization\": \"\",\n                \"etl_memory_utilization\": \"\",\n                \"financial_error_priority\": \"\",\n                \"financial_error_description\": \"\",\n                \"financial_etl_cpu_utilization\": \"\",\n                \"financial_etl_memory_utilization\": \"\",\n                \"local_insert_error_log\": \"\",\n                \"local_insert_error_priority\": \"\",\n                \"local_insert_cpu_utilization\": \"2.32361584878561\",\n                \"local_insert_memory_utilization\": \"80269312\",\n                \"local_upload_error_description\": \"\",\n                \"web_upload_error_flag\": \"\",\n                \"web_upload_error_priority\": \"\",\n                \"web_upload_bandwidth_utilization\": \"492832\",\n                \"web_upload_error_description\": \"\",\n                \"upload_to_server\": \"2015-01-14 10:29:55\",\n                \"upload_to_client\": \"2015-01-14 15:59:10\",\n                \"domain\": \"Audiology\",\n                \"spc_error_flag\": \"\",\n                \"spc_error_priority\": \"\",\n                \"spc_error_description\": \"\",\n                \"timezone\": \"\",\n                \"is_etl_edk\": \"\",\n                \"etl_version\": \"\",\n\t\t\t\t\"isinactive\": \"False\",\n\t\t\t\t\"operating_system\": \"Microsoft Windows 10 Pro\",\n\t\t\t\t\"machine_name\": \"MAIN\",\n\t\t\t\t\"disk_free_space\": \"323.60 GB\",\n\t\t\t\t\"download_speed\": \"11.38 MB\",\n\t\t\t\t\"memory\": \"4.00 GB\",\n\t\t\t\t\"installed_dot_net_version\": \"4.7.2 or later\"\n            },\n            {\n                \"office_id\": \"A6156\",\n                \"href\": \"https://api.sikkasoft.com/auth/v2/sikka_practice_utility_details/A6156\",\n                \"spc_id\": \"8669\",\n                \"practice_id\": \"1\",\n                \"refresh_time\": \"2015-09-05 08:32:39\",\n                \"teamviwer_id\": \"681882497\",\n                \"teamviwer_version\": \"TeamViewer8\",\n                \"spc_version\": \"3.3.0.1\",\n                \"practice_management_system\": \"Tims\",\n                \"practice_management_system_version\": \"V5.0\",\n                \"practice_management_system_version_detected\": \"\",\n                \"practice_management_system_data_path\": \"SERVER\\\\TIMS\",\n                \"financial_management_system\": \"\",\n                \"financial_management_system_version\": \"\",\n                \"financial_management_system_version_detected\": \"\",\n                \"financial_management_system_data_path\": \"\",\n                \"spc_schedule_time\": \"2:00 AM\",\n                \"spc_schedule_type\": \"Daily\",\n                \"spc_schedule_interval\": \"6 Hours\",\n                \"is_spc_update_locked\": \"False\",\n                \"spc_update_lock_note\": \"\",\n                \"last_spc_updated_checked\": \"\",\n                \"is_delta_import_enable\": \"True\",\n                \"etl_start\": \"2015-09-05 08:30:14\",\n                \"etl_end\": \"2015-09-05 08:30:16\",\n                \"web_upload_start\": \"2015-09-05 08:30:16\",\n                \"web_upload_end\": \"2015-09-05 08:32:39\",\n                \"local_upload_start\": \"2015-09-05 08:30:16\",\n                \"local_upload_end\": \"2015-09-05 08:30:16\",\n                \"financial_etl_start\": \"2015-09-05 08:30:16\",\n                \"financial_etl_end\": \"2015-09-05 08:30:16\",\n                \"etl_error_log\": \"\",\n                \"etl_error_priority\": \"\",\n                \"etl_error_description\": \"\",\n                \"etl_cpu_utilization\": \"0\",\n                \"etl_memory_utilization\": \"0\",\n                \"financial_error_priority\": \"\",\n                \"financial_error_description\": \"\",\n                \"financial_etl_cpu_utilization\": \"\",\n                \"financial_etl_memory_utilization\": \"\",\n                \"local_insert_error_log\": \"\",\n                \"local_insert_error_priority\": \"\",\n                \"local_insert_cpu_utilization\": \"0\",\n                \"local_insert_memory_utilization\": \"51798016\",\n                \"local_upload_error_description\": \"\",\n                \"web_upload_error_flag\": \"\",\n                \"web_upload_error_priority\": \"\",\n                \"web_upload_bandwidth_utilization\": \"0\",\n                \"web_upload_error_description\": \"\",\n                \"upload_to_server\": \"2015-09-05 13:33:12\",\n                \"upload_to_client\": \"2015-09-05 08:33:10\",\n                \"domain\": \"Audiology\",\n                \"spc_error_flag\": \"\",\n                \"spc_error_priority\": \"\",\n                \"spc_error_description\": \"\",\n                \"timezone\": \"\",\n                \"is_etl_edk\": \"\",\n                \"etl_version\": \"\",\n\t\t\t\t\"isinactive\": \"False\",\n\t\t\t\t\"operating_system\": \"Microsoft Windows 10 Pro\",\n\t\t\t\t\"machine_name\": \"MAIN\",\n\t\t\t\t\"disk_free_space\": \"323.60 GB\",\n\t\t\t\t\"download_speed\": \"11.38 MB\",\n\t\t\t\t\"memory\": \"4.00 GB\",\n\t\t\t\t\"installed_dot_net_version\": \"4.7.2 or later\"\n            }\n        ]\n    }\n]"
+            }
+          ]
+        },
+        {
+          "name": "sikka practice utility details by office id",
+          "id": "29a4a54d-b209-1f26-2249-abeb7a4d1c67",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "https://api.sikkasoft.com/auth/v2/sikka_practice_utility_details/{office_id}?app_id={app_id}&app_key={app_key}",
+              "protocol": "https",
+              "host": [
+                "api",
+                "sikkasoft",
+                "com"
+              ],
+              "path": [
+                "auth",
+                "v2",
+                "sikka_practice_utility_details",
+                "{office_id}"
+              ],
+              "query": [
+                {
+                  "key": "app_id",
+                  "value": "{app_id}"
+                },
+                {
+                  "key": "app_key",
+                  "value": "{app_key}"
+                }
+              ]
+            },
+            "description": "This API gives detail results about SPC by office id.\n\n|Parameter  |Description  |Required?|\n|---|---|---|\n|app_id  |This is the ID assigned to the application when the application is registered on API portal|  Yes|\n|app_key|  This is the unique key generated when the application is registered on API portal  |Yes|"
+          },
+          "response": [
+            {
+              "id": "d3176c1f-1c53-ea82-7a8b-dcddb396d62b",
+              "name": "sample",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://api.sikkasoft.com/auth/v2/sikka_practice_utility_details/{office_id}?app_id={app_id}&app_key={app_key}",
+                  "protocol": "https",
+                  "host": [
+                    "api",
+                    "sikkasoft",
+                    "com"
+                  ],
+                  "path": [
+                    "auth",
+                    "v2",
+                    "sikka_practice_utility_details",
+                    "{office_id}"
+                  ],
+                  "query": [
+                    {
+                      "key": "app_id",
+                      "value": "{app_id}"
+                    },
+                    {
+                      "key": "app_key",
+                      "value": "{app_key}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "Cache-Control",
+                  "key": "Cache-Control",
+                  "value": "private",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Encoding",
+                  "key": "Content-Encoding",
+                  "value": "gzip",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Length",
+                  "key": "Content-Length",
+                  "value": "874",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Type",
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": ""
+                },
+                {
+                  "name": "Date",
+                  "key": "Date",
+                  "value": "Sat, 22 Jul 2017 05:59:43 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "Server",
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5",
+                  "description": ""
+                },
+                {
+                  "name": "Vary",
+                  "key": "Vary",
+                  "value": "Accept-Encoding",
+                  "description": ""
+                },
+                {
+                  "name": "X-AspNet-Version",
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "description": ""
+                },
+                {
+                  "name": "X-Powered-By",
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": "1610",
+              "body": "[{\"offset\":\"0\",\"limit\":\"500\",\"total_count\":\"1\",\"items\":[{\"office_id\":\"A5138\",\"href\":\"https:\\/\\/api.sikkasoft.com\\/auth\\/v2\\/sikka_practice_utility_details\\/A5138\",\"spc_id\":\"11573\",\"practice_id\":\"3\",\"refresh_time\":\"2015-01-14 15:58:47\",\"teamviwer_id\":\"586172796\",\"teamviwer_version\":\"TeamViewer7\",\"spc_version\":\"\",\"practice_management_system\":\"Sycle.Net\",\"practice_management_system_version\":\"Web\",\"practice_management_system_version_detected\":\"\",\"practice_management_system_data_path\":\"D:\\\\\",\"financial_management_system\":\"\",\"financial_management_system_version\":\"\",\"financial_management_system_version_detected\":\"\",\"financial_management_system_data_path\":\"\",\"spc_schedule_time\":\"2:00 AM\",\"spc_schedule_type\":\"Daily\",\"spc_schedule_interval\":\"6 Hours\",\"is_spc_update_locked\":\"False\",\"spc_update_lock_note\":\"\",\"last_spc_updated_checked\":\"\",\"is_delta_import_enable\":\"False\",\"etl_start\":\"2015-01-14 15:45:04\",\"etl_end\":\"2015-01-14 15:54:57\",\"web_upload_start\":\"2015-01-14 15:55:11\",\"web_upload_end\":\"2015-01-14 15:58:47\",\"local_upload_start\":\"2015-01-14 15:55:11\",\"local_upload_end\":\"2015-01-14 15:55:11\",\"financial_etl_start\":\"2015-01-14 14:00:06\",\"financial_etl_end\":\"2015-01-14 14:00:06\",\"etl_error_log\":\"\",\"etl_error_priority\":\"\",\"etl_error_description\":\"\",\"etl_cpu_utilization\":\"\",\"etl_memory_utilization\":\"\",\"financial_error_priority\":\"\",\"financial_error_description\":\"\",\"financial_etl_cpu_utilization\":\"\",\"financial_etl_memory_utilization\":\"\",\"local_insert_error_log\":\"\",\"local_insert_error_priority\":\"\",\"local_insert_cpu_utilization\":\"2.32361584878561\",\"local_insert_memory_utilization\":\"80269312\",\"local_upload_error_description\":\"\",\"web_upload_error_flag\":\"\",\"web_upload_error_priority\":\"\",\"web_upload_bandwidth_utilization\":\"492832\",\"web_upload_error_description\":\"\",\"upload_to_server\":\"2015-01-14 10:29:55\",\"upload_to_client\":\"2015-01-14 15:59:10\",\"domain\":\"Audiology\",\"spc_error_flag\":\"\",\"spc_error_priority\":\"\",\"spc_error_description\":\"\",\"timezone\":\"\",\"is_etl_edk\":\"\",\"etl_version\":\"\",\"isinactive\": \"False\",\"operating_system\": \"Microsoft Windows 10 Pro\",\"machine_name\": \"MAIN\",\"disk_free_space\": \"323.60 GB\",\"download_speed\": \"11.38 MB\",\"memory\": \"4.00 GB\",\"installed_dot_net_version\": \"4.7.2 or later\"}]}]\r\n"
+            }
+          ]
+        },
+        {
+          "name": "pms_environment",
+          "id": "4076cada-524b-a921-5187-b1511d28d7f7",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "https://api.sikkasoft.com/auth/v2/pms_environment?app_id={app_id}&app_key={app_key}&value_type={value_type}&pms={pms}",
+              "protocol": "https",
+              "host": [
+                "api",
+                "sikkasoft",
+                "com"
+              ],
+              "path": [
+                "auth",
+                "v2",
+                "pms_environment"
+              ],
+              "query": [
+                {
+                  "key": "app_id",
+                  "value": "{app_id}"
+                },
+                {
+                  "key": "app_key",
+                  "value": "{app_key}"
+                },
+                {
+                  "key": "value_type",
+                  "value": "{value_type}"
+                },
+                {
+                  "key": "pms",
+                  "value": "{pms}"
+                }
+              ]
+            },
+            "description": "This API provides different status values of appointments, patients , treatment_plan etc.\n\n|Parameter  |Description  |Required?|\n|---|---|---|\n|app_id  |This is the ID assigned to the application when the application is registered on API portal|  Yes|\n|app_key|  This is the unique key generated when the application is registered on API portal  |Yes|\n|value_type|  Type of value  |No|\n|pms|  Name of practice management system  |No|"
+          },
+          "response": [
+            {
+              "id": "0ab91dc0-746a-c341-d9e9-1730a908e500",
+              "name": "sample",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
+                "url": {
+                  "raw": "https://api.sikkasoft.com/auth/v2/sikka_practice_utility_details?app_id={app_id}&app_key={app_key}",
+                  "protocol": "https",
+                  "host": [
+                    "api",
+                    "sikkasoft",
+                    "com"
+                  ],
+                  "path": [
+                    "auth",
+                    "v2",
+                    "sikka_practice_utility_details"
+                  ],
+                  "query": [
+                    {
+                      "key": "app_id",
+                      "value": "{app_id}"
+                    },
+                    {
+                      "key": "app_key",
+                      "value": "{app_key}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "Cache-Control",
+                  "key": "Cache-Control",
+                  "value": "private",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Encoding",
+                  "key": "Content-Encoding",
+                  "value": "gzip",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Length",
+                  "key": "Content-Length",
+                  "value": "1236",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Type",
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": ""
+                },
+                {
+                  "name": "Date",
+                  "key": "Date",
+                  "value": "Sat, 22 Jul 2017 05:03:58 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "Server",
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5",
+                  "description": ""
+                },
+                {
+                  "name": "Vary",
+                  "key": "Vary",
+                  "value": "Accept-Encoding",
+                  "description": ""
+                },
+                {
+                  "name": "X-AspNet-Version",
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "description": ""
+                },
+                {
+                  "name": "X-Powered-By",
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": "1591",
+              "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"2\",\r\n\t\"total_count\": \"29\",\r\n\t\"items\": [{\r\n\t\t\"pms\": \"Opendental\",\r\n\t\t\"value_type\": \"patient_status\",\r\n\t\t\"value\": \"0?\"\r\n\t}, {\r\n\t\t\"pms\": \"Opendental\",\r\n\t\t\"value_type\": \"patient_status\",\r\n\t\t\"value\": \"108?\"\r\n\t}]\r\n}]"
+            }
+          ]
+        },
+        {
+          "name": "remove_access",
+          "id": "073d4daa-0489-3db2-a3d9-551b8b2c7631",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": "https://api.sikkasoft.com/auth/v2/remove_access",
+            "description": "This API will allow API partners to remove API access from practices (office_id).\n\n|Parameter  |Description  |Required?|\n|---|---|---|\n|app_id  |This is the ID assigned to the application when the application is registered on API portal|  Yes|\n|app_key|  This is the unique key generated when the application is registered on API portal  |Yes|\n|office_id|  office_id  |Yes|\n|comment|  comment  |Yes|"
+          },
+          "response": [
+            {
+              "id": "88998003-162b-de94-e929-c2cf6900c15c",
+              "name": "sample",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n\t\"app_id\": \"app_id\",\r\n\t\"app_key\": \"app_key\",\r\n\t\"practices\": [{\r\n\t\t\t\"office_id\": \"office_id1\",\r\n\t\t\t\"comment\": \"comment\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"office_id\": \"office_id2\",\r\n\t\t\t\"comment\": \"comment\"\r\n\t\t}\r\n\t]\r\n}"
+                },
+                "url": "https://api.sikkasoft.com/auth/v2/remove_access"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "Cache-Control",
+                  "key": "Cache-Control",
+                  "value": "private",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Encoding",
+                  "key": "Content-Encoding",
+                  "value": "gzip",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Length",
+                  "key": "Content-Length",
+                  "value": "1236",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Type",
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": ""
+                },
+                {
+                  "name": "Date",
+                  "key": "Date",
+                  "value": "Sat, 22 Jul 2017 05:03:58 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "Server",
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5",
+                  "description": ""
+                },
+                {
+                  "name": "Vary",
+                  "key": "Vary",
+                  "value": "Accept-Encoding",
+                  "description": ""
+                },
+                {
+                  "name": "X-AspNet-Version",
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "description": ""
+                },
+                {
+                  "name": "X-Powered-By",
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": "1591",
+              "body": "{\r\n\t\"practices\": [{\r\n\t\t\"office_id\": \"office_id1\",\r\n\t\t\"comment\": \"DevTesting\",\r\n\t\t\"status\": \"access removed\"\r\n\t}, {\r\n\t\t\"office_id\": \"office_id2\",\r\n\t\t\"comment\": \"DevTesting\",\r\n\t\t\"status\": \"access removed\"\r\n\t}]\r\n}"
+            }
+          ]
+        }
+      ],
+      "id": "ef222857-1c8a-67ad-5c2c-9582a7fca19e",
+      "description": "Sikka authentication API contains all API related with Sikka authentication. Like account log in ,sign up , update and delete.\nAlso about request key information , application details , authentication etc.",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "7906aeb0-00f4-41a4-8358-e0f196165510",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "c103b5b1-f525-4d29-b77a-8d2b97679d2d",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Finance",
       "item": [
         {
@@ -23861,1998 +25853,6 @@
             }
           ],
           "id": "593510e3-c832-4c6b-90e6-3976dbc7e413"
-        },
-        {
-          "name": "Authentication API",
-          "item": [
-            {
-              "name": "applications",
-              "event": [
-                {
-                  "listen": "test",
-                  "script": {
-                    "type": "text/javascript",
-                    "exec": [
-                      "var jsonData = JSON.parse(responseBody);\r",
-                      "postman.setEnvironmentVariable(\"request_key\", jsonData[0].request_key);\r",
-                      "\r",
-                      "\r",
-                      "tests[\"start\"] = responseCode.code === 200;"
-                    ]
-                  }
-                }
-              ],
-              "id": "32279b62-5ad4-bc28-fce9-26f22e2e9080",
-              "request": {
-                "method": "GET",
-                "header": [],
-                "body": {
-                  "mode": "formdata",
-                  "formdata": []
-                },
-                "url": {
-                  "raw": "{{authurl}}/applications?app_id={{app_id}}&app_key={{app_key}}",
-                  "host": [
-                    "{{authurl}}"
-                  ],
-                  "path": [
-                    "applications"
-                  ],
-                  "query": [
-                    {
-                      "key": "app_id",
-                      "value": "{{app_id}}"
-                    },
-                    {
-                      "key": "app_key",
-                      "value": "{{app_key}}"
-                    }
-                  ]
-                },
-                "description": "This endpoint will return the application details. Including developers assigned to these applications, allowed APIs list and other information.\n\n|Parameter|Description|Required|\n|---|---|---|\n|app_id|This is the ID assigned to the application when the application is registered on API portal|Yes|\n|app_key|This is the unique key generated when the application is registered on API portal|Yes|"
-              },
-              "response": [
-                {
-                  "id": "db4b963d-c6d6-52f8-329a-cbb156d84141",
-                  "name": "request",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [],
-                    "body": {
-                      "mode": "formdata",
-                      "formdata": []
-                    },
-                    "url": {
-                      "raw": "{{authurl}}/applications?app_id={{app_id}}&app_key={{app_key}}",
-                      "host": [
-                        "{{authurl}}"
-                      ],
-                      "path": [
-                        "applications"
-                      ],
-                      "query": [
-                        {
-                          "key": "app_id",
-                          "value": "{{app_id}}"
-                        },
-                        {
-                          "key": "app_key",
-                          "value": "{{app_key}}"
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "key": "Access-Control-Allow-Headers",
-                      "value": "accept, authorization, Content-Type, X-Session-Id",
-                      "name": "Access-Control-Allow-Headers",
-                      "description": ""
-                    },
-                    {
-                      "key": "Access-Control-Allow-Methods",
-                      "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
-                      "name": "Access-Control-Allow-Methods",
-                      "description": ""
-                    },
-                    {
-                      "key": "Access-Control-Allow-Origin",
-                      "value": "*",
-                      "name": "Access-Control-Allow-Origin",
-                      "description": ""
-                    },
-                    {
-                      "key": "Cache-Control",
-                      "value": "private",
-                      "name": "Cache-Control",
-                      "description": ""
-                    },
-                    {
-                      "key": "Cache-control",
-                      "value": "no-cache=\"set-cookie\"",
-                      "name": "Cache-control",
-                      "description": ""
-                    },
-                    {
-                      "key": "Connection",
-                      "value": "keep-alive",
-                      "name": "Connection",
-                      "description": ""
-                    },
-                    {
-                      "key": "Content-Length",
-                      "value": "724",
-                      "name": "Content-Length",
-                      "description": ""
-                    },
-                    {
-                      "key": "Content-Type",
-                      "value": "application/json",
-                      "name": "Content-Type",
-                      "description": ""
-                    },
-                    {
-                      "key": "Date",
-                      "value": "Tue, 25 Apr 2017 23:30:29 GMT",
-                      "name": "Date",
-                      "description": ""
-                    },
-                    {
-                      "key": "Server",
-                      "value": "Microsoft-IIS/8.5",
-                      "name": "Server",
-                      "description": ""
-                    },
-                    {
-                      "key": "Set-Cookie",
-                      "value": "AWSELB=9BC9DF5B1EBBA968D8DEF4EFAE98B9151A1F2918EDD932BA532722CED5F7401EC830205BFF7DECDA5BA0EB836EF66A5C1B610D6800639ED13A5163E99921596CFE61FCCD79;PATH=/;MAX-AGE=600",
-                      "name": "Set-Cookie",
-                      "description": ""
-                    },
-                    {
-                      "key": "X-AspNet-Version",
-                      "value": "4.0.30319",
-                      "name": "X-AspNet-Version",
-                      "description": ""
-                    },
-                    {
-                      "key": "X-Powered-By",
-                      "value": "ASP.NET",
-                      "name": "X-Powered-By",
-                      "description": ""
-                    }
-                  ],
-                  "cookie": [
-                    {
-                      "expires": "Wed Apr 26 2017 06:40:35 GMT+0000 (Coordinated Universal Time)",
-                      "httpOnly": false,
-                      "domain": "api.sikkasoft.com",
-                      "path": "/",
-                      "secure": false,
-                      "value": "9BC9DF5B1EBBA968D8DEF4EFAE98B9151A1F2918EDD932BA532722CED5F7401EC830205BFF7DECDA5BA0EB836EF66A5C1B610D6800639ED13A5163E99921596CFE61FCCD79",
-                      "key": "AWSELB"
-                    }
-                  ],
-                  "responseTime": "503",
-                  "body": "{\n    \"app_id\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\n    \"name\": \"BETA API TEST\",\n    \"registration_date\": \"2016-11-07\",\n    \"activation_date\": \"2016-11-07\",\n    \"expiry_date\": \"\",\n    \"status\": \"verified\",\n    \"description\": \"testing BETA SIKKASOFT APIs\",\n    \"website\": \"https://www.sikkasoft.com\",\n    \"scope\": \"all\",\n    \"parent_master_customer_id\": \"\",\n    \"logo\": \"\",\n    \"developers\": [\n        {\n            \"user_name\": \"test@sikkasoft.com\",\n            \"developer_id\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\n            \"registration_date\": \"3/28/2012 2:28:50 PM\",\n            \"status\": \"active\",\n            \"name\": \"Sikka Admin\",\n            \"address_line1\": \"830 Hillview Court\",\n            \"address_line2\": \"Suite 290\",\n            \"cell\": \"xxxxxxxxxx\",\n            \"city\": \"Milpitas\",\n            \"country\": \"United States\",\n            \"parent_developer_id\": \"\",\n            \"phone\": \"xxxxxxxxxx\",\n            \"state\": \"CA\",\n            \"user_type\": \"Super Admin\",\n            \"zipcode\": \"95035\"\n        }\n    ]\n}"
-                }
-              ]
-            },
-            {
-              "name": "list of authorized practices",
-              "id": "15a628ad-7502-4062-4f94-2bdaa9718df0",
-              "request": {
-                "method": "GET",
-                "header": [],
-                "body": {
-                  "mode": "formdata",
-                  "formdata": []
-                },
-                "url": {
-                  "raw": "{{authurl}}/authorized_practices?app_id={{app_id}}&app_key={{app_key}}",
-                  "host": [
-                    "{{authurl}}"
-                  ],
-                  "path": [
-                    "authorized_practices"
-                  ],
-                  "query": [
-                    {
-                      "key": "app_id",
-                      "value": "{{app_id}}"
-                    },
-                    {
-                      "key": "app_key",
-                      "value": "{{app_key}}"
-                    }
-                  ]
-                },
-                "description": "Return the list of practices & your application has authorized to access data\n\n|Parameter|Description|Required|\n|---|---|---|\n|app_id|This is the ID assigned to the application when the application is registered on API portal|Yes|\n|app_key|This is the unique key generated when the application is registered on API portal|Yes|\n|practice_management_system_refresh_date_time_zone|Time Zone|No\n|show|Possible value for this parameter is \"all\" to show all practices|No|\n|practice_id|Practice ID, only works when show=all used|No|\n\n|Field | Note |\n|------|-------|\n|`office_id` | Unique office id in Sikka system. This will require in `start` API call|\n|`secret_key` | Unique secret key of office in Sikka system. This will require in `start` API call|\n|`domain` | domain / vertical of practice|\n|`practice_name` | Name of practice when user signed up for Sikka account |\n|`practice_management_system`| Practice management system of practice.| \n|`financial_system`| Financial system of practice when user signed up for Sikka account |\n|`practice_management_system_refresh_date`| This date indicates when SPC has sync. with practice management system.This is local time as per practice location. see below `practice_management_system_refresh_date_time_zone`  |\n|`data_synchronization_date`| This date indicates when SPC has sync. with sikka cloud database. This is local time as per practice location. see below `practice_management_system_refresh_date_time_zone`  |\n|`data_insert_date`| This date indicates when practice management system data inserted into sikka cloud database.This date shows latest data updated date. This is local time as per practice location. see below `practice_management_system_refresh_date_time_zone`  |\n|`practice_management_system_refresh_date_time_zone`| Time zone of practice location. |\n|`practice_id` | practice_id(Location ID) of the practice for office id in Sikka system. |\n\n> To make sure practice data is updated or not : check `data_insert_date` . if `data_insert_date` is latest or greater then last data insert date that means practice data is updated successfully. If `data_insert_date` is old or not changing please refresh SPC on client location."
-              },
-              "response": [
-                {
-                  "id": "059cde54-3761-618e-e5f4-4ce2b5469f9e",
-                  "name": "request",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [],
-                    "body": {
-                      "mode": "formdata",
-                      "formdata": []
-                    },
-                    "url": {
-                      "raw": "{{authurl}}/authorized_practices?app_id={{app_id}}&app_key={{app_key}}",
-                      "host": [
-                        "{{authurl}}"
-                      ],
-                      "path": [
-                        "authorized_practices"
-                      ],
-                      "query": [
-                        {
-                          "key": "app_id",
-                          "value": "{{app_id}}"
-                        },
-                        {
-                          "key": "app_key",
-                          "value": "{{app_key}}"
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "key": "Access-Control-Allow-Headers",
-                      "value": "Content-Type",
-                      "name": "Access-Control-Allow-Headers",
-                      "description": ""
-                    },
-                    {
-                      "key": "Access-Control-Allow-Origin",
-                      "value": "*",
-                      "name": "Access-Control-Allow-Origin",
-                      "description": ""
-                    },
-                    {
-                      "key": "Cache-Control",
-                      "value": "private",
-                      "name": "Cache-Control",
-                      "description": ""
-                    },
-                    {
-                      "key": "Content-Encoding",
-                      "value": "gzip",
-                      "name": "Content-Encoding",
-                      "description": ""
-                    },
-                    {
-                      "key": "Content-Length",
-                      "value": "676",
-                      "name": "Content-Length",
-                      "description": ""
-                    },
-                    {
-                      "key": "Content-Type",
-                      "value": "application/json",
-                      "name": "Content-Type",
-                      "description": ""
-                    },
-                    {
-                      "key": "Date",
-                      "value": "Wed, 03 May 2017 20:42:21 GMT",
-                      "name": "Date",
-                      "description": ""
-                    },
-                    {
-                      "key": "Server",
-                      "value": "Microsoft-IIS/8.5",
-                      "name": "Server",
-                      "description": ""
-                    },
-                    {
-                      "key": "Vary",
-                      "value": "Accept-Encoding",
-                      "name": "Vary",
-                      "description": ""
-                    },
-                    {
-                      "key": "X-AspNet-Version",
-                      "value": "4.0.30319",
-                      "name": "X-AspNet-Version",
-                      "description": ""
-                    },
-                    {
-                      "key": "X-Powered-By",
-                      "value": "ASP.NET",
-                      "name": "X-Powered-By",
-                      "description": ""
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": "544",
-                  "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"500\",\n        \"total_count\": \"2\",\n        \"items\": [\n            {\n                \"office_id\": \"xxxxx\",\n                \"domain\": \"Dental\",\n                \"href\": \"https://api.sikkasoft.com/auth/v2/authorized_practices/xxxxx\",\n                \"secret_key\": \"xxxxxxxxxxxxxxxxxxx\",\n                \"practice_name\": \"Demo Dental Care Testing Internal Use Only\",\n                \"address\": \"121 Main Street\",\n                \"city\": \"San Jose\",\n                \"state\": \"CA\",\n                \"zip\": \"95335\",\n                \"practice_management_system\": \"Dentrix\",\n                \"financial_system\": \"\",\n                \"practice_management_system_refresh_date\": \"2017-03-23 12:09:10\",\n                \"data_synchronization_date\": \"1900-01-01 00:00:00\",\n                \"data_insert_date\": \"2017-03-23 12:56:01\",\n                \"practice_management_system_version\": \"V16.2\",\n                \"practice_management_system_refresh_date_time_zone\": \"India Standard Time\",\n                \"practice_id\": \"1\"\n            },\n            {\n                \"office_id\": \"xxxxx\",\n                \"domain\": \"Veterinary\",\n                \"href\": \"https://api.sikkasoft.com/auth/v2/authorized_practices/xxxxx\",\n                \"secret_key\": \"xxxxxxxxxxxxxxxxxxx\",\n                \"practice_name\": \"SikkaAPI Vet Demo\",\n                \"address\": \"Street 123\",\n                \"city\": \"San JOse\",\n                \"state\": \"CA\",\n                \"zip\": \"95116\",\n                \"practice_management_system\": \"\",\n                \"financial_system\": \"\",\n                \"practice_management_system_refresh_date\": \"\",\n                \"data_synchronization_date\": \"\",\n                \"data_insert_date\": \"\",\n                \"practice_management_system_version\": \"\",\n                \"practice_management_system_refresh_date_time_zone\": \"\",\n                \"practice_id\": \"1\"\n            }\n        ]\n    }\n]"
-                },
-                {
-                  "id": "3a0ffa4b-8259-06e4-cf70-6bd50def3536",
-                  "name": "list of authorized practices with show=all",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [],
-                    "body": {
-                      "mode": "formdata",
-                      "formdata": []
-                    },
-                    "url": {
-                      "raw": "{{authurl}}/authorized_practices?app_id={{app_id}}&app_key={{app_key}}&show=all&practice_id={practice_id}",
-                      "host": [
-                        "{{authurl}}"
-                      ],
-                      "path": [
-                        "authorized_practices"
-                      ],
-                      "query": [
-                        {
-                          "key": "app_id",
-                          "value": "{{app_id}}"
-                        },
-                        {
-                          "key": "app_key",
-                          "value": "{{app_key}}"
-                        },
-                        {
-                          "key": "show",
-                          "value": "all"
-                        },
-                        {
-                          "key": "practice_id",
-                          "value": "{practice_id}"
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "",
-                  "header": [],
-                  "cookie": [],
-                  "responseTime": "0",
-                  "body": "[\r\n  {\r\n    \"offset\": \"0\",\r\n    \"limit\": \"500\",\r\n    \"total_count\": \"2\",\r\n    \"items\": [\r\n      {\r\n        \"office_id\": \"xxxxx\",\r\n        \"domain\": \"Dental\",\r\n        \"href\": \"https://api.sikkasoft.com/auth/v2/authorized_practices/xxxxx\",\r\n        \"secret_key\": \"xxxxxxxxxxxxxxxxxxx\",\r\n        \"practice_name\": \"Demo Dental Care Testing Internal Use Only\",\r\n        \"address\": \"121 Main Street\",\r\n        \"city\": \"San Jose\",\r\n        \"state\": \"CA\",\r\n        \"zip\": \"95335\",\r\n        \"practice_management_system\": \"Dentrix\",\r\n        \"financial_system\": \"\",\r\n        \"practice_management_system_refresh_date\": \"2017-03-23 12:09:10\",\r\n        \"data_synchronization_date\": \"1900-01-01 00:00:00\",\r\n        \"data_insert_date\": \"2017-03-23 12:56:01\",\r\n        \"practice_management_system_version\": \"V16.2\",\r\n        \"practice_management_system_refresh_date_time_zone\": \"India Standard Time\",\r\n\t\t\"practice_id\": \"1\"\r\n      },\r\n      {\r\n        \"office_id\": \"xxxxx\",\r\n        \"domain\": \"Veterinary\",\r\n        \"href\": \"https://api.sikkasoft.com/auth/v2/authorized_practices/xxxxx\",\r\n        \"secret_key\": \"xxxxxxxxxxxxxxxxxxx\",\r\n        \"practice_name\": \"SikkaAPI Vet Demo\",\r\n        \"address\": \"Street 123\",\r\n        \"city\": \"San JOse\",\r\n        \"state\": \"CA\",\r\n        \"zip\": \"95116\",\r\n        \"practice_management_system\": \"\",\r\n        \"financial_system\": \"\",\r\n        \"practice_management_system_refresh_date\": \"\",\r\n        \"data_synchronization_date\": \"\",\r\n        \"data_insert_date\": \"\",\r\n        \"practice_management_system_version\": \"\",\r\n        \"practice_management_system_refresh_date_time_zone\": \"\",\r\n\t\t\"practice_id\": \"2\"\r\n      }\r\n    ]\r\n  }\r\n]"
-                }
-              ]
-            },
-            {
-              "name": "list of authorized practices by office id",
-              "event": [
-                {
-                  "listen": "test",
-                  "script": {
-                    "type": "text/javascript",
-                    "exec": [
-                      "tests[\"Response time is less than 200ms\"] = responseTime < 200;",
-                      "",
-                      "tests[\"Status code is 200\"] = responseCode.code === 200;"
-                    ]
-                  }
-                }
-              ],
-              "id": "f8835107-bca2-f708-1eaa-165e3f7b62d9",
-              "request": {
-                "method": "GET",
-                "header": [],
-                "body": {
-                  "mode": "formdata",
-                  "formdata": []
-                },
-                "url": {
-                  "raw": "{{authurl}}/authorized_practices/{{office_id}}?app_id={{app_id}}&app_key={{app_key}}",
-                  "host": [
-                    "{{authurl}}"
-                  ],
-                  "path": [
-                    "authorized_practices",
-                    "{{office_id}}"
-                  ],
-                  "query": [
-                    {
-                      "key": "app_id",
-                      "value": "{{app_id}}"
-                    },
-                    {
-                      "key": "app_key",
-                      "value": "{{app_key}}"
-                    }
-                  ]
-                },
-                "description": "Return the practice information, your application authorized to access data\n\n|Parameter|Description|Required|\n|---|---|---|\n|app_id|This is the ID assigned to the application when the application is registered on API portal|Yes|\n|app_key|This is the unique key generated when the application is registered on API portal|Yes|\n|show|Possible value for this parameter is \"all\" to show all practices|No|\n|practice_id|Practice ID, only works when show=all used|No|"
-              },
-              "response": [
-                {
-                  "id": "2fb40165-6e58-9d15-6cf6-dbc635769f5f",
-                  "name": "request",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [],
-                    "body": {
-                      "mode": "formdata",
-                      "formdata": []
-                    },
-                    "url": {
-                      "raw": "{{authurl}}/authorized_practices/{{office_id}}?app_id={{app_id}}&app_key={{app_key}}",
-                      "host": [
-                        "{{authurl}}"
-                      ],
-                      "path": [
-                        "authorized_practices",
-                        "{{office_id}}"
-                      ],
-                      "query": [
-                        {
-                          "key": "app_id",
-                          "value": "{{app_id}}"
-                        },
-                        {
-                          "key": "app_key",
-                          "value": "{{app_key}}"
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "name": "Cache-Control",
-                      "key": "Cache-Control",
-                      "value": "private",
-                      "description": ""
-                    },
-                    {
-                      "name": "Content-Encoding",
-                      "key": "Content-Encoding",
-                      "value": "gzip",
-                      "description": ""
-                    },
-                    {
-                      "name": "Content-Length",
-                      "key": "Content-Length",
-                      "value": "411",
-                      "description": ""
-                    },
-                    {
-                      "name": "Content-Type",
-                      "key": "Content-Type",
-                      "value": "application/json",
-                      "description": ""
-                    },
-                    {
-                      "name": "Date",
-                      "key": "Date",
-                      "value": "Fri, 16 Jun 2017 07:25:06 GMT",
-                      "description": ""
-                    },
-                    {
-                      "name": "Server",
-                      "key": "Server",
-                      "value": "Microsoft-IIS/8.5",
-                      "description": ""
-                    },
-                    {
-                      "name": "Vary",
-                      "key": "Vary",
-                      "value": "Accept-Encoding",
-                      "description": ""
-                    },
-                    {
-                      "name": "X-AspNet-Version",
-                      "key": "X-AspNet-Version",
-                      "value": "4.0.30319",
-                      "description": ""
-                    },
-                    {
-                      "name": "X-Powered-By",
-                      "key": "X-Powered-By",
-                      "value": "ASP.NET",
-                      "description": ""
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": "1160",
-                  "body": "{\n    \"office_id\": \"xxxxx\",\n    \"domain\": \"Dental\",\n    \"href\": \"https://api.sikkasoft.com/auth/v2/authorized_practices/xxxxx\",\n    \"secret_key\": \"xxxxxxxxxxxxxxxxxxx\",\n    \"practice_name\": \"Loadtest Dental\",\n    \"address\": \"San jose\",\n    \"city\": \"San Jose\",\n    \"state\": \"California\",\n    \"zip\": \"95011\",\n    \"practice_management_system\": \"\",\n    \"financial_system\": \"\",\n    \"practice_management_system_refresh_date\": \"\",\n    \"data_synchronization_date\": \"\",\n    \"data_insert_date\": \"\",\n    \"practice_management_system_version\": \"\",\n    \"practice_management_system_refresh_date_time_zone\": \"\",\n    \"practice_id\": \"1\"\n}"
-                },
-                {
-                  "id": "5c99bdf8-7bad-897a-084a-916196aa9940",
-                  "name": "list of authorized practices by office id with show=all",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [],
-                    "body": {
-                      "mode": "formdata",
-                      "formdata": []
-                    },
-                    "url": {
-                      "raw": "{{authurl}}/authorized_practices/{{office_id}}?app_id={{app_id}}&app_key={{app_key}}&show=all&practice_id={practice_id}",
-                      "host": [
-                        "{{authurl}}"
-                      ],
-                      "path": [
-                        "authorized_practices",
-                        "{{office_id}}"
-                      ],
-                      "query": [
-                        {
-                          "key": "app_id",
-                          "value": "{{app_id}}"
-                        },
-                        {
-                          "key": "app_key",
-                          "value": "{{app_key}}"
-                        },
-                        {
-                          "key": "show",
-                          "value": "all"
-                        },
-                        {
-                          "key": "practice_id",
-                          "value": "{practice_id}"
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "",
-                  "header": [],
-                  "cookie": [],
-                  "responseTime": "0",
-                  "body": "[\r\n  {\r\n    \"offset\": \"0\",\r\n    \"limit\": \"500\",\r\n    \"total_count\": \"2\",\r\n    \"items\": [\r\n      {\r\n        \"office_id\": \"xxxxx\",\r\n        \"domain\": \"Dental\",\r\n        \"href\": \"https://api.sikkasoft.com/auth/v2/authorized_practices/xxxxx\",\r\n        \"secret_key\": \"xxxxxxxxxxxxxxxxxxx\",\r\n        \"practice_name\": \"Demo Dental Care Testing Internal Use Only\",\r\n        \"address\": \"121 Main Street\",\r\n        \"city\": \"San Jose\",\r\n        \"state\": \"CA\",\r\n        \"zip\": \"95335\",\r\n        \"practice_management_system\": \"Dentrix\",\r\n        \"financial_system\": \"\",\r\n        \"practice_management_system_refresh_date\": \"2017-03-23 12:09:10\",\r\n        \"data_synchronization_date\": \"1900-01-01 00:00:00\",\r\n        \"data_insert_date\": \"2017-03-23 12:56:01\",\r\n        \"practice_management_system_version\": \"V16.2\",\r\n        \"practice_management_system_refresh_date_time_zone\": \"India Standard Time\",\r\n\t\t\"practice_id\": \"1\"\r\n      },\r\n      {\r\n        \"office_id\": \"xxxxx\",\r\n        \"domain\": \"Veterinary\",\r\n        \"href\": \"https://api.sikkasoft.com/auth/v2/authorized_practices/xxxxx\",\r\n        \"secret_key\": \"xxxxxxxxxxxxxxxxxxx\",\r\n        \"practice_name\": \"SikkaAPI Vet Demo\",\r\n        \"address\": \"Street 123\",\r\n        \"city\": \"San JOse\",\r\n        \"state\": \"CA\",\r\n        \"zip\": \"95116\",\r\n        \"practice_management_system\": \"\",\r\n        \"financial_system\": \"\",\r\n        \"practice_management_system_refresh_date\": \"\",\r\n        \"data_synchronization_date\": \"\",\r\n        \"data_insert_date\": \"\",\r\n        \"practice_management_system_version\": \"\",\r\n        \"practice_management_system_refresh_date_time_zone\": \"\",\r\n\t\t\"practice_id\": \"2\"\r\n      }\r\n    ]\r\n  }\r\n]"
-                }
-              ]
-            },
-            {
-              "name": "request_key_info",
-              "id": "a31b027f-33eb-ede4-1519-1f86be65f3a6",
-              "request": {
-                "method": "GET",
-                "header": [],
-                "body": {
-                  "mode": "formdata",
-                  "formdata": []
-                },
-                "url": {
-                  "raw": "{{url}}/request_key_info?request_key={{request_key}}",
-                  "host": [
-                    "{{url}}"
-                  ],
-                  "path": [
-                    "request_key_info"
-                  ],
-                  "query": [
-                    {
-                      "key": "request_key",
-                      "value": "{{request_key}}"
-                    }
-                  ]
-                },
-                "description": "Accepts an request key and returns information about that request key including which office id was it issued to, the intended target of the request key, the scopes the user consented to, the remaining lifetime of the request key.\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|"
-              },
-              "response": [
-                {
-                  "id": "e11c8760-cfed-a7d5-8f3e-baabd74a44f1",
-                  "name": "request",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [],
-                    "body": {
-                      "mode": "formdata",
-                      "formdata": []
-                    },
-                    "url": {
-                      "raw": "{{url}}/request_key_info?request_key={{request_key}}",
-                      "host": [
-                        "{{url}}"
-                      ],
-                      "path": [
-                        "request_key_info"
-                      ],
-                      "query": [
-                        {
-                          "key": "request_key",
-                          "value": "{{request_key}}"
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "name": "Access-Control-Allow-Headers",
-                      "key": "Access-Control-Allow-Headers",
-                      "value": "accept, authorization, Content-Type, X-Session-Id",
-                      "description": ""
-                    },
-                    {
-                      "name": "Access-Control-Allow-Methods",
-                      "key": "Access-Control-Allow-Methods",
-                      "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
-                      "description": ""
-                    },
-                    {
-                      "name": "Access-Control-Allow-Origin",
-                      "key": "Access-Control-Allow-Origin",
-                      "value": "*",
-                      "description": ""
-                    },
-                    {
-                      "name": "Cache-Control",
-                      "key": "Cache-Control",
-                      "value": "private",
-                      "description": ""
-                    },
-                    {
-                      "name": "Connection",
-                      "key": "Connection",
-                      "value": "keep-alive",
-                      "description": ""
-                    },
-                    {
-                      "name": "Content-Length",
-                      "key": "Content-Length",
-                      "value": "312",
-                      "description": ""
-                    },
-                    {
-                      "name": "Content-Type",
-                      "key": "Content-Type",
-                      "value": "application/json",
-                      "description": ""
-                    },
-                    {
-                      "name": "Date",
-                      "key": "Date",
-                      "value": "Thu, 27 Apr 2017 08:41:18 GMT",
-                      "description": ""
-                    },
-                    {
-                      "name": "Server",
-                      "key": "Server",
-                      "value": "Microsoft-IIS/8.5",
-                      "description": ""
-                    },
-                    {
-                      "name": "X-AspNet-Version",
-                      "key": "X-AspNet-Version",
-                      "value": "4.0.30319",
-                      "description": ""
-                    },
-                    {
-                      "name": "X-Powered-By",
-                      "key": "X-Powered-By",
-                      "value": "ASP.NET",
-                      "description": ""
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": "1025",
-                  "body": "{\n    \"href\": \"https://api.sikkasoft.com/v2/request_key_info?request_key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\n    \"request_key\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\n    \"start_time\": \"4/26/2017 8:59:06 AM\",\n    \"end_time\": \"\",\n    \"expires_in\": \"1068 second(s)\",\n    \"issued_to\": \"xxxxx\",\n    \"status\": \"active\",\n    \"request_count\": \"50\",\n    \"scope\": \"all\"\n}"
-                }
-              ]
-            },
-            {
-              "name": "request_key",
-              "id": "35a7444b-74dd-d84e-5dd2-f9125ea47848",
-              "request": {
-                "method": "GET",
-                "header": [],
-                "body": {
-                  "mode": "formdata",
-                  "formdata": []
-                },
-                "url": {
-                  "raw": "{{authurl}}/request_keys?app_id={{app_id}}&app_key={{app_key}}&office_id={{office_id}}&secret_key={{secret_key}}",
-                  "host": [
-                    "{{authurl}}"
-                  ],
-                  "path": [
-                    "request_keys"
-                  ],
-                  "query": [
-                    {
-                      "key": "app_id",
-                      "value": "{{app_id}}"
-                    },
-                    {
-                      "key": "app_key",
-                      "value": "{{app_key}}"
-                    },
-                    {
-                      "key": "office_id",
-                      "value": "{{office_id}}"
-                    },
-                    {
-                      "key": "secret_key",
-                      "value": "{{secret_key}}"
-                    }
-                  ]
-                },
-                "description": "Generate the request keys. This API is same as `start` API call . Both are same\n\n\n|Parameter\t|Description\t|Required?|\n|---|---|---|\n|app_id\t|This is the ID assigned to the application when the application is registered on API portal|\tYes|\n|app_key|\tThis is the unique key generated when the application is registered on API portal\t|Yes|\n|office_id|\tMastercustomerid, This is the ID assigned to a practice when that practice is added\t|Yes|\n|secret_key|\tThis is the Secrete Key generated for that practice, when practice is added\t|Yes|"
-              },
-              "response": [
-                {
-                  "id": "e7e97e1a-28e9-e66a-23ef-594148bb8608",
-                  "name": "request",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [],
-                    "body": {
-                      "mode": "formdata",
-                      "formdata": []
-                    },
-                    "url": {
-                      "raw": "{{authurl}}/request_keys?app_id={{app_id}}&app_key={{app_key}}&office_id={{office_id}}&secret_key={{secret_key}}",
-                      "host": [
-                        "{{authurl}}"
-                      ],
-                      "path": [
-                        "request_keys"
-                      ],
-                      "query": [
-                        {
-                          "key": "app_id",
-                          "value": "{{app_id}}"
-                        },
-                        {
-                          "key": "app_key",
-                          "value": "{{app_key}}"
-                        },
-                        {
-                          "key": "office_id",
-                          "value": "{{office_id}}"
-                        },
-                        {
-                          "key": "secret_key",
-                          "value": "{{secret_key}}"
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "key": "Access-Control-Allow-Headers",
-                      "value": "Content-Type",
-                      "name": "Access-Control-Allow-Headers",
-                      "description": ""
-                    },
-                    {
-                      "key": "Access-Control-Allow-Origin",
-                      "value": "*",
-                      "name": "Access-Control-Allow-Origin",
-                      "description": ""
-                    },
-                    {
-                      "key": "Cache-Control",
-                      "value": "private",
-                      "name": "Cache-Control",
-                      "description": ""
-                    },
-                    {
-                      "key": "Content-Encoding",
-                      "value": "gzip",
-                      "name": "Content-Encoding",
-                      "description": ""
-                    },
-                    {
-                      "key": "Content-Length",
-                      "value": "250",
-                      "name": "Content-Length",
-                      "description": ""
-                    },
-                    {
-                      "key": "Content-Type",
-                      "value": "application/json",
-                      "name": "Content-Type",
-                      "description": ""
-                    },
-                    {
-                      "key": "Date",
-                      "value": "Wed, 03 May 2017 21:53:59 GMT",
-                      "name": "Date",
-                      "description": ""
-                    },
-                    {
-                      "key": "Server",
-                      "value": "Microsoft-IIS/8.5",
-                      "name": "Server",
-                      "description": ""
-                    },
-                    {
-                      "key": "Vary",
-                      "value": "Accept-Encoding",
-                      "name": "Vary",
-                      "description": ""
-                    },
-                    {
-                      "key": "X-AspNet-Version",
-                      "value": "4.0.30319",
-                      "name": "X-AspNet-Version",
-                      "description": ""
-                    },
-                    {
-                      "key": "X-Powered-By",
-                      "value": "ASP.NET",
-                      "name": "X-Powered-By",
-                      "description": ""
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": "513",
-                  "body": "{\n    \"scope\": \"https://api.sikkasoft.com/v2/\",\n    \"request_key\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\n    \"token_type\": \"Bearer\",\n    \"expires_in\": \"86400\"\n}"
-                }
-              ]
-            },
-            {
-              "name": "list of all request keys made by application",
-              "id": "41e11422-50cf-f41f-bc26-695725c380ef",
-              "request": {
-                "method": "GET",
-                "header": [],
-                "body": {
-                  "mode": "formdata",
-                  "formdata": []
-                },
-                "url": {
-                  "raw": "{{authurl}}/request_keys_details?app_id={{app_id}}&app_key={{app_key}}",
-                  "host": [
-                    "{{authurl}}"
-                  ],
-                  "path": [
-                    "request_keys_details"
-                  ],
-                  "query": [
-                    {
-                      "key": "app_id",
-                      "value": "{{app_id}}"
-                    },
-                    {
-                      "key": "app_key",
-                      "value": "{{app_key}}"
-                    }
-                  ]
-                },
-                "description": "Accepts application id and application key and returns information about all the API calls made by application in last 24 hrs. It contains request keys , api name , response time , data size , time , request status , parameters , response time per request_key.\n\n|Parameter\t|Description\t|Required?|\n|---|---|---|\n|app_id\t|This is the ID assigned to the application when the application is registered on API portal|\tYes|\n|app_key|\tThis is the unique key generated when the application is registered on API portal\t|Yes|"
-              },
-              "response": [
-                {
-                  "id": "ea2de191-d4f1-9e5d-0f86-580a4ecd12d9",
-                  "name": "request",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [],
-                    "body": {
-                      "mode": "formdata",
-                      "formdata": []
-                    },
-                    "url": {
-                      "raw": "{{authurl}}/request_keys_details?app_id={{app_id}}&app_key={{app_key}}",
-                      "host": [
-                        "{{authurl}}"
-                      ],
-                      "path": [
-                        "request_keys_details"
-                      ],
-                      "query": [
-                        {
-                          "key": "app_id",
-                          "value": "{{app_id}}"
-                        },
-                        {
-                          "key": "app_key",
-                          "value": "{{app_key}}"
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "key": "Access-Control-Allow-Headers",
-                      "value": "Content-Type",
-                      "name": "Access-Control-Allow-Headers",
-                      "description": ""
-                    },
-                    {
-                      "key": "Access-Control-Allow-Origin",
-                      "value": "*",
-                      "name": "Access-Control-Allow-Origin",
-                      "description": ""
-                    },
-                    {
-                      "key": "Cache-Control",
-                      "value": "private",
-                      "name": "Cache-Control",
-                      "description": ""
-                    },
-                    {
-                      "key": "Content-Encoding",
-                      "value": "gzip",
-                      "name": "Content-Encoding",
-                      "description": ""
-                    },
-                    {
-                      "key": "Content-Length",
-                      "value": "596",
-                      "name": "Content-Length",
-                      "description": ""
-                    },
-                    {
-                      "key": "Content-Type",
-                      "value": "application/json",
-                      "name": "Content-Type",
-                      "description": ""
-                    },
-                    {
-                      "key": "Date",
-                      "value": "Wed, 03 May 2017 21:59:30 GMT",
-                      "name": "Date",
-                      "description": ""
-                    },
-                    {
-                      "key": "Server",
-                      "value": "Microsoft-IIS/8.5",
-                      "name": "Server",
-                      "description": ""
-                    },
-                    {
-                      "key": "Vary",
-                      "value": "Accept-Encoding",
-                      "name": "Vary",
-                      "description": ""
-                    },
-                    {
-                      "key": "X-AspNet-Version",
-                      "value": "4.0.30319",
-                      "name": "X-AspNet-Version",
-                      "description": ""
-                    },
-                    {
-                      "key": "X-Powered-By",
-                      "value": "ASP.NET",
-                      "name": "X-Powered-By",
-                      "description": ""
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": "377",
-                  "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"500\",\n        \"total_count\": \"2\",\n        \"items\": [\n            {\n                \"request_key\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\n                \"api\": \"start\",\n                \"time\": \"5/3/2017 9:53:59 PM\",\n                \"response_time_ms\": \"62\",\n                \"datasize_bytes\": \"139\",\n                \"request_ip\": \"24.104.64.134\",\n                \"parameters\": \"app_id=aU839ROq32PD58vUAFcssWoPPf6tHxtcIH8LpYcgYFASScM0mQBX/A==&app_key=uoVEPwnh9M63DKdgOsoh8DvPOCCSEIoPVqf30x/YSzsSScM0mQBX/A==&office_id=Ww+/CHlJiig=&secret_key=afRpggkgf9AT1G9s7XV9gmXnv0kLjeLd\",\n                \"request_status\": \"success\",\n                \"type\": \"json\"\n            },\n            {\n                \"request_key\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\n                \"api\": \"start\",\n                \"time\": \"5/3/2017 9:59:28 PM\",\n                \"response_time_ms\": \"32\",\n                \"datasize_bytes\": \"139\",\n                \"request_ip\": \"24.104.64.134\",\n                \"parameters\": \"app_id=aU839ROq32PD58vUAFcssWoPPf6tHxtcIH8LpYcgYFASScM0mQBX/A==&app_key=uoVEPwnh9M63DKdgOsoh8DvPOCCSEIoPVqf30x/YSzsSScM0mQBX/A==&office_id=Ww+/CHlJiig=&secret_key=afRpggkgf9AT1G9s7XV9gmXnv0kLjeLd\",\n                \"request_status\": \"success\",\n                \"type\": \"json\"\n            }\n        ]\n    }\n]"
-                }
-              ]
-            },
-            {
-              "name": "reset password",
-              "id": "7545999b-4705-15d4-3de2-70b2e8d37d12",
-              "request": {
-                "method": "GET",
-                "header": [],
-                "body": {
-                  "mode": "formdata",
-                  "formdata": []
-                },
-                "url": {
-                  "raw": "{{authurl}}/reset_password?account_type=provider&pw={new password}&app_id={{app_id}}&app_key={{app_key}}&email={account owner 's email}&vcode={verification code}&encrypted={true/false}",
-                  "host": [
-                    "{{authurl}}"
-                  ],
-                  "path": [
-                    "reset_password"
-                  ],
-                  "query": [
-                    {
-                      "key": "account_type",
-                      "value": "provider"
-                    },
-                    {
-                      "key": "pw",
-                      "value": "{new password}"
-                    },
-                    {
-                      "key": "app_id",
-                      "value": "{{app_id}}"
-                    },
-                    {
-                      "key": "app_key",
-                      "value": "{{app_key}}"
-                    },
-                    {
-                      "key": "email",
-                      "value": "{account owner 's email}"
-                    },
-                    {
-                      "key": "vcode",
-                      "value": "{verification code}"
-                    },
-                    {
-                      "key": "encrypted",
-                      "value": "{true/false}"
-                    }
-                  ]
-                },
-                "description": "The `reset_password` API is used to change the password, after getting the verification code. After app request API to send verification code.In next step user should pass encrypted verification code and encrypted new password via `reset_password` API. This API will check for verification code and if it is correct then changes the password to the new one, or error message will be given. After password change user can log in with new password.\n\n|Parameter\t|Description\t|Required?|\n|---|---|---|\n|app_id\t|This is the ID assigned to the application when the application is registered on API portal|\tYes|\n|app_key|\tThis is the unique key generated when the application is registered on API portal\t|Yes|\n|account_type|\tprovider or patient\t|Yes|\n|pw|\tPassword. Use this parameter's value after encryption. please check the encrypt API call to encrypt value.\t|Yes|\n|email|\tEmail id of patient / provider\t|Yes|\n|vcode|\tverification code. Encrypt verification code before passing to request\t|Yes|\n|encrypted|\tEncrypted is string variable. It can be “true” or “false”. Default value is “true”. If you want to send encrypted username , password , verification code then set encrypted=true otherwise for plain text set it encrypted=false\t|No|"
-              },
-              "response": [
-                {
-                  "id": "7187f74f-51ff-2b1e-38b0-03b855eb6b84",
-                  "name": "request",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [],
-                    "body": {
-                      "mode": "formdata",
-                      "formdata": []
-                    },
-                    "url": {
-                      "raw": "{{authurl}}/reset_password?account_type=provider&pw={new password}&app_id={{app_id}}&app_key={{app_key}}&email={account owner 's email}&vcode={verification code}&encrypted={true/false}",
-                      "host": [
-                        "{{authurl}}"
-                      ],
-                      "path": [
-                        "reset_password"
-                      ],
-                      "query": [
-                        {
-                          "key": "account_type",
-                          "value": "provider"
-                        },
-                        {
-                          "key": "pw",
-                          "value": "{new password}"
-                        },
-                        {
-                          "key": "app_id",
-                          "value": "{{app_id}}"
-                        },
-                        {
-                          "key": "app_key",
-                          "value": "{{app_key}}"
-                        },
-                        {
-                          "key": "email",
-                          "value": "{account owner 's email}"
-                        },
-                        {
-                          "key": "vcode",
-                          "value": "{verification code}"
-                        },
-                        {
-                          "key": "encrypted",
-                          "value": "{true/false}"
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "key": "Access-Control-Allow-Headers",
-                      "value": "Content-Type",
-                      "name": "Access-Control-Allow-Headers",
-                      "description": ""
-                    },
-                    {
-                      "key": "Access-Control-Allow-Origin",
-                      "value": "*",
-                      "name": "Access-Control-Allow-Origin",
-                      "description": ""
-                    },
-                    {
-                      "key": "Cache-Control",
-                      "value": "private",
-                      "name": "Cache-Control",
-                      "description": ""
-                    },
-                    {
-                      "key": "Content-Encoding",
-                      "value": "gzip",
-                      "name": "Content-Encoding",
-                      "description": ""
-                    },
-                    {
-                      "key": "Content-Length",
-                      "value": "266",
-                      "name": "Content-Length",
-                      "description": ""
-                    },
-                    {
-                      "key": "Content-Type",
-                      "value": "application/json",
-                      "name": "Content-Type",
-                      "description": ""
-                    },
-                    {
-                      "key": "Date",
-                      "value": "Wed, 03 May 2017 22:13:58 GMT",
-                      "name": "Date",
-                      "description": ""
-                    },
-                    {
-                      "key": "Server",
-                      "value": "Microsoft-IIS/8.5",
-                      "name": "Server",
-                      "description": ""
-                    },
-                    {
-                      "key": "Vary",
-                      "value": "Accept-Encoding",
-                      "name": "Vary",
-                      "description": ""
-                    },
-                    {
-                      "key": "X-AspNet-Version",
-                      "value": "4.0.30319",
-                      "name": "X-AspNet-Version",
-                      "description": ""
-                    },
-                    {
-                      "key": "X-Powered-By",
-                      "value": "ASP.NET",
-                      "name": "X-Powered-By",
-                      "description": ""
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": "1275",
-                  "body": "{\"http_code\":\"200\",\"http_code_desc\":\"OK\",\"sikka_status_code\":\"API4001\",\"short_message\":\"\",\"long_message\":\" Password changed successfully. You can login with new password.\",\"more_information\":\"\"}\r\n"
-                }
-              ]
-            },
-            {
-              "name": "detail activity about particular request_key",
-              "id": "cdb636a5-0ed4-3ca1-fca8-0bff6d174f39",
-              "request": {
-                "method": "GET",
-                "header": [],
-                "url": {
-                  "raw": "{{authurl}}/request_keys_details/{{request_key}}?app_id={{app_id}}&app_key={{app_key}}",
-                  "host": [
-                    "{{authurl}}"
-                  ],
-                  "path": [
-                    "request_keys_details",
-                    "{{request_key}}"
-                  ],
-                  "query": [
-                    {
-                      "key": "app_id",
-                      "value": "{{app_id}}"
-                    },
-                    {
-                      "key": "app_key",
-                      "value": "{{app_key}}"
-                    }
-                  ]
-                },
-                "description": "Accepts application id and application key and returns detail activity information about all the API calls made by request key in last 24 hrs. It contains api name , response time , data size , time , request status , parameters , response time per request_key.\n\n|Parameter\t|Description\t|Required?|\n|---|---|---|\n|app_id\t|This is the ID assigned to the application when the application is registered on API portal|\tYes|\n|app_key|\tThis is the unique key generated when the application is registered on API portal\t|Yes|"
-              },
-              "response": [
-                {
-                  "id": "440b8027-8d0f-d82b-a442-f8825ba93769",
-                  "name": "request",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [],
-                    "body": {
-                      "mode": "formdata",
-                      "formdata": []
-                    },
-                    "url": {
-                      "raw": "{{authurl}}/request_keys_details/{{request_key}}?app_id={{app_id}}&app_key={{app_key}}",
-                      "host": [
-                        "{{authurl}}"
-                      ],
-                      "path": [
-                        "request_keys_details",
-                        "{{request_key}}"
-                      ],
-                      "query": [
-                        {
-                          "key": "app_id",
-                          "value": "{{app_id}}"
-                        },
-                        {
-                          "key": "app_key",
-                          "value": "{{app_key}}"
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "key": "Access-Control-Allow-Headers",
-                      "value": "Content-Type",
-                      "name": "Access-Control-Allow-Headers",
-                      "description": ""
-                    },
-                    {
-                      "key": "Access-Control-Allow-Origin",
-                      "value": "*",
-                      "name": "Access-Control-Allow-Origin",
-                      "description": ""
-                    },
-                    {
-                      "key": "Cache-Control",
-                      "value": "private",
-                      "name": "Cache-Control",
-                      "description": ""
-                    },
-                    {
-                      "key": "Content-Encoding",
-                      "value": "gzip",
-                      "name": "Content-Encoding",
-                      "description": ""
-                    },
-                    {
-                      "key": "Content-Length",
-                      "value": "598",
-                      "name": "Content-Length",
-                      "description": ""
-                    },
-                    {
-                      "key": "Content-Type",
-                      "value": "application/json",
-                      "name": "Content-Type",
-                      "description": ""
-                    },
-                    {
-                      "key": "Date",
-                      "value": "Wed, 03 May 2017 22:05:05 GMT",
-                      "name": "Date",
-                      "description": ""
-                    },
-                    {
-                      "key": "Server",
-                      "value": "Microsoft-IIS/8.5",
-                      "name": "Server",
-                      "description": ""
-                    },
-                    {
-                      "key": "Vary",
-                      "value": "Accept-Encoding",
-                      "name": "Vary",
-                      "description": ""
-                    },
-                    {
-                      "key": "X-AspNet-Version",
-                      "value": "4.0.30319",
-                      "name": "X-AspNet-Version",
-                      "description": ""
-                    },
-                    {
-                      "key": "X-Powered-By",
-                      "value": "ASP.NET",
-                      "name": "X-Powered-By",
-                      "description": ""
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": "94",
-                  "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"500\",\n        \"total_count\": \"2\",\n        \"items\": [\n            {\n                \"request_key\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\n                \"api\": \"start\",\n                \"time\": \"5/3/2017 9:59:28 PM\",\n                \"response_time_ms\": \"32\",\n                \"datasize_bytes\": \"139\",\n                \"request_ip\": \"24.104.64.134\",\n                \"parameters\": \"app_id=aU839ROq32PD58vUAFcssWoPPf6tHxtcIH8LpYcgYFASScM0mQBX/A==&app_key=uoVEPwnh9M63DKdgOsoh8DvPOCCSEIoPVqf30x/YSzsSScM0mQBX/A==&office_id=Ww+/CHlJiig=&secret_key=afRpggkgf9AT1G9s7XV9gmXnv0kLjeLd\",\n                \"request_status\": \"success\",\n                \"type\": \"json\"\n            },\n            {\n                \"request_key\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\n                \"api\": \"transactions\",\n                \"time\": \"5/3/2017 10:05:00 PM\",\n                \"response_time_ms\": \"550\",\n                \"datasize_bytes\": \"619239\",\n                \"request_ip\": \"24.104.64.134\",\n                \"parameters\": \"request_key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\n                \"request_status\": \"success\",\n                \"type\": \"json\"\n            }\n        ]\n    }\n]"
-                }
-              ]
-            },
-            {
-              "name": "send verification code",
-              "id": "d7b77b85-5cf2-e3b9-1a2a-8c08ddc05f32",
-              "request": {
-                "method": "GET",
-                "header": [],
-                "body": {
-                  "mode": "formdata",
-                  "formdata": []
-                },
-                "url": {
-                  "raw": "{{authurl}}/send_verification_code?account_type={account_type}&un={username}&app_id={{app_id}}&app_key={{app_key}}&encrypted={true/false}",
-                  "host": [
-                    "{{authurl}}"
-                  ],
-                  "path": [
-                    "send_verification_code"
-                  ],
-                  "query": [
-                    {
-                      "key": "account_type",
-                      "value": "{account_type}"
-                    },
-                    {
-                      "key": "un",
-                      "value": "{username}"
-                    },
-                    {
-                      "key": "app_id",
-                      "value": "{{app_id}}"
-                    },
-                    {
-                      "key": "app_key",
-                      "value": "{{app_key}}"
-                    },
-                    {
-                      "key": "encrypted",
-                      "value": "{true/false}"
-                    }
-                  ]
-                },
-                "description": "To change or reset the Sikka account password. First you need to send the verification code to user. User will receive the  verification code and you can use that code in `reset_password` API "
-              },
-              "response": [
-                {
-                  "id": "4cdda7ca-aaee-3366-18f7-e8eb3fd440a7",
-                  "name": "request",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [],
-                    "body": {
-                      "mode": "formdata",
-                      "formdata": []
-                    },
-                    "url": {
-                      "raw": "{{authurl}}/send_verification_code?account_type={account_type}&un={username}&app_id={{app_id}}&app_key={{app_key}}&encrypted={true/false}",
-                      "host": [
-                        "{{authurl}}"
-                      ],
-                      "path": [
-                        "send_verification_code"
-                      ],
-                      "query": [
-                        {
-                          "key": "account_type",
-                          "value": "{account_type}"
-                        },
-                        {
-                          "key": "un",
-                          "value": "{username}"
-                        },
-                        {
-                          "key": "app_id",
-                          "value": "{{app_id}}"
-                        },
-                        {
-                          "key": "app_key",
-                          "value": "{{app_key}}"
-                        },
-                        {
-                          "key": "encrypted",
-                          "value": "{true/false}"
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "key": "Access-Control-Allow-Headers",
-                      "value": "Content-Type",
-                      "name": "Access-Control-Allow-Headers",
-                      "description": ""
-                    },
-                    {
-                      "key": "Access-Control-Allow-Origin",
-                      "value": "*",
-                      "name": "Access-Control-Allow-Origin",
-                      "description": ""
-                    },
-                    {
-                      "key": "Cache-Control",
-                      "value": "private",
-                      "name": "Cache-Control",
-                      "description": ""
-                    },
-                    {
-                      "key": "Content-Encoding",
-                      "value": "gzip",
-                      "name": "Content-Encoding",
-                      "description": ""
-                    },
-                    {
-                      "key": "Content-Length",
-                      "value": "279",
-                      "name": "Content-Length",
-                      "description": ""
-                    },
-                    {
-                      "key": "Content-Type",
-                      "value": "application/json",
-                      "name": "Content-Type",
-                      "description": ""
-                    },
-                    {
-                      "key": "Date",
-                      "value": "Wed, 03 May 2017 22:10:35 GMT",
-                      "name": "Date",
-                      "description": ""
-                    },
-                    {
-                      "key": "Server",
-                      "value": "Microsoft-IIS/8.5",
-                      "name": "Server",
-                      "description": ""
-                    },
-                    {
-                      "key": "Vary",
-                      "value": "Accept-Encoding",
-                      "name": "Vary",
-                      "description": ""
-                    },
-                    {
-                      "key": "X-AspNet-Version",
-                      "value": "4.0.30319",
-                      "name": "X-AspNet-Version",
-                      "description": ""
-                    },
-                    {
-                      "key": "X-Powered-By",
-                      "value": "ASP.NET",
-                      "name": "X-Powered-By",
-                      "description": ""
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": "171",
-                  "body": "{\"http_code\":\"200\",\"http_code_desc\":\"OK\",\"sikka_status_code\":\"API4001\",\"short_message\":\"\",\"long_message\":\"Verification code sent to 'demo@sikkasoftware.com'. Please check your inbox for code.\",\"more_information\":\"\"}\r\n"
-                }
-              ]
-            },
-            {
-              "name": "sikka practice utility details",
-              "id": "8b29d208-d98a-0e8e-2573-76d5dd38fdea",
-              "request": {
-                "method": "GET",
-                "header": [],
-                "body": {
-                  "mode": "formdata",
-                  "formdata": []
-                },
-                "url": {
-                  "raw": "https://api.sikkasoft.com/auth/v2/sikka_practice_utility_details?app_id={app_id}&app_key={app_key}",
-                  "protocol": "https",
-                  "host": [
-                    "api",
-                    "sikkasoft",
-                    "com"
-                  ],
-                  "path": [
-                    "auth",
-                    "v2",
-                    "sikka_practice_utility_details"
-                  ],
-                  "query": [
-                    {
-                      "key": "app_id",
-                      "value": "{app_id}"
-                    },
-                    {
-                      "key": "app_key",
-                      "value": "{app_key}"
-                    }
-                  ]
-                },
-                "description": "This API gives detail results about SPC.\n\n|Parameter  |Description  |Required?|\n|---|---|---|\n|app_id  |This is the ID assigned to the application when the application is registered on API portal|  Yes|\n|app_key|  This is the unique key generated when the application is registered on API portal  |Yes|"
-              },
-              "response": [
-                {
-                  "id": "c33d6ddc-b288-ec21-1a18-b1c4bd6157f0",
-                  "name": "sample",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [],
-                    "url": {
-                      "raw": "https://api.sikkasoft.com/auth/v2/sikka_practice_utility_details?app_id={app_id}&app_key={app_key}",
-                      "protocol": "https",
-                      "host": [
-                        "api",
-                        "sikkasoft",
-                        "com"
-                      ],
-                      "path": [
-                        "auth",
-                        "v2",
-                        "sikka_practice_utility_details"
-                      ],
-                      "query": [
-                        {
-                          "key": "app_id",
-                          "value": "{app_id}"
-                        },
-                        {
-                          "key": "app_key",
-                          "value": "{app_key}"
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "name": "Cache-Control",
-                      "key": "Cache-Control",
-                      "value": "private",
-                      "description": ""
-                    },
-                    {
-                      "name": "Content-Encoding",
-                      "key": "Content-Encoding",
-                      "value": "gzip",
-                      "description": ""
-                    },
-                    {
-                      "name": "Content-Length",
-                      "key": "Content-Length",
-                      "value": "1236",
-                      "description": ""
-                    },
-                    {
-                      "name": "Content-Type",
-                      "key": "Content-Type",
-                      "value": "application/json",
-                      "description": ""
-                    },
-                    {
-                      "name": "Date",
-                      "key": "Date",
-                      "value": "Sat, 22 Jul 2017 05:03:58 GMT",
-                      "description": ""
-                    },
-                    {
-                      "name": "Server",
-                      "key": "Server",
-                      "value": "Microsoft-IIS/8.5",
-                      "description": ""
-                    },
-                    {
-                      "name": "Vary",
-                      "key": "Vary",
-                      "value": "Accept-Encoding",
-                      "description": ""
-                    },
-                    {
-                      "name": "X-AspNet-Version",
-                      "key": "X-AspNet-Version",
-                      "value": "4.0.30319",
-                      "description": ""
-                    },
-                    {
-                      "name": "X-Powered-By",
-                      "key": "X-Powered-By",
-                      "value": "ASP.NET",
-                      "description": ""
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": "1591",
-                  "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"500\",\n        \"total_count\": \"55\",\n        \"items\": [\n            {\n                \"office_id\": \"A5138\",\n                \"href\": \"https://api.sikkasoft.com/auth/v2/sikka_practice_utility_details/A5138\",\n                \"spc_id\": \"11573\",\n                \"practice_id\": \"3\",\n                \"refresh_time\": \"2015-01-14 15:58:47\",\n                \"teamviwer_id\": \"586172796\",\n                \"teamviwer_version\": \"TeamViewer7\",\n                \"spc_version\": \"\",\n                \"practice_management_system\": \"Sycle.Net\",\n                \"practice_management_system_version\": \"Web\",\n                \"practice_management_system_version_detected\": \"\",\n                \"practice_management_system_data_path\": \"D:\\\\\",\n                \"financial_management_system\": \"\",\n                \"financial_management_system_version\": \"\",\n                \"financial_management_system_version_detected\": \"\",\n                \"financial_management_system_data_path\": \"\",\n                \"spc_schedule_time\": \"2:00 AM\",\n                \"spc_schedule_type\": \"Daily\",\n                \"spc_schedule_interval\": \"6 Hours\",\n                \"is_spc_update_locked\": \"False\",\n                \"spc_update_lock_note\": \"\",\n                \"last_spc_updated_checked\": \"\",\n                \"is_delta_import_enable\": \"False\",\n                \"etl_start\": \"2015-01-14 15:45:04\",\n                \"etl_end\": \"2015-01-14 15:54:57\",\n                \"web_upload_start\": \"2015-01-14 15:55:11\",\n                \"web_upload_end\": \"2015-01-14 15:58:47\",\n                \"local_upload_start\": \"2015-01-14 15:55:11\",\n                \"local_upload_end\": \"2015-01-14 15:55:11\",\n                \"financial_etl_start\": \"2015-01-14 14:00:06\",\n                \"financial_etl_end\": \"2015-01-14 14:00:06\",\n                \"etl_error_log\": \"\",\n                \"etl_error_priority\": \"\",\n                \"etl_error_description\": \"\",\n                \"etl_cpu_utilization\": \"\",\n                \"etl_memory_utilization\": \"\",\n                \"financial_error_priority\": \"\",\n                \"financial_error_description\": \"\",\n                \"financial_etl_cpu_utilization\": \"\",\n                \"financial_etl_memory_utilization\": \"\",\n                \"local_insert_error_log\": \"\",\n                \"local_insert_error_priority\": \"\",\n                \"local_insert_cpu_utilization\": \"2.32361584878561\",\n                \"local_insert_memory_utilization\": \"80269312\",\n                \"local_upload_error_description\": \"\",\n                \"web_upload_error_flag\": \"\",\n                \"web_upload_error_priority\": \"\",\n                \"web_upload_bandwidth_utilization\": \"492832\",\n                \"web_upload_error_description\": \"\",\n                \"upload_to_server\": \"2015-01-14 10:29:55\",\n                \"upload_to_client\": \"2015-01-14 15:59:10\",\n                \"domain\": \"Audiology\",\n                \"spc_error_flag\": \"\",\n                \"spc_error_priority\": \"\",\n                \"spc_error_description\": \"\",\n                \"timezone\": \"\",\n                \"is_etl_edk\": \"\",\n                \"etl_version\": \"\",\n\t\t\t\t\"isinactive\": \"False\",\n\t\t\t\t\"operating_system\": \"Microsoft Windows 10 Pro\",\n\t\t\t\t\"machine_name\": \"MAIN\",\n\t\t\t\t\"disk_free_space\": \"323.60 GB\",\n\t\t\t\t\"download_speed\": \"11.38 MB\",\n\t\t\t\t\"memory\": \"4.00 GB\",\n\t\t\t\t\"installed_dot_net_version\": \"4.7.2 or later\"\n            },\n            {\n                \"office_id\": \"A6156\",\n                \"href\": \"https://api.sikkasoft.com/auth/v2/sikka_practice_utility_details/A6156\",\n                \"spc_id\": \"8669\",\n                \"practice_id\": \"1\",\n                \"refresh_time\": \"2015-09-05 08:32:39\",\n                \"teamviwer_id\": \"681882497\",\n                \"teamviwer_version\": \"TeamViewer8\",\n                \"spc_version\": \"3.3.0.1\",\n                \"practice_management_system\": \"Tims\",\n                \"practice_management_system_version\": \"V5.0\",\n                \"practice_management_system_version_detected\": \"\",\n                \"practice_management_system_data_path\": \"SERVER\\\\TIMS\",\n                \"financial_management_system\": \"\",\n                \"financial_management_system_version\": \"\",\n                \"financial_management_system_version_detected\": \"\",\n                \"financial_management_system_data_path\": \"\",\n                \"spc_schedule_time\": \"2:00 AM\",\n                \"spc_schedule_type\": \"Daily\",\n                \"spc_schedule_interval\": \"6 Hours\",\n                \"is_spc_update_locked\": \"False\",\n                \"spc_update_lock_note\": \"\",\n                \"last_spc_updated_checked\": \"\",\n                \"is_delta_import_enable\": \"True\",\n                \"etl_start\": \"2015-09-05 08:30:14\",\n                \"etl_end\": \"2015-09-05 08:30:16\",\n                \"web_upload_start\": \"2015-09-05 08:30:16\",\n                \"web_upload_end\": \"2015-09-05 08:32:39\",\n                \"local_upload_start\": \"2015-09-05 08:30:16\",\n                \"local_upload_end\": \"2015-09-05 08:30:16\",\n                \"financial_etl_start\": \"2015-09-05 08:30:16\",\n                \"financial_etl_end\": \"2015-09-05 08:30:16\",\n                \"etl_error_log\": \"\",\n                \"etl_error_priority\": \"\",\n                \"etl_error_description\": \"\",\n                \"etl_cpu_utilization\": \"0\",\n                \"etl_memory_utilization\": \"0\",\n                \"financial_error_priority\": \"\",\n                \"financial_error_description\": \"\",\n                \"financial_etl_cpu_utilization\": \"\",\n                \"financial_etl_memory_utilization\": \"\",\n                \"local_insert_error_log\": \"\",\n                \"local_insert_error_priority\": \"\",\n                \"local_insert_cpu_utilization\": \"0\",\n                \"local_insert_memory_utilization\": \"51798016\",\n                \"local_upload_error_description\": \"\",\n                \"web_upload_error_flag\": \"\",\n                \"web_upload_error_priority\": \"\",\n                \"web_upload_bandwidth_utilization\": \"0\",\n                \"web_upload_error_description\": \"\",\n                \"upload_to_server\": \"2015-09-05 13:33:12\",\n                \"upload_to_client\": \"2015-09-05 08:33:10\",\n                \"domain\": \"Audiology\",\n                \"spc_error_flag\": \"\",\n                \"spc_error_priority\": \"\",\n                \"spc_error_description\": \"\",\n                \"timezone\": \"\",\n                \"is_etl_edk\": \"\",\n                \"etl_version\": \"\",\n\t\t\t\t\"isinactive\": \"False\",\n\t\t\t\t\"operating_system\": \"Microsoft Windows 10 Pro\",\n\t\t\t\t\"machine_name\": \"MAIN\",\n\t\t\t\t\"disk_free_space\": \"323.60 GB\",\n\t\t\t\t\"download_speed\": \"11.38 MB\",\n\t\t\t\t\"memory\": \"4.00 GB\",\n\t\t\t\t\"installed_dot_net_version\": \"4.7.2 or later\"\n            }\n        ]\n    }\n]"
-                }
-              ]
-            },
-            {
-              "name": "sikka practice utility details by office id",
-              "id": "29a4a54d-b209-1f26-2249-abeb7a4d1c67",
-              "request": {
-                "method": "GET",
-                "header": [],
-                "body": {
-                  "mode": "formdata",
-                  "formdata": []
-                },
-                "url": {
-                  "raw": "https://api.sikkasoft.com/auth/v2/sikka_practice_utility_details/{office_id}?app_id={app_id}&app_key={app_key}",
-                  "protocol": "https",
-                  "host": [
-                    "api",
-                    "sikkasoft",
-                    "com"
-                  ],
-                  "path": [
-                    "auth",
-                    "v2",
-                    "sikka_practice_utility_details",
-                    "{office_id}"
-                  ],
-                  "query": [
-                    {
-                      "key": "app_id",
-                      "value": "{app_id}"
-                    },
-                    {
-                      "key": "app_key",
-                      "value": "{app_key}"
-                    }
-                  ]
-                },
-                "description": "This API gives detail results about SPC by office id.\n\n|Parameter  |Description  |Required?|\n|---|---|---|\n|app_id  |This is the ID assigned to the application when the application is registered on API portal|  Yes|\n|app_key|  This is the unique key generated when the application is registered on API portal  |Yes|"
-              },
-              "response": [
-                {
-                  "id": "d3176c1f-1c53-ea82-7a8b-dcddb396d62b",
-                  "name": "sample",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [],
-                    "url": {
-                      "raw": "https://api.sikkasoft.com/auth/v2/sikka_practice_utility_details/{office_id}?app_id={app_id}&app_key={app_key}",
-                      "protocol": "https",
-                      "host": [
-                        "api",
-                        "sikkasoft",
-                        "com"
-                      ],
-                      "path": [
-                        "auth",
-                        "v2",
-                        "sikka_practice_utility_details",
-                        "{office_id}"
-                      ],
-                      "query": [
-                        {
-                          "key": "app_id",
-                          "value": "{app_id}"
-                        },
-                        {
-                          "key": "app_key",
-                          "value": "{app_key}"
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "name": "Cache-Control",
-                      "key": "Cache-Control",
-                      "value": "private",
-                      "description": ""
-                    },
-                    {
-                      "name": "Content-Encoding",
-                      "key": "Content-Encoding",
-                      "value": "gzip",
-                      "description": ""
-                    },
-                    {
-                      "name": "Content-Length",
-                      "key": "Content-Length",
-                      "value": "874",
-                      "description": ""
-                    },
-                    {
-                      "name": "Content-Type",
-                      "key": "Content-Type",
-                      "value": "application/json",
-                      "description": ""
-                    },
-                    {
-                      "name": "Date",
-                      "key": "Date",
-                      "value": "Sat, 22 Jul 2017 05:59:43 GMT",
-                      "description": ""
-                    },
-                    {
-                      "name": "Server",
-                      "key": "Server",
-                      "value": "Microsoft-IIS/8.5",
-                      "description": ""
-                    },
-                    {
-                      "name": "Vary",
-                      "key": "Vary",
-                      "value": "Accept-Encoding",
-                      "description": ""
-                    },
-                    {
-                      "name": "X-AspNet-Version",
-                      "key": "X-AspNet-Version",
-                      "value": "4.0.30319",
-                      "description": ""
-                    },
-                    {
-                      "name": "X-Powered-By",
-                      "key": "X-Powered-By",
-                      "value": "ASP.NET",
-                      "description": ""
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": "1610",
-                  "body": "[{\"offset\":\"0\",\"limit\":\"500\",\"total_count\":\"1\",\"items\":[{\"office_id\":\"A5138\",\"href\":\"https:\\/\\/api.sikkasoft.com\\/auth\\/v2\\/sikka_practice_utility_details\\/A5138\",\"spc_id\":\"11573\",\"practice_id\":\"3\",\"refresh_time\":\"2015-01-14 15:58:47\",\"teamviwer_id\":\"586172796\",\"teamviwer_version\":\"TeamViewer7\",\"spc_version\":\"\",\"practice_management_system\":\"Sycle.Net\",\"practice_management_system_version\":\"Web\",\"practice_management_system_version_detected\":\"\",\"practice_management_system_data_path\":\"D:\\\\\",\"financial_management_system\":\"\",\"financial_management_system_version\":\"\",\"financial_management_system_version_detected\":\"\",\"financial_management_system_data_path\":\"\",\"spc_schedule_time\":\"2:00 AM\",\"spc_schedule_type\":\"Daily\",\"spc_schedule_interval\":\"6 Hours\",\"is_spc_update_locked\":\"False\",\"spc_update_lock_note\":\"\",\"last_spc_updated_checked\":\"\",\"is_delta_import_enable\":\"False\",\"etl_start\":\"2015-01-14 15:45:04\",\"etl_end\":\"2015-01-14 15:54:57\",\"web_upload_start\":\"2015-01-14 15:55:11\",\"web_upload_end\":\"2015-01-14 15:58:47\",\"local_upload_start\":\"2015-01-14 15:55:11\",\"local_upload_end\":\"2015-01-14 15:55:11\",\"financial_etl_start\":\"2015-01-14 14:00:06\",\"financial_etl_end\":\"2015-01-14 14:00:06\",\"etl_error_log\":\"\",\"etl_error_priority\":\"\",\"etl_error_description\":\"\",\"etl_cpu_utilization\":\"\",\"etl_memory_utilization\":\"\",\"financial_error_priority\":\"\",\"financial_error_description\":\"\",\"financial_etl_cpu_utilization\":\"\",\"financial_etl_memory_utilization\":\"\",\"local_insert_error_log\":\"\",\"local_insert_error_priority\":\"\",\"local_insert_cpu_utilization\":\"2.32361584878561\",\"local_insert_memory_utilization\":\"80269312\",\"local_upload_error_description\":\"\",\"web_upload_error_flag\":\"\",\"web_upload_error_priority\":\"\",\"web_upload_bandwidth_utilization\":\"492832\",\"web_upload_error_description\":\"\",\"upload_to_server\":\"2015-01-14 10:29:55\",\"upload_to_client\":\"2015-01-14 15:59:10\",\"domain\":\"Audiology\",\"spc_error_flag\":\"\",\"spc_error_priority\":\"\",\"spc_error_description\":\"\",\"timezone\":\"\",\"is_etl_edk\":\"\",\"etl_version\":\"\",\"isinactive\": \"False\",\"operating_system\": \"Microsoft Windows 10 Pro\",\"machine_name\": \"MAIN\",\"disk_free_space\": \"323.60 GB\",\"download_speed\": \"11.38 MB\",\"memory\": \"4.00 GB\",\"installed_dot_net_version\": \"4.7.2 or later\"}]}]\r\n"
-                }
-              ]
-            },
-            {
-              "name": "pms_environment",
-              "id": "4076cada-524b-a921-5187-b1511d28d7f7",
-              "request": {
-                "method": "GET",
-                "header": [],
-                "body": {
-                  "mode": "formdata",
-                  "formdata": []
-                },
-                "url": {
-                  "raw": "https://api.sikkasoft.com/auth/v2/pms_environment?app_id={app_id}&app_key={app_key}&value_type={value_type}&pms={pms}",
-                  "protocol": "https",
-                  "host": [
-                    "api",
-                    "sikkasoft",
-                    "com"
-                  ],
-                  "path": [
-                    "auth",
-                    "v2",
-                    "pms_environment"
-                  ],
-                  "query": [
-                    {
-                      "key": "app_id",
-                      "value": "{app_id}"
-                    },
-                    {
-                      "key": "app_key",
-                      "value": "{app_key}"
-                    },
-                    {
-                      "key": "value_type",
-                      "value": "{value_type}"
-                    },
-                    {
-                      "key": "pms",
-                      "value": "{pms}"
-                    }
-                  ]
-                },
-                "description": "This API provides different status values of appointments, patients , treatment_plan etc.\n\n|Parameter  |Description  |Required?|\n|---|---|---|\n|app_id  |This is the ID assigned to the application when the application is registered on API portal|  Yes|\n|app_key|  This is the unique key generated when the application is registered on API portal  |Yes|\n|value_type|  Type of value  |No|\n|pms|  Name of practice management system  |No|"
-              },
-              "response": [
-                {
-                  "id": "0ab91dc0-746a-c341-d9e9-1730a908e500",
-                  "name": "sample",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [],
-                    "body": {
-                      "mode": "formdata",
-                      "formdata": []
-                    },
-                    "url": {
-                      "raw": "https://api.sikkasoft.com/auth/v2/sikka_practice_utility_details?app_id={app_id}&app_key={app_key}",
-                      "protocol": "https",
-                      "host": [
-                        "api",
-                        "sikkasoft",
-                        "com"
-                      ],
-                      "path": [
-                        "auth",
-                        "v2",
-                        "sikka_practice_utility_details"
-                      ],
-                      "query": [
-                        {
-                          "key": "app_id",
-                          "value": "{app_id}"
-                        },
-                        {
-                          "key": "app_key",
-                          "value": "{app_key}"
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "name": "Cache-Control",
-                      "key": "Cache-Control",
-                      "value": "private",
-                      "description": ""
-                    },
-                    {
-                      "name": "Content-Encoding",
-                      "key": "Content-Encoding",
-                      "value": "gzip",
-                      "description": ""
-                    },
-                    {
-                      "name": "Content-Length",
-                      "key": "Content-Length",
-                      "value": "1236",
-                      "description": ""
-                    },
-                    {
-                      "name": "Content-Type",
-                      "key": "Content-Type",
-                      "value": "application/json",
-                      "description": ""
-                    },
-                    {
-                      "name": "Date",
-                      "key": "Date",
-                      "value": "Sat, 22 Jul 2017 05:03:58 GMT",
-                      "description": ""
-                    },
-                    {
-                      "name": "Server",
-                      "key": "Server",
-                      "value": "Microsoft-IIS/8.5",
-                      "description": ""
-                    },
-                    {
-                      "name": "Vary",
-                      "key": "Vary",
-                      "value": "Accept-Encoding",
-                      "description": ""
-                    },
-                    {
-                      "name": "X-AspNet-Version",
-                      "key": "X-AspNet-Version",
-                      "value": "4.0.30319",
-                      "description": ""
-                    },
-                    {
-                      "name": "X-Powered-By",
-                      "key": "X-Powered-By",
-                      "value": "ASP.NET",
-                      "description": ""
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": "1591",
-                  "body": "[{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"2\",\r\n\t\"total_count\": \"29\",\r\n\t\"items\": [{\r\n\t\t\"pms\": \"Opendental\",\r\n\t\t\"value_type\": \"patient_status\",\r\n\t\t\"value\": \"0?\"\r\n\t}, {\r\n\t\t\"pms\": \"Opendental\",\r\n\t\t\"value_type\": \"patient_status\",\r\n\t\t\"value\": \"108?\"\r\n\t}]\r\n}]"
-                }
-              ]
-            },
-            {
-              "name": "remove_access",
-              "id": "073d4daa-0489-3db2-a3d9-551b8b2c7631",
-              "request": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json"
-                  }
-                ],
-                "body": {
-                  "mode": "formdata",
-                  "formdata": []
-                },
-                "url": "https://api.sikkasoft.com/auth/v2/remove_access",
-                "description": "This API will allow API partners to remove API access from practices (office_id).\n\n|Parameter  |Description  |Required?|\n|---|---|---|\n|app_id  |This is the ID assigned to the application when the application is registered on API portal|  Yes|\n|app_key|  This is the unique key generated when the application is registered on API portal  |Yes|\n|office_id|  office_id  |Yes|\n|comment|  comment  |Yes|"
-              },
-              "response": [
-                {
-                  "id": "88998003-162b-de94-e929-c2cf6900c15c",
-                  "name": "sample",
-                  "originalRequest": {
-                    "method": "POST",
-                    "header": [],
-                    "body": {
-                      "mode": "raw",
-                      "raw": "{\r\n\t\"app_id\": \"app_id\",\r\n\t\"app_key\": \"app_key\",\r\n\t\"practices\": [{\r\n\t\t\t\"office_id\": \"office_id1\",\r\n\t\t\t\"comment\": \"comment\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"office_id\": \"office_id2\",\r\n\t\t\t\"comment\": \"comment\"\r\n\t\t}\r\n\t]\r\n}"
-                    },
-                    "url": "https://api.sikkasoft.com/auth/v2/remove_access"
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "name": "Cache-Control",
-                      "key": "Cache-Control",
-                      "value": "private",
-                      "description": ""
-                    },
-                    {
-                      "name": "Content-Encoding",
-                      "key": "Content-Encoding",
-                      "value": "gzip",
-                      "description": ""
-                    },
-                    {
-                      "name": "Content-Length",
-                      "key": "Content-Length",
-                      "value": "1236",
-                      "description": ""
-                    },
-                    {
-                      "name": "Content-Type",
-                      "key": "Content-Type",
-                      "value": "application/json",
-                      "description": ""
-                    },
-                    {
-                      "name": "Date",
-                      "key": "Date",
-                      "value": "Sat, 22 Jul 2017 05:03:58 GMT",
-                      "description": ""
-                    },
-                    {
-                      "name": "Server",
-                      "key": "Server",
-                      "value": "Microsoft-IIS/8.5",
-                      "description": ""
-                    },
-                    {
-                      "name": "Vary",
-                      "key": "Vary",
-                      "value": "Accept-Encoding",
-                      "description": ""
-                    },
-                    {
-                      "name": "X-AspNet-Version",
-                      "key": "X-AspNet-Version",
-                      "value": "4.0.30319",
-                      "description": ""
-                    },
-                    {
-                      "name": "X-Powered-By",
-                      "key": "X-Powered-By",
-                      "value": "ASP.NET",
-                      "description": ""
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": "1591",
-                  "body": "{\r\n\t\"practices\": [{\r\n\t\t\"office_id\": \"office_id1\",\r\n\t\t\"comment\": \"DevTesting\",\r\n\t\t\"status\": \"access removed\"\r\n\t}, {\r\n\t\t\"office_id\": \"office_id2\",\r\n\t\t\"comment\": \"DevTesting\",\r\n\t\t\"status\": \"access removed\"\r\n\t}]\r\n}"
-                }
-              ]
-            }
-          ],
-          "id": "ef222857-1c8a-67ad-5c2c-9582a7fca19e",
-          "description": "Sikka authentication API contains all API related with Sikka authentication. Like account log in ,sign up , update and delete.\nAlso about request key information , application details , authentication etc.",
-          "event": [
-            {
-              "listen": "prerequest",
-              "script": {
-                "id": "7906aeb0-00f4-41a4-8358-e0f196165510",
-                "type": "text/javascript",
-                "exec": [
-                  ""
-                ]
-              }
-            },
-            {
-              "listen": "test",
-              "script": {
-                "id": "c103b5b1-f525-4d29-b77a-8d2b97679d2d",
-                "type": "text/javascript",
-                "exec": [
-                  ""
-                ]
-              }
-            }
-          ]
         }
       ],
       "id": "4a90818c-b880-4b29-b3a3-46e71331e73d"
