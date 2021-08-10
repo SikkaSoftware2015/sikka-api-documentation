@@ -26109,47 +26109,11 @@
               "body": "[{\"scope\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/\",\"request_key\":\"ad9beb2883ed1a2277d1aac15fc9793d\",\"token_type\":\"Bearer\",\"expires_in\":\"86400\"}]\r\n"
             }
           ]
-        }
-      ],
-      "id": "4a90818c-b880-4b29-b3a3-46e71331e73d"
-    },
-    {
-      "name": "Sikka API v4",
-      "item": [],
-      "id": "603347df-cf60-4fcd-ab4c-9e047b36756d"
-    },
-    {
-      "name": "end",
-      "id": "0ff06640-71a1-5e37-4609-eb82db9039a8",
-      "request": {
-        "method": "GET",
-        "header": [],
-        "body": {
-          "mode": "formdata",
-          "formdata": []
         },
-        "url": {
-          "raw": "{{url}}/end?request_key={{request_key}}",
-          "host": [
-            "{{url}}"
-          ],
-          "path": [
-            "end"
-          ],
-          "query": [
-            {
-              "key": "request_key",
-              "value": "{{request_key}}"
-            }
-          ]
-        },
-        "description": "The \"end\" function is used to terminate the request session.\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|"
-      },
-      "response": [
         {
-          "id": "0878ca64-cc91-411e-befe-c87d684ba978",
-          "name": "request",
-          "originalRequest": {
+          "name": "end",
+          "id": "0ff06640-71a1-5e37-4609-eb82db9039a8",
+          "request": {
             "method": "GET",
             "header": [],
             "body": {
@@ -26170,84 +26134,120 @@
                   "value": "{{request_key}}"
                 }
               ]
-            }
+            },
+            "description": "The \"end\" function is used to terminate the request session.\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|"
           },
-          "status": "OK",
-          "code": 200,
-          "_postman_previewlanguage": "json",
-          "header": [
+          "response": [
             {
-              "name": "Access-Control-Allow-Headers",
-              "key": "Access-Control-Allow-Headers",
-              "value": "accept, authorization, Content-Type, X-Session-Id",
-              "description": ""
-            },
-            {
-              "name": "Access-Control-Allow-Methods",
-              "key": "Access-Control-Allow-Methods",
-              "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
-              "description": ""
-            },
-            {
-              "name": "Access-Control-Allow-Origin",
-              "key": "Access-Control-Allow-Origin",
-              "value": "*",
-              "description": ""
-            },
-            {
-              "name": "Cache-Control",
-              "key": "Cache-Control",
-              "value": "private, no-cache=\"set-cookie\"",
-              "description": ""
-            },
-            {
-              "name": "Connection",
-              "key": "Connection",
-              "value": "keep-alive",
-              "description": ""
-            },
-            {
-              "name": "Content-Length",
-              "key": "Content-Length",
-              "value": "174",
-              "description": ""
-            },
-            {
-              "name": "Content-Type",
-              "key": "Content-Type",
-              "value": "application/json",
-              "description": ""
-            },
-            {
-              "name": "Date",
-              "key": "Date",
-              "value": "Fri, 21 Apr 2017 09:21:28 GMT",
-              "description": ""
-            },
-            {
-              "name": "Server",
-              "key": "Server",
-              "value": "Microsoft-IIS/8.5",
-              "description": ""
-            },
-            {
-              "name": "X-AspNet-Version",
-              "key": "X-AspNet-Version",
-              "value": "4.0.30319",
-              "description": ""
-            },
-            {
-              "name": "X-Powered-By",
-              "key": "X-Powered-By",
-              "value": "ASP.NET",
-              "description": ""
+              "id": "0878ca64-cc91-411e-befe-c87d684ba978",
+              "name": "request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
+                "url": {
+                  "raw": "{{url}}/end?request_key={{request_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "end"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "{{request_key}}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "Access-Control-Allow-Headers",
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "accept, authorization, Content-Type, X-Session-Id",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Methods",
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Origin",
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "description": ""
+                },
+                {
+                  "name": "Cache-Control",
+                  "key": "Cache-Control",
+                  "value": "private, no-cache=\"set-cookie\"",
+                  "description": ""
+                },
+                {
+                  "name": "Connection",
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Length",
+                  "key": "Content-Length",
+                  "value": "174",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Type",
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": ""
+                },
+                {
+                  "name": "Date",
+                  "key": "Date",
+                  "value": "Fri, 21 Apr 2017 09:21:28 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "Server",
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5",
+                  "description": ""
+                },
+                {
+                  "name": "X-AspNet-Version",
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "description": ""
+                },
+                {
+                  "name": "X-Powered-By",
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": "1097",
+              "body": "{\"http_code\":\"200\",\"http_code_desc\":\"OK\",\"sikka_status_code\":\"API0003\",\"short_message\":\"OK\",\"long_message\":\"Request Session terminated successfully.\",\"more_information\":\"\"}\r\n"
             }
-          ],
-          "cookie": [],
-          "responseTime": "1097",
-          "body": "{\"http_code\":\"200\",\"http_code_desc\":\"OK\",\"sikka_status_code\":\"API0003\",\"short_message\":\"OK\",\"long_message\":\"Request Session terminated successfully.\",\"more_information\":\"\"}\r\n"
+          ]
         }
-      ]
+      ],
+      "id": "4a90818c-b880-4b29-b3a3-46e71331e73d"
+    },
+    {
+      "name": "Sikka API v4",
+      "item": [],
+      "id": "603347df-cf60-4fcd-ab4c-9e047b36756d"
     },
     {
       "name": "data_check",
