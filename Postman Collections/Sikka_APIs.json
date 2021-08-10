@@ -7147,15 +7147,11 @@
                 "method": "GET",
                 "header": [],
                 "url": {
-                  "raw": "https://api.sikkasoft.com/v2/practice_schedule?request_key={{request_key}}",
-                  "protocol": "https",
+                  "raw": "{{url}}/practice_schedule?request_key={{request_key}}",
                   "host": [
-                    "api",
-                    "sikkasoft",
-                    "com"
+                    "{{url}}"
                   ],
                   "path": [
-                    "v2",
                     "practice_schedule"
                   ],
                   "query": [
@@ -25854,6 +25850,11 @@
           }
         }
       ]
+    },
+    {
+      "name": "New Folder",
+      "item": [],
+      "id": "4a90818c-b880-4b29-b3a3-46e71331e73d"
     },
     {
       "name": "start",
