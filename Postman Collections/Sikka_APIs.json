@@ -7,6 +7,1137 @@
   },
   "item": [
     {
+      "name": "Lab",
+      "item": [
+        {
+          "name": "lab_panels",
+          "id": "3b25d07b-bde6-b048-20fa-42dc1b69c6d4",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "{{url}}/lab_panels?request_key={{request_key}}",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "lab_panels"
+              ],
+              "query": [
+                {
+                  "key": "request_key",
+                  "value": "{{request_key}}"
+                }
+              ]
+            },
+            "description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|procedure_code_id|Procedure code id is same as procedure code.|No|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|lab_panel_id|Lab Panel ID|\r\n"
+          },
+          "response": [
+            {
+              "id": "0ac6de72-015b-ba30-5fab-557d370338bd",
+              "name": "request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
+                "url": {
+                  "raw": "{{url}}/lab_panels?request_key={{request_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "lab_panels"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "{{request_key}}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "Access-Control-Allow-Headers",
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "accept, authorization, Content-Type, X-Session-Id",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Methods",
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Origin",
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "description": ""
+                },
+                {
+                  "name": "Cache-Control",
+                  "key": "Cache-Control",
+                  "value": "private",
+                  "description": ""
+                },
+                {
+                  "name": "Connection",
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Length",
+                  "key": "Content-Length",
+                  "value": "1458",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Type",
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": ""
+                },
+                {
+                  "name": "Date",
+                  "key": "Date",
+                  "value": "Mon, 24 Apr 2017 11:30:56 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "Server",
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5",
+                  "description": ""
+                },
+                {
+                  "name": "X-AspNet-Version",
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "description": ""
+                },
+                {
+                  "name": "X-Powered-By",
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": "1077",
+              "body": "[{\"offset\":\"0\",\"limit\":\"2\",\"total_count\":\"5998\",\"items\":[{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/lab_panels\\/2147061644\",\"lab_panel_id\":\"2147061644\",\"patient_id\":\"3728-A\",\"patient\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/3728-A\"},\"guarantor_id\":\"3728\",\"guarantor\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/guarantors\\/3728\"},\"procedure_code_id\":\"\",\"procedure_code_description\":\"OP + GIARDIA AG ELISA\",\"lab_name\":\"IDEXX LabREXX\",\"provider_id\":\"1\",\"provider\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/1\"},\"status\":\"Final\",\"comments\":\"\",\"create_date\":\"2015-06-30\",\"modified_date\":\"\",\"description\":\"\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"}},{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/lab_panels\\/2146878109\",\"lab_panel_id\":\"2146878109\",\"patient_id\":\"1695-A\",\"patient\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/1695-A\"},\"guarantor_id\":\"1695\",\"guarantor\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/guarantors\\/1695\"},\"procedure_code_id\":\"\",\"procedure_code_description\":\"FECAL FLOTATION\",\"lab_name\":\"\",\"provider_id\":\"4\",\"provider\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/4\"},\"status\":\"Final\",\"comments\":\"\",\"create_date\":\"2014-12-10\",\"modified_date\":\"\",\"description\":\"\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"}}]}]\r\n"
+            }
+          ]
+        },
+        {
+          "name": "lab_panels by lab_panel_id",
+          "id": "fec4ca5b-39c7-b106-1b7f-c6eadb17ddd5",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "{{url}}/lab_panels/{lab_panel_id}?request_key={{request_key}}",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "lab_panels",
+                "{lab_panel_id}"
+              ],
+              "query": [
+                {
+                  "key": "request_key",
+                  "value": "{{request_key}}"
+                }
+              ]
+            },
+            "description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|procedure_code_id|Procedure code id is same as procedure code.|No|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|lab_panel_id|Lab Panel ID|\r\n"
+          },
+          "response": [
+            {
+              "id": "46fd00e2-c71f-eb9c-3520-3abd003e9ed9",
+              "name": "request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
+                "url": {
+                  "raw": "{{url}}/lab_panels/{lab_panel_id}?request_key={{request_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "lab_panels",
+                    "{lab_panel_id}"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "{{request_key}}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "Access-Control-Allow-Headers",
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "accept, authorization, Content-Type, X-Session-Id",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Methods",
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Origin",
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "description": ""
+                },
+                {
+                  "name": "Cache-Control",
+                  "key": "Cache-Control",
+                  "value": "private",
+                  "description": ""
+                },
+                {
+                  "name": "Connection",
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Length",
+                  "key": "Content-Length",
+                  "value": "709",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Type",
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": ""
+                },
+                {
+                  "name": "Date",
+                  "key": "Date",
+                  "value": "Mon, 24 Apr 2017 11:33:37 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "Server",
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5",
+                  "description": ""
+                },
+                {
+                  "name": "X-AspNet-Version",
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "description": ""
+                },
+                {
+                  "name": "X-Powered-By",
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": "954",
+              "body": "{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/lab_panels\\/2147061644\",\"lab_panel_id\":\"2147061644\",\"patient_id\":\"3728-A\",\"patient\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/3728-A\"},\"guarantor_id\":\"3728\",\"guarantor\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/guarantors\\/3728\"},\"procedure_code_id\":\"\",\"procedure_code_description\":\"OP + GIARDIA AG ELISA\",\"lab_name\":\"IDEXX LabREXX\",\"provider_id\":\"1\",\"provider\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/1\"},\"status\":\"Final\",\"comments\":\"\",\"create_date\":\"2015-06-30\",\"modified_date\":\"\",\"description\":\"\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"}}\r\n"
+            }
+          ]
+        },
+        {
+          "name": "lab_results",
+          "id": "f546df6a-c125-e575-6b99-7251d80eac0a",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "{{url}}/lab_results?request_key={{request_key}}",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "lab_results"
+              ],
+              "query": [
+                {
+                  "key": "request_key",
+                  "value": "{{request_key}}"
+                }
+              ]
+            },
+            "description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|lab_panel_id|Lab Panel ID|\r\n\r\n"
+          },
+          "response": [
+            {
+              "id": "fe4b1dfa-3519-7aaa-d36c-892eb5ff6206",
+              "name": "request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
+                "url": {
+                  "raw": "{{url}}/lab_results?request_key={{request_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "lab_results"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "{{request_key}}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "Access-Control-Allow-Headers",
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "accept, authorization, Content-Type, X-Session-Id",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Methods",
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Origin",
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "description": ""
+                },
+                {
+                  "name": "Cache-Control",
+                  "key": "Cache-Control",
+                  "value": "private, no-cache=\"set-cookie\"",
+                  "description": ""
+                },
+                {
+                  "name": "Connection",
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Length",
+                  "key": "Content-Length",
+                  "value": "1221",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Type",
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": ""
+                },
+                {
+                  "name": "Date",
+                  "key": "Date",
+                  "value": "Mon, 24 Apr 2017 11:36:24 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "Server",
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5",
+                  "description": ""
+                },
+                {
+                  "name": "X-AspNet-Version",
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "description": ""
+                },
+                {
+                  "name": "X-Powered-By",
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": "1299",
+              "body": "[{\"offset\":\"0\",\"limit\":\"2\",\"total_count\":\"172316\",\"items\":[{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/lab_results\\/2147061644\",\"lab_panel_id\":\"2147061644\",\"lab_panel\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/lab_panels\\/2147061644\"},\"result_date\":\"2015-06-30\",\"test_name\":\"OVA & PARASITES\",\"measure_unit\":\"\",\"result\":\"No parasite found\",\"result_type\":\"\",\"critical_low\":\"\",\"critical_high\":\"\",\"reference_low\":\"\",\"reference_high\":\"\",\"reference_range\":\"\",\"comments\":\"\",\"lab_machine_name\":\"\",\"lab_machine_type\":\"\",\"lab_result_name\":\"\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"}},{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/lab_results\\/2147061644\",\"lab_panel_id\":\"2147061644\",\"lab_panel\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/lab_panels\\/2147061644\"},\"result_date\":\"2015-06-30\",\"test_name\":\"Accession #\",\"measure_unit\":\"\",\"result\":\"8881402\",\"result_type\":\"\",\"critical_low\":\"\",\"critical_high\":\"\",\"reference_low\":\"\",\"reference_high\":\"\",\"reference_range\":\"\",\"comments\":\"\",\"lab_machine_name\":\"\",\"lab_machine_type\":\"\",\"lab_result_name\":\"\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"}}]}]\r\n"
+            }
+          ]
+        },
+        {
+          "name": "lab_results by lab_panel_id",
+          "id": "889b55cd-4e5c-60b7-d4a0-74c0fb07f275",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "{{url}}/lab_results/{lab_panel_id}?request_key={{request_key}}",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "lab_results",
+                "{lab_panel_id}"
+              ],
+              "query": [
+                {
+                  "key": "request_key",
+                  "value": "{{request_key}}"
+                }
+              ]
+            },
+            "description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|lab_panel_id|Lab Panel ID|"
+          },
+          "response": [
+            {
+              "id": "ac0f0691-716c-e3c9-3ae5-27b8176dd2ca",
+              "name": "request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
+                "url": {
+                  "raw": "{{url}}/lab_results/{lab_panel_id}?request_key={{request_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "lab_results",
+                    "{lab_panel_id}"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "{{request_key}}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "name": "Access-Control-Allow-Headers",
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "accept, authorization, Content-Type, X-Session-Id",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Methods",
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+                  "description": ""
+                },
+                {
+                  "name": "Access-Control-Allow-Origin",
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*",
+                  "description": ""
+                },
+                {
+                  "name": "Cache-Control",
+                  "key": "Cache-Control",
+                  "value": "private",
+                  "description": ""
+                },
+                {
+                  "name": "Connection",
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Length",
+                  "key": "Content-Length",
+                  "value": "587",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Type",
+                  "key": "Content-Type",
+                  "value": "application/json",
+                  "description": ""
+                },
+                {
+                  "name": "Date",
+                  "key": "Date",
+                  "value": "Mon, 24 Apr 2017 11:38:18 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "Server",
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5",
+                  "description": ""
+                },
+                {
+                  "name": "X-AspNet-Version",
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319",
+                  "description": ""
+                },
+                {
+                  "name": "X-Powered-By",
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": "415",
+              "body": "{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/lab_results\\/2147061644\",\"lab_panel_id\":\"2147061644\",\"lab_panel\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/lab_panels\\/2147061644\"},\"result_date\":\"2015-06-30\",\"test_name\":\"OVA & PARASITES\",\"measure_unit\":\"\",\"result\":\"No parasite found\",\"result_type\":\"\",\"critical_low\":\"\",\"critical_high\":\"\",\"reference_low\":\"\",\"reference_high\":\"\",\"reference_range\":\"\",\"comments\":\"\",\"lab_machine_name\":\"\",\"lab_machine_type\":\"\",\"lab_result_name\":\"\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"}}\r\n"
+            }
+          ]
+        },
+        {
+          "name": "lab_details",
+          "id": "ac187fe1-0ee2-44d9-a82a-f258809ba579",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/lab_details?request_key={{request_key}}",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "lab_details"
+              ],
+              "query": [
+                {
+                  "key": "request_key",
+                  "value": "{{request_key}}"
+                }
+              ]
+            },
+            "description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|lab_id|Lab ID|No|\r\n|practice_id|Practice ID|No|\r\n|city|City|No|\r\n|state|State|No|\r\n|zipcode|Zip Code|No|\r\n|email|Email|No|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|lab_id|Lab ID|"
+          },
+          "response": [
+            {
+              "id": "96c890d9-3a33-4362-afae-5e3d5d055708",
+              "name": "request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{url}}/lab_details?request_key={{request_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "lab_details"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "{{request_key}}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "private"
+                },
+                {
+                  "key": "Allow",
+                  "value": "OPTIONS, TRACE, GET, HEAD, POST"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5"
+                },
+                {
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319"
+                },
+                {
+                  "key": "Request-Key-Expires",
+                  "value": "Fri, 03 Apr 2020 09:02:54 GMT"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+                },
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "accept, authorization, Content-Type, X-Session-Id,X-PINGOTHER"
+                },
+                {
+                  "key": "Public",
+                  "value": "OPTIONS, TRACE, GET, HEAD, POST"
+                },
+                {
+                  "key": "X-Api-Server-Version",
+                  "value": "2"
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 02 Apr 2020 10:01:32 GMT"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=16000000; includeSubDomains; preload;"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"2\",\n        \"total_count\": \"22\",\n        \"execution_time\": \"49\",\n        \"pagination\": {\n            \"first\": \"https://api.sikkasoft.com/v2/lab_details?offset=0&limit=2\",\n            \"previous\": \"\",\n            \"current\": \"https://api.sikkasoft.com/v2/lab_details?offset=0&limit=2\",\n            \"next\": \"https://api.sikkasoft.com/v2/lab_details?offset=1&limit=2\",\n            \"last\": \"https://api.sikkasoft.com/v2/lab_details?offset=10&limit=2\"\n        },\n        \"items\": [\n            {\n                \"href\": \"https://api.sikkasoft.com/v2/practices/5/lab_details/12\",\n                \"lab_id\": \"12\",\n                \"lab_name\": \"Maverick\",\n                \"address\": \"\",\n                \"city\": \"\",\n                \"state\": \"\",\n                \"zipcode\": \"\",\n                \"phone\": \"\",\n                \"fax\": \"\",\n                \"email\": \"\",\n                \"note\": \"\",\n                \"website\": \"\",\n                \"cell_phone\": \"\",\n                \"contact\": \"\",\n                \"lab_slip\": \"\",\n                \"days_to_return\": \"\",\n                \"practice_id\": \"5\",\n                \"practice\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5\"\n                }\n            },\n            {\n                \"href\": \"https://api.sikkasoft.com/v2/practices/5/lab_details/11\",\n                \"lab_id\": \"11\",\n                \"lab_name\": \"First Choice Dental Lab\",\n                \"address\": \"\",\n                \"city\": \"\",\n                \"state\": \"\",\n                \"zipcode\": \"\",\n                \"phone\": \"\",\n                \"fax\": \"\",\n                \"email\": \"\",\n                \"note\": \"\",\n                \"website\": \"\",\n                \"cell_phone\": \"\",\n                \"contact\": \"\",\n                \"lab_slip\": \"\",\n                \"days_to_return\": \"\",\n                \"practice_id\": \"5\",\n                \"practice\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5\"\n                }\n            }\n        ]\n    }\n]"
+            }
+          ]
+        },
+        {
+          "name": "lab_details by lab_id",
+          "id": "97f99615-060e-4861-8898-ff95b03c2bc4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/lab_details/{lab_id}?request_key={{request_key}}",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "lab_details",
+                "{lab_id}"
+              ],
+              "query": [
+                {
+                  "key": "request_key",
+                  "value": "{{request_key}}"
+                }
+              ]
+            },
+            "description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|lab_id|Lab ID|No|\r\n|practice_id|Practice ID|No|\r\n|city|City|No|\r\n|state|State|No|\r\n|zipcode|Zip Code|No|\r\n|email|Email|No|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|lab_id|Lab ID|"
+          },
+          "response": [
+            {
+              "id": "04bf2418-d8be-413b-8b31-f45c4793fa68",
+              "name": "request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{url}}/lab_details/{lab_id}?request_key={{request_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "lab_details",
+                    "{lab_id}"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "{{request_key}}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "private"
+                },
+                {
+                  "key": "Allow",
+                  "value": "OPTIONS, TRACE, GET, HEAD, POST"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5"
+                },
+                {
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319"
+                },
+                {
+                  "key": "Request-Key-Expires",
+                  "value": "Fri, 03 Apr 2020 09:02:54 GMT"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+                },
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "accept, authorization, Content-Type, X-Session-Id,X-PINGOTHER"
+                },
+                {
+                  "key": "Public",
+                  "value": "OPTIONS, TRACE, GET, HEAD, POST"
+                },
+                {
+                  "key": "X-Api-Server-Version",
+                  "value": "2"
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 02 Apr 2020 10:14:40 GMT"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=16000000; includeSubDomains; preload;"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"500\",\n        \"total_count\": \"1\",\n        \"execution_time\": \"18\",\n        \"pagination\": {\n            \"first\": \"https://api.sikkasoft.com/v2/lab_details?offset=0&limit=500\",\n            \"previous\": \"\",\n            \"current\": \"https://api.sikkasoft.com/v2/lab_details?offset=0&limit=500\",\n            \"next\": \"\",\n            \"last\": \"https://api.sikkasoft.com/v2/lab_details?offset=0&limit=500\"\n        },\n        \"items\": [\n            {\n                \"href\": \"https://api.sikkasoft.com/v2/practices/5/lab_details/12\",\n                \"lab_id\": \"12\",\n                \"lab_name\": \"Maverick\",\n                \"address\": \"\",\n                \"city\": \"\",\n                \"state\": \"\",\n                \"zipcode\": \"\",\n                \"phone\": \"\",\n                \"fax\": \"\",\n                \"email\": \"\",\n                \"note\": \"\",\n                \"website\": \"\",\n                \"cell_phone\": \"\",\n                \"contact\": \"\",\n                \"lab_slip\": \"\",\n                \"days_to_return\": \"\",\n                \"practice_id\": \"5\",\n                \"practice\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5\"\n                }\n            }\n        ]\n    }\n]"
+            },
+            {
+              "id": "bf61702c-d857-4bc3-a27f-1639f4ab3962",
+              "name": "lad_details by lab_id",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{url}}/lab_details/{lab_id}?request_key={{request_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "lab_details",
+                    "{lab_id}"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "{{request_key}}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "private"
+                },
+                {
+                  "key": "Allow",
+                  "value": "OPTIONS, TRACE, GET, HEAD, POST"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5"
+                },
+                {
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319"
+                },
+                {
+                  "key": "Request-Key-Expires",
+                  "value": "Fri, 03 Apr 2020 09:02:54 GMT"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+                },
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "accept, authorization, Content-Type, X-Session-Id,X-PINGOTHER"
+                },
+                {
+                  "key": "Public",
+                  "value": "OPTIONS, TRACE, GET, HEAD, POST"
+                },
+                {
+                  "key": "X-Api-Server-Version",
+                  "value": "2"
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 02 Apr 2020 10:14:40 GMT"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=16000000; includeSubDomains; preload;"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"500\",\n        \"total_count\": \"1\",\n        \"execution_time\": \"18\",\n        \"pagination\": {\n            \"first\": \"https://api.sikkasoft.com/v2/lab_details?offset=0&limit=500\",\n            \"previous\": \"\",\n            \"current\": \"https://api.sikkasoft.com/v2/lab_details?offset=0&limit=500\",\n            \"next\": \"\",\n            \"last\": \"https://api.sikkasoft.com/v2/lab_details?offset=0&limit=500\"\n        },\n        \"items\": [\n            {\n                \"href\": \"https://api.sikkasoft.com/v2/practices/5/lab_details/12\",\n                \"lab_id\": \"12\",\n                \"lab_name\": \"Maverick\",\n                \"address\": \"\",\n                \"city\": \"\",\n                \"state\": \"\",\n                \"zipcode\": \"\",\n                \"phone\": \"\",\n                \"fax\": \"\",\n                \"email\": \"\",\n                \"note\": \"\",\n                \"website\": \"\",\n                \"cell_phone\": \"\",\n                \"contact\": \"\",\n                \"lab_slip\": \"\",\n                \"days_to_return\": \"\",\n                \"practice_id\": \"5\",\n                \"practice\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5\"\n                }\n            }\n        ]\n    }\n]"
+            }
+          ]
+        },
+        {
+          "name": "lab_cases",
+          "id": "7be79ad9-83bb-4bb1-9807-33e8003ec425",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/lab_cases?request_key={{request_key}}",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "lab_cases"
+              ],
+              "query": [
+                {
+                  "key": "request_key",
+                  "value": "{{request_key}}"
+                }
+              ]
+            },
+            "description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|case_record_id|Case Record ID|No|\r\n|lab_id|Lab ID|No|\r\n|practice_id|Practice ID|No|\r\n|patient_id|Patient ID|No|\r\n|provider_id|Provider ID|No|\r\n|transaction_sr_no|Transaction Serial Number|No|\r\n|appointment_sr_no|Appointment Serial Number|No|\r\n|startdate|format: yyyy-mm-dd, start date|No|\r\n|enddate|format: yyyy-mm-dd, start date|No|\r\n|date_filter_on|Field name on which stardate and enddate filter will be applied, valid values are: date_created-default, receive_date, finish_date, date_sent|No|\r\n\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|case_record_id|Case Record ID|"
+          },
+          "response": [
+            {
+              "id": "41ac00d6-7b4f-48a3-ae56-6830ec1c93fa",
+              "name": "request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{url}}/lab_cases?request_key={{request_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "lab_cases"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "{{request_key}}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "private"
+                },
+                {
+                  "key": "Allow",
+                  "value": "OPTIONS, TRACE, GET, HEAD, POST"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5"
+                },
+                {
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319"
+                },
+                {
+                  "key": "Request-Key-Expires",
+                  "value": "Fri, 03 Apr 2020 09:02:54 GMT"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+                },
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "accept, authorization, Content-Type, X-Session-Id,X-PINGOTHER"
+                },
+                {
+                  "key": "Public",
+                  "value": "OPTIONS, TRACE, GET, HEAD, POST"
+                },
+                {
+                  "key": "X-Api-Server-Version",
+                  "value": "1"
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 02 Apr 2020 10:23:12 GMT"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=16000000; includeSubDomains; preload;"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"2\",\n        \"total_count\": \"2023\",\n        \"execution_time\": \"24\",\n        \"pagination\": {\n            \"first\": \"https://api.sikkasoft.com/v2/lab_cases?offset=0&limit=2\",\n            \"previous\": \"\",\n            \"current\": \"https://api.sikkasoft.com/v2/lab_cases?offset=0&limit=2\",\n            \"next\": \"https://api.sikkasoft.com/v2/lab_cases?offset=1&limit=2\",\n            \"last\": \"https://api.sikkasoft.com/v2/lab_cases?offset=1011&limit=2\"\n        },\n        \"items\": [\n            {\n                \"href\": \"https://api.sikkasoft.com/v2/practices/5/lab_cases/235\",\n                \"case_record_id\": \"235\",\n                \"lab_id\": \"10\",\n                \"lab_detail\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/lab_details/10\"\n                },\n                \"patient_id\": \"213\",\n                \"patient\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/patients/213\"\n                },\n                \"date_created\": \"2019-05-14\",\n                \"provider_id\": \"BB1822\",\n                \"provider\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/providers/BB1822\"\n                },\n                \"lab_case_category\": \"Partial\",\n                \"lab_assignment_number\": \"low\",\n                \"note\": \"\",\n                \"receive_date\": \"\",\n                \"finish_date\": \"\",\n                \"is_closed\": \"\",\n                \"transaction_sr_no\": \"\",\n                \"transaction\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/transactions\"\n                },\n                \"appointment_sr_no\": \"\",\n                \"appointment\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/appointments\"\n                },\n                \"ship_method\": \"Fed Ex\",\n                \"ship_trac_number\": \"\",\n                \"amount\": \"0.00\",\n                \"date_sent\": \"2019-05-14\",\n                \"practice_id\": \"5\",\n                \"practice\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5\"\n                }\n            },\n            {\n                \"href\": \"https://api.sikkasoft.com/v2/practices/5/lab_cases/235\",\n                \"case_record_id\": \"235\",\n                \"lab_id\": \"10\",\n                \"lab_detail\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/lab_details/10\"\n                },\n                \"patient_id\": \"213556\",\n                \"patient\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/patients/213556\"\n                },\n                \"date_created\": \"2019-05-14\",\n                \"provider_id\": \"BB1822\",\n                \"provider\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/providers/BB1822\"\n                },\n                \"lab_case_category\": \"Partial\",\n                \"lab_assignment_number\": \"up\",\n                \"note\": \"\",\n                \"receive_date\": \"\",\n                \"finish_date\": \"\",\n                \"is_closed\": \"\",\n                \"transaction_sr_no\": \"\",\n                \"transaction\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/transactions\"\n                },\n                \"appointment_sr_no\": \"\",\n                \"appointment\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/appointments\"\n                },\n                \"ship_method\": \"Fed Ex\",\n                \"ship_trac_number\": \"\",\n                \"amount\": \"0.00\",\n                \"date_sent\": \"2019-05-14\",\n                \"practice_id\": \"5\",\n                \"practice\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5\"\n                }\n            }\n        ]\n    }\n]"
+            }
+          ]
+        },
+        {
+          "name": "lab_cases by case_record_id",
+          "id": "8cbceaac-25be-4e41-985d-0af96dc1f3d6",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/lab_cases/{case_record_id}?request_key={{request_key}}",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "lab_cases",
+                "{case_record_id}"
+              ],
+              "query": [
+                {
+                  "key": "request_key",
+                  "value": "{{request_key}}"
+                }
+              ]
+            },
+            "description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|case_record_id|Case Record ID|No|\r\n|lab_id|Lab ID|No|\r\n|practice_id|Practice ID|No|\r\n|patient_id|Patient ID|No|\r\n|provider_id|Provider ID|No|\r\n|transaction_sr_no|Transaction Serial Number|No|\r\n|appointment_sr_no|Appointment Serial Number|No|\r\n|startdate|format: yyyy-mm-dd, start date|No|\r\n|enddate|format: yyyy-mm-dd, start date|No|\r\n|date_filter_on|Field name on which stardate and enddate filter will be applied, valid values are: date_created-default, receive_date, finish_date, date_sent|No|\r\n\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|case_record_id|Case Record ID|\t"
+          },
+          "response": [
+            {
+              "id": "10cc0ba3-f536-48c0-b99e-576cc4e30f28",
+              "name": "request",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{url}}/lab_cases/{case_record_id}?request_key={{request_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "lab_cases",
+                    "{case_record_id}"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "{{request_key}}"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "private"
+                },
+                {
+                  "key": "Allow",
+                  "value": "OPTIONS, TRACE, GET, HEAD, POST"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Server",
+                  "value": "Microsoft-IIS/8.5"
+                },
+                {
+                  "key": "X-AspNet-Version",
+                  "value": "4.0.30319"
+                },
+                {
+                  "key": "Request-Key-Expires",
+                  "value": "Fri, 03 Apr 2020 09:02:54 GMT"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+                },
+                {
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "accept, authorization, Content-Type, X-Session-Id,X-PINGOTHER"
+                },
+                {
+                  "key": "Public",
+                  "value": "OPTIONS, TRACE, GET, HEAD, POST"
+                },
+                {
+                  "key": "X-Api-Server-Version",
+                  "value": "3"
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 02 Apr 2020 10:36:39 GMT"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=16000000; includeSubDomains; preload;"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"500\",\n        \"total_count\": \"1\",\n        \"execution_time\": \"25\",\n        \"pagination\": {\n            \"first\": \"https://api.sikkasoft.com/v2/lab_cases?offset=0&limit=500\",\n            \"previous\": \"\",\n            \"current\": \"https://api.sikkasoft.com/v2/lab_cases?offset=0&limit=500\",\n            \"next\": \"\",\n            \"last\": \"https://api.sikkasoft.com/v2/lab_cases?offset=0&limit=500\"\n        },\n        \"items\": [\n            {\n                \"href\": \"https://api.sikkasoft.com/v2/practices/5/lab_cases/23\",\n                \"case_record_id\": \"23\",\n                \"lab_id\": \"10\",\n                \"lab_detail\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/lab_details/10\"\n                },\n                \"patient_id\": \"21355\",\n                \"patient\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/patients/21355\"\n                },\n                \"date_created\": \"2019-05-14\",\n                \"provider_id\": \"BB1812\",\n                \"provider\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/providers/BB1812\"\n                },\n                \"lab_case_category\": \"Partial\",\n                \"lab_assignment_number\": \"low\",\n                \"note\": \"\",\n                \"receive_date\": \"\",\n                \"finish_date\": \"\",\n                \"is_closed\": \"\",\n                \"transaction_sr_no\": \"\",\n                \"transaction\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/transactions\"\n                },\n                \"appointment_sr_no\": \"\",\n                \"appointment\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/appointments\"\n                },\n                \"ship_method\": \"Fed Ex\",\n                \"ship_trac_number\": \"\",\n                \"amount\": \"0.00\",\n                \"date_sent\": \"2019-05-14\",\n                \"practice_id\": \"5\",\n                \"practice\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5\"\n                }\n            }\n        ]\n    }\n]"
+            }
+          ]
+        }
+      ],
+      "id": "65c1c413-15c5-144b-5ef7-465fb4b7ce87",
+      "description": "It contains all APIs related with lab informaion in practice"
+    },
+    {
       "name": "Patients",
       "item": [
         {
@@ -24203,1137 +25334,6 @@
           ],
           "id": "9f4e4783-cf9a-d657-1134-4b7919bb0a7e",
           "description": "It contains all APIs related with insurance information. "
-        },
-        {
-          "name": "Lab",
-          "item": [
-            {
-              "name": "lab_panels",
-              "id": "3b25d07b-bde6-b048-20fa-42dc1b69c6d4",
-              "request": {
-                "method": "GET",
-                "header": [],
-                "body": {
-                  "mode": "formdata",
-                  "formdata": []
-                },
-                "url": {
-                  "raw": "{{url}}/lab_panels?request_key={{request_key}}",
-                  "host": [
-                    "{{url}}"
-                  ],
-                  "path": [
-                    "lab_panels"
-                  ],
-                  "query": [
-                    {
-                      "key": "request_key",
-                      "value": "{{request_key}}"
-                    }
-                  ]
-                },
-                "description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|procedure_code_id|Procedure code id is same as procedure code.|No|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|lab_panel_id|Lab Panel ID|\r\n"
-              },
-              "response": [
-                {
-                  "id": "0ac6de72-015b-ba30-5fab-557d370338bd",
-                  "name": "request",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [],
-                    "body": {
-                      "mode": "formdata",
-                      "formdata": []
-                    },
-                    "url": {
-                      "raw": "{{url}}/lab_panels?request_key={{request_key}}",
-                      "host": [
-                        "{{url}}"
-                      ],
-                      "path": [
-                        "lab_panels"
-                      ],
-                      "query": [
-                        {
-                          "key": "request_key",
-                          "value": "{{request_key}}"
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "name": "Access-Control-Allow-Headers",
-                      "key": "Access-Control-Allow-Headers",
-                      "value": "accept, authorization, Content-Type, X-Session-Id",
-                      "description": ""
-                    },
-                    {
-                      "name": "Access-Control-Allow-Methods",
-                      "key": "Access-Control-Allow-Methods",
-                      "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
-                      "description": ""
-                    },
-                    {
-                      "name": "Access-Control-Allow-Origin",
-                      "key": "Access-Control-Allow-Origin",
-                      "value": "*",
-                      "description": ""
-                    },
-                    {
-                      "name": "Cache-Control",
-                      "key": "Cache-Control",
-                      "value": "private",
-                      "description": ""
-                    },
-                    {
-                      "name": "Connection",
-                      "key": "Connection",
-                      "value": "keep-alive",
-                      "description": ""
-                    },
-                    {
-                      "name": "Content-Length",
-                      "key": "Content-Length",
-                      "value": "1458",
-                      "description": ""
-                    },
-                    {
-                      "name": "Content-Type",
-                      "key": "Content-Type",
-                      "value": "application/json",
-                      "description": ""
-                    },
-                    {
-                      "name": "Date",
-                      "key": "Date",
-                      "value": "Mon, 24 Apr 2017 11:30:56 GMT",
-                      "description": ""
-                    },
-                    {
-                      "name": "Server",
-                      "key": "Server",
-                      "value": "Microsoft-IIS/8.5",
-                      "description": ""
-                    },
-                    {
-                      "name": "X-AspNet-Version",
-                      "key": "X-AspNet-Version",
-                      "value": "4.0.30319",
-                      "description": ""
-                    },
-                    {
-                      "name": "X-Powered-By",
-                      "key": "X-Powered-By",
-                      "value": "ASP.NET",
-                      "description": ""
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": "1077",
-                  "body": "[{\"offset\":\"0\",\"limit\":\"2\",\"total_count\":\"5998\",\"items\":[{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/lab_panels\\/2147061644\",\"lab_panel_id\":\"2147061644\",\"patient_id\":\"3728-A\",\"patient\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/3728-A\"},\"guarantor_id\":\"3728\",\"guarantor\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/guarantors\\/3728\"},\"procedure_code_id\":\"\",\"procedure_code_description\":\"OP + GIARDIA AG ELISA\",\"lab_name\":\"IDEXX LabREXX\",\"provider_id\":\"1\",\"provider\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/1\"},\"status\":\"Final\",\"comments\":\"\",\"create_date\":\"2015-06-30\",\"modified_date\":\"\",\"description\":\"\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"}},{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/lab_panels\\/2146878109\",\"lab_panel_id\":\"2146878109\",\"patient_id\":\"1695-A\",\"patient\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/1695-A\"},\"guarantor_id\":\"1695\",\"guarantor\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/guarantors\\/1695\"},\"procedure_code_id\":\"\",\"procedure_code_description\":\"FECAL FLOTATION\",\"lab_name\":\"\",\"provider_id\":\"4\",\"provider\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/4\"},\"status\":\"Final\",\"comments\":\"\",\"create_date\":\"2014-12-10\",\"modified_date\":\"\",\"description\":\"\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"}}]}]\r\n"
-                }
-              ]
-            },
-            {
-              "name": "lab_panels by lab_panel_id",
-              "id": "fec4ca5b-39c7-b106-1b7f-c6eadb17ddd5",
-              "request": {
-                "method": "GET",
-                "header": [],
-                "body": {
-                  "mode": "formdata",
-                  "formdata": []
-                },
-                "url": {
-                  "raw": "{{url}}/lab_panels/{lab_panel_id}?request_key={{request_key}}",
-                  "host": [
-                    "{{url}}"
-                  ],
-                  "path": [
-                    "lab_panels",
-                    "{lab_panel_id}"
-                  ],
-                  "query": [
-                    {
-                      "key": "request_key",
-                      "value": "{{request_key}}"
-                    }
-                  ]
-                },
-                "description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|procedure_code_id|Procedure code id is same as procedure code.|No|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|lab_panel_id|Lab Panel ID|\r\n"
-              },
-              "response": [
-                {
-                  "id": "46fd00e2-c71f-eb9c-3520-3abd003e9ed9",
-                  "name": "request",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [],
-                    "body": {
-                      "mode": "formdata",
-                      "formdata": []
-                    },
-                    "url": {
-                      "raw": "{{url}}/lab_panels/{lab_panel_id}?request_key={{request_key}}",
-                      "host": [
-                        "{{url}}"
-                      ],
-                      "path": [
-                        "lab_panels",
-                        "{lab_panel_id}"
-                      ],
-                      "query": [
-                        {
-                          "key": "request_key",
-                          "value": "{{request_key}}"
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "name": "Access-Control-Allow-Headers",
-                      "key": "Access-Control-Allow-Headers",
-                      "value": "accept, authorization, Content-Type, X-Session-Id",
-                      "description": ""
-                    },
-                    {
-                      "name": "Access-Control-Allow-Methods",
-                      "key": "Access-Control-Allow-Methods",
-                      "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
-                      "description": ""
-                    },
-                    {
-                      "name": "Access-Control-Allow-Origin",
-                      "key": "Access-Control-Allow-Origin",
-                      "value": "*",
-                      "description": ""
-                    },
-                    {
-                      "name": "Cache-Control",
-                      "key": "Cache-Control",
-                      "value": "private",
-                      "description": ""
-                    },
-                    {
-                      "name": "Connection",
-                      "key": "Connection",
-                      "value": "keep-alive",
-                      "description": ""
-                    },
-                    {
-                      "name": "Content-Length",
-                      "key": "Content-Length",
-                      "value": "709",
-                      "description": ""
-                    },
-                    {
-                      "name": "Content-Type",
-                      "key": "Content-Type",
-                      "value": "application/json",
-                      "description": ""
-                    },
-                    {
-                      "name": "Date",
-                      "key": "Date",
-                      "value": "Mon, 24 Apr 2017 11:33:37 GMT",
-                      "description": ""
-                    },
-                    {
-                      "name": "Server",
-                      "key": "Server",
-                      "value": "Microsoft-IIS/8.5",
-                      "description": ""
-                    },
-                    {
-                      "name": "X-AspNet-Version",
-                      "key": "X-AspNet-Version",
-                      "value": "4.0.30319",
-                      "description": ""
-                    },
-                    {
-                      "name": "X-Powered-By",
-                      "key": "X-Powered-By",
-                      "value": "ASP.NET",
-                      "description": ""
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": "954",
-                  "body": "{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/lab_panels\\/2147061644\",\"lab_panel_id\":\"2147061644\",\"patient_id\":\"3728-A\",\"patient\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/patients\\/3728-A\"},\"guarantor_id\":\"3728\",\"guarantor\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/guarantors\\/3728\"},\"procedure_code_id\":\"\",\"procedure_code_description\":\"OP + GIARDIA AG ELISA\",\"lab_name\":\"IDEXX LabREXX\",\"provider_id\":\"1\",\"provider\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/providers\\/1\"},\"status\":\"Final\",\"comments\":\"\",\"create_date\":\"2015-06-30\",\"modified_date\":\"\",\"description\":\"\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"}}\r\n"
-                }
-              ]
-            },
-            {
-              "name": "lab_results",
-              "id": "f546df6a-c125-e575-6b99-7251d80eac0a",
-              "request": {
-                "method": "GET",
-                "header": [],
-                "body": {
-                  "mode": "formdata",
-                  "formdata": []
-                },
-                "url": {
-                  "raw": "{{url}}/lab_results?request_key={{request_key}}",
-                  "host": [
-                    "{{url}}"
-                  ],
-                  "path": [
-                    "lab_results"
-                  ],
-                  "query": [
-                    {
-                      "key": "request_key",
-                      "value": "{{request_key}}"
-                    }
-                  ]
-                },
-                "description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|lab_panel_id|Lab Panel ID|\r\n\r\n"
-              },
-              "response": [
-                {
-                  "id": "fe4b1dfa-3519-7aaa-d36c-892eb5ff6206",
-                  "name": "request",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [],
-                    "body": {
-                      "mode": "formdata",
-                      "formdata": []
-                    },
-                    "url": {
-                      "raw": "{{url}}/lab_results?request_key={{request_key}}",
-                      "host": [
-                        "{{url}}"
-                      ],
-                      "path": [
-                        "lab_results"
-                      ],
-                      "query": [
-                        {
-                          "key": "request_key",
-                          "value": "{{request_key}}"
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "name": "Access-Control-Allow-Headers",
-                      "key": "Access-Control-Allow-Headers",
-                      "value": "accept, authorization, Content-Type, X-Session-Id",
-                      "description": ""
-                    },
-                    {
-                      "name": "Access-Control-Allow-Methods",
-                      "key": "Access-Control-Allow-Methods",
-                      "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
-                      "description": ""
-                    },
-                    {
-                      "name": "Access-Control-Allow-Origin",
-                      "key": "Access-Control-Allow-Origin",
-                      "value": "*",
-                      "description": ""
-                    },
-                    {
-                      "name": "Cache-Control",
-                      "key": "Cache-Control",
-                      "value": "private, no-cache=\"set-cookie\"",
-                      "description": ""
-                    },
-                    {
-                      "name": "Connection",
-                      "key": "Connection",
-                      "value": "keep-alive",
-                      "description": ""
-                    },
-                    {
-                      "name": "Content-Length",
-                      "key": "Content-Length",
-                      "value": "1221",
-                      "description": ""
-                    },
-                    {
-                      "name": "Content-Type",
-                      "key": "Content-Type",
-                      "value": "application/json",
-                      "description": ""
-                    },
-                    {
-                      "name": "Date",
-                      "key": "Date",
-                      "value": "Mon, 24 Apr 2017 11:36:24 GMT",
-                      "description": ""
-                    },
-                    {
-                      "name": "Server",
-                      "key": "Server",
-                      "value": "Microsoft-IIS/8.5",
-                      "description": ""
-                    },
-                    {
-                      "name": "X-AspNet-Version",
-                      "key": "X-AspNet-Version",
-                      "value": "4.0.30319",
-                      "description": ""
-                    },
-                    {
-                      "name": "X-Powered-By",
-                      "key": "X-Powered-By",
-                      "value": "ASP.NET",
-                      "description": ""
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": "1299",
-                  "body": "[{\"offset\":\"0\",\"limit\":\"2\",\"total_count\":\"172316\",\"items\":[{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/lab_results\\/2147061644\",\"lab_panel_id\":\"2147061644\",\"lab_panel\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/lab_panels\\/2147061644\"},\"result_date\":\"2015-06-30\",\"test_name\":\"OVA & PARASITES\",\"measure_unit\":\"\",\"result\":\"No parasite found\",\"result_type\":\"\",\"critical_low\":\"\",\"critical_high\":\"\",\"reference_low\":\"\",\"reference_high\":\"\",\"reference_range\":\"\",\"comments\":\"\",\"lab_machine_name\":\"\",\"lab_machine_type\":\"\",\"lab_result_name\":\"\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"}},{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/lab_results\\/2147061644\",\"lab_panel_id\":\"2147061644\",\"lab_panel\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/lab_panels\\/2147061644\"},\"result_date\":\"2015-06-30\",\"test_name\":\"Accession #\",\"measure_unit\":\"\",\"result\":\"8881402\",\"result_type\":\"\",\"critical_low\":\"\",\"critical_high\":\"\",\"reference_low\":\"\",\"reference_high\":\"\",\"reference_range\":\"\",\"comments\":\"\",\"lab_machine_name\":\"\",\"lab_machine_type\":\"\",\"lab_result_name\":\"\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"}}]}]\r\n"
-                }
-              ]
-            },
-            {
-              "name": "lab_results by lab_panel_id",
-              "id": "889b55cd-4e5c-60b7-d4a0-74c0fb07f275",
-              "request": {
-                "method": "GET",
-                "header": [],
-                "body": {
-                  "mode": "formdata",
-                  "formdata": []
-                },
-                "url": {
-                  "raw": "{{url}}/lab_results/{lab_panel_id}?request_key={{request_key}}",
-                  "host": [
-                    "{{url}}"
-                  ],
-                  "path": [
-                    "lab_results",
-                    "{lab_panel_id}"
-                  ],
-                  "query": [
-                    {
-                      "key": "request_key",
-                      "value": "{{request_key}}"
-                    }
-                  ]
-                },
-                "description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|lab_panel_id|Lab Panel ID|"
-              },
-              "response": [
-                {
-                  "id": "ac0f0691-716c-e3c9-3ae5-27b8176dd2ca",
-                  "name": "request",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [],
-                    "body": {
-                      "mode": "formdata",
-                      "formdata": []
-                    },
-                    "url": {
-                      "raw": "{{url}}/lab_results/{lab_panel_id}?request_key={{request_key}}",
-                      "host": [
-                        "{{url}}"
-                      ],
-                      "path": [
-                        "lab_results",
-                        "{lab_panel_id}"
-                      ],
-                      "query": [
-                        {
-                          "key": "request_key",
-                          "value": "{{request_key}}"
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "name": "Access-Control-Allow-Headers",
-                      "key": "Access-Control-Allow-Headers",
-                      "value": "accept, authorization, Content-Type, X-Session-Id",
-                      "description": ""
-                    },
-                    {
-                      "name": "Access-Control-Allow-Methods",
-                      "key": "Access-Control-Allow-Methods",
-                      "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
-                      "description": ""
-                    },
-                    {
-                      "name": "Access-Control-Allow-Origin",
-                      "key": "Access-Control-Allow-Origin",
-                      "value": "*",
-                      "description": ""
-                    },
-                    {
-                      "name": "Cache-Control",
-                      "key": "Cache-Control",
-                      "value": "private",
-                      "description": ""
-                    },
-                    {
-                      "name": "Connection",
-                      "key": "Connection",
-                      "value": "keep-alive",
-                      "description": ""
-                    },
-                    {
-                      "name": "Content-Length",
-                      "key": "Content-Length",
-                      "value": "587",
-                      "description": ""
-                    },
-                    {
-                      "name": "Content-Type",
-                      "key": "Content-Type",
-                      "value": "application/json",
-                      "description": ""
-                    },
-                    {
-                      "name": "Date",
-                      "key": "Date",
-                      "value": "Mon, 24 Apr 2017 11:38:18 GMT",
-                      "description": ""
-                    },
-                    {
-                      "name": "Server",
-                      "key": "Server",
-                      "value": "Microsoft-IIS/8.5",
-                      "description": ""
-                    },
-                    {
-                      "name": "X-AspNet-Version",
-                      "key": "X-AspNet-Version",
-                      "value": "4.0.30319",
-                      "description": ""
-                    },
-                    {
-                      "name": "X-Powered-By",
-                      "key": "X-Powered-By",
-                      "value": "ASP.NET",
-                      "description": ""
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": "415",
-                  "body": "{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/lab_results\\/2147061644\",\"lab_panel_id\":\"2147061644\",\"lab_panel\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\\/lab_panels\\/2147061644\"},\"result_date\":\"2015-06-30\",\"test_name\":\"OVA & PARASITES\",\"measure_unit\":\"\",\"result\":\"No parasite found\",\"result_type\":\"\",\"critical_low\":\"\",\"critical_high\":\"\",\"reference_low\":\"\",\"reference_high\":\"\",\"reference_range\":\"\",\"comments\":\"\",\"lab_machine_name\":\"\",\"lab_machine_type\":\"\",\"lab_result_name\":\"\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"}}\r\n"
-                }
-              ]
-            },
-            {
-              "name": "lab_details",
-              "id": "ac187fe1-0ee2-44d9-a82a-f258809ba579",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "GET",
-                "header": [],
-                "url": {
-                  "raw": "{{url}}/lab_details?request_key={{request_key}}",
-                  "host": [
-                    "{{url}}"
-                  ],
-                  "path": [
-                    "lab_details"
-                  ],
-                  "query": [
-                    {
-                      "key": "request_key",
-                      "value": "{{request_key}}"
-                    }
-                  ]
-                },
-                "description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|lab_id|Lab ID|No|\r\n|practice_id|Practice ID|No|\r\n|city|City|No|\r\n|state|State|No|\r\n|zipcode|Zip Code|No|\r\n|email|Email|No|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|lab_id|Lab ID|"
-              },
-              "response": [
-                {
-                  "id": "96c890d9-3a33-4362-afae-5e3d5d055708",
-                  "name": "request",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [],
-                    "url": {
-                      "raw": "{{url}}/lab_details?request_key={{request_key}}",
-                      "host": [
-                        "{{url}}"
-                      ],
-                      "path": [
-                        "lab_details"
-                      ],
-                      "query": [
-                        {
-                          "key": "request_key",
-                          "value": "{{request_key}}"
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "key": "Cache-Control",
-                      "value": "private"
-                    },
-                    {
-                      "key": "Allow",
-                      "value": "OPTIONS, TRACE, GET, HEAD, POST"
-                    },
-                    {
-                      "key": "Content-Type",
-                      "value": "application/json"
-                    },
-                    {
-                      "key": "Server",
-                      "value": "Microsoft-IIS/8.5"
-                    },
-                    {
-                      "key": "X-AspNet-Version",
-                      "value": "4.0.30319"
-                    },
-                    {
-                      "key": "Request-Key-Expires",
-                      "value": "Fri, 03 Apr 2020 09:02:54 GMT"
-                    },
-                    {
-                      "key": "X-Powered-By",
-                      "value": "ASP.NET"
-                    },
-                    {
-                      "key": "Access-Control-Allow-Origin",
-                      "value": "*"
-                    },
-                    {
-                      "key": "Access-Control-Allow-Methods",
-                      "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
-                    },
-                    {
-                      "key": "Access-Control-Allow-Headers",
-                      "value": "accept, authorization, Content-Type, X-Session-Id,X-PINGOTHER"
-                    },
-                    {
-                      "key": "Public",
-                      "value": "OPTIONS, TRACE, GET, HEAD, POST"
-                    },
-                    {
-                      "key": "X-Api-Server-Version",
-                      "value": "2"
-                    },
-                    {
-                      "key": "Date",
-                      "value": "Thu, 02 Apr 2020 10:01:32 GMT"
-                    },
-                    {
-                      "key": "Transfer-Encoding",
-                      "value": "chunked"
-                    },
-                    {
-                      "key": "Content-Encoding",
-                      "value": "gzip"
-                    },
-                    {
-                      "key": "Strict-Transport-Security",
-                      "value": "max-age=16000000; includeSubDomains; preload;"
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"2\",\n        \"total_count\": \"22\",\n        \"execution_time\": \"49\",\n        \"pagination\": {\n            \"first\": \"https://api.sikkasoft.com/v2/lab_details?offset=0&limit=2\",\n            \"previous\": \"\",\n            \"current\": \"https://api.sikkasoft.com/v2/lab_details?offset=0&limit=2\",\n            \"next\": \"https://api.sikkasoft.com/v2/lab_details?offset=1&limit=2\",\n            \"last\": \"https://api.sikkasoft.com/v2/lab_details?offset=10&limit=2\"\n        },\n        \"items\": [\n            {\n                \"href\": \"https://api.sikkasoft.com/v2/practices/5/lab_details/12\",\n                \"lab_id\": \"12\",\n                \"lab_name\": \"Maverick\",\n                \"address\": \"\",\n                \"city\": \"\",\n                \"state\": \"\",\n                \"zipcode\": \"\",\n                \"phone\": \"\",\n                \"fax\": \"\",\n                \"email\": \"\",\n                \"note\": \"\",\n                \"website\": \"\",\n                \"cell_phone\": \"\",\n                \"contact\": \"\",\n                \"lab_slip\": \"\",\n                \"days_to_return\": \"\",\n                \"practice_id\": \"5\",\n                \"practice\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5\"\n                }\n            },\n            {\n                \"href\": \"https://api.sikkasoft.com/v2/practices/5/lab_details/11\",\n                \"lab_id\": \"11\",\n                \"lab_name\": \"First Choice Dental Lab\",\n                \"address\": \"\",\n                \"city\": \"\",\n                \"state\": \"\",\n                \"zipcode\": \"\",\n                \"phone\": \"\",\n                \"fax\": \"\",\n                \"email\": \"\",\n                \"note\": \"\",\n                \"website\": \"\",\n                \"cell_phone\": \"\",\n                \"contact\": \"\",\n                \"lab_slip\": \"\",\n                \"days_to_return\": \"\",\n                \"practice_id\": \"5\",\n                \"practice\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5\"\n                }\n            }\n        ]\n    }\n]"
-                }
-              ]
-            },
-            {
-              "name": "lab_details by lab_id",
-              "id": "97f99615-060e-4861-8898-ff95b03c2bc4",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "GET",
-                "header": [],
-                "url": {
-                  "raw": "{{url}}/lab_details/{lab_id}?request_key={{request_key}}",
-                  "host": [
-                    "{{url}}"
-                  ],
-                  "path": [
-                    "lab_details",
-                    "{lab_id}"
-                  ],
-                  "query": [
-                    {
-                      "key": "request_key",
-                      "value": "{{request_key}}"
-                    }
-                  ]
-                },
-                "description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|lab_id|Lab ID|No|\r\n|practice_id|Practice ID|No|\r\n|city|City|No|\r\n|state|State|No|\r\n|zipcode|Zip Code|No|\r\n|email|Email|No|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|lab_id|Lab ID|"
-              },
-              "response": [
-                {
-                  "id": "04bf2418-d8be-413b-8b31-f45c4793fa68",
-                  "name": "request",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [],
-                    "url": {
-                      "raw": "{{url}}/lab_details/{lab_id}?request_key={{request_key}}",
-                      "host": [
-                        "{{url}}"
-                      ],
-                      "path": [
-                        "lab_details",
-                        "{lab_id}"
-                      ],
-                      "query": [
-                        {
-                          "key": "request_key",
-                          "value": "{{request_key}}"
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "key": "Cache-Control",
-                      "value": "private"
-                    },
-                    {
-                      "key": "Allow",
-                      "value": "OPTIONS, TRACE, GET, HEAD, POST"
-                    },
-                    {
-                      "key": "Content-Type",
-                      "value": "application/json"
-                    },
-                    {
-                      "key": "Server",
-                      "value": "Microsoft-IIS/8.5"
-                    },
-                    {
-                      "key": "X-AspNet-Version",
-                      "value": "4.0.30319"
-                    },
-                    {
-                      "key": "Request-Key-Expires",
-                      "value": "Fri, 03 Apr 2020 09:02:54 GMT"
-                    },
-                    {
-                      "key": "X-Powered-By",
-                      "value": "ASP.NET"
-                    },
-                    {
-                      "key": "Access-Control-Allow-Origin",
-                      "value": "*"
-                    },
-                    {
-                      "key": "Access-Control-Allow-Methods",
-                      "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
-                    },
-                    {
-                      "key": "Access-Control-Allow-Headers",
-                      "value": "accept, authorization, Content-Type, X-Session-Id,X-PINGOTHER"
-                    },
-                    {
-                      "key": "Public",
-                      "value": "OPTIONS, TRACE, GET, HEAD, POST"
-                    },
-                    {
-                      "key": "X-Api-Server-Version",
-                      "value": "2"
-                    },
-                    {
-                      "key": "Date",
-                      "value": "Thu, 02 Apr 2020 10:14:40 GMT"
-                    },
-                    {
-                      "key": "Transfer-Encoding",
-                      "value": "chunked"
-                    },
-                    {
-                      "key": "Content-Encoding",
-                      "value": "gzip"
-                    },
-                    {
-                      "key": "Strict-Transport-Security",
-                      "value": "max-age=16000000; includeSubDomains; preload;"
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"500\",\n        \"total_count\": \"1\",\n        \"execution_time\": \"18\",\n        \"pagination\": {\n            \"first\": \"https://api.sikkasoft.com/v2/lab_details?offset=0&limit=500\",\n            \"previous\": \"\",\n            \"current\": \"https://api.sikkasoft.com/v2/lab_details?offset=0&limit=500\",\n            \"next\": \"\",\n            \"last\": \"https://api.sikkasoft.com/v2/lab_details?offset=0&limit=500\"\n        },\n        \"items\": [\n            {\n                \"href\": \"https://api.sikkasoft.com/v2/practices/5/lab_details/12\",\n                \"lab_id\": \"12\",\n                \"lab_name\": \"Maverick\",\n                \"address\": \"\",\n                \"city\": \"\",\n                \"state\": \"\",\n                \"zipcode\": \"\",\n                \"phone\": \"\",\n                \"fax\": \"\",\n                \"email\": \"\",\n                \"note\": \"\",\n                \"website\": \"\",\n                \"cell_phone\": \"\",\n                \"contact\": \"\",\n                \"lab_slip\": \"\",\n                \"days_to_return\": \"\",\n                \"practice_id\": \"5\",\n                \"practice\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5\"\n                }\n            }\n        ]\n    }\n]"
-                },
-                {
-                  "id": "bf61702c-d857-4bc3-a27f-1639f4ab3962",
-                  "name": "lad_details by lab_id",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [],
-                    "url": {
-                      "raw": "{{url}}/lab_details/{lab_id}?request_key={{request_key}}",
-                      "host": [
-                        "{{url}}"
-                      ],
-                      "path": [
-                        "lab_details",
-                        "{lab_id}"
-                      ],
-                      "query": [
-                        {
-                          "key": "request_key",
-                          "value": "{{request_key}}"
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "key": "Cache-Control",
-                      "value": "private"
-                    },
-                    {
-                      "key": "Allow",
-                      "value": "OPTIONS, TRACE, GET, HEAD, POST"
-                    },
-                    {
-                      "key": "Content-Type",
-                      "value": "application/json"
-                    },
-                    {
-                      "key": "Server",
-                      "value": "Microsoft-IIS/8.5"
-                    },
-                    {
-                      "key": "X-AspNet-Version",
-                      "value": "4.0.30319"
-                    },
-                    {
-                      "key": "Request-Key-Expires",
-                      "value": "Fri, 03 Apr 2020 09:02:54 GMT"
-                    },
-                    {
-                      "key": "X-Powered-By",
-                      "value": "ASP.NET"
-                    },
-                    {
-                      "key": "Access-Control-Allow-Origin",
-                      "value": "*"
-                    },
-                    {
-                      "key": "Access-Control-Allow-Methods",
-                      "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
-                    },
-                    {
-                      "key": "Access-Control-Allow-Headers",
-                      "value": "accept, authorization, Content-Type, X-Session-Id,X-PINGOTHER"
-                    },
-                    {
-                      "key": "Public",
-                      "value": "OPTIONS, TRACE, GET, HEAD, POST"
-                    },
-                    {
-                      "key": "X-Api-Server-Version",
-                      "value": "2"
-                    },
-                    {
-                      "key": "Date",
-                      "value": "Thu, 02 Apr 2020 10:14:40 GMT"
-                    },
-                    {
-                      "key": "Transfer-Encoding",
-                      "value": "chunked"
-                    },
-                    {
-                      "key": "Content-Encoding",
-                      "value": "gzip"
-                    },
-                    {
-                      "key": "Strict-Transport-Security",
-                      "value": "max-age=16000000; includeSubDomains; preload;"
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"500\",\n        \"total_count\": \"1\",\n        \"execution_time\": \"18\",\n        \"pagination\": {\n            \"first\": \"https://api.sikkasoft.com/v2/lab_details?offset=0&limit=500\",\n            \"previous\": \"\",\n            \"current\": \"https://api.sikkasoft.com/v2/lab_details?offset=0&limit=500\",\n            \"next\": \"\",\n            \"last\": \"https://api.sikkasoft.com/v2/lab_details?offset=0&limit=500\"\n        },\n        \"items\": [\n            {\n                \"href\": \"https://api.sikkasoft.com/v2/practices/5/lab_details/12\",\n                \"lab_id\": \"12\",\n                \"lab_name\": \"Maverick\",\n                \"address\": \"\",\n                \"city\": \"\",\n                \"state\": \"\",\n                \"zipcode\": \"\",\n                \"phone\": \"\",\n                \"fax\": \"\",\n                \"email\": \"\",\n                \"note\": \"\",\n                \"website\": \"\",\n                \"cell_phone\": \"\",\n                \"contact\": \"\",\n                \"lab_slip\": \"\",\n                \"days_to_return\": \"\",\n                \"practice_id\": \"5\",\n                \"practice\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5\"\n                }\n            }\n        ]\n    }\n]"
-                }
-              ]
-            },
-            {
-              "name": "lab_cases",
-              "id": "7be79ad9-83bb-4bb1-9807-33e8003ec425",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "GET",
-                "header": [],
-                "url": {
-                  "raw": "{{url}}/lab_cases?request_key={{request_key}}",
-                  "host": [
-                    "{{url}}"
-                  ],
-                  "path": [
-                    "lab_cases"
-                  ],
-                  "query": [
-                    {
-                      "key": "request_key",
-                      "value": "{{request_key}}"
-                    }
-                  ]
-                },
-                "description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|case_record_id|Case Record ID|No|\r\n|lab_id|Lab ID|No|\r\n|practice_id|Practice ID|No|\r\n|patient_id|Patient ID|No|\r\n|provider_id|Provider ID|No|\r\n|transaction_sr_no|Transaction Serial Number|No|\r\n|appointment_sr_no|Appointment Serial Number|No|\r\n|startdate|format: yyyy-mm-dd, start date|No|\r\n|enddate|format: yyyy-mm-dd, start date|No|\r\n|date_filter_on|Field name on which stardate and enddate filter will be applied, valid values are: date_created-default, receive_date, finish_date, date_sent|No|\r\n\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|case_record_id|Case Record ID|"
-              },
-              "response": [
-                {
-                  "id": "41ac00d6-7b4f-48a3-ae56-6830ec1c93fa",
-                  "name": "request",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [],
-                    "url": {
-                      "raw": "{{url}}/lab_cases?request_key={{request_key}}",
-                      "host": [
-                        "{{url}}"
-                      ],
-                      "path": [
-                        "lab_cases"
-                      ],
-                      "query": [
-                        {
-                          "key": "request_key",
-                          "value": "{{request_key}}"
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "key": "Cache-Control",
-                      "value": "private"
-                    },
-                    {
-                      "key": "Allow",
-                      "value": "OPTIONS, TRACE, GET, HEAD, POST"
-                    },
-                    {
-                      "key": "Content-Type",
-                      "value": "application/json"
-                    },
-                    {
-                      "key": "Server",
-                      "value": "Microsoft-IIS/8.5"
-                    },
-                    {
-                      "key": "X-AspNet-Version",
-                      "value": "4.0.30319"
-                    },
-                    {
-                      "key": "Request-Key-Expires",
-                      "value": "Fri, 03 Apr 2020 09:02:54 GMT"
-                    },
-                    {
-                      "key": "X-Powered-By",
-                      "value": "ASP.NET"
-                    },
-                    {
-                      "key": "Access-Control-Allow-Origin",
-                      "value": "*"
-                    },
-                    {
-                      "key": "Access-Control-Allow-Methods",
-                      "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
-                    },
-                    {
-                      "key": "Access-Control-Allow-Headers",
-                      "value": "accept, authorization, Content-Type, X-Session-Id,X-PINGOTHER"
-                    },
-                    {
-                      "key": "Public",
-                      "value": "OPTIONS, TRACE, GET, HEAD, POST"
-                    },
-                    {
-                      "key": "X-Api-Server-Version",
-                      "value": "1"
-                    },
-                    {
-                      "key": "Date",
-                      "value": "Thu, 02 Apr 2020 10:23:12 GMT"
-                    },
-                    {
-                      "key": "Transfer-Encoding",
-                      "value": "chunked"
-                    },
-                    {
-                      "key": "Content-Encoding",
-                      "value": "gzip"
-                    },
-                    {
-                      "key": "Strict-Transport-Security",
-                      "value": "max-age=16000000; includeSubDomains; preload;"
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"2\",\n        \"total_count\": \"2023\",\n        \"execution_time\": \"24\",\n        \"pagination\": {\n            \"first\": \"https://api.sikkasoft.com/v2/lab_cases?offset=0&limit=2\",\n            \"previous\": \"\",\n            \"current\": \"https://api.sikkasoft.com/v2/lab_cases?offset=0&limit=2\",\n            \"next\": \"https://api.sikkasoft.com/v2/lab_cases?offset=1&limit=2\",\n            \"last\": \"https://api.sikkasoft.com/v2/lab_cases?offset=1011&limit=2\"\n        },\n        \"items\": [\n            {\n                \"href\": \"https://api.sikkasoft.com/v2/practices/5/lab_cases/235\",\n                \"case_record_id\": \"235\",\n                \"lab_id\": \"10\",\n                \"lab_detail\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/lab_details/10\"\n                },\n                \"patient_id\": \"213\",\n                \"patient\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/patients/213\"\n                },\n                \"date_created\": \"2019-05-14\",\n                \"provider_id\": \"BB1822\",\n                \"provider\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/providers/BB1822\"\n                },\n                \"lab_case_category\": \"Partial\",\n                \"lab_assignment_number\": \"low\",\n                \"note\": \"\",\n                \"receive_date\": \"\",\n                \"finish_date\": \"\",\n                \"is_closed\": \"\",\n                \"transaction_sr_no\": \"\",\n                \"transaction\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/transactions\"\n                },\n                \"appointment_sr_no\": \"\",\n                \"appointment\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/appointments\"\n                },\n                \"ship_method\": \"Fed Ex\",\n                \"ship_trac_number\": \"\",\n                \"amount\": \"0.00\",\n                \"date_sent\": \"2019-05-14\",\n                \"practice_id\": \"5\",\n                \"practice\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5\"\n                }\n            },\n            {\n                \"href\": \"https://api.sikkasoft.com/v2/practices/5/lab_cases/235\",\n                \"case_record_id\": \"235\",\n                \"lab_id\": \"10\",\n                \"lab_detail\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/lab_details/10\"\n                },\n                \"patient_id\": \"213556\",\n                \"patient\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/patients/213556\"\n                },\n                \"date_created\": \"2019-05-14\",\n                \"provider_id\": \"BB1822\",\n                \"provider\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/providers/BB1822\"\n                },\n                \"lab_case_category\": \"Partial\",\n                \"lab_assignment_number\": \"up\",\n                \"note\": \"\",\n                \"receive_date\": \"\",\n                \"finish_date\": \"\",\n                \"is_closed\": \"\",\n                \"transaction_sr_no\": \"\",\n                \"transaction\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/transactions\"\n                },\n                \"appointment_sr_no\": \"\",\n                \"appointment\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/appointments\"\n                },\n                \"ship_method\": \"Fed Ex\",\n                \"ship_trac_number\": \"\",\n                \"amount\": \"0.00\",\n                \"date_sent\": \"2019-05-14\",\n                \"practice_id\": \"5\",\n                \"practice\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5\"\n                }\n            }\n        ]\n    }\n]"
-                }
-              ]
-            },
-            {
-              "name": "lab_cases by case_record_id",
-              "id": "8cbceaac-25be-4e41-985d-0af96dc1f3d6",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "GET",
-                "header": [],
-                "url": {
-                  "raw": "{{url}}/lab_cases/{case_record_id}?request_key={{request_key}}",
-                  "host": [
-                    "{{url}}"
-                  ],
-                  "path": [
-                    "lab_cases",
-                    "{case_record_id}"
-                  ],
-                  "query": [
-                    {
-                      "key": "request_key",
-                      "value": "{{request_key}}"
-                    }
-                  ]
-                },
-                "description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|case_record_id|Case Record ID|No|\r\n|lab_id|Lab ID|No|\r\n|practice_id|Practice ID|No|\r\n|patient_id|Patient ID|No|\r\n|provider_id|Provider ID|No|\r\n|transaction_sr_no|Transaction Serial Number|No|\r\n|appointment_sr_no|Appointment Serial Number|No|\r\n|startdate|format: yyyy-mm-dd, start date|No|\r\n|enddate|format: yyyy-mm-dd, start date|No|\r\n|date_filter_on|Field name on which stardate and enddate filter will be applied, valid values are: date_created-default, receive_date, finish_date, date_sent|No|\r\n\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|case_record_id|Case Record ID|\t"
-              },
-              "response": [
-                {
-                  "id": "10cc0ba3-f536-48c0-b99e-576cc4e30f28",
-                  "name": "request",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [],
-                    "url": {
-                      "raw": "{{url}}/lab_cases/{case_record_id}?request_key={{request_key}}",
-                      "host": [
-                        "{{url}}"
-                      ],
-                      "path": [
-                        "lab_cases",
-                        "{case_record_id}"
-                      ],
-                      "query": [
-                        {
-                          "key": "request_key",
-                          "value": "{{request_key}}"
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "key": "Cache-Control",
-                      "value": "private"
-                    },
-                    {
-                      "key": "Allow",
-                      "value": "OPTIONS, TRACE, GET, HEAD, POST"
-                    },
-                    {
-                      "key": "Content-Type",
-                      "value": "application/json"
-                    },
-                    {
-                      "key": "Server",
-                      "value": "Microsoft-IIS/8.5"
-                    },
-                    {
-                      "key": "X-AspNet-Version",
-                      "value": "4.0.30319"
-                    },
-                    {
-                      "key": "Request-Key-Expires",
-                      "value": "Fri, 03 Apr 2020 09:02:54 GMT"
-                    },
-                    {
-                      "key": "X-Powered-By",
-                      "value": "ASP.NET"
-                    },
-                    {
-                      "key": "Access-Control-Allow-Origin",
-                      "value": "*"
-                    },
-                    {
-                      "key": "Access-Control-Allow-Methods",
-                      "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
-                    },
-                    {
-                      "key": "Access-Control-Allow-Headers",
-                      "value": "accept, authorization, Content-Type, X-Session-Id,X-PINGOTHER"
-                    },
-                    {
-                      "key": "Public",
-                      "value": "OPTIONS, TRACE, GET, HEAD, POST"
-                    },
-                    {
-                      "key": "X-Api-Server-Version",
-                      "value": "3"
-                    },
-                    {
-                      "key": "Date",
-                      "value": "Thu, 02 Apr 2020 10:36:39 GMT"
-                    },
-                    {
-                      "key": "Transfer-Encoding",
-                      "value": "chunked"
-                    },
-                    {
-                      "key": "Content-Encoding",
-                      "value": "gzip"
-                    },
-                    {
-                      "key": "Strict-Transport-Security",
-                      "value": "max-age=16000000; includeSubDomains; preload;"
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"500\",\n        \"total_count\": \"1\",\n        \"execution_time\": \"25\",\n        \"pagination\": {\n            \"first\": \"https://api.sikkasoft.com/v2/lab_cases?offset=0&limit=500\",\n            \"previous\": \"\",\n            \"current\": \"https://api.sikkasoft.com/v2/lab_cases?offset=0&limit=500\",\n            \"next\": \"\",\n            \"last\": \"https://api.sikkasoft.com/v2/lab_cases?offset=0&limit=500\"\n        },\n        \"items\": [\n            {\n                \"href\": \"https://api.sikkasoft.com/v2/practices/5/lab_cases/23\",\n                \"case_record_id\": \"23\",\n                \"lab_id\": \"10\",\n                \"lab_detail\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/lab_details/10\"\n                },\n                \"patient_id\": \"21355\",\n                \"patient\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/patients/21355\"\n                },\n                \"date_created\": \"2019-05-14\",\n                \"provider_id\": \"BB1812\",\n                \"provider\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/providers/BB1812\"\n                },\n                \"lab_case_category\": \"Partial\",\n                \"lab_assignment_number\": \"low\",\n                \"note\": \"\",\n                \"receive_date\": \"\",\n                \"finish_date\": \"\",\n                \"is_closed\": \"\",\n                \"transaction_sr_no\": \"\",\n                \"transaction\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/transactions\"\n                },\n                \"appointment_sr_no\": \"\",\n                \"appointment\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/appointments\"\n                },\n                \"ship_method\": \"Fed Ex\",\n                \"ship_trac_number\": \"\",\n                \"amount\": \"0.00\",\n                \"date_sent\": \"2019-05-14\",\n                \"practice_id\": \"5\",\n                \"practice\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5\"\n                }\n            }\n        ]\n    }\n]"
-                }
-              ]
-            }
-          ],
-          "id": "65c1c413-15c5-144b-5ef7-465fb4b7ce87",
-          "description": "It contains all APIs related with lab informaion in practice"
         }
       ],
       "id": "4a90818c-b880-4b29-b3a3-46e71331e73d"
