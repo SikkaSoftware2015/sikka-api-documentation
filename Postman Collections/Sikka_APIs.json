@@ -28775,15 +28775,14 @@
         {
           "name": "practice_events",
           "id": "bad9ce36-3371-aed9-bc1f-b300b79faa69",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "GET",
             "header": [],
-            "body": {
-              "mode": "formdata",
-              "formdata": []
-            },
             "url": {
-              "raw": "{{url}}/practice_events?request_key={{request_key}}&loaded_startdate=2018-01-01&loaded_enddate=2018-01-07&events=patients,appointments,transactions&interval=15",
+              "raw": "{{url}}/practice_events?request_key={{request_key}}&loaded_startdate=yyyy-MM-dd&loaded_enddate=yyyy-MM-dd&events={name_of_event}&interval=15",
               "host": [
                 "{{url}}"
               ],
@@ -28797,15 +28796,15 @@
                 },
                 {
                   "key": "loaded_startdate",
-                  "value": "2018-01-01"
+                  "value": "yyyy-MM-dd"
                 },
                 {
                   "key": "loaded_enddate",
-                  "value": "2018-01-07"
+                  "value": "yyyy-MM-dd"
                 },
                 {
                   "key": "events",
-                  "value": "patients,appointments,transactions"
+                  "value": "{name_of_event}"
                 },
                 {
                   "key": "interval",
