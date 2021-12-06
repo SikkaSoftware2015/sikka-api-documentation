@@ -8555,7 +8555,7 @@
                     }
                   ]
                 },
-                "description": "Get the list of all payment types with the information like code , description.\r\n\r\n|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|practice_id|Practice ID|No|\r\n|code|valid code, coma separated for multiple|No|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|code|valid code, coma separated for multiple|"
+                "description": "Get the list of all payment types with the information like code , description.\n\n|Parameter|Description|Required?|\n|--- |--- |--- |\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\n|practice_id|Practice ID|No|\n|code|valid code, coma separated for multiple|No|\n|customer_id|Customer ID|No|\n|is_adjustment_type| value should be true. it will return Credit Adjustment Types only|No|\n|is_debit_adjustment_type|value should be true. it will return Debit Adjustment Types only|No|\n|is_insurance_type|value should be true. it will return Insurance Payment Types only|No|\n\n**SortBy**\n\n|Parameter|Description|\n|--- |--- |\n|code|valid code, coma separated for multiple|"
               },
               "response": [
                 {
