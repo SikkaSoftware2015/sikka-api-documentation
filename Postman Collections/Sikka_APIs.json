@@ -1629,7 +1629,7 @@
                   }
                 ],
                 "url": "https://api.sikkasoft.com/v4/claim_descriptions",
-                "description": "Returns claims data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### drug_id ```optional```\r\n> claim_description_id from appointments \r\n###### pracitce_id ```optional```\r\n> practice id of office "
+                "description": "Returns claims data from practice\n\n* * *\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n###### claim_description_id `optional`\n\n> claim_description_id\n\n###### pracitce_id `optional`\n\n> practice id of office"
               },
               "response": [
                 {
