@@ -2387,6 +2387,19 @@
                   "body": "{\n    \"offset\": \"0\",\n    \"limit\": \"500\",\n    \"total_count\": \"310\",\n    \"execution_time\": \"6469\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/practice_events?offset=0&limit=500\",\n        \"previous\": \"\",\n        \"current\": \"https://api.sikkasoft.com/v4/practice_events?offset=0&limit=500\",\n        \"next\": \"\",\n        \"last\": \"https://api.sikkasoft.com/v4/practice_events?offset=0&limit=500\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/appointmetns/17436\",\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/371\",\n            \"patient_id\": \"371\",\n            \"guarantor_id\": \"\",\n            \"provider_id\": \"CG\",\n            \"provider_href\": \"https://api.sikkasoft.com/v4/practices/1/providers/CG\",\n            \"practice_id\": \"1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\n            \"guarantor_href\": \"\",\n            \"loadeddate\": \"2020-11-11T00:01:00\",\n            \"flag\": \"updated\",\n            \"amount\": \"0.0000\",\n            \"note\": \"filling fell out\",\n            \"surface_quadrant_type\": \"\",\n            \"appointment_sr_no\": \"17436\",\n            \"date\": \"2019-11-18T00:00:00\",\n            \"time\": \"11:00\",\n            \"length\": \"45\",\n            \"description\": \"filling fell out\",\n            \"appointment_made_date\": \"2019-11-18T00:00:00\",\n            \"type\": \"\",\n            \"procedure_code1\": \"19310\",\n            \"procedure_code1_amount\": \"0\",\n            \"procedure_code2\": \"\",\n            \"procedure_code2_amount\": \"0\",\n            \"procedure_code3\": \"\",\n            \"procedure_code3_amount\": \"0\",\n            \"patient_name\": \"\",\n            \"guarantor_name\": \"\",\n            \"procedure_code1_time\": \"\",\n            \"procedure_code2_time\": \"\",\n            \"procedure_code3_time\": \"\",\n            \"surface_quadrant\": \"\",\n            \"changes\": [\n                {\n                    \"field\": \"procedure_code2\",\n                    \"old_value\": \"19310\",\n                    \"new_value \": \"\"\n                },\n                {\n                    \"field\": \"patient_name\",\n                    \"old_value\": \"Muxys old\",\n                    \"new_value \": \"jhon new\"\n                }\n            ]\n        }\n    ]\n}"
                 }
               ]
+            },
+            {
+              "name": "New Request",
+              "id": "97f05862-b151-4953-9200-bab9c8f4efaf",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": null
+              },
+              "response": []
             }
           ],
           "id": "0c1fa096-aa44-4088-aa2b-97a96d612a8e"
