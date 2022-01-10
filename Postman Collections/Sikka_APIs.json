@@ -2398,7 +2398,7 @@
                 "method": "GET",
                 "header": [],
                 "url": null,
-                "description": "Returns insurance eligibility\n\n* * *\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n###### pracitce_id `optional`\n\n> practice id of office"
+                "description": "Returns insurance eligibility\n\n* * *\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n###### pracitce_id `optional`\n\n> practice id of office\n\n###### patient_id `optional`\n\n> patient id of office\n\n###### member id `optional`\n\n> member id of office"
               },
               "response": [
                 {
@@ -2409,29 +2409,11 @@
                     "header": [
                       {
                         "key": "Request-Key",
-                        "value": "8144697490baf400fbf5bc9109a2c1a1",
+                        "value": "<request_key>",
                         "type": "default"
                       }
                     ],
-                    "url": {
-                      "raw": "https://api.sikkasoft.com/v4/insurance_eligibility?patient_id=320801",
-                      "protocol": "https",
-                      "host": [
-                        "api",
-                        "sikkasoft",
-                        "com"
-                      ],
-                      "path": [
-                        "v4",
-                        "insurance_eligibility"
-                      ],
-                      "query": [
-                        {
-                          "key": "patient_id",
-                          "value": "320801"
-                        }
-                      ]
-                    }
+                    "url": "https://api.sikkasoft.com/v4/insurance_eligibility"
                   },
                   "status": "OK",
                   "code": 200,
