@@ -2398,7 +2398,7 @@
                 "method": "GET",
                 "header": [],
                 "url": null,
-                "description": "Returns procedure codes category data from practice\n\nParameters  \nrequest_key Required  \nA Valid 32 characters alpha-numeric request key\n\npracitce_id optional  \npractice id of office"
+                "description": "Returns insurance eligibility\n\n* * *\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n###### pracitce_id `optional`\n\n> practice id of office"
               },
               "response": [
                 {
