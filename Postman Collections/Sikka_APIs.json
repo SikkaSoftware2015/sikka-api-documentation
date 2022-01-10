@@ -2389,7 +2389,7 @@
               ]
             },
             {
-              "name": "New Request",
+              "name": "insurance_eligibility",
               "id": "9bd3c454-6d13-439f-8ed3-8e5f0b6e1e6e",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
