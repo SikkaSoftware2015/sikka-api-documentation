@@ -2497,6 +2497,48 @@
                   "body": "{\n    \"offset\": \"0\",\n    \"limit\": \"500\",\n    \"total_count\": \"1\",\n    \"execution_time\": \"12\",\n    \"pagination\": {\n        \"first\": \"http://api.sikkasoft.com/v4/insurance_eligibility?offset=0&limit=500\",\n        \"previous\": \"\",\n        \"current\": \"http://api.sikkasoft.com/v4/insurance_eligibility?offset=0&limit=500\",\n        \"next\": \"\",\n        \"last\": \"http://api.sikkasoft.com/v4/insurance_eligibility?offset=0&limit=500\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/insurance_eligibility/320801\",\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/320801\",\n            \"patient_id\": \"320801\",\n            \"guarantor_id\": \"320800\",\n            \"firstname\": \"Francisco\",\n            \"lastname\": \"Rodriguez Jr.\",\n            \"birthdate\": \"1980-06-11T00:00:00\",\n            \"practice_id\": \"1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\n            \"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/1/guarantors/320800\",\n            \"insurance_company_name\": \"Delta Dental\",\n            \"domain\": \"N/A\",\n            \"customer_id\": \"1\",\n            \"member_id\": \"602740968\",\n            \"responsible_patient_name\": \"N/A\",\n            \"responsible_patient_birthdate\": \"N/A\",\n            \"error\": \"The information entered did not match the records in the database Please check your information and try again\",\n            \"eligibility_type\": \"N/A\",\n            \"header\": \"N/A\",\n            \"ppo_individual\": \"N/A\",\n            \"ppo_family\": \"N/A\",\n            \"premier_individual\": \"N/A\",\n            \"premier_family\": \"N/A\",\n            \"outofnetwork_individual\": \"N/A\",\n            \"outofnetwork_family\": \"N/A\"\n        }\n    ]\n}"
                 }
               ]
+            },
+            {
+              "name": "https://api.sikkasoft.com/v4/optometry_product_details?fields=get_all&limit=1",
+              "id": "2fa2205e-a074-4cb4-a0cd-de387816b271",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Request-Key",
+                    "value": "0037bd7d9d5eb9cc998f01d88f5724e5",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "https://api.sikkasoft.com/v4/optometry_product_details?fields=get_all&limit=1",
+                  "protocol": "https",
+                  "host": [
+                    "api",
+                    "sikkasoft",
+                    "com"
+                  ],
+                  "path": [
+                    "v4",
+                    "optometry_product_details"
+                  ],
+                  "query": [
+                    {
+                      "key": "fields",
+                      "value": "get_all"
+                    },
+                    {
+                      "key": "limit",
+                      "value": "1"
+                    }
+                  ]
+                },
+                "description": "Return the list of optometry products"
+              },
+              "response": []
             }
           ],
           "id": "0c1fa096-aa44-4088-aa2b-97a96d612a8e"
