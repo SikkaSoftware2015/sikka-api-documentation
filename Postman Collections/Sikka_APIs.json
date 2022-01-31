@@ -284,6 +284,41 @@
               ]
             },
             {
+              "name": "accounts_receivables",
+              "id": "fcb005b7-b9ce-4c24-b585-64dd30b4a7fc",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": "https://api.sikkasoft.com/v4/accounts_receivables",
+                "description": "Returns account receivables details from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### pracitce_id ```optional```\r\n> practice id of office \r\n###### guarantor_id ```optional```\r\n> guarantor id in practice management system"
+              },
+              "response": [
+                {
+                  "id": "0f84db04-1009-4ac7-9968-4c34c2281a45",
+                  "name": "accounts_receivables",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "request-key",
+                        "value": "<request_key>",
+                        "type": "text"
+                      }
+                    ],
+                    "url": "https://api.sikkasoft.com/v4/accounts_receivables"
+                  },
+                  "_postman_previewlanguage": "json",
+                  "header": null,
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\n    \"offset\": \"0\",\n    \"limit\": \"1\",\n    \"total_count\": \"433\",\n    \"execution_time\": \"264\",\n    \"pagination\": {\n        \"first\": \"http://api.sikkasoft.com/v4/accounts_receivables?offset=0&limit=1\",\n        \"previous\": \"\",\n        \"current\": \"http://api.sikkasoft.com/v4/accounts_receivables?offset=0&limit=1\",\n        \"next\": \"http://api.sikkasoft.com/v4/accounts_receivables?offset=1&limit=1\",\n        \"last\": \"http://api.sikkasoft.com/v4/accounts_receivables?offset=432&limit=1\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/contact_details/98800\",\n            \"guarantor_id\": \"98800\",\n            \"practice_id\": \"1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\n            \"amount_less_than_30\": \"0\",\n            \"amount_between_31_60\": \"60.3\",\n            \"amount_between_61_90\": \"0\",\n            \"amount_greater_than_90\": \"0\",\n            \"current_date\": \"2020-10-06T00:00:00\",\n            \"entry_id\": \"\"\n        }\n    ]\n}"
+                }
+              ]
+            },
+            {
               "name": "patients",
               "id": "67aa35de-a4d4-47b7-919f-1b58ebc75073",
               "protocolProfileBehavior": {
@@ -678,41 +713,6 @@
                   "cookie": [],
                   "responseTime": null,
                   "body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"1\",\r\n\"total_count\": \"24\",\r\n\"execution_time\": \"13\",\r\n\"pagination\": {\r\n\"first\": \"http://api.sikkasoft.com/v4/providers?offset=0&limit=1\",\r\n\"previous\": \"\",\r\n\"current\": \"http://api.sikkasoft.com/v4/providers?offset=0&limit=1\",\r\n\"next\": \"http://api.sikkasoft.com/v4/providers?offset=1&limit=1\",\r\n\"last\": \"http://api.sikkasoft.com/v4/providers?offset=23&limit=1\"\r\n},\r\n\"items\": [\r\n{\r\n        \"href\": \"https://api.sikkasoft.com/v4/practices/1/providers/VLP\",\r\n        \"provider_id\": \"VLP\",\r\n        \"firstname\": \"Vdfdd\",\r\n        \"lastname\": \"Ztedda\",\r\n        \"address_line1\": \"1astde\",\r\n        \"address_line2\": \"Last Day 11-30-11\",\r\n        \"city\": \"Lewistown\",\r\n        \"state\": \"IL\",\r\n        \"zipcode\": \"61542\",\r\n        \"country\": \"\",\r\n        \"phone\": \"\",\r\n        \"provider_type\": \"Provider\",\r\n        \"specialty\": \"Dental Assistant\",\r\n        \"practice_id\": \"1\",\r\n        \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n        \"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients?provider_id=VLP\",\r\n        \"appointment_href\": \"https://api.sikkasoft.com/v4/practices/1/appointments?provider_id=VLP\",\r\n        \"status\": \"Inactive\",\r\n        \"provider_account_id\": \"\",\r\n        \"state_id\": \"\",\r\n        \"tax_identification_number\": \"\",\r\n        \"medicaid_id\": \"\",\r\n        \"drug_id\": \"\",\r\n        \"national_provider_identifier\": \"\",\r\n        \"email\": \"\",\r\n        \"birthdate\": \"\",\r\n        \"hire_date\": \"\",\r\n        \"graduated_date\": \"\",\r\n        \"initials\": \"\",\r\n        \"ssn\": \"\",\r\n        \"other_id\": \"\",\r\n        \"bluecross_id\": \"\",\r\n        \"medicare_id\": \"\",\r\n        \"fee_schedule_id\": \"\",\r\n        \"federal_id_no\": \"\",\r\n        \"federal_id_sub_no\": \"\",\r\n        \"gl_sub_account_number\": \"\",\r\n        \"is_hidden\": \"False\",\r\n        \"cust_id\": \"True\",\r\n        \"specialty_code\": \"1593S0542X\"\r\n}\r\n]\r\n}"
-                }
-              ]
-            },
-            {
-              "name": "accounts_receivables",
-              "id": "fcb005b7-b9ce-4c24-b585-64dd30b4a7fc",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "GET",
-                "header": [],
-                "url": "https://api.sikkasoft.com/v4/accounts_receivables",
-                "description": "Returns account receivables details from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### pracitce_id ```optional```\r\n> practice id of office \r\n###### guarantor_id ```optional```\r\n> guarantor id in practice management system"
-              },
-              "response": [
-                {
-                  "id": "0f84db04-1009-4ac7-9968-4c34c2281a45",
-                  "name": "accounts_receivables",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [
-                      {
-                        "key": "request-key",
-                        "value": "<request_key>",
-                        "type": "text"
-                      }
-                    ],
-                    "url": "https://api.sikkasoft.com/v4/accounts_receivables"
-                  },
-                  "_postman_previewlanguage": "json",
-                  "header": null,
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": "{\n    \"offset\": \"0\",\n    \"limit\": \"1\",\n    \"total_count\": \"433\",\n    \"execution_time\": \"264\",\n    \"pagination\": {\n        \"first\": \"http://api.sikkasoft.com/v4/accounts_receivables?offset=0&limit=1\",\n        \"previous\": \"\",\n        \"current\": \"http://api.sikkasoft.com/v4/accounts_receivables?offset=0&limit=1\",\n        \"next\": \"http://api.sikkasoft.com/v4/accounts_receivables?offset=1&limit=1\",\n        \"last\": \"http://api.sikkasoft.com/v4/accounts_receivables?offset=432&limit=1\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/contact_details/98800\",\n            \"guarantor_id\": \"98800\",\n            \"practice_id\": \"1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\n            \"amount_less_than_30\": \"0\",\n            \"amount_between_31_60\": \"60.3\",\n            \"amount_between_61_90\": \"0\",\n            \"amount_greater_than_90\": \"0\",\n            \"current_date\": \"2020-10-06T00:00:00\",\n            \"entry_id\": \"\"\n        }\n    ]\n}"
                 }
               ]
             },
