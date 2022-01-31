@@ -2509,7 +2509,7 @@
                 "header": [
                   {
                     "key": "Request-Key",
-                    "value": "0037bd7d9d5eb9cc998f01d88f5724e5",
+                    "value": "{request key}",
                     "type": "text"
                   }
                 ],
