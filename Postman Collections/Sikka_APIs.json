@@ -2499,7 +2499,7 @@
               ]
             },
             {
-              "name": "https://api.sikkasoft.com/v4/optometry_product_details?fields=get_all&limit=1",
+              "name": "optometry_product_details",
               "id": "2fa2205e-a074-4cb4-a0cd-de387816b271",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
