@@ -2534,7 +2534,109 @@
                 },
                 "description": "Return the list of optometry products"
               },
-              "response": []
+              "response": [
+                {
+                  "id": "121edf9b-624b-4861-82f3-4d49a408f076",
+                  "name": "optometry_product_details",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Request-Key",
+                        "value": "{request key}",
+                        "type": "text"
+                      }
+                    ],
+                    "url": {
+                      "raw": "https://api.sikkasoft.com/v4/optometry_product_details?fields=get_all",
+                      "protocol": "https",
+                      "host": [
+                        "api",
+                        "sikkasoft",
+                        "com"
+                      ],
+                      "path": [
+                        "v4",
+                        "optometry_product_details"
+                      ],
+                      "query": [
+                        {
+                          "key": "fields",
+                          "value": "get_all"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Server",
+                      "value": "nginx/1.18.0 (Ubuntu)"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Mon, 31 Jan 2022 03:03:08 GMT"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    },
+                    {
+                      "key": "Transfer-Encoding",
+                      "value": "chunked"
+                    },
+                    {
+                      "key": "Request-Key-Expires",
+                      "value": "Tue, 01 Feb 2022 02:46:28 GMT"
+                    },
+                    {
+                      "key": "X-Rate-Limit-Limit",
+                      "value": "120"
+                    },
+                    {
+                      "key": "X-Rate-Limit-Remaining",
+                      "value": "118"
+                    },
+                    {
+                      "key": "X-Rate-Limit-Reset",
+                      "value": "49"
+                    },
+                    {
+                      "key": "X-Frame-Options",
+                      "value": "DENY"
+                    },
+                    {
+                      "key": "X-Content-Type-Options",
+                      "value": "nosniff"
+                    },
+                    {
+                      "key": "X-XSS-Protection",
+                      "value": "1; mode=block"
+                    },
+                    {
+                      "key": "Referrer-Policy",
+                      "value": "origin"
+                    },
+                    {
+                      "key": "Content-Encoding",
+                      "value": "gzip"
+                    },
+                    {
+                      "key": "Strict-Transport-Security",
+                      "value": "max-age=31536000; includeSubDomains; preload;"
+                    },
+                    {
+                      "key": "Content-Security-Policy",
+                      "value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\n    \"offset\": \"0\",\n    \"limit\": \"1\",\n    \"total_count\": \"19550\",\n    \"execution_time\": \"48\",\n    \"pagination\": {\n        \"first\": \"http://api.sikkasoft.com/v4/optometry_product_details?offset=0&limit=1\",\n        \"previous\": \"\",\n        \"current\": \"http://api.sikkasoft.com/v4/optometry_product_details?offset=0&limit=1\",\n        \"next\": \"http://api.sikkasoft.com/v4/optometry_product_details?offset=1&limit=1\",\n        \"last\": \"http://api.sikkasoft.com/v4/optometry_product_details?offset=19549&limit=1\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1-2/optometry_product_details/999\",\n            \"practice_id\": \"1-2\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-2\",\n            \"cust_id\": \"1\",\n            \"product_id\": \"999\",\n            \"product_detail_number\": \"1190\",\n            \"product_code\": \"482\",\n            \"base_curve\": \"8.6\",\n            \"diameter\": \"14.5\",\n            \"sphere\": \"0\",\n            \"cylinder\": \"0\",\n            \"axis\": \"0\",\n            \"add\": \"0\",\n            \"delete_description\": \"N\",\n            \"consign\": \"N\",\n            \"reorder\": \"N\",\n            \"frame_eye\": \"0\",\n            \"frame_a\": \"0\",\n            \"frame_b\": \"0\",\n            \"frame_ed\": \"0\",\n            \"frame_dbl\": \"0\",\n            \"frame_temple\": \"\",\n            \"frame_bridge\": \"0\",\n            \"color_description\": \"\",\n            \"board_location\": \"\",\n            \"quantity_on_hand\": \"0\",\n            \"quantity_on_order\": \"0\",\n            \"stock_level\": \"1\",\n            \"minimum\": \"1\",\n            \"quantity_sold_ptd\": \"0\",\n            \"quantity_return_ptd\": \"0\",\n            \"amount_sold_ptd\": \"0.0000\",\n            \"cogs_ptd\": \"0.0000\",\n            \"gross_profit_ptd\": \"0.0000\",\n            \"issued_ptd\": \"0\",\n            \"quantity_sold_ytd\": \"0\",\n            \"quantity_return_ytd\": \"0\",\n            \"amount_sold_ytd\": \"0.0000\",\n            \"cogs_ytd\": \"0.0000\",\n            \"gross_profit_ytd\": \"0.0000\",\n            \"last_sold_date\": \"\",\n            \"last_received_date\": \"\",\n            \"total_cost\": \"24.9900\",\n            \"attribute1_description\": \"Soft Toric\",\n            \"attribute2_description\": \"\",\n            \"attribute3_description\": \"\",\n            \"attribute4_description\": \"\",\n            \"attribute5_description\": \"\",\n            \"attribute6_description\": \"\",\n            \"attribute7_description\": \"\",\n            \"attribute1_cost\": \"24.9900\",\n            \"attribute2_cost\": \"0.0000\",\n            \"attribute3_cost\": \"0.0000\",\n            \"attribute4_cost\": \"0.0000\",\n            \"attribute5_cost\": \"0.0000\",\n            \"attribute6_cost\": \"0.0000\",\n            \"attribute7_cost\": \"0.0000\",\n            \"attribute1_fee\": \"55.0000\",\n            \"attribute2_fee\": \"0.0000\",\n            \"attribute3_fee\": \"0.0000\",\n            \"attribute4_fee\": \"0.0000\",\n            \"attribute5_fee\": \"0.0000\",\n            \"attribute6_fee\": \"0.0000\",\n            \"attribute7_fee\": \"0.0000\",\n            \"attribute1_cost_changed\": \"2014-04-22T00:00:00\",\n            \"attribute2_cost_changed\": \"\",\n            \"attribute3_cost_changed\": \"\",\n            \"attribute4_cost_changed\": \"\",\n            \"attribute5_cost_changed\": \"\",\n            \"attribute6_cost_changed\": \"\",\n            \"attribute7_cost_changed\": \"\",\n            \"attribute1_fee_changed\": \"2014-04-22T00:00:00\",\n            \"attribute2_fee_changed\": \"\",\n            \"attribute3_fee_changed\": \"\",\n            \"attribute4_fee_changed\": \"\",\n            \"attribute5_fee_changed\": \"\",\n            \"attribute6_fee_changed\": \"\",\n            \"attribute7_fee_changed\": \"\",\n            \"upc_code\": \"\"\n        }\n    ]\n}"
+                }
+              ]
             }
           ],
           "id": "0c1fa096-aa44-4088-aa2b-97a96d612a8e"
