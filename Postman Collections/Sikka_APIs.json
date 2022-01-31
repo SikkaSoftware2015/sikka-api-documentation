@@ -228,6 +228,62 @@
           "name": "One API",
           "item": [
             {
+              "name": "appointments",
+              "id": "cc4375ec-0b6a-442f-846c-16fb138cd794",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": "https://api.sikkasoft.com/v4/appointments",
+                "description": "Returns appointments data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### appointment_sr_no ```optional```\r\n> appointment serial number from appointments \r\n###### pracitce_id ```optional```\r\n> practice id of office \r\n###### patient_id ```optional```\r\n> guarantor id in practice management system \r\n###### guarantor_id ```optional```\r\n> guarantor id in practice management system"
+              },
+              "response": [
+                {
+                  "id": "15434c8f-12e6-42d5-9d1f-ba4229b4d769",
+                  "name": "appointments",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Request-Key",
+                        "value": "<request_key>",
+                        "type": "text"
+                      }
+                    ],
+                    "url": {
+                      "raw": "https://api.sikkasoft.com/v4/appointments",
+                      "protocol": "https",
+                      "host": [
+                        "api",
+                        "sikkasoft",
+                        "com"
+                      ],
+                      "path": [
+                        "v4",
+                        "appointments"
+                      ],
+                      "query": [
+                        {
+                          "key": "Request-Key",
+                          "value": "<request_key>",
+                          "disabled": true
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": null,
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\n    \"offset\": \"0\",\n    \"limit\": \"1\",\n    \"total_count\": \"38968\",\n    \"execution_time\": \"51\",\n    \"pagination\": {\n        \"first\": \"http://api.sikkasoft.com/v4/appointments?offset=0&limit=1\",\n        \"previous\": \"\",\n        \"current\": \"http://api.sikkasoft.com/v4/appointments?offset=0&limit=1\",\n        \"next\": \"http://api.sikkasoft.com/v4/appointments?offset=1&limit=1\",\n        \"last\": \"http://api.sikkasoft.com/v4/appointments?offset=38967&limit=1\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/appointments/70670\",\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/5383\",\n            \"patient_id\": \"5383\",\n            \"guarantor_id\": \"\",\n            \"provider_id\": \"DMD2\",\n            \"provider_href\": \"https://api.sikkasoft.com/v4/practices/1/providers/DMD2\",\n            \"practice_id\": \"1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\n            \"guarantor_href\": \"\",\n            \"amount\": \"0.0000\",\n            \"note\": \"\",\n            \"surface_quadrant_type\": \"\",\n            \"appointment_sr_no\": \"70670\",\n            \"date\": \"2020-09-29T00:00:00\",\n            \"time\": \"10:30\",\n            \"length\": \"60\",\n            \"description\": \"Seat Br-UR\",\n            \"appointment_made_date\": \"2020-09-14T00:00:00\",\n            \"type\": \"General\",\n            \"procedure_code1\": \"\",\n            \"procedure_code1_amount\": \"0\",\n            \"procedure_code2\": \"\",\n            \"procedure_code2_amount\": \"0\",\n            \"procedure_code3\": \"\",\n            \"procedure_code3_amount\": \"0\",\n            \"patient_name\": \"paitent name\",\n            \"guarantor_name\": \"\",\n            \"procedure_code1_time\": \"0\",\n            \"procedure_code2_time\": \"0\",\n            \"procedure_code3_time\": \"0\",\n            \"surface_quadrant\": \"\"\n        }\n    ]\n}"
+                }
+              ]
+            },
+            {
               "name": "patients",
               "id": "67aa35de-a4d4-47b7-919f-1b58ebc75073",
               "protocolProfileBehavior": {
@@ -400,62 +456,6 @@
                   "cookie": [],
                   "responseTime": null,
                   "body": "{\n    \"offset\": \"0\",\n    \"limit\": \"1\",\n    \"total_count\": \"7\",\n    \"execution_time\": \"13\",\n    \"pagination\": {\n        \"first\": \"http://apiv4.sikkasoft.com/v4/accounts_receivables?offset=0&limit=1\",\n        \"previous\": \"\",\n        \"current\": \"http://apiv4.sikkasoft.com/v4/accounts_receivables?offset=0&limit=1\",\n        \"next\": \"http://apiv4.sikkasoft.com/v4/accounts_receivables?offset=1&limit=1\",\n        \"last\": \"http://apiv4.sikkasoft.com/v4/accounts_receivables?offset=6&limit=1\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/contact_details/9\",\n            \"guarantor_id\": \"9\",\n            \"practice_id\": \"1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\n            \"amount_less_than_30\": \"0\",\n            \"amount_between_31_60\": \"0\",\n            \"amount_between_61_90\": \"0\",\n            \"amount_greater_than_90\": \"225\",\n            \"current_date\": \"2020-09-25T00:00:00\",\n            \"entry_id\": \"\"\n        }\n    ]\n}"
-                }
-              ]
-            },
-            {
-              "name": "appointments",
-              "id": "cc4375ec-0b6a-442f-846c-16fb138cd794",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "GET",
-                "header": [],
-                "url": "https://api.sikkasoft.com/v4/appointments",
-                "description": "Returns appointments data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### appointment_sr_no ```optional```\r\n> appointment serial number from appointments \r\n###### pracitce_id ```optional```\r\n> practice id of office \r\n###### patient_id ```optional```\r\n> guarantor id in practice management system \r\n###### guarantor_id ```optional```\r\n> guarantor id in practice management system"
-              },
-              "response": [
-                {
-                  "id": "15434c8f-12e6-42d5-9d1f-ba4229b4d769",
-                  "name": "appointments",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [
-                      {
-                        "key": "Request-Key",
-                        "value": "<request_key>",
-                        "type": "text"
-                      }
-                    ],
-                    "url": {
-                      "raw": "https://api.sikkasoft.com/v4/appointments",
-                      "protocol": "https",
-                      "host": [
-                        "api",
-                        "sikkasoft",
-                        "com"
-                      ],
-                      "path": [
-                        "v4",
-                        "appointments"
-                      ],
-                      "query": [
-                        {
-                          "key": "Request-Key",
-                          "value": "<request_key>",
-                          "disabled": true
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": null,
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": "{\n    \"offset\": \"0\",\n    \"limit\": \"1\",\n    \"total_count\": \"38968\",\n    \"execution_time\": \"51\",\n    \"pagination\": {\n        \"first\": \"http://api.sikkasoft.com/v4/appointments?offset=0&limit=1\",\n        \"previous\": \"\",\n        \"current\": \"http://api.sikkasoft.com/v4/appointments?offset=0&limit=1\",\n        \"next\": \"http://api.sikkasoft.com/v4/appointments?offset=1&limit=1\",\n        \"last\": \"http://api.sikkasoft.com/v4/appointments?offset=38967&limit=1\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/appointments/70670\",\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/5383\",\n            \"patient_id\": \"5383\",\n            \"guarantor_id\": \"\",\n            \"provider_id\": \"DMD2\",\n            \"provider_href\": \"https://api.sikkasoft.com/v4/practices/1/providers/DMD2\",\n            \"practice_id\": \"1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\n            \"guarantor_href\": \"\",\n            \"amount\": \"0.0000\",\n            \"note\": \"\",\n            \"surface_quadrant_type\": \"\",\n            \"appointment_sr_no\": \"70670\",\n            \"date\": \"2020-09-29T00:00:00\",\n            \"time\": \"10:30\",\n            \"length\": \"60\",\n            \"description\": \"Seat Br-UR\",\n            \"appointment_made_date\": \"2020-09-14T00:00:00\",\n            \"type\": \"General\",\n            \"procedure_code1\": \"\",\n            \"procedure_code1_amount\": \"0\",\n            \"procedure_code2\": \"\",\n            \"procedure_code2_amount\": \"0\",\n            \"procedure_code3\": \"\",\n            \"procedure_code3_amount\": \"0\",\n            \"patient_name\": \"paitent name\",\n            \"guarantor_name\": \"\",\n            \"procedure_code1_time\": \"0\",\n            \"procedure_code2_time\": \"0\",\n            \"procedure_code3_time\": \"0\",\n            \"surface_quadrant\": \"\"\n        }\n    ]\n}"
                 }
               ]
             },
