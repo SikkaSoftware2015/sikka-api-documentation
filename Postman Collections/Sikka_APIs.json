@@ -2532,7 +2532,7 @@
                     }
                   ]
                 },
-                "description": "Return the list of optometry products"
+                "description": "Return the list of optometry products\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n###### pracitce_id `optional`\n\n> practice id of office\n\n###### product_id `optional`\n\n> product id of office"
               },
               "response": [
                 {
