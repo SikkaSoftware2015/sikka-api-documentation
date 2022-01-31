@@ -2514,7 +2514,7 @@
                   }
                 ],
                 "url": {
-                  "raw": "https://api.sikkasoft.com/v4/optometry_product_details?fields=get_all&limit=1",
+                  "raw": "https://api.sikkasoft.com/v4/optometry_product_details?fields=get_all",
                   "protocol": "https",
                   "host": [
                     "api",
@@ -2529,10 +2529,6 @@
                     {
                       "key": "fields",
                       "value": "get_all"
-                    },
-                    {
-                      "key": "limit",
-                      "value": "1"
                     }
                   ]
                 },
