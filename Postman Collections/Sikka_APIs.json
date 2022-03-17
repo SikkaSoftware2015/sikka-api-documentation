@@ -75,9 +75,91 @@
             },
             {
               "name": "Modified Records",
-              "item": [],
+              "item": [
+                {
+                  "name": "practice_events",
+                  "id": "76eda504-5aa6-47f6-9390-f70c1cb4f834",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "https://api.sikkasoft.com/v4/practice_events?interval={interval}&events={api name}",
+                      "protocol": "https",
+                      "host": [
+                        "api",
+                        "sikkasoft",
+                        "com"
+                      ],
+                      "path": [
+                        "v4",
+                        "practice_events"
+                      ],
+                      "query": [
+                        {
+                          "key": "interval",
+                          "value": "{interval}"
+                        },
+                        {
+                          "key": "events",
+                          "value": "{api name}"
+                        }
+                      ]
+                    },
+                    "description": "'practice_events' api will return changed records in practice between given date range.\n\nIn response you will get data with flags (Deleted or Added or Updated). Response also contains changes array. Changes array represents field name , old value and new value.  \nexample :\n\n``` javascript\n    \"changes\": \n             [\n              {\n               \"field\": \"transaction_date\",\n               \"old_value\": \"4/1/2016 12:00:00 AM\",\n               \"new_value \": \"4/20/2016 12:00:00 AM\"\n               },\n               {\n               \"field\": transaction_entry_date\",\n               \"old_value\": \"4/1/2016 12:00:00 AM\",\n               \"new_value \": \"4/20/2016 12:00:00 AM\"\n               },\n               {\n                \"field\": \"tooth_from\",\n                \"old_value\": \"14\",\n                \"new_value \": \"24\"\n                }\n              ]  \n\n```\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n###### events`Required`\n\n> Name of the events you want to get modified records. Events name must match with API name\n\n###### loaded_startdate`optional`\n\n> Start date for getting only changed record set. Date format : yyyy-mm-dd or yyyy-MM-ddTHH:mm:ss\n\n###### loaded_enddate`optional`\n\n> End date for getting only changed record set. Date format : yyyy-mm-dd or yyyy-MM-ddTHH:mm:ss\n\n###### interval`optional`\n\n> Value must be integer.  \n> 'interval' parameter allows user to fetch records , which has been changed in last minutes.  \n> This will be helpful when user does not know loaded_startdate/loaded_enddate and just want to fetch records which has been changed in last minutes (let say 5,10,15.. etc minutes). Maximun value for interval is 1440. You can fetch data which has been changed in last 24 hours (1440 minutes, interval=1440) without specifying loaded_startdate and loaded_enddate.  \n> **Note : Make sure Sikka platform utility is up and running on client machine. To check when Sikka platform utility (SPU) has refreshed, call 'authorized_practices' and get 'data_insert_date'.**\n\n##### API to find change logs of records :\n\nFor example :\n\n*   To find patient’s modified records :  \n    `https://api.sikkasoft.com/v4/patients?request_key={ }&loaded_startdate={}&loaded_enddate={ }`\n*   To find appointments modified records :  \n    `https://api.sikkasoft.com/v4/appointments?request_key={ }&loaded_startdate={}&loaded_enddate={ }`\n*   To find transaction’s modified records :  \n    `https://api.sikkasoft.com/v4/transactions?request_key={ }&loaded_startdate={}&loaded_enddate={ }`\n    \n\n###### In practice_events API\n\n`https://api.sikkasoft.com/v4/practice_events?request_key={ }&loaded_startdate={}&loaded_enddate={ }&events={name of data you want to retrieve }`\n\nFor example , if you want to retrieve patients  \n`https://api.sikkasoft.com/v2/practice_events?request_key={ }&loaded_startdate={}&loaded_enddate={ }&events=patients`\n\nResponse :\n\n``` javascript\n{\n \"offset\": \"1\",\n \"limit\": \"500\",\n \"total_count\": \"12\",\n \"execution_time\": \"13904\",\n \"pagination\": \n  {\n    \"first\": \"[https://api.sikkasoft.com/v4/practice_events?offset=0&limit=1](https://localhost:44391/v4/practice_events?offset=0&limit=1)\",\n    \"previous\": \"[https://api.sikkasoft.com/v4/practice_events?offset=0&limit=1](https://localhost:44391/v4/practice_events?offset=0&limit=1)\",\n    \"current\": \"[https://api.sikkasoft.com/v4/practice_events?offset=1&limit=1](https://localhost:44391/v4/practice_events?offset=1&limit=1)\",\n    \"next\": \"[https://api.sikkasoft.com/v4/practice_events?offset=2&limit=1](https://localhost:44391/v4/practice_events?offset=2&limit=1)\",\n    \"last\": \"[https://api.sikkasoft.com/v4/practice_events?offset=11&limit=1](https://localhost:44391/v4/practice_events?offset=11&limit=1)\"\n   },\n  \"items\": [\n            {\n            ```response body same as events= api```\n            ,\"changes\": []}]}\n\n```\n\n##### When to use practice_events API ?\n\nIf you want to get list of modified record using one API\n\n**Recommendations**\n\n*   Use it for short time range. like 24 hours or less.\n*   Response will be slow and data accuracy will be affected if given date range is too big\n*   Use either interval and flag or loaded_startdate, loaded_enddate and flag combination\n*   If interval parameter is passed then loaded_startdate and loaded_enddate parameters will not be captured\n    \n\n**Limitations** :  \nCurrently you will be able to get events from\n\n*   patients\n*   appointments\n*   transactions\n*   accounts_receivables\n*   guarantors\n*   guarantors_v2\n*   practices\n*   providers\n*   treatment_plans\n*   claims\n*   claim_descriptions\n*   prescriptions\n*   reminders\n    \n\nWe will update the list of events as we add in API"
+                  },
+                  "response": [
+                    {
+                      "id": "d1666574-d80e-49e2-9246-bfb3f11dd01b",
+                      "name": "practice_events",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Request-Key",
+                            "value": "<request_key>",
+                            "type": "text"
+                          }
+                        ],
+                        "url": {
+                          "raw": "https://api.sikkasoft.com/v4/practice_events?interval={interval}&events=appointments",
+                          "protocol": "https",
+                          "host": [
+                            "api",
+                            "sikkasoft",
+                            "com"
+                          ],
+                          "path": [
+                            "v4",
+                            "practice_events"
+                          ],
+                          "query": [
+                            {
+                              "key": "interval",
+                              "value": "{interval}"
+                            },
+                            {
+                              "key": "events",
+                              "value": "appointments"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": null,
+                      "cookie": [],
+                      "responseTime": null,
+                      "body": "{\n    \"offset\": \"0\",\n    \"limit\": \"500\",\n    \"total_count\": \"310\",\n    \"execution_time\": \"6469\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/practice_events?offset=0&limit=500\",\n        \"previous\": \"\",\n        \"current\": \"https://api.sikkasoft.com/v4/practice_events?offset=0&limit=500\",\n        \"next\": \"\",\n        \"last\": \"https://api.sikkasoft.com/v4/practice_events?offset=0&limit=500\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/appointmetns/17436\",\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/371\",\n            \"patient_id\": \"371\",\n            \"guarantor_id\": \"\",\n            \"provider_id\": \"CG\",\n            \"provider_href\": \"https://api.sikkasoft.com/v4/practices/1/providers/CG\",\n            \"practice_id\": \"1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\n            \"guarantor_href\": \"\",\n            \"loadeddate\": \"2020-11-11T00:01:00\",\n            \"flag\": \"updated\",\n            \"amount\": \"0.0000\",\n            \"note\": \"filling fell out\",\n            \"surface_quadrant_type\": \"\",\n            \"appointment_sr_no\": \"17436\",\n            \"date\": \"2019-11-18T00:00:00\",\n            \"time\": \"11:00\",\n            \"length\": \"45\",\n            \"description\": \"filling fell out\",\n            \"appointment_made_date\": \"2019-11-18T00:00:00\",\n            \"type\": \"\",\n            \"procedure_code1\": \"19310\",\n            \"procedure_code1_amount\": \"0\",\n            \"procedure_code2\": \"\",\n            \"procedure_code2_amount\": \"0\",\n            \"procedure_code3\": \"\",\n            \"procedure_code3_amount\": \"0\",\n            \"patient_name\": \"\",\n            \"guarantor_name\": \"\",\n            \"procedure_code1_time\": \"\",\n            \"procedure_code2_time\": \"\",\n            \"procedure_code3_time\": \"\",\n            \"surface_quadrant\": \"\",\n            \"changes\": [\n                {\n                    \"field\": \"procedure_code2\",\n                    \"old_value\": \"19310\",\n                    \"new_value \": \"\"\n                },\n                {\n                    \"field\": \"patient_name\",\n                    \"old_value\": \"Muxys old\",\n                    \"new_value \": \"jhon new\"\n                }\n            ]\n        }\n    ]\n}"
+                    }
+                  ]
+                }
+              ],
               "id": "e7abd1f5-abea-44e2-9bb3-343786757240",
-              "description": "How to get only modified records ?\n\nPass `loaded_startdate` and `loaded_enddate` to API . It will return change logs of records with flag ( added/deleted) . see below example  \nThere are below parameters in Sikka API to get only modified records :\n\n| Parameter | Description | Required |\n| --- | --- | --- |\n| loaded_startdate | Start date for getting only changed record set. Date format : yyyy-mm-dd or yyyy-MM-ddTHH:mm:ss | No |\n| loaded_enddate | End date for getting only changed record set. Date format : yyyy-mm-dd or yyyy-MM-ddTHH:mm:ss | No |\n| flag | Flag for data changes (added, deleted) | No |\n| interval | Value must be integer.  <br>'interval' parameter allows user to fetch records , which has been changed in last minutes.  <br>This will be helpful when user does not know loaded_startdate/loaded_enddate and just want to fetch records which has been changed in last minutes (let say 5,10,15.. etc minutes). Maximun value for interval is 1440. You can fetch data which has been changed in last 24 hours (1440 minutes, interval=1440) without specifying loaded_startdate and loaded_enddate.  <br>**Note : Make sure Sikka platform utility is up and running on client machine. To check when Sikka platform utility (SPU) has refreshed, call 'authorized_practices' and get 'data_insert_date'.** | No |\n\n`loaded_startdate` & `loaded_enddate` will help you to fetch modified records between given date time range.\n\n`flag` indicates whether record has been deleted or added.\n\n``` javascript\nhttps://api.sikkasoft.com/v2/{api_name}?request_key={}&loaded_startdate={ }&loaded_enddate={ }\n\n```\n\nResponse :\n\n``` javascript\n{\n\"href\": \"https://api.sikkasoft.com/v2/practices/1/appointments/3206e13d\",\n\"appointment_sr_no\": \"3206e13d\",\n\"patient_id\": \"1\",\n\"operatory\": \"\",\n\"date\": \"2015-11-02T00:00:00\",\n\"time\": \"08:40:00\",\n\"length\": \"60\",\n\"description\": \"testing1\",\n\"amount\": \"9999.0000\",\n\"status\": \"confirmed\",\n\"last_changed_date\": \"2015-12-21T00:00:00\",\n\"appointment_made_date\": \"2015-11-02T00:00:00\",\n\"provider_id\": \"LW\",\n\"flag\":\"Deleted/ Added\", [it will tell you record is deleted or added]\n\"patient_name\":\"Sat Yen\",\n\"guarantor_id\": \"1\",\n\"guarantor_name\": \"guarnator1\"\n}\n\n```\n\nExample :\n\n❶ Sikka API (like patients, appointments etc... ) always shows live data; extracted from PMS. Whenever you call Sikka API it is latest data.\n\n##### How to check latest data activity & retrieve modified records :\n\n☞ To check when Sikka has pulled data from PMS, you can use 'authorized_practices' API, instead keep calling Sikka APIs (patients, appointments, transactions etc... ).\n\n'authorized_practices' API will give you the status of each practice with refresh date & when last time data inserted.\n\n``` javascript\nGET https://api.sikkasoft.com/v4/authorized_practices\n\n```\n\nResponse :\n\n``` javascript\n{\n\"office_id\": \"_D....\",\n\"domain\": \"Dental\",\n\"href\": \"https://api.sikkasoft.com/v4/authorized_practices/D15\",\n\"secret_key\": \"_xxxx_.....\",\n\"practice_name\": \"\",\n\"address\": \"1650 B_f\",\n\"city\": \"Gettysburg\",\n\"state\": \"PA\",\n\"zip\": \"17325\",\n\"practice_management_system\": \"SoftDent\",\n\"financial_system\": \"\",\n\"practice_management_system_refresh_date\": \"2017-03-01T14:04:08\"\n\"data_synchronization_date\": \"2017-03-01T14:09:04\",\n\"data_insert_date\": \"2017-03-01T14:10:08\", [You need to check this time and it should be your trigger time to call APIs. If  this time is greater than your last API call time then you can run APIs again to pull data.]\n\"practice_management_system_version\": \"V14.2\",\n\"practice_management_system_refresh_date_time_zone\": \"Eastern Standard Time\" [It shows above date time is in which time zone.]\n}\n\n```\n\n☞ For example :\n\nCurrent time is **2017-03-01T11:52:00** & last data_insert_time at **2017-03-01T10:52:00**. Now you want to get the list of how many appointments inserted and deleted from PMS.\n\n``` javascript\nhttps://api.sikkasoft.com/v2/appointments?request_key={}&loaded_startdate=2017-03-01T10:52:00&loaded_enddate=2017-03-01T11:52:00\n\n```\n\nResponse :\n\n``` javascript\n{\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/appointments/3206e13d\",\n\"appointment_sr_no\": \"3206e13d\",\n\"patient_id\": \"1\",\n\"patient\": {\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/patients/1\"\n},\n\"operatory\": \"\",\n\"flag\":\"Deleted/ Added\", [it will tell you record is deleted or added],\n\"patient_name\":\"Sat Yen\",\n\"guarantor_id\": \"1\",\n\"guarantor_name\": \"guarnator1\"\n}\n\n```"
+              "description": "How to get only modified records ?"
             },
             {
               "name": "Output Formats",
@@ -2304,87 +2386,6 @@
                   "cookie": [],
                   "responseTime": null,
                   "body": null
-                }
-              ]
-            },
-            {
-              "name": "practice_events",
-              "id": "76eda504-5aa6-47f6-9390-f70c1cb4f834",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "GET",
-                "header": [],
-                "url": {
-                  "raw": "https://api.sikkasoft.com/v4/practice_events?interval={interval}&events={api name}",
-                  "protocol": "https",
-                  "host": [
-                    "api",
-                    "sikkasoft",
-                    "com"
-                  ],
-                  "path": [
-                    "v4",
-                    "practice_events"
-                  ],
-                  "query": [
-                    {
-                      "key": "interval",
-                      "value": "{interval}"
-                    },
-                    {
-                      "key": "events",
-                      "value": "{api name}"
-                    }
-                  ]
-                },
-                "description": "'practice_events' api will return changed records in practice between given date range.\n\nIn response you will get data with flags (Deleted or Added or Updated). Response also contains changes array. Changes array represents field name , old value and new value.  \nexample :\n\n``` javascript\n    \"changes\": \n             [\n              {\n               \"field\": \"transaction_date\",\n               \"old_value\": \"4/1/2016 12:00:00 AM\",\n               \"new_value \": \"4/20/2016 12:00:00 AM\"\n               },\n               {\n               \"field\": transaction_entry_date\",\n               \"old_value\": \"4/1/2016 12:00:00 AM\",\n               \"new_value \": \"4/20/2016 12:00:00 AM\"\n               },\n               {\n                \"field\": \"tooth_from\",\n                \"old_value\": \"14\",\n                \"new_value \": \"24\"\n                }\n              ]  \n\n```\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n###### events`Required`\n\n> Name of the events you want to get modified records. Events name must match with API name\n\n###### loaded_startdate`optional`\n\n> Start date for getting only changed record set. Date format : yyyy-mm-dd or yyyy-MM-ddTHH:mm:ss\n\n###### loaded_enddate`optional`\n\n> End date for getting only changed record set. Date format : yyyy-mm-dd or yyyy-MM-ddTHH:mm:ss\n\n###### interval`optional`\n\n> Value must be integer.  \n> 'interval' parameter allows user to fetch records , which has been changed in last minutes.  \n> This will be helpful when user does not know loaded_startdate/loaded_enddate and just want to fetch records which has been changed in last minutes (let say 5,10,15.. etc minutes). Maximun value for interval is 1440. You can fetch data which has been changed in last 24 hours (1440 minutes, interval=1440) without specifying loaded_startdate and loaded_enddate.  \n> **Note : Make sure Sikka platform utility is up and running on client machine. To check when Sikka platform utility (SPU) has refreshed, call 'authorized_practices' and get 'data_insert_date'.**\n\n##### API to find change logs of records :\n\nFor example :\n\n*   To find patient’s modified records :  \n    `https://api.sikkasoft.com/v4/patients?request_key={ }&loaded_startdate={}&loaded_enddate={ }`\n*   To find appointments modified records :  \n    `https://api.sikkasoft.com/v4/appointments?request_key={ }&loaded_startdate={}&loaded_enddate={ }`\n*   To find transaction’s modified records :  \n    `https://api.sikkasoft.com/v4/transactions?request_key={ }&loaded_startdate={}&loaded_enddate={ }`\n    \n\n###### In practice_events API\n\n`https://api.sikkasoft.com/v4/practice_events?request_key={ }&loaded_startdate={}&loaded_enddate={ }&events={name of data you want to retrieve }`\n\nFor example , if you want to retrieve patients  \n`https://api.sikkasoft.com/v2/practice_events?request_key={ }&loaded_startdate={}&loaded_enddate={ }&events=patients`\n\nResponse :\n\n``` javascript\n{\n \"offset\": \"1\",\n \"limit\": \"500\",\n \"total_count\": \"12\",\n \"execution_time\": \"13904\",\n \"pagination\": \n  {\n    \"first\": \"[https://api.sikkasoft.com/v4/practice_events?offset=0&limit=1](https://localhost:44391/v4/practice_events?offset=0&limit=1)\",\n    \"previous\": \"[https://api.sikkasoft.com/v4/practice_events?offset=0&limit=1](https://localhost:44391/v4/practice_events?offset=0&limit=1)\",\n    \"current\": \"[https://api.sikkasoft.com/v4/practice_events?offset=1&limit=1](https://localhost:44391/v4/practice_events?offset=1&limit=1)\",\n    \"next\": \"[https://api.sikkasoft.com/v4/practice_events?offset=2&limit=1](https://localhost:44391/v4/practice_events?offset=2&limit=1)\",\n    \"last\": \"[https://api.sikkasoft.com/v4/practice_events?offset=11&limit=1](https://localhost:44391/v4/practice_events?offset=11&limit=1)\"\n   },\n  \"items\": [\n            {\n            ```response body same as events= api```\n            ,\"changes\": []}]}\n\n```\n\n##### When to use practice_events API ?\n\nIf you want to get list of modified record using one API\n\n**Recommendations**\n\n*   Use it for short time range. like 24 hours or less.\n*   Response will be slow and data accuracy will be affected if given date range is too big\n*   Use either interval and flag or loaded_startdate, loaded_enddate and flag combination\n*   If interval parameter is passed then loaded_startdate and loaded_enddate parameters will not be captured\n    \n\n**Limitations** :  \nCurrently you will be able to get events from\n\n*   patients\n*   appointments\n*   transactions\n*   accounts_receivables\n*   guarantors\n*   guarantors_v2\n*   practices\n*   providers\n*   treatment_plans\n*   claims\n*   claim_descriptions\n*   prescriptions\n*   reminders\n    \n\nWe will update the list of events as we add in API"
-              },
-              "response": [
-                {
-                  "id": "d1666574-d80e-49e2-9246-bfb3f11dd01b",
-                  "name": "practice_events",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [
-                      {
-                        "key": "Request-Key",
-                        "value": "<request_key>",
-                        "type": "text"
-                      }
-                    ],
-                    "url": {
-                      "raw": "https://api.sikkasoft.com/v4/practice_events?interval={interval}&events=appointments",
-                      "protocol": "https",
-                      "host": [
-                        "api",
-                        "sikkasoft",
-                        "com"
-                      ],
-                      "path": [
-                        "v4",
-                        "practice_events"
-                      ],
-                      "query": [
-                        {
-                          "key": "interval",
-                          "value": "{interval}"
-                        },
-                        {
-                          "key": "events",
-                          "value": "appointments"
-                        }
-                      ]
-                    }
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": null,
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": "{\n    \"offset\": \"0\",\n    \"limit\": \"500\",\n    \"total_count\": \"310\",\n    \"execution_time\": \"6469\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/practice_events?offset=0&limit=500\",\n        \"previous\": \"\",\n        \"current\": \"https://api.sikkasoft.com/v4/practice_events?offset=0&limit=500\",\n        \"next\": \"\",\n        \"last\": \"https://api.sikkasoft.com/v4/practice_events?offset=0&limit=500\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/appointmetns/17436\",\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/371\",\n            \"patient_id\": \"371\",\n            \"guarantor_id\": \"\",\n            \"provider_id\": \"CG\",\n            \"provider_href\": \"https://api.sikkasoft.com/v4/practices/1/providers/CG\",\n            \"practice_id\": \"1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\n            \"guarantor_href\": \"\",\n            \"loadeddate\": \"2020-11-11T00:01:00\",\n            \"flag\": \"updated\",\n            \"amount\": \"0.0000\",\n            \"note\": \"filling fell out\",\n            \"surface_quadrant_type\": \"\",\n            \"appointment_sr_no\": \"17436\",\n            \"date\": \"2019-11-18T00:00:00\",\n            \"time\": \"11:00\",\n            \"length\": \"45\",\n            \"description\": \"filling fell out\",\n            \"appointment_made_date\": \"2019-11-18T00:00:00\",\n            \"type\": \"\",\n            \"procedure_code1\": \"19310\",\n            \"procedure_code1_amount\": \"0\",\n            \"procedure_code2\": \"\",\n            \"procedure_code2_amount\": \"0\",\n            \"procedure_code3\": \"\",\n            \"procedure_code3_amount\": \"0\",\n            \"patient_name\": \"\",\n            \"guarantor_name\": \"\",\n            \"procedure_code1_time\": \"\",\n            \"procedure_code2_time\": \"\",\n            \"procedure_code3_time\": \"\",\n            \"surface_quadrant\": \"\",\n            \"changes\": [\n                {\n                    \"field\": \"procedure_code2\",\n                    \"old_value\": \"19310\",\n                    \"new_value \": \"\"\n                },\n                {\n                    \"field\": \"patient_name\",\n                    \"old_value\": \"Muxys old\",\n                    \"new_value \": \"jhon new\"\n                }\n            ]\n        }\n    ]\n}"
                 }
               ]
             },
