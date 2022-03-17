@@ -28506,6 +28506,11 @@
           "description": "It contains APIs related with claim information"
         },
         {
+          "name": "New Folder",
+          "item": [],
+          "id": "686cb3f9-acd0-44ce-a70d-25c96d68ef57"
+        },
+        {
           "name": "start",
           "id": "9dce4284-fec5-9724-4055-0e0e946d593b",
           "request": {
