@@ -28508,7 +28508,8 @@
         {
           "name": "Modified Records",
           "item": [],
-          "id": "686cb3f9-acd0-44ce-a70d-25c96d68ef57"
+          "id": "686cb3f9-acd0-44ce-a70d-25c96d68ef57",
+          "description": "How to get only modified records ?"
         },
         {
           "name": "start",
