@@ -2720,7 +2720,8 @@
             {
               "name": "Request Header",
               "item": [],
-              "id": "eabc3f55-8309-4605-b533-469d4202d0b0"
+              "id": "eabc3f55-8309-4605-b533-469d4202d0b0",
+              "description": "The request header supports Request-Key,App-Id & App-Key parameters that are common across all '/v2' and '/auth/v2' endpoints; as a result, the header parameters aren’t documented with each endpoint.  \nIn Sikka API , user can send request key , app id and app key as url parameter also.  \nIf user does not want to expose keys in url parameter then we do support send keys in request header.\n\nList of response headers:\n\n| Request Header | Description |\n| --- | --- |\n| `Request-Key` | Request-Key header supports in all '/v2' APIs |\n| `App-Id` | App-Id. Application id header supported in all '/auth/v2' api or where it is required |\n| `App-Key` | App-Key. Application Key header supported in all '/auth/v2' api or where it is required |"
             },
             {
               "name": "Response Header",
