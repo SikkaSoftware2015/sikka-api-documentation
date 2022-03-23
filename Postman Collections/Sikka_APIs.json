@@ -2726,7 +2726,8 @@
             {
               "name": "Response Header",
               "item": [],
-              "id": "cf836282-2d92-4926-95e0-62b9c74d8058"
+              "id": "cf836282-2d92-4926-95e0-62b9c74d8058",
+              "description": "The headers contain a wealth of information that can help you track request and related information. HTTP Headers are an important part of the API request and response as they represent the meta-data associated with the API request and response.\n\nList of response headers:\n\n| Response Header | Description |\n| --- | --- |\n| `Data-Insert:` | 'data-insert‘ response header let API user know the status of data insert status. User should not fetch data when data insert is in progress. ‘data-insert’ header will help API users to know if data insert is in progress or not. |\n|  | `Data-Insert: completed` - data insert completed, good to fetch data. |\n|  | `Data-Insert: in progress`\\- data insert is in progress, wait till data insert completed |\n|  | APIs has ‘data-insert’ header : transactions , patients , guarantors_v2 , patients_v2 , treatment_plans , appointments , patient_contract_roll_charges |\n| `Request-Key-Expires: GMT` | If 'request_key' is active then 'Request-Key-Expires' value will be request_start_time + 24 hours, if 'request_key' is expired or inactive then request_end_time used as 'Request-Key-Expires'. `http-date format (e.g. Wed, 21 Aug 2019 17:19:33 GMT)` |\n|  | 'Request-Key-Expires' header will be available in all APIs where request_key is used. |"
             },
             {
               "name": "Webhooks",
