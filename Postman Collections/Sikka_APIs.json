@@ -2702,14 +2702,12 @@
             {
               "name": "Output Formats",
               "item": [],
-              "id": "3983217c-24b3-49b8-8041-a6ce0f889727",
-              "description": "The Sikka API handles multiple output formats. Currently, the only supported formats are JSON and XML Output formats are selected with a specifier that is appended to the URL, like :\n\nJSON response :\n\n``` javascript\nhttps://api.sikkasoft.com/v2/{api name}/json?request_key={ }\n\n```\n\nXML response :\n\n``` javascript\nhttps://api.sikkasoft.com/v2/{api name}/xml?request_key={ }\n\n```\n\nDefault response :\n\n``` javascript\nhttps://api.sikkasoft.com/v2/{api name}?request_key={ }\n\n```\n\nJSON is the default, and will be used if nothing is specified."
+              "id": "3983217c-24b3-49b8-8041-a6ce0f889727"
             },
             {
               "name": "HTTP Compression",
               "item": [],
-              "id": "38680a8c-524c-4839-b437-185f4483d354",
-              "description": "Sikka API supports HTTP compression of response bodies using standards defined by the HTTP 1.1 specification. Enabling compression is recommended because it reduces bandwidth usage, and time spent retrieving data.\n\nTo enable compression, include the following HTTP header in the request:\n\n``` javascript\nGET        /patients         HTTP/1.1\nHost:     www.domain.com\nAccept-Encoding:     gzip,compress\n\n```\n\nThe server understands the compression algorithms from Accept-Encoding and use algorithm to compress the representation before serving it. When successfully compressed, server lets know the client of encoding scheme by another HTTP header i.e. `Content-Encoding`\n\n``` javascript\n200 OK\nContent-Encoding:     gzip\n\n```\n\nCompression can save a lot of bandwidth, with very little cost in additional complexity. Also you may know that most web browsers automatically request compressed representations from website host servers – using above headers.\n\nReferences:\n\n[https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.11](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.11)  \n[https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.3](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.3)"
+              "id": "38680a8c-524c-4839-b437-185f4483d354"
             },
             {
               "name": "Error Codes",
