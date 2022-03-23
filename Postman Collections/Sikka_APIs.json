@@ -2661,77 +2661,6 @@
       "name": "Sikka API v2",
       "item": [
         {
-          "name": "Getting Started",
-          "item": [
-            {
-              "name": "Terms of Service",
-              "item": [],
-              "id": "d0207c0a-d05c-440d-a587-132858013ab5"
-            },
-            {
-              "name": "Quickstart",
-              "item": [],
-              "id": "123fbfc4-64fa-4f47-bbe0-e8e9fb9a39ce"
-            },
-            {
-              "name": "API Field Filtering",
-              "item": [],
-              "id": "55191582-b887-45b4-8e4e-cff99b2fadbf"
-            },
-            {
-              "name": "Expanding Objects",
-              "item": [],
-              "id": "095af79a-0f3e-4230-aa91-0f944444da03"
-            },
-            {
-              "name": "Pagination",
-              "item": [],
-              "id": "cc39960d-e50b-419a-8a93-b2178ea9b600"
-            },
-            {
-              "name": "Rate Limiting",
-              "item": [],
-              "id": "c94be7ea-6db2-486b-be2a-f1f851b17252"
-            },
-            {
-              "name": "Output Formats",
-              "item": [],
-              "id": "3983217c-24b3-49b8-8041-a6ce0f889727"
-            },
-            {
-              "name": "HTTP Compression",
-              "item": [],
-              "id": "38680a8c-524c-4839-b437-185f4483d354"
-            },
-            {
-              "name": "Error Codes",
-              "item": [],
-              "id": "2f7602eb-d953-4d89-842d-b515fdab0f2b"
-            },
-            {
-              "name": "Request Header",
-              "item": [],
-              "id": "eabc3f55-8309-4605-b533-469d4202d0b0"
-            },
-            {
-              "name": "Response Header",
-              "item": [],
-              "id": "cf836282-2d92-4926-95e0-62b9c74d8058"
-            },
-            {
-              "name": "Webhooks",
-              "item": [],
-              "id": "1e3c9954-66a9-446d-b2fa-6402d76b5c31"
-            },
-            {
-              "name": "Practice Query Language",
-              "item": [],
-              "id": "d093c918-b814-47ea-bdaa-376d2b4c26e7"
-            }
-          ],
-          "id": "2cbe0d13-812b-40c3-b933-d3ca948a069b"
-        },
-        {
           "name": "SPC support APIs",
           "item": [
             {
@@ -28673,6 +28602,11 @@
           ],
           "id": "686cb3f9-acd0-44ce-a70d-25c96d68ef57",
           "description": "How to get only modified records ?"
+        },
+        {
+          "name": "New Folder",
+          "item": [],
+          "id": "2cbe0d13-812b-40c3-b933-d3ca948a069b"
         },
         {
           "name": "start",
