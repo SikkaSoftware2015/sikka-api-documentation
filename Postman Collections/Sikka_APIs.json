@@ -2708,7 +2708,8 @@
             {
               "name": "HTTP Compression",
               "item": [],
-              "id": "38680a8c-524c-4839-b437-185f4483d354"
+              "id": "38680a8c-524c-4839-b437-185f4483d354",
+              "description": "Sikka API supports HTTP compression of response bodies using standards defined by the HTTP 1.1 specification. Enabling compression is recommended because it reduces bandwidth usage, and time spent retrieving data.\n\nTo enable compression, include the following HTTP header in the request:\n\n``` javascript\nGET        /patients         HTTP/1.1\nHost:     www.domain.com\nAccept-Encoding:     gzip,compress\n\n```\n\nThe server understands the compression algorithms from Accept-Encoding and use algorithm to compress the representation before serving it. When successfully compressed, server lets know the client of encoding scheme by another HTTP header i.e. `Content-Encoding`\n\n``` javascript\n200 OK\nContent-Encoding:     gzip\n\n```\n\nCompression can save a lot of bandwidth, with very little cost in additional complexity. Also you may know that most web browsers automatically request compressed representations from website host servers – using above headers.\n\nReferences:\n\n[https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.11](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.11)  \n[https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.3](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.3)"
             },
             {
               "name": "Error Codes",
