@@ -2690,7 +2690,8 @@
             {
               "name": "Pagination",
               "item": [],
-              "id": "cc39960d-e50b-419a-8a93-b2178ea9b600"
+              "id": "cc39960d-e50b-419a-8a93-b2178ea9b600",
+              "description": "Maximum 5000 records fetch available as per Sikka API license. Requests for collections can return between 0 and 5000 results, controlled using the `limit` and `offset` query parameters. All end points are limited to 500 results by default.\n\n`GET /v2/patients?request_key={request_key}&offset=0&limit=499` Return rows from 0 to 499\n\nThe offset should be the page offset (not the item offset). Also, limit will denote page size, along with limit of rows returned.\n\n```\n offset = 0 and limit = 500 will return the 1st 500 rows\noffset = 1 and limit = 500 will return rows 501 to 1000\noffset = 2 and limit = 500 will return rows 1001 to 1500\noffset = 3 and limit = 500 will return rows 1501 to 2000\n\n```\n\n\"pagination\" in response:  \nWe have added pagination links in API response. So user can automate the API invocation with hrefs of different pagination links.\n\n``` javascript\n[{\n    \"offset\": \"0\",\n    \"limit\": \"2\",\n    \"total_count\": \"6\",\n    \"execution_time\": \"71\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v2/{api_name}?offset=0&limit=2\",\n        \"previous\": \"https://api.sikkasoft.com/v2/{api_name}?offset=0&limit=2\",\n        \"current\": \"https://api.sikkasoft.com/v2/{api_name}?offset=1&limit=2\",\n        \"next\": \"https://api.sikkasoft.com/v2/{api_name}?offset=2&limit=2\",\n        \"last\": \"https://api.sikkasoft.com/v2/{api_name}?offset=2&limit=2\"\n    },\n    \"items\": [{\n....\n....\n....\n    }]\n}]\n\n```"
             },
             {
               "name": "Rate Limiting",
