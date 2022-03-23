@@ -2670,7 +2670,13 @@
             },
             {
               "name": "Quickstart",
-              "item": [],
+              "item": [
+                {
+                  "name": "New Folder",
+                  "item": [],
+                  "id": "00d0333e-4bd8-4555-bd04-d7abaae955f6"
+                }
+              ],
               "id": "123fbfc4-64fa-4f47-bbe0-e8e9fb9a39ce"
             }
           ],
