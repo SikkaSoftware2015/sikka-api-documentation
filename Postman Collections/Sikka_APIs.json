@@ -2672,7 +2672,8 @@
             {
               "name": "Quickstart",
               "item": [],
-              "id": "123fbfc4-64fa-4f47-bbe0-e8e9fb9a39ce"
+              "id": "123fbfc4-64fa-4f47-bbe0-e8e9fb9a39ce",
+              "description": "In this guide we will walk you through all necessary steps to start accessing data from practice.\n\n1.Authorized practices:\n\nThis API will give you the list of practices from which you can access data\n\n``` javascript\nhttps://api.sikkasoft.com/auth/v2/authorized_practices?app_id={your application id}&app_key={ your application key }\n\n```\n\n*   Returns 'office_id' and 'secret_key'\n    \n\n2.Start call to get Request Key for practices:\n\nIn response of ‘authorized_practices’ API you have ‘office_id’ and ‘secret_key’. Use it in ‘start’ API\n\n``` javascript\nhttps://api.sikkasoft.com/v2/start?app_id={your application id}&app_key={ your application key }&office_id={office_id}&secret_key={secret_key}\n\n```\n\n*   Returns Request Key: i.e '52457c9dhgfttfk88798793a4c7e4fa54902'\n    \n\n3.Patients API call:\n\nAPI to get the list of patients\n\n``` javascript\nhttps://api.sikkasoft.com/v2/patients?request_key={request_key}\n\n```\n\nFor veterinary hospitals use ‘veterinary_patients’ API to get the list of pets\n\n``` javascript\nhttps://api.sikkasoft.com/v2/patients/veterinary_patients?request_key={request_key}\n\n```\n\nAfter step 3\n\n4.Pet Owners call:\n\nAPI to get the list of pet owners\n\n``` javascript\nhttps://api.sikkasoft.com/v2/guarantors?request_key={request_key}&offset=0&limit=10\n\n```\n\nFor more information about a particular endpoint, go to API v2.0 documentation. You will be taken to the API’s documentation page, which includes what query parameters the API will accept, what the JSON or XML parameters will be in the response, and an example."
             },
             {
               "name": "API Field Filtering",
