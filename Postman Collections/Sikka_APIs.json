@@ -29120,18 +29120,6 @@
               "body": "[\r\n\t{\r\n\t\t\"offset\": \"0\",\r\n\t\t\"limit\": \"500\",\r\n\t\t\"total_count\": \"5\",\r\n\t\t\"execution_time\": \"715\",\r\n\t\t\"items\": [\r\n\t\t\t{\r\n\t\t\t\t\"api\": \"accounts_receivables\",\r\n\t\t\t\t\"total_records\": \"11212\",\r\n\t\t\t\t\"update_time\": \"2017-11-10 11:07:29\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"api\": \"appointments\",\r\n\t\t\t\t\"total_records\": \"43547\",\r\n\t\t\t\t\"update_time\": \"2017-11-10 12:02:53\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"api\": \"claim_descriptions\",\r\n\t\t\t\t\"total_records\": \"32326\",\r\n\t\t\t\t\"update_time\": \"2017-11-10 11:03:46\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"api\": \"claims\",\r\n\t\t\t\t\"total_records\": \"32000\",\r\n\t\t\t\t\"update_time\": \"2017-11-10 11:03:35\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"api\": \"clinical_conditions\",\r\n\t\t\t\t\"total_records\": \"34\",\r\n\t\t\t\t\"update_time\": \"2017-11-10 11:07:56\"\r\n\t\t\t}\r\n\t\t]\r\n\t}\r\n]"
             }
           ]
-        },
-        {
-          "name": "New Request",
-          "id": "33fb0dda-5cf4-47a7-a6b7-1f443cdb49aa",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": []
-          },
-          "response": []
         }
       ],
       "id": "4a90818c-b880-4b29-b3a3-46e71331e73d",
