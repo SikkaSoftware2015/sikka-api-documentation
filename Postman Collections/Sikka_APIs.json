@@ -2640,7 +2640,7 @@
               ]
             },
             {
-              "name": "New Request",
+              "name": "lab_test_details",
               "id": "11f22881-500b-4dc0-bb65-07fd165e7889",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
