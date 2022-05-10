@@ -2647,7 +2647,32 @@
               },
               "request": {
                 "method": "GET",
-                "header": [],
+                "header": [
+                  {
+                    "key": "Request-Key",
+                    "value": "Request-Key",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "https://api.sikkasoft.com/v4/lab_test_details?category=labname",
+                  "protocol": "https",
+                  "host": [
+                    "api",
+                    "sikkasoft",
+                    "com"
+                  ],
+                  "path": [
+                    "v4",
+                    "lab_test_details"
+                  ],
+                  "query": [
+                    {
+                      "key": "category",
+                      "value": "labname"
+                    }
+                  ]
+                },
                 "description": "Return the lab test details\n\n###### Parameters\n\n###### pracitce_id `optional`\n\n> practice id of office\n\n###### category `optional`\n\n> category"
               },
               "response": [
@@ -15206,6 +15231,21 @@
               "request": {
                 "method": "GET",
                 "header": [],
+                "url": {
+                  "raw": "{{url}}/lab_test_details?request_key={{request_key}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "lab_test_details"
+                  ],
+                  "query": [
+                    {
+                      "key": "request_key",
+                      "value": "{{request_key}}"
+                    }
+                  ]
+                },
                 "description": "| Parameter | Description | Required? |\n| --- | --- | --- |\n| request_key | Valid 32 characters alpha-numeric request key | Yes |\n| category | Valid category | No |\n| practice_id | Valid Practice Id | No |"
               },
               "response": [
