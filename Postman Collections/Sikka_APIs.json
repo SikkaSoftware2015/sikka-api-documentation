@@ -15196,6 +15196,18 @@
                   "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"500\",\n        \"total_count\": \"1\",\n        \"execution_time\": \"25\",\n        \"pagination\": {\n            \"first\": \"https://api.sikkasoft.com/v2/lab_cases?offset=0&limit=500\",\n            \"previous\": \"\",\n            \"current\": \"https://api.sikkasoft.com/v2/lab_cases?offset=0&limit=500\",\n            \"next\": \"\",\n            \"last\": \"https://api.sikkasoft.com/v2/lab_cases?offset=0&limit=500\"\n        },\n        \"items\": [\n            {\n                \"href\": \"https://api.sikkasoft.com/v2/practices/5/lab_cases/23\",\n                \"case_record_id\": \"23\",\n                \"lab_id\": \"10\",\n                \"lab_detail\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/lab_details/10\"\n                },\n                \"patient_id\": \"21355\",\n                \"patient\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/patients/21355\"\n                },\n                \"date_created\": \"2019-05-14\",\n                \"provider_id\": \"BB1812\",\n                \"provider\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/providers/BB1812\"\n                },\n                \"lab_case_category\": \"Partial\",\n                \"lab_assignment_number\": \"low\",\n                \"note\": \"\",\n                \"receive_date\": \"\",\n                \"finish_date\": \"\",\n                \"is_closed\": \"\",\n                \"transaction_sr_no\": \"\",\n                \"transaction\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/transactions\"\n                },\n                \"appointment_sr_no\": \"\",\n                \"appointment\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5/appointments\"\n                },\n                \"ship_method\": \"Fed Ex\",\n                \"ship_trac_number\": \"\",\n                \"amount\": \"0.00\",\n                \"date_sent\": \"2019-05-14\",\n                \"practice_id\": \"5\",\n                \"practice\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/5\"\n                }\n            }\n        ]\n    }\n]"
                 }
               ]
+            },
+            {
+              "name": "New Request",
+              "id": "7f652089-8bdc-437c-8000-3d509809d9cf",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": []
+              },
+              "response": []
             }
           ],
           "id": "65c1c413-15c5-144b-5ef7-465fb4b7ce87",
