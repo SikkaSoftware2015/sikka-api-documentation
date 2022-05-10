@@ -15205,7 +15205,8 @@
               },
               "request": {
                 "method": "GET",
-                "header": []
+                "header": [],
+                "description": "| Parameter | Description | Required? |\n| --- | --- | --- |\n| request_key | Valid 32 characters alpha-numeric request key | Yes |\n| category | Valid category | No |\n| practice_id | Valid Practice Id | No |"
               },
               "response": [
                 {
