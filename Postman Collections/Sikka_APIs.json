@@ -2647,7 +2647,8 @@
               },
               "request": {
                 "method": "GET",
-                "header": []
+                "header": [],
+                "description": "Return the lab test details\n\n###### Parameters\n\n###### pracitce_id `optional`\n\n> practice id of office\n\n###### category `optional`\n\n> category"
               },
               "response": [
                 {
