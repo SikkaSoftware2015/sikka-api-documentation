@@ -2649,7 +2649,97 @@
                 "method": "GET",
                 "header": []
               },
-              "response": []
+              "response": [
+                {
+                  "id": "8f02f6c4-d97d-42a2-a952-60b6bff3eb41",
+                  "name": "lab_test_details",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Request-Key",
+                        "value": "Request-Key",
+                        "type": "text"
+                      }
+                    ],
+                    "url": {
+                      "raw": "https://api.sikkasoft.com/v4/lab_test_details?category=labname",
+                      "protocol": "https",
+                      "host": [
+                        "api",
+                        "sikkasoft",
+                        "com"
+                      ],
+                      "path": [
+                        "v4",
+                        "lab_test_details"
+                      ],
+                      "query": [
+                        {
+                          "key": "category",
+                          "value": "labname"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Server",
+                      "value": "nginx/1.18.0 (Ubuntu)"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Tue, 10 May 2022 11:12:31 GMT"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    },
+                    {
+                      "key": "Transfer-Encoding",
+                      "value": "chunked"
+                    },
+                    {
+                      "key": "Request-Key-Expires",
+                      "value": "Wed, 11 May 2022 09:12:24 GMT"
+                    },
+                    {
+                      "key": "X-Frame-Options",
+                      "value": "DENY"
+                    },
+                    {
+                      "key": "X-Content-Type-Options",
+                      "value": "nosniff"
+                    },
+                    {
+                      "key": "X-XSS-Protection",
+                      "value": "1; mode=block"
+                    },
+                    {
+                      "key": "Referrer-Policy",
+                      "value": "origin"
+                    },
+                    {
+                      "key": "Content-Encoding",
+                      "value": "gzip"
+                    },
+                    {
+                      "key": "Strict-Transport-Security",
+                      "value": "max-age=31536000; includeSubDomains; preload;"
+                    },
+                    {
+                      "key": "Content-Security-Policy",
+                      "value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\n    \"offset\": \"0\",\n    \"limit\": \"500\",\n    \"total_count\": \"3\",\n    \"execution_time\": \"35\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/lab_test_details?offset=0&limit=500\",\n        \"previous\": \"\",\n        \"current\": \"https://api.sikkasoft.com/v4/lab_test_details?offset=0&limit=500\",\n        \"next\": \"\",\n        \"last\": \"https://api.sikkasoft.com/v4/lab_test_details?offset=0&limit=500\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1-1/lab_test_details/Labname\",\n            \"practice_id\": \"1-1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-1\",\n            \"description\": \"\",\n            \"cust_id\": \"1\",\n            \"category\": \"Labname\",\n            \"item\": \"IDEXX Reference Laboratory\"\n        },\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1-1/lab_test_details/Labname\",\n            \"practice_id\": \"1-1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-1\",\n            \"description\": \"\",\n            \"cust_id\": \"1\",\n            \"category\": \"Labname\",\n            \"item\": \"IDEXX VetLab In-clinic Laboratory\"\n        },\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1-1/lab_test_details/Labname\",\n            \"practice_id\": \"1-1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-1\",\n            \"description\": \"\",\n            \"cust_id\": \"1\",\n            \"category\": \"Labname\",\n            \"item\": \"Z- Antech Diagnostics (East)\"\n        }\n    ]\n}"
+                }
+              ]
             }
           ],
           "id": "0c1fa096-aa44-4088-aa2b-97a96d612a8e"
