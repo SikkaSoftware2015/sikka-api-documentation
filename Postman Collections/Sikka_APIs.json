@@ -15207,7 +15207,107 @@
                 "method": "GET",
                 "header": []
               },
-              "response": []
+              "response": [
+                {
+                  "id": "ce2f366e-2724-4595-9419-cf8cb039bf05",
+                  "name": "lab_test_details",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "{{url}}/lab_test_details?request_key={{request_key}}",
+                      "host": [
+                        "{{url}}"
+                      ],
+                      "path": [
+                        "lab_test_details"
+                      ],
+                      "query": [
+                        {
+                          "key": "request_key",
+                          "value": "{{request_key}}"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Cache-Control",
+                      "value": "private"
+                    },
+                    {
+                      "key": "Allow",
+                      "value": "OPTIONS, TRACE, GET, HEAD, POST"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "Microsoft-IIS/8.5"
+                    },
+                    {
+                      "key": "X-AspNet-Version",
+                      "value": "4.0.30319"
+                    },
+                    {
+                      "key": "Request-Key-Expires",
+                      "value": "Wed, 11 May 2022 09:12:24 GMT"
+                    },
+                    {
+                      "key": "X-Powered-By",
+                      "value": "ASP.NET"
+                    },
+                    {
+                      "key": "Access-Control-Allow-Origin",
+                      "value": "*"
+                    },
+                    {
+                      "key": "Access-Control-Allow-Methods",
+                      "value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+                    },
+                    {
+                      "key": "Access-Control-Allow-Headers",
+                      "value": "accept, authorization, Content-Type, X-Session-Id,X-PINGOTHER"
+                    },
+                    {
+                      "key": "Public",
+                      "value": "OPTIONS, TRACE, GET, HEAD, POST"
+                    },
+                    {
+                      "key": "X-Api-Server-Version",
+                      "value": "1"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Tue, 10 May 2022 11:20:10 GMT"
+                    },
+                    {
+                      "key": "Transfer-Encoding",
+                      "value": "chunked"
+                    },
+                    {
+                      "key": "Content-Encoding",
+                      "value": "gzip"
+                    },
+                    {
+                      "key": "Strict-Transport-Security",
+                      "value": "max-age=31536000; includeSubDomains; preload;"
+                    },
+                    {
+                      "key": "Content-Security-Policy",
+                      "value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "[\n    {\n        \"offset\": \"0\",\n        \"limit\": \"500\",\n        \"total_count\": \"3\",\n        \"execution_time\": \"22\",\n        \"pagination\": {\n            \"first\": \"https://api.sikkasoft.com/v2/lab_test_details?offset=0&limit=500\",\n            \"previous\": \"\",\n            \"current\": \"https://api.sikkasoft.com/v2/lab_test_details?offset=0&limit=500\",\n            \"next\": \"\",\n            \"last\": \"https://api.sikkasoft.com/v2/lab_test_details?offset=0&limit=500\"\n        },\n        \"items\": [\n            {\n                \"href\": \"https://api.sikkasoft.com/v2/practices/1-1/lab_test_details/Labname\",\n                \"category\": \"Labname\",\n                \"item\": \"IDEXX Reference Laboratory\",\n                \"description\": \"\",\n                \"practice_id\": \"1-1\",\n                \"practice\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/1-1\"\n                },\n                \"cust_id\": \"1\"\n            },\n            {\n                \"href\": \"https://api.sikkasoft.com/v2/practices/1-1/lab_test_details/Labname\",\n                \"category\": \"Labname\",\n                \"item\": \"IDEXX VetLab In-clinic Laboratory\",\n                \"description\": \"\",\n                \"practice_id\": \"1-1\",\n                \"practice\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/1-1\"\n                },\n                \"cust_id\": \"1\"\n            },\n            {\n                \"href\": \"https://api.sikkasoft.com/v2/practices/1-1/lab_test_details/Labname\",\n                \"category\": \"Labname\",\n                \"item\": \"Z- Antech Diagnostics (East)\",\n                \"description\": \"\",\n                \"practice_id\": \"1-1\",\n                \"practice\": {\n                    \"href\": \"https://api.sikkasoft.com/v2/practices/1-1\"\n                },\n                \"cust_id\": \"1\"\n            }\n        ]\n    }\n]"
+                }
+              ]
             }
           ],
           "id": "65c1c413-15c5-144b-5ef7-465fb4b7ce87",
