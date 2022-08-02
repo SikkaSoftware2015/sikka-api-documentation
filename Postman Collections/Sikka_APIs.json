@@ -2821,11 +2821,13 @@
 										],
 										"url": "https://api.sikkasoft.com/v4/data_sync_status"
 									},
-									"_postman_previewlanguage": null,
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
 									"header": null,
 									"cookie": [],
 									"responseTime": null,
-									"body": null
+									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"2\",\n    \"total_count\": \"2\",\n    \"execution_time\": \"528\",\n    \"pagination\": {\n        \"first\": \"http://api.sikkasoft.com/v4/data_sync_status?offset=0&limit=2\",\n        \"previous\": \"\",\n        \"current\": \"http://api.sikkasoft.com/v4/data_sync_status?offset=0&limit=2\",\n        \"next\": \"http://api.sikkasoft.com/v4/data_sync_status?offset=1&limit=2\",\n        \"last\": \"http://api.sikkasoft.com/v4/data_sync_status?offset=383&limit=2\"\n    },\n    \"items\": [\n        {\n            \"status\": \"refresh\",\n            \"practice_id\": \"1\",\n            \"office_id\": \"C100812\",\n            \"domain\": \"Chiropractic\",\n            \"practice_name\": \"Georgia Chiro and Wellness center \",\n            \"practice_management_system\": \"Eclipse\",\n            \"data_insert_date\": \"2022-03-28T01:40:31\",\n            \"practice_management_system_version\": \"2018\",\n            \"practice_management_system_refresh_date_time_zone\": \"Eastern Standard Time\"\n        },\n        {\n            \"status\": \"refresh\",\n            \"practice_id\": \"1\",\n            \"office_id\": \"C220212\",\n            \"domain\": \"Chiropractic\",\n            \"practice_name\": \"Better Chiropractic center\",\n            \"practice_management_system\": \"Chirotouch\",\n            \"data_insert_date\": \"2022-03-28T02:27:32\",\n            \"practice_management_system_version\": \"V6.5\",\n            \"practice_management_system_refresh_date_time_zone\": \"US Mountain Standard Time\"\n        }\n    ]\n}"
 								}
 							]
 						}
