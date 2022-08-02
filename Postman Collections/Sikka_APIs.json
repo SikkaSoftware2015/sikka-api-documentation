@@ -2789,7 +2789,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/data_sync_status",
-								"description": "The ‘data_sync_status’ api indicates if the practice management system integration is uptodate. ‘Status’ in api response should be equal to ‘refresh’ to make sure data you are receiving via api is correct.\n\nThe ‘data_sync_status’ api resource returns the real time status of practice management system connection."
+								"description": "The ‘data_sync_status’ api indicates if the practice management system integration is uptodate. ‘Status’ in api response should be equal to ‘refresh’ to make sure data you are receiving via api is correct.\n\n> The ‘data_sync_status’ api resource returns the real time status of practice management system connection.\n\n> **\"Status\":\"not_refresh\"** - Sikka integration is not able to connect practice management systems for more than 24 hours.\n\n> **\"Status\":\"refresh\"** - Sikka integration is connected practice management systems & data is up to date. Check data_insert_date for latest data fetch.\n\n> **“Interval”** parameter allows you to get the list of practices refreshed in the last 5, 10, 15… minutes.\n\nSample output\n\n###### Parameters\n\n###### **app-id** `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n###### **app-key** `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n###### **office_id** `optional`\n\n> Office_id you received from ‘authorized_practices’ API\n\n###### **interval** `optional (int)`\n\n> Value must be integer.  \n> 'interval' parameter allows the user to get the list of practices which have been refreshed in the last minutes."
 							},
 							"response": [
 								{
