@@ -2787,18 +2787,7 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": [
-									{
-										"key": "App-Id",
-										"value": "{application id}",
-										"type": "text"
-									},
-									{
-										"key": "App-Key",
-										"value": "{application key}",
-										"type": "text"
-									}
-								],
+								"header": [],
 								"url": "https://api.sikkasoft.com/v4/data_sync_status",
 								"description": "The ‘data_sync_status’ api indicates if the practice management system integration is uptodate. ‘Status’ in api response should be equal to ‘refresh’ to make sure data you are receiving via api is correct.\n\nThe ‘data_sync_status’ api resource returns the real time status of practice management system connection."
 							},
