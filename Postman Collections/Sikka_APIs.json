@@ -2801,7 +2801,33 @@
 								],
 								"url": "https://api.sikkasoft.com/v4/data_sync_status"
 							},
-							"response": []
+							"response": [
+								{
+									"id": "4bee7e46-590c-4a12-8fd7-a181eefcd179",
+									"name": "data_sync_status",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "App-Id",
+												"value": "{application id}",
+												"type": "text"
+											},
+											{
+												"key": "App-Key",
+												"value": "{application key}",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/data_sync_status"
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
+								}
+							]
 						}
 					],
 					"id": "cafb990b-67be-41c1-ac6d-863b0b6b4a4d"
