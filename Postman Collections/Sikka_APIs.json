@@ -2787,7 +2787,19 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [
+									{
+										"key": "App-Id",
+										"value": "{application id}",
+										"type": "text"
+									},
+									{
+										"key": "App-Key",
+										"value": "{application key}",
+										"type": "text"
+									}
+								],
+								"url": "https://api.sikkasoft.com/v4/data_sync_status"
 							},
 							"response": []
 						}
