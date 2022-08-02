@@ -2778,7 +2778,20 @@
 				},
 				{
 					"name": "Support APIs",
-					"item": [],
+					"item": [
+						{
+							"name": "New Request",
+							"id": "2e5edc9c-2fb2-4e47-a88d-367ff8d81eba",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					],
 					"id": "cafb990b-67be-41c1-ac6d-863b0b6b4a4d"
 				}
 			],
