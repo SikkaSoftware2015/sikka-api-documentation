@@ -2780,7 +2780,7 @@
 					"name": "Support APIs",
 					"item": [
 						{
-							"name": "New Request",
+							"name": "data_sync_status",
 							"id": "2e5edc9c-2fb2-4e47-a88d-367ff8d81eba",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
