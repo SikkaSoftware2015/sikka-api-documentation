@@ -1975,7 +1975,7 @@
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/lab_sub_profiles"
+										"url": "https://api.sikkasoft.com/v4/lab_profile_invoice_items"
 									},
 									"status": "OK",
 									"code": 200,
@@ -1983,7 +1983,7 @@
 									"header": null,
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n\t\"offset\": \"0\",\n\t\"limit\": \"2\",\n\t\"total_count\": \"287\",\n\t\"execution_time\": \"319\",\n\t\"pagination\": {\n\t\t\"first\": \"https://api.sikkasoft.com/v4/lab_sub_profiles?offset=0&limit=2\",\n\t\t\"previous\": \"\",\n\t\t\"current\": \"https://api.sikkasoft.com/v4/lab_sub_profiles?offset=0&limit=2\",\n\t\t\"next\": \"https://api.sikkasoft.com/v4/lab_sub_profiles?offset=1&limit=2\",\n\t\t\"last\": \"https://api.sikkasoft.com/v4/lab_sub_profiles?offset=143&limit=2\"\n\t},\n\t\"items\": [\n\t\t{\n\t\t\t\"href\": \"https://api.sikkasoft.com/v4/practices/1-1/lab_sub_profiles/BUN/CREA\",\n\t\t\t\"practice_id\": \"1-1\",\n\t\t\t\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-1\",\n\t\t\t\"type\": \"Tests\",\n\t\t\t\"cust_id\": \"1\",\n\t\t\t\"rowhash\": \"2C-F1-4D-8C-E6-9E-03\",\n\t\t\t\"profile_id\": \"9131\",\n\t\t\t\"sub_profiles_test\": \"BUN/CREA\",\n\t\t\t\"lab_profiles_href\": \"https://api.sikkasoft.com/v4/practices/1-1/lab_profiles/9131\",\n\t\t\t\"test_sequence\": \"1\"\n\t\t},\n\t\t{\n\t\t\t\"href\": \"https://api.sikkasoft.com/v4/practices/1-1/lab_sub_profiles/BUN/UREA\",\n\t\t\t\"practice_id\": \"1-1\",\n\t\t\t\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-1\",\n\t\t\t\"type\": \"Tests\",\n\t\t\t\"cust_id\": \"1\",\n\t\t\t\"rowhash\": \"F8-B8-66-DE-27-AB-00\",\n\t\t\t\"profile_id\": \"9131\",\n\t\t\t\"sub_profiles_test\": \"BUN/UREA\",\n\t\t\t\"lab_profiles_href\": \"https://api.sikkasoft.com/v4/practices/1-1/lab_profiles/9131\",\n\t\t\t\"test_sequence\": \"2\"\n\t\t}\n\t]\n}"
+									"body": "{\n\t\"offset\": \"0\",\n\t\"limit\": \"2\",\n\t\"total_count\": \"93\",\n\t\"execution_time\": \"17\",\n\t\"pagination\": {\n\t\t\"first\": \"https://api.sikkasoft.com/v4/lab_profile_invoice_items?offset=0&limit=2\",\n\t\t\"previous\": \"\",\n\t\t\"current\": \"https://api.sikkasoft.com/v4/lab_profile_invoice_items?offset=0&limit=2\",\n\t\t\"next\": \"https://api.sikkasoft.com/v4/lab_profile_invoice_items?offset=1&limit=2\",\n\t\t\"last\": \"https://api.sikkasoft.com/v4/lab_profile_invoice_items?offset=46&limit=2\"\n\t},\n\t\"items\": [\n\t\t{\n\t\t\t\"href\": \"https://api.sikkasoft.com/v4/practices/1-1/lab_profile_invoice_items/6142\",\n\t\t\t\"practice_id\": \"1-1\",\n\t\t\t\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-1\",\n\t\t\t\"code\": \"218\",\n\t\t\t\"cust_id\": \"1\",\n\t\t\t\"rowhash\": \"E7-11-C4-89-2F-25-01\",\n\t\t\t\"profile_id\": \"6142\",\n\t\t\t\"lab_profiles_href\": \"https://api.sikkasoft.com/v4/practices/1-1/lab_profiles/6142\"\n\t\t},\n\t\t{\n\t\t\t\"href\": \"https://api.sikkasoft.com/v4/practices/1-1/lab_profile_invoice_items/6142\",\n\t\t\t\"practice_id\": \"1-1\",\n\t\t\t\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-1\",\n\t\t\t\"code\": \"4262\",\n\t\t\t\"cust_id\": \"1\",\n\t\t\t\"rowhash\": \"43-5F-34-65-D2-5A-00\",\n\t\t\t\"profile_id\": \"6142\",\n\t\t\t\"lab_profiles_href\": \"https://api.sikkasoft.com/v4/practices/1-1/lab_profiles/6142\"\n\t\t}\n\t]\n}"
 								}
 							]
 						},
