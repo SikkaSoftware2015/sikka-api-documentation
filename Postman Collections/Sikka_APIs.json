@@ -2931,7 +2931,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/patient_documents_display",
-								"description": "Return patient documents. Link will be valid 24 hours.\n\n###### Parameters\n\n###### pracitce_id `optional`\n\n> practice id of office\n\n###### patient_id `optional`\n\n> patient id of office"
+								"description": "Return patient documents stored in practice management systems. You can download actual document from link provided in API response. Link will be valid 24 hours.\n\n###### Parameters\n\n###### pracitce_id `optional`\n\n> practice id of office\n\n###### patient_id `optional`\n\n> patient id of office"
 							},
 							"response": [
 								{
