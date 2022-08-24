@@ -1965,7 +1965,7 @@
 							"response": [
 								{
 									"id": "043ab8fc-4644-4221-8bc7-926361ba306a",
-									"name": "lab_sub_profiles",
+									"name": "lab_profile_invoice_items",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
