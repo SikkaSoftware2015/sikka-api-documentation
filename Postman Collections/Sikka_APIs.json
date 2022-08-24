@@ -1959,7 +1959,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "https://api.sikkasoft.com/v4/lab_sub_profiles",
+								"url": "https://api.sikkasoft.com/v4/lab_profile_invoice_items",
 								"description": "Returns lab sub profiles information from practice\n\n* * *\n\n###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n###### Parameters\n\n###### profile_id `optional`\n\n> Profile Id.\n\n###### sub_profiles_test `optional`\n\n> Sub Profile Test.\n\n###### test_sequence `optional`\n\n> Test Sequence.\n\n###### type `optional`\n\n> Type.\n\n###### practice_id `optional`\n\n> Practice Id."
 							},
 							"response": [
