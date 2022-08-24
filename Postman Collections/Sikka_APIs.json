@@ -1988,6 +1988,43 @@
 							]
 						},
 						{
+							"name": "lab_requests",
+							"id": "0847c607-38fb-4dd6-bc98-1a5ea8cf1a08",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "https://api.sikkasoft.com/v4/lab_profile_invoice_items",
+								"description": "Returns lab profile invoice items information from practice management system\n\n* * *\n\n###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n###### Parameters\n\n###### profile_id `optional`\n\n> Profile Id.\n\n###### code `optional`\n\n> Code.\n\n###### practice_id `optional`\n\n> Practice Id."
+							},
+							"response": [
+								{
+									"id": "0b57d0b6-9f4d-412b-b0b6-35ab0b928244",
+									"name": "lab_profile_invoice_items",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/lab_profile_invoice_items"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n\t\"offset\": \"0\",\n\t\"limit\": \"2\",\n\t\"total_count\": \"93\",\n\t\"execution_time\": \"17\",\n\t\"pagination\": {\n\t\t\"first\": \"https://api.sikkasoft.com/v4/lab_profile_invoice_items?offset=0&limit=2\",\n\t\t\"previous\": \"\",\n\t\t\"current\": \"https://api.sikkasoft.com/v4/lab_profile_invoice_items?offset=0&limit=2\",\n\t\t\"next\": \"https://api.sikkasoft.com/v4/lab_profile_invoice_items?offset=1&limit=2\",\n\t\t\"last\": \"https://api.sikkasoft.com/v4/lab_profile_invoice_items?offset=46&limit=2\"\n\t},\n\t\"items\": [\n\t\t{\n\t\t\t\"href\": \"https://api.sikkasoft.com/v4/practices/1-1/lab_profile_invoice_items/6142\",\n\t\t\t\"practice_id\": \"1-1\",\n\t\t\t\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-1\",\n\t\t\t\"code\": \"218\",\n\t\t\t\"cust_id\": \"1\",\n\t\t\t\"rowhash\": \"E7-11-C4-89-2F-25-01\",\n\t\t\t\"profile_id\": \"6142\",\n\t\t\t\"lab_profiles_href\": \"https://api.sikkasoft.com/v4/practices/1-1/lab_profiles/6142\"\n\t\t},\n\t\t{\n\t\t\t\"href\": \"https://api.sikkasoft.com/v4/practices/1-1/lab_profile_invoice_items/6142\",\n\t\t\t\"practice_id\": \"1-1\",\n\t\t\t\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-1\",\n\t\t\t\"code\": \"4262\",\n\t\t\t\"cust_id\": \"1\",\n\t\t\t\"rowhash\": \"43-5F-34-65-D2-5A-00\",\n\t\t\t\"profile_id\": \"6142\",\n\t\t\t\"lab_profiles_href\": \"https://api.sikkasoft.com/v4/practices/1-1/lab_profiles/6142\"\n\t\t}\n\t]\n}"
+								}
+							]
+						},
+						{
 							"name": "medical_history",
 							"id": "f4130d94-1c90-4846-befb-69bff5796102",
 							"protocolProfileBehavior": {
