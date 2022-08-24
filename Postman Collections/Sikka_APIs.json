@@ -1928,7 +1928,7 @@
 							"response": [
 								{
 									"id": "c5b6bfdd-9298-42b3-b302-959ec71c684f",
-									"name": "lab_profiles",
+									"name": "lab_sub_profiles",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
