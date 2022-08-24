@@ -2766,6 +2766,43 @@
 									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"500\",\n    \"total_count\": \"3\",\n    \"execution_time\": \"35\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/lab_test_details?offset=0&limit=500\",\n        \"previous\": \"\",\n        \"current\": \"https://api.sikkasoft.com/v4/lab_test_details?offset=0&limit=500\",\n        \"next\": \"\",\n        \"last\": \"https://api.sikkasoft.com/v4/lab_test_details?offset=0&limit=500\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1-1/lab_test_details/Labname\",\n            \"practice_id\": \"1-1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-1\",\n            \"description\": \"\",\n            \"cust_id\": \"1\",\n            \"category\": \"Labname\",\n            \"item\": \"IDEXX Reference Laboratory\"\n        },\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1-1/lab_test_details/Labname\",\n            \"practice_id\": \"1-1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-1\",\n            \"description\": \"\",\n            \"cust_id\": \"1\",\n            \"category\": \"Labname\",\n            \"item\": \"IDEXX VetLab In-clinic Laboratory\"\n        },\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1-1/lab_test_details/Labname\",\n            \"practice_id\": \"1-1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-1\",\n            \"description\": \"\",\n            \"cust_id\": \"1\",\n            \"category\": \"Labname\",\n            \"item\": \"Z- Antech Diagnostics (East)\"\n        }\n    ]\n}"
 								}
 							]
+						},
+						{
+							"name": "lab_profiles",
+							"id": "a441636c-cc57-43fe-a3ef-d7631bb7336b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "https://api.sikkasoft.com/v4/lab_profiles",
+								"description": "Returns lab profiles information from practice\n\n* * *\n###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n###### Parameters\n\n###### profile_id `optional`\n\n> Profile Id.\n\n###### profile_name `optional`\n\n> Profile Name.\n\n###### lab_id `optional`\n\n> Lab Id.\n\n###### profile_type `optional`\n\n> Profile Type.\n\n###### order_no `optional`\n\n> Order Number.\n\n###### practice_id `optional`\n\n> Practice Id."
+							},
+							"response": [
+								{
+									"id": "b885e2e8-d6c5-4ce3-ad60-ffb08ce11937",
+									"name": "lab_profiles",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/lab_profiles"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"2\",\n    \"total_count\": \"9344\",\n    \"execution_time\": \"25\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/lab_profiles?offset=0&limit=2\",\n        \"previous\": \"\",\n        \"current\": \"https://api.sikkasoft.com/v4/lab_profiles?offset=0&limit=2\",\n        \"next\": \"https://api.sikkasoft.com/v4/lab_profiles?offset=1&limit=2\",\n        \"last\": \"https://api.sikkasoft.com/v4/lab_profiles?offset=4671&limit=2\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1-1/lab_profiles/9962\",\n            \"practice_id\": \"1-1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-1\",\n            \"cust_id\": \"1\",\n            \"lab_id\": \"XXXX\",\n            \"rowhash\": \"76-17-BC-C3-87-9E-01\",\n            \"profile_id\": \"9962\",\n            \"profile_name\": \"XXXXX\",\n            \"order_no\": \"28665\",\n            \"can_be_requested\": \"Y\",\n            \"profile_type\": \"Profile/Panel\"\n        },\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1-1/lab_profiles/9961\",\n            \"practice_id\": \"1-1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-1\",\n            \"cust_id\": \"1\",\n            \"lab_id\": \"XXXX\",\n            \"rowhash\": \"0A-D1-55-D4-6F-7E-01\",\n            \"profile_id\": \"9961\",\n            \"profile_name\": \"XXXX\",\n            \"order_no\": \"3001M\",\n            \"can_be_requested\": \"Y\",\n            \"profile_type\": \"Profile/Panel\"\n        }\n    ]\n}"
+								}
+							]
 						}
 					],
 					"id": "0c1fa096-aa44-4088-aa2b-97a96d612a8e"
