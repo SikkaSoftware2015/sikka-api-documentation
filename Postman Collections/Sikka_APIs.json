@@ -2917,7 +2917,7 @@
 							"response": [
 								{
 									"id": "b1139215-0215-43b4-aee5-92037acb71a3",
-									"name": "lab_test_details",
+									"name": "patient_documents_display",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
