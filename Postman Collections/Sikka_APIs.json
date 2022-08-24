@@ -1951,6 +1951,43 @@
 							]
 						},
 						{
+							"name": "lab_profile_invoice_items",
+							"id": "9666ecad-cef6-483a-a924-970c5e5a46f1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "https://api.sikkasoft.com/v4/lab_sub_profiles",
+								"description": "Returns lab sub profiles information from practice\n\n* * *\n\n###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n###### Parameters\n\n###### profile_id `optional`\n\n> Profile Id.\n\n###### sub_profiles_test `optional`\n\n> Sub Profile Test.\n\n###### test_sequence `optional`\n\n> Test Sequence.\n\n###### type `optional`\n\n> Type.\n\n###### practice_id `optional`\n\n> Practice Id."
+							},
+							"response": [
+								{
+									"id": "043ab8fc-4644-4221-8bc7-926361ba306a",
+									"name": "lab_sub_profiles",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/lab_sub_profiles"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n\t\"offset\": \"0\",\n\t\"limit\": \"2\",\n\t\"total_count\": \"287\",\n\t\"execution_time\": \"319\",\n\t\"pagination\": {\n\t\t\"first\": \"https://api.sikkasoft.com/v4/lab_sub_profiles?offset=0&limit=2\",\n\t\t\"previous\": \"\",\n\t\t\"current\": \"https://api.sikkasoft.com/v4/lab_sub_profiles?offset=0&limit=2\",\n\t\t\"next\": \"https://api.sikkasoft.com/v4/lab_sub_profiles?offset=1&limit=2\",\n\t\t\"last\": \"https://api.sikkasoft.com/v4/lab_sub_profiles?offset=143&limit=2\"\n\t},\n\t\"items\": [\n\t\t{\n\t\t\t\"href\": \"https://api.sikkasoft.com/v4/practices/1-1/lab_sub_profiles/BUN/CREA\",\n\t\t\t\"practice_id\": \"1-1\",\n\t\t\t\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-1\",\n\t\t\t\"type\": \"Tests\",\n\t\t\t\"cust_id\": \"1\",\n\t\t\t\"rowhash\": \"2C-F1-4D-8C-E6-9E-03\",\n\t\t\t\"profile_id\": \"9131\",\n\t\t\t\"sub_profiles_test\": \"BUN/CREA\",\n\t\t\t\"lab_profiles_href\": \"https://api.sikkasoft.com/v4/practices/1-1/lab_profiles/9131\",\n\t\t\t\"test_sequence\": \"1\"\n\t\t},\n\t\t{\n\t\t\t\"href\": \"https://api.sikkasoft.com/v4/practices/1-1/lab_sub_profiles/BUN/UREA\",\n\t\t\t\"practice_id\": \"1-1\",\n\t\t\t\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-1\",\n\t\t\t\"type\": \"Tests\",\n\t\t\t\"cust_id\": \"1\",\n\t\t\t\"rowhash\": \"F8-B8-66-DE-27-AB-00\",\n\t\t\t\"profile_id\": \"9131\",\n\t\t\t\"sub_profiles_test\": \"BUN/UREA\",\n\t\t\t\"lab_profiles_href\": \"https://api.sikkasoft.com/v4/practices/1-1/lab_profiles/9131\",\n\t\t\t\"test_sequence\": \"2\"\n\t\t}\n\t]\n}"
+								}
+							]
+						},
+						{
 							"name": "medical_history",
 							"id": "f4130d94-1c90-4846-befb-69bff5796102",
 							"protocolProfileBehavior": {
