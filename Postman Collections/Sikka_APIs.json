@@ -1886,7 +1886,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/lab_profiles",
-								"description": "Returns lab profiles information from practice\n\n* * *\n###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n###### Parameters\n\n###### profile_id `optional`\n\n> Profile Id.\n\n###### profile_name `optional`\n\n> Profile Name.\n\n###### lab_id `optional`\n\n> Lab Id.\n\n###### profile_type `optional`\n\n> Profile Type.\n\n###### order_no `optional`\n\n> Order Number.\n\n###### practice_id `optional`\n\n> Practice Id."
+								"description": "Returns lab profiles information from practice management system\n\n* * *\n\n###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n###### Parameters\n\n###### profile_id `optional`\n\n> Profile Id.\n\n###### profile_name `optional`\n\n> Profile Name.\n\n###### lab_id `optional`\n\n> Lab Id.\n\n###### profile_type `optional`\n\n> Profile Type.\n\n###### order_no `optional`\n\n> Order Number.\n\n###### practice_id `optional`\n\n> Practice Id."
 							},
 							"response": [
 								{
