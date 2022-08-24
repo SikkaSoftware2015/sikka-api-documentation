@@ -2893,25 +2893,7 @@
 										"type": "text"
 									}
 								],
-								"url": {
-									"raw": "https://api.sikkasoft.com/v4/lab_test_details?category=labname",
-									"protocol": "https",
-									"host": [
-										"api",
-										"sikkasoft",
-										"com"
-									],
-									"path": [
-										"v4",
-										"lab_test_details"
-									],
-									"query": [
-										{
-											"key": "category",
-											"value": "labname"
-										}
-									]
-								},
+								"url": "https://api.sikkasoft.com/v4/patient_documents_display",
 								"description": "Return the lab test details\n\n###### Parameters\n\n###### pracitce_id `optional`\n\n> practice id of office\n\n###### category `optional`\n\n> category"
 							},
 							"response": [
