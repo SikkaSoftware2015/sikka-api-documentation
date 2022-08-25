@@ -446,13 +446,13 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "https://api.sikkasoft.com/v4/patients",
+								"url": "https://api.sikkasoft.com/v4/veterinary_patients",
 								"description": "Returns list of patients in practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### pracitce_id ```optional```\r\n> practice id of office\r\n###### patient_id ```optional```\r\n> paitent id of office"
 							},
 							"response": [
 								{
 									"id": "7357b47a-aa7f-4b31-88e9-e92f2289fced",
-									"name": "patients",
+									"name": "veterinary_patients",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
