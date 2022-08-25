@@ -457,7 +457,7 @@
 										"method": "GET",
 										"header": [
 											{
-												"key": "request-key",
+												"key": "Request-Key",
 												"value": "<request_key>",
 												"type": "text"
 											}
