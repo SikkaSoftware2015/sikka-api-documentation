@@ -438,6 +438,43 @@
 							]
 						},
 						{
+							"name": "veterinary_patients",
+							"id": "cc48ea30-25df-4a74-8fb6-eb208d70a4c2",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "https://api.sikkasoft.com/v4/patients",
+								"description": "Returns list of patients in practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### pracitce_id ```optional```\r\n> practice id of office\r\n###### patient_id ```optional```\r\n> paitent id of office"
+							},
+							"response": [
+								{
+									"id": "7357b47a-aa7f-4b31-88e9-e92f2289fced",
+									"name": "patients",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "request-key",
+												"value": "' '",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/patients"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"1\",\n    \"total_count\": \"9161\",\n    \"execution_time\": \"47\",\n    \"pagination\": {\n        \"first\": \"http://api.sikkasoft.com/v4/patients?offset=0&limit=1\",\n        \"previous\": \"\",\n        \"current\": \"http://api.sikkasoft.com/v4/patients?offset=0&limit=1\",\n        \"next\": \"http://api.sikkasoft.com/v4/patients?offset=1&limit=1\",\n        \"last\": \"http://api.sikkasoft.com/v4/patients?offset=9160&limit=1\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/patients/799601\",\n            \"patient_id\": \"799601\",\n            \"guarantor_id\": \"799600\",\n            \"firstname\": \"Carlene\",\n            \"middlename\": \"\",\n            \"lastname\": \"Victoria\",\n            \"preferred_name\": \"Caeene\",\n            \"salutation\": \"\",\n            \"birthdate\": \"1984-12-10T00:00:00\",\n            \"status\": \"Active\",\n            \"address_line1\": \"\",\n            \"address_line2\": \"\",\n            \"city\": \"San Jose\",\n            \"state\": \"CA\",\n            \"zipcode\": \"95116\",\n            \"cell\": \"xxx-xxx-xxxx\",\n            \"email\": \"xxxx@xxxx.com\",\n            \"first_visit\": \"\",\n            \"last_visit\": \"\",\n            \"provider_id\": \"1\",\n            \"provider_href\": \"https://api.sikkasoft.com/v4/practices/1/providers/1\",\n            \"practice_id\": \"1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\n            \"appointment_href\": \"https://api.sikkasoft.com/v4/practices/1/appointments?patient_id=799601\",\n            \"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/1/guarantors/799600\",\n            \"primary_insurance_company_id\": \"\",\n            \"primary_insurance_company_href\": \"https://api.sikkasoft.com/v4/practices/1/insurance_companies/\",\n            \"primary_relationship\": \"\",\n            \"primary_medical_insurance\": \"\",\n            \"primary_medical_insurance_id\": \"\",\n            \"primary_medical_relationship\": \"\",\n            \"primary_medical_subscriber_id\": \"\",\n            \"subscriber_id\": \"\",\n            \"other_referral\": \"\",\n            \"patient_referral\": \"\",\n            \"referred_out\": \"\",\n            \"fee_no\": \"0\",\n            \"guarantor_first_name\": \"first name\",\n            \"guarantor_last_name\": \"Last name\",\n            \"created_date\": \"2020-09-25T00:00:00\",\n            \"preferred_contact\": \"\",\n            \"preferred_communication_method\": \"\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
 							"name": "practices",
 							"id": "8dbb534a-d5bc-4303-aed4-33518138e6cb",
 							"protocolProfileBehavior": {
