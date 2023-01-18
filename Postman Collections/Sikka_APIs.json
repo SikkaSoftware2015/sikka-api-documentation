@@ -577,43 +577,6 @@
 							]
 						},
 						{
-							"name": "accounts receivables",
-							"id": "8a25f59f-0391-4dc0-bd66-d4b69dad3206",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": "",
-								"description": "Returns accounts receivables data by guarantors.\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### pracitce_id ```optional```\r\n> practice id of office \r\n###### guarantor_id ```optional```\r\n> guarantor id in practice management system \r\n"
-							},
-							"response": [
-								{
-									"id": "c064f5a3-dd9f-4d83-9dc6-3451de7c3a49",
-									"name": "accounts receivables",
-									"originalRequest": {
-										"method": "GET",
-										"header": [
-											{
-												"key": "request-key",
-												"value": "<request_key>",
-												"type": "text"
-											}
-										],
-										"url": "https://apiv4.sikkasoft.com/accounts_receivables"
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": null,
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"1\",\n    \"total_count\": \"7\",\n    \"execution_time\": \"13\",\n    \"pagination\": {\n        \"first\": \"http://apiv4.sikkasoft.com/v4/accounts_receivables?offset=0&limit=1\",\n        \"previous\": \"\",\n        \"current\": \"http://apiv4.sikkasoft.com/v4/accounts_receivables?offset=0&limit=1\",\n        \"next\": \"http://apiv4.sikkasoft.com/v4/accounts_receivables?offset=1&limit=1\",\n        \"last\": \"http://apiv4.sikkasoft.com/v4/accounts_receivables?offset=6&limit=1\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/contact_details/9\",\n            \"guarantor_id\": \"9\",\n            \"practice_id\": \"1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\n            \"amount_less_than_30\": \"0\",\n            \"amount_between_31_60\": \"0\",\n            \"amount_between_61_90\": \"0\",\n            \"amount_greater_than_90\": \"225\",\n            \"current_date\": \"2020-09-25T00:00:00\",\n            \"entry_id\": \"\"\n        }\n    ]\n}"
-								}
-							]
-						},
-						{
 							"name": "transactions",
 							"id": "2b349abb-d318-4dec-9cf8-993e03d80876",
 							"protocolProfileBehavior": {
