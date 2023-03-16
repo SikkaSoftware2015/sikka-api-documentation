@@ -3159,7 +3159,7 @@
 							]
 						},
 						{
-							"name": "practice_location",
+							"name": "practice_location ( for billing purpose )",
 							"id": "d07eed75-814a-4dcb-a252-92c33d0baa8b",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true,
