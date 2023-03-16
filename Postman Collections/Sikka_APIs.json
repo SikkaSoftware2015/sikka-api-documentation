@@ -3159,7 +3159,7 @@
 							]
 						},
 						{
-							"name": "practice_location ( for billing purpose )",
+							"name": "practice_location ( for API billing )",
 							"id": "d07eed75-814a-4dcb-a252-92c33d0baa8b",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true,
