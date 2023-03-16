@@ -3157,6 +3157,103 @@
 									"body": "{\n\t\"offset\": \"0\",\n\t\"limit\": \"5000\",\n\t\"total_count\": \"165\",\n\t\"execution_time\": \"6533\",\n\t\"pagination\": {\n\t\t\"first\": \"https://api.sikksoft.com/v4/practice_location?offset=0&limit=5000\",\n\t\t\"previous\": \"\",\n\t\t\"current\": \"https://api.sikksoft.com/v4/practice_location?offset=0&limit=5000\",\n\t\t\"next\": \"\",\n\t\t\"last\": \"https://api.sikksoft.com/v4/practice_location?offset=0&limit=5000\"\n\t},\n\t\"items\": [{\n\t\t\t\"city\": \"Lake Ridge\",\n\t\t\t\"state\": \"VA\",\n\t\t\t\"email\": \"\",\n\t\t\t\"practice_id\": \"33\",\n\t\t\t\"phone\": \"**********\",\n\t\t\t\"zip_code\": \"221922383\",\n\t\t\t\"address\": \"some address\",\n\t\t\t\"practice_name\": \"My Practice\",\n\t\t\t\"access\": \"on\"\n\t\t},\n\t\t{\n\t\t\t\"city\": \"Arlington\",\n\t\t\t\"state\": \"VA\",\n\t\t\t\"email\": \"\",\n\t\t\t\"practice_id\": \"56\",\n\t\t\t\"phone\": \"**********\",\n\t\t\t\"zip_code\": \"22203\",\n\t\t\t\"address\": \"address\",\n\t\t\t\"practice_name\": \"Practice Name\",\n\t\t\t\"access\": \"on\"\n\t\t}\n\t]\n}"
 								}
 							]
+						},
+						{
+							"name": "practice_location",
+							"id": "d07eed75-814a-4dcb-a252-92c33d0baa8b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true,
+								"disabledSystemHeaders": {
+									"user-agent": true,
+									"accept": true,
+									"host": true,
+									"accept-encoding": true,
+									"connection": true
+								}
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "App-Id",
+										"value": "<Application Id>",
+										"type": "text"
+									},
+									{
+										"key": "App-Key",
+										"value": "<Application Key>",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://api.sikkasoft.com/v4/practice_location?office_id={office_id}",
+									"protocol": "https",
+									"host": [
+										"api",
+										"sikkasoft",
+										"com"
+									],
+									"path": [
+										"v4",
+										"practice_location"
+									],
+									"query": [
+										{
+											"key": "office_id",
+											"value": "{office_id}"
+										}
+									]
+								},
+								"description": "Get all practice details for authorized office id and return with access is on or off.\n\n###### Headers\n\n###### **App-Id** `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n###### **App-Key** `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n###### Parameters\n\n###### **office_id** `Required`\n\n> Office_id you received from ‘authorized_practices’ API"
+							},
+							"response": [
+								{
+									"id": "4665791c-1137-4f44-bee9-06822a80c4ee",
+									"name": "practice_location",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "App-Id",
+												"value": "{application id}",
+												"type": "text"
+											},
+											{
+												"key": "App-Key",
+												"value": "{application key}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/data_sync_status?office_id={office_id}",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"data_sync_status"
+											],
+											"query": [
+												{
+													"key": "office_id",
+													"value": "{office_id}",
+													"type": "text"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n\t\"offset\": \"0\",\n\t\"limit\": \"5000\",\n\t\"total_count\": \"165\",\n\t\"execution_time\": \"6533\",\n\t\"pagination\": {\n\t\t\"first\": \"https://api.sikksoft.com/v4/practice_location?offset=0&limit=5000\",\n\t\t\"previous\": \"\",\n\t\t\"current\": \"https://api.sikksoft.com/v4/practice_location?offset=0&limit=5000\",\n\t\t\"next\": \"\",\n\t\t\"last\": \"https://api.sikksoft.com/v4/practice_location?offset=0&limit=5000\"\n\t},\n\t\"items\": [{\n\t\t\t\"city\": \"Lake Ridge\",\n\t\t\t\"state\": \"VA\",\n\t\t\t\"email\": \"\",\n\t\t\t\"practice_id\": \"33\",\n\t\t\t\"phone\": \"**********\",\n\t\t\t\"zip_code\": \"221922383\",\n\t\t\t\"address\": \"some address\",\n\t\t\t\"practice_name\": \"My Practice\",\n\t\t\t\"access\": \"on\"\n\t\t},\n\t\t{\n\t\t\t\"city\": \"Arlington\",\n\t\t\t\"state\": \"VA\",\n\t\t\t\"email\": \"\",\n\t\t\t\"practice_id\": \"56\",\n\t\t\t\"phone\": \"**********\",\n\t\t\t\"zip_code\": \"22203\",\n\t\t\t\"address\": \"address\",\n\t\t\t\"practice_name\": \"Practice Name\",\n\t\t\t\"access\": \"on\"\n\t\t}\n\t]\n}"
+								}
+							]
 						}
 					],
 					"id": "cafb990b-67be-41c1-ac6d-863b0b6b4a4d"
