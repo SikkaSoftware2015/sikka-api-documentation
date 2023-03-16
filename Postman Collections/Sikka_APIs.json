@@ -3113,7 +3113,7 @@
 							"response": [
 								{
 									"id": "badbd121-e33f-49d8-bd71-50c0e20818dc",
-									"name": "data_sync_status",
+									"name": "practice_location",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
