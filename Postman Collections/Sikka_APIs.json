@@ -3195,7 +3195,7 @@
 									}
 								},
 								"url": "https://api.sikkasoft.com/v4/practice_location",
-								"description": "Get all practice details for authorized office id and return with access is on or off.\n\n###### Headers\n\n###### **App-Id** `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n###### **App-Key** `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n###### Parameters\n\n###### **office_id** `Required`\n\n> Office_id you received from ‘authorized_practices’ API"
+								"description": "POST ‘practice_location’ API allows to turn on and off API access for listed practice location(s). Users need to pass practice ids (in case of multiple practice ids, that should be separated by comma) which they want to turn on or off.\n\n###### Headers\n\n###### **App-Id** `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n###### **App-Key** `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n###### Request Body\n\n###### **office_id** `Required`\n\n> Office_id you received from ‘authorized_practices’ API\n\n###### **practice_id** `Required`\n\n> practice_id you received from practices or practice_location API.\n\n###### **access** `Required`\n\n> access. Value must be ON or OFF."
 							},
 							"response": [
 								{
