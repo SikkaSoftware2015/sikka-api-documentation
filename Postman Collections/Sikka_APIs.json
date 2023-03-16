@@ -3084,7 +3084,7 @@
 									},
 									{
 										"key": "App-Key",
-										"value": "<application Key>",
+										"value": "<Application Key>",
 										"type": "text"
 									}
 								],
@@ -3103,8 +3103,7 @@
 									"query": [
 										{
 											"key": "office_id",
-											"value": "{office_id}",
-											"type": "text"
+											"value": "{office_id}"
 										}
 									]
 								},
