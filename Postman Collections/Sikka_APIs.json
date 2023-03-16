@@ -3172,7 +3172,7 @@
 								}
 							},
 							"request": {
-								"method": "GET",
+								"method": "POST",
 								"header": [
 									{
 										"key": "App-Id",
@@ -3185,25 +3185,16 @@
 										"type": "text"
 									}
 								],
-								"url": {
-									"raw": "https://api.sikkasoft.com/v4/practice_location?office_id={office_id}",
-									"protocol": "https",
-									"host": [
-										"api",
-										"sikkasoft",
-										"com"
-									],
-									"path": [
-										"v4",
-										"practice_location"
-									],
-									"query": [
-										{
-											"key": "office_id",
-											"value": "{office_id}"
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"office_id\": \"D11234\",\r\n\"practice_id\": \"1-1,1-2,1-3\",\r\n\"access\":\"ON/OFF\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
 										}
-									]
+									}
 								},
+								"url": "https://api.sikkasoft.com/v4/practice_location",
 								"description": "Get all practice details for authorized office id and return with access is on or off.\n\n###### Headers\n\n###### **App-Id** `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n###### **App-Key** `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n###### Parameters\n\n###### **office_id** `Required`\n\n> Office_id you received from ‘authorized_practices’ API"
 							},
 							"response": [
