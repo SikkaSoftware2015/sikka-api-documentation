@@ -3128,7 +3128,26 @@
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/data_sync_status"
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/data_sync_status?office_id={office_id}",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"data_sync_status"
+											],
+											"query": [
+												{
+													"key": "office_id",
+													"value": "{office_id}",
+													"type": "text"
+												}
+											]
+										}
 									},
 									"status": "OK",
 									"code": 200,
@@ -3136,7 +3155,7 @@
 									"header": null,
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"2\",\n    \"total_count\": \"2\",\n    \"execution_time\": \"528\",\n    \"pagination\": {\n        \"first\": \"http://api.sikkasoft.com/v4/data_sync_status?offset=0&limit=2\",\n        \"previous\": \"\",\n        \"current\": \"http://api.sikkasoft.com/v4/data_sync_status?offset=0&limit=2\",\n        \"next\": \"http://api.sikkasoft.com/v4/data_sync_status?offset=1&limit=2\",\n        \"last\": \"http://api.sikkasoft.com/v4/data_sync_status?offset=383&limit=2\"\n    },\n    \"items\": [\n        {\n            \"status\": \"refresh\",\n            \"practice_id\": \"1\",\n            \"office_id\": \"C100812\",\n            \"domain\": \"Chiropractic\",\n            \"practice_name\": \"Georgia Chiro and Wellness center \",\n            \"practice_management_system\": \"Eclipse\",\n            \"data_insert_date\": \"2022-03-28T01:40:31\",\n            \"practice_management_system_version\": \"2018\",\n            \"practice_management_system_refresh_date_time_zone\": \"Eastern Standard Time\"\n        },\n        {\n            \"status\": \"refresh\",\n            \"practice_id\": \"1\",\n            \"office_id\": \"C220212\",\n            \"domain\": \"Chiropractic\",\n            \"practice_name\": \"Better Chiropractic center\",\n            \"practice_management_system\": \"Chirotouch\",\n            \"data_insert_date\": \"2022-03-28T02:27:32\",\n            \"practice_management_system_version\": \"V6.5\",\n            \"practice_management_system_refresh_date_time_zone\": \"US Mountain Standard Time\"\n        }\n    ]\n}"
+									"body": "{\n\t\"offset\": \"0\",\n\t\"limit\": \"5000\",\n\t\"total_count\": \"165\",\n\t\"execution_time\": \"6533\",\n\t\"pagination\": {\n\t\t\"first\": \"https://api.sikksoft.com/v4/practice_location?offset=0&limit=5000\",\n\t\t\"previous\": \"\",\n\t\t\"current\": \"https://api.sikksoft.com/v4/practice_location?offset=0&limit=5000\",\n\t\t\"next\": \"\",\n\t\t\"last\": \"https://api.sikksoft.com/v4/practice_location?offset=0&limit=5000\"\n\t},\n\t\"items\": [{\n\t\t\t\"city\": \"Lake Ridge\",\n\t\t\t\"state\": \"VA\",\n\t\t\t\"email\": \"\",\n\t\t\t\"practice_id\": \"33\",\n\t\t\t\"phone\": \"**********\",\n\t\t\t\"zip_code\": \"221922383\",\n\t\t\t\"address\": \"some address\",\n\t\t\t\"practice_name\": \"My Practice\",\n\t\t\t\"access\": \"on\"\n\t\t},\n\t\t{\n\t\t\t\"city\": \"Arlington\",\n\t\t\t\"state\": \"VA\",\n\t\t\t\"email\": \"\",\n\t\t\t\"practice_id\": \"56\",\n\t\t\t\"phone\": \"**********\",\n\t\t\t\"zip_code\": \"22203\",\n\t\t\t\"address\": \"address\",\n\t\t\t\"practice_name\": \"Practice Name\",\n\t\t\t\"access\": \"on\"\n\t\t}\n\t]\n}"
 								}
 							]
 						}
