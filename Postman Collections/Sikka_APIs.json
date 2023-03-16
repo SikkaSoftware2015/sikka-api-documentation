@@ -3060,6 +3060,48 @@
 									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"2\",\n    \"total_count\": \"2\",\n    \"execution_time\": \"528\",\n    \"pagination\": {\n        \"first\": \"http://api.sikkasoft.com/v4/data_sync_status?offset=0&limit=2\",\n        \"previous\": \"\",\n        \"current\": \"http://api.sikkasoft.com/v4/data_sync_status?offset=0&limit=2\",\n        \"next\": \"http://api.sikkasoft.com/v4/data_sync_status?offset=1&limit=2\",\n        \"last\": \"http://api.sikkasoft.com/v4/data_sync_status?offset=383&limit=2\"\n    },\n    \"items\": [\n        {\n            \"status\": \"refresh\",\n            \"practice_id\": \"1\",\n            \"office_id\": \"C100812\",\n            \"domain\": \"Chiropractic\",\n            \"practice_name\": \"Georgia Chiro and Wellness center \",\n            \"practice_management_system\": \"Eclipse\",\n            \"data_insert_date\": \"2022-03-28T01:40:31\",\n            \"practice_management_system_version\": \"2018\",\n            \"practice_management_system_refresh_date_time_zone\": \"Eastern Standard Time\"\n        },\n        {\n            \"status\": \"refresh\",\n            \"practice_id\": \"1\",\n            \"office_id\": \"C220212\",\n            \"domain\": \"Chiropractic\",\n            \"practice_name\": \"Better Chiropractic center\",\n            \"practice_management_system\": \"Chirotouch\",\n            \"data_insert_date\": \"2022-03-28T02:27:32\",\n            \"practice_management_system_version\": \"V6.5\",\n            \"practice_management_system_refresh_date_time_zone\": \"US Mountain Standard Time\"\n        }\n    ]\n}"
 								}
 							]
+						},
+						{
+							"name": "practice_location",
+							"id": "adcc2968-bc8b-4123-b217-8116a5b27bb1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "https://api.sikkasoft.com/v4/data_sync_status",
+								"description": "The ‘data_sync_status’ api indicates if the practice management system integration is uptodate. ‘Status’ in api response should be equal to ‘refresh’ to make sure data you are receiving via api is correct.\n\n> The ‘data_sync_status’ api resource returns the real time status of practice management system connection.\n\n> **\"Status\":\"not_refresh\"** - Sikka integration is not able to connect practice management systems for more than 24 hours.\n\n> **\"Status\":\"refresh\"** - Sikka integration is connected practice management systems & data is up to date. Check data_insert_date for latest data fetch.\n\n> **“Interval”** parameter allows you to get the list of practices refreshed in the last 5, 10, 15… minutes.\n\nSample output\n\n| Status | Office_id | practice_name | data_insert_date |\n| --- | --- | --- | --- |\n| refresh | D1000 | ProForm Clinics | 2022-08-02T18:12:59 |\n| refresh | D12435 | Fountain Valley Physical Medicine Center | 2022-07-29T02:34:16 |\n| not refresh | C10001 | The Brain Center | 2021-06-09T23:31:07 |\n\n###### Parameters\n\n###### **app-id** `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n###### **app-key** `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n###### **office_id** `optional`\n\n> Office_id you received from ‘authorized_practices’ API\n\n###### **interval** `optional (int)`\n\n> Value must be integer.  \n> 'interval' parameter allows the user to get the list of practices which have been refreshed in the last minutes."
+							},
+							"response": [
+								{
+									"id": "badbd121-e33f-49d8-bd71-50c0e20818dc",
+									"name": "data_sync_status",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "App-Id",
+												"value": "{application id}",
+												"type": "text"
+											},
+											{
+												"key": "App-Key",
+												"value": "{application key}",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/data_sync_status"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"2\",\n    \"total_count\": \"2\",\n    \"execution_time\": \"528\",\n    \"pagination\": {\n        \"first\": \"http://api.sikkasoft.com/v4/data_sync_status?offset=0&limit=2\",\n        \"previous\": \"\",\n        \"current\": \"http://api.sikkasoft.com/v4/data_sync_status?offset=0&limit=2\",\n        \"next\": \"http://api.sikkasoft.com/v4/data_sync_status?offset=1&limit=2\",\n        \"last\": \"http://api.sikkasoft.com/v4/data_sync_status?offset=383&limit=2\"\n    },\n    \"items\": [\n        {\n            \"status\": \"refresh\",\n            \"practice_id\": \"1\",\n            \"office_id\": \"C100812\",\n            \"domain\": \"Chiropractic\",\n            \"practice_name\": \"Georgia Chiro and Wellness center \",\n            \"practice_management_system\": \"Eclipse\",\n            \"data_insert_date\": \"2022-03-28T01:40:31\",\n            \"practice_management_system_version\": \"2018\",\n            \"practice_management_system_refresh_date_time_zone\": \"Eastern Standard Time\"\n        },\n        {\n            \"status\": \"refresh\",\n            \"practice_id\": \"1\",\n            \"office_id\": \"C220212\",\n            \"domain\": \"Chiropractic\",\n            \"practice_name\": \"Better Chiropractic center\",\n            \"practice_management_system\": \"Chirotouch\",\n            \"data_insert_date\": \"2022-03-28T02:27:32\",\n            \"practice_management_system_version\": \"V6.5\",\n            \"practice_management_system_refresh_date_time_zone\": \"US Mountain Standard Time\"\n        }\n    ]\n}"
+								}
+							]
 						}
 					],
 					"id": "cafb990b-67be-41c1-ac6d-863b0b6b4a4d"
