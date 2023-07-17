@@ -3398,7 +3398,7 @@
 							"response": [
 								{
 									"id": "5ae887cb-e8cb-4ad9-945e-8941c3d2499a",
-									"name": "practice_location",
+									"name": "remote_command_status",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
