@@ -3307,14 +3307,14 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n\"office_id\": \"D123321\",\r\n\"practice_id\": \"1-1,1-2,1-3\",\r\n\"access\":\"ON/OFF\"\r\n}",
+											"raw": "{\r\n    \"office_id\":\"D111226\",\r\n    \"spc_id\":\"655265656\",\r\n    \"command_name\":\"refresh_data/change_setting_schedule_interval/change_setting_schedule_time\",\r\n    \"interval_legnth\":\"20\",\r\n    \"interval_type\":\"Minutes/Hours\",\r\n    \"new_value\":\"02:12 AM\"\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
 												}
 											}
 										},
-										"url": "https://api.sikkasoft.com/v4/practice_location"
+										"url": "https://api.sikkasoft.com/v4/remote_command"
 									},
 									"status": "OK",
 									"code": 200,
