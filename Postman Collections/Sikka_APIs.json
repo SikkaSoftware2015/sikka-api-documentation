@@ -3284,7 +3284,7 @@
 							"response": [
 								{
 									"id": "0f195f10-d761-43a3-993a-a623a687a851",
-									"name": "practice_location",
+									"name": "remote_command",
 									"originalRequest": {
 										"method": "POST",
 										"header": [
