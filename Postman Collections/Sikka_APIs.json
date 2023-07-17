@@ -3307,7 +3307,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"office_id\":\"D111226\",\r\n    \"spc_id\":\"655265656\",\r\n    \"command_name\":\"refresh_data/change_setting_schedule_interval/change_setting_schedule_time\",\r\n    \"interval_legnth\":\"20\",\r\n    \"interval_type\":\"Minutes/Hours\",\r\n    \"new_value\":\"02:12 AM\"\r\n}",
+											"raw": "{\r\n\t\"office_id\": \"D111226\",\r\n\t\"spc_id\": \"655265656\",\r\n\t\"command_name\": \"refresh_data/change_setting_schedule_interval/change_setting_schedule_time\",\r\n\t\"interval_legnth\": \"20\",\r\n\t\"interval_type\": \"Minutes/Hours\",\r\n\t\"new_value\": \"02:12 AM\"\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -3316,13 +3316,38 @@
 										},
 										"url": "https://api.sikkasoft.com/v4/remote_command"
 									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": null,
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "html",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.22.0"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 17 Jul 2023 04:48:27 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "text/html"
+										},
+										{
+											"key": "Content-Length",
+											"value": "157"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload;"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
+										}
+									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"http_code\": \"202\",\n    \"http_code_desc\": \"Accepted\",\n    \"error_code\": \"API1029\",\n    \"short_message\": \"Request Accepted.\",\n    \"long_message\": \"Id:15274561234\",\n    \"more_information\": \"https://api.sikkasoft.com/v4/remote_command_status?id=15274561234\"\n}"
+									"body": "<html>\n    <head>\n        <title>400 Bad Request</title>\n    </head>\n    <body>\n        <center>\n            <h1>400 Bad Request</h1>\n        </center>\n        <hr>\n        <center>nginx/1.22.0</center>\n    </body>\n</html>"
 								}
 							]
 						}
