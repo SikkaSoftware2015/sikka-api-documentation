@@ -3414,7 +3414,7 @@
 											}
 										],
 										"url": {
-											"raw": "https://api.sikkasoft.com/v4/remote_command?id=1531464",
+											"raw": "https://api.sikkasoft.com/v4/remote_command_status?id=1531464",
 											"protocol": "https",
 											"host": [
 												"api",
@@ -3423,7 +3423,7 @@
 											],
 											"path": [
 												"v4",
-												"remote_command"
+												"remote_command_status"
 											],
 											"query": [
 												{
