@@ -3290,12 +3290,12 @@
 										"header": [
 											{
 												"key": "App-Id",
-												"value": "b1d700dece28f977b213975f0b204c4d",
+												"value": "{application_id}",
 												"type": "text"
 											},
 											{
 												"key": "App-Key",
-												"value": "92a030e8ea0e9e0fc594b8bfa1da1131",
+												"value": "{application_key}",
 												"type": "text"
 											},
 											{
@@ -3307,7 +3307,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n\t\"office_id\": \"D9917\",\r\n\t\"spc_id\": \"65523\",\r\n\t\"command_name\": \"refresh_data\",\r\n\t\"interval_legnth\": \"20\",\r\n\t\"interval_type\": \"Minutes/Hours\",\r\n\t\"new_value\": \"02:12 AM\"\r\n}",
+											"raw": "{\r\n\t\"office_id\": \"D112332\",\r\n\t\"spc_id\": \"6552322\",\r\n\t\"command_name\": \"refresh_data\",\r\n\t\"interval_legnth\": \"20\",\r\n\t\"interval_type\": \"Minutes/Hours\",\r\n\t\"new_value\": \"02:12 AM\"\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
