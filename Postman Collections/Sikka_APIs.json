@@ -3375,7 +3375,7 @@
 									}
 								],
 								"url": {
-									"raw": "https://api.sikkasoft.com/v4/practice_location?office_id={office_id}",
+									"raw": "https://api.sikkasoft.com/v4/practice_location?id=1531464",
 									"protocol": "https",
 									"host": [
 										"api",
@@ -3388,8 +3388,8 @@
 									],
 									"query": [
 										{
-											"key": "office_id",
-											"value": "{office_id}"
+											"key": "id",
+											"value": "1531464"
 										}
 									]
 								},
