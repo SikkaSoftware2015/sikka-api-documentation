@@ -3307,7 +3307,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n\t\"office_id\": \"D112332\",\r\n\t\"spc_id\": \"6552322\",\r\n\t\"command_name\": \"refresh_data\",\r\n\t\"interval_legnth\": \"\",\r\n\t\"interval_type\": \"\",\r\n\t\"new_value\": \"\"\r\n}",
+											"raw": "{\r\n\t\"office_id\": \"D112332\",\r\n\t\"spc_id\": \"6552322\",\r\n\t\"command_name\": \"refresh_data\",\r\n\t\"interval_length\": \"\",\r\n\t\"interval_type\": \"\",\r\n\t\"new_value\": \"\"\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
