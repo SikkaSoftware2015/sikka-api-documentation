@@ -3348,7 +3348,7 @@
 							]
 						},
 						{
-							"name": "remote_commad_status",
+							"name": "remote_command_status",
 							"id": "02305cff-77c0-45bb-8f99-d3177a994c68",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true,
