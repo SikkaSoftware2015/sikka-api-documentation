@@ -3271,7 +3271,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"office_id\":\"D111226\",\r\n    \"spc_id\":\"655265656\",\r\n    \"command_name\":\"refresh_data/change_setting_schedule_interval/change_setting_schedule_time\",\r\n    \"interval_legnth\":\"20\",\r\n    \"interval_type\":\"Minutes/Hours\",\r\n    \"new_value\":\"02:12 AM\"\r\n}",
+									"raw": "{\r\n    \"office_id\":\"D111226\",\r\n    \"spc_id\":\"655265656\",\r\n    \"command_name\":\"refresh_data/change_setting_schedule_interval/change_setting_schedule_time\",\r\n    \"interval_length\":\"20\",\r\n    \"interval_type\":\"Minutes/Hours\",\r\n    \"new_value\":\"02:12 AM\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
