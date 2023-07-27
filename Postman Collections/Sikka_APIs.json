@@ -3701,29 +3701,23 @@
 						{
 							"name": "finance/payroll_details",
 							"id": "a7441fc6-677d-4fa8-8480-1e3b328f0784",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
 							"request": {
 								"method": "GET",
-								"header": [],
+								"header": [
+									{
+										"key": "Request-Key",
+										"value": "{{request_key}}",
+										"type": "text"
+									}
+								],
 								"body": {
 									"mode": "formdata",
 									"formdata": []
 								},
-								"url": {
-									"raw": "{{url}}/finance/payroll_details?request_key={{request_key}}",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"finance",
-										"payroll_details"
-									],
-									"query": [
-										{
-											"key": "request_key",
-											"value": "{{request_key}}"
-										}
-									]
-								},
+								"url": "https://api.sikkasoft.com/v4/finance/payroll_details",
 								"description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|practice_id|Practice ID|No|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|ref_number|Ref Number|\r\n"
 							},
 							"response": [
