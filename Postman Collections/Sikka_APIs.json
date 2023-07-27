@@ -3151,7 +3151,7 @@
 							]
 						},
 						{
-							"name": "finance/accounts Copy",
+							"name": "finance/accounts by account_number",
 							"id": "123b30d4-adb9-493c-ab3f-978e9f5bc4e8",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
