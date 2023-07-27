@@ -3444,26 +3444,7 @@
 											"mode": "formdata",
 											"formdata": []
 										},
-										"url": {
-											"raw": "https://api.sikkasoft.com/v4/finance/balances?limit=1",
-											"protocol": "https",
-											"host": [
-												"api",
-												"sikkasoft",
-												"com"
-											],
-											"path": [
-												"v4",
-												"finance",
-												"balances"
-											],
-											"query": [
-												{
-													"key": "limit",
-													"value": "1"
-												}
-											]
-										}
+										"url": "https://api.sikkasoft.com/v4/finance/balances/abc def"
 									},
 									"status": "OK",
 									"code": 200,
