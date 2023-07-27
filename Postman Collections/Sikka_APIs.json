@@ -4012,7 +4012,7 @@
 											"formdata": []
 										},
 										"url": {
-											"raw": "https://api.sikkasoft.com/v4/finance/transactions?limit=1",
+											"raw": "https://api.sikkasoft.com/v4/finance/vendors?limit=1",
 											"protocol": "https",
 											"host": [
 												"api",
@@ -4022,7 +4022,7 @@
 											"path": [
 												"v4",
 												"finance",
-												"transactions"
+												"vendors"
 											],
 											"query": [
 												{
@@ -4105,7 +4105,7 @@
 									],
 									"cookie": [],
 									"responseTime": "1644",
-									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"1\",\n    \"total_count\": \"47648\",\n    \"execution_time\": \"510\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/finance/transactions?offset=0&limit=1\",\n        \"previous\": \"\",\n        \"current\": \"https://api.sikkasoft.com/v4/finance/transactions?offset=0&limit=1\",\n        \"next\": \"https://api.sikkasoft.com/v4/finance/transactions?offset=1&limit=1\",\n        \"last\": \"https://api.sikkasoft.com/v4/finance/transactions?offset=47647&limit=1\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/finance/transactions/WI Company\",\n            \"practice_id\": \"1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\n            \"transaction_type\": \"Paycheck\",\n            \"amount\": \"-57.3900\",\n            \"date\": \"2023-02-10T00:00:00\",\n            \"name\": \"Satyen Pandya\",\n            \"due_date\": \"\",\n            \"account_number\": \"\",\n            \"account_name\": \"WI Company\",\n            \"account_type\": \"OtherCurrentLiability\",\n            \"balance_total\": \"469.2400\",\n            \"class\": \"\",\n            \"debit\": \"0.0000\",\n            \"credit\": \"57.3900\",\n            \"reference_number\": \"DD1453\",\n            \"memo\": \"Direct Deposit\",\n            \"cleared_status\": \"NotCleared\",\n            \"split_account\": \"Checking Account - Forward\",\n            \"paid_status\": \"Unpaid\",\n            \"name_address\": \"\",\n            \"name_city\": \"\",\n            \"name_contact\": \"\",\n            \"name_email\": \"satyen.cccc@sikka.ai\",\n            \"name_fax\": \"\",\n            \"name_phone\": \"222-000-1111\",\n            \"name_state\": \"\",\n            \"name_zipcode\": \"\",\n            \"name_address2\": \"\",\n            \"name_ssn\": \"xxx-xx-xxxx\",\n            \"name_secondary_phone\": \"\"\n        }\n    ]\n}"
+									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"1\",\n    \"total_count\": \"350\",\n    \"execution_time\": \"11\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/finance/finance_vendors?offset=0&limit=1\",\n        \"previous\": \"\",\n        \"current\": \"https://api.sikkasoft.com/v4/finance/finance_vendors?offset=0&limit=1\",\n        \"next\": \"https://api.sikkasoft.com/v4/finance/finance_vendors?offset=1&limit=1\",\n        \"last\": \"https://api.sikkasoft.com/v4/finance/finance_vendors?offset=349&limit=1\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/finance/vendors/Tin Dabba\",\n            \"practice_id\": \"1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\n            \"phone\": \"\",\n            \"fax\": \"\",\n            \"address\": \"Navi Post Office Juni PO GJ 12345\",\n            \"account_number\": \"1234567890\",\n            \"balance_total\": \"0\",\n            \"vendor\": \"Tin Dabba\",\n            \"contact_person\": \"Satyen Pandya\"\n        }\n    ]\n}"
 								}
 							]
 						}
