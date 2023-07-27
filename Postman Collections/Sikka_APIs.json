@@ -3068,7 +3068,7 @@
 										}
 									]
 								},
-								"description": "Returns accounts data from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### appointment_sr_no `optional`\n\n> appointment serial number from appointments \n  \n\n###### pracitce_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> guarantor id in practice management system \n  \n\n###### guarantor_id `optional`\n\n> guarantor id in practice management system"
+								"description": "Returns accounts data from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### account_number `optional`\n\n> account number from accounts \n  \n\n###### account_name `optional`\n\n> account name from accounts \n  \n\n###### account_type `optional`\n\n> account type from accounts"
 							},
 							"response": [
 								{
