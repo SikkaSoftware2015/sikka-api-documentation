@@ -3718,7 +3718,7 @@
 									"formdata": []
 								},
 								"url": "https://api.sikkasoft.com/v4/finance/payroll_details",
-								"description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|practice_id|Practice ID|No|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|ref_number|Ref Number|\r\n"
+								"description": "Returns payroll details data from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### reference_number  `optional`\n\n> reference_number from finance system\n  \n\n###### startdate `optional`\n\n> format: yyyy-mm-dd, start date\n  \n\n###### enddate `optional`\n\n> format: yyyy-mm-dd, end date"
 							},
 							"response": [
 								{
