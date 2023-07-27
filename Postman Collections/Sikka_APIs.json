@@ -3189,27 +3189,7 @@
 											"mode": "formdata",
 											"formdata": []
 										},
-										"url": {
-											"raw": "https://api.sikkasoft.com/v4/finance/accounts/12345?limit=1",
-											"protocol": "https",
-											"host": [
-												"api",
-												"sikkasoft",
-												"com"
-											],
-											"path": [
-												"v4",
-												"finance",
-												"accounts",
-												"12345"
-											],
-											"query": [
-												{
-													"key": "limit",
-													"value": "1"
-												}
-											]
-										}
+										"url": "https://api.sikkasoft.com/v4/finance/accounts/12345"
 									},
 									"status": "OK",
 									"code": 200,
