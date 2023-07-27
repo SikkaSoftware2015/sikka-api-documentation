@@ -4171,6 +4171,143 @@
 							]
 						},
 						{
+							"name": "finance/employee by employee",
+							"id": "307705a8-887e-404c-aa34-10083487b21d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Request-Key",
+										"value": "{{request_key}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "https://api.sikkasoft.com/v4/finance/employee",
+								"description": "Returns employee details data from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### account_number  `optional`\n\n> account_number from finance system\n  \n\n###### employee `optional`\n\n> employee from finance system"
+							},
+							"response": [
+								{
+									"id": "c8714cfe-ff0f-4563-9e11-0163e31da597",
+									"name": "request",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "{{request_key}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/finance/employee?limit=1",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"finance",
+												"employee"
+											],
+											"query": [
+												{
+													"key": "limit",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"name": "Access-Control-Allow-Headers",
+											"key": "Access-Control-Allow-Headers",
+											"value": "accept, authorization, Content-Type, X-Session-Id",
+											"description": ""
+										},
+										{
+											"name": "Access-Control-Allow-Methods",
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+											"description": ""
+										},
+										{
+											"name": "Access-Control-Allow-Origin",
+											"key": "Access-Control-Allow-Origin",
+											"value": "*",
+											"description": ""
+										},
+										{
+											"name": "Cache-Control",
+											"key": "Cache-Control",
+											"value": "private",
+											"description": ""
+										},
+										{
+											"name": "Connection",
+											"key": "Connection",
+											"value": "keep-alive",
+											"description": ""
+										},
+										{
+											"name": "Content-Length",
+											"key": "Content-Length",
+											"value": "559",
+											"description": ""
+										},
+										{
+											"name": "Content-Type",
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": ""
+										},
+										{
+											"name": "Date",
+											"key": "Date",
+											"value": "Mon, 24 Apr 2017 09:51:24 GMT",
+											"description": ""
+										},
+										{
+											"name": "Server",
+											"key": "Server",
+											"value": "Microsoft-IIS/8.5",
+											"description": ""
+										},
+										{
+											"name": "X-AspNet-Version",
+											"key": "X-AspNet-Version",
+											"value": "4.0.30319",
+											"description": ""
+										},
+										{
+											"name": "X-Powered-By",
+											"key": "X-Powered-By",
+											"value": "ASP.NET",
+											"description": ""
+										}
+									],
+									"cookie": [],
+									"responseTime": "765",
+									"body": "{\r\n    \"offset\": \"0\",\r\n    \"limit\": \"1\",\r\n    \"total_count\": \"13\",\r\n    \"execution_time\": \"11\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/finance/employee?offset=0&limit=1\",\r\n        \"previous\": \"\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/finance/employee?offset=0&limit=1\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/finance/employee?offset=1&limit=1\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/finance/employee?offset=12&limit=1\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/finance/employee/Satyen Pandya\",\r\n            \"practice_id\": \"1\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n            \"type\": \"Regular\",\r\n            \"phone\": \"222-000-1111\",\r\n            \"address\": \"Manjalpur Vadodara GJ\",\r\n            \"account_number\": \"1234567890\",\r\n            \"employee\": \"Satyen Pandya\"\r\n        }\r\n    ]\r\n}"
+								}
+							]
+						},
+						{
 							"name": "finance/employee by account_number",
 							"id": "0f5b3cd3-84a1-4660-b888-cc3d4ac14cdf",
 							"request": {
