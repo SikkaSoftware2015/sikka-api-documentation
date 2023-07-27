@@ -3067,8 +3067,7 @@
 											"value": "{account_type}"
 										}
 									]
-								},
-								"description": "| Parameter | Description | Required? |\n| --- | --- | --- |\n| request_key | Valid 32 characters alpha-numeric request key | Yes |\n| practice_id | Practice ID | No |\n| account_name | Account Name | No |\n| account_number | Account Number | No |\n| account_type | Account type | No |\n\n**SortBy**\n\n| Parameter | Description |\n| --- | --- |\n| account_number | Account Number |"
+								}
 							},
 							"response": [
 								{
