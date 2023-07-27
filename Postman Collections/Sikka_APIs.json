@@ -3425,7 +3425,7 @@
 									"formdata": []
 								},
 								"url": "https://api.sikkasoft.com/v4/finance/balances/{{account_name}}",
-								"description": "Returns balance details data from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key"
+								"description": "Returns balance details data from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### account_name `Required`\n\n> account name"
 							},
 							"response": [
 								{
