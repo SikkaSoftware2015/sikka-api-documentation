@@ -4189,8 +4189,8 @@
 									"mode": "formdata",
 									"formdata": []
 								},
-								"url": "https://api.sikkasoft.com/v4/finance/employee",
-								"description": "Returns employee details data from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### account_number `optional`\n\n> account_number from finance system \n  \n\n###### employee `optional`\n\n> name of the employee from finance system"
+								"url": "https://api.sikkasoft.com/v4/finance/employee/{{employee}}",
+								"description": "Returns employee details data from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### account_number `optional`\n\n> account_number from finance system \n  \n\n###### employee `Required`\n\n> name of the employee from finance system"
 							},
 							"response": [
 								{
