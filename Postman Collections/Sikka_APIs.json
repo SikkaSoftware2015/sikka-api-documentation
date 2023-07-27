@@ -4059,7 +4059,7 @@
 										}
 									]
 								},
-								"description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|practice_id|Practice ID|No|\r\n|employee|employee name|No|\r\n|account_number|Account Number|No|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|account_number|Account Number|\r\n"
+								"description": "Returns employee details data from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### account_number  `optional`\n\n> account_number from finance system\n  \n\n###### employee `optional`\n\n> employee from finance system"
 							},
 							"response": [
 								{
