@@ -3543,7 +3543,7 @@
 									"formdata": []
 								},
 								"url": "https://api.sikkasoft.com/v4/finance/budgets",
-								"description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|practice_id|Practice ID|No|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|account_name|Account Name|"
+								"description": "Returns budgets details data from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key"
 							},
 							"response": [
 								{
