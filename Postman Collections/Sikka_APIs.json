@@ -3971,6 +3971,143 @@
 									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"1\",\n    \"total_count\": \"47648\",\n    \"execution_time\": \"510\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/finance/transactions?offset=0&limit=1\",\n        \"previous\": \"\",\n        \"current\": \"https://api.sikkasoft.com/v4/finance/transactions?offset=0&limit=1\",\n        \"next\": \"https://api.sikkasoft.com/v4/finance/transactions?offset=1&limit=1\",\n        \"last\": \"https://api.sikkasoft.com/v4/finance/transactions?offset=47647&limit=1\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/finance/transactions/WI Company\",\n            \"practice_id\": \"1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\n            \"transaction_type\": \"Paycheck\",\n            \"amount\": \"-57.3900\",\n            \"date\": \"2023-02-10T00:00:00\",\n            \"name\": \"Satyen Pandya\",\n            \"due_date\": \"\",\n            \"account_number\": \"\",\n            \"account_name\": \"WI Company\",\n            \"account_type\": \"OtherCurrentLiability\",\n            \"balance_total\": \"469.2400\",\n            \"class\": \"\",\n            \"debit\": \"0.0000\",\n            \"credit\": \"57.3900\",\n            \"reference_number\": \"DD1453\",\n            \"memo\": \"Direct Deposit\",\n            \"cleared_status\": \"NotCleared\",\n            \"split_account\": \"Checking Account - Forward\",\n            \"paid_status\": \"Unpaid\",\n            \"name_address\": \"\",\n            \"name_city\": \"\",\n            \"name_contact\": \"\",\n            \"name_email\": \"satyen.cccc@sikka.ai\",\n            \"name_fax\": \"\",\n            \"name_phone\": \"222-000-1111\",\n            \"name_state\": \"\",\n            \"name_zipcode\": \"\",\n            \"name_address2\": \"\",\n            \"name_ssn\": \"xxx-xx-xxxx\",\n            \"name_secondary_phone\": \"\"\n        }\n    ]\n}"
 								}
 							]
+						},
+						{
+							"name": "finance/vendors",
+							"id": "35fde5c6-c5db-4dfd-92d5-c7e1323c3ce0",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Request-Key",
+										"value": "{{request_key}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "https://api.sikkasoft.com/v4/finance/transactions",
+								"description": "Returns transaction details from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id in finance system \n  \n\n###### customer_id `optional`\n\n> customer id in finance system \n  \n\n###### account_name `optional`\n\n> account name in finance system \n  \n\n###### account_number `optional`\n\n> account number in finance system \n  \n\n###### reference_number `optional`\n\n> reference_number from finance system \n  \n\n###### startdate `optional`\n\n> format: yyyy-mm-dd, start date \n  \n\n###### enddate `optional`\n\n> format: yyyy-mm-dd, end date \n  \n\n###### date_filter_on `optional`\n\n> specifies on which field given start date and end date will be applied"
+							},
+							"response": [
+								{
+									"id": "b71215cf-ef75-4a87-a9ef-862f83cc7008",
+									"name": "request",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "{{request_key}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/finance/transactions?limit=1",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"finance",
+												"transactions"
+											],
+											"query": [
+												{
+													"key": "limit",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"name": "Access-Control-Allow-Headers",
+											"key": "Access-Control-Allow-Headers",
+											"value": "accept, authorization, Content-Type, X-Session-Id",
+											"description": ""
+										},
+										{
+											"name": "Access-Control-Allow-Methods",
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+											"description": ""
+										},
+										{
+											"name": "Access-Control-Allow-Origin",
+											"key": "Access-Control-Allow-Origin",
+											"value": "*",
+											"description": ""
+										},
+										{
+											"name": "Cache-Control",
+											"key": "Cache-Control",
+											"value": "private, no-cache=\"set-cookie\"",
+											"description": ""
+										},
+										{
+											"name": "Connection",
+											"key": "Connection",
+											"value": "keep-alive",
+											"description": ""
+										},
+										{
+											"name": "Content-Length",
+											"key": "Content-Length",
+											"value": "1738",
+											"description": ""
+										},
+										{
+											"name": "Content-Type",
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": ""
+										},
+										{
+											"name": "Date",
+											"key": "Date",
+											"value": "Mon, 24 Apr 2017 10:10:30 GMT",
+											"description": ""
+										},
+										{
+											"name": "Server",
+											"key": "Server",
+											"value": "Microsoft-IIS/8.5",
+											"description": ""
+										},
+										{
+											"name": "X-AspNet-Version",
+											"key": "X-AspNet-Version",
+											"value": "4.0.30319",
+											"description": ""
+										},
+										{
+											"name": "X-Powered-By",
+											"key": "X-Powered-By",
+											"value": "ASP.NET",
+											"description": ""
+										}
+									],
+									"cookie": [],
+									"responseTime": "1644",
+									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"1\",\n    \"total_count\": \"47648\",\n    \"execution_time\": \"510\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/finance/transactions?offset=0&limit=1\",\n        \"previous\": \"\",\n        \"current\": \"https://api.sikkasoft.com/v4/finance/transactions?offset=0&limit=1\",\n        \"next\": \"https://api.sikkasoft.com/v4/finance/transactions?offset=1&limit=1\",\n        \"last\": \"https://api.sikkasoft.com/v4/finance/transactions?offset=47647&limit=1\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/finance/transactions/WI Company\",\n            \"practice_id\": \"1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\n            \"transaction_type\": \"Paycheck\",\n            \"amount\": \"-57.3900\",\n            \"date\": \"2023-02-10T00:00:00\",\n            \"name\": \"Satyen Pandya\",\n            \"due_date\": \"\",\n            \"account_number\": \"\",\n            \"account_name\": \"WI Company\",\n            \"account_type\": \"OtherCurrentLiability\",\n            \"balance_total\": \"469.2400\",\n            \"class\": \"\",\n            \"debit\": \"0.0000\",\n            \"credit\": \"57.3900\",\n            \"reference_number\": \"DD1453\",\n            \"memo\": \"Direct Deposit\",\n            \"cleared_status\": \"NotCleared\",\n            \"split_account\": \"Checking Account - Forward\",\n            \"paid_status\": \"Unpaid\",\n            \"name_address\": \"\",\n            \"name_city\": \"\",\n            \"name_contact\": \"\",\n            \"name_email\": \"satyen.cccc@sikka.ai\",\n            \"name_fax\": \"\",\n            \"name_phone\": \"222-000-1111\",\n            \"name_state\": \"\",\n            \"name_zipcode\": \"\",\n            \"name_address2\": \"\",\n            \"name_ssn\": \"xxx-xx-xxxx\",\n            \"name_secondary_phone\": \"\"\n        }\n    ]\n}"
+								}
+							]
 						}
 					],
 					"id": "e9868430-a493-4240-ab11-9dbfbdeae010",
