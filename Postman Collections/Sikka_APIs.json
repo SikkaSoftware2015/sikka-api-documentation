@@ -3916,6 +3916,143 @@
 							]
 						},
 						{
+							"name": "finance/customers by fullname",
+							"id": "5f8b6355-97b1-4f01-b810-d189b9629e63",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Request-Key",
+										"value": "{{request_key}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "https://api.sikkasoft.com/v4/finance/customers",
+								"description": "Returns customer details data from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### fullname  `optional`\n\n> fullname  \n  \n\n###### customer_id `optional`\n\n> customer id from finance system (different from customer_id in other APIs)"
+							},
+							"response": [
+								{
+									"id": "75d240ab-9aaa-4dbd-adcb-9077c9c83abe",
+									"name": "request",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "request_key",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/finance/customers?limit=1",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"finance",
+												"customers"
+											],
+											"query": [
+												{
+													"key": "limit",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"name": "Access-Control-Allow-Headers",
+											"key": "Access-Control-Allow-Headers",
+											"value": "accept, authorization, Content-Type, X-Session-Id",
+											"description": ""
+										},
+										{
+											"name": "Access-Control-Allow-Methods",
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+											"description": ""
+										},
+										{
+											"name": "Access-Control-Allow-Origin",
+											"key": "Access-Control-Allow-Origin",
+											"value": "*",
+											"description": ""
+										},
+										{
+											"name": "Cache-Control",
+											"key": "Cache-Control",
+											"value": "private",
+											"description": ""
+										},
+										{
+											"name": "Connection",
+											"key": "Connection",
+											"value": "keep-alive",
+											"description": ""
+										},
+										{
+											"name": "Content-Length",
+											"key": "Content-Length",
+											"value": "3178",
+											"description": ""
+										},
+										{
+											"name": "Content-Type",
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": ""
+										},
+										{
+											"name": "Date",
+											"key": "Date",
+											"value": "Mon, 24 Apr 2017 09:31:33 GMT",
+											"description": ""
+										},
+										{
+											"name": "Server",
+											"key": "Server",
+											"value": "Microsoft-IIS/8.5",
+											"description": ""
+										},
+										{
+											"name": "X-AspNet-Version",
+											"key": "X-AspNet-Version",
+											"value": "4.0.30319",
+											"description": ""
+										},
+										{
+											"name": "X-Powered-By",
+											"key": "X-Powered-By",
+											"value": "ASP.NET",
+											"description": ""
+										}
+									],
+									"cookie": [],
+									"responseTime": "1290",
+									"body": "{\r\n    \"offset\": \"0\",\r\n    \"limit\": \"1\",\r\n    \"total_count\": \"2801\",\r\n    \"execution_time\": \"16\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/finance/customers?offset=0&limit=1\",\r\n        \"previous\": \"\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/finance/customers?offset=0&limit=1\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/finance/customers?offset=1&limit=1\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/finance/customers?offset=2800&limit=1\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/finance/customers/ABC DEF\",\r\n            \"firstname\": \"\",\r\n            \"lastname\": \"\",\r\n            \"salutation\": \"\",\r\n            \"email\": \"\",\r\n            \"practice_id\": \"1\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n            \"name\": \"ABC DEF\",\r\n            \"phone\": \"\",\r\n            \"notes\": \"\",\r\n            \"fax\": \"\",\r\n            \"contact\": \"\",\r\n            \"error_message\": \"\",\r\n            \"customer_id\": \"0\",\r\n            \"account_number\": \"\",\r\n            \"alternate_contact\": \"\",\r\n            \"alternate_phone\": \"\",\r\n            \"balance\": \"0.0000\",\r\n            \"billing_address1\": \"ABC DEF Inc.\",\r\n            \"billing_address2\": \"111 D Street\",\r\n            \"billing_address3\": \"\",\r\n            \"billing_address4\": \"\",\r\n            \"billing_city\": \"Marshfield\",\r\n            \"billing_country\": \"\",\r\n            \"billing_zipcode\": \"11111\",\r\n            \"billing_state\": \"AA\",\r\n            \"company_name\": \"\",\r\n            \"card_address\": \"\",\r\n            \"card_number\": \"\",\r\n            \"card_zipcode\": \"\",\r\n            \"card_expiration_month\": \"0\",\r\n            \"card_expiration_year\": \"0\",\r\n            \"name_on_card\": \"\",\r\n            \"credit_limit\": \"0\",\r\n            \"customer_type_reference_fullname\": \"\",\r\n            \"customer_type_reference_listid\": \"\",\r\n            \"edit_sequence\": \"xxxxxxxxxx\",\r\n            \"fullname\": \"ABC DEF\",\r\n            \"is_active\": \"True\",\r\n            \"item_sales_tax_reference_fullname\": \"xxxx xxxxx (x.x%)\",\r\n            \"item_sales_tax_reference_listid\": \"xxxx-xxxxx\",\r\n            \"list_id\": \"ABC DEF\",\r\n            \"middelname\": \"\",\r\n            \"parent_reference_fullname\": \"\",\r\n            \"parent_reference_listid\": \"\",\r\n            \"preferred_payment_method_reference_fullname\": \"\",\r\n            \"preferred_payment_method_reference_listid\": \"\",\r\n            \"sales_rep_reference_fullname\": \"\",\r\n            \"sales_rep_reference_listid\": \"\",\r\n            \"sales_tax_code_reference_fullname\": \"xxx\",\r\n            \"sales_tax_code_reference_listid\": \"xxxx-xxxxx\",\r\n            \"shipping_address1\": \"ABC DEF Inc.\",\r\n            \"shipping_address2\": \"111 D Street\",\r\n            \"shipping_address3\": \"\",\r\n            \"shipping_address4\": \"\",\r\n            \"shipping_city\": \"Marshfield\",\r\n            \"shipping_country\": \"\",\r\n            \"shipping_zipcode\": \"11111\",\r\n            \"shipping_state\": \"AA\",\r\n            \"sub_level\": \"0\",\r\n            \"terms_reference_fullname\": \"Net 30\",\r\n            \"terms_reference_listid\": \"xxxx-xxxxx\",\r\n            \"time_created\": \"2016-08-22T00:00:00\",\r\n            \"time_modified\": \"2023-04-27T00:00:00\",\r\n            \"total_balance\": \"30576\"\r\n        }\r\n    ]\r\n}"
+								}
+							]
+						},
+						{
 							"name": "finance/customers by customer_id",
 							"id": "47ff95f7-0627-48a5-ac1f-7dfa70f18b55",
 							"request": {
