@@ -3011,7 +3011,7 @@
 					"id": "0c1fa096-aa44-4088-aa2b-97a96d612a8e"
 				},
 				{
-					"name": "Finance",
+					"name": "Finance APIs",
 					"item": [
 						{
 							"name": "finance/accounts",
