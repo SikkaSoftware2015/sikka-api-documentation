@@ -3699,26 +3699,7 @@
 											"mode": "formdata",
 											"formdata": []
 										},
-										"url": {
-											"raw": "https://api.sikkasoft.com/v4/finance/budgets?limit=1",
-											"protocol": "https",
-											"host": [
-												"api",
-												"sikkasoft",
-												"com"
-											],
-											"path": [
-												"v4",
-												"finance",
-												"budgets"
-											],
-											"query": [
-												{
-													"key": "limit",
-													"value": "1"
-												}
-											]
-										}
+										"url": "https://api.sikkasoft.com/v4/finance/budgets/Truck Insurance"
 									},
 									"status": "OK",
 									"code": 200,
@@ -3793,7 +3774,7 @@
 									],
 									"cookie": [],
 									"responseTime": "2276",
-									"body": "{\r\n    \"offset\": \"0\",\r\n    \"limit\": \"1\",\r\n    \"total_count\": \"47648\",\r\n    \"execution_time\": \"510\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/finance/budgets?offset=0&limit=1\",\r\n        \"previous\": \"\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/finance/budgets?offset=0&limit=1\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/finance/budgets?offset=1&limit=1\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/finance/budgets?offset=47647&limit=1\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/finance/budgets/Truck Insurance\",\r\n            \"practice_id\": \"1\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n            \"account_name\": \"Truck Insurance\",\r\n            \"january\": \"10.0000\",\r\n            \"february\": \"20.0000\",\r\n            \"march\": \"30.0000\",\r\n            \"april\": \"40.0000\",\r\n            \"may\": \"50.0000\",\r\n            \"june\": \"60.0000\",\r\n            \"july\": \"60.0000\",\r\n            \"august\": \"50.0000\",\r\n            \"september\": \"40.0000\",\r\n            \"october\": \"30.0000\",\r\n            \"november\": \"20.0000\",\r\n            \"december\": \"10.0000\",\r\n            \"total\": \"420.0000\"\r\n        }\r\n    ]\r\n}"
+									"body": "{\r\n    \"offset\": \"0\",\r\n    \"limit\": \"1\",\r\n    \"total_count\": \"1\",\r\n    \"execution_time\": \"510\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/finance/budgets?offset=0&limit=1\",\r\n        \"previous\": \"\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/finance/budgets?offset=0&limit=1\",\r\n        \"next\": \"\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/finance/budgets?offset=0&limit=1\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/finance/budgets/Truck Insurance\",\r\n            \"practice_id\": \"1\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n            \"account_name\": \"Truck Insurance\",\r\n            \"january\": \"10.0000\",\r\n            \"february\": \"20.0000\",\r\n            \"march\": \"30.0000\",\r\n            \"april\": \"40.0000\",\r\n            \"may\": \"50.0000\",\r\n            \"june\": \"60.0000\",\r\n            \"july\": \"60.0000\",\r\n            \"august\": \"50.0000\",\r\n            \"september\": \"40.0000\",\r\n            \"october\": \"30.0000\",\r\n            \"november\": \"20.0000\",\r\n            \"december\": \"10.0000\",\r\n            \"total\": \"420.0000\"\r\n        }\r\n    ]\r\n}"
 								}
 							]
 						},
