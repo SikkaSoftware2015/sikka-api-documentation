@@ -319,7 +319,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/appointments",
-								"description": "Returns appointments data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### appointment_sr_no ```optional```\r\n> appointment serial number from appointments \r\n###### pracitce_id ```optional```\r\n> practice id of office \r\n###### patient_id ```optional```\r\n> guarantor id in practice management system \r\n###### guarantor_id ```optional```\r\n> guarantor id in practice management system"
+								"description": "Returns appointments data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### appointment_sr_no `optional`\n\n> appointment serial number from appointments \n  \n\n###### pracitce_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> guarantor id in practice management system \n  \n\n###### guarantor_id `optional`\n\n> guarantor id in practice management system"
 							},
 							"response": [
 								{
