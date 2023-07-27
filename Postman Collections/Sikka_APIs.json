@@ -3016,26 +3016,55 @@
 						{
 							"name": "finance/accounts",
 							"id": "4cb180f4-0c2e-438e-ba93-db2f8b4548f9",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
 							"request": {
 								"method": "GET",
-								"header": [],
+								"header": [
+									{
+										"key": "Request-Key",
+										"value": "{{request_key}}",
+										"type": "text"
+									}
+								],
 								"body": {
 									"mode": "formdata",
 									"formdata": []
 								},
 								"url": {
-									"raw": "{{url}}/finance/accounts?request_key={{request_key}}",
+									"raw": "https://api.sikkasoft.com/v4/finance/accounts?offset={offset}&limit={limit}&account_number={account_number}&account_name={account_name}&account_type={account_type}",
+									"protocol": "https",
 									"host": [
-										"{{url}}"
+										"api",
+										"sikkasoft",
+										"com"
 									],
 									"path": [
+										"v4",
 										"finance",
 										"accounts"
 									],
 									"query": [
 										{
-											"key": "request_key",
-											"value": "{{request_key}}"
+											"key": "offset",
+											"value": "{offset}"
+										},
+										{
+											"key": "limit",
+											"value": "{limit}"
+										},
+										{
+											"key": "account_number",
+											"value": "{account_number}"
+										},
+										{
+											"key": "account_name",
+											"value": "{account_name}"
+										},
+										{
+											"key": "account_type",
+											"value": "{account_type}"
 										}
 									]
 								},
