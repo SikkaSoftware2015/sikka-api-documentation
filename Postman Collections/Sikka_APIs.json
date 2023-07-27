@@ -4036,29 +4036,23 @@
 						{
 							"name": "finance/employee",
 							"id": "1ded7081-bf8d-4b8a-b4c3-b0fc5a9aaba3",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
 							"request": {
 								"method": "GET",
-								"header": [],
+								"header": [
+									{
+										"key": "Request-Key",
+										"value": "{{request_key}}",
+										"type": "text"
+									}
+								],
 								"body": {
 									"mode": "formdata",
 									"formdata": []
 								},
-								"url": {
-									"raw": "{{url}}/finance/employee?request_key={{request_key}}",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"finance",
-										"employee"
-									],
-									"query": [
-										{
-											"key": "request_key",
-											"value": "{{request_key}}"
-										}
-									]
-								},
+								"url": "https://api.sikkasoft.com/v4/finance/employee",
 								"description": "Returns employee details data from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### account_number  `optional`\n\n> account_number from finance system\n  \n\n###### employee `optional`\n\n> employee from finance system"
 							},
 							"response": [
