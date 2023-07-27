@@ -3798,7 +3798,7 @@
 									"formdata": []
 								},
 								"url": "https://api.sikkasoft.com/v4/finance/customers",
-								"description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|customer_id|Customer Id|No|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|customer_id|Customer Id|\r\n"
+								"description": "Returns customer details data from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### fullname  `optional`\n\n> fullname  \n  \n\n###### customer_id `optional`\n\n> customer id from finance system (different from customer_id in other APIs)"
 							},
 							"response": [
 								{
