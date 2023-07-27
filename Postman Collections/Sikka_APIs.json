@@ -3838,6 +3838,9 @@
 						{
 							"name": "finance/transactions",
 							"id": "3b10df23-07b9-4335-bbfb-78eae1393654",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
 							"request": {
 								"method": "GET",
 								"header": [],
