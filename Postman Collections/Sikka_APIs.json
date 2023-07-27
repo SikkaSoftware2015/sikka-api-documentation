@@ -3151,59 +3151,61 @@
 							]
 						},
 						{
-							"name": "finance/accounts by account_number",
-							"id": "7585dd01-6470-461c-9223-1ac5fd06260c",
+							"name": "finance/accounts Copy",
+							"id": "123b30d4-adb9-493c-ab3f-978e9f5bc4e8",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
 							"request": {
 								"method": "GET",
-								"header": [],
+								"header": [
+									{
+										"key": "Request-Key",
+										"value": "{{request_key}}",
+										"type": "text"
+									}
+								],
 								"body": {
 									"mode": "formdata",
 									"formdata": []
 								},
-								"url": {
-									"raw": "{{url}}/finance/accounts/{account_number}?request_key={{request_key}}",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"finance",
-										"accounts",
-										"{account_number}"
-									],
-									"query": [
-										{
-											"key": "request_key",
-											"value": "{{request_key}}"
-										}
-									]
-								},
-								"description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|practice_id|Practice ID|No|\r\n|account_name|Account Name|No|\r\n|account_number|Account Number|No|\r\n|account_type|Account type|No|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|account_number|Account Number|"
+								"url": "https://api.sikkasoft.com/v4/finance/accounts",
+								"description": "Returns accounts data from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### account_number `optional`\n\n> account number from accounts \n  \n\n###### account_name `optional`\n\n> account name from accounts \n  \n\n###### account_type `optional`\n\n> account type from accounts"
 							},
 							"response": [
 								{
-									"id": "843422ac-4382-49c8-87c2-de621d77b7fd",
+									"id": "6419dbb3-40b4-4c88-8c92-1fc4bc471a3d",
 									"name": "request",
 									"originalRequest": {
 										"method": "GET",
-										"header": [],
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "{{request_key}}",
+												"type": "text"
+											}
+										],
 										"body": {
 											"mode": "formdata",
 											"formdata": []
 										},
 										"url": {
-											"raw": "{{url}}/finance/accounts/{account_number}?request_key={{request_key}}",
+											"raw": "https://api.sikkasoft.com/v4/finance/accounts?limit=1",
+											"protocol": "https",
 											"host": [
-												"{{url}}"
+												"api",
+												"sikkasoft",
+												"com"
 											],
 											"path": [
+												"v4",
 												"finance",
-												"accounts",
-												"{account_number}"
+												"accounts"
 											],
 											"query": [
 												{
-													"key": "request_key",
-													"value": "{{request_key}}"
+													"key": "limit",
+													"value": "1"
 												}
 											]
 										}
@@ -3233,7 +3235,7 @@
 										{
 											"name": "Cache-Control",
 											"key": "Cache-Control",
-											"value": "private",
+											"value": "private, no-cache=\"set-cookie\"",
 											"description": ""
 										},
 										{
@@ -3245,7 +3247,7 @@
 										{
 											"name": "Content-Length",
 											"key": "Content-Length",
-											"value": "346",
+											"value": "721",
 											"description": ""
 										},
 										{
@@ -3257,7 +3259,7 @@
 										{
 											"name": "Date",
 											"key": "Date",
-											"value": "Mon, 24 Apr 2017 09:15:36 GMT",
+											"value": "Mon, 24 Apr 2017 09:12:59 GMT",
 											"description": ""
 										},
 										{
@@ -3280,8 +3282,8 @@
 										}
 									],
 									"cookie": [],
-									"responseTime": "1150",
-									"body": "{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/finance\\/accounts\\/9550\",\"account_number\":\"9550\",\"account_name\":\"9550 . Non deductible expenses\",\"account_fullname\":\"Non deductible expenses\",\"description\":\"\",\"account_type\":\"OtherExpense\",\"balance_total\":\"420.0600\",\"practice_id\":\"1\",\"practice\":{\"href\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/practices\\/1\"}}\r\n"
+									"responseTime": "1503",
+									"body": "{\r\n    \"offset\": \"0\",\r\n    \"limit\": \"1\",\r\n    \"total_count\": \"95\",\r\n    \"execution_time\": \"12\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/finance/accounts?offset=0&limit=1\",\r\n        \"previous\": \"\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/finance/accounts?offset=0&limit=1\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/finance/accounts?offset=1&limit=1\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/finance/accounts?offset=94&limit=1\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/finance/accounts/12345\",\r\n            \"practice_id\": \"1\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n            \"description\": \"Orders from customers to be filled work to be performed or items to be shipped\",\r\n            \"account_number\": \"12345\",\r\n            \"account_name\": \"12345 Sales Orders\",\r\n            \"account_fullname\": \"Sales Orders\",\r\n            \"account_type\": \"NonPosting\",\r\n            \"balance_total\": \"0.0000\"\r\n        }\r\n    ]\r\n}"
 								}
 							]
 						},
