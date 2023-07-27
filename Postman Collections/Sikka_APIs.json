@@ -3032,42 +3032,7 @@
 									"mode": "formdata",
 									"formdata": []
 								},
-								"url": {
-									"raw": "https://api.sikkasoft.com/v4/finance/accounts?offset={offset}&limit={limit}&account_number={account_number}&account_name={account_name}&account_type={account_type}",
-									"protocol": "https",
-									"host": [
-										"api",
-										"sikkasoft",
-										"com"
-									],
-									"path": [
-										"v4",
-										"finance",
-										"accounts"
-									],
-									"query": [
-										{
-											"key": "offset",
-											"value": "{offset}"
-										},
-										{
-											"key": "limit",
-											"value": "{limit}"
-										},
-										{
-											"key": "account_number",
-											"value": "{account_number}"
-										},
-										{
-											"key": "account_name",
-											"value": "{account_name}"
-										},
-										{
-											"key": "account_type",
-											"value": "{account_type}"
-										}
-									]
-								},
+								"url": "https://api.sikkasoft.com/v4/finance/accounts",
 								"description": "Returns accounts data from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### account_number `optional`\n\n> account number from accounts \n  \n\n###### account_name `optional`\n\n> account name from accounts \n  \n\n###### account_type `optional`\n\n> account type from accounts"
 							},
 							"response": [
