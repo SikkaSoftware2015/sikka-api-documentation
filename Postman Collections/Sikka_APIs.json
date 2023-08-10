@@ -4231,7 +4231,7 @@
 											}
 										],
 										"url": {
-											"raw": "https://api.sikkasoft.com/v4/data_sync_status?office_id={office_id}",
+											"raw": "https://api.sikkasoft.com/v4/practice_location?office_id={office_id}",
 											"protocol": "https",
 											"host": [
 												"api",
@@ -4240,13 +4240,12 @@
 											],
 											"path": [
 												"v4",
-												"data_sync_status"
+												"practice_location"
 											],
 											"query": [
 												{
 													"key": "office_id",
-													"value": "{office_id}",
-													"type": "text"
+													"value": "{office_id}"
 												}
 											]
 										}
