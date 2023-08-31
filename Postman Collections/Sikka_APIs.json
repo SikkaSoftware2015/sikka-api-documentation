@@ -4416,7 +4416,7 @@
 												}
 											}
 										},
-										"url": "https://qaapiv4.sikkasoft.com/v4/remote_command"
+										"url": "https://api.sikkasoft.com/v4/remote_command"
 									},
 									"status": "Accepted",
 									"code": 202,
