@@ -1121,7 +1121,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "https://api.sikkasoft.com/v4/payment_plan",
+								"url": "https://api.sikkasoft.com/v4/payment_plans",
 								"description": "Returns payment plans data from practice if practice management system storing payment plans\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### agreement_id ```optional```\r\n> agreement id of payment plans \r\n###### pracitce_id ```optional```\r\n> practice id of office \r\n###### patient_id ```optional```\r\n> guarantor id in practice management system \r\n###### guarantor_id ```optional```\r\n> guarantor id in practice management system"
 							},
 							"response": [
@@ -1137,7 +1137,7 @@
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/payment_plan"
+										"url": "https://api.sikkasoft.com/v4/payment_plans"
 									},
 									"_postman_previewlanguage": "json",
 									"header": null,
