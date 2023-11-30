@@ -2136,22 +2136,14 @@
 									"name": "note_types",
 									"originalRequest": {
 										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "{{url}}/note_types?request_key={{request_key}}",
-											"host": [
-												"{{url}}"
-											],
-											"path": [
-												"note_types"
-											],
-											"query": [
-												{
-													"key": "request_key",
-													"value": "{{request_key}}"
-												}
-											]
-										}
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/note_types"
 									},
 									"status": "OK",
 									"code": 200,
@@ -2226,7 +2218,7 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "[\r\n\t{\r\n\t\t\"offset\": \"0\",\r\n\t\t\"limit\": \"2\",\r\n\t\t\"total_count\": \"7\",\r\n\t\t\"execution_time\": \"16\",\r\n\t\t\"pagination\": {\r\n\t\t\t\"first\": \"https://api.sikkasoft.com/v2/note_types?offset=0&limit=2\",\r\n\t\t\t\"previous\": \"\",\r\n\t\t\t\"current\": \"https://api.sikkasoft.com/v2/note_types?offset=0&limit=2\",\r\n\t\t\t\"next\": \"https://api.sikkasoft.com/v2/note_types?offset=1&limit=2\",\r\n\t\t\t\"last\": \"https://api.sikkasoft.com/v2/note_types?offset=3&limit=2\"\r\n\t\t},\r\n\t\t\"items\": [\r\n\t\t\t{\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/note_types/Treatment note\",\r\n\t\t\t\t\"type\": \"Treatment note\",\r\n\t\t\t\t\"item\": \"\",\r\n\t\t\t\t\"description\": \"\",\r\n\t\t\t\t\"practice_id\": \"1\",\r\n\t\t\t\t\"practice\": {\r\n\t\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/note_types/Service note\",\r\n\t\t\t\t\"type\": \"Service note\",\r\n\t\t\t\t\"item\": \"\",\r\n\t\t\t\t\"description\": \"\",\r\n\t\t\t\t\"practice_id\": \"1\",\r\n\t\t\t\t\"practice\": {\r\n\t\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t]\r\n\t}\r\n]\r\n"
+									"body": "{\r\n    \"offset\": \"0\",\r\n    \"limit\": \"2\",\r\n    \"total_count\": \"2\",\r\n    \"execution_time\": \"16\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/note_types?offset=0&limit=2\",\r\n        \"previous\": \"\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/note_types?offset=0&limit=2\",\r\n        \"next\": \"\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/note_types?offset=0&limit=2\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/2/note_types/PatNote\",\r\n            \"practice_id\": \"2\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/2\",\r\n            \"description\": \"\",\r\n            \"type\": \"PatNote\",\r\n            \"cust_id\": \"2\",\r\n            \"item\": \"\"\r\n        },\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/2/note_types/Clinical Note\",\r\n            \"practice_id\": \"2\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/2\",\r\n            \"description\": \"\",\r\n            \"type\": \"Clinical Note\",\r\n            \"cust_id\": \"2\",\r\n            \"item\": \"\"\r\n        }\r\n    ]\r\n}"
 								}
 							]
 						},
