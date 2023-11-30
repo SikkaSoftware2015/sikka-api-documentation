@@ -2105,6 +2105,132 @@
 							]
 						},
 						{
+							"name": "note_types",
+							"id": "1460dd4b-eb0b-4738-b37b-6392a184783b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/note_types?request_key={{request_key}}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"note_types"
+									],
+									"query": [
+										{
+											"key": "request_key",
+											"value": "{{request_key}}"
+										}
+									]
+								},
+								"description": "|Parameter|Description|Required?|\r\n|--- |--- |--- |\r\n|request_key|Valid 32 characters alpha-numeric request key|Yes|\r\n|practice_id|Practice ID|No|\r\n\r\n**SortBy**\r\n\r\n|Parameter|Description|\r\n|--- |--- |\r\n|type|note type as per the practice management system|"
+							},
+							"response": [
+								{
+									"id": "8cbc8d90-8c25-4d9b-85a8-627589b7b985",
+									"name": "request",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{url}}/note_types?request_key={{request_key}}",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"note_types"
+											],
+											"query": [
+												{
+													"key": "request_key",
+													"value": "{{request_key}}"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"name": "Access-Control-Allow-Headers",
+											"key": "Access-Control-Allow-Headers",
+											"value": "accept, authorization, Content-Type, X-Session-Id",
+											"description": ""
+										},
+										{
+											"name": "Access-Control-Allow-Methods",
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+											"description": ""
+										},
+										{
+											"name": "Access-Control-Allow-Origin",
+											"key": "Access-Control-Allow-Origin",
+											"value": "*",
+											"description": ""
+										},
+										{
+											"name": "Cache-Control",
+											"key": "Cache-Control",
+											"value": "private",
+											"description": ""
+										},
+										{
+											"name": "Connection",
+											"key": "Connection",
+											"value": "keep-alive",
+											"description": ""
+										},
+										{
+											"name": "Content-Length",
+											"key": "Content-Length",
+											"value": "888",
+											"description": ""
+										},
+										{
+											"name": "Content-Type",
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": ""
+										},
+										{
+											"name": "Date",
+											"key": "Date",
+											"value": "Mon, 24 Apr 2017 12:03:40 GMT",
+											"description": ""
+										},
+										{
+											"name": "Server",
+											"key": "Server",
+											"value": "Microsoft-IIS/8.5",
+											"description": ""
+										},
+										{
+											"name": "X-AspNet-Version",
+											"key": "X-AspNet-Version",
+											"value": "4.0.30319",
+											"description": ""
+										},
+										{
+											"name": "X-Powered-By",
+											"key": "X-Powered-By",
+											"value": "ASP.NET",
+											"description": ""
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "[\r\n\t{\r\n\t\t\"offset\": \"0\",\r\n\t\t\"limit\": \"2\",\r\n\t\t\"total_count\": \"7\",\r\n\t\t\"execution_time\": \"16\",\r\n\t\t\"pagination\": {\r\n\t\t\t\"first\": \"https://api.sikkasoft.com/v2/note_types?offset=0&limit=2\",\r\n\t\t\t\"previous\": \"\",\r\n\t\t\t\"current\": \"https://api.sikkasoft.com/v2/note_types?offset=0&limit=2\",\r\n\t\t\t\"next\": \"https://api.sikkasoft.com/v2/note_types?offset=1&limit=2\",\r\n\t\t\t\"last\": \"https://api.sikkasoft.com/v2/note_types?offset=3&limit=2\"\r\n\t\t},\r\n\t\t\"items\": [\r\n\t\t\t{\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/note_types/Treatment note\",\r\n\t\t\t\t\"type\": \"Treatment note\",\r\n\t\t\t\t\"item\": \"\",\r\n\t\t\t\t\"description\": \"\",\r\n\t\t\t\t\"practice_id\": \"1\",\r\n\t\t\t\t\"practice\": {\r\n\t\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1/note_types/Service note\",\r\n\t\t\t\t\"type\": \"Service note\",\r\n\t\t\t\t\"item\": \"\",\r\n\t\t\t\t\"description\": \"\",\r\n\t\t\t\t\"practice_id\": \"1\",\r\n\t\t\t\t\"practice\": {\r\n\t\t\t\t\t\"href\": \"https://api.sikkasoft.com/v2/practices/1\"\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t]\r\n\t}\r\n]\r\n"
+								}
+							]
+						},
+						{
 							"name": "patient_documents",
 							"id": "05ab30d6-96fa-4ccb-9513-065b717c3399",
 							"protocolProfileBehavior": {
