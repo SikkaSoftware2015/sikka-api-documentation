@@ -2133,7 +2133,7 @@
 							"response": [
 								{
 									"id": "8cbc8d90-8c25-4d9b-85a8-627589b7b985",
-									"name": "request",
+									"name": "note_types",
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
