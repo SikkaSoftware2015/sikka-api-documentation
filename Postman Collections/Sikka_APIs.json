@@ -325,7 +325,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/appointments",
-								"description": "Returns appointments data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### appointment_sr_no `optional`\n\n> appointment serial number from appointments \n  \n\n###### pracitce_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> guarantor id in practice management system \n  \n\n###### guarantor_id `optional`\n\n> guarantor id in practice management system"
+								"description": "Returns appointments data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### appointment_sr_no `optional`\n\n> appointment serial number from appointments \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> guarantor id in practice management system \n  \n\n###### guarantor_id `optional`\n\n> guarantor id in practice management system"
 							},
 							"response": [
 								{
@@ -381,7 +381,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/accounts_receivables",
-								"description": "Returns account receivables details from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### pracitce_id ```optional```\r\n> practice id of office \r\n###### guarantor_id ```optional```\r\n> guarantor id in practice management system"
+								"description": "Returns account receivables details from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### practice_id ```optional```\r\n> practice id of office \r\n###### guarantor_id ```optional```\r\n> guarantor id in practice management system"
 							},
 							"response": [
 								{
@@ -416,7 +416,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/patients",
-								"description": "Returns list of patients in practice\n\n---\n\n###### Parameters\n\n###### email `optional`\n\n> Email id.\n\n###### pracitce_id `optional`\n\n> Practice ID of office\n\n###### patient_id `optional`\n\n> Patient ID as per the practice management system\n\n###### firstname `optional`\n\n> First name of patient\n\n###### lastname `optional`\n\n> Last name of patient\n\n###### first_visit `optional`\n\n> First Visit\n\n###### last_visit `optional`\n\n> Last Visit\n\n###### cell `optional`\n\n> Cell Number\n\n###### search `optional`\n\n> Search patient by firstname , lastname , email , middlename, city, state, zipcode, homephone, workphone, cell\n\n###### status `optional`\n\n> Status of patient\n\n###### phone `optional`\n\n> Phone Number\n\n###### SortBy\n\n###### patient_id `default`\n\n> Patient ID as per the practice management system.\n\n###### firstname\n\n> First Name as per the practice management system.\n\n###### lastname\n\n> Last Name as per the practice management system.\n\n###### zipcode\n\n> Zip Code of patient."
+								"description": "Returns list of patients in practice\n\n---\n\n###### Parameters\n\n###### email `optional`\n\n> Email id.\n\n###### practice_id `optional`\n\n> Practice ID of office\n\n###### patient_id `optional`\n\n> Patient ID as per the practice management system\n\n###### firstname `optional`\n\n> First name of patient\n\n###### lastname `optional`\n\n> Last name of patient\n\n###### first_visit `optional`\n\n> First Visit\n\n###### last_visit `optional`\n\n> Last Visit\n\n###### cell `optional`\n\n> Cell Number\n\n###### search `optional`\n\n> Search patient by firstname , lastname , email , middlename, city, state, zipcode, homephone, workphone, cell\n\n###### status `optional`\n\n> Status of patient\n\n###### phone `optional`\n\n> Phone Number\n\n###### SortBy\n\n###### patient_id `default`\n\n> Patient ID as per the practice management system.\n\n###### firstname\n\n> First Name as per the practice management system.\n\n###### lastname\n\n> Last Name as per the practice management system.\n\n###### zipcode\n\n> Zip Code of patient."
 							},
 							"response": [
 								{
@@ -453,7 +453,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/veterinary_patients",
-								"description": "Returns list of patients in practice\n\n---\n\n###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n###### Parameters\n\n###### email `optional`\n\n> Email id.\n\n###### pracitce_id `optional`\n\n> Practice ID of office\n\n###### patient_id `optional`\n\n> Patient ID as per the practice management system\n\n###### firstname `optional`\n\n> First name of patient\n\n###### lastname `optional`\n\n> Last name of patient\n\n###### first_visit `optional`\n\n> First Visit\n\n###### last_visit `optional`\n\n> Last Visit\n\n###### cell `optional`\n\n> Cell Number\n\n###### search `optional`\n\n> Search patient by firstname , lastname , email , middlename, city, state, zipcode, homephone, workphone, cell\n\n###### status `optional`\n\n> Status of patient\n\n###### phone `optional`\n\n> Phone Number\n\n###### microchip `optional`\n\n> Microchip ID\n\n###### rabies `optional`\n\n> Rabies ID\n\n###### petname `optional`\n\n> Pet name\n\n###### SortBy\n\n###### patient_id `default`\n\n> Patient ID as per the practice management system.\n\n###### firstname\n\n> First Name as per the practice management system.\n\n###### lastname\n\n> Last Name as per the practice management system.\n\n###### zipcode\n\n> Zip Code of patient."
+								"description": "Returns list of patients in practice\n\n---\n\n###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n###### Parameters\n\n###### email `optional`\n\n> Email id.\n\n###### practice_id `optional`\n\n> Practice ID of office\n\n###### patient_id `optional`\n\n> Patient ID as per the practice management system\n\n###### firstname `optional`\n\n> First name of patient\n\n###### lastname `optional`\n\n> Last name of patient\n\n###### first_visit `optional`\n\n> First Visit\n\n###### last_visit `optional`\n\n> Last Visit\n\n###### cell `optional`\n\n> Cell Number\n\n###### search `optional`\n\n> Search patient by firstname , lastname , email , middlename, city, state, zipcode, homephone, workphone, cell\n\n###### status `optional`\n\n> Status of patient\n\n###### phone `optional`\n\n> Phone Number\n\n###### microchip `optional`\n\n> Microchip ID\n\n###### rabies `optional`\n\n> Rabies ID\n\n###### petname `optional`\n\n> Pet name\n\n###### SortBy\n\n###### patient_id `default`\n\n> Patient ID as per the practice management system.\n\n###### firstname\n\n> First Name as per the practice management system.\n\n###### lastname\n\n> Last Name as per the practice management system.\n\n###### zipcode\n\n> Zip Code of patient."
 							},
 							"response": [
 								{
@@ -490,7 +490,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://apiv4.sikkasoft.com/practices",
-								"description": "Return list of all practices\n****\n###### Parameters \n###### request_key ```Required```  \n> A Valid 32 characters alpha-numeric request key\n###### pracitce_id ```optional```\n> practice id of office"
+								"description": "Return list of all practices\n****\n###### Parameters \n###### request_key ```Required```  \n> A Valid 32 characters alpha-numeric request key\n###### practice_id ```optional```\n> practice id of office"
 							},
 							"response": [
 								{
@@ -592,7 +592,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/transactions",
-								"description": "Returns transactions data from practice\n****\n###### Parameters \n###### request_key ```Required```  \n> A Valid 32 characters alpha-numeric request key\n###### transaction_sr_no ```optional```\n> transactions serial number from transactions \n###### pracitce_id ```optional```\n> practice id of office \n###### patient_id ```optional```\n> guarantor id in practice management system \n###### guarantor_id ```optional```\n> guarantor id in practice management system\n###### provider_id ```optional```\n> provider id in practice management system\n###### claim_sr_no ```optional```\n> claim serial number in practice management system\n###### startdate ```optional```\n> format: yyyy-mm-dd, start date\n###### enddate ```optional```\n> format: yyyy-mm-dd, end date\n###### procedure_code ```optional```\n> Procedure code as per practice management system\n###### transaction_type ```optional```\n> Transaction Type as per practice management system\n###### payment_type```optional```\n> Payment Type as per practice management system\n###### invoice_number ```optional```\n> Invoice Number as per practice management system\n###### date_filter_on```optional```\n> Field name on which stardate and enddate filter will be applied, valid values are: transaction_entry_date, last_updated_by or transaction_date-default"
+								"description": "Returns transactions data from practice\n****\n###### Parameters \n###### request_key ```Required```  \n> A Valid 32 characters alpha-numeric request key\n###### transaction_sr_no ```optional```\n> transactions serial number from transactions \n###### practice_id ```optional```\n> practice id of office \n###### patient_id ```optional```\n> guarantor id in practice management system \n###### guarantor_id ```optional```\n> guarantor id in practice management system\n###### provider_id ```optional```\n> provider id in practice management system\n###### claim_sr_no ```optional```\n> claim serial number in practice management system\n###### startdate ```optional```\n> format: yyyy-mm-dd, start date\n###### enddate ```optional```\n> format: yyyy-mm-dd, end date\n###### procedure_code ```optional```\n> Procedure code as per practice management system\n###### transaction_type ```optional```\n> Transaction Type as per practice management system\n###### payment_type```optional```\n> Payment Type as per practice management system\n###### invoice_number ```optional```\n> Invoice Number as per practice management system\n###### date_filter_on```optional```\n> Field name on which stardate and enddate filter will be applied, valid values are: transaction_entry_date, last_updated_by or transaction_date-default"
 							},
 							"response": [
 								{
@@ -627,7 +627,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/guarantors",
-								"description": "Returns guarantors data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### pracitce_id ```optional```\r\n> practice id of office \r\n###### patient_id ```optional```\r\n> guarantor id in practice management system \r\n###### guarantor_id ```optional```\r\n> guarantor id in practice management system"
+								"description": "Returns guarantors data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### practice_id ```optional```\r\n> practice id of office \r\n###### patient_id ```optional```\r\n> guarantor id in practice management system \r\n###### guarantor_id ```optional```\r\n> guarantor id in practice management system"
 							},
 							"response": [
 								{
@@ -662,7 +662,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/contact_details",
-								"description": "Returns contact details of patients from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### pracitce_id ```optional```\r\n> practice id of office \r\n###### patient_id ```optional```\r\n> patient id in practice management system"
+								"description": "Returns contact details of patients from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### practice_id ```optional```\r\n> practice id of office \r\n###### patient_id ```optional```\r\n> patient id in practice management system"
 							},
 							"response": [
 								{
@@ -760,7 +760,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/providers",
-								"description": "Returns provider details from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### pracitce_id ```optional```\r\n> practice id of office \r\n###### provider_id ```optional```\r\n> provider id in practice management system"
+								"description": "Returns provider details from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### practice_id ```optional```\r\n> practice id of office \r\n###### provider_id ```optional```\r\n> provider id in practice management system"
 							},
 							"response": [
 								{
@@ -814,7 +814,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns guarnators details from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### pracitce_id ```optional```\r\n> practice id of office \r\n###### guarantor_id ```optional```\r\n> guarantor id in practice management system"
+								"description": "Returns guarnators details from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### practice_id ```optional```\r\n> practice id of office \r\n###### guarantor_id ```optional```\r\n> guarantor id in practice management system"
 							},
 							"response": [
 								{
@@ -849,7 +849,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns practice variables like appointment status , patient status from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### pracitce_id ```optional```\r\n> practice id of office \r\n"
+								"description": "Returns practice variables like appointment status , patient status from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### practice_id ```optional```\r\n> practice id of office \r\n"
 							},
 							"response": [
 								{
@@ -884,7 +884,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/claims",
-								"description": "Returns claim details from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### pracitce_id ```optional```\r\n> practice id of office \r\n###### patient_id ```optional```\r\n> patient id in practice management system\r\n###### guarantor_id ```optional```\r\n> guarantor id in practice management system\r\n###### provider_id ```optional```\r\n> provider id in practice management system\r\n###### claim_sr_no ```optional```\r\n> claim serial number in practice management system"
+								"description": "Returns claim details from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### practice_id ```optional```\r\n> practice id of office \r\n###### patient_id ```optional```\r\n> patient id in practice management system\r\n###### guarantor_id ```optional```\r\n> guarantor id in practice management system\r\n###### provider_id ```optional```\r\n> provider id in practice management system\r\n###### claim_sr_no ```optional```\r\n> claim serial number in practice management system"
 							},
 							"response": [
 								{
@@ -919,7 +919,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/treatment_plans",
-								"description": "Returns treatment plans data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### treatment_plan_sr_no ```optional```\r\n> treatment plan serial number from appointments \r\n###### pracitce_id ```optional```\r\n> practice id of office \r\n###### patient_id ```optional```\r\n> patient id in practice management system \r\n###### guarantor_id ```optional```\r\n> guarantor id in practice management system\r\n###### startdate ```optional```\r\n> treatment plans start date in practice management system\r\n###### enddate ```optional```\r\n> treatment plans end date in practice management system"
+								"description": "Returns treatment plans data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### treatment_plan_sr_no ```optional```\r\n> treatment plan serial number from appointments \r\n###### practice_id ```optional```\r\n> practice id of office \r\n###### patient_id ```optional```\r\n> patient id in practice management system \r\n###### guarantor_id ```optional```\r\n> guarantor id in practice management system\r\n###### startdate ```optional```\r\n> treatment plans start date in practice management system\r\n###### enddate ```optional```\r\n> treatment plans end date in practice management system"
 							},
 							"response": [
 								{
@@ -974,7 +974,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/insurance_accounts_receivables",
-								"description": "Returns insurance accounts receivables data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### pracitce_id ```optional```\r\n> practice id of office \r\n###### patient_id ```optional```\r\n> guarantor id in practice management system \r\n"
+								"description": "Returns insurance accounts receivables data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### practice_id ```optional```\r\n> practice id of office \r\n###### patient_id ```optional```\r\n> guarantor id in practice management system \r\n"
 							},
 							"response": [
 								{
@@ -1016,7 +1016,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/insurance_companies",
-								"description": "Returns insurance company detail from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### insurance_company_id ```optional```\r\n> insurance company id from appointments \r\n###### pracitce_id ```optional```\r\n> practice id of office "
+								"description": "Returns insurance company detail from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### insurance_company_id ```optional```\r\n> insurance company id from appointments \r\n###### practice_id ```optional```\r\n> practice id of office "
 							},
 							"response": [
 								{
@@ -1052,7 +1052,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/procedure_codes",
-								"description": "Returns procedure codes data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### procedure_code ```optional```\r\n> procedure code from appointments \r\n###### pracitce_id ```optional```\r\n> practice id of office "
+								"description": "Returns procedure codes data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### procedure_code ```optional```\r\n> procedure code from appointments \r\n###### practice_id ```optional```\r\n> practice id of office "
 							},
 							"response": [
 								{
@@ -1087,7 +1087,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/payment_types",
-								"description": "Returns payment types from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### pracitce_id `optional`\n\n> practice id of office \n  \n\n###### code `optional`\n\n> payment type code in practice management system \n  \n\n###### customer_id `optional`\n\n> customer id of office \n  \n\n###### is_adjustment_type `optional`\n\n> value should be true. it will return Credit Adjustment Types only. \n  \n\n###### is_debit_adjustment_type `optional`\n\n> value should be true. it will return Debit Adjustment Types only. \n  \n\n###### is_insurance_type `optional`\n\n> value should be true. it will return Insurance Payment Types only. \n  \n\n###### are_credit_card_details_required `optional`\n\n> value should be true. it will return Payment Types which require credit card details for POST transaction for Planet DDS PMS only."
+								"description": "Returns payment types from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### code `optional`\n\n> payment type code in practice management system \n  \n\n###### customer_id `optional`\n\n> customer id of office \n  \n\n###### is_adjustment_type `optional`\n\n> value should be true. it will return Credit Adjustment Types only. \n  \n\n###### is_debit_adjustment_type `optional`\n\n> value should be true. it will return Debit Adjustment Types only. \n  \n\n###### is_insurance_type `optional`\n\n> value should be true. it will return Insurance Payment Types only. \n  \n\n###### are_credit_card_details_required `optional`\n\n> value should be true. it will return Payment Types which require credit card details for POST transaction for Planet DDS PMS only."
 							},
 							"response": [
 								{
@@ -1122,7 +1122,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/payment_plans",
-								"description": "Returns payment plans data from practice if practice management system storing payment plans\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### agreement_id ```optional```\r\n> agreement id of payment plans \r\n###### pracitce_id ```optional```\r\n> practice id of office \r\n###### patient_id ```optional```\r\n> guarantor id in practice management system \r\n###### guarantor_id ```optional```\r\n> guarantor id in practice management system"
+								"description": "Returns payment plans data from practice if practice management system storing payment plans\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### agreement_id ```optional```\r\n> agreement id of payment plans \r\n###### practice_id ```optional```\r\n> practice id of office \r\n###### patient_id ```optional```\r\n> guarantor id in practice management system \r\n###### guarantor_id ```optional```\r\n> guarantor id in practice management system"
 							},
 							"response": [
 								{
@@ -1157,7 +1157,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/reminders",
-								"description": "Returns reminders data from practice. If remidners has been automatic setup in practice management system.\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### id ```optional```\r\n> reminder id of reminders data \r\n###### appointment_sr_no ```optional```\r\n> appointment serial number from appointments \r\n###### pracitce_id ```optional```\r\n> practice id of office \r\n###### patient_id ```optional```\r\n> guarantor id in practice management system \r\n###### guarantor_id ```optional```\r\n> guarantor id in practice management system\r\n###### provider_id ```optional```\r\n> provider id in practice management system"
+								"description": "Returns reminders data from practice. If remidners has been automatic setup in practice management system.\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### id ```optional```\r\n> reminder id of reminders data \r\n###### appointment_sr_no ```optional```\r\n> appointment serial number from appointments \r\n###### practice_id ```optional```\r\n> practice id of office \r\n###### patient_id ```optional```\r\n> guarantor id in practice management system \r\n###### guarantor_id ```optional```\r\n> guarantor id in practice management system\r\n###### provider_id ```optional```\r\n> provider id in practice management system"
 							},
 							"response": [
 								{
@@ -1192,7 +1192,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/patient_contract_roll_charges",
-								"description": "Returns patient contracts roll charges data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### pracitce_id ```optional```\r\n> practice id of office \r\n###### patient_id ```optional```\r\n> guarantor id in practice management system \r\n###### guarantor_id ```optional```\r\n> guarantor id in practice management system\r\n###### provider_id ```optional```\r\n> provider id in practice management system"
+								"description": "Returns patient contracts roll charges data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### practice_id ```optional```\r\n> practice id of office \r\n###### patient_id ```optional```\r\n> guarantor id in practice management system \r\n###### guarantor_id ```optional```\r\n> guarantor id in practice management system\r\n###### provider_id ```optional```\r\n> provider id in practice management system"
 							},
 							"response": [
 								{
@@ -1227,7 +1227,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns patient contract data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### pracitce_id ```optional```\r\n> practice id of office \r\n###### patient_id ```optional```\r\n> guarantor id in practice management system \r\n###### provider_id ```optional```\r\n> provider id in practice management system"
+								"description": "Returns patient contract data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### practice_id ```optional```\r\n> practice id of office \r\n###### patient_id ```optional```\r\n> guarantor id in practice management system \r\n###### provider_id ```optional```\r\n> provider id in practice management system"
 							},
 							"response": [
 								{
@@ -1262,7 +1262,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns fee scheudle data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### pracitce_id ```optional```\r\n> practice id of office \r\n###### fee_no ```optional```\r\n> fee number in practice management system \r\n###### procedure_code ```optional```\r\n> procedure code in practice management system"
+								"description": "Returns fee scheudle data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### practice_id ```optional```\r\n> practice id of office \r\n###### fee_no ```optional```\r\n> fee number in practice management system \r\n###### procedure_code ```optional```\r\n> procedure code in practice management system"
 							},
 							"response": [
 								{
@@ -1297,7 +1297,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns appointments data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### referral_type ```optional```\r\n> referral type from appointments \r\n###### pracitce_id ```optional```\r\n> practice id of office \r\n###### patient_id ```optional```\r\n> guarantor id in practice management system \r\n###### referral_id ```optional```\r\n> referral id in practice management system"
+								"description": "Returns appointments data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### referral_type ```optional```\r\n> referral type from appointments \r\n###### practice_id ```optional```\r\n> practice id of office \r\n###### patient_id ```optional```\r\n> guarantor id in practice management system \r\n###### referral_id ```optional```\r\n> referral id in practice management system"
 							},
 							"response": [
 								{
@@ -1332,7 +1332,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns appointments status data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### pracitce_id ```optional```\r\n> practice id of office \r\n"
+								"description": "Returns appointments status data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### practice_id ```optional```\r\n> practice id of office \r\n"
 							},
 							"response": [
 								{
@@ -1361,7 +1361,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns perio charts data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### pracitce_id ```optional```\r\n> practice id of office \r\n###### patient_id ```optional```"
+								"description": "Returns perio charts data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### practice_id ```optional```\r\n> practice id of office \r\n###### patient_id ```optional```"
 							},
 							"response": [
 								{
@@ -1396,7 +1396,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns patient status data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### pracitce_id ```optional```\r\n> practice id of office "
+								"description": "Returns patient status data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### practice_id ```optional```\r\n> practice id of office "
 							},
 							"response": [
 								{
@@ -1431,7 +1431,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### pracitce_id ```optional```\r\n> practice id of office \r\n###### id ```optional```\r\n> clinical condition id in practice management system "
+								"description": "###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### practice_id ```optional```\r\n> practice id of office \r\n###### id ```optional```\r\n> clinical condition id in practice management system "
 							},
 							"response": [
 								{
@@ -1466,7 +1466,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/guarantor_accounts",
-								"description": "###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### pracitce_id ```optional```\r\n> practice id of office \r\n###### guarantor_id ```optional```\r\n> guarantor id in practice management system \r\n###### provider_id ```optional```\r\n> provider id in practice management system "
+								"description": "###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### practice_id ```optional```\r\n> practice id of office \r\n###### guarantor_id ```optional```\r\n> guarantor id in practice management system \r\n###### provider_id ```optional```\r\n> provider id in practice management system "
 							},
 							"response": [
 								{
@@ -1501,7 +1501,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/insurance_company_details",
-								"description": "Returns insurnace company details from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### pracitce_id ```optional```\r\n> practice id of office \r\n###### insurance_company_id ```optional```\r\n> insurance company id in practice management system"
+								"description": "Returns insurnace company details from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### practice_id ```optional```\r\n> practice id of office \r\n###### insurance_company_id ```optional```\r\n> insurance company id in practice management system"
 							},
 							"response": [
 								{
@@ -1536,7 +1536,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/treatment_plan_statuses",
-								"description": "Returns treatment plans status data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### pracitce_id ```optional```\r\n> practice id of office "
+								"description": "Returns treatment plans status data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### practice_id ```optional```\r\n> practice id of office "
 							},
 							"response": [
 								{
@@ -1571,7 +1571,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/prescriptions",
-								"description": "Returns prescriptions data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### prescription_id ```optional```\r\n> Prescription id from appointments \r\n###### pracitce_id ```optional```\r\n> practice id of office \r\n###### patient_id ```optional```\r\n> guarantor id in practice management system \r\n###### provider_id ```optional```\r\n> provider id in practice management system"
+								"description": "Returns prescriptions data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### prescription_id ```optional```\r\n> Prescription id from appointments \r\n###### practice_id ```optional```\r\n> practice id of office \r\n###### patient_id ```optional```\r\n> guarantor id in practice management system \r\n###### provider_id ```optional```\r\n> provider id in practice management system"
 							},
 							"response": [
 								{
@@ -1606,7 +1606,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/insurance_plan_coverage",
-								"description": "Returns insurance plan and coverage data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### insurance_company_id ```optional```\r\n> insurance company id from appointments \r\n###### pracitce_id ```optional```\r\n> practice id of office "
+								"description": "Returns insurance plan and coverage data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### insurance_company_id ```optional```\r\n> insurance company id from appointments \r\n###### practice_id ```optional```\r\n> practice id of office "
 							},
 							"response": [
 								{
@@ -1641,7 +1641,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/employers",
-								"description": "Returns employers data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### employer_id ```optional```\r\n> employer id from appointments \r\n###### pracitce_id ```optional```\r\n> practice id of office "
+								"description": "Returns employers data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### employer_id ```optional```\r\n> employer id from appointments \r\n###### practice_id ```optional```\r\n> practice id of office "
 							},
 							"response": [
 								{
@@ -1676,7 +1676,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/drugs",
-								"description": "Returns drugs data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### drug_id ```optional```\r\n> drug id from appointments \r\n###### pracitce_id ```optional```\r\n> practice id of office "
+								"description": "Returns drugs data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### drug_id ```optional```\r\n> drug id from appointments \r\n###### practice_id ```optional```\r\n> practice id of office "
 							},
 							"response": [
 								{
@@ -1717,7 +1717,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/claim_descriptions",
-								"description": "Returns claims data from practice\n\n* * *\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n###### claim_description_id `optional`\n\n> claim_description_id\n\n###### pracitce_id `optional`\n\n> practice id of office"
+								"description": "Returns claims data from practice\n\n* * *\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n###### claim_description_id `optional`\n\n> claim_description_id\n\n###### practice_id `optional`\n\n> practice id of office"
 							},
 							"response": [
 								{
@@ -1752,7 +1752,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/insurance_estimate",
-								"description": "Returns insurance estimate data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### guarantor_id ```optional```\r\n> guarantor id from appointments \r\n###### pracitce_id ```optional```\r\n> practice id of office"
+								"description": "Returns insurance estimate data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### guarantor_id ```optional```\r\n> guarantor id from appointments \r\n###### practice_id ```optional```\r\n> practice id of office"
 							},
 							"response": [
 								{
@@ -1787,7 +1787,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns lab cases data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### pracitce_id ```optional```\r\n> practice id of office"
+								"description": "Returns lab cases data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### practice_id ```optional```\r\n> practice id of office"
 							},
 							"response": [
 								{
@@ -1822,7 +1822,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns lab details from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### lab_id ```optional```\r\n> lab id from lab details \r\n###### pracitce_id ```optional```\r\n> practice id of office"
+								"description": "Returns lab details from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### lab_id ```optional```\r\n> lab id from lab details \r\n###### practice_id ```optional```\r\n> practice id of office"
 							},
 							"response": [
 								{
@@ -1857,7 +1857,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "\r\nReturns lab panels information from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### lab_panel_id ```optional```\r\n> lab panel id from appointments \r\n###### pracitce_id ```optional```\r\n> practice id of office"
+								"description": "\r\nReturns lab panels information from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### lab_panel_id ```optional```\r\n> lab panel id from appointments \r\n###### practice_id ```optional```\r\n> practice id of office"
 							},
 							"response": [
 								{
@@ -2040,7 +2040,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns patient medical history from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### patient_id ```optional```\r\n> patient id from practice \r\n###### pracitce_id ```optional```\r\n> practice id of office"
+								"description": "Returns patient medical history from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### patient_id ```optional```\r\n> patient id from practice \r\n###### practice_id ```optional```\r\n> practice id of office"
 							},
 							"response": [
 								{
@@ -2077,7 +2077,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns patient medical notes from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### patient_id ```optional```\r\n> patient id from practice\r\n###### pracitce_id ```optional```\r\n> practice id of office"
+								"description": "Returns patient medical notes from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### patient_id ```optional```\r\n> patient id from practice\r\n###### practice_id ```optional```\r\n> practice id of office"
 							},
 							"response": [
 								{
@@ -2114,7 +2114,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns note types from practice\n****\n###### Parameters \n###### request_key ```Required```  \n> A Valid 32 characters alpha-numeric request key\n###### pracitce_id ```optional```\n> practice id of office"
+								"description": "Returns note types from practice\n****\n###### Parameters \n###### request_key ```Required```  \n> A Valid 32 characters alpha-numeric request key\n###### practice_id ```optional```\n> practice id of office"
 							},
 							"response": [
 								{
@@ -2218,7 +2218,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns patient documents path from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### patient_id ```optional```\r\n> patient id from practice\r\n###### pracitce_id ```optional```\r\n> practice id of office"
+								"description": "Returns patient documents path from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### patient_id ```optional```\r\n> patient id from practice\r\n###### practice_id ```optional```\r\n> practice id of office"
 							},
 							"response": [
 								{
@@ -2255,7 +2255,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns information about patient's existing services from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### patient_id ```optional```\r\n> patient id from practice\r\n###### pracitce_id ```optional```\r\n> practice id of office"
+								"description": "Returns information about patient's existing services from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### patient_id ```optional```\r\n> patient id from practice\r\n###### practice_id ```optional```\r\n> practice id of office"
 							},
 							"response": [
 								{
@@ -2290,7 +2290,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns patient images from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### patient_id ```optional```\r\n> patient id from practice\r\n###### pracitce_id ```optional```\r\n> practice id of office"
+								"description": "Returns patient images from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### patient_id ```optional```\r\n> patient id from practice\r\n###### practice_id ```optional```\r\n> practice id of office"
 							},
 							"response": []
 						},
@@ -2304,7 +2304,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns patient's ssn information from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### patient_id ```optional```\r\n> patient id from practice\r\n###### pracitce_id ```optional```\r\n> practice id of office"
+								"description": "Returns patient's ssn information from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### patient_id ```optional```\r\n> patient id from practice\r\n###### practice_id ```optional```\r\n> practice id of office"
 							},
 							"response": [
 								{
@@ -2341,7 +2341,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns payors inforamtion from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### insurance_company_id ```optional```\r\n> insurance company id from practice\r\n###### pracitce_id ```optional```\r\n> practice id of office"
+								"description": "Returns payors inforamtion from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### insurance_company_id ```optional```\r\n> insurance company id from practice\r\n###### practice_id ```optional```\r\n> practice id of office"
 							},
 							"response": [
 								{
@@ -2378,7 +2378,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns pet documents data path from veterinary practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### patient_id ```optional```\r\n> patient id from practice ( in case of veterinary , this is pet id)\r\n###### pracitce_id ```optional```\r\n> practice id of office"
+								"description": "Returns pet documents data path from veterinary practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### patient_id ```optional```\r\n> patient id from practice ( in case of veterinary , this is pet id)\r\n###### practice_id ```optional```\r\n> practice id of office"
 							},
 							"response": []
 						},
@@ -2392,7 +2392,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns procedure codes category data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### pracitce_id ```optional```\r\n> practice id of office"
+								"description": "Returns procedure codes category data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### practice_id ```optional```\r\n> practice id of office"
 							},
 							"response": [
 								{
@@ -2429,7 +2429,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns proceudre categories with procdure codes , if procedure codes are mapped with category in practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### pracitce_id ```optional```\r\n> practice id of office"
+								"description": "Returns proceudre categories with procdure codes , if procedure codes are mapped with category in practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### practice_id ```optional```\r\n> practice id of office"
 							},
 							"response": []
 						},
@@ -2443,7 +2443,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns purchase orders data from practice ( mostly applicable to veterinary practice)\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### vendor_id ```optional```\r\n> vendor id from practice\r\n###### pracitce_id ```optional```\r\n> practice id of office"
+								"description": "Returns purchase orders data from practice ( mostly applicable to veterinary practice)\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### vendor_id ```optional```\r\n> vendor id from practice\r\n###### practice_id ```optional```\r\n> practice id of office"
 							},
 							"response": [
 								{
@@ -2480,7 +2480,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/shelter_patients",
-								"description": "Returns shelter patients data from practice ( applicable to veterinary practices. Shelter pets referred as patients here)\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### patient_id ```optional```\r\n> patient id from practice\r\n###### pracitce_id ```optional```\r\n> practice id of office"
+								"description": "Returns shelter patients data from practice ( applicable to veterinary practices. Shelter pets referred as patients here)\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### patient_id ```optional```\r\n> patient id from practice\r\n###### practice_id ```optional```\r\n> practice id of office"
 							},
 							"response": [
 								{
@@ -2515,7 +2515,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/subscribers",
-								"description": "Returns subsribers data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### patient_id ```optional```\r\n> patient id from practice\r\n###### pracitce_id ```optional```\r\n> practice id of office\r\n###### subscriber_id ```optional```\r\n> subscriber id of office"
+								"description": "Returns subsribers data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### patient_id ```optional```\r\n> patient id from practice\r\n###### practice_id ```optional```\r\n> practice id of office\r\n###### subscriber_id ```optional```\r\n> subscriber id of office"
 							},
 							"response": [
 								{
@@ -2552,7 +2552,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/treatment_plan_phases",
-								"description": "Returns treatment plan phases information from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### pracitce_id ```optional```\r\n> practice id of office"
+								"description": "Returns treatment plan phases information from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### practice_id ```optional```\r\n> practice id of office"
 							},
 							"response": [
 								{
@@ -2587,7 +2587,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/vendors",
-								"description": "Returns vendors data from practice (applicable to veterinary)\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### pracitce_id ```optional```\r\n> practice id of office\r\n###### vendor_code ```optional```\r\n> vendor code from office"
+								"description": "Returns vendors data from practice (applicable to veterinary)\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### practice_id ```optional```\r\n> practice id of office\r\n###### vendor_code ```optional```\r\n> vendor code from office"
 							},
 							"response": [
 								{
@@ -2622,7 +2622,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/veterinary_clinics",
-								"description": "Returns veterinary clinic information\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### pracitce_id ```optional```\r\n> practice id of office"
+								"description": "Returns veterinary clinic information\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### practice_id ```optional```\r\n> practice id of office"
 							},
 							"response": [
 								{
@@ -2681,7 +2681,7 @@
 										}
 									]
 								},
-								"description": "Returns insurance eligibility\n\n* * *\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n###### pracitce_id `optional`\n\n> practice id of office\n\n###### patient_id `optional`\n\n> patient id of office\n\n###### member id `optional`\n\n> member id of office"
+								"description": "Returns insurance eligibility\n\n* * *\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n###### practice_id `optional`\n\n> practice id of office\n\n###### patient_id `optional`\n\n> patient id of office\n\n###### member id `optional`\n\n> member id of office"
 							},
 							"response": [
 								{
@@ -2791,7 +2791,7 @@
 										}
 									]
 								},
-								"description": "Return the list of optometry products\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n###### pracitce_id `optional`\n\n> practice id of office\n\n###### product_id `optional`\n\n> product id of office"
+								"description": "Return the list of optometry products\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n###### practice_id `optional`\n\n> practice id of office\n\n###### product_id `optional`\n\n> product id of office"
 							},
 							"response": [
 								{
@@ -2931,7 +2931,7 @@
 										}
 									]
 								},
-								"description": "Return the lab test details\n\n###### Parameters\n\n###### pracitce_id `optional`\n\n> practice id of office\n\n###### category `optional`\n\n> category"
+								"description": "Return the lab test details\n\n###### Parameters\n\n###### practice_id `optional`\n\n> practice id of office\n\n###### category `optional`\n\n> category"
 							},
 							"response": [
 								{
@@ -3041,7 +3041,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/patient_documents_display",
-								"description": "Return patient documents stored in practice management systems. You can download actual document from link provided in API response. Link will be valid 24 hours.\n\n###### Parameters\n\n###### pracitce_id `optional`\n\n> practice id of office\n\n###### patient_id `optional`\n\n> patient id of office"
+								"description": "Return patient documents stored in practice management systems. You can download actual document from link provided in API response. Link will be valid 24 hours.\n\n###### Parameters\n\n###### practice_id `optional`\n\n> practice id of office\n\n###### patient_id `optional`\n\n> patient id of office"
 							},
 							"response": [
 								{
