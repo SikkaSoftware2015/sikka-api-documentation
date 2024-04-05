@@ -3300,6 +3300,98 @@
 									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"xx\",\n    \"total_count\": \"xxx\",\n    \"execution_time\": \"xx\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/suspended_credit_transactions?offset=0&limit=xx\",\n        \"previous\": \"\",\n        \"current\": \"https://api.sikkasoft.com/v4/suspended_credit_transactions?offset=0&limit=xx\",\n        \"next\": \"\",\n        \"last\": \"https://api.sikkasoft.com/v4/suspended_credit_transactions?offset=0&limit=xx\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/{practice_id}/suspended_credit_transactions/{transaction_sr_no}\",\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/{practice_id}/patients/{patient_id}\",\n            \"patient_id\": \"patient_id\",\n            \"guarantor_id\": \"guarantor_id\",\n            \"practice_id\": \"practice_id\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/{practice_id}\",\n            \"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/{practice_id}/guarantors/{guarantor_id}\",\n            \"transaction_sr_no\": \"transaction_sr_no\",\n            \"transaction_date\": \"transaction_date\",\n            \"procedure_code\": \"procedure_code\",\n            \"procedure_description\": \"procedure_description\",\n            \"amount\": \"amount\",\n            \"transaction_entry_date\": \"transaction_entry_date\",\n            \"claim_sr_no\": \"claim_sr_no\",\n            \"claim_href\": \"https://api.sikkasoft.com/v4/practices/{practice_id}/claims/{claim_sr_no}\",\n            \"created_by\": \"created_by\",\n            \"cust_id\": \"cust_id\",\n            \"do_not_bill_to_dental\": \"do_not_bill_to_dental\",\n            \"bank\": \"bank\"\n        }\n    ]\n}"
 								}
 							]
+						},
+						{
+							"name": "preregistered_appointments",
+							"id": "3ddebff6-40ab-4ce7-b72b-01fb0e2e1df8",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Request-Key",
+										"value": "Request-Key",
+										"type": "text"
+									}
+								],
+								"url": "https://api.sikkasoft.com/v4/preregistered_appointments",
+								"description": "Return patient's suspended credit transactions balance from practice management systems.\n\n###### Parameters\n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> patient id of office \n  \n\n###### guarantor_id `optional`\n\n> guarantor id of office \n  \n\n###### procedure_code `optional`\n\n> procedure code \n  \n\n###### claim_sr_no `optional`\n\n> claim serial number id \n  \n\n###### procedure_description `optional`\n\n> procedure description \n  \n\n###### customer_id `optional`\n\n> customer id description \n  \n\n###### format: yyyy-mm-dd, start date\n\n> startdate `optional` \n  \n\n###### format: yyyy-mm-dd, end date\n\n> enddate `optional` \n  \n\n###### date_filter_on `optional`\n\n> Field name on which stardate and enddate filter will be applied, valid values are: transaction_entry_date or transaction_date-default"
+							},
+							"response": [
+								{
+									"id": "3ddae861-b49c-4d8e-9a3e-e3a0aec969c3",
+									"name": "suspended_credit_transactions",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "Request-Key",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/suspended_credit_transactions"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.18.0 (Ubuntu)"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 10 May 2022 11:12:31 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Request-Key-Expires",
+											"value": "Wed, 11 May 2022 09:12:24 GMT"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "origin"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload;"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"xx\",\n    \"total_count\": \"xxx\",\n    \"execution_time\": \"xx\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/suspended_credit_transactions?offset=0&limit=xx\",\n        \"previous\": \"\",\n        \"current\": \"https://api.sikkasoft.com/v4/suspended_credit_transactions?offset=0&limit=xx\",\n        \"next\": \"\",\n        \"last\": \"https://api.sikkasoft.com/v4/suspended_credit_transactions?offset=0&limit=xx\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/{practice_id}/suspended_credit_transactions/{transaction_sr_no}\",\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/{practice_id}/patients/{patient_id}\",\n            \"patient_id\": \"patient_id\",\n            \"guarantor_id\": \"guarantor_id\",\n            \"practice_id\": \"practice_id\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/{practice_id}\",\n            \"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/{practice_id}/guarantors/{guarantor_id}\",\n            \"transaction_sr_no\": \"transaction_sr_no\",\n            \"transaction_date\": \"transaction_date\",\n            \"procedure_code\": \"procedure_code\",\n            \"procedure_description\": \"procedure_description\",\n            \"amount\": \"amount\",\n            \"transaction_entry_date\": \"transaction_entry_date\",\n            \"claim_sr_no\": \"claim_sr_no\",\n            \"claim_href\": \"https://api.sikkasoft.com/v4/practices/{practice_id}/claims/{claim_sr_no}\",\n            \"created_by\": \"created_by\",\n            \"cust_id\": \"cust_id\",\n            \"do_not_bill_to_dental\": \"do_not_bill_to_dental\",\n            \"bank\": \"bank\"\n        }\n    ]\n}"
+								}
+							]
 						}
 					],
 					"id": "0c1fa096-aa44-4088-aa2b-97a96d612a8e"
