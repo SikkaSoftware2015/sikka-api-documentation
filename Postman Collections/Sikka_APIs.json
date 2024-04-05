@@ -3225,7 +3225,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/suspended_credit_transactions",
-								"description": "Return patient's suspended credit transactions balance from practice management systems.\n\n###### Parameters\n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> patient id of office \n  \n\n###### guarantor_id `optional`\n\n> guarantor id of office   \n\n###### procedure_code `optional`\n\n> procedure code\n\n###### claim_sr_no `optional`\n\n> claim serial number id   \n\n###### procedure_description `optional`\n\n> procedure description   \n\n###### customer_id `optional`\n\n> customer id description   \n\n\n\n###### format: yyyy-mm-dd, start date\n\n> startdate `optional`\n\n###### format: yyyy-mm-dd, end date\n\n> enddate `optional`\n\n###### date_filter_on `optional`\n\n> Field name on which stardate and enddate filter will be applied, valid values are: transaction_entry_date, last_updated_by or transaction_date-default"
+								"description": "Return patient's suspended credit transactions balance from practice management systems.\n\n###### Parameters\n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> patient id of office \n  \n\n###### guarantor_id `optional`\n\n> guarantor id of office \n  \n\n###### procedure_code `optional`\n\n> procedure code \n  \n\n###### claim_sr_no `optional`\n\n> claim serial number id \n  \n\n###### procedure_description `optional`\n\n> procedure description \n  \n\n###### customer_id `optional`\n\n> customer id description \n  \n\n###### format: yyyy-mm-dd, start date\n\n> startdate `optional` \n  \n\n###### format: yyyy-mm-dd, end date\n\n> enddate `optional` \n  \n\n###### date_filter_on `optional`\n\n> Field name on which stardate and enddate filter will be applied, valid values are: transaction_entry_date, last_updated_by or transaction_date-default"
 							},
 							"response": [
 								{
@@ -3240,7 +3240,7 @@
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/patient_balance"
+										"url": "https://api.sikkasoft.com/v4/suspended_credit_transactions"
 									},
 									"status": "OK",
 									"code": 200,
