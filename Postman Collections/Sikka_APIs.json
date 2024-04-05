@@ -3332,7 +3332,7 @@
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/suspended_credit_transactions"
+										"url": "https://api.sikkasoft.com/v4/preregistered_appointments"
 									},
 									"status": "OK",
 									"code": 200,
@@ -3389,7 +3389,7 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"xx\",\n    \"total_count\": \"xxx\",\n    \"execution_time\": \"xx\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/suspended_credit_transactions?offset=0&limit=xx\",\n        \"previous\": \"\",\n        \"current\": \"https://api.sikkasoft.com/v4/suspended_credit_transactions?offset=0&limit=xx\",\n        \"next\": \"\",\n        \"last\": \"https://api.sikkasoft.com/v4/suspended_credit_transactions?offset=0&limit=xx\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/{practice_id}/suspended_credit_transactions/{transaction_sr_no}\",\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/{practice_id}/patients/{patient_id}\",\n            \"patient_id\": \"patient_id\",\n            \"guarantor_id\": \"guarantor_id\",\n            \"practice_id\": \"practice_id\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/{practice_id}\",\n            \"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/{practice_id}/guarantors/{guarantor_id}\",\n            \"transaction_sr_no\": \"transaction_sr_no\",\n            \"transaction_date\": \"transaction_date\",\n            \"procedure_code\": \"procedure_code\",\n            \"procedure_description\": \"procedure_description\",\n            \"amount\": \"amount\",\n            \"transaction_entry_date\": \"transaction_entry_date\",\n            \"claim_sr_no\": \"claim_sr_no\",\n            \"claim_href\": \"https://api.sikkasoft.com/v4/practices/{practice_id}/claims/{claim_sr_no}\",\n            \"created_by\": \"created_by\",\n            \"cust_id\": \"cust_id\",\n            \"do_not_bill_to_dental\": \"do_not_bill_to_dental\",\n            \"bank\": \"bank\"\n        }\n    ]\n}"
+									"body": ""
 								}
 							]
 						}
