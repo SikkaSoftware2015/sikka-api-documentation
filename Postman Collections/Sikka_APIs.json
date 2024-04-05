@@ -3208,6 +3208,98 @@
 									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"xx\",\n    \"total_count\": \"xx\",\n    \"execution_time\": \"xx\",\n    \"pagination\": {\n        \"first\": \"https://qaapiv4.sikkasoft.com/v4/patient_balance?offset=0&limit=xx\",\n        \"previous\": \"https://qaapiv4.sikkasoft.com/v4/patient_balance?offset=0&limit=xx\",\n        \"current\": \"https://qaapiv4.sikkasoft.com/v4/patient_balance?offset=0&limit=xx\",\n        \"next\": \"https://qaapiv4.sikkasoft.com/v4/patient_balance?offset=x&limit=xx\",\n        \"last\": \"https://qaapiv4.sikkasoft.com/v4/patient_balance?offset=x&limit=xx\"\n    },\n    \"items\": [\n        {\n            \"patient_id\": \"patient_id\",\n            \"firstname\": \"firstname\",\n            \"lastname\": \"lastname\",\n            \"practice_id\": \"practice_id\",\n            \"current_date\": \"current_date\",\n            \"practice_name\": \"practice_name\",\n            \"customer_id\": \"customer_id\",\n            \"chart_number\": \"chart_number\",\n            \"patient_amount_less_than_30\": \"patient_amount_less_than_30\",\n            \"patient_amount_between_30_60\": \"patient_amount_between_30_60\",\n            \"patient_amount_between_60_90\": \"patient_amount_between_60_90\",\n            \"patient_amount_greater_than_90\": \"patient_amount_greater_than_90\",\n            \"insurance_amount_less_than_30\": \"insurance_amount_less_than_30\",\n            \"insurance_amount_between_30_60\": \"insurance_amount_between_30_60\",\n            \"insurance_amount_between_60_90\": \"insurance_amount_between_60_90\",\n            \"insurance_amount_greater_than_90\": \"insurance_amount_greater_than_90\",\n            \"patient_balance\": \"patient_balance\",\n            \"unapplied\": \"unapplied\",\n            \"insurance_due\": \"insurance_due\",\n            \"patient_due\": \"patient_due\",\n            \"account_balance\": \"account_balance\",\n            \"write_off\": \"write_off\"\n        }\n    ]\n}"
 								}
 							]
+						},
+						{
+							"name": "suspended_credit_transactions",
+							"id": "21813ac3-7bc6-4e4d-91de-61024da2dbe9",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Request-Key",
+										"value": "Request-Key",
+										"type": "text"
+									}
+								],
+								"url": "https://api.sikkasoft.com/v4/suspended_credit_transactions",
+								"description": "Return patient balance from practice management systems.\n\n###### Parameters\n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> patient id of office \n  \n\n###### customer_id `optional`\n\n> customer id of office \n  \n\n###### current_date `optional`\n\n> format: yyyy-mm-dd, current date"
+							},
+							"response": [
+								{
+									"id": "d94c0f68-7c64-40e2-a148-22e09184df4a",
+									"name": "patient_balance",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "Request-Key",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/patient_balance"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.18.0 (Ubuntu)"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 10 May 2022 11:12:31 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Request-Key-Expires",
+											"value": "Wed, 11 May 2022 09:12:24 GMT"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "origin"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload;"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"xx\",\n    \"total_count\": \"xx\",\n    \"execution_time\": \"xx\",\n    \"pagination\": {\n        \"first\": \"https://qaapiv4.sikkasoft.com/v4/patient_balance?offset=0&limit=xx\",\n        \"previous\": \"https://qaapiv4.sikkasoft.com/v4/patient_balance?offset=0&limit=xx\",\n        \"current\": \"https://qaapiv4.sikkasoft.com/v4/patient_balance?offset=0&limit=xx\",\n        \"next\": \"https://qaapiv4.sikkasoft.com/v4/patient_balance?offset=x&limit=xx\",\n        \"last\": \"https://qaapiv4.sikkasoft.com/v4/patient_balance?offset=x&limit=xx\"\n    },\n    \"items\": [\n        {\n            \"patient_id\": \"patient_id\",\n            \"firstname\": \"firstname\",\n            \"lastname\": \"lastname\",\n            \"practice_id\": \"practice_id\",\n            \"current_date\": \"current_date\",\n            \"practice_name\": \"practice_name\",\n            \"customer_id\": \"customer_id\",\n            \"chart_number\": \"chart_number\",\n            \"patient_amount_less_than_30\": \"patient_amount_less_than_30\",\n            \"patient_amount_between_30_60\": \"patient_amount_between_30_60\",\n            \"patient_amount_between_60_90\": \"patient_amount_between_60_90\",\n            \"patient_amount_greater_than_90\": \"patient_amount_greater_than_90\",\n            \"insurance_amount_less_than_30\": \"insurance_amount_less_than_30\",\n            \"insurance_amount_between_30_60\": \"insurance_amount_between_30_60\",\n            \"insurance_amount_between_60_90\": \"insurance_amount_between_60_90\",\n            \"insurance_amount_greater_than_90\": \"insurance_amount_greater_than_90\",\n            \"patient_balance\": \"patient_balance\",\n            \"unapplied\": \"unapplied\",\n            \"insurance_due\": \"insurance_due\",\n            \"patient_due\": \"patient_due\",\n            \"account_balance\": \"account_balance\",\n            \"write_off\": \"write_off\"\n        }\n    ]\n}"
+								}
+							]
 						}
 					],
 					"id": "0c1fa096-aa44-4088-aa2b-97a96d612a8e"
