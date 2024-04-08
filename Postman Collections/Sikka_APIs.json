@@ -3332,7 +3332,25 @@
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/preregistered_appointments"
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/preregistered_appointments?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"preregistered_appointments"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all"
+												}
+											]
+										}
 									},
 									"status": "OK",
 									"code": 200,
@@ -3389,7 +3407,7 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": ""
+									"body": "{\r\n    \"offset\": \"0\",\r\n    \"limit\": \"xx\",\r\n    \"total_count\": \"xxx\",\r\n    \"execution_time\": \"xxx\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/preregistered_appointments?offset=0&limit=xx\",\r\n        \"previous\": \"\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/preregistered_appointments?offset=xx&limit=xx\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/preregistered_appointments?offset=xx&limit=xx\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/preregistered_appointments?offset=xx&limit=xx\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/{practice_id}/preregistered_appointments/{preregistration_id}\",\r\n            \"provider_id\": \"{provider_id}\",\r\n            \"provider_href\": \"https://api.sikkasoft.com/v4/practices/{practice_id}/providers/{provider_id}\",\r\n            \"practice_id\": \"{practice_id}\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/{practice_id}\",\r\n            \"note\": \"note\",\r\n            \"operatory\": \"operatory\",\r\n            \"date\": \"appointment date\",\r\n            \"appointment_made_date\": \"appointment made date\",\r\n            \"confirmed_on_date\": \"confirmed on date\",\r\n            \"patient_name\": \"name of the patient\",\r\n            \"tooth_number\": \"tooth number\",\r\n            \"cust_id\": \"cust id\",\r\n            \"rowhash\": \"rowhash\",\r\n            \"preregistration_id\": \"{preregistration_id}\",\r\n            \"terminate_date\": \"terminate date\",\r\n            \"active_date\": \"active date\",\r\n            \"next_appointment_date\": \"next appointment date\",\r\n            \"next_appointment_location\": \"next appointment location\",\r\n            \"time_units\": \"time units\",\r\n            \"tooth_area\": \"tooth area\",\r\n            \"appointment_made_reason\": \"reason for appointment\",\r\n            \"cancelled_date\": \"cancelled date\",\r\n            \"cancellation_type\": \"cancellation type\",\r\n            \"cancelled_on_location\": \"cancelled on location\",\r\n            \"cancelled_on_workstation\": \"cancelled on workstation\",\r\n            \"needs_to_be_seen\": \"needs to be seen\"\r\n        }\r\n    ]\r\n}"
 								}
 							]
 						}
