@@ -380,7 +380,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/accounts_receivables",
-								"description": "Returns account receivables details from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### guarantor_id `optional`\n\n> guarantor id in practice management system\n\n\n###### SortBy\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### guarantor_id `optional`\n\n> guarantor id in practice management system"
+								"description": "Returns account receivables details from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### guarantor_id `optional`\n\n> guarantor id in practice management system \n  \n\n###### SortBy\n\n###### current_date `optional`\n> \n\n###### entry_id `optional`\n> \n\n###### practice_id `optional`\n> \n\n###### amount_between_0_30 `optional`\n> \n\n###### amount_under30 `optional`\n> \n\n###### amount_between_31_60 `optional`\n> \n\n###### amount_30to60 `optional`\n> \n\n###### amount_between_61_90 `optional`\n> \n\n###### amount_60to90 `optional`\n> \n\n###### amount_greater_than_90 `optional`\n> \n\n###### amount_above90 `optional`\n> \n\n\n###### GuarID `default`\n>"
 							},
 							"response": [
 								{
