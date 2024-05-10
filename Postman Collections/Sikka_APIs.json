@@ -1430,7 +1430,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### id `optional`\n\n> clinical condition id in practice management system\n\n###### status `optional`\n\n> \n\n\n###### Sortby\n\n"
+								"description": "###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### id `optional`\n\n> clinical condition id in practice management system \n  \n\n###### status `optional`\n\n> appointment / treatment plan / clinical_conditions status\n\n###### Sortby\n\n###### condition_name\n> Condition Name\n\n###### tooth_surface\n> tooth surface\n\n###### description\n> description\n\n###### status\n> appointment / treatment plan / clinical_conditions status\n\n###### id\n> valid id, coma separated for multiple\n\n"
 							},
 							"response": [
 								{
