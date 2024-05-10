@@ -1570,7 +1570,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/prescriptions",
-								"description": "Returns prescriptions data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### prescription_id ```optional```\r\n> Prescription id from appointments \r\n###### practice_id ```optional```\r\n> practice id of office \r\n###### patient_id ```optional```\r\n> guarantor id in practice management system \r\n###### provider_id ```optional```\r\n> provider id in practice management system"
+								"description": "Returns prescriptions data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### prescription_id `optional`\n\n> Prescription id from appointments \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> guarantor id in practice management system \n  \n\n###### provider_id `optional`\n\n> provider id in practice management system\n\n###### date `optional`\n> Filter on date field, format: yyyy-mm-dd\n\n###### procedure_code_id `optional`\n>  Procedure code id is same as procedure code.\n\n\n###### SortBy\n\n###### prescription_id \n> Prescription_id\n\n"
 							},
 							"response": [
 								{
