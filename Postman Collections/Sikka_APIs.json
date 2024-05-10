@@ -1500,7 +1500,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/insurance_company_details",
-								"description": "Returns insurnace company details from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### practice_id ```optional```\r\n> practice id of office \r\n###### insurance_company_id ```optional```\r\n> insurance company id in practice management system"
+								"description": "Returns insurnace company details from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### insurance_company_id `optional`\n\n> insurance company id in practice management system\n\n\n\n###### SortBy\n\n###### insurance_company_name\n> Insurance Company Name\n\n###### practice_id\n>  Practice ID\n \n###### insurance_company_id\n> Insurance Company ID\n\n"
 							},
 							"response": [
 								{
