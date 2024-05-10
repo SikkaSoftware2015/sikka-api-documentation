@@ -626,7 +626,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/guarantors",
-								"description": "Returns guarantors data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> guarantor id in practice management system \n  \n\n###### guarantor_id `optional`\n\n> guarantor id in practice management system\n\n\n###### cell `optional`\n> \n\n###### phone `optional`\n> \n\n###### email `optional`\n> \n\n###### firstname `optional`\n> \n\n###### lastname `optional`\n> \n\n###### workphone `optional`\n>"
+								"description": "Returns guarantors data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> guarantor id in practice management system \n  \n\n###### guarantor_id `optional`\n\n> guarantor id in practice management system \n  \n\n###### cell `optional`\n> Cell number\n\n###### phone `optional`\n> Phone number\n\n###### email `optional`\n> Email id\n\n###### firstname `optional`\n> First name of patient \n\n###### lastname `optional`\n> Last name of patient \n\n###### workphone `optional`\n> Work phone number"
 							},
 							"response": [
 								{
