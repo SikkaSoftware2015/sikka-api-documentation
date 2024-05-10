@@ -1786,7 +1786,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns lab cases data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### practice_id ```optional```\r\n> practice id of office"
+								"description": "Returns lab cases data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office\n\n###### startdate `optional`\n> format: yyyy-mm-dd, start date\t\n\n###### enddate `optional`\n> format: yyyy-mm-dd, enddate\t\n\n###### lab_id `optional`\n>  Lab ID\n\n###### case_record_id `optional`\n> Case record ID\n\n###### transaction_sr_no `optional`\n> Transaction Serial Number\n\n###### appointment_sr_no `optional`\n> Appointment Serial Number\n\n###### provider_id `optional`\n>  Provider ID\n\n\n###### Sortby \n\n\n###### case_record_id\n>  Case record ID\n"
 							},
 							"response": [
 								{
