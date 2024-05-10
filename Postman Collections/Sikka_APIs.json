@@ -1261,7 +1261,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns fee scheudle data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### practice_id ```optional```\r\n> practice id of office \r\n###### fee_no ```optional```\r\n> fee number in practice management system \r\n###### procedure_code ```optional```\r\n> procedure code in practice management system"
+								"description": "Returns fee scheudle data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### fee_no `optional`\n\n> fee number in practice management system \n  \n\n###### procedure_code `optional`\n\n> procedure code in practice management system\n\n\n###### SortBy\n\n###### fee_amount\n> Fee Amount\n\n###### procedure_code\n> Procedure code as per practice management system\n"
 							},
 							"response": [
 								{
