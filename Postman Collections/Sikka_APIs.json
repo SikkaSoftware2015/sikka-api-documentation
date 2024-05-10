@@ -1331,7 +1331,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns appointments status data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### practice_id ```optional```\r\n> practice id of office \r\n"
+								"description": "Returns appointments status data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office"
 							},
 							"response": [
 								{
