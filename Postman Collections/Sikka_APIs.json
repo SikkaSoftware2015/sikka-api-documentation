@@ -1751,7 +1751,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/insurance_estimate",
-								"description": "Returns insurance estimate data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### guarantor_id ```optional```\r\n> guarantor id from appointments \r\n###### practice_id ```optional```\r\n> practice id of office"
+								"description": "Returns insurance estimate data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### guarantor_id `optional`\n\n> guarantor id from appointments \n  \n\n###### practice_id `optional`\n\n> practice id of office\n\n\n###### SortBy\n\n \n###### icm_type\n> ICM type\n\n###### guarantor_id\n> Guarantor id as per practice management systems\n"
 							},
 							"response": [
 								{
