@@ -1121,7 +1121,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/payment_plans",
-								"description": "Returns payment plans data from practice if practice management system storing payment plans\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### agreement_id ```optional```\r\n> agreement id of payment plans \r\n###### practice_id ```optional```\r\n> practice id of office \r\n###### patient_id ```optional```\r\n> guarantor id in practice management system \r\n###### guarantor_id ```optional```\r\n> guarantor id in practice management system"
+								"description": "Returns payment plans data from practice if practice management system storing payment plans\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### agreement_id `optional`\n\n> agreement id of payment plans \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> Patient ID as per the management system\n  \n\n###### guarantor_id `optional`\n\n> guarantor id in practice management system\n\n###### startdate `optional`\n> format: yyyy-mm-dd, start date\n\n###### enddate `optional`\n> format: yyyy-mm-dd, end date\n\n###### description `optional`\n> Description\n\n###### SortBy\n\n###### patient_id\n> Patient ID as per the management system\n\n###### guarantor_id\n> guarantor id in practice management system\n\n###### practice_id\n>  practice id of office\n"
 							},
 							"response": [
 								{
