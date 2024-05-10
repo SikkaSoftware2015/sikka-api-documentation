@@ -918,7 +918,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/treatment_plans",
-								"description": "Returns treatment plans data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### treatment_plan_sr_no ```optional```\r\n> treatment plan serial number from appointments \r\n###### practice_id ```optional```\r\n> practice id of office \r\n###### patient_id ```optional```\r\n> patient id in practice management system \r\n###### guarantor_id ```optional```\r\n> guarantor id in practice management system\r\n###### startdate ```optional```\r\n> treatment plans start date in practice management system\r\n###### enddate ```optional```\r\n> treatment plans end date in practice management system"
+								"description": "Returns treatment plans data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### treatment_plan_sr_no `optional`\n\n> treatment plan serial number from appointments \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> patient id in practice management system \n  \n\n###### guarantor_id `optional`\n\n> guarantor id in practice management system \n  \n\n###### startdate `optional`\n\n> treatment plans start date in practice management system \n  \n\n###### enddate `optional`\n\n> treatment plans end date in practice management system\n\n\n"
 							},
 							"response": [
 								{
