@@ -1051,7 +1051,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/procedure_codes",
-								"description": "Returns procedure codes data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### procedure_code ```optional```\r\n> procedure code from appointments \r\n###### practice_id ```optional```\r\n> practice id of office "
+								"description": "Returns procedure codes data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### procedure_code `optional`\n\n> procedure code from appointments \n  \n\n###### practice_id `optional`\n\n> practice id of office\n\n###### procedure_code_category `optional`\n> As per the procedure code category in API response."
 							},
 							"response": [
 								{
