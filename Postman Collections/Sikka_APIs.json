@@ -661,7 +661,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/contact_details",
-								"description": "Returns contact details of patients from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### practice_id ```optional```\r\n> practice id of office \r\n###### patient_id ```optional```\r\n> patient id in practice management system"
+								"description": "Returns contact details of patients from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> patient id in practice management system\n\n\n###### SortBy\n\n###### contact_of\n>\n###### contact_type\n>\n###### contact_value\n> \n###### practice_id\n> practice id of office"
 							},
 							"response": [
 								{
