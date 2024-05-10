@@ -1465,7 +1465,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/guarantor_accounts",
-								"description": "###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### practice_id ```optional```\r\n> practice id of office \r\n###### guarantor_id ```optional```\r\n> guarantor id in practice management system \r\n###### provider_id ```optional```\r\n> provider id in practice management system "
+								"description": "###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### guarantor_id `optional`\n\n> guarantor id in practice management system \n  \n\n###### provider_id `optional`\n\n> provider id in practice management system\n\n\n###### patient_id `optional`\n> patient ID\n\n###### phone `optional`\n> phone number\n\n###### firstname `optional`\n> First name of patient, provider or guarantor\n\n###### lastname `optional`\n> Last name of patient, provider or guarantor\n\n###### workphone `optional`\n> workphone number\n\n###### Sortby\n\n###### firstname Or first_name\n> First name of patient, provider or guarantor\n\n###### lastname  Or last_name\n> Last name of patient, provider or guarantor\n\n###### zipcode\n> Zipcode\n\n###### guarantor_id\n> Guarantor id as per practice management systems\n"
 							},
 							"response": [
 								{
