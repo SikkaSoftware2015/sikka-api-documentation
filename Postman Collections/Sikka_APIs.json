@@ -813,7 +813,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns guarnators details from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### practice_id ```optional```\r\n> practice id of office \r\n###### guarantor_id ```optional```\r\n> guarantor id in practice management system"
+								"description": "Returns guarnators details from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### guarantor_id `optional`\n\n> guarantor id in practice management system\n\n###### cell `optional`\n> Cell number\n###### workphone `optional`\n> Work phone number \n\n###### phone `optional`\n> Phone number\n\n###### email `optional`\n> Email id\n\n###### firstname `optional`\n> First name of patient\n\n###### lastname `optional`\n> Last name of patient\n\n"
 							},
 							"response": [
 								{
