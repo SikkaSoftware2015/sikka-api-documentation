@@ -1640,7 +1640,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/employers",
-								"description": "Returns employers data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### employer_id ```optional```\r\n> employer id from appointments \r\n###### practice_id ```optional```\r\n> practice id of office "
+								"description": "Returns employers data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### employer_id `optional`\n\n> employer id from appointments \n  \n\n###### practice_id `optional`\n\n> practice id of office\n\n###### SortBy\n\n###### employer_name\n> Employer Name\n\n###### employer_id\n>  employer id as per practice management system\n"
 							},
 							"response": [
 								{
