@@ -1191,7 +1191,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/patient_contract_roll_charges",
-								"description": "Returns patient contracts roll charges data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> guarantor id in practice management system \n  \n\n###### guarantor_id `optional`\n\n> guarantor id in practice management system \n  \n\n###### provider_id `optional`\n\n> provider id in practice management system"
+								"description": "Returns patient contracts roll charges data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> guarantor id in practice management system \n  \n\n###### guarantor_id `optional`\n\n> guarantor id in practice management system \n  \n\n###### provider_id `optional`\n\n> provider id in practice management system \n  \n\n###### startdate\n\n> startdate for contract_due_date, format: yyyy-mm-dd \n  \n\n###### enddate\n\n> enddate for contract_due_date, format: yyyy-mm-dd \n  \n\n###### firstname\n\n> Patient's first name \n  \n\n###### lastname\n\n> Patient's last name \n  \n\n###### SortBy\n\n###### contract_due_date\n\n> contract_due_date \n  \n\n###### firstname\n\n> Patient's first name \n  \n\n###### lastname\n\n> Patient's last name \n  \n\n###### practice_id\n\n> Practice ID"
 							},
 							"response": [
 								{
