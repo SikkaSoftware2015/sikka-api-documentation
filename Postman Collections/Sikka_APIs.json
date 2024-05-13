@@ -2442,7 +2442,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns purchase orders data from practice ( mostly applicable to veterinary practice)\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### vendor_id ```optional```\r\n> vendor id from practice\r\n###### practice_id ```optional```\r\n> practice id of office"
+								"description": "Returns purchase orders data from practice ( mostly applicable to veterinary practice)\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### vendor_id `optional`\n\n> vendor id from practice \n  \n\n###### practice_id `optional`\n\n> practice id of office\n\n\n###### procedure_code_id `optional`\n> Procedure code id is same as procedure code.\n\n###### order_number `optional` \n> Order number\n\n###### order_date `optional`\n>  Order date\n\n###### SortBy\n\n###### vendor_id \n\n> vendor id from practice \n  \n\n###### practice_id \n\n> practice id of office\n\n###### procedure_code_id \n> Procedure code id is same as procedure code.\n"
 							},
 							"response": [
 								{
