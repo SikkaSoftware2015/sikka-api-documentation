@@ -2254,7 +2254,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns information about patient's existing services from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### patient_id `optional`\n\n> patient id from practice \n  \n\n###### practice_id `optional`\n\n> practice id of office\n\n\n"
+								"description": "Returns information about patient's existing services from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### patient_id `optional`\n\n> patient id from practice \n  \n\n###### practice_id `optional`\n\n> practice id of office\n\n\n###### Sortby \n\n\n###### patient_id\n> patient id from practice \n"
 							},
 							"response": [
 								{
