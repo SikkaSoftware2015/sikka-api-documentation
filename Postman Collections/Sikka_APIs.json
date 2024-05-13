@@ -3132,7 +3132,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/patient_balance",
-								"description": "Return patient balance from practice management systems.\n###### Parameters\n\n###### practice_id `optional`\n\n> practice id of office\n\n###### patient_id `optional`\n\n> patient id of office\n\n###### customer_id `optional`\n\n> customer id of office\n\n###### current_date `optional`\n\n> format: yyyy-mm-dd, current date"
+								"description": "Return patient balance from practice management systems.\n\n###### Parameters\n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> patient id of office \n  \n\n###### customer_id `optional`\n\n> customer id of office \n  \n\n###### current_date `optional`\n\n> format: yyyy-mm-dd, current date\n\n\n###### SortBy\n\n###### customer_id \n\n> customer id of office \n  \n\n###### current_date \n\n> format: yyyy-mm-dd, current date\n\n###### practice_id \n\n> practice id of office "
 							},
 							"response": [
 								{
