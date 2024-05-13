@@ -2930,7 +2930,7 @@
 										}
 									]
 								},
-								"description": "Return the lab test details\n\n###### Parameters\n\n###### practice_id `optional`\n\n> practice id of office\n\n###### category `optional`\n\n> category"
+								"description": "Return the lab test details\n\n###### Parameters\n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### category `optional`\n\n> category\n\n\n###### item  `optional`\n> item \n\n###### lab_id `optional`\n> Lab ID\n\n\n###### SortBy\n\n###### category \n> category"
 							},
 							"response": [
 								{
