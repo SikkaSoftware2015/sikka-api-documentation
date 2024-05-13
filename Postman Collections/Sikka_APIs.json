@@ -1856,7 +1856,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "\r\nReturns lab panels information from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### lab_panel_id ```optional```\r\n> lab panel id from appointments \r\n###### practice_id ```optional```\r\n> practice id of office"
+								"description": "Returns lab panels information from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### lab_panel_id `optional`\n\n> lab panel id from appointments \n  \n\n###### practice_id `optional`\n\n> practice id of office\n\n###### procedure_code_id  `optional`\n> Procedure code id is same as procedure code.\n\n###### status `optional`\n> status\n\n###### lab_name `optional`\n> lab name\n\n\n\n###### Sortby \n\n\n\n###### lab_panel_id\n> lab panel id from appointments "
 							},
 							"response": [
 								{
