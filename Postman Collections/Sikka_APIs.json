@@ -1965,7 +1965,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/lab_profile_invoice_items",
-								"description": "Returns lab profile invoice items information from practice management system\n\n* * *\n\n###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n###### Parameters\n\n###### profile_id `optional`\n\n> Profile Id.\n\n###### code `optional`\n\n> Code.\n\n###### practice_id `optional`\n\n> Practice Id."
+								"description": "Returns lab profile invoice items information from practice management system\n\n---\n\n###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### Parameters\n\n###### profile_id `optional`\n\n> Profile Id. \n  \n\n###### code `optional`\n\n> Code. \n  \n\n###### practice_id `optional`\n\n> Practice Id.\n\n\n###### SortBy\n\n###### profile_id\n\n> Profile Id.\n"
 							},
 							"response": [
 								{
