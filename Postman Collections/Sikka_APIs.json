@@ -2586,7 +2586,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/vendors",
-								"description": "Returns vendors data from practice (applicable to veterinary)\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### practice_id ```optional```\r\n> practice id of office\r\n###### vendor_code ```optional```\r\n> vendor code from office"
+								"description": "Returns vendors data from practice (applicable to veterinary)\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### vendor_code `optional`\n\n> vendor code from office\n\n###### vendor_id `optional`\n\n> Vendor id as per the practice management system\n\n\n###### SortBy\n\n###### vendor_code\n> vendor code from office\n\n###### practice_id\n> practice id of office \n\n###### vendor_id\n> Vendor id as per the practice management system\n\n"
 							},
 							"response": [
 								{
