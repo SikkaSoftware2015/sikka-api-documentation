@@ -2428,7 +2428,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns proceudre categories with procdure codes , if procedure codes are mapped with category in practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office\n\n\n###### customer_id `optional`\n> Customer Id\n\n\n###### procedure_code `optional`\n>  Procedure code as per practice management system\n\n####### category `optional`\n> procedure category name for getting the list of codes mapped into veterinary dictionary\n\n###### Sortby \n\n###### category\n> procedure category name for getting the list of codes mapped into veterinary dictionary\n\n###### practice_id\n> Practice ID\n\n###### procedure_code\n>  Procedure code as per practice management system"
+								"description": "Returns proceudre categories with procdure codes , if procedure codes are mapped with category in practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### customer_id `optional`\n\n> Customer Id \n  \n\n###### procedure_code `optional`\n\n> Procedure code as per practice management system \n  \n\ncategory `optional`\n\n> procedure category name for getting the list of codes mapped into veterinary dictionary \n  \n\n###### Sortby\n\n###### category\n\n> procedure category name for getting the list of codes mapped into veterinary dictionary \n  \n\n###### practice_id\n\n> Practice ID \n  \n\n###### procedure_code\n\n> Procedure code as per practice management system"
 							},
 							"response": []
 						},
