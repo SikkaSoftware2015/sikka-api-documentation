@@ -2340,7 +2340,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns payors inforamtion from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### insurance_company_id `optional`\n\n> insurance company id from practice \n  \n\n###### practice_id `optional`\n\n> practice id of office\n\n\n###### Sortby \n\n\n###### insurance_company_name\n> Insurance company name from practice"
+								"description": "Returns payors inforamtion from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### insurance_company_id `optional`\n\n> insurance company id from practice \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### Sortby\n\n###### insurance_company_name\n\n> Insurance company name from practice\n\n###### employer_id \n> Payor Id or employer Id"
 							},
 							"response": [
 								{
