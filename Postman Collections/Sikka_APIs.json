@@ -2377,7 +2377,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns pet documents data path from veterinary practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### patient_id `optional`\n\n> patient id from practice ( in case of veterinary , this is pet id) \n  \n\n###### practice_id `optional`\n\n> practice id of office\n\n\n###### SortBy\n\n###### patient_id \n\n> patient id from practice ( in case of veterinary , this is pet id) \n  \n\n###### practice_id \n\n> practice id of office"
+								"description": "Returns pet documents data path from veterinary practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### patient_id `optional`\n\n> patient id from practice ( in case of veterinary , this is pet id) \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### SortBy\n\n###### patient_id\n\n> patient id from practice ( in case of veterinary , this is pet id) \n  \n\n###### practice_id\n\n> practice id of office"
 							},
 							"response": []
 						},
@@ -2391,7 +2391,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns procedure codes category data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### practice_id ```optional```\r\n> practice id of office"
+								"description": "Returns procedure codes category data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office\n\n###### category `optional`\n> Procedure Category\n\n\n###### Sortby \n\n\n###### category\n> Procedure Category\n\n###### practice_id\n> Practice id of office"
 							},
 							"response": [
 								{
