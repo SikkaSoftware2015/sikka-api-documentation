@@ -2340,7 +2340,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns payors inforamtion from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### insurance_company_id `optional`\n\n> insurance company id from practice \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### Sortby\n\n###### insurance_company_name\n\n> Insurance company name from practice\n\n###### employer_id \n> Payor Id or employer Id"
+								"description": "Returns payors inforamtion from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### insurance_company_id `optional`\n\n> insurance company id from practice \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### Sortby\n\n###### insurance_company_name\n\n> Insurance company name from practice \n  \n\n###### insurance_company_id\n\n>  insurance company id from practice"
 							},
 							"response": [
 								{
@@ -2377,7 +2377,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns pet documents data path from veterinary practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### patient_id ```optional```\r\n> patient id from practice ( in case of veterinary , this is pet id)\r\n###### practice_id ```optional```\r\n> practice id of office"
+								"description": "Returns pet documents data path from veterinary practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### patient_id `optional`\n\n> patient id from practice ( in case of veterinary , this is pet id) \n  \n\n###### practice_id `optional`\n\n> practice id of office\n\n\n###### SortBy\n\n###### patient_id \n\n> patient id from practice ( in case of veterinary , this is pet id) \n  \n\n###### practice_id \n\n> practice id of office"
 							},
 							"response": []
 						},
