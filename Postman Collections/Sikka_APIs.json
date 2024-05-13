@@ -4368,7 +4368,7 @@
 									"formdata": []
 								},
 								"url": "https://api.sikkasoft.com/v4/finance/transactions",
-								"description": "Returns transaction details from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id in finance system \n  \n\n###### customer_id `optional`\n\n> customer id in finance system \n  \n\n###### account_name `optional`\n\n> account name in finance system \n  \n\n###### account_number `optional`\n\n> account number in finance system \n  \n\n###### reference_number `optional`\n\n> reference_number from finance system \n  \n\n###### startdate `optional`\n\n> format: yyyy-mm-dd, start date \n  \n\n###### enddate `optional`\n\n> format: yyyy-mm-dd, end date \n  \n\n###### date_filter_on `optional`\n\n> specifies on which field given start date and end date will be applied"
+								"description": "Returns transaction details from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id in finance system \n  \n\n###### customer_id `optional`\n\n> customer id in finance system \n  \n\n###### account_name `optional`\n\n> account name in finance system \n  \n\n###### account_number `optional`\n\n> account number in finance system \n  \n\n###### reference_number `optional`\n\n> reference_number from finance system \n  \n\n###### startdate `optional`\n\n> format: yyyy-mm-dd, start date \n  \n\n###### enddate `optional`\n\n> format: yyyy-mm-dd, end date \n  \n\n###### date_filter_on `optional`\n\n> specifies on which field given start date and end date will be applied\n\n\n###### SortBy\n\n###### account_name\n\n> account name"
 							},
 							"response": [
 								{
@@ -4505,7 +4505,7 @@
 									"formdata": []
 								},
 								"url": "https://api.sikkasoft.com/v4/finance/vendors",
-								"description": "Returns vendors details from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### account_number `optional`\n\n> account number in finance system \n  \n\n###### vendor `optional`\n\n> name of the vendor in finance system \n  \n\n###### contact_person `optional`\n\n> name of the contact person in finance system"
+								"description": "Returns vendors details from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### account_number `optional`\n\n> account number in finance system \n  \n\n###### vendor `optional`\n\n> name of the vendor in finance system \n  \n\n###### contact_person `optional`\n\n> name of the contact person in finance system\n\n\n###### SortBy\n\n###### account_number\n\n> account number in finance system "
 							},
 							"response": [
 								{
