@@ -2790,7 +2790,7 @@
 										}
 									]
 								},
-								"description": "Return the list of optometry products\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n###### practice_id `optional`\n\n> practice id of office\n\n###### product_id `optional`\n\n> product id of office"
+								"description": "Return the list of optometry products\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### product_id `optional`\n\n> product id of office\n\n\n###### product_detail_number `optional`\n> Product details number\n\n\n###### product_code `optional`\n> Product code\n\n\n###### SortBy\n\n###### product_id\n> ID of product based on practice management system\n\n###### practice_id\n>  practice id of office \n"
 							},
 							"response": [
 								{
