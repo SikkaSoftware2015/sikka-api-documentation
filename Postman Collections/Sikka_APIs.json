@@ -3957,7 +3957,7 @@
 									"formdata": []
 								},
 								"url": "https://api.sikkasoft.com/v4/finance/customers",
-								"description": "Returns customer details data from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### fullname  `optional`\n\n> fullname  \n  \n\n###### customer_id `optional`\n\n> customer id from finance system (different from customer_id in other APIs)"
+								"description": "Returns customer details data from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### fullname `optional`\n\n> fullname \n  \n\n###### customer_id `optional`\n\n> customer id from finance system (different from customer_id in other APIs)\n\n###### name `optional`\n> name \n\n\n\n###### SortBy\n\n###### customer_id \n\n> customer id from finance system (different from customer_id in other APIs)"
 							},
 							"response": [
 								{
@@ -4094,7 +4094,7 @@
 									"formdata": []
 								},
 								"url": "https://api.sikkasoft.com/v4/finance/employee",
-								"description": "Returns employee details data from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### account_number `optional`\n\n> account_number from finance system \n  \n\n###### employee `optional`\n\n> name of the employee from finance system"
+								"description": "Returns employee details data from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### account_number `optional`\n\n> account_number from finance system \n  \n\n###### employee `optional`\n\n> name of the employee from finance system\n\n\n###### SortBy\n\n###### account_number \n> account number from finance system"
 							},
 							"response": [
 								{
