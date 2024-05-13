@@ -1821,7 +1821,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns lab details from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### lab_id ```optional```\r\n> lab id from lab details \r\n###### practice_id ```optional```\r\n> practice id of office"
+								"description": "Returns lab details from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### lab_id `optional`\n\n> lab id from lab details \n  \n\n###### practice_id `optional`\n\n> practice id of office\n\n###### city `optional`\n> City\n\n###### state `optional`\n> State\n\n###### zipcode `optional`\n> Zip Code\n\n###### email `optional`\n> Email\n\n\n\n###### Sortby \n\n\n\n###### lab_id\n> lab id from lab details\n"
 							},
 							"response": [
 								{
