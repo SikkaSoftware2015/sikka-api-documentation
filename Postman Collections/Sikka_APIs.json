@@ -2391,7 +2391,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns procedure codes category data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office\n\n###### category `optional`\n> Procedure Category\n\n\n###### Sortby \n\n\n###### category\n> Procedure Category\n\n###### practice_id\n> Practice id of office"
+								"description": "Returns procedure codes category data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### category `optional`\n\n> procedure category name\n  \n\n###### Sortby\n\n###### category\n\n> procedure category name\n  \n\n###### practice_id\n\n> Practice id of office"
 							},
 							"response": [
 								{
