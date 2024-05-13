@@ -2303,7 +2303,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns patient's ssn information from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### patient_id ```optional```\r\n> patient id from practice\r\n###### practice_id ```optional```\r\n> practice id of office"
+								"description": "Returns patient's ssn information from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### patient_id `optional`\n\n> patient id from practice \n  \n\n###### practice_id `optional`\n\n> practice id of office\n\n\n###### Sortby \n\n\n###### firstname \n> Patient first name\n\n###### lastname\n> Patient last name\n \n###### zipcode\n> Patient location zipcode\n\n###### patient_id \n> patient id from practice "
 							},
 							"response": [
 								{
