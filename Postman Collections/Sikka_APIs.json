@@ -2551,7 +2551,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/treatment_plan_phases",
-								"description": "Returns treatment plan phases information from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### practice_id ```optional```\r\n> practice id of office"
+								"description": "Returns treatment plan phases information from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office\n\n###### guarantor_id `optional`\n> Guarantor id as per practice management systems\n\n###### patient_id `optional`\n> Patient ID as per the management system\n\n\n###### provider_id `optional`\n> Provider id as per practice management system\n\n###### startdate `optional`\n> format: yyyy-mm-dd, start date\n\n###### enddate `optional`\n> format: yyyy-mm-dd, end date\n\n###### procedure_code `optional`\n> Procedure code as per practice management system\n\n###### treatment_plan_status `optional`\n> Filter by Treatment plan status\n\n###### treatment_plan_id `optional`\n> Filter by Treatment plan id\n\n\n###### SortBy\n\n###### amount\n> Ampunt\n\n###### procedure_date\n> Procedure date as per practice management system\n\n###### entry_date\n> Entry Date\n"
 							},
 							"response": [
 								{
