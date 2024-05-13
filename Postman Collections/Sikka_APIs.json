@@ -2514,7 +2514,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/subscribers",
-								"description": "Returns subsribers data from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### patient_id ```optional```\r\n> patient id from practice\r\n###### practice_id ```optional```\r\n> practice id of office\r\n###### subscriber_id ```optional```\r\n> subscriber id of office"
+								"description": "Returns subsribers data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### patient_id `optional`\n\n> patient id from practice \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### subscriber_id `optional`\n\n> subscriber id of office\n\n###### SortBy\n\n###### patient_id\n> patient id from practice \n\n###### practice_id\n> practice id of office"
 							},
 							"response": [
 								{
