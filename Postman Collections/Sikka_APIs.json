@@ -2113,7 +2113,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns note types from practice\n****\n###### Parameters \n###### request_key ```Required```  \n> A Valid 32 characters alpha-numeric request key\n###### practice_id ```optional```\n> practice id of office"
+								"description": "Returns note types from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office\n\n###### SortBy\n\n###### type\n> note type as per the practice management system"
 							},
 							"response": [
 								{
