@@ -2680,7 +2680,7 @@
 										}
 									]
 								},
-								"description": "Returns insurance eligibility\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> patient id of office \n  \n\n###### member id `optional`\n\n> member id of office"
+								"description": "Returns insurance eligibility\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> patient id of office \n  \n\n###### member id `optional`\n\n> member id of office\n\n\n###### guarantor_id `optional`\n> Guarantor id as per practice management systems\n\n###### firstname `optional`\n> First name of patient\n\n###### lastname  `optional`\n> last name of patient\n\n###### SortBy\n\n###### practice_id\n>  practice id of office \n\n###### guarantor_id\n> Guarantor id as per practice management systems\n\n###### member_id\n> member id of office\n\n###### patient_id\n> patient id of office\n"
 							},
 							"response": [
 								{
