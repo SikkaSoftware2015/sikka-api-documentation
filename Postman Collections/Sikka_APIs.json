@@ -1500,7 +1500,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/insurance_company_details",
-								"description": "Returns insurnace company details from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### insurance_company_id `optional`\n\n> insurance company id in practice management system\n\n\n\n###### SortBy\n\n###### insurance_company_name\n> Insurance Company Name\n\n###### practice_id\n>  Practice ID\n \n###### insurance_company_id\n> Insurance Company ID\n\n"
+								"description": "Returns insurnace company details from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### insurance_company_id `optional`\n\n> insurance company id in practice management system \n  \n\n###### SortBy\n\n###### insurance_company_id `default`\n\n> Insurance Company ID\n\n###### insurance_company_name\n\n> Insurance Company Name \n  \n\n###### practice_id\n\n> Practice ID \n  \n\n"
 							},
 							"response": [
 								{
@@ -1535,7 +1535,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/treatment_plan_statuses",
-								"description": "Returns treatment plans status data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office\n\n\n###### SortBy\n\n###### practice_id\n> practice id of office"
+								"description": "Returns treatment plans status data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### SortBy\n\n###### practice_id `default`\n\n> practice id of office"
 							},
 							"response": [
 								{
@@ -1570,7 +1570,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/prescriptions",
-								"description": "Returns prescriptions data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### prescription_id `optional`\n\n> Prescription id from appointments \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> guarantor id in practice management system \n  \n\n###### provider_id `optional`\n\n> provider id in practice management system\n\n###### date `optional`\n> Filter on date field, format: yyyy-mm-dd\n\n###### procedure_code_id `optional`\n>  Procedure code id is same as procedure code.\n\n\n###### SortBy\n\n###### prescription_id \n> Prescription_id\n\n"
+								"description": "Returns prescriptions data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### prescription_id `optional`\n\n> Prescription id from appointments \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> guarantor id in practice management system \n  \n\n###### provider_id `optional`\n\n> provider id in practice management system \n  \n\n###### date `optional`\n\n> Filter on date field, format: yyyy-mm-dd \n  \n\n###### procedure_code_id `optional`\n\n> Procedure code id is same as procedure code. \n  \n\n###### SortBy\n\n###### prescription_id `default`\n\n> Prescription_id"
 							},
 							"response": [
 								{
@@ -1605,7 +1605,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/insurance_plan_coverage",
-								"description": "Returns insurance plan and coverage data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### insurance_company_id `optional`\n\n> insurance company id from appointments \n  \n\n###### practice_id `optional`\n\n> practice id of office\n\n\n###### SortBy\n\n###### insurance_company_id \n\n> Insurance Company ID"
+								"description": "Returns insurance plan and coverage data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### insurance_company_id `optional`\n\n> insurance company id from appointments \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### SortBy\n\n###### insurance_company_id `default`\n\n> Insurance Company ID"
 							},
 							"response": [
 								{
@@ -1640,7 +1640,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/employers",
-								"description": "Returns employers data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### employer_id `optional`\n\n> employer id from appointments \n  \n\n###### practice_id `optional`\n\n> practice id of office\n\n###### SortBy\n\n###### employer_name\n> Employer Name\n\n###### employer_id\n>  employer id as per practice management system\n"
+								"description": "Returns employers data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### employer_id `optional`\n\n> employer id from appointments \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### SortBy\n\n###### employer_name\n\n> Employer Name \n  \n\n###### employer_id `default`\n\n> employer id as per practice management system"
 							},
 							"response": [
 								{
@@ -1675,7 +1675,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/drugs",
-								"description": "Returns drugs data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### drug_id `optional`\n\n> drug id from appointments \n  \n\n###### practice_id `optional`\n\n> practice id of office\n\n\n###### date `optional`\n\n> format: yyyy-mm-dd, date\n\n###### SortBy\n\n###### drug_id\n\n> drug id from appointments "
+								"description": "Returns drugs data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### drug_id `optional`\n\n> drug id from appointments \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### date `optional`\n\n> format: yyyy-mm-dd, date \n  \n\n###### SortBy\n\n###### drug_id `default`\n\n> drug id from appointments"
 							},
 							"response": [
 								{
