@@ -1191,7 +1191,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/patient_contract_roll_charges",
-								"description": "Returns patient contracts roll charges data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> guarantor id in practice management system \n  \n\n###### guarantor_id `optional`\n\n> guarantor id in practice management system \n  \n\n###### provider_id `optional`\n\n> provider id in practice management system \n  \n\n###### startdate\n\n> startdate for contract_due_date, format: yyyy-mm-dd \n  \n\n###### enddate\n\n> enddate for contract_due_date, format: yyyy-mm-dd \n  \n\n###### firstname\n\n> Patient's first name \n  \n\n###### lastname\n\n> Patient's last name \n  \n\n###### SortBy\n\n###### contract_due_date\n\n> contract_due_date \n  \n\n###### firstname\n\n> Patient's first name \n  \n\n###### lastname\n\n> Patient's last name \n  \n\n###### practice_id\n\n> Practice ID"
+								"description": "Returns patient contracts roll charges data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> guarantor id in practice management system \n  \n\n###### guarantor_id `optional`\n\n> guarantor id in practice management system \n  \n\n###### provider_id `optional`\n\n> provider id in practice management system \n  \n\n###### startdate\n\n> startdate for contract_due_date, format: yyyy-mm-dd \n  \n\n###### enddate\n\n> enddate for contract_due_date, format: yyyy-mm-dd \n  \n\n###### firstname\n\n> Patient's first name \n  \n\n###### lastname\n\n> Patient's last name \n  \n\n###### SortBy\n\n###### patient_id `default`\n\n> guarantor id in practice management system \n\n###### contract_due_date\n\n> contract_due_date \n  \n\n###### firstname\n\n> Patient's first name \n  \n\n###### lastname\n\n> Patient's last name \n  \n\n###### practice_id\n\n> Practice ID"
 							},
 							"response": [
 								{
@@ -1226,7 +1226,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns patient contract data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> guarantor id in practice management system \n  \n\n###### provider_id `optional`\n\n> provider id in practice management system\n\n\n###### SortBy\n\n###### patient_id\n> Patient ID as per the management system\n\n###### practice_id\n> Practice ID"
+								"description": "Returns patient contract data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> guarantor id in practice management system \n  \n\n###### provider_id `optional`\n\n> provider id in practice management system \n  \n\n###### SortBy\n\n###### patient_id `default`\n\n> Patient ID as per the management system \n  \n\n###### practice_id\n\n> Practice ID"
 							},
 							"response": [
 								{
@@ -1261,7 +1261,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns fee scheudle data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### fee_no `optional`\n\n> fee number in practice management system \n  \n\n###### procedure_code `optional`\n\n> procedure code in practice management system\n\n\n###### SortBy\n\n###### fee_amount\n> Fee Amount\n\n###### procedure_code\n> Procedure code as per practice management system\n"
+								"description": "Returns fee scheudle data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### fee_no `optional`\n\n> fee number in practice management system \n  \n\n###### procedure_code `optional`\n\n> procedure code in practice management system \n  \n\n###### SortBy\n\n###### fee_amount\n\n> Fee Amount \n  \n\n###### procedure_code `default`\n\n> Procedure code as per practice management system"
 							},
 							"response": [
 								{
@@ -1296,7 +1296,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns appointments data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### referral_type `optional`\n\n> referral type from appointments \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> guarantor id in practice management system \n  \n\n###### referral_id `optional`\n\n> referral id in practice management system\n\n\n###### SortBy\n\n###### practice_id \n> practice id of office "
+								"description": "Returns appointments data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### referral_type `optional`\n\n> referral type from appointments \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> guarantor id in practice management system \n  \n\n###### referral_id `optional`\n\n> referral id in practice management system \n  \n\n###### SortBy\n\n###### referral_id `default`\n\n> referral id in practice management system \n\n###### practice_id\n\n> practice id of office"
 							},
 							"response": [
 								{
