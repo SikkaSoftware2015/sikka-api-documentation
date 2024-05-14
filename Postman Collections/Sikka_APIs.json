@@ -2551,7 +2551,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/treatment_plan_phases",
-								"description": "Returns treatment plan phases information from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### guarantor_id `optional`\n\n> Guarantor id as per practice management systems \n  \n\n###### patient_id `optional`\n\n> Patient ID as per the management system \n  \n\n###### provider_id `optional`\n\n> Provider id as per practice management system \n  \n\n###### startdate `optional`\n\n> format: yyyy-mm-dd, start date \n  \n\n###### enddate `optional`\n\n> format: yyyy-mm-dd, end date \n  \n\n###### procedure_code `optional`\n\n> Procedure code as per practice management system \n  \n\n###### treatment_plan_status `optional`\n\n> Filter by Treatment plan status \n  \n\n###### treatment_plan_id `optional`\n\n> Filter by Treatment plan id \n  \n\n###### SortBy\n\n###### amount\n\n> Ampunt \n  \n\n###### procedure_date\n\n> Procedure date as per practice management system \n  \n\n###### entry_date\n\n> Entry Date"
+								"description": "Returns treatment plan phases information from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### guarantor_id `optional`\n\n> Guarantor id as per practice management systems \n  \n\n###### patient_id `optional`\n\n> Patient ID as per the management system \n  \n\n###### provider_id `optional`\n\n> Provider id as per practice management system \n  \n\n###### startdate `optional`\n\n> format: yyyy-mm-dd, start date \n  \n\n###### enddate `optional`\n\n> format: yyyy-mm-dd, end date \n  \n\n###### procedure_code `optional`\n\n> Procedure code as per practice management system \n  \n\n###### treatment_plan_status `optional`\n\n> Filter by Treatment plan status \n  \n\n###### treatment_plan_id `optional`\n\n> Filter by Treatment plan id \n  \n\n###### SortBy\n\n###### treatment_plan_sr_no `default`\n> Treatment plan serial number from Practice management System\n\n###### amount\n\n> Ampunt \n  \n\n###### procedure_date\n\n> Procedure date as per practice management system \n  \n\n###### entry_date\n\n> Entry Date"
 							},
 							"response": [
 								{
@@ -2586,7 +2586,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/vendors",
-								"description": "Returns vendors data from practice (applicable to veterinary)\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### vendor_code `optional`\n\n> vendor code from office\n\n###### vendor_id `optional`\n\n> Vendor id as per the practice management system\n\n\n###### SortBy\n\n###### vendor_code\n> vendor code from office\n\n###### practice_id\n> practice id of office \n\n###### vendor_id\n> Vendor id as per the practice management system\n\n"
+								"description": "Returns vendors data from practice (applicable to veterinary)\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### vendor_code `optional`\n\n> vendor code from office \n  \n\n###### vendor_id `optional`\n\n> Vendor id as per the practice management system \n  \n\n###### SortBy\n\n\n###### vendor_id `default`\n\n> Vendor id as per the practice management system\n\n###### vendor_code\n\n> vendor code from office \n  \n\n###### practice_id\n\n> practice id of office \n  \n"
 							},
 							"response": [
 								{
@@ -2621,7 +2621,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/veterinary_clinics",
-								"description": "Returns veterinary clinic information\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office\n\n\n###### SortBy\n\n###### name\n> Veterinary clinic name\n\n###### veterinary_clinic_id\n> Veterinary clinic id"
+								"description": "Returns veterinary clinic information\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### SortBy\n\n###### name\n\n> Veterinary clinic name \n  \n\n###### veterinary_clinic_id `default`\n\n> Veterinary clinic id"
 							},
 							"response": [
 								{
@@ -2680,7 +2680,7 @@
 										}
 									]
 								},
-								"description": "Returns insurance eligibility\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> patient id of office \n  \n\n###### member id `optional`\n\n> member id of office\n\n\n###### guarantor_id `optional`\n> Guarantor id as per practice management systems\n\n###### firstname `optional`\n> First name of patient\n\n###### lastname  `optional`\n> last name of patient\n\n###### SortBy\n\n###### practice_id\n>  practice id of office \n\n###### guarantor_id\n> Guarantor id as per practice management systems\n\n###### member_id\n> member id of office\n\n###### patient_id\n> patient id of office\n"
+								"description": "Returns insurance eligibility\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> patient id of office \n  \n\n###### member id `optional`\n\n> member id of office \n  \n\n###### guarantor_id `optional`\n\n> Guarantor id as per practice management systems \n  \n\n###### firstname `optional`\n\n> First name of patient \n  \n\n###### lastname `optional`\n\n> last name of patient \n  \n\n###### SortBy\n\n###### patient_id `default`\n\n> patient id of office\n\n###### practice_id\n\n> practice id of office \n  \n\n###### guarantor_id\n\n> Guarantor id as per practice management systems \n  \n\n###### member_id\n\n> member id of office \n  \n\n"
 							},
 							"response": [
 								{
