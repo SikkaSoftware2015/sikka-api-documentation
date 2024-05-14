@@ -2076,7 +2076,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns patient medical notes from practice\r\n****\r\n###### Parameters \r\n###### request_key ```Required```  \r\n> A Valid 32 characters alpha-numeric request key\r\n###### patient_id ```optional```\r\n> patient id from practice\r\n###### practice_id ```optional```\r\n> practice id of office"
+								"description": "Returns patient medical notes from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### patient_id `optional`\n\n> patient id from practice \n  \n\n###### practice_id `optional`\n\n> practice id of office\n\n\n###### SortBy\n\n###### patient_id `default`\n\n> patient id from practice "
 							},
 							"response": [
 								{
@@ -2113,7 +2113,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns note types from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office\n\n###### SortBy\n\n###### type\n> note type as per the practice management system"
+								"description": "Returns note types from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### SortBy\n\n###### type `default`\n\n> note type as per the practice management system"
 							},
 							"response": [
 								{
@@ -2217,7 +2217,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns patient documents path from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### patient_id `optional`\n\n> patient id from practice \n  \n\n###### practice_id `optional`\n\n> practice id of office\n\n\n###### Sortby \n\n###### patient_id \n\n> patient id from practice \n  \n\n###### practice_id \n\n> practice id of office"
+								"description": "Returns patient documents path from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### patient_id `optional`\n\n> patient id from practice \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### Sortby\n\n###### patient_id `default`\n\n> patient id from practice \n  \n\n###### practice_id\n\n> practice id of office"
 							},
 							"response": [
 								{
@@ -2254,7 +2254,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns information about patient's existing services from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### patient_id `optional`\n\n> patient id from practice \n  \n\n###### practice_id `optional`\n\n> practice id of office\n\n\n###### Sortby \n\n\n###### patient_id\n> patient id from practice \n"
+								"description": "Returns information about patient's existing services from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### patient_id `optional`\n\n> patient id from practice \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### Sortby\n\n###### patient_id `default`\n\n> patient id from practice"
 							},
 							"response": [
 								{
@@ -2289,7 +2289,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns patient images from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### patient_id `optional`\n\n> patient id from practice \n  \n\n###### practice_id `optional`\n\n> practice id of office\n\n###### image_type `optional`\n\n> Patient image name or patient image\n\n\n###### Sortby \n\n\n###### patient_id \n\n> patient id from practice \n  \n\n###### practice_id \n\n> practice id of office"
+								"description": "Returns patient images from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### patient_id `optional`\n\n> patient id from practice \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### image_type `optional`\n\n> Patient image name or patient image \n  \n\n###### Sortby\n\n###### patient_id `default`\n\n> patient id from practice \n  \n\n###### practice_id\n\n> practice id of office"
 							},
 							"response": []
 						},
