@@ -3957,7 +3957,7 @@
 									"formdata": []
 								},
 								"url": "https://api.sikkasoft.com/v4/finance/customers",
-								"description": "Returns customer details data from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### fullname `optional`\n\n> fullname \n  \n\n###### customer_id `optional`\n\n> customer id from finance system (different from customer_id in other APIs) \n  \n\n###### name `optional`\n\n> name \n  \n\n###### SortBy\n\n###### customer_id \\`default\\`\n\n> customer id from finance system (different from customer_id in other APIs)"
+								"description": "Returns customer details data from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### fullname `optional`\n\n> fullname \n  \n\n###### customer_id `optional`\n\n> customer id from finance system (different from customer_id in other APIs) \n  \n\n###### name `optional`\n\n> name \n  \n\n###### SortBy\n\n###### customer_id `default`\n\n> customer id from finance system (different from customer_id in other APIs)"
 							},
 							"response": [
 								{
@@ -4094,7 +4094,7 @@
 									"formdata": []
 								},
 								"url": "https://api.sikkasoft.com/v4/finance/employee",
-								"description": "Returns employee details data from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### account_number `optional`\n\n> account_number from finance system \n  \n\n###### employee `optional`\n\n> name of the employee from finance system\n\n\n###### SortBy\n\n###### account_number \n> account number from finance system"
+								"description": "Returns employee details data from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### account_number `optional`\n\n> account_number from finance system \n  \n\n###### employee `optional`\n\n> name of the employee from finance system \n  \n\n###### SortBy\n\n###### account_number `default`\n\n> account number from finance system"
 							},
 							"response": [
 								{
@@ -4231,7 +4231,7 @@
 									"formdata": []
 								},
 								"url": "https://api.sikkasoft.com/v4/finance/payroll_details",
-								"description": "Returns payroll details data from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### reference_number `optional`\n\n> reference_number from finance system \n  \n\n###### startdate `optional`\n\n> format: yyyy-mm-dd, start date \n  \n\n###### enddate `optional`\n\n> format: yyyy-mm-dd, end date\n\n\n###### SortBy\n\n###### reference_number\n > reference number from finance system\n"
+								"description": "Returns payroll details data from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### reference_number `optional`\n\n> reference_number from finance system \n  \n\n###### startdate `optional`\n\n> format: yyyy-mm-dd, start date \n  \n\n###### enddate `optional`\n\n> format: yyyy-mm-dd, end date \n  \n\n###### SortBy\n\n###### reference_number `default`\n\n> reference number from finance system"
 							},
 							"response": [
 								{
@@ -4368,7 +4368,7 @@
 									"formdata": []
 								},
 								"url": "https://api.sikkasoft.com/v4/finance/transactions",
-								"description": "Returns transaction details from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id in finance system \n  \n\n###### customer_id `optional`\n\n> customer id in finance system \n  \n\n###### account_name `optional`\n\n> account name in finance system \n  \n\n###### account_number `optional`\n\n> account number in finance system \n  \n\n###### reference_number `optional`\n\n> reference_number from finance system \n  \n\n###### startdate `optional`\n\n> format: yyyy-mm-dd, start date \n  \n\n###### enddate `optional`\n\n> format: yyyy-mm-dd, end date \n  \n\n###### date_filter_on `optional`\n\n> specifies on which field given start date and end date will be applied\n\n\n###### SortBy\n\n###### account_name\n\n> account name"
+								"description": "Returns transaction details from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id in finance system \n  \n\n###### customer_id `optional`\n\n> customer id in finance system \n  \n\n###### account_name `optional`\n\n> account name in finance system \n  \n\n###### account_number `optional`\n\n> account number in finance system \n  \n\n###### reference_number `optional`\n\n> reference_number from finance system \n  \n\n###### startdate `optional`\n\n> format: yyyy-mm-dd, start date \n  \n\n###### enddate `optional`\n\n> format: yyyy-mm-dd, end date \n  \n\n###### date_filter_on `optional`\n\n> specifies on which field given start date and end date will be applied \n  \n\n###### SortBy\n\n###### account_name `default`\n\n> account name"
 							},
 							"response": [
 								{
@@ -4505,7 +4505,7 @@
 									"formdata": []
 								},
 								"url": "https://api.sikkasoft.com/v4/finance/vendors",
-								"description": "Returns vendors details from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### account_number `optional`\n\n> account number in finance system \n  \n\n###### vendor `optional`\n\n> name of the vendor in finance system \n  \n\n###### contact_person `optional`\n\n> name of the contact person in finance system\n\n\n###### SortBy\n\n###### account_number\n\n> account number in finance system "
+								"description": "Returns vendors details from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### account_number `optional`\n\n> account number in finance system \n  \n\n###### vendor `optional`\n\n> name of the vendor in finance system \n  \n\n###### contact_person `optional`\n\n> name of the contact person in finance system \n  \n\n###### SortBy\n\n###### account_number `default`\n\n> account number in finance system"
 							},
 							"response": [
 								{
@@ -4645,7 +4645,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/data_sync_status",
-								"description": "The ‘data_sync_status’ api indicates if the practice management system integration is uptodate. ‘Status’ in api response should be equal to ‘refresh’ to make sure data you are receiving via api is correct.\n\n> The ‘data_sync_status’ api resource returns the real time status of practice management system connection. \n  \n> **\"Status\":\"not_refresh\"** - Sikka integration is not able to connect practice management systems for more than 24 hours. \n  \n> **\"Status\":\"refresh\"** - Sikka integration is connected practice management systems & data is up to date. Check data_insert_date for latest data fetch. \n  \n> **“Interval”** parameter allows you to get the list of practices refreshed in the last 5, 10, 15… minutes. \n  \n\nSample output\n\n| Status | Office_id | practice_name | data_insert_date |\n| --- | --- | --- | --- |\n| refresh | D1000 | ProForm Clinics | 2022-08-02T18:12:59 |\n| refresh | D12435 | Fountain Valley Physical Medicine Center | 2022-07-29T02:34:16 |\n| not refresh | C10001 | The Brain Center | 2021-06-09T23:31:07 |\n\n###### Parameters\n\n###### **app-id** `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### **app-key** `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### **office_id** `optional`\n\n> Office_id you received from ‘authorized_practices’ API \n  \n\n###### **interval** `optional (int)`\n\n> Value must be integer.  \n'interval' parameter allows the user to get the list of practices which have been refreshed in the last minutes.\n\n\n###### status `optional`\n> Status\n\n###### practice_management_system `optional`\n> practice_management_system \n\n###### practice_name `optional`\n> Practice name\n\n###### SortBy\n\n###### office_id\n> Office_id you received from ‘authorized_practices’ API \n\n###### practice_id\n> Practice ID\n"
+								"description": "The ‘data_sync_status’ api indicates if the practice management system integration is uptodate. ‘Status’ in api response should be equal to ‘refresh’ to make sure data you are receiving via api is correct.\n\n> The ‘data_sync_status’ api resource returns the real time status of practice management system connection. \n  \n> **\"Status\":\"not_refresh\"** - Sikka integration is not able to connect practice management systems for more than 24 hours. \n  \n> **\"Status\":\"refresh\"** - Sikka integration is connected practice management systems & data is up to date. Check data_insert_date for latest data fetch. \n  \n> **“Interval”** parameter allows you to get the list of practices refreshed in the last 5, 10, 15… minutes. \n  \n\nSample output\n\n| Status | Office_id | practice_name | data_insert_date |\n| --- | --- | --- | --- |\n| refresh | D1000 | ProForm Clinics | 2022-08-02T18:12:59 |\n| refresh | D12435 | Fountain Valley Physical Medicine Center | 2022-07-29T02:34:16 |\n| not refresh | C10001 | The Brain Center | 2021-06-09T23:31:07 |\n\n###### Parameters\n\n###### **app-id** `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### **app-key** `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### **office_id** `optional`\n\n> Office_id you received from ‘authorized_practices’ API \n  \n\n###### **interval** `optional (int)`\n\n> Value must be integer.  \n'interval' parameter allows the user to get the list of practices which have been refreshed in the last minutes. \n  \n\n###### status `optional`\n\n> Status \n  \n\n###### practice_management_system `optional`\n\n> practice_management_system \n  \n\n###### practice_name `optional`\n\n> Practice name \n  \n\n###### SortBy\n\n###### office_id `default`\n\n> Office_id you received from ‘authorized_practices’ API \n  \n\n###### practice_id\n\n> Practice ID"
 							},
 							"response": [
 								{
