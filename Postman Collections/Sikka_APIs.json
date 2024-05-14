@@ -2790,7 +2790,7 @@
 										}
 									]
 								},
-								"description": "Return the list of optometry products\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### product_id `optional`\n\n> product id of office\n\n\n###### product_detail_number `optional`\n> Product details number\n\n\n###### product_code `optional`\n> Product code\n\n\n###### SortBy\n\n###### product_id\n> ID of product based on practice management system\n\n###### practice_id\n>  practice id of office \n"
+								"description": "Return the list of optometry products\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### product_id `optional`\n\n> product id of office \n  \n\n###### product_detail_number `optional`\n\n> Product details number \n  \n\n###### product_code `optional`\n\n> Product code \n  \n\n###### SortBy\n\n###### product_id `default`\n\n> ID of product based on practice management system \n  \n\n###### practice_id\n\n> practice id of office"
 							},
 							"response": [
 								{
@@ -2930,7 +2930,7 @@
 										}
 									]
 								},
-								"description": "Return the lab test details\n\n###### Parameters\n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### category `optional`\n\n> category\n\n\n###### item  `optional`\n> item \n\n###### lab_id `optional`\n> Lab ID\n\n\n###### SortBy\n\n###### category \n> category"
+								"description": "Return the lab test details\n\n###### Parameters\n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### category `optional`\n\n> category \n  \n\n###### item `optional`\n\n> item \n  \n\n###### lab_id `optional`\n\n> Lab ID \n  \n\n###### SortBy\n\n###### category `default`\n\n> category"
 							},
 							"response": [
 								{
@@ -3040,7 +3040,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/patient_documents_display",
-								"description": "Return patient documents stored in practice management systems. You can download actual document from link provided in API response. Link will be valid 24 hours.\n\n###### Parameters\n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> patient id of office\n\n\n###### SortBy\n\n###### practice_id\n> practice id of office\n\n###### patient_id\n> patient id of office\n"
+								"description": "Return patient documents stored in practice management systems. You can download actual document from link provided in API response. Link will be valid 24 hours.\n\n###### Parameters\n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> patient id of office \n  \n\n###### SortBy\n\n###### practice_id\n\n> practice id of office \n  \n\n###### patient_id `default`\n\n> patient id of office"
 							},
 							"response": [
 								{
@@ -3132,7 +3132,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/patient_balance",
-								"description": "Return patient balance from practice management systems.\n\n###### Parameters\n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> patient id of office \n  \n\n###### customer_id `optional`\n\n> customer id of office \n  \n\n###### current_date `optional`\n\n> format: yyyy-mm-dd, current date\n\n\n###### SortBy\n\n###### customer_id \n\n> customer id of office \n  \n\n###### current_date \n\n> format: yyyy-mm-dd, current date\n\n###### practice_id \n\n> practice id of office "
+								"description": "Return patient balance from practice management systems.\n\n###### Parameters\n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> patient id of office \n  \n\n###### customer_id `optional`\n\n> customer id of office \n  \n\n###### current_date `optional`\n\n> format: yyyy-mm-dd, current date \n  \n\n###### SortBy\n\n###### patient_id `default`\n\n> patient id of office \n\n###### customer_id\n\n> customer id of office \n  \n\n###### current_date\n\n> format: yyyy-mm-dd, current date \n  \n\n###### practice_id\n\n> practice id of office"
 							},
 							"response": [
 								{
