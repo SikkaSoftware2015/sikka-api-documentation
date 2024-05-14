@@ -1331,7 +1331,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns appointments status data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office\n\n\n###### SortBy\n\n###### practice_id \n> Practice ID"
+								"description": "Returns appointments status data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### SortBy\n\n###### practice_id `default`\n\n> Practice ID"
 							},
 							"response": [
 								{
@@ -1360,7 +1360,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns perio charts data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> Patient ID as per the management system\n\n###### date `optional`\n> Filter on date field, format: yyyy-mm-dd\n\n\n###### SortBy\n\n###### date\n> Filter on date field, format: yyyy-mm-dd\n\n###### chart_date\n> Filter on date field, format: yyyy-mm-dd\n\n###### practice_id\n> Practice ID"
+								"description": "Returns perio charts data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> Patient ID as per the management system \n  \n\n###### date `optional`\n\n> Filter on date field, format: yyyy-mm-dd \n  \n\n###### SortBy\n\n###### patient_id `default`\n\n> Patient ID as per the management system\n\n###### date\n\n> Filter on date field, format: yyyy-mm-dd \n  \n\n###### chart_date\n\n> Filter on date field, format: yyyy-mm-dd \n  \n\n###### practice_id\n\n> Practice ID"
 							},
 							"response": [
 								{
@@ -1395,7 +1395,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns patient status data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office\n\n###### Sortby\n\n###### practice_id \n>  practice id of office"
+								"description": "Returns patient status data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### Sortby\n\n###### practice_id `default`\n\n> practice id of office"
 							},
 							"response": [
 								{
@@ -1430,7 +1430,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### id `optional`\n\n> clinical condition id in practice management system \n  \n\n###### status `optional`\n\n> appointment / treatment plan / clinical_conditions status\n\n###### Sortby\n\n###### condition_name\n> Condition Name\n\n###### tooth_surface\n> tooth surface\n\n###### description\n> description\n\n###### status\n> appointment / treatment plan / clinical_conditions status\n\n###### id\n> valid id, coma separated for multiple\n\n"
+								"description": "###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### id `optional`\n\n> clinical condition id in practice management system \n  \n\n###### status `optional`\n\n> appointment / treatment plan / clinical_conditions status \n  \n\n###### Sortby\n\n###### condition_name\n\n> Condition Name \n  \n\n###### tooth_surface\n\n> tooth surface \n  \n\n###### description\n\n> description \n  \n\n###### status\n\n> appointment / treatment plan / clinical_conditions status \n  \n\n###### id `default`\n\n> valid id, coma separated for multiple"
 							},
 							"response": [
 								{
@@ -1465,7 +1465,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/guarantor_accounts",
-								"description": "###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### guarantor_id `optional`\n\n> guarantor id in practice management system \n  \n\n###### provider_id `optional`\n\n> provider id in practice management system\n\n\n###### patient_id `optional`\n> patient ID\n\n###### phone `optional`\n> phone number\n\n###### firstname `optional`\n> First name of patient, provider or guarantor\n\n###### lastname `optional`\n> Last name of patient, provider or guarantor\n\n###### workphone `optional`\n> workphone number\n\n###### Sortby\n\n###### firstname Or first_name\n> First name of patient, provider or guarantor\n\n###### lastname  Or last_name\n> Last name of patient, provider or guarantor\n\n###### zipcode\n> Zipcode\n\n###### guarantor_id\n> Guarantor id as per practice management systems\n"
+								"description": "###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### guarantor_id `optional`\n\n> guarantor id in practice management system \n  \n\n###### provider_id `optional`\n\n> provider id in practice management system \n  \n\n###### patient_id `optional`\n\n> patient ID \n  \n\n###### phone `optional`\n\n> phone number \n  \n\n###### firstname `optional`\n\n> First name of patient, provider or guarantor \n  \n\n###### lastname `optional`\n\n> Last name of patient, provider or guarantor \n  \n\n###### workphone `optional`\n\n> workphone number \n  \n\n###### Sortby\n\n###### guarantor_id `default`\n\n> Guarantor id as per practice management systems\n\n###### firstname Or first_name\n\n> First name of patient, provider or guarantor \n  \n\n###### lastname Or last_name\n\n> Last name of patient, provider or guarantor \n  \n\n###### zipcode\n\n> Zipcode \n  \n\n"
 							},
 							"response": [
 								{
