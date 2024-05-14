@@ -3426,7 +3426,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/preregistered_patients",
-								"description": "Return incoming or referral patient information, before they are actually added as an official patient.\n\n###### Parameters\n\n###### email `optional`\n\n> Email id. \n  \n\n###### preregistration_id `optional`\n\n> Preregistration ID as per the practice management system \n  \n\n###### firstname `optional`\n\n> First name of patient \n  \n\n###### lastname `optional`\n\n> Last name of patient \n  \n\n###### cell `optional`\n\n> Cell Number \n  \n\n###### search `optional`\n\n> Search patient by firstname , lastname , email , city, state, zipcode, homephone, workphone, cell \n  \n\n###### phone `optional`\n\n> Phone Number \n  \n\n###### homephone `optional`\n\n> Home phone Number \n  \n\n###### workphone `optional`\n\n> Work phone Number \n  \n\n###### provider_id `optional`\n\n> Provider ID as per the practice management system \n  \n\n###### guarantor_id `optional`\n\n> Guarantor ID as per the practice management system \n  \n\n###### SortBy\n\n###### preregistration_id `default`\n\n> Preregistration ID as per the practice management system. \n  \n\n###### firstname\n\n> First Name as per the practice management system. \n  \n\n###### lastname\n\n> Last Name as per the practice management system. \n  \n\n###### zipcode\n\n> Zip Code of patient.\n\n\n"
+								"description": "Return incoming or referral patient information, before they are actually added as an official patient.\n\n###### Parameters\n\n###### email `optional`\n\n> Email id. \n  \n\n###### preregistration_id `optional`\n\n> Preregistration ID as per the practice management system \n  \n\n###### firstname `optional`\n\n> First name of patient \n  \n\n###### lastname `optional`\n\n> Last name of patient \n  \n\n###### cell `optional`\n\n> Cell Number \n  \n\n###### search `optional`\n\n> Search patient by firstname , lastname , email , city, state, zipcode, homephone, workphone, cell \n  \n\n###### phone `optional`\n\n> Phone Number \n  \n\n###### homephone `optional`\n\n> Home phone Number \n  \n\n###### workphone `optional`\n\n> Work phone Number \n  \n\n###### provider_id `optional`\n\n> Provider ID as per the practice management system \n  \n\n###### guarantor_id `optional`\n\n> Guarantor ID as per the practice management system \n  \n\n###### SortBy\n\n###### preregistration_id `default`\n\n> Preregistration ID as per the practice management system. \n  \n\n###### firstname\n\n> First Name as per the practice management system. \n  \n\n###### lastname\n\n> Last Name as per the practice management system. \n  \n\n###### zipcode\n\n> Zip Code of patient."
 							},
 							"response": [
 								{
@@ -3546,7 +3546,7 @@
 									"formdata": []
 								},
 								"url": "https://api.sikkasoft.com/v4/finance/accounts",
-								"description": "Returns accounts data from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### account_number `optional`\n\n> account number from accounts \n  \n\n###### account_name `optional`\n\n> account name from accounts \n  \n\n###### account_type `optional`\n\n> account type from accounts\n\n\n###### SortBy\n\n###### account_number \n> account number from accounts \n"
+								"description": "Returns accounts data from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### account_number `optional`\n\n> account number from accounts \n  \n\n###### account_name `optional`\n\n> account name from accounts \n  \n\n###### account_type `optional`\n\n> account type from accounts \n  \n\n###### SortBy\n\n###### account_number `default`\n\n> account number from accounts"
 							},
 							"response": [
 								{
@@ -3683,7 +3683,7 @@
 									"formdata": []
 								},
 								"url": "https://api.sikkasoft.com/v4/finance/balances",
-								"description": "Returns balance details data from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n\n\n###### SortBy\n\n###### account_name\n> Account name"
+								"description": "Returns balance details data from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### SortBy\n\n###### account_name `default`\n\n> Account name"
 							},
 							"response": [
 								{
@@ -3820,7 +3820,7 @@
 									"formdata": []
 								},
 								"url": "https://api.sikkasoft.com/v4/finance/budgets",
-								"description": "Returns budgets details data from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n\n###### SortBy\n\n###### account_name\n> Account name"
+								"description": "Returns budgets details data from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### SortBy\n\n###### account_name `default`\n\n> Account name"
 							},
 							"response": [
 								{
@@ -3957,7 +3957,7 @@
 									"formdata": []
 								},
 								"url": "https://api.sikkasoft.com/v4/finance/customers",
-								"description": "Returns customer details data from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### fullname `optional`\n\n> fullname \n  \n\n###### customer_id `optional`\n\n> customer id from finance system (different from customer_id in other APIs)\n\n###### name `optional`\n> name \n\n\n\n###### SortBy\n\n###### customer_id \n\n> customer id from finance system (different from customer_id in other APIs)"
+								"description": "Returns customer details data from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### fullname `optional`\n\n> fullname \n  \n\n###### customer_id `optional`\n\n> customer id from finance system (different from customer_id in other APIs) \n  \n\n###### name `optional`\n\n> name \n  \n\n###### SortBy\n\n###### customer_id \\`default\\`\n\n> customer id from finance system (different from customer_id in other APIs)"
 							},
 							"response": [
 								{
