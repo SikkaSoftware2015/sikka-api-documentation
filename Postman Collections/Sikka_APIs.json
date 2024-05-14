@@ -2303,7 +2303,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns patient's ssn information from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### patient_id `optional`\n\n> patient id from practice \n  \n\n###### practice_id `optional`\n\n> practice id of office\n\n\n###### Sortby \n\n\n###### firstname \n> Patient first name\n\n###### lastname\n> Patient last name\n \n###### zipcode\n> Patient location zipcode\n\n###### patient_id \n> patient id from practice "
+								"description": "Returns patient's ssn information from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### patient_id `optional`\n\n> patient id from practice \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### Sortby\n\n###### patient_id `default`\n\n> patient id from practice\n\n###### firstname\n\n> Patient first name \n  \n\n###### lastname\n\n> Patient last name \n  \n\n###### zipcode\n\n> Patient location zipcode \n  \n\n"
 							},
 							"response": [
 								{
@@ -2340,7 +2340,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns payors inforamtion from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### insurance_company_id `optional`\n\n> insurance company id from practice \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### Sortby\n\n###### insurance_company_name\n\n> Insurance company name from practice \n  \n\n###### insurance_company_id\n\n>  insurance company id from practice"
+								"description": "Returns payors inforamtion from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### insurance_company_id `optional`\n\n> insurance company id from practice \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### Sortby\n\n###### insurance_company_id `default`\n\n> insurance company id from practice\n\n###### insurance_company_name\n\n> Insurance company name from practice \n  \n\n"
 							},
 							"response": [
 								{
@@ -2377,7 +2377,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns pet documents data path from veterinary practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### patient_id `optional`\n\n> patient id from practice ( in case of veterinary , this is pet id) \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### SortBy\n\n###### patient_id\n\n> patient id from practice ( in case of veterinary , this is pet id) \n  \n\n###### practice_id\n\n> practice id of office"
+								"description": "Returns pet documents data path from veterinary practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### patient_id `optional`\n\n> patient id from practice ( in case of veterinary , this is pet id) \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### SortBy\n\n###### patient_id `default`\n\n> patient id from practice ( in case of veterinary , this is pet id) \n  \n\n###### practice_id\n\n> practice id of office"
 							},
 							"response": []
 						},
@@ -2391,7 +2391,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns procedure codes category data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### category `optional`\n\n> procedure category name\n  \n\n###### Sortby\n\n###### category\n\n> procedure category name\n  \n\n###### practice_id\n\n> Practice id of office"
+								"description": "Returns procedure codes category data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### category `optional`\n\n> procedure category name \n  \n\n###### Sortby\n\n###### category `default`\n\n> procedure category name \n  \n\n###### practice_id\n\n> Practice id of office"
 							},
 							"response": [
 								{
@@ -2428,7 +2428,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns proceudre categories with procdure codes , if procedure codes are mapped with category in practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### customer_id `optional`\n\n> Customer Id \n  \n\n###### procedure_code `optional`\n\n> Procedure code as per practice management system \n  \n\ncategory `optional`\n\n> procedure category name for getting the list of codes mapped into veterinary dictionary \n  \n\n###### Sortby\n\n###### category\n\n> procedure category name for getting the list of codes mapped into veterinary dictionary \n  \n\n###### practice_id\n\n> Practice ID \n  \n\n###### procedure_code\n\n> Procedure code as per practice management system"
+								"description": "Returns proceudre categories with procdure codes , if procedure codes are mapped with category in practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### customer_id `optional`\n\n> Customer Id \n  \n\n###### procedure_code `optional`\n\n> Procedure code as per practice management system \n  \n\ncategory `optional`\n\n> procedure category name for getting the list of codes mapped into veterinary dictionary \n  \n\n###### Sortby\n\n###### category `default`\n\n> procedure category name for getting the list of codes mapped into veterinary dictionary \n  \n\n###### practice_id\n\n> Practice ID \n  \n\n###### procedure_code\n\n> Procedure code as per practice management system"
 							},
 							"response": []
 						},
@@ -2442,7 +2442,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns purchase orders data from practice ( mostly applicable to veterinary practice)\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### vendor_id `optional`\n\n> vendor id from practice \n  \n\n###### practice_id `optional`\n\n> practice id of office\n\n\n###### procedure_code_id `optional`\n> Procedure code id is same as procedure code.\n\n###### order_number `optional` \n> Order number\n\n###### order_date `optional`\n>  Order date\n\n###### SortBy\n\n###### vendor_id \n\n> vendor id from practice \n  \n\n###### practice_id \n\n> practice id of office\n\n###### procedure_code_id \n> Procedure code id is same as procedure code.\n"
+								"description": "Returns purchase orders data from practice ( mostly applicable to veterinary practice)\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### vendor_id `optional`\n\n> vendor id from practice \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### procedure_code_id `optional`\n\n> Procedure code id is same as procedure code. \n  \n\n###### order_number `optional`\n\n> Order number \n  \n\n###### order_date `optional`\n\n> Order date \n  \n\n###### SortBy\n\n###### vendor_id\n\n> vendor id from practice \n  \n\n###### practice_id\n\n> practice id of office \n  \n\n###### procedure_code_id\n\n> Procedure code id is same as procedure code."
 							},
 							"response": [
 								{
