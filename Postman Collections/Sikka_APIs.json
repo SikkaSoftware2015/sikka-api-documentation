@@ -1856,7 +1856,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns lab panels information from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### lab_panel_id `optional`\n\n> lab panel id from appointments \n  \n\n###### practice_id `optional`\n\n> practice id of office\n\n###### procedure_code_id  `optional`\n> Procedure code id is same as procedure code.\n\n###### status `optional`\n> status\n\n###### lab_name `optional`\n> lab name\n\n\n\n###### Sortby \n\n\n\n###### lab_panel_id\n> lab panel id from appointments "
+								"description": "Returns lab panels information from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### lab_panel_id `optional`\n\n> lab panel id from appointments \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### procedure_code_id `optional`\n\n> Procedure code id is same as procedure code. \n  \n\n###### status `optional`\n\n> status \n  \n\n###### lab_name `optional`\n\n> lab name \n  \n\n###### Sortby\n\n###### lab_panel_id `default`\n\n> lab panel id from appointments"
 							},
 							"response": [
 								{
@@ -1891,7 +1891,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/lab_profiles",
-								"description": "Returns lab profiles information from practice management system\n\n---\n\n###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### Parameters\n\n###### profile_id `optional`\n\n> Profile Id. \n  \n\n###### profile_name `optional`\n\n> Profile Name. \n  \n\n###### lab_id `optional`\n\n> Lab Id. \n  \n\n###### profile_type `optional`\n\n> Profile Type. \n  \n\n###### order_no `optional`\n\n> Order Number. \n  \n\n###### practice_id `optional`\n\n> Practice Id.\n\n\n \n###### can_be_requested `optional`\n> Can be requested\n\n\n\n###### Sortby \n\n\n###### profile_id\n> Profile Id"
+								"description": "Returns lab profiles information from practice management system\n\n---\n\n###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### Parameters\n\n###### profile_id `optional`\n\n> Profile Id. \n  \n\n###### profile_name `optional`\n\n> Profile Name. \n  \n\n###### lab_id `optional`\n\n> Lab Id. \n  \n\n###### profile_type `optional`\n\n> Profile Type. \n  \n\n###### order_no `optional`\n\n> Order Number. \n  \n\n###### practice_id `optional`\n\n> Practice Id. \n  \n\n###### can_be_requested `optional`\n\n> Can be requested \n  \n\n###### Sortby\n\n###### profile_id `default`\n\n> Profile Id"
 							},
 							"response": [
 								{
@@ -1928,7 +1928,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/lab_sub_profiles",
-								"description": "Returns lab sub profiles information from practice management system\n\n---\n\n###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### Parameters\n\n###### profile_id `optional`\n\n> Profile Id. \n  \n\n###### sub_profiles_test `optional`\n\n> Sub Profile Test. \n  \n\n###### test_sequence `optional`\n\n> Test Sequence. \n  \n\n###### type `optional`\n\n> Type. \n  \n\n###### practice_id `optional`\n\n> Practice Id.\n\n###### SortBy\n\n###### profile_id\n> Profile Id\n\n"
+								"description": "Returns lab sub profiles information from practice management system\n\n---\n\n###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### Parameters\n\n###### profile_id `optional`\n\n> Profile Id. \n  \n\n###### sub_profiles_test `optional`\n\n> Sub Profile Test. \n  \n\n###### test_sequence `optional`\n\n> Test Sequence. \n  \n\n###### type `optional`\n\n> Type. \n  \n\n###### practice_id `optional`\n\n> Practice Id. \n  \n\n###### SortBy\n\n###### profile_id `default`\n\n> Profile Id"
 							},
 							"response": [
 								{
@@ -1965,7 +1965,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/lab_profile_invoice_items",
-								"description": "Returns lab profile invoice items information from practice management system\n\n---\n\n###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### Parameters\n\n###### profile_id `optional`\n\n> Profile Id. \n  \n\n###### code `optional`\n\n> Code. \n  \n\n###### practice_id `optional`\n\n> Practice Id.\n\n\n###### SortBy\n\n###### profile_id\n\n> Profile Id.\n"
+								"description": "Returns lab profile invoice items information from practice management system\n\n---\n\n###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### Parameters\n\n###### profile_id `optional`\n\n> Profile Id. \n  \n\n###### code `optional`\n\n> Code. \n  \n\n###### practice_id `optional`\n\n> Practice Id. \n  \n\n###### SortBy\n\n###### profile_id `default`\n\n> Profile Id."
 							},
 							"response": [
 								{
@@ -2002,7 +2002,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/lab_requests",
-								"description": "Returns lab requests information from practice management system\n\n---\n\n###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### Parameters\n\n###### profile_id `optional`\n\n> Profile Id from Practice management system. \n  \n\n###### patient_id `optional`\n\n> Patient Id from Practice management system. \n  \n\n###### practice_id `optional`\n\n> Practice Id of office. \n  \n\n###### lab_id `optional`\n\n> Lab Id from Practice management system. \n  \n\n###### guarantor_id `optional`\n\n> Guarantor Id from Practice management system. \n  \n\n###### provider_id `optional`\n\n> Provider Id from Practice management system. \n  \n\n###### requisition_id `optional`\n\n> Requisition Idd from Practice management system. \n  \n\n###### status `optional`\n\n> Status.\n\n\n\n###### SortBy\n\n###### requisition_id \n\n> Requisition Id from Practice management system. "
+								"description": "Returns lab requests information from practice management system\n\n---\n\n###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### Parameters\n\n###### profile_id `optional`\n\n> Profile Id from Practice management system. \n  \n\n###### patient_id `optional`\n\n> Patient Id from Practice management system. \n  \n\n###### practice_id `optional`\n\n> Practice Id of office. \n  \n\n###### lab_id `optional`\n\n> Lab Id from Practice management system. \n  \n\n###### guarantor_id `optional`\n\n> Guarantor Id from Practice management system. \n  \n\n###### provider_id `optional`\n\n> Provider Id from Practice management system. \n  \n\n###### requisition_id `optional`\n\n> Requisition Idd from Practice management system. \n  \n\n###### status `optional`\n\n> Status. \n  \n\n###### SortBy\n\n###### requisition_id `default`\n\n> Requisition Id from Practice management system."
 							},
 							"response": [
 								{
@@ -2039,7 +2039,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns patient medical history from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### patient_id `optional`\n\n> patient id from practice \n  \n\n###### practice_id `optional`\n\n> practice id of office\n\n\n###### Sortby \n\n###### patient_id \n\n> patient id from practice "
+								"description": "Returns patient medical history from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### patient_id `optional`\n\n> patient id from practice \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### Sortby\n\n###### patient_id `default`\n\n> patient id from practice"
 							},
 							"response": [
 								{
