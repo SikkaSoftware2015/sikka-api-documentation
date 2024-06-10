@@ -3528,7 +3528,8 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"description": "###### https://api.sikkasoft.com/v4/animal_vital_signs"
 							},
 							"response": []
 						}
