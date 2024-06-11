@@ -3528,7 +3528,8 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"description": "parameters\n\n###### date\n>>\n\n###### vital_sign_name\n>>\n\n\nsort by\n\n### date\n>> \n### practice_id\n>> \n### patient_id\n>>"
 							},
 							"response": []
 						}
