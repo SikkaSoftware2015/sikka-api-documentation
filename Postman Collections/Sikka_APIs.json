@@ -305,7 +305,7 @@
 							"name": "Bulk Export",
 							"item": [],
 							"id": "9c705ebb-5323-45e8-9eea-0dc0a876fe29",
-							"description": "Bulk export is an asynchronous service that can be used to export large amounts of data from Sikka cloud  \nto CSV and JSON . Its asynchronous nature allows for high speed  \ndata export significantly reducing the time and resources consumed on the client side as compared to using APIs with pagination.\n\nCheck Bulk Export guide for more details\n\nLimitation: Bulk Export not support for history data and authentication APIs."
+							"description": "Bulk export is an asynchronous service that can be used to export large amounts of data from Sikka cloud  \nto CSV and JSON . Its asynchronous nature allows for high speed  \ndata export significantly reducing the time and resources consumed on the client side as compared to using APIs with pagination.\n\n[Check Bulk Export guide for more details](https://api.sikkasoft.com/portal/images/SikkaAPIV4-BulkExport.pdf)\n\nLimitation: Bulk Export not support for history data and authentication APIs."
 						}
 					],
 					"id": "8b8ddc1a-ec5e-4981-b893-e842eb57e59c",
