@@ -300,6 +300,12 @@
 									}
 								}
 							]
+						},
+						{
+							"name": "Bulk Export",
+							"item": [],
+							"id": "9c705ebb-5323-45e8-9eea-0dc0a876fe29",
+							"description": "Bulk export is an asynchronous service that can be used to export large amounts of data from Sikka cloud  \nto CSV (More export data type is coming. I.e json ) . Its asynchronous nature allows for high speed  \ndata export significantly reducing the time and resources consumed on the client side as compared to  \nusing APIs with pagination."
 						}
 					],
 					"id": "8b8ddc1a-ec5e-4981-b893-e842eb57e59c",
