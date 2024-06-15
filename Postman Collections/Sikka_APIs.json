@@ -277,7 +277,7 @@
 							"name": "Onboarding practices to your application(s)",
 							"item": [],
 							"id": "c20a63fc-7a00-478c-a723-80b9b3ae06dc",
-							"description": "&#9996; ARE YOU READY TO INTEGRATE WITH PRACTICES ?\n\nYou need to publish your application on [Sikka marketplace](https://www.sikkasoft.com/Marketplace)\n\n&#10102; Log into API portal --> Publish application\n\n[![](https://i9.ytimg.com/vi/Cke7BE5l444/mq3.jpg?sqp=COC3zP0F&rs=AOn4CLCgCaVmF6gEIbsbk32ASg5PRTNzgg)](https://youtu.be/Cke7BE5l444)\n\n&#10103; Go to 'Partner info' and click on marketplace status. It will redirect you to on boarding page\n![](https://api.sikkasoft.com/portal/images/marketplace_status.png)\n\n&#10104; On board healthcare practice & install SPU\n\n[Download installation guide](https://api.sikkasoft.com/portal/images/Marketplace_Registration_and_Installation_Guide.pdf)\n\n&#10105; Start fetching and displaying data from healthcare practice\n\n&#9989;PREREQUISITE :\n> To fetch the data SPU (Sikka Practice Utility) must be installed on practice server.",
+							"description": "✌ ARE YOU READY TO INTEGRATE WITH PRACTICES ?\n\nYou need to publish your application on [Sikka marketplace](https://www.sikkasoft.com/Marketplace)\n\n❶ Log into API portal Publish application\n\n[<img src=\"https://i9.ytimg.com/vi/Cke7BE5l444/mq3.jpg?sqp=COC3zP0F&amp;rs=AOn4CLCgCaVmF6gEIbsbk32ASg5PRTNzgg\">](https://youtu.be/Cke7BE5l444)\n\n❷ Go to 'Partner info' and click on marketplace status. It will redirect you to on boarding page  \n\n<img src=\"https://api.sikkasoft.com/portal/images/marketplace_status.png\">\n\n❸ On board healthcare practice & install SPU\n\n[Download installation guide](https://api.sikkasoft.com/portal/images/Marketplace_Registration_and_Installation_Guide.pdf)\n\n❹ Start fetching and displaying data from healthcare practice\n\n✅PREREQUISITE :\n\n> To fetch the data SPU (Sikka Practice Utility) must be installed on practice server.",
 							"event": [
 								{
 									"listen": "prerequest",
@@ -305,7 +305,7 @@
 							"name": "Bulk Export",
 							"item": [],
 							"id": "9c705ebb-5323-45e8-9eea-0dc0a876fe29",
-							"description": "Bulk export is an asynchronous service that can be used to export large amounts of data from Sikka cloud  \nto CSV (More export data type is coming. I.e json ) . Its asynchronous nature allows for high speed  \ndata export significantly reducing the time and resources consumed on the client side as compared to  \nusing APIs with pagination."
+							"description": "Bulk export is an asynchronous service that can be used to export large amounts of data from Sikka cloud  \nto CSV and JSON . Its asynchronous nature allows for high speed  \ndata export significantly reducing the time and resources consumed on the client side as compared to using APIs with pagination.\n\nCheck Bulk Export guide for more details\n\nLimitation: Bulk Export not support for history data and authentication APIs."
 						}
 					],
 					"id": "8b8ddc1a-ec5e-4981-b893-e842eb57e59c",
