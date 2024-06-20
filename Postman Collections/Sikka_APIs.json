@@ -3547,7 +3547,7 @@
 							"response": [
 								{
 									"id": "60cf0917-37a6-4e0f-877d-c40eb69a358e",
-									"name": "preregistered_patients",
+									"name": "guarantor_patient_mapping",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
