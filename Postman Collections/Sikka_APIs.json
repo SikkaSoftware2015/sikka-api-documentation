@@ -3550,7 +3550,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/guarantor_patient_mapping/{guarantor_id}",
-								"description": "[https://api.sikkasoft.com/v4/guarantor_patient_mapping/{guarantor_id}](https://api.sikkasoft.com/v4/guarantor_patient_mapping/%7Bguarantor_id%7D)\n\n###### Parameters\n\n##### Request-key `default`\n\n> Valid 32 characters alpha-numeric request key \n  \n\n##### guarantor_id `required`\n\n> Guarantor id as per practice management systems \n  \n\n###### SortBy\n\n##### guarantor_id `default`\n\n> Guarantor id as per practice management systems \n  \n\n##### firstname OR first_name\n\n> First name of patient, provider or guarantor \n  \n\n##### lastname OR last_name\n\n> Last name of patient, provider or guarantor \n  \n\n##### zipcode\n\n> Zipcode"
+								"description": "[https://api.sikkasoft.com/v4/guarantor_patient_mapping/{guarantor_id}](https://api.sikkasoft.com/v4/guarantor_patient_mapping/%7Bguarantor_id%7D)\n\n###### Parameters\n\n##### Request-key `default`\n\n> Valid 32 characters alpha-numeric request key \n  \n\n##### guarantor_id `required`\n\n> Guarantor id as per practice management systems \n  \n\n###### patient_id\n\n> Practice ID \n  \n\n###### SortBy\n\n##### guarantor_id `default`\n\n> Guarantor id as per practice management systems \n  \n\n##### firstname OR first_name\n\n> First name of patient, provider or guarantor \n  \n\n##### lastname OR last_name\n\n> Last name of patient, provider or guarantor \n  \n\n##### zipcode\n\n> Zipcode"
 							},
 							"response": []
 						}
