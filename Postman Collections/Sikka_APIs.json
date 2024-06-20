@@ -3547,7 +3547,7 @@
 							"response": [
 								{
 									"id": "89510e8b-ece3-43fc-961c-b9b786f19149",
-									"name": "preregistered_patients",
+									"name": "patient_addresses",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
