@@ -3535,7 +3535,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"description": "[https://api.sikkasoft.com/v4/guarantor_patient_mapping](https://api.sikkasoft.com/v4/guarantor_patient_mappingEndFragment)"
+								"description": "[https://api.sikkasoft.com/v4/guarantor_patient_mapping](https://api.sikkasoft.com/v4/guarantor_patient_mappingEndFragment)\n\n```\nParameters\nSortBy\nguarantor_id default\nGuarantor id as per practice management systems \nfirstname OR first_name\nFirst name of patient, provider or guarantor \nlastname OR last_name\nLast name of patient, provider or guarantor \nzipcode\nZipcode\n\n\n ```"
 							},
 							"response": []
 						}
