@@ -3542,7 +3542,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/patient_addresses",
-								"description": "### Parameters\n\n### patient_id `default`\n> Patient ID as per the management system\n\n### practice_id\n> Practice ID\n\n### SortBy\n\n### patient_id `default`\n> Patient ID as per the management system\n\n### practice_id\n> Practice ID"
+								"description": "### Parameters\n\n#### patient_id `default`\n\n> Patient ID as per the management system \n  \n\n#### practice_id\n\n> Practice ID \n  \n\n### SortBy\n\n#### patient_id `default`\n\n> Patient ID as per the management system \n  \n\n#### practice_id\n\n> Practice ID"
 							},
 							"response": [
 								{
