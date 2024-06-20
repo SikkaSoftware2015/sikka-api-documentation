@@ -3535,7 +3535,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"description": "[https://api.sikkasoft.com/v4/guarantor_patient_mappingEndFragment](https://api.sikkasoft.com/v4/guarantor_patient_mappingEndFragment)"
+								"description": "[https://api.sikkasoft.com/v4/guarantor_patient_mappingEndFragment](https://api.sikkasoft.com/v4/guarantor_patient_mappingEndFragment)\n\n### Parameters"
 							},
 							"response": []
 						}
