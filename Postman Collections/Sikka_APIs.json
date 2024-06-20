@@ -3527,6 +3527,116 @@
 							]
 						},
 						{
+							"name": "guarantor_patient_mapping",
+							"id": "3d31da06-326a-4a5b-816f-bceba37ad9c1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Request-Key",
+										"value": "Request-Key",
+										"type": "text"
+									}
+								],
+								"url": "https://api.sikkasoft.com/v4/preregistered_patients",
+								"description": "Return incoming or referral patient information, before they are actually added as an official patient.\n\n###### Parameters\n\n###### email `optional`\n\n> Email id. \n  \n\n###### preregistration_id `optional`\n\n> Preregistration ID as per the practice management system \n  \n\n###### firstname `optional`\n\n> First name of patient \n  \n\n###### lastname `optional`\n\n> Last name of patient \n  \n\n###### cell `optional`\n\n> Cell Number \n  \n\n###### search `optional`\n\n> Search patient by firstname , lastname , email , city, state, zipcode, homephone, workphone, cell \n  \n\n###### phone `optional`\n\n> Phone Number \n  \n\n###### homephone `optional`\n\n> Home phone Number \n  \n\n###### workphone `optional`\n\n> Work phone Number \n  \n\n###### provider_id `optional`\n\n> Provider ID as per the practice management system \n  \n\n###### guarantor_id `optional`\n\n> Guarantor ID as per the practice management system \n  \n\n###### SortBy\n\n###### preregistration_id `default`\n\n> Preregistration ID as per the practice management system. \n  \n\n###### firstname\n\n> First Name as per the practice management system. \n  \n\n###### lastname\n\n> Last Name as per the practice management system. \n  \n\n###### zipcode\n\n> Zip Code of patient."
+							},
+							"response": [
+								{
+									"id": "60cf0917-37a6-4e0f-877d-c40eb69a358e",
+									"name": "guarantor_patient_mapping",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "Request-Key",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/preregistered_patients?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"preregistered_patients"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.18.0 (Ubuntu)"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 10 May 2022 11:12:31 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Request-Key-Expires",
+											"value": "Wed, 11 May 2022 09:12:24 GMT"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "origin"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload;"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n    \"offset\": \"0\",\r\n    \"limit\": \"xx\",\r\n    \"total_count\": \"xxx\",\r\n    \"execution_time\": \"xxx\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/preregistered_patients?offset=0&limit=xx\",\r\n        \"previous\": \"\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/preregistered_patients?offset=xxx&limit=xx\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/preregistered_patients?offset=xxx&limit=xx\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/preregistered_patients?offset=xxx&limit=xx\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/{practice_id}/preregistered_patients/{preregistration_id}\",\r\n            \"guarantor_id\": \"guarantor id\",\r\n            \"firstname\": \"first name\",\r\n            \"lastname\": \"last name\",\r\n            \"salutation\": \"salutation\",\r\n            \"birthdate\": \"date of birth\",\r\n            \"gender\": \"gender\",\r\n            \"address_line1\": \"address line1\",\r\n            \"address_line2\": \"address line2\",\r\n            \"city\": \"city\",\r\n            \"state\": \"state\",\r\n            \"zipcode\": \"zipcode\",\r\n            \"homephone\": \"homephone\",\r\n            \"workphone\": \"workphone\",\r\n            \"cell\": \"cell\",\r\n            \"email\": \"email\",\r\n            \"practice_id\": \"{practice_id}\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/{practice_id}\",\r\n            \"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/{practice_id}/guarantors/\",\r\n            \"primary_relationship\": \"primary relationship\",\r\n            \"guarantor_first_name\": \"guarantor first name\",\r\n            \"guarantor_last_name\": \"guarantor last name\",\r\n            \"primary_insurance\": \"primary insurance\",\r\n            \"other_phone\": \"other phone\",\r\n            \"cust_id\": \"cust id\",\r\n            \"fax\": \"fax\",\r\n            \"deductible\": \"deductible\",\r\n            \"comments\": \"comments/notes\",            \r\n            \"chart_number\": \"chart number\",\r\n            \"preregistration_id\": \"{preregistration_id}\",\r\n            \"original_contact_date\": \"original contact date\",\r\n            \"source_of_contact\": \"source of contact\",\r\n            \"general_dentist_firstname\": \"general dentist firstname\",\r\n            \"general_dentist_lastname\": \"general dentist lastname\",\r\n            \"referrer_firstname\": \"referrer firstname\",\r\n            \"referrer_lastname\": \"referrer lastname\",\r\n            \"level_of_discomfort\": \"level of discomfort\",\r\n            \"discomfort_days\": \"discomfort days\",\r\n            \"premedicate\": \"premedicate\",\r\n            \"reason_to_premedicate\": \"reason to premedicate\",\r\n            \"latex_allergy\": \"latex allergy\",\r\n            \"service\": \"service\",\r\n            \"requested_provider\": \"requested provider id\",\r\n            \"primary_insurance_employer\": \"primary insurance employer\",\r\n            \"primary_insurance_employee_lastname\": \"primary insurance employee lastname\",\r\n            \"primary_insurance_employee_firstname\": \"primary insurance employee firstname\",\r\n            \"primary_insurance_subscriber_id\": \"primary insurance subscriber id\",\r\n            \"benefits\": \"benefits\",\r\n            \"group_number\": \"group number\"\r\n        }\r\n    ]\r\n}"
+								}
+							]
+						},
+						{
 							"name": "patient_addresses",
 							"id": "23998fcc-c429-43a7-814d-ca5809a82399",
 							"protocolProfileBehavior": {
