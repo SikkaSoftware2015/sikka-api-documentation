@@ -3538,7 +3538,22 @@
 								"url": "https://api.sikkasoft.com/v4/guarantor_patient_mapping",
 								"description": "###### Parameters\n\n##### Request-key `default`\n\n> Valid 32 characters alpha-numeric request key \n  \n\n##### practice_id\n\n> Practice ID \n  \n\n###### SortBy\n\n##### guarantor_id `default`\n\n> Guarantor id as per practice management systems \n  \n\n##### firstname OR first_name\n\n> First name of patient, provider or guarantor \n  \n\n##### lastname OR last_name\n\n> Last name of patient, provider or guarantor \n  \n\n##### zipcode\n\n> Zipcode"
 							},
-							"response": []
+							"response": [
+								{
+									"id": "607c0dcc-6341-4902-b9e4-c3d139522088",
+									"name": "guarantor_patient_mapping",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": "https://api.sikkasoft.com/v4/guarantor_patient_mapping"
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "dfsafsadfdsafdsafdsafdsafasf"
+								}
+							]
 						},
 						{
 							"name": "guarantor_patient_mapping/{guarantor_id}",
