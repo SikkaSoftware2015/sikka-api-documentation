@@ -4001,8 +4001,8 @@
 										"type": "text"
 									}
 								],
-								"url": "https://api.sikkasoft.com/v4/provider_mapping",
-								"description": "### Parameters\n\n#### office_id `optional`\n\n#### practice_management_system_refresh_date_time_zone `optional`\n\n#### practice_id `optional`\n\n#### practice_name `optional`\n\n#### practice_management_system `optional`\n\n#### practice_management_system_version `optional`\n\n#### financial_system `optional`\n\n#### financial_system_version `optional`\n\n### SortBy\n\n#### practice_id `default`\n\n> Practice ID"
+								"url": "https://api.sikkasoft.com/v4/authorized_practices",
+								"description": "### Parameters\n\n#### office_id `optional`\n> Office ID\n#### practice_management_system_refresh_date_time_zone `optional`\n> Practice management system refresh date time zone \n#### practice_id `optional`\n> Practice ID\n#### practice_name `optional`\n> Practice name\n#### practice_management_system `optional`\n> Practice management system\n#### practice_management_system_version `optional`\n> Practice management system version \n#### financial_system `optional`\n> Financial system\n#### financial_system_version `optional`\n> Financial system version\n\n### SortBy\n\n#### office_id `default`\n>Office ID\n\n#### practice_id `default`\n>Practice ID"
 							},
 							"response": [
 								{
