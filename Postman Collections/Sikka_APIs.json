@@ -3726,7 +3726,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/patient_charts",
-								"description": "### Parameters\n\n#### patient_id `optional`\n\n> Patient ID as per the management system \n\n\n#### date `optional`\n\n> Date Or chart date\n  \n\n### SortBy\n\n#### patient_id `default`\n\n> Patient ID as per the management system \n  \n\n#### practice_id\n\n> Practice ID"
+								"description": "### Parameters\n\n#### patient_id `optional`\n\n> Patient ID as per the management system \n  \n\n#### date `optional`\n\n> Filter on date field, format: yyyy-mm-dd \n  \n\n### SortBy\n\n#### patient_id `default`\n\n> Patient ID as per the management system \n  \n\n#### practice_id\n\n> Practice ID \n  \n\n#### date OR chart_date\n\n> Filter on date field, format: yyyy-mm-dd"
 							},
 							"response": [
 								{
