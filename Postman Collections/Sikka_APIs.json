@@ -3893,6 +3893,98 @@
 									"body": "{\r\n  \"offset\": \"xx\",\r\n  \"limit\": \"xx\",\r\n  \"total_count\": \"xxxx\",\r\n  \"execution_time\": \"xxxx\",\r\n  \"pagination\": {\r\n    \"first\": \"https://api.sikkasoft.com/v4/many_guarantors_one_patient?offset=xx&limit=xx\",\r\n    \"previous\": \"\",\r\n    \"current\": \"https://api.sikkasoft.com/v4/many_guarantors_one_patient?offset=xx&limit=xx\",\r\n    \"next\": \"https://api.sikkasoft.com/v4/many_guarantors_one_patient?offset=xx&limit=xx\",\r\n    \"last\": \"https://api.sikkasoft.com/v4/many_guarantors_one_patient?offset=xx&limit=xx\"\r\n  },\r\n  \"items\": [\r\n    {\r\n      \"href\": \"https://api.sikkasoft.com/v4/practices/xxx/many_guarantors_one_patient/xxx\",\r\n      \"patient_href\": \"https://api.sikkasoft.com/v4/practices/xxx/patients/xxx\",\r\n      \"patient_id\": \"patient id\",\r\n      \"guarantor_id\": \"guarantor id\",\r\n      \"firstname\": \"firstname\",\r\n      \"middlename\": \"middlename\",\r\n      \"lastname\": \"lastname\",\r\n      \"salutation\": \"salutation\",\r\n      \"birthdate\": \"birthdate\",\r\n      \"gender\": \"gender\",\r\n      \"address_line1\": \"address line1\",\r\n      \"address_line2\": \"address line2\",\r\n      \"city\": \"city\",\r\n      \"state\": \"state\",\r\n      \"zipcode\": \"zipcode\",\r\n      \"workphone\": \"workphone\",\r\n      \"cell\": \"cell\",\r\n      \"email\": \"email\",\r\n      \"practice_id\": \"practice id\",\r\n      \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxx\",\r\n      \"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/xxx/guarantors/xxx\",\r\n      \"country\": \"country\",\r\n      \"marital_status\": \"marital status\",\r\n      \"phone\": \"phone\",\r\n      \"fax\": \"fax\",\r\n      \"otherphone\": \"otherphone\",\r\n      \"ext\": \"ext\",\r\n      \"relationship\": \"relationship\",\r\n      \"guarantor_bill_type\": \"guarantor bill type\",\r\n      \"guarantor_bill_type_description\": \"guarantor bill type description\"\r\n}\r\n  ]\r\n}"
 								}
 							]
+						},
+						{
+							"name": "hearing_aids",
+							"id": "ebfa354c-1edc-434d-8921-340996cebbcc",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Request-Key",
+										"value": "Request-Key",
+										"type": "text"
+									}
+								],
+								"url": "https://api.sikkasoft.com/v4/many_guarantors_one_patient",
+								"description": "### Parameters\n\n#### patient_id `optional`\n\n> Patient ID as per the management system \n  \n\n#### practice_id `optional`\n\n> Practice ID \n  \n\n#### guarantor_id `optional`\n\n> Guarantor id as per practice management systems \n  \n\n#### cell `optional`\n\n> Cell Number \n  \n\n#### phone `optional`\n\n> Phone Number \n  \n\n#### email `optional`\n\n> Email ID \n  \n\n#### firstname `optional`\n\n> First name of patient, provider or guarantor \n  \n\n#### lastname `optional`\n\n> Last name of patient, provider or guarantor \n  \n\n#### workphone `optional`\n\n> Work phone number \n  \n\n### SortBy\n\n#### patient_id `default`\n\n> Patient ID as per the management system \n  \n\n#### practice_id\n\n> Practice ID"
+							},
+							"response": [
+								{
+									"id": "746593e0-81a1-4815-b466-5ffa9a29342c",
+									"name": "hearing_aids",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "Request-Key",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/many_guarantors_one_patient"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.18.0 (Ubuntu)"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 10 May 2022 11:12:31 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Request-Key-Expires",
+											"value": "Wed, 11 May 2022 09:12:24 GMT"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "origin"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload;"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n  \"offset\": \"xx\",\r\n  \"limit\": \"xx\",\r\n  \"total_count\": \"xxxx\",\r\n  \"execution_time\": \"xxxx\",\r\n  \"pagination\": {\r\n    \"first\": \"https://api.sikkasoft.com/v4/many_guarantors_one_patient?offset=xx&limit=xx\",\r\n    \"previous\": \"\",\r\n    \"current\": \"https://api.sikkasoft.com/v4/many_guarantors_one_patient?offset=xx&limit=xx\",\r\n    \"next\": \"https://api.sikkasoft.com/v4/many_guarantors_one_patient?offset=xx&limit=xx\",\r\n    \"last\": \"https://api.sikkasoft.com/v4/many_guarantors_one_patient?offset=xx&limit=xx\"\r\n  },\r\n  \"items\": [\r\n    {\r\n      \"href\": \"https://api.sikkasoft.com/v4/practices/xxx/many_guarantors_one_patient/xxx\",\r\n      \"patient_href\": \"https://api.sikkasoft.com/v4/practices/xxx/patients/xxx\",\r\n      \"patient_id\": \"patient id\",\r\n      \"guarantor_id\": \"guarantor id\",\r\n      \"firstname\": \"firstname\",\r\n      \"middlename\": \"middlename\",\r\n      \"lastname\": \"lastname\",\r\n      \"salutation\": \"salutation\",\r\n      \"birthdate\": \"birthdate\",\r\n      \"gender\": \"gender\",\r\n      \"address_line1\": \"address line1\",\r\n      \"address_line2\": \"address line2\",\r\n      \"city\": \"city\",\r\n      \"state\": \"state\",\r\n      \"zipcode\": \"zipcode\",\r\n      \"workphone\": \"workphone\",\r\n      \"cell\": \"cell\",\r\n      \"email\": \"email\",\r\n      \"practice_id\": \"practice id\",\r\n      \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxx\",\r\n      \"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/xxx/guarantors/xxx\",\r\n      \"country\": \"country\",\r\n      \"marital_status\": \"marital status\",\r\n      \"phone\": \"phone\",\r\n      \"fax\": \"fax\",\r\n      \"otherphone\": \"otherphone\",\r\n      \"ext\": \"ext\",\r\n      \"relationship\": \"relationship\",\r\n      \"guarantor_bill_type\": \"guarantor bill type\",\r\n      \"guarantor_bill_type_description\": \"guarantor bill type description\"\r\n}\r\n  ]\r\n}"
+								}
+							]
 						}
 					],
 					"id": "0c1fa096-aa44-4088-aa2b-97a96d612a8e"
