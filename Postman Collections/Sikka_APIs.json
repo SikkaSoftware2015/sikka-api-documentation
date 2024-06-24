@@ -3895,7 +3895,7 @@
 							]
 						},
 						{
-							"name": "hearing_aid_products",
+							"name": "provider_mapping",
 							"id": "ebfa354c-1edc-434d-8921-340996cebbcc",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -3909,13 +3909,13 @@
 										"type": "text"
 									}
 								],
-								"url": "https://api.sikkasoft.com/v4/many_guarantors_one_patient",
-								"description": "### Parameters\n\n#### patient_id `optional`\n\n> Patient ID as per the management system \n  \n\n#### practice_id `optional`\n\n> Practice ID \n  \n\n#### guarantor_id `optional`\n\n> Guarantor id as per practice management systems \n  \n\n#### cell `optional`\n\n> Cell Number \n  \n\n#### phone `optional`\n\n> Phone Number \n  \n\n#### email `optional`\n\n> Email ID \n  \n\n#### firstname `optional`\n\n> First name of patient, provider or guarantor \n  \n\n#### lastname `optional`\n\n> Last name of patient, provider or guarantor \n  \n\n#### workphone `optional`\n\n> Work phone number \n  \n\n### SortBy\n\n#### patient_id `default`\n\n> Patient ID as per the management system \n  \n\n#### practice_id\n\n> Practice ID"
+								"url": "https://api.sikkasoft.com/v4/provider_mapping",
+								"description": "### Parameters\n\n#### provider_id `optional`\n\n> Provider ID as per the management system \n  \n\n#### practice_id `optional`\n\n> Practice ID \n  \n\n\n  \n\n### SortBy\n\n#### patient_id `default`\n\n> Patient ID as per the management system \n  \n\n#### practice_id\n\n> Practice ID"
 							},
 							"response": [
 								{
 									"id": "746593e0-81a1-4815-b466-5ffa9a29342c",
-									"name": "hearing_aid_products",
+									"name": "provider_mapping",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
