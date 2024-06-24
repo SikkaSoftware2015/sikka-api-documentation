@@ -3910,7 +3910,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/provider_mapping",
-								"description": "### Parameters\n\n#### provider_id `optional`\n\n> Provider ID as per the management system \n  \n\n#### practice_id `optional`\n\n> Practice ID \n  \n\n\n  \n\n### SortBy\n\n#### patient_id `default`\n\n> Patient ID as per the management system \n  \n\n#### practice_id\n\n> Practice ID"
+								"description": "### Parameters\n\n#### provider_id `optional`\n\n> Provider ID as per the management system \n  \n\n#### practice_id `optional`\n\n> Practice ID \n  \n\n### SortBy  \n\n#### practice_id `default`\n\n> Practice ID"
 							},
 							"response": [
 								{
