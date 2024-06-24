@@ -4077,6 +4077,98 @@
 									"body": "{\r\n  \"offset\": \"xx\",\r\n  \"limit\": \"xx\",\r\n  \"total_count\": \"xx\",\r\n  \"execution_time\": \"xx\",\r\n  \"pagination\": {\r\n    \"first\": \"https://api.sikkasoft.com/v4/authorized_practices?offset=xx&limit=xx\",\r\n    \"previous\": \"\",\r\n    \"current\": \"https://api.sikkasoft.com/v4/authorized_practices?offset=xx&limit=xx\",\r\n    \"next\": \"https://api.sikkasoft.com/v4/authorized_practices?offset=xx&limit=xx\",\r\n    \"last\": \"https://api.sikkasoft.com/v4/authorized_practices?offset=xx&limit=xx\"\r\n  },\r\n  \"items\": [\r\n    {\r\n      \"href\": \"https://api.sikkasoft.com/v4/authorized_practices/xxxx\",\r\n      \"city\": \"city\",\r\n      \"state\": \"state\",\r\n      \"practice_id\": \"practice id\",\r\n      \"address\": \"address\",\r\n      \"zip\": \"zip\",\r\n      \"office_id\": \"office id\",\r\n      \"domain\": \"domain\",\r\n      \"secret_key\": \"secret key\",\r\n      \"practice_name\": \"practice name\",\r\n      \"practice_management_system\": \"practice management system\",\r\n      \"financial_system\": \"financial system\",\r\n      \"practice_management_system_refresh_date\": \"practice management system refresh date\",\r\n      \"data_synchronization_date\": \"data synchronization date\",\r\n      \"data_insert_date\": \"data insert date\",\r\n      \"practice_management_system_version\": \"practice management system version\",\r\n      \"practice_management_system_refresh_date_time_zone\": \"practice management system refresh date time zone\",\r\n      \"partner_id\": \"partner id\",\r\n      \"financial_system_refresh_date\": \"financial system refresh date\",\r\n      \"financial_system_version\": \"financial system version\",\r\n      \"difference_in_minutes\": \"difference in minutes\"\r\n}\r\n  ]\r\n}"
 								}
 							]
+						},
+						{
+							"name": "applications",
+							"id": "3ea74ba0-e640-4521-a4ca-e7086b2fea3d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Request-Key",
+										"value": "Request-Key",
+										"type": "text"
+									}
+								],
+								"url": "https://api.sikkasoft.com/v4/authorized_practices",
+								"description": "### Parameters\n\n#### office_id `optional`\n> Office ID\n#### practice_management_system_refresh_date_time_zone `optional`\n> Practice management system refresh date time zone \n#### practice_id `optional`\n> Practice ID\n#### practice_name `optional`\n> Practice name\n#### practice_management_system `optional`\n> Practice management system\n#### practice_management_system_version `optional`\n> Practice management system version \n#### financial_system `optional`\n> Financial system\n#### financial_system_version `optional`\n> Financial system version\n\n### SortBy\n\n#### office_id `default`\n>Office ID\n\n#### practice_id `default`\n>Practice ID"
+							},
+							"response": [
+								{
+									"id": "261db9a8-a166-49ca-9946-aeb33d1a58d9",
+									"name": "applications",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "Request-Key",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/authorized_practices"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.18.0 (Ubuntu)"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 10 May 2022 11:12:31 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Request-Key-Expires",
+											"value": "Wed, 11 May 2022 09:12:24 GMT"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "origin"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload;"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n  \"offset\": \"xx\",\r\n  \"limit\": \"xx\",\r\n  \"total_count\": \"xx\",\r\n  \"execution_time\": \"xx\",\r\n  \"pagination\": {\r\n    \"first\": \"https://api.sikkasoft.com/v4/authorized_practices?offset=xx&limit=xx\",\r\n    \"previous\": \"\",\r\n    \"current\": \"https://api.sikkasoft.com/v4/authorized_practices?offset=xx&limit=xx\",\r\n    \"next\": \"https://api.sikkasoft.com/v4/authorized_practices?offset=xx&limit=xx\",\r\n    \"last\": \"https://api.sikkasoft.com/v4/authorized_practices?offset=xx&limit=xx\"\r\n  },\r\n  \"items\": [\r\n    {\r\n      \"href\": \"https://api.sikkasoft.com/v4/authorized_practices/xxxx\",\r\n      \"city\": \"city\",\r\n      \"state\": \"state\",\r\n      \"practice_id\": \"practice id\",\r\n      \"address\": \"address\",\r\n      \"zip\": \"zip\",\r\n      \"office_id\": \"office id\",\r\n      \"domain\": \"domain\",\r\n      \"secret_key\": \"secret key\",\r\n      \"practice_name\": \"practice name\",\r\n      \"practice_management_system\": \"practice management system\",\r\n      \"financial_system\": \"financial system\",\r\n      \"practice_management_system_refresh_date\": \"practice management system refresh date\",\r\n      \"data_synchronization_date\": \"data synchronization date\",\r\n      \"data_insert_date\": \"data insert date\",\r\n      \"practice_management_system_version\": \"practice management system version\",\r\n      \"practice_management_system_refresh_date_time_zone\": \"practice management system refresh date time zone\",\r\n      \"partner_id\": \"partner id\",\r\n      \"financial_system_refresh_date\": \"financial system refresh date\",\r\n      \"financial_system_version\": \"financial system version\",\r\n      \"difference_in_minutes\": \"difference in minutes\"\r\n}\r\n  ]\r\n}"
+								}
+							]
 						}
 					],
 					"id": "0c1fa096-aa44-4088-aa2b-97a96d612a8e"
