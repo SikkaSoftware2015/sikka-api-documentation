@@ -3895,7 +3895,7 @@
 							]
 						},
 						{
-							"name": "hearing_aids",
+							"name": "hearing_aid_products",
 							"id": "ebfa354c-1edc-434d-8921-340996cebbcc",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -3915,7 +3915,7 @@
 							"response": [
 								{
 									"id": "746593e0-81a1-4815-b466-5ffa9a29342c",
-									"name": "hearing_aids",
+									"name": "hearing_aid_products",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
