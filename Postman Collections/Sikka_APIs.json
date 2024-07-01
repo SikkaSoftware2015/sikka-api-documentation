@@ -4470,7 +4470,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/products",
-								"description": "### Parameters\n\n#### domain `optional`\n> Domain catagory \n#### product_id  `optional`\n> ID of product based on practice management system\n\n  \n\n### SortBy\n\n#### practice_id `default`\n\n> Practice ID"
+								"description": "### Parameters\n\n#### domain `optional`\n\n> Domain catagory \n  \n\n#### product_id `optional`\n\n> ID of product based on practice management system \n  \n\n### SortBy\n\n#### practice_id `default`\n\n> Practice ID\n\n#### product_id \n\n> ID of product based on practice management system "
 							},
 							"response": [
 								{
