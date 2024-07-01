@@ -4563,8 +4563,8 @@
 										"type": "text"
 									}
 								],
-								"url": "https://api.sikkasoft.com/v4/products",
-								"description": "### Parameters\n\n#### domain `optional`\n\n> Domain catagory \n  \n\n#### product_id `optional`\n\n> ID of product based on practice management system \n  \n\n### SortBy\n\n#### practice_id `default`\n\n> Practice ID\n\n#### product_id \n\n> ID of product based on practice management system "
+								"url": "https://api.sikkasoft.com/v4/practice_resources",
+								"description": "### Parameters\n#### id \n#### resource\n#### common_resource\n \n### SortBy \n#### resourceid `default`\n#### resource\n#### common_resource\n#### practice_id"
 							},
 							"response": [
 								{
