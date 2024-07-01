@@ -4751,8 +4751,8 @@
 										"type": "text"
 									}
 								],
-								"url": "https://api.sikkasoft.com/v4/veterinary_product_inventory",
-								"description": "### Parameters\n\n#### product_id `optional`\n> ID of product based on practice management system \n  \n\n#### Code `optional`\n> Code \n\n#### practice_id `optional`\n> Practice ID\n  \n\n### SortBy\n\n#### Code `default`\n> Code"
+								"url": "https://api.sikkasoft.com/v4/lab_results",
+								"description": "### Parameters\n\n#### lab_panel_id `optional`\n> Lab Panel ID\n\n### SortBy \n\n#### lab_panel_id `default`\n>  Lab Panel ID"
 							},
 							"response": [
 								{
