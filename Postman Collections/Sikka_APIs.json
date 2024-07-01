@@ -4281,7 +4281,8 @@
 										"type": "text"
 									}
 								],
-								"url": "https://api.sikkasoft.com/v4/animal_vital_signs"
+								"url": "https://api.sikkasoft.com/v4/animal_vital_signs",
+								"description": "### Parameters\n\n#### resource_id `optional`\n\n> it can be practice_id , operatory id , provider_id \n  \n\n#### resource_type `optional`\n\n> Resource type \n  \n\n#### date `optional`\n\n> \"date\" field in the response contains the start date for a week \n  \n\n### SortBy\n\n#### resource_id `default`\n\n> it can be practice_id , operatory id , provider_id \n  \n\n#### practice_id\n\n> Practice ID \n  \n\n#### date\n\n> \"date\" field in the response contains the start date for a week \n  \n\n#### resource_type\n\n> Resource type"
 							},
 							"response": [
 								{
@@ -4296,7 +4297,7 @@
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/animal_vital_signs"
+										"url": "https://api.sikkasoft.com/v4/practice_schedule"
 									},
 									"status": "OK",
 									"code": 200,
@@ -4355,7 +4356,7 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n  \"offset\": \"xx\",\n  \"limit\": \"xx\",\n  \"total_count\": \"xx\",\n  \"execution_time\": \"xx\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/animal_vital_signs?offset=xx&limit=xx\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/animal_vital_signs?offset=xx&limit=xx\",\n    \"next\": \"https://api.sikkasoft.com/v4/animal_vital_signs?offset=xx&limit=xx\",\n    \"last\": \"https://api.sikkasoft.com/v4/animal_vital_signs?offset=xx&limit=xx\"\n  },\n  \"items\": [\n    {\n    \"href\": \"https://api.sikkasoft.com/v4/practices/###/animal_vital_signs/###\",\n    \"patient_href\": \"https://api.sikkasoft.com/v4/practices/###/patients/###\",\n    \"patient_id\": \"patient id\",\n    \"practice_id\": \"practice id\",\n    \"practice_href\": \"https://api.sikkasoft.com/v4/practices/###\",\n    \"date\": \"date\",\n    \"vital_sign_name\": \"vital sign name\",\n    \"vital_sign_value\": \"vital sign value\",\n    \"vital_sign_status\": \"vital sign status\",\n    \"comments\": \"comments\",\n    \"vital_sign_unit\": \"vital sign unit\"\n},{\n    \"href\": \"https://api.sikkasoft.com/v4/practices/###/animal_vital_signs/###\",\n    \"patient_href\": \"https://api.sikkasoft.com/v4/practices/###/patients/###\",\n    \"patient_id\": \"patient id\",\n    \"practice_id\": \"practice id\",\n    \"practice_href\": \"https://api.sikkasoft.com/v4/practices/###\",\n    \"date\": \"date\",\n    \"vital_sign_name\": \"vital sign name\",\n    \"vital_sign_value\": \"vital sign value\",\n    \"vital_sign_status\": \"vital sign status\",\n    \"comments\": \"comments\",\n    \"vital_sign_unit\": \"vital sign unit\"\n}\n   \n  ]\n}"
+									"body": "{\n  \"offset\": \"##\",\n  \"limit\": \"##\",\n  \"total_count\": \"##\",\n  \"execution_time\": \"##\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/practice_schedule?offset=##&limit=##\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/practice_schedule?offset=##&limit=##\",\n    \"next\": \"\",\n    \"last\": \"https://api.sikkasoft.com/v4/practice_schedule?offset=##&limit=##\"\n  },\n  \"items\": [\n        {\n        \"href\": \"https://api.sikkasoft.com/v4/practices/##/practice_schedule/##\",\n        \"practice_id\": \"practice id\",\n        \"practice_href\": \"https://api.sikkasoft.com/v4/practices/##\",\n        \"date\": \"date\",\n        \"cust_id\": \"cust id\",\n        \"resource_type\": \"resource type\",\n        \"resource_id\": \"resource id\"\n      },\n      {\n          \"href\": \"https://api.sikkasoft.com/v4/practices/##/practice_schedule/##\",\n          \"practice_id\": \"practice id\",\n          \"practice_href\": \"https://api.sikkasoft.com/v4/practices/##\",\n          \"date\": \"date\",\n          \"cust_id\": \"cust id\",\n          \"resource_type\": \"resource type\",\n          \"resource_id\": \"resource id\"\n      }\n  ]\n}"
 								}
 							]
 						}
