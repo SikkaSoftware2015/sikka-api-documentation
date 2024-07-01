@@ -4564,7 +4564,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/practice_resources",
-								"description": "### Parameters\n#### id \n#### resource\n#### common_resource\n \n### SortBy \n#### resourceid `default`\n#### resource\n#### common_resource\n#### practice_id"
+								"description": "### Parameters\n\n#### id `optional`\n\n> ID as per the response \n  \n\n#### resource `optional`\n\n> Resource is API name \n  \n\n#### common_resource `optional`\n\n> Common resource \n  \n\n### SortBy\n\n#### resourceid `default`\n\n> Resource ID \n  \n\n#### resource\n\n> Resource is API name \n  \n\n#### common_resource\n\n> Common resource \n  \n\n#### practice_id\n\n> Practice ID"
 							},
 							"response": [
 								{
