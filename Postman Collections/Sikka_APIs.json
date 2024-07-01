@@ -4375,7 +4375,8 @@
 										"type": "text"
 									}
 								],
-								"url": "https://api.sikkasoft.com/v4/veterinary_product_details"
+								"url": "https://api.sikkasoft.com/v4/veterinary_product_details",
+								"description": "### Parameters\n\n#### vendor_id `optional`\n> Vendor id as per the practice management system\n\n#### order_number `optional`\n> Order Number\n\n#### provider_id `optional`\n> Provider id as per practice management system\n\n#### product_id `optional`\n> ID of product based on practice management system\n\n### SortBy \n\n#### product_id `default`\n> ID of product based on practice management system\n\n#### practice_id\n> Practice ID\n\n#### vendor_id \n> Vendor id as per the practice management system\n"
 							},
 							"response": [
 								{
