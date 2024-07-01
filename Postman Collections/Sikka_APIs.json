@@ -4188,7 +4188,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/applications",
-								"description": "### Parameters\n\n#### app_id `required`\n\n> This is the ID assigned to the application when the application is registered on API portal \n  \n\n#### app_key `required`\n\n> This is the unique key generated when the application is registered on API portal"
+								"description": "### Parameters\n\n#### patient_id `optional`\n\n> Patient ID as per the management system \n  \n\n#### date `optional`\n\n> Filter on date field, format: yyyy-mm-dd \n  \n\n#### vital_sign_name `optional`\n\n> Vital sign name \n  \n\n### SortBy\n\n#### patient_id `default`\n\n> Patient ID as per the management system \n  \n\n#### date\n\n> Sorting on date field, format: yyyy-mm-dd \n  \n\n#### practice_id\n\n> Practice ID as per the management system"
 							},
 							"response": [
 								{
