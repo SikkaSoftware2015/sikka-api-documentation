@@ -4547,6 +4547,100 @@
 									"body": "{\n  \"offset\": \"##\",\n  \"limit\": \"##\",\n  \"total_count\": \"####\",\n  \"execution_time\": \"####\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/products?offset=##&limit=##\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/products?offset=##&limit=##\",\n    \"next\": \"https://api.sikkasoft.com/v4/products?offset=##&limit=##\",\n    \"last\": \"https://api.sikkasoft.com/v4/products?offset=##&limit=##\"\n  },\n  \"items\": [\n    {\n    \"href\": \"https://api.sikkasoft.com/v4/practices/##/products/####\",\n    \"practice_id\": \"practice id\",\n    \"practice_href\": \"https://api.sikkasoft.com/v4/practices/##\",\n    \"description\": \"description\",\n    \"product_id\": \"product id\",\n    \"cost\": \"cost\",\n    \"product_detail_href\": \"https://api.sikkasoft.com/v4/practices/##/veterinary_product_details/####\"\n    },\n    {\n    \"href\": \"https://api.sikkasoft.com/v4/practices/##/products/####\",\n    \"practice_id\": \"practice id\",\n    \"practice_href\": \"https://api.sikkasoft.com/v4/practices/##\",\n    \"description\": \"description\",\n    \"product_id\": \"product id\",\n    \"cost\": \"cost\",\n    \"product_detail_href\": \"https://api.sikkasoft.com/v4/practices/##/veterinary_product_details/####\"\n    }\n    \n  ]\n}"
 								}
 							]
+						},
+						{
+							"name": "practice_resources",
+							"id": "dba51927-5c71-4784-b73d-054d184856ed",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Request-Key",
+										"value": "Request-Key",
+										"type": "text"
+									}
+								],
+								"url": "https://api.sikkasoft.com/v4/products",
+								"description": "### Parameters\n\n#### domain `optional`\n\n> Domain catagory \n  \n\n#### product_id `optional`\n\n> ID of product based on practice management system \n  \n\n### SortBy\n\n#### practice_id `default`\n\n> Practice ID\n\n#### product_id \n\n> ID of product based on practice management system "
+							},
+							"response": [
+								{
+									"id": "609d078d-2773-4ae1-add8-eebfcfc50e41",
+									"name": "practice_resources",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "Request-Key",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/practice_resources"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.18.0 (Ubuntu)"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 10 May 2022 11:12:31 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Request-Key-Expires",
+											"value": "Wed, 11 May 2022 09:12:24 GMT"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "origin"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload;"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"offset\": \"##\",\n  \"limit\": \"##\",\n  \"total_count\": \"##\",\n  \"execution_time\": \"##\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/practice_resources?offset=##&limit=##\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/practice_resources?offset=##&limit=##\",\n    \"next\": \"https://api.sikkasoft.com/v4/practice_resources?offset=##&limit=##\",\n    \"last\": \"https://api.sikkasoft.com/v4/practice_resources?offset=##&limit=##\"\n  },\n  \"items\": [\n  {\n    \"href\": \"https://api.sikkasoft.com/v4/practices/##/practice_resources/##\",\n    \"practice_id\": \"practice id\",\n    \"practice_href\": \"https://api.sikkasoft.com/v4/practices/##\",\n    \"cust_id\": \"cust id\",\n    \"id\": \"id\",\n    \"resource\": \"resource\",\n    \"common_resource\": \"common resource\"\n  },\n  {\n    \"href\": \"https://api.sikkasoft.com/v4/practices/##/practice_resources/##\",\n    \"practice_id\": \"practice id\",\n    \"practice_href\": \"https://api.sikkasoft.com/v4/practices/##\",\n    \"cust_id\": \"cust id\",\n    \"id\": \"id\",\n    \"resource\": \"resource\",\n    \"common_resource\": \"common resource\"\n  }\n]\n}"
+								}
+							]
 						}
 					],
 					"id": "0c1fa096-aa44-4088-aa2b-97a96d612a8e"
