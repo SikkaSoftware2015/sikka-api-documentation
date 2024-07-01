@@ -4281,7 +4281,7 @@
 										"type": "text"
 									}
 								],
-								"url": "https://api.sikkasoft.com/v4/animal_vital_signs",
+								"url": "https://api.sikkasoft.com/v4/practice_schedule",
 								"description": "### Parameters\n\n#### resource_id `optional`\n\n> it can be practice_id , operatory id , provider_id \n  \n\n#### resource_type `optional`\n\n> Resource type \n  \n\n#### date `optional`\n\n> \"date\" field in the response contains the start date for a week \n  \n\n### SortBy\n\n#### resource_id `default`\n\n> it can be practice_id , operatory id , provider_id \n  \n\n#### practice_id\n\n> Practice ID \n  \n\n#### date\n\n> \"date\" field in the response contains the start date for a week \n  \n\n#### resource_type\n\n> Resource type"
 							},
 							"response": [
