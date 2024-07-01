@@ -4470,7 +4470,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/products",
-								"description": "### Parameters\n\n#### vendor_id `optional`\n> Vendor id as per the practice management system\n\n#### order_number `optional`\n> Order Number\n\n#### provider_id `optional`\n> Provider id as per practice management system\n\n#### product_id `optional`\n> ID of product based on practice management system\n\n### SortBy \n\n#### product_id `default`\n> ID of product based on practice management system\n\n#### practice_id\n> Practice ID\n\n#### vendor_id \n> Vendor id as per the practice management system\n"
+								"description": "### Parameters\n\n#### domain \n> Domain catagory\n\n    \n### SortBy \n\n#### practice_id  `default`\n> Practice ID\n"
 							},
 							"response": [
 								{
@@ -4485,7 +4485,7 @@
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/veterinary_product_details"
+										"url": "https://api.sikkasoft.com/v4/products"
 									},
 									"status": "OK",
 									"code": 200,
@@ -4544,7 +4544,7 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n  \"offset\": \"##\",\n  \"limit\": \"##\",\n  \"total_count\": \"##\",\n  \"execution_time\": \"##\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/veterinary_product_details?offset=##&limit=##\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/veterinary_product_details?offset=##&limit=##\",\n    \"next\": \"https://api.sikkasoft.com/v4/veterinary_product_details?offset=##&limit=##\",\n    \"last\": \"https://api.sikkasoft.com/v4/veterinary_product_details?offset=##0&limit=##\"\n  },\n  \"items\": [\n    {\n    \"href\": \"https://api.sikkasoft.com/v4/practices/##/veterinary_product_details/####\",\n    \"provider_id\": \"provider id\",\n    \"provider_href\": \"\",\n    \"practice_id\": \"practice id\",\n    \"practice_href\": \"https://api.sikkasoft.com/v4/practices/##\",\n    \"expires_in\": \"expires in\",\n    \"description\": \"description\",\n    \"location\": \"location\",\n    \"category\": \"category\",\n    \"product_id\": \"product id\",\n    \"price\": \"price\",\n    \"on_hand_quantity\": \"on hand quantity\",\n    \"measure\": \"measure\",\n    \"vendor_item_id\": \"vendor item id\",\n    \"manufacturing_number\": \"manufacturing number\",\n    \"vendor_id\": \"vendor id\",\n    \"vendor_href\": \"https://api.sikkasoft.com/v4/practices/##/vendors/###\",\n    \"cost\": \"cost\",\n    \"package_cost\": \"package cost\",\n    \"UPC\": \"UPC\",\n    \"NDC\": \"NDC\",\n    \"mark_up_package_cost\": \"mark up package cost\",\n    \"mark_up_unit_cost\": \"mark up unit cost\",\n    \"expired_date\": \"expired date\",\n    \"mark_up_percent\": \"mark up percent\",\n    \"months\": \"months\",\n    \"container\": \"container\",\n    \"on_order\": \"on order\",\n    \"order_quantity\": \"order quantity\",\n    \"order_pack\": \"order pack\",\n    \"alloted_quantity\": \"alloted quantity\",\n    \"average_unit_cost\": \"average unit cost\",\n    \"average_package_cost\": \"average package cost\",\n    \"discount_class\": \"discount class\",\n    \"received_date\": \"received date\",\n    \"order_number\": \"order number\"\n}\n  ]\n}"
+									"body": "{\n  \"offset\": \"##\",\n  \"limit\": \"##\",\n  \"total_count\": \"####\",\n  \"execution_time\": \"####\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/products?offset=##&limit=##\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/products?offset=##&limit=##\",\n    \"next\": \"https://api.sikkasoft.com/v4/products?offset=##&limit=##\",\n    \"last\": \"https://api.sikkasoft.com/v4/products?offset=##&limit=##\"\n  },\n  \"items\": [\n    {\n    \"href\": \"https://api.sikkasoft.com/v4/practices/##/products/####\",\n    \"practice_id\": \"practice id\",\n    \"practice_href\": \"https://api.sikkasoft.com/v4/practices/##\",\n    \"description\": \"description\",\n    \"product_id\": \"product id\",\n    \"cost\": \"cost\",\n    \"product_detail_href\": \"https://api.sikkasoft.com/v4/practices/##/veterinary_product_details/####\"\n    },\n    {\n    \"href\": \"https://api.sikkasoft.com/v4/practices/##/products/####\",\n    \"practice_id\": \"practice id\",\n    \"practice_href\": \"https://api.sikkasoft.com/v4/practices/##\",\n    \"description\": \"description\",\n    \"product_id\": \"product id\",\n    \"cost\": \"cost\",\n    \"product_detail_href\": \"https://api.sikkasoft.com/v4/practices/##/veterinary_product_details/####\"\n    }\n    \n  ]\n}"
 								}
 							]
 						}
