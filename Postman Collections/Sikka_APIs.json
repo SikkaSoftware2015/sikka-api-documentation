@@ -4845,7 +4845,7 @@
 										"type": "text"
 									}
 								],
-								"url": "https://api.sikkasoft.com/v4/lab_results",
+								"url": "https://api.sikkasoft.com/v4/medical_notes",
 								"description": "### Parameters\n\n#### note_type `optional`\n> note type as per the practice management system\n\n#### startdate `optional`\n> Start Date\n\n#### enddate `optional`\n>  End Date\n    \n### SortBy\n\n#### patient_id `default`\n> Patient ID as per the management system"
 							},
 							"response": [
