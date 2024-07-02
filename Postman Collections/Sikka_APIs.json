@@ -5504,7 +5504,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/fee_schedule_bluebook",
-								"description": "### Parameters\n\n#### procedure_code `optional`\n> Procedure code as per practice management system\n#### practice_id `optional`\n> Practice ID\n\n### SortBy\n\n#### procedure_code `optional`\n> Procedure code as per practice management system\n#### practice_id `optional`\n> Practice ID"
+								"description": "### Parameters\n\n#### procedure_code `optional`\n\n> Procedure code as per practice management system \n  \n\n#### practice_id `optional`\n\n> Practice ID \n  \n\n### SortBy\n\n#### procedure_code `default`\n\n> Procedure code as per practice management system"
 							},
 							"response": [
 								{
