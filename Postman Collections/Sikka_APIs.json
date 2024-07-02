@@ -5409,7 +5409,8 @@
 										"type": "text"
 									}
 								],
-								"url": "https://api.sikkasoft.com/v4/dental_patients"
+								"url": "https://api.sikkasoft.com/v4/dental_patients",
+								"description": "### Parameters\n\n#### patient_id `optional`\n> Patient ID\n\n#### status `optional`\n> Status\n\n#### search `optional`\n> Search patient by firstname , lastname , email , middlename, city, state, zipcode, homephone, workphone, cell\n\n#### phone `optional`\n> Phone\n\n#### homephone `optional`\n> HomePhone\n\n#### workphone `optional`\n> WorkPhone\n\n#### cell `optional`\n> Cell\n\n#### email `optional`\n> Email ID\n\n#### firstname `optional`\n> First name of patient, provider or guarantor\n\n#### lastname `optional`\n> last name of patient, provider or guarantor\n\n#### first_visit `optional`\n> First Visit\n\n#### last_visit `optional`\n> Last Visit\n\n#### microchip `optional`\n> Microchip\n\n#### rabies `optional`\n> Rabies\n\n#### petname `optional`\n> Petname\n\n#### adoption_status_date `optional`\n>  Adoption status date\n\n#### provider_id `optional`\n> Provider id as per practice management system\n\n#### guarantor_id `optional`\n> Guarantor id as per practice management systems\n\n### SortBy\n\n#### patient_id `default`\n> Patient ID\n\n#### firstname OR patient_first_name\n> First name of patient, provider or guarantor\n\n#### lastname OR patient_last_name\n> Last name of patient, provider or guarantor\n\n#### zipcode OR patient_zipcode\n> Zip Code\n\n#### rowhash\n> RowHash\n"
 							},
 							"response": [
 								{
