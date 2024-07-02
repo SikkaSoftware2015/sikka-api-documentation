@@ -4923,6 +4923,100 @@
 									"body": "{\n  \"offset\": \"##\",\n  \"limit\": \"##\",\n  \"total_count\": \"##\",\n  \"execution_time\": \"####\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/medical_notes?offset=##&limit=##\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/medical_notes?offset=##&limit=##\",\n    \"next\": \"https://api.sikkasoft.com/v4/medical_notes?offset=##&limit=##\",\n    \"last\": \"https://api.sikkasoft.com/v4/medical_notes?offset=##&limit=##\"\n  },\n  \"items\": [\n        {\n        \"href\": \"https://api.sikkasoft.com/v4/practices/##/medical_notes\",\n        \"patient_href\": \"https://api.sikkasoft.com/v4/practices/##/patients/####\",\n        \"patient_id\": \"patient id\",\n        \"provider_id\": \"provider id\",\n        \"provider_href\": \"\",\n        \"practice_id\": \"practice id\",\n        \"practice_href\": \"https://api.sikkasoft.com/v4/practices/##\",\n        \"transaction_sr_no\": \"transaction sr no\",\n        \"transaction_href\": \"\",\n        \"surface\": \"surface\",\n        \"clinical_condition_id\": \"clinical condition id\",\n        \"date\": \"date\",\n        \"description\": \"description\",\n        \"type\": \"type\",\n        \"tooth_number\": \"tooth number\",\n        \"cust_id\": \"cust id\",\n        \"procedure_date\": \"procedure date\",\n        \"text\": \"text\",\n        \"procedure_code_id\": \"procedure code id\",\n        \"procedure_code_href\": \"\"\n    },\n    {\n        \"href\": \"https://api.sikkasoft.com/v4/practices/##/medical_notes\",\n        \"patient_href\": \"https://api.sikkasoft.com/v4/practices/##/patients/####\",\n        \"patient_id\": \"patient id\",\n        \"provider_id\": \"provider id\",\n        \"provider_href\": \"\",\n        \"practice_id\": \"practice id\",\n        \"practice_href\": \"https://api.sikkasoft.com/v4/practices/##\",\n        \"transaction_sr_no\": \"transaction sr no\",\n        \"transaction_href\": \"\",\n        \"surface\": \"surface\",\n        \"clinical_condition_id\": \"clinical condition id\",\n        \"date\": \"date\",\n        \"description\": \"description\",\n        \"type\": \"type\",\n        \"tooth_number\": \"tooth number\",\n        \"cust_id\": \"cust id\",\n        \"procedure_date\": \"procedure date\",\n        \"text\": \"text\",\n        \"procedure_code_id\": \"procedure code id\",\n        \"procedure_code_href\": \"\"\n    }\n  ]\n}"
 								}
 							]
+						},
+						{
+							"name": "hearing_aid_products",
+							"id": "ca9e933a-52aa-4a06-937e-7072aa8fae1f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Request-Key",
+										"value": "Request-Key",
+										"type": "text"
+									}
+								],
+								"url": "https://api.sikkasoft.com/v4/medical_notes",
+								"description": "### Parameters\n\n#### patient_id `optional`\n> Patient ID as per the management system\n\n#### practice_id `optional`\n> practice_id\n\n#### note_type `optional`\n\n> note type as per the practice management system \n  \n\n#### startdate `optional`\n\n> Start Date \n  \n\n#### enddate `optional`\n\n> End Date \n  \n\n### SortBy\n\n#### patient_id `default`\n\n> Patient ID as per the management system"
+							},
+							"response": [
+								{
+									"id": "1022ca8f-5b82-4ad4-9c97-5732283b6f52",
+									"name": "hearing_aid_products",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "Request-Key",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/lab_results"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.18.0 (Ubuntu)"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 10 May 2022 11:12:31 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Request-Key-Expires",
+											"value": "Wed, 11 May 2022 09:12:24 GMT"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "origin"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload;"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"offset\": \"##\",\n  \"limit\": \"##\",\n  \"total_count\": \"##\",\n  \"execution_time\": \"####\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/medical_notes?offset=##&limit=##\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/medical_notes?offset=##&limit=##\",\n    \"next\": \"https://api.sikkasoft.com/v4/medical_notes?offset=##&limit=##\",\n    \"last\": \"https://api.sikkasoft.com/v4/medical_notes?offset=##&limit=##\"\n  },\n  \"items\": [\n        {\n        \"href\": \"https://api.sikkasoft.com/v4/practices/##/medical_notes\",\n        \"patient_href\": \"https://api.sikkasoft.com/v4/practices/##/patients/####\",\n        \"patient_id\": \"patient id\",\n        \"provider_id\": \"provider id\",\n        \"provider_href\": \"\",\n        \"practice_id\": \"practice id\",\n        \"practice_href\": \"https://api.sikkasoft.com/v4/practices/##\",\n        \"transaction_sr_no\": \"transaction sr no\",\n        \"transaction_href\": \"\",\n        \"surface\": \"surface\",\n        \"clinical_condition_id\": \"clinical condition id\",\n        \"date\": \"date\",\n        \"description\": \"description\",\n        \"type\": \"type\",\n        \"tooth_number\": \"tooth number\",\n        \"cust_id\": \"cust id\",\n        \"procedure_date\": \"procedure date\",\n        \"text\": \"text\",\n        \"procedure_code_id\": \"procedure code id\",\n        \"procedure_code_href\": \"\"\n    },\n    {\n        \"href\": \"https://api.sikkasoft.com/v4/practices/##/medical_notes\",\n        \"patient_href\": \"https://api.sikkasoft.com/v4/practices/##/patients/####\",\n        \"patient_id\": \"patient id\",\n        \"provider_id\": \"provider id\",\n        \"provider_href\": \"\",\n        \"practice_id\": \"practice id\",\n        \"practice_href\": \"https://api.sikkasoft.com/v4/practices/##\",\n        \"transaction_sr_no\": \"transaction sr no\",\n        \"transaction_href\": \"\",\n        \"surface\": \"surface\",\n        \"clinical_condition_id\": \"clinical condition id\",\n        \"date\": \"date\",\n        \"description\": \"description\",\n        \"type\": \"type\",\n        \"tooth_number\": \"tooth number\",\n        \"cust_id\": \"cust id\",\n        \"procedure_date\": \"procedure date\",\n        \"text\": \"text\",\n        \"procedure_code_id\": \"procedure code id\",\n        \"procedure_code_href\": \"\"\n    }\n  ]\n}"
+								}
+							]
 						}
 					],
 					"id": "0c1fa096-aa44-4088-aa2b-97a96d612a8e"
