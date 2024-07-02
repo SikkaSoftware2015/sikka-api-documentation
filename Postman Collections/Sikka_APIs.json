@@ -5222,7 +5222,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/patient360",
-								"description": "### Parameters\n\n#### manufacturer_id `optional`\n> Manufacturer Id\n\n### SortBy \n\n#### manufacturer_id `default`\n> Manufacturer Id"
+								"description": "### Parameters\n\n#### practice_id `Required`\n> Practice ID\n\n#### patient_id  `Required`\n> Patient ID\n\n\n"
 							},
 							"response": [
 								{
