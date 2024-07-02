@@ -5033,7 +5033,8 @@
 										"type": "text"
 									}
 								],
-								"url": "https://api.sikkasoft.com/v4/hearing_aid_products"
+								"url": "https://api.sikkasoft.com/v4/hearing_aid_products",
+								"description": "### Parameters\n\n#### manufacturer_id `optional`\n> Manufacturer Id\n\n### SortBy \n\n#### manufacturer_id `default`\n> Manufacturer Id"
 							},
 							"response": [
 								{
