@@ -4829,6 +4829,100 @@
 									"body": "{\n  \"offset\": \"##\",\n  \"limit\": \"##\",\n  \"total_count\": \"##\",\n  \"execution_time\": \"##\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/lab_results?offset=##&limit=##\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/lab_results?offset=##&limit=##\",\n    \"next\": \"https://api.sikkasoft.com/v4/lab_results?offset=##&limit=##\",\n    \"last\": \"https://api.sikkasoft.com/v4/lab_results?offset=##&limit=##\"\n  },\n  \"items\": [\n      {\n      \"href\": \"https://api.sikkasoft.com/v4/practices/##/lab_results/####\",\n      \"practice_id\": \"practice id\",\n      \"practice_href\": \"https://api.sikkasoft.com/v4/practices/##\",\n      \"comments\": \"comments\",\n      \"lab_panel_id\": \"lab panel id\",\n      \"lab_panel_href\": \"https://api.sikkasoft.com/v4/practices/##/lab_panels/####\",\n      \"result_date\": \"result date\",\n      \"test_name\": \"test name\",\n      \"measure_unit\": \"measure unit\",\n      \"result\": \"result\",\n      \"result_type\": \"result type\",\n      \"critical_low\": \"critical low\",\n      \"critical_high\": \"critical high\",\n      \"reference_low\": \"reference low\",\n      \"reference_high\": \"reference high\",\n      \"reference_range\": \"reference range\",\n      \"lab_machine_name\": \"lab machine name\",\n      \"lab_machine_type\": \"lab machine type\",\n      \"lab_result_name\": \"lab result name\"\n  },{\n      \"href\": \"https://api.sikkasoft.com/v4/practices/##/lab_results/####\",\n      \"practice_id\": \"practice id\",\n      \"practice_href\": \"https://api.sikkasoft.com/v4/practices/##\",\n      \"comments\": \"comments\",\n      \"lab_panel_id\": \"lab panel id\",\n      \"lab_panel_href\": \"https://api.sikkasoft.com/v4/practices/##/lab_panels/####\",\n      \"result_date\": \"result date\",\n      \"test_name\": \"test name\",\n      \"measure_unit\": \"measure unit\",\n      \"result\": \"result\",\n      \"result_type\": \"result type\",\n      \"critical_low\": \"critical low\",\n      \"critical_high\": \"critical high\",\n      \"reference_low\": \"reference low\",\n      \"reference_high\": \"reference high\",\n      \"reference_range\": \"reference range\",\n      \"lab_machine_name\": \"lab machine name\",\n      \"lab_machine_type\": \"lab machine type\",\n      \"lab_result_name\": \"lab result name\"\n  }\n  ]\n}"
 								}
 							]
+						},
+						{
+							"name": "medical_notes",
+							"id": "95470db7-3472-4561-9830-9912a9cec5a1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Request-Key",
+										"value": "Request-Key",
+										"type": "text"
+									}
+								],
+								"url": "https://api.sikkasoft.com/v4/lab_results",
+								"description": "### Parameters\n\n#### lab_panel_id `optional`\n> Lab Panel ID\n\n### SortBy \n\n#### lab_panel_id `default`\n>  Lab Panel ID"
+							},
+							"response": [
+								{
+									"id": "672310b6-d813-4b17-b3b2-c1ef22ed9dc6",
+									"name": "medical_notes",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "Request-Key",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/lab_results"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.18.0 (Ubuntu)"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 10 May 2022 11:12:31 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Request-Key-Expires",
+											"value": "Wed, 11 May 2022 09:12:24 GMT"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "origin"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload;"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"offset\": \"##\",\n  \"limit\": \"##\",\n  \"total_count\": \"##\",\n  \"execution_time\": \"##\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/lab_results?offset=##&limit=##\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/lab_results?offset=##&limit=##\",\n    \"next\": \"https://api.sikkasoft.com/v4/lab_results?offset=##&limit=##\",\n    \"last\": \"https://api.sikkasoft.com/v4/lab_results?offset=##&limit=##\"\n  },\n  \"items\": [\n      {\n      \"href\": \"https://api.sikkasoft.com/v4/practices/##/lab_results/####\",\n      \"practice_id\": \"practice id\",\n      \"practice_href\": \"https://api.sikkasoft.com/v4/practices/##\",\n      \"comments\": \"comments\",\n      \"lab_panel_id\": \"lab panel id\",\n      \"lab_panel_href\": \"https://api.sikkasoft.com/v4/practices/##/lab_panels/####\",\n      \"result_date\": \"result date\",\n      \"test_name\": \"test name\",\n      \"measure_unit\": \"measure unit\",\n      \"result\": \"result\",\n      \"result_type\": \"result type\",\n      \"critical_low\": \"critical low\",\n      \"critical_high\": \"critical high\",\n      \"reference_low\": \"reference low\",\n      \"reference_high\": \"reference high\",\n      \"reference_range\": \"reference range\",\n      \"lab_machine_name\": \"lab machine name\",\n      \"lab_machine_type\": \"lab machine type\",\n      \"lab_result_name\": \"lab result name\"\n  },{\n      \"href\": \"https://api.sikkasoft.com/v4/practices/##/lab_results/####\",\n      \"practice_id\": \"practice id\",\n      \"practice_href\": \"https://api.sikkasoft.com/v4/practices/##\",\n      \"comments\": \"comments\",\n      \"lab_panel_id\": \"lab panel id\",\n      \"lab_panel_href\": \"https://api.sikkasoft.com/v4/practices/##/lab_panels/####\",\n      \"result_date\": \"result date\",\n      \"test_name\": \"test name\",\n      \"measure_unit\": \"measure unit\",\n      \"result\": \"result\",\n      \"result_type\": \"result type\",\n      \"critical_low\": \"critical low\",\n      \"critical_high\": \"critical high\",\n      \"reference_low\": \"reference low\",\n      \"reference_high\": \"reference high\",\n      \"reference_range\": \"reference range\",\n      \"lab_machine_name\": \"lab machine name\",\n      \"lab_machine_type\": \"lab machine type\",\n      \"lab_result_name\": \"lab result name\"\n  }\n  ]\n}"
+								}
+							]
 						}
 					],
 					"id": "0c1fa096-aa44-4088-aa2b-97a96d612a8e"
