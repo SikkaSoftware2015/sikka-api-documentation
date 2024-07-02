@@ -4861,7 +4861,7 @@
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/lab_results"
+										"url": "https://api.sikkasoft.com/v4/medical_notes"
 									},
 									"status": "OK",
 									"code": 200,
@@ -5033,7 +5033,7 @@
 										"type": "text"
 									}
 								],
-								"url": "https://api.sikkasoft.com/v4/hearing_aid_products",
+								"url": "https://api.sikkasoft.com/v4/manufacturers",
 								"description": "### Parameters\n\n#### manufacturer_id `optional`\n> Manufacturer Id\n\n### SortBy \n\n#### manufacturer_id `default`\n> Manufacturer Id"
 							},
 							"response": [
@@ -5049,7 +5049,7 @@
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/hearing_aid_products"
+										"url": "https://api.sikkasoft.com/v4/manufacturers"
 									},
 									"status": "OK",
 									"code": 200,
