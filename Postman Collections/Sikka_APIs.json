@@ -4940,7 +4940,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/hearing_aid_products",
-								"description": "### Parameters\n\n#### patient_id `optional`\n> Patient ID as per the management system\n\n#### practice_id `optional`\n> practice_id\n\n#### note_type `optional`\n\n> note type as per the practice management system \n  \n\n#### startdate `optional`\n\n> Start Date \n  \n\n#### enddate `optional`\n\n> End Date \n  \n\n### SortBy\n\n#### patient_id `default`\n\n> Patient ID as per the management system"
+								"description": "### Parameters\n\n#### model_id `optional`\n\n> Model ID \n  \n\n#### manufacturer_id `optional`\n\n> Manufacturer ID \n  \n\n### SortBy\n\n#### model_id OR modelID `default`\n\n> Model ID \n  \n\n#### manufacturer_id\n\n> Manufacturer ID"
 							},
 							"response": [
 								{
