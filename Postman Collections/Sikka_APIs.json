@@ -5034,7 +5034,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/hearing_care_product_details",
-								"description": "### Parameters\n\n#### model_id `optional`\n\n> Model ID \n  \n\n#### manufacturer_id `optional`\n\n> Manufacturer ID \n  \n\n### SortBy\n\n#### model_id OR modelID `default`\n\n> Model ID \n  \n\n#### manufacturer_id\n\n> Manufacturer ID"
+								"description": "### Parameters\n\n#### product_id `optional`\n> ID of product based on practice management system\n\n#### practice_id `optional`\n> Practice ID\n\n ### SortBy \n\n#### product_id `default`\n> ID of product based on practice management system\n\n#### practice_id\n> Practice ID\n \n"
 							},
 							"response": [
 								{
@@ -5108,7 +5108,7 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n  \"offset\": \"##\",\n  \"limit\": \"##\",\n  \"total_count\": \"##\",\n  \"execution_time\": \"##\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/hearing_care_product_details?offset=##&limit=##\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/hearing_care_product_details?offset=##&limit=##\",\n    \"next\": \"https://api.sikkasoft.com/v4/hearing_care_product_details?offset=##&limit=##\",\n    \"last\": \"https://api.sikkasoft.com/v4/hearing_care_product_details?offset=##&limit=##\"\n  },\n  \"items\": [\n    {\n    \"href\": \"https://api.sikkasoft.com/v4/practices/####/hearing_care_product_details/####\",\n    \"practice_id\": \"practice id\",\n    \"practice_href\": \"https://api.sikkasoft.com/v4/practices/####\",\n    \"product_id\": \"product id\",\n    \"price\": \"price\",\n    \"manufacturer_id\": \"manufacturer id\",\n    \"battery\": \"battery\",\n    \"quickbooks_id\": \"quickbooks id\",\n    \"tax\": \"tax\",\n    \"technology\": \"technology\",\n    \"HAtype\": \"HAtype\",\n    \"manufacturer_href\": \"https://api.sikkasoft.com/v4/practices/####/manufacturers/####\"\n}\n  ]\n}"
+									"body": "{\n  \"offset\": \"##\",\n  \"limit\": \"##\",\n  \"total_count\": \"##\",\n  \"execution_time\": \"##\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/hearing_care_product_details?offset=##&limit=##\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/hearing_care_product_details?offset=##&limit=##\",\n    \"next\": \"https://api.sikkasoft.com/v4/hearing_care_product_details?offset=##&limit=##\",\n    \"last\": \"https://api.sikkasoft.com/v4/hearing_care_product_details?offset=##&limit=##\"\n  },\n  \"items\": [\n    {\n    \"href\": \"https://api.sikkasoft.com/v4/practices/####/hearing_care_product_details/####\",\n    \"practice_id\": \"practice id\",\n    \"practice_href\": \"https://api.sikkasoft.com/v4/practices/####\",\n    \"product_id\": \"product id\",\n    \"price\": \"price\",\n    \"manufacturer_id\": \"manufacturer id\",\n    \"battery\": \"battery\",\n    \"quickbooks_id\": \"quickbooks id\",\n    \"tax\": \"tax\",\n    \"technology\": \"technology\",\n    \"HAtype\": \"HAtype\",\n    \"manufacturer_href\": \"https://api.sikkasoft.com/v4/practices/####/manufacturers/####\"\n\t}\n  ]\n}"
 								}
 							]
 						},
