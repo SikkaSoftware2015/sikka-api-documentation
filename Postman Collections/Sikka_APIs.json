@@ -5409,7 +5409,41 @@
 										"type": "text"
 									}
 								],
-								"url": "https://api.sikkasoft.com/v4/kpis",
+								"url": {
+									"raw": "https://api.sikkasoft.com/v4/kpis?kpi_name&practice_id&startdate&enddate",
+									"protocol": "https",
+									"host": [
+										"api",
+										"sikkasoft",
+										"com"
+									],
+									"path": [
+										"v4",
+										"kpis"
+									],
+									"query": [
+										{
+											"key": "kpi_name",
+											"value": null,
+											"type": "text"
+										},
+										{
+											"key": "practice_id",
+											"value": null,
+											"type": "text"
+										},
+										{
+											"key": "startdate",
+											"value": null,
+											"type": "text"
+										},
+										{
+											"key": "enddate",
+											"value": null,
+											"type": "text"
+										}
+									]
+								},
 								"description": "## Key Performance Indicators\n\nA key performance indicator (KPI) is a business metric used to evaluate factors that are crucial to the success of an organization. KPIs give you unique views of practice data that lead to action items to drive increased revenue and save valuable practice time.\n\n### Parameters\n\n#### request_key `required`\n\n> Valid 32 characters alpha-numeric request key\n\n#### kpi_name `Required`\n> KPI name from KPI list\n\n#### startdate `Required`\n> StartDate YYYY-MM-DD\n\n#### enddate `Required`\n> EndDate YYYY-MM-DD\n\n#### practice_id `Required`\n> Practice ID"
 							},
 							"response": [
