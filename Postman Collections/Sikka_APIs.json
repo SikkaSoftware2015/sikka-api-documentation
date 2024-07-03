@@ -5410,7 +5410,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/kpis",
-								"description": "## Key Performance Indicators\n\nA key performance indicator (KPI) is a business metric used to evaluate factors that are crucial to the success of an organization.KPIs give you unique views of practice data that lead to action items to drive increased revenue and save valuable practice time.\n\n### Parameters\n\n#### request_key `required`\n\n> Valid 32 characters alpha-numeric request key"
+								"description": "## Key Performance Indicators\n\nA key performance indicator (KPI) is a business metric used to evaluate factors that are crucial to the success of an organization. KPIs give you unique views of practice data that lead to action items to drive increased revenue and save valuable practice time.\n\n### Parameters\n\n#### request_key `required`\n\n> Valid 32 characters alpha-numeric request key\n\n#### kpi_name `Required`\n> KPI name from KPI list\n\n#### startdate `Required`\n> StartDate YYYY-MM-DD\n\n#### enddate `Required`\n> EndDate YYYY-MM-DD\n\n#### practice_id `Required`\n> Practice ID"
 							},
 							"response": [
 								{
