@@ -5581,6 +5581,100 @@
 									"body": "{\n  \"offset\": \"##\",\n  \"limit\": \"##\",\n  \"total_count\": \"##\",\n  \"execution_time\": \"##\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/fee_schedule_bluebook?offset=##&limit=##\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/fee_schedule_bluebook?offset=##&limit=##\",\n    \"next\": \"https://api.sikkasoft.com/v4/fee_schedule_bluebook?offset=##&limit=##\",\n    \"last\": \"https://api.sikkasoft.com/v4/fee_schedule_bluebook?offset=##&limit=##\"\n  },\n  \"items\": [\n      {\n      \"href\": \"https://api.sikkasoft.com/v4/practices/##/fee_schedule_bluebook/####\",\n      \"practice_id\": \"practice id\",\n      \"practice_href\": \"https://api.sikkasoft.com/v4/practices/##\",\n      \"procedure_code\": \"procedure code\",\n      \"date\": \"date\",\n      \"insurance_company_id\": \"insurance company id\",\n      \"insurance_company_href\": \"https://api.sikkasoft.com/v4/practices/##/insurance_companies/####\",\n      \"insurance_payment\": \"insurance payment\",\n      \"notes\": \"notes\",\n      \"fee_amount\": \"fee amount\",\n      \"percentage_covered\": \"percentage covered\",\n      \"is_deductible\": \"is deductible\",\n      \"allowed_amount\": \"allowed amount\"\n  }\n  ]\n}"
 								}
 							]
+						},
+						{
+							"name": "dpm_rating",
+							"id": "d81f7153-7b36-4ae4-bcb3-e67682bc269b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Request-Key",
+										"value": "Request-Key",
+										"type": "text"
+									}
+								],
+								"url": "https://api.sikkasoft.com/v4/fee_schedule_bluebook",
+								"description": "### Parameters\n\n#### procedure_code `optional`\n\n> Procedure code as per practice management system \n  \n\n#### practice_id `optional`\n\n> Practice ID \n  \n\n### SortBy\n\n#### procedure_code `default`\n\n> Procedure code as per practice management system"
+							},
+							"response": [
+								{
+									"id": "9379c41f-74fe-48ab-a945-e9831e296c24",
+									"name": "dpm_rating",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "Request-Key",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/fee_schedule_bluebook"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.18.0 (Ubuntu)"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 10 May 2022 11:12:31 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Request-Key-Expires",
+											"value": "Wed, 11 May 2022 09:12:24 GMT"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "origin"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload;"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"offset\": \"##\",\n  \"limit\": \"##\",\n  \"total_count\": \"##\",\n  \"execution_time\": \"##\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/fee_schedule_bluebook?offset=##&limit=##\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/fee_schedule_bluebook?offset=##&limit=##\",\n    \"next\": \"https://api.sikkasoft.com/v4/fee_schedule_bluebook?offset=##&limit=##\",\n    \"last\": \"https://api.sikkasoft.com/v4/fee_schedule_bluebook?offset=##&limit=##\"\n  },\n  \"items\": [\n      {\n      \"href\": \"https://api.sikkasoft.com/v4/practices/##/fee_schedule_bluebook/####\",\n      \"practice_id\": \"practice id\",\n      \"practice_href\": \"https://api.sikkasoft.com/v4/practices/##\",\n      \"procedure_code\": \"procedure code\",\n      \"date\": \"date\",\n      \"insurance_company_id\": \"insurance company id\",\n      \"insurance_company_href\": \"https://api.sikkasoft.com/v4/practices/##/insurance_companies/####\",\n      \"insurance_payment\": \"insurance payment\",\n      \"notes\": \"notes\",\n      \"fee_amount\": \"fee amount\",\n      \"percentage_covered\": \"percentage covered\",\n      \"is_deductible\": \"is deductible\",\n      \"allowed_amount\": \"allowed amount\"\n  }\n  ]\n}"
+								}
+							]
 						}
 					],
 					"id": "0c1fa096-aa44-4088-aa2b-97a96d612a8e"
