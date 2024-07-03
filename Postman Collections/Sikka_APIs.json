@@ -5597,7 +5597,7 @@
 										"type": "text"
 									}
 								],
-								"url": "https://api.sikkasoft.com/v4/fee_schedule_bluebook",
+								"url": "https://api.sikkasoft.com/v4/dpm_rating",
 								"description": "### Parameters\n\n#### procedure_code `optional`\n\n> Procedure code as per practice management system \n  \n\n#### practice_id `optional`\n\n> Practice ID \n  \n\n### SortBy\n\n#### procedure_code `default`\n\n> Procedure code as per practice management system"
 							},
 							"response": [
@@ -5613,7 +5613,7 @@
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/fee_schedule_bluebook"
+										"url": "https://api.sikkasoft.com/v4/dpm_rating"
 									},
 									"status": "OK",
 									"code": 200,
@@ -5672,7 +5672,7 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n  \"offset\": \"##\",\n  \"limit\": \"##\",\n  \"total_count\": \"##\",\n  \"execution_time\": \"##\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/fee_schedule_bluebook?offset=##&limit=##\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/fee_schedule_bluebook?offset=##&limit=##\",\n    \"next\": \"https://api.sikkasoft.com/v4/fee_schedule_bluebook?offset=##&limit=##\",\n    \"last\": \"https://api.sikkasoft.com/v4/fee_schedule_bluebook?offset=##&limit=##\"\n  },\n  \"items\": [\n      {\n      \"href\": \"https://api.sikkasoft.com/v4/practices/##/fee_schedule_bluebook/####\",\n      \"practice_id\": \"practice id\",\n      \"practice_href\": \"https://api.sikkasoft.com/v4/practices/##\",\n      \"procedure_code\": \"procedure code\",\n      \"date\": \"date\",\n      \"insurance_company_id\": \"insurance company id\",\n      \"insurance_company_href\": \"https://api.sikkasoft.com/v4/practices/##/insurance_companies/####\",\n      \"insurance_payment\": \"insurance payment\",\n      \"notes\": \"notes\",\n      \"fee_amount\": \"fee amount\",\n      \"percentage_covered\": \"percentage covered\",\n      \"is_deductible\": \"is deductible\",\n      \"allowed_amount\": \"allowed amount\"\n  }\n  ]\n}"
+									"body": "{\n  \"offset\": \"##\",\n  \"limit\": \"##\",\n  \"total_count\": \"##\",\n  \"execution_time\": \"##\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/dpm_rating?offset=##&limit=##\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/dpm_rating?offset=##&limit=##\",\n    \"next\": \"\",\n    \"last\": \"https://api.sikkasoft.com/v4/dpm_rating?offset=##&limit=##\"\n  },\n  \"items\": [\n    {\n    \"machine_name\": \"machine name\",\n    \"rating\": \"rating\",\n    \"feedback\": \"feedback\",\n    \"master_customer_id\": \"master customer id\",\n    \"user_name\": \"user name\",\n    \"local_date_time\": \"local date time\",\n    \"inserted_date_time\": \"inserted date time\"\n    }\n    \n  ]\n}"
 								}
 							]
 						}
