@@ -5393,6 +5393,100 @@
 									"body": "{\n  \"offset\": \"##\",\n  \"limit\": \"##\",\n  \"total_count\": \"##\",\n  \"execution_time\": \"##\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/kpis?offset=##&limit=##\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/kpis?offset=##&limit=##\",\n    \"next\": \"\",\n    \"last\": \"https://api.sikkasoft.com/v4/kpis?offset=##&limit=##\"\n  },\n  \"items\": [\n    {\n      \"href\": \"http://api.sikkasoft.com/v4/kpis/kpi_name\",\n      \"name\": \"kpi_name\",\n      \"defination\": \"kpi name explanation\",\n      \"response_fields\": \"practice_id,practice_name,kpi_name\",\n      \"parameters\": \"startdate,enddate,practice_id\"\n    },\n    {\n    \"href\": \"http://api.sikkasoft.com/v4/kpis/kpi_name\",\n    \"name\": \"name\",\n    \"defination\": \"defination\",\n    \"response_fields\": \"response fields\",\n    \"parameters\": \"parameters\"\n    }\n  ]\n}"
 								}
 							]
+						},
+						{
+							"name": "kpis details",
+							"id": "6ac954e1-f007-4b18-b716-9ad9b4abde44",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Request-Key",
+										"value": "Request-Key",
+										"type": "text"
+									}
+								],
+								"url": "https://api.sikkasoft.com/v4/kpis",
+								"description": "## Key Performance Indicators\n\nA key performance indicator (KPI) is a business metric used to evaluate factors that are crucial to the success of an organization.KPIs give you unique views of practice data that lead to action items to drive increased revenue and save valuable practice time.\n\n### Parameters\n\n#### request_key `required`\n\n> Valid 32 characters alpha-numeric request key"
+							},
+							"response": [
+								{
+									"id": "804248fa-0e1d-4058-a224-a51059809880",
+									"name": "kpis details",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "Request-Key",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/kpis"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.18.0 (Ubuntu)"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 10 May 2022 11:12:31 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Request-Key-Expires",
+											"value": "Wed, 11 May 2022 09:12:24 GMT"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "origin"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload;"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"offset\": \"##\",\n  \"limit\": \"##\",\n  \"total_count\": \"##\",\n  \"execution_time\": \"##\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/kpis?offset=##&limit=##\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/kpis?offset=##&limit=##\",\n    \"next\": \"\",\n    \"last\": \"https://api.sikkasoft.com/v4/kpis?offset=##&limit=##\"\n  },\n  \"items\": [\n    {\n      \"href\": \"http://api.sikkasoft.com/v4/kpis/kpi_name\",\n      \"name\": \"kpi_name\",\n      \"defination\": \"kpi name explanation\",\n      \"response_fields\": \"practice_id,practice_name,kpi_name\",\n      \"parameters\": \"startdate,enddate,practice_id\"\n    },\n    {\n    \"href\": \"http://api.sikkasoft.com/v4/kpis/kpi_name\",\n    \"name\": \"name\",\n    \"defination\": \"defination\",\n    \"response_fields\": \"response fields\",\n    \"parameters\": \"parameters\"\n    }\n  ]\n}"
+								}
+							]
 						}
 					],
 					"id": "0c1fa096-aa44-4088-aa2b-97a96d612a8e"
