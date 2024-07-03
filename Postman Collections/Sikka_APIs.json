@@ -5598,7 +5598,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/dpm_rating",
-								"description": "### Parameters\n\n#### procedure_code `optional`\n\n> Procedure code as per practice management system \n  \n\n#### practice_id `optional`\n\n> Practice ID \n  \n\n### SortBy\n\n#### procedure_code `default`\n\n> Procedure code as per practice management system"
+								"description": "### Parameters\n\n### startdate `optional`\n> format: yyyy-mm-dd, start date\n\n### enddate `optional`\n> format: yyyy-mm-dd, end date\n\n### office_id `optional`\n> Office ID\n\n### SortBy \n\n#### inserted_date_time `default`\n> Inserted date time \n\n"
 							},
 							"response": [
 								{
