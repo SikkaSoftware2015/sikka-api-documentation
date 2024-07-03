@@ -5321,7 +5321,7 @@
 							"response": [
 								{
 									"id": "25e61638-5e2a-4ef0-8ad5-0de9d6f8bb0b",
-									"name": "patient360",
+									"name": "kpis",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
