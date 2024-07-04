@@ -5207,6 +5207,100 @@
 							]
 						},
 						{
+							"name": "xrays",
+							"id": "f8e6caef-6315-4f32-80fb-05efd551c8d5",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Request-Key",
+										"value": "Request-Key",
+										"type": "text"
+									}
+								],
+								"url": "https://api.sikkasoft.com/v4/xrays",
+								"description": "### Parameters\n\n#### practice_id `Required`\n> Practice ID\n\n#### patient_id  `Required`\n> Patient ID\n\n\n"
+							},
+							"response": [
+								{
+									"id": "de31c83a-ee86-4e3b-b974-f027863fec33",
+									"name": "xrays",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "Request-Key",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/xrays"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.18.0 (Ubuntu)"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 10 May 2022 11:12:31 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Request-Key-Expires",
+											"value": "Wed, 11 May 2022 09:12:24 GMT"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "origin"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload;"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"offset\": \"##\",\n  \"limit\": \"##\",\n  \"total_count\": \"##\",\n  \"execution_time\": \"##\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/xrays?offset=##&limit=##\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/xrays?offset=##&limit=##\",\n    \"next\": \"https://api.sikkasoft.com/v4/xrays?offset=##&limit=##\",\n    \"last\": \"https://api.sikkasoft.com/v4/xrays?offset=##&limit=##\"\n  },\n  \"items\": [\n    {\n      \"href\": \"https://api.sikkasoft.com/v4/practices/##/xrays/####\",\n      \"patient_href\": \"https://api.sikkasoft.com/v4/practices/##/patients/####\",\n      \"patient_id\": \"patient id\",\n      \"practice_id\": \"practice id\",\n      \"practice_href\": \"https://api.sikkasoft.com/v4/practices/##\",\n      \"xray_link\": \"xray link\"\n    },\n    {\n      \"href\": \"https://api.sikkasoft.com/v4/practices/##/xrays/####\",\n      \"patient_href\": \"https://api.sikkasoft.com/v4/practices/##/patients/####\",\n      \"patient_id\": \"patient id\",\n      \"practice_id\": \"practice id\",\n      \"practice_href\": \"https://api.sikkasoft.com/v4/practices/##\",\n      \"xray_link\": \"xray link\"\n    }\n  ]\n}"
+								}
+							]
+						},
+						{
 							"name": "kpis",
 							"id": "033c595a-15bb-4f52-91b2-cebff8c7cfc3",
 							"protocolProfileBehavior": {
