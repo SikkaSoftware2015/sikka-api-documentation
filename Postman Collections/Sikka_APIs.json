@@ -50,6 +50,68 @@
 									"item": [],
 									"id": "f65d2079-bc42-4b76-a41f-5f2bc2305c2f",
 									"description": "```\r\nDelete https://api.sikkasoft.com/v4/refresh_key\r\nHeader:  \r\nContent-Type:applicaion/json  \r\nRefresh-Key:\"\"  \r\nApp-Id:\"`application-id>`\"  \r\nApp-Key:\"`application secret key`\"\r\n```\r\nResponse:\r\n```\r\n{\r\n    \"http_code\": \"200\",\r\n    \"http_code_desc\": \"OK\",\r\n    \"error_code\": \"API0002\",\r\n    \"short_message\": \"OK\",\r\n    \"long_message\": \"Request Session terminated successfully.\",\r\n    \"more_information\": \"\"\r\n}\r\n```"
+								},
+								{
+									"name": "Request Key info",
+									"item": [
+										{
+											"name": "appointments Copy",
+											"id": "1fe192f1-846e-48ee-bfe5-078a74f20ec1",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": "https://api.sikkasoft.com/v4/appointments",
+												"description": "Returns appointments data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### appointment_sr_no `optional`\n\n> appointment serial number from appointments \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> Patient ID as per the management system \n  \n\n###### guarantor_id `optional`\n\n> guarantor id in practice management system \n  \n\n###### provider_id `optional`\n\n> Provider id as per practice management system \n  \n\n###### startdate `optional`\n\n> format: yyyy-mm-dd, start date \n  \n\n###### enddate `optional`\n\n> format: yyyy-mm-dd, end date \n  \n\n###### procedure_code `optional`\n\n> Procedure code \n  \n\n###### status `optional`\n\n> Status \n  \n\n###### operatory `optional`\n\n> Operatory \n  \n\n###### type `optional`\n\n> Type \n  \n\n###### SortBy\n\n###### appointment_sr_no `default`\n\n> Appointment serial number \n  \n\n###### appointment_date\n\n> Appointment Date \n  \n\n###### appointment_time\n\n> Appointment Time \n  \n\n###### patient_id\n\n> Patient ID as per the management system"
+											},
+											"response": [
+												{
+													"id": "fc7f1ceb-0a9c-434f-a425-e757c07d4b3f",
+													"name": "appointments",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Request-Key",
+																"value": "<request_key>",
+																"type": "text"
+															}
+														],
+														"url": {
+															"raw": "https://api.sikkasoft.com/v4/appointments",
+															"protocol": "https",
+															"host": [
+																"api",
+																"sikkasoft",
+																"com"
+															],
+															"path": [
+																"v4",
+																"appointments"
+															],
+															"query": [
+																{
+																	"key": "Request-Key",
+																	"value": "<request_key>",
+																	"disabled": true
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": null,
+													"cookie": [],
+													"responseTime": null,
+													"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"1\",\n    \"total_count\": \"1234\",\n    \"execution_time\": \"51\",\n    \"pagination\": {\n        \"first\": \"http://api.sikkasoft.com/v4/appointments?offset=0&limit=1\",\n        \"previous\": \"\",\n        \"current\": \"http://api.sikkasoft.com/v4/appointments?offset=0&limit=1\",\n        \"next\": \"http://api.sikkasoft.com/v4/appointments?offset=1&limit=1\",\n        \"last\": \"http://api.sikkasoft.com/v4/appointments?offset=38967&limit=1\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/appointments/70670\",\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/5383\",\n            \"patient_id\": \"5383\",\n            \"guarantor_id\": \"\",\n            \"provider_id\": \"DMD2\",\n            \"provider_href\": \"https://api.sikkasoft.com/v4/practices/1/providers/DMD2\",\n            \"practice_id\": \"1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\n            \"guarantor_href\": \"\",\n            \"amount\": \"0.0000\",\n            \"status\": \"status\",\n            \"note\": \"\",\n            \"surface_quadrant_type\": \"\",\n            \"appointment_sr_no\": \"70670\",\n            \"date\": \"2020-09-29T00:00:00\",\n            \"time\": \"10:30\",\n            \"length\": \"60\",\n            \"description\": \"Seat Br-UR\",\n            \"appointment_made_date\": \"2020-09-14T00:00:00\",\n            \"type\": \"General\",\n            \"procedure_code1\": \"\",\n            \"procedure_code1_amount\": \"0\",\n            \"procedure_code2\": \"\",\n            \"procedure_code2_amount\": \"0\",\n            \"procedure_code3\": \"\",\n            \"procedure_code3_amount\": \"0\",\n            \"patient_name\": \"paitent name\",\n            \"guarantor_name\": \"\",\n            \"procedure_code1_time\": \"0\",\n            \"procedure_code2_time\": \"0\",\n            \"procedure_code3_time\": \"0\",\n            \"surface_quadrant\": \"\"\n        }\n    ]\n}"
+												}
+											]
+										}
+									],
+									"id": "22516c39-e2af-4061-84a6-244eea7df3b9"
 								}
 							],
 							"id": "ed966ba4-b9b5-4af3-bd6e-5e67106bb401",
