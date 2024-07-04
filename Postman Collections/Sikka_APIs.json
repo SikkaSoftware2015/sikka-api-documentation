@@ -69,8 +69,8 @@
 														"type": "text"
 													}
 												],
-												"url": "https://api.sikkasoft.com/v4/xrays",
-												"description": "### Parameters\n\n#### practice_id `optional`\n\n> Practice ID \n\n### SortBy\n\n#### practice_id `default`\n\n> Practice ID \n  \n\n"
+												"url": "https://api.sikkasoft.com/v4/request_key_info",
+												"description": "Accepts an request key and returns information about that request key including which office id was it issued to, the intended target of the request key, the scopes the user consented to, the remaining lifetime of the request key.\n\n### Parameters\n\n#### request_key `required`\n> Valid 32 characters alpha-numeric request key"
 											},
 											"response": [
 												{
@@ -85,7 +85,7 @@
 																"type": "text"
 															}
 														],
-														"url": "https://api.sikkasoft.com/v4/xrays"
+														"url": "https://api.sikkasoft.com/v4/request_key_info"
 													},
 													"status": "OK",
 													"code": 200,
