@@ -5134,7 +5134,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/manufacturers",
-								"description": "### Parameters\n\n#### manufacturer_id `optional`\n> Manufacturer Id\n\n### SortBy \n\n#### manufacturer_id `default`\n> Manufacturer Id"
+								"description": "### Parameters\n\n#### manufacturer_id `optional`\n\n> Manufacturer Id \n  \n\n### SortBy\n\n#### manufacturer_id `default`\n\n> Manufacturer Id"
 							},
 							"response": [
 								{
@@ -5228,7 +5228,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/operatories",
-								"description": "### Parameters\n\n#### cust_id `mandatory`\n\n> Customer Id \n\n#### is_hidden `mandatory`\n\n> Is Hidden. Value should be T/F \n  \n\n### SortBy\n\n#### operatory `default`\n\n> Operatory"
+								"description": "### Parameters\n\n#### cust_id `mandatory`\n\n> Customer Id \n  \n\n#### is_hidden `optional`\n\n> Is Hidden. Value should be T/F \n  \n\n### SortBy\n\n#### operatory `default`\n\n> Operatory"
 							},
 							"response": [
 								{
