@@ -5232,7 +5232,7 @@
 							},
 							"response": [
 								{
-									"id": "91d3fb05-371f-44d8-8bb3-0fdafa280408",
+									"id": "78e9772a-b81d-4c48-9c9c-6ef19ab93356",
 									"name": "operatories",
 									"originalRequest": {
 										"method": "GET",
@@ -5245,64 +5245,11 @@
 										],
 										"url": "https://api.sikkasoft.com/v4/manufacturers"
 									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Server",
-											"value": "nginx/1.18.0 (Ubuntu)"
-										},
-										{
-											"key": "Date",
-											"value": "Tue, 10 May 2022 11:12:31 GMT"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json",
-											"description": "",
-											"type": "text"
-										},
-										{
-											"key": "Transfer-Encoding",
-											"value": "chunked"
-										},
-										{
-											"key": "Request-Key-Expires",
-											"value": "Wed, 11 May 2022 09:12:24 GMT"
-										},
-										{
-											"key": "X-Frame-Options",
-											"value": "DENY"
-										},
-										{
-											"key": "X-Content-Type-Options",
-											"value": "nosniff"
-										},
-										{
-											"key": "X-XSS-Protection",
-											"value": "1; mode=block"
-										},
-										{
-											"key": "Referrer-Policy",
-											"value": "origin"
-										},
-										{
-											"key": "Content-Encoding",
-											"value": "gzip"
-										},
-										{
-											"key": "Strict-Transport-Security",
-											"value": "max-age=31536000; includeSubDomains; preload;"
-										},
-										{
-											"key": "Content-Security-Policy",
-											"value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
-										}
-									],
+									"_postman_previewlanguage": null,
+									"header": null,
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n  \"offset\": \"##\",\n  \"limit\": \"##\",\n  \"total_count\": \"##\",\n  \"execution_time\": \"##\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/manufacturers?offset=##&limit=##\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/manufacturers?offset=##&limit=##\",\n    \"next\": \"\",\n    \"last\": \"https://api.sikkasoft.com/v4/manufacturers?offset=##&limit=##\"\n  },\n  \"items\": [\n    {\n    \"href\": \"https://api.sikkasoft.com/v4/practices/####/manufacturers/####\",\n    \"status\": \"status\",\n    \"address_line1\": \"address line1\",\n    \"address_line2\": \"address line2\",\n    \"city\": \"city\",\n    \"state\": \"state\",\n    \"practice_id\": \"practice id\",\n    \"practice_href\": \"https://api.sikkasoft.com/v4/practices/####\",\n    \"name\": \"name\",\n    \"phone\": \"phone\",\n    \"notes\": \"notes\",\n    \"fax\": \"fax\",\n    \"contact\": \"contact\",\n    \"manufacturer_id\": \"manufacturer id\",\n    \"updated_date\": \"updated date\",\n    \"zip_code\": \"zip code\"\n    }\n    \n  ]\n}"
+									"body": null
 								}
 							]
 						},
