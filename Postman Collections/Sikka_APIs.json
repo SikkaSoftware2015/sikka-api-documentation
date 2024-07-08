@@ -512,6 +512,41 @@
 							]
 						},
 						{
+							"name": "accounts_receivables_by_patients",
+							"id": "3ae94fe1-4b24-4e96-b227-808da170b6c5",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "https://api.sikkasoft.com/v4/accounts_receivables_by_patients",
+								"description": "Returns account receivables details from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### guarantor_id `optional`\n\n> guarantor id in practice management system \n\n###### current_date `optional`\n\n> Value should be true/false. if current_date=false then API returns data for all guarantors instead of max date and return last record for guarantor. if current_date=true then API returns current Account Receivable for guarantors.\n  \n\n###### SortBy\n\n###### guarantor_id `default`\n\n> guarantor id in practice management system \n  \n\n###### current_date\n\n> format: yyyy-mm-dd, current date \n  \n\n###### entry_id\n\n> entry id \n  \n\n###### practice_id\n\n> practice id of office \n  \n\n###### amount_between_0_30\n\n> amount between 0 to 30. \n  \n\n###### amount_under30\n\n> amount less than 30. \n  \n\n###### amount_between_31_60\n\n> amount between 31 to 60. \n  \n\n###### amount_30to60\n\n> amount between 30 to 60. \n  \n\n###### amount_between_61_90\n\n> amount between 61 to 90. \n  \n\n###### amount_60to90\n\n> amount between 60 to 90. \n  \n\n###### amount_greater_than_90\n\n> amount more than 90. \n  \n\n###### amount_above90\n\n> amount above 90."
+							},
+							"response": [
+								{
+									"id": "ac1fda3b-3a42-4095-a71b-33f565cd0845",
+									"name": "accounts_receivables",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "request-key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/accounts_receivables_by_patients"
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"1\",\n    \"total_count\": \"433\",\n    \"execution_time\": \"264\",\n    \"pagination\": {\n        \"first\": \"http://api.sikkasoft.com/v4/accounts_receivables?offset=0&limit=1\",\n        \"previous\": \"\",\n        \"current\": \"http://api.sikkasoft.com/v4/accounts_receivables_by_patients?offset=0&limit=1\",\n        \"next\": \"http://api.sikkasoft.com/v4/accounts_receivables_by_patients?offset=1&limit=1\",\n        \"last\": \"http://api.sikkasoft.com/v4/accounts_receivables_by_patients?offset=432&limit=1\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/x/accounts_receivables_by_patients/xxxxx\",\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/xxxxx\",\n            \"patient_id\": \"xxxxx\",\n            \"practice_id\": \"x\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/x\",\n            \"cust_id\": \"x\",\n            \"amount_between_0_30\": \"0\",\n            \"amount_between_31_60\": \"0\",\n            \"amount_between_61_90\": \"0\",\n            \"amount_greater_than_90\": \"0\",\n            \"current_date\": \"yyyy-MM-ddThh:mm:ss\",\n            \"rowhash\": \"rowhash\",\n            \"write_off_estimate\": \"0\",\n            \"payment_plan_amount\": \"0\",\n            \"unapplied_payments\": \"0\",\n            \"suspended_amounts\": \"0\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
 							"name": "patients",
 							"id": "67aa35de-a4d4-47b7-919f-1b58ebc75073",
 							"protocolProfileBehavior": {
