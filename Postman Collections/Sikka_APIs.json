@@ -526,7 +526,7 @@
 							"response": [
 								{
 									"id": "ac1fda3b-3a42-4095-a71b-33f565cd0845",
-									"name": "accounts_receivables",
+									"name": "accounts_receivables_by_patients",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
