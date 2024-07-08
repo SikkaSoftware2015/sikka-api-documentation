@@ -5227,8 +5227,8 @@
 										"type": "text"
 									}
 								],
-								"url": "https://api.sikkasoft.com/v4/manufacturers",
-								"description": "### Parameters\n\n#### manufacturer_id `optional`\n> Manufacturer Id\n\n### SortBy \n\n#### manufacturer_id `default`\n> Manufacturer Id"
+								"url": "https://api.sikkasoft.com/v4/operatories",
+								"description": "### Parameters\n\n#### manufacturer_id `optional`\n\n> Manufacturer Id \n  \n\n### SortBy\n\n#### manufacturer_id `default`\n\n> Manufacturer Id"
 							},
 							"response": [
 								{
@@ -5239,12 +5239,12 @@
 										"header": [
 											{
 												"key": "Request-Key",
-												"value": "491bc3cf582500014df89bd078d0d7ea",
+												"value": "{Reques-Key}",
 												"type": "text"
 											}
 										],
 										"url": {
-											"raw": "https://api.sikkasoft.com/v4/operatories?cust_id=1&is_hidded=1",
+											"raw": "https://api.sikkasoft.com/v4/operatories?cust_id={cust_id}&is_hidded={is_hidden}",
 											"protocol": "https",
 											"host": [
 												"api",
@@ -5258,11 +5258,11 @@
 											"query": [
 												{
 													"key": "cust_id",
-													"value": "1"
+													"value": "{cust_id}"
 												},
 												{
 													"key": "is_hidded",
-													"value": "1"
+													"value": "{is_hidden}"
 												}
 											]
 										}
