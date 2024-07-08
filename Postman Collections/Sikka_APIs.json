@@ -5239,17 +5239,110 @@
 										"header": [
 											{
 												"key": "Request-Key",
-												"value": "Request-Key",
+												"value": "491bc3cf582500014df89bd078d0d7ea",
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/manufacturers"
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/operatories?cust_id=1&is_hidded=1",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"operatories"
+											],
+											"query": [
+												{
+													"key": "cust_id",
+													"value": "1"
+												},
+												{
+													"key": "is_hidded",
+													"value": "1"
+												}
+											]
+										}
 									},
-									"_postman_previewlanguage": null,
-									"header": null,
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.22.0"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 08 Jul 2024 17:11:40 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding"
+										},
+										{
+											"key": "Request-Key-Expires",
+											"value": "Tue, 09 Jul 2024 17:04:31 GMT"
+										},
+										{
+											"key": "X-Rate-Limit-Limit",
+											"value": "250"
+										},
+										{
+											"key": "X-Rate-Limit-Remaining",
+											"value": "249"
+										},
+										{
+											"key": "X-Rate-Limit-Reset",
+											"value": "60"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "origin"
+										},
+										{
+											"key": "Access-Control-Expose-Headers",
+											"value": "*"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload;"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
+										}
+									],
 									"cookie": [],
 									"responseTime": null,
-									"body": null
+									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"50\",\n    \"total_count\": \"11\",\n    \"execution_time\": \"7\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/operatories?offset=0&limit=50\",\n        \"previous\": \"\",\n        \"current\": \"https://api.sikkasoft.com/v4/operatories?offset=0&limit=50\",\n        \"next\": \"\",\n        \"last\": \"https://api.sikkasoft.com/v4/operatories?offset=0&limit=50\"\n    },\n    \"items\": [\n        {\n            \"practice_id\": \"1-0\",\n            \"operatory\": \"Test1\",\n            \"cust_id\": \"1\",\n            \"is_hidden\": \"F\",\n            \"abbreviation\": \"OP-9\"\n        },\n        {\n            \"practice_id\": \"1-0\",\n            \"operatory\": \"Test2\",\n            \"cust_id\": \"1\",\n            \"is_hidden\": \"F\",\n            \"abbreviation\": \"OP-6\"\n        }\n    ]\n}"
 								}
 							]
 						},
