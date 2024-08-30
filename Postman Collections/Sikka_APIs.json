@@ -2508,6 +2508,47 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"5\",\r\n\"total_count\": \"57944\",\r\n\"execution_time\": \"57\",\r\n\"pagination\": {\r\n\"first\": \"http://api.sikkasoft.com/v4/medical_notes?offset=0&limit=5\",\r\n\"previous\": \"\",\r\n\"current\": \"http://api.sikkasoft.com/v4/medical_notes?offset=0&limit=5\",\r\n\"next\": \"http://api.sikkasoft.com/v4/medical_notes?offset=1&limit=5\",\r\n\"last\": \"http://api.sikkasoft.com/v4/medical_notes?offset=11588&limit=5\"\r\n},\r\n\"items\": [\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/medical_notes\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/801801\",\r\n\"patient_id\": \"801801\",\r\n\"provider_id\": \"1\",\r\n\"provider_href\": \"https://api.sikkasoft.com/v4/practices/1/providers/1\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"transaction_sr_no\": \"0\",\r\n\"transaction_href\": \"https://api.sikkasoft.com/v4/practices/1/transactions/0\",\r\n\"surface\": \"\",\r\n\"clinical_condition_id\": \"0\",\r\n\"date\": \"2020-10-27T00:00:00\",\r\n\"description\": \"\",\r\n\"type\": \"Clinical Note\",\r\n\"tooth_number\": \"\",\r\n\"procedure_date\": \"2020-10-27T00:00:00\",\r\n\"text\": \"Secondary Capture Image(s).Taken 10/27/20\",\r\n\"procedure_code_id\": \"0\",\r\n\"procedure_code_href\": \"https://api.sikkasoft.com/v4/practices/1/procedure_codes/0\",\r\n\"time_stamp\":\"\",\r\n\"other_description\":\"\",\r\n\"error_code\":\"\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/medical_notes\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/801801\",\r\n\"patient_id\": \"801801\",\r\n\"provider_id\": \"1\",\r\n\"provider_href\": \"https://api.sikkasoft.com/v4/practices/1/providers/1\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"transaction_sr_no\": \"0\",\r\n\"transaction_href\": \"https://api.sikkasoft.com/v4/practices/1/transactions/0\",\r\n\"surface\": \"\",\r\n\"clinical_condition_id\": \"0\",\r\n\"date\": \"2020-10-27T00:00:00\",\r\n\"description\": \"\",\r\n\"type\": \"Clinical Note\",\r\n\"tooth_number\": \"\",\r\n\"procedure_date\": \"2020-10-27T00:00:00\",\r\n\"text\": \"RVG(s).Taken 10/27/20\",\r\n\"procedure_code_id\": \"0\",\r\n\"procedure_code_href\": \"https://api.sikkasoft.com/v4/practices/1/procedure_codes/0\",\r\n\"time_stamp\":\"\",\r\n\"other_description\":\"\",\r\n\"error_code\":\"\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/medical_notes\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/801801\",\r\n\"patient_id\": \"801801\",\r\n\"provider_id\": \"1\",\r\n\"provider_href\": \"https://api.sikkasoft.com/v4/practices/1/providers/1\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"transaction_sr_no\": \"0\",\r\n\"transaction_href\": \"https://api.sikkasoft.com/v4/practices/1/transactions/0\",\r\n\"surface\": \"\",\r\n\"clinical_condition_id\": \"0\",\r\n\"date\": \"2020-10-27T00:00:00\",\r\n\"description\": \"\",\r\n\"type\": \"Clinical Note\",\r\n\"tooth_number\": \"\",\r\n\"procedure_date\": \"2020-10-27T00:00:00\",\r\n\"text\": \"FMS(s).Taken 10/27/20\",\r\n\"procedure_code_id\": \"0\",\r\n\"procedure_code_href\": \"https://api.sikkasoft.com/v4/practices/1/procedure_codes/0\",\r\n\"time_stamp\":\"\",\r\n\"other_description\":\"\",\r\n\"error_code\":\"\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/medical_notes\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/801801\",\r\n\"patient_id\": \"801801\",\r\n\"provider_id\": \"1\",\r\n\"provider_href\": \"https://api.sikkasoft.com/v4/practices/1/providers/1\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"transaction_sr_no\": \"0\",\r\n\"transaction_href\": \"https://api.sikkasoft.com/v4/practices/1/transactions/0\",\r\n\"surface\": \"\",\r\n\"clinical_condition_id\": \"0\",\r\n\"date\": \"2020-10-27T00:00:00\",\r\n\"description\": \"\",\r\n\"type\": \"Clinical Note\",\r\n\"tooth_number\": \"\",\r\n\"procedure_date\": \"2020-10-27T00:00:00\",\r\n\"text\": \"Patient C/O - Broken tooth and sometimes pain on the LR sideHealth History- WNL in chartPatient has not seen a dentist for years. She had traumatic experience at the previous dental appt. She is not interested in replacing her missing teeth. Treatment options discussed with patient. Questions invited and answered.   [10/27/20]\",\r\n\"procedure_code_id\": \"150\",\r\n\"procedure_code_href\": \"https://api.sikkasoft.com/v4/practices/1/procedure_codes/150\",\r\n\"time_stamp\":\"\",\r\n\"other_description\":\"\",\r\n\"error_code\":\"\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/medical_notes\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/801801\",\r\n\"patient_id\": \"801801\",\r\n\"provider_id\": \"1\",\r\n\"provider_href\": \"https://api.sikkasoft.com/v4/practices/1/providers/1\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"transaction_sr_no\": \"0\",\r\n\"transaction_href\": \"https://api.sikkasoft.com/v4/practices/1/transactions/0\",\r\n\"surface\": \"\",\r\n\"clinical_condition_id\": \"0\",\r\n\"date\": \"2020-10-27T00:00:00\",\r\n\"description\": \"\",\r\n\"type\": \"Clinical Note\",\r\n\"tooth_number\": \"\",\r\n\"procedure_date\": \"2020-10-27T00:00:00\",\r\n\"text\": \"Anesthetized pt with        1    cart of          2 %     xylocaine  with   1:100000  epi.   Tooth#: 30Opening access prepared decay removed.  Rubber dam placed.   3        canals found.  Filed canals with hand files.  RC prep used.  WL X-ray taken.  WL=    19mm all 3 canals                                                   .Irrigated with sodium hypochlorite.  Filed to WL up to size    15                hand file.  Calcium hydroxide placed in canals.  Cotton pellet and cavit placed.  Checked occlusion.  POI given to pt. Rx:     None                                 .   ASST: test [10/27/20]\",\r\n\"procedure_code_id\": \"9110\",\r\n\"procedure_code_href\": \"https://api.sikkasoft.com/v4/practices/1/procedure_codes/9110\",\r\n\"time_stamp\":\"\",\r\n\"other_description\":\"\",\r\n\"error_code\":\"\"\r\n}\r\n]\r\n}"
+								},
+								{
+									"id": "a694b3e5-fb55-4ecc-a883-6776110c94f9",
+									"name": "medical_notes?fields=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/medical_notes?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"medical_notes"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n  \"offset\": \"xx\",\r\n  \"limit\": \"xx\",\r\n  \"total_count\": \"xx\",\r\n  \"execution_time\": \"xx\",\r\n  \"pagination\": {\r\n    \"first\": \"https://api.sikkasoft.com/v4/medical_notes?offset=xx&limit=xx\",\r\n    \"previous\": \"\",\r\n    \"current\": \"https://api.sikkasoft.com/v4/medical_notes?offset=xx&limit=xx\",\r\n    \"next\": \"https://api.sikkasoft.com/v4/medical_notes?offset=xx&limit=xx\",\r\n    \"last\": \"https://api.sikkasoft.com/v4/medical_notes?offset=xx&limit=xx\"\r\n  },\r\n  \"items\": [\r\n{\r\n    \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/medical_notes\",\r\n    \"patient_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/patients/xxxx\",\r\n    \"patient_id\": \"patient id\",\r\n    \"provider_id\": \"provider id\",\r\n    \"provider_href\": \"\",\r\n    \"practice_id\": \"practice id\",\r\n    \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\r\n    \"transaction_sr_no\": \"transaction sr no\",\r\n    \"transaction_href\": \"\",\r\n    \"surface\": \"surface\",\r\n    \"clinical_condition_id\": \"clinical condition id\",\r\n    \"created_by\": \"created by\",\r\n    \"date\": \"date\",\r\n    \"description\": \"description\",\r\n    \"type\": \"type\",\r\n    \"tooth_number\": \"tooth number\",\r\n    \"cust_id\": \"cust id\",\r\n    \"procedure_date\": \"procedure date\",\r\n    \"text\": \"text\",\r\n    \"procedure_code_id\": \"procedure code id\",\r\n    \"procedure_code_href\": \"\",\r\n    \"time_stamp\": \"time stamp\",\r\n    \"other_description\": \"other description\",\r\n    \"error_code\": \"error code\",\r\n    \"note_id\": \"note id\",\r\n    \"communication_method\": \"communication method\"\r\n}\r\n  ]\r\n}"
 								}
 							]
 						},
