@@ -763,6 +763,111 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"50\",\n    \"total_count\": \"1\",\n    \"execution_time\": \"18\",\n    \"pagination\": {\n        \"first\": \"http://apiv4.sikkasoft.com/v4/practices?offset=0&limit=50\",\n        \"previous\": \"\",\n        \"current\": \"http://apiv4.sikkasoft.com/v4/practices?offset=0&limit=50\",\n        \"next\": \"\",\n        \"last\": \"http://apiv4.sikkasoft.com/v4/practices?offset=0&limit=50\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1\",\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients\",\n            \"address_line1\": \"Dr. Toubman and Dr. Korwin\",\n            \"address_line2\": \"112 Market Square (Rear)\",\n            \"city\": \"Newington\",\n            \"state\": \"CT\",\n            \"zipcode\": \"06111\",\n            \"email\": \"\",\n            \"provider_href\": \"https://api.sikkasoft.com/v4/practices/1/providers\",\n            \"practice_id\": \"1\",\n            \"appointment_href\": \"https://api.sikkasoft.com/v4/practices/1/appointments\",\n            \"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/1/guarantors\",\n            \"transaction_href\": \"https://api.sikkasoft.com/v4/practices/1/transactions\",\n            \"description\": \"\",\n            \"name\": \"Cedar Mountain Dental\",\n            \"cust_id\": \"1\",\n            \"phone\": \"8606672600\"\n        }\n    ]\n}"
+								},
+								{
+									"id": "535e8ea8-c7d7-4166-9b57-faa05f45b2df",
+									"name": "practices?field=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "request-key",
+												"value": "<request-key>",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://apiv4.sikkasoft.com/practices?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"apiv4",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"practices"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.14.0 (Ubuntu)"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 25 Sep 2020 21:44:48 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding"
+										},
+										{
+											"key": "Request-Key-Expires",
+											"value": "Fri, 25 Sep 2020 22:03:22 GMT"
+										},
+										{
+											"key": "X-Rate-Limit-Limit",
+											"value": "20"
+										},
+										{
+											"key": "X-Rate-Limit-Remaining",
+											"value": "60"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "origin"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline'  data: blob:;"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"offset\": \"xx\",\n  \"limit\": \"xx\",\n  \"total_count\": \"xx\",\n  \"execution_time\": \"xx\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/practices?offset=xx&limit=xx\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/practices?offset=xx&limit=xx\",\n    \"next\": \"https://api.sikkasoft.com/v4/practices?offset=xx&limit=xx\",\n    \"last\": \"https://api.sikkasoft.com/v4/practices?offset=xx&limit=xx\"\n  },\n  \"items\": [\n    {\n    \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\n    \"patient_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/patients\",\n    \"address_line1\": \"address line1\",\n    \"address_line2\": \"address line2\",\n    \"city\": \"city\",\n    \"state\": \"state\",\n    \"zipcode\": \"zipcode\",\n    \"email\": \"email\",\n    \"provider_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/providers\",\n    \"practice_id\": \"practice id\",\n    \"appointment_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/appointments\",\n    \"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/guarantors\",\n    \"country\": \"country\",\n    \"transaction_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/transactions\",\n    \"description\": \"description\",\n    \"name\": \"name\",\n    \"cust_id\": \"cust id\",\n    \"national_provider_identifier\": \"national provider identifier\",\n    \"phone\": \"phone\",\n    \"website\": \"website\",\n    \"is_main_office\": \"is main office\"\n}\n  ]\n}"
 								}
 							]
 						},
@@ -811,7 +916,26 @@
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/transactions"
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/transactions?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"transactions"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
 									},
 									"_postman_previewlanguage": "json",
 									"header": null,
