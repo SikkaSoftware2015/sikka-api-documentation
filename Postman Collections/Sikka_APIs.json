@@ -1273,6 +1273,44 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"1\",\r\n\"total_count\": \"37914\",\r\n\"execution_time\": \"14\",\r\n\"pagination\": {\r\n\"first\": \"http://api.sikkasoft.com/v4/claims?offset=0&limit=1\",\r\n\"previous\": \"\",\r\n\"current\": \"http://api.sikkasoft.com/v4/claims?offset=0&limit=1\",\r\n\"next\": \"http://api.sikkasoft.com/v4/claims?offset=1&limit=1\",\r\n\"last\": \"http://api.sikkasoft.com/v4/claims?offset=37913&limit=1\"\r\n},\r\n\"items\": [\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/claims63052\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/242303\",\r\n\"patient_id\": \"242303\",\r\n\"guarantor_id\": \"242300\",\r\n\"provider_id\": \"1\",\r\n\"provider_href\": \"https://api.sikkasoft.com/v4/practices/1/providers/1\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/1/guarantors/242300\",\r\n\"claim_sr_no\": \"63052\",\r\n\"note\": \"\",\r\n\"cheque_no\": \"\",\r\n\"claim_description_id\": \"63052\",\r\n\"claim_description_href\": \"https://api.sikkasoft.com/v4/practices/1/claim_descriptions/63052\",\r\n\"claim_sent_date\": \"2020-10-05T00:00:00\",\r\n\"total_billed_amount\": \"228.00\",\r\n\"estimated_amount\": \"228.00\",\r\n\"claim_payment_date\": \"\",\r\n\"payment_amount\": \"228.00\",\r\n\"claim_status\": \"O\",\r\n\"primary_or_secondary\": \"Primary\",\r\n\"insurance_company_id\": \"1374\",\r\n\"insurance_company_href\": \"https://api.sikkasoft.com/v4/practices/1/insurance_companies/1374\",\r\n\"insurance_company_name\": \"Delta Dental Of Ca.\",\r\n\"claim_channel\": \"Sent Electronically\",\r\n\"rendering_provider\": \"1\",\r\n\"payer_id\": \"77777\",\r\n\"on_hold_date\": \"\",\r\n\"resent_date\": \"\",\r\n\"creation_date\": \"2020-10-05T00:00:00\",\r\n\"total_paid_amount\": \"0.00\",\r\n\"bank_no\": \"\",\r\n\"standard\": \"0.00\",\r\n\"preventive\": \"0.00\",\r\n\"others\": \"0.00\",\r\n\"pay_to_provider\": \"1\",\r\n\"tp\": \"True\"\r\n}\r\n]\r\n}"
+								},
+								{
+									"id": "ab608ddd-4194-470e-af65-e7d3364e4275",
+									"name": "claims?fields=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "request-key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/claims?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"claims"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n  \"offset\": \"xx\",\r\n  \"limit\": \"xx\",\r\n  \"total_count\": \"xx\",\r\n  \"execution_time\": \"xx\",\r\n  \"pagination\": {\r\n    \"first\": \"https://api.sikkasoft.com/v4/claims?offset=xx&limit=xx\",\r\n    \"previous\": \"\",\r\n    \"current\": \"https://api.sikkasoft.com/v4/claims?offset=xx&limit=xx\",\r\n    \"next\": \"https://api.sikkasoft.com/v4/claims?offset=xx&limit=xx\",\r\n    \"last\": \"https://api.sikkasoft.com/v4/claims?offset=xx&limit=xx\"\r\n  },\r\n  \"items\": [\r\n    {\r\n    \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/claims/xxxx\",\r\n    \"patient_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/patients/xxxx\",\r\n    \"patient_id\": \"patient id\",\r\n    \"guarantor_id\": \"guarantor id\",\r\n    \"provider_id\": \"provider id\",\r\n    \"provider_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/providers/xxxx\",\r\n    \"practice_id\": \"practice id\",\r\n    \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\r\n    \"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/guarantors/xxxx\",\r\n    \"claim_sr_no\": \"claim sr no\",\r\n    \"note\": \"note\",\r\n    \"cheque_no\": \"cheque no\",\r\n    \"cust_id\": \"cust id\",\r\n    \"claim_description_id\": \"claim description id\",\r\n    \"claim_description_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/claim_descriptions/xxxx\",\r\n    \"claim_sent_date\": \"claim sent date\",\r\n    \"total_billed_amount\": \"total billed amount\",\r\n    \"estimated_amount\": \"estimated amount\",\r\n    \"claim_payment_date\": \"claim payment date\",\r\n    \"payment_amount\": \"payment amount\",\r\n    \"claim_status\": \"claim status\",\r\n    \"primary_or_secondary\": \"primary or secondary\",\r\n    \"insurance_company_id\": \"insurance company id\",\r\n    \"insurance_company_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/insurance_companies/xxxx\",\r\n    \"insurance_company_name\": \"insurance company name\",\r\n    \"claim_channel\": \"claim channel\",\r\n    \"rendering_provider\": \"rendering provider\",\r\n    \"payer_id\": \"payer id\",\r\n    \"tracer\": \"tracer\",\r\n    \"on_hold_date\": \"on hold date\",\r\n    \"resent_date\": \"resent date\",\r\n    \"creation_date\": \"creation date\",\r\n    \"total_paid_amount\": \"total paid amount\",\r\n    \"bank_no\": \"bank no\",\r\n    \"standard\": \"standard\",\r\n    \"preventive\": \"preventive\",\r\n    \"others\": \"others\",\r\n    \"pay_to_provider\": \"pay to provider\",\r\n    \"tp\": \"tp\",\r\n    \"sent_claim_status\": \"sent claim status\",\r\n    \"primary_claim_id\": \"primary claim id\",\r\n    \"carrier_id\": \"carrier id\",\r\n    \"rowhash\": \"rowhash\",\r\n    \"return_date\": \"return date\",\r\n    \"claim_status_2\": \"claim status 2\"\r\n}\r\n  ]\r\n}"
 								}
 							]
 						},
@@ -1446,6 +1484,46 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"1\",\r\n\"total_count\": \"2027\",\r\n\"execution_time\": \"110\",\r\n\"pagination\": {\r\n\"first\": \"http://api.sikkasoft.com/v4/insurance_companies?offset=0&limit=1\",\r\n\"previous\": \"\",\r\n\"current\": \"http://api.sikkasoft.com/v4/insurance_companies?offset=0&limit=1\",\r\n\"next\": \"http://api.sikkasoft.com/v4/insurance_companies?offset=1&limit=1\",\r\n\"last\": \"http://api.sikkasoft.com/v4/insurance_companies?offset=2026&limit=1\"\r\n},\r\n\"items\": [\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/insurance_companies/2506\",\r\n\"address_line1\": \"P.O. Box 272590\",\r\n\"address_line2\": \"\",\r\n\"city\": \"None\",\r\n\"state\": \"N\",\r\n\"zipcode\": \"0\",\r\n\"employer_id\": \"1309\",\r\n\"employer_href\": \"https://api.sikkasoft.com/v4/practices/1/employers/1309\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"country\": \"\",\r\n\"fee_no\": \"\",\r\n\"phone\": \"(1888)7024171\",\r\n\"insurance_company_id\": \"2506\",\r\n\"payer_id\": \"52133\",\r\n\"maximum_yearly_benefit\": \"1000.0000\",\r\n\"group_plan_number\": \"637943\",\r\n\"renew_month\": \"\",\r\n\"maximum_family_benefit\": \"\",\r\n\"insurance_type\": \"\",\r\n\"plan_type\": \"\",\r\n\"sub_type\": \"\",\r\n\"is_maximum_coverage\": \"\",\r\n\"maximum_coverage_amount\": \"\",\r\n\"family_deductible_limit\": \"\",\r\n\"individual_deductible_limit\": \"\",\r\n\"individual_ortho_maximum_limit\": \"\",\r\n\"charge_per_visit\": \"\",\r\n\"notes\": \"\",\r\n\"insurance_plan_status\": \"\",\r\n\"mail_to_insurance_company_id\": \"\",\r\n\"pre_authorization_mail_to_insurance_company_id\": \"\",\r\n\"eligibility\": \"\",\r\n\"fax\": \"\",\r\n\"default_employer\": \"\"\r\n}\r\n]\r\n}"
+								},
+								{
+									"id": "4d839f90-fada-4467-8c52-8f7678557df4",
+									"name": "insurance_companies?fields=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text",
+												"disabled": true
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/insurance_companies?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"insurance_companies"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n  \"offset\": \"xx\",\r\n  \"limit\": \"xx\",\r\n  \"total_count\": \"xx\",\r\n  \"execution_time\": \"xx\",\r\n  \"pagination\": {\r\n    \"first\": \"https://api.sikkasoft.com/v4/insurance_companies?offset=xx&limit=xx\",\r\n    \"previous\": \"\",\r\n    \"current\": \"https://api.sikkasoft.com/v4/insurance_companies?offset=xx&limit=xx\",\r\n    \"next\": \"https://api.sikkasoft.com/v4/insurance_companies?offset=xx&limit=xx\",\r\n    \"last\": \"https://api.sikkasoft.com/v4/insurance_companies?offset=xx&limit=xx\"\r\n  },\r\n  \"items\": [\r\n    {\r\n    \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/insurance_companies/xxxx\",\r\n    \"address_line1\": \"address line1\",\r\n    \"address_line2\": \"address line2\",\r\n    \"city\": \"city\",\r\n    \"state\": \"state\",\r\n    \"zipcode\": \"zipcode\",\r\n    \"employer_id\": \"employer id\",\r\n    \"employer_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/employers/\",\r\n    \"practice_id\": \"practice id\",\r\n    \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\r\n    \"country\": \"country\",\r\n    \"fee_no\": \"fee no\",\r\n    \"cust_id\": \"cust id\",\r\n    \"phone\": \"phone\",\r\n    \"insurance_company_id\": \"insurance company id\",\r\n    \"insurance_company_name\": \"insurance company name\",\r\n    \"payer_id\": \"payer id\",\r\n    \"group_plan_name\": \"group plan name\",\r\n    \"maximum_yearly_benefit\": \"maximum yearly benefit\",\r\n    \"group_plan_number\": \"group plan number\",\r\n    \"renew_month\": \"renew month\",\r\n    \"maximum_family_benefit\": \"maximum family benefit\",\r\n    \"insurance_type\": \"insurance type\",\r\n    \"plan_type\": \"plan type\",\r\n    \"sub_type\": \"sub type\",\r\n    \"is_maximum_coverage\": \"is maximum coverage\",\r\n    \"maximum_coverage_amount\": \"maximum coverage amount\",\r\n    \"family_deductible_limit\": \"family deductible limit\",\r\n    \"individual_deductible_limit\": \"individual deductible limit\",\r\n    \"individual_ortho_maximum_limit\": \"individual ortho maximum limit\",\r\n    \"charge_per_visit\": \"charge per visit\",\r\n    \"notes\": \"notes\",\r\n    \"insurance_plan_status\": \"insurance plan status\",\r\n    \"mail_to_insurance_company_id\": \"mail to insurance company id\",\r\n    \"pre_authorization_mail_to_insurance_company_id\": \"pre authorization mail to insurance company id\",\r\n    \"eligibility\": \"eligibility\",\r\n    \"fax\": \"fax\",\r\n    \"default_employer\": \"default employer\",\r\n    \"carrier_id\": \"carrier id\",\r\n    \"rendering_provider_address\": \"rendering provider address\"\r\n}\r\n]\r\n}"
 								}
 							]
 						},
