@@ -1016,6 +1016,44 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\n    \"offset\": \"1\",\n    \"limit\": \"1\",\n    \"total_count\": \"2163\",\n    \"execution_time\": \"20\",\n    \"pagination\": {\n        \"first\": \"http://api.sikkasoft.com/v4/guarantors?offset=0&limit=1\",\n        \"previous\": \"http://api.sikkasoft.com/v4/guarantors?offset=0&limit=1\",\n        \"current\": \"http://api.sikkasoft.com/v4/guarantors?offset=1&limit=1\",\n        \"next\": \"http://api.sikkasoft.com/v4/guarantors?offset=2&limit=1\",\n        \"last\": \"http://api.sikkasoft.com/v4/guarantors?offset=2162&limit=1\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/guarantors/2243\",\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/2243\",\n            \"patient_id\": \"2243\",\n            \"guarantor_id\": \"2243\",\n            \"firstname\": \"xxxxxx\",\n            \"middlename\": \"\",\n            \"lastname\": \"yyyyy\",\n            \"salutation\": \"\",\n            \"birthdate\": \"\",\n            \"status\": \"Non-Patient\",\n            \"address_line1\": \"25507 Painted Ave|\",\n            \"city\": \"San Jose\",\n            \"state\": \"CA\",\n            \"zipcode\": \"94567\",\n            \"cell\": \"xxx-xxx-xxxx\",\n            \"email\": \"xyx@gmail.com\",\n            \"employer_id\": \"0\",\n            \"practice_id\": \"1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\n            \"guarantor_s_patient_id\": \"\",\n            \"patient_firstname\": \"xxxxxx\",\n            \"patient_lastname\": \"yyyyy\",\n            \"patient_middlename\": \"\",\n            \"patient_status\": \"NonPat\"\n        }\n    ]\n}"
+								},
+								{
+									"id": "f23ad753-7103-4ff4-926c-e67ea4be1bb6",
+									"name": "guarantors?fields=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/guarantors?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"guarantors"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"offset\": \"xx\",\n  \"limit\": \"xx\",\n  \"total_count\": \"xx\",\n  \"execution_time\": \"xx\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/guarantors?offset=xx&limit=xx\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/guarantors?offset=xx&limit=xx\",\n    \"next\": \"https://api.sikkasoft.com/v4/guarantors?offset=xx&limit=xx\",\n    \"last\": \"https://api.sikkasoft.com/v4/guarantors?offset=xx&limit=xx\"\n  },\n  \"items\": [\n  {\n    \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/guarantors/xxxx\",\n    \"patient_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/patients/xxxx\",\n    \"patient_id\": \"patient id\",\n    \"guarantor_id\": \"guarantor id\",\n    \"firstname\": \"firstname\",\n    \"middlename\": \"middlename\",\n    \"lastname\": \"lastname\",\n    \"preferred_name\": \"preferred name\",\n    \"salutation\": \"salutation\",\n    \"birthdate\": \"birthdate\",\n    \"status\": \"status\",\n    \"gender\": \"gender\",\n    \"address_line1\": \"address line1\",\n    \"address_line2\": \"address line2\",\n    \"city\": \"city\",\n    \"state\": \"state\",\n    \"zipcode\": \"zipcode\",\n    \"workphone\": \"workphone\",\n    \"cell\": \"cell\",\n    \"email\": \"email\",\n    \"employer_id\": \"employer id\",\n    \"employer_href\": \"\",\n    \"billing_type\": \"billing type\",\n    \"practice_id\": \"practice id\",\n    \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\n    \"country\": \"country\",\n    \"preferred_contact\": \"preferred contact\",\n    \"suspended_date\": \"suspended date\",\n    \"cust_id\": \"cust id\",\n    \"guarantor_s_patient_id\": \"guarantor s patient id\",\n    \"guarantor_class\": \"guarantor class\",\n    \"patient_firstname\": \"patient firstname\",\n    \"patient_lastname\": \"patient lastname\",\n    \"patient_middlename\": \"patient middlename\",\n    \"patient_status\": \"patient status\",\n    \"phone\": \"phone\",\n    \"rowhash\": \"rowhash\"\n}\n  ]\n}"
 								}
 							]
 						},
@@ -1598,6 +1636,45 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"1\",\r\n\"total_count\": \"941\",\r\n\"execution_time\": \"27\",\r\n\"pagination\": {\r\n\"first\": \"http://api.sikkasoft.com/v4/procedure_codes?offset=0&limit=1\",\r\n\"previous\": \"\",\r\n\"current\": \"http://api.sikkasoft.com/v4/procedure_codes?offset=0&limit=1\",\r\n\"next\": \"http://api.sikkasoft.com/v4/procedure_codes?offset=1&limit=1\",\r\n\"last\": \"http://api.sikkasoft.com/v4/procedure_codes?offset=940&limit=1\"\r\n},\r\n\"items\": [\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/procedure_codes/9999.60\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"procedure_code\": \"9999.60\",\r\n\"procedure_code_description\": \"DEL RETAINER\",\r\n\"abbreaviation\": \"DEL/ R\",\r\n\"procedure_code_category\": \"DEL/ R\",\r\n\"procedure_code_category_id\": \"\",\r\n\"explosion_code\": \"\",\r\n\"submit_to_insurance\": \"\",\r\n\"allow_discount\": \"\",\r\n\"procedure_code_effect_on_patient_balance\": \"\",\r\n\"procedure_code_effect_on_provider_production\": \"\",\r\n\"procedure_code_effect_on_provider_collection\": \"\",\r\n\"procedure_code_type\": \"\"\r\n}\r\n]\r\n}"
+								},
+								{
+									"id": "9b2456d6-f595-4b12-b140-3f2d1d6d96d0",
+									"name": "procedure_codes?fields=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/procedure_codes?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"procedure_codes"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n  \"offset\": \"xx\",\r\n  \"limit\": \"xx\",\r\n  \"total_count\": \"xx\",\r\n  \"execution_time\": \"xx\",\r\n  \"pagination\": {\r\n    \"first\": \"https://api.sikkasoft.com/v4/procedure_codes?offset=xx&limit=xx\",\r\n    \"previous\": \"\",\r\n    \"current\": \"https://api.sikkasoft.com/v4/procedure_codes?offset=xx&limit=xx\",\r\n    \"next\": \"\",\r\n    \"last\": \"https://api.sikkasoft.com/v4/procedure_codes?offset=xx&limit=xx\"\r\n  },\r\n  \"items\": [\r\n    {\r\n    \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/procedure_codes/xxxx\",\r\n    \"status\": \"status\",\r\n    \"practice_id\": \"practice id\",\r\n    \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\r\n    \"procedure_code\": \"procedure code\",\r\n    \"note\": \"note\",\r\n    \"cust_id\": \"cust id\",\r\n    \"procedure_code_description\": \"procedure code description\",\r\n    \"abbreaviation\": \"abbreaviation\",\r\n    \"procedure_code_category\": \"procedure code category\",\r\n    \"procedure_code_category_id\": \"procedure code category id\",\r\n    \"explosion_code\": \"explosion code\",\r\n    \"submit_to_insurance\": \"submit to insurance\",\r\n    \"allow_discount\": \"allow discount\",\r\n    \"procedure_code_effect_on_patient_balance\": \"procedure code effect on patient balance\",\r\n    \"procedure_code_effect_on_provider_production\": \"procedure code effect on provider production\",\r\n    \"procedure_code_effect_on_provider_collection\": \"procedure code effect on provider collection\",\r\n    \"procedure_code_type\": \"procedure code type\",\r\n    \"procedure_code_id\": \"procedure code id\",\r\n    \"code_4\": \"code 4\",\r\n    \"code_5\": \"code 5\",\r\n    \"lab_expense\": \"lab expense\",\r\n    \"paint_type\": \"paint type\",\r\n    \"material_expense\": \"material expense\",\r\n    \"condition\": \"condition\",\r\n    \"treatment_flag_difficult_procdure\": \"treatment flag difficult procdure\", \r\n    \"treatment_area\": \"treatment area\",\r\n    \"treatment_flag_remove_tooth\": \"treatment flag remove tooth\",\r\n    \"treatment_flag_show_in_chart\": \"treatment flag show in chart\",\r\n    \"procedure_time_unit\": \"procedure time unit\",\r\n    \"appointment_type\": \"appointment type\",\r\n    \"medical_cross_coding\": \"medical cross coding\",\r\n    \"bill_to_dental_insurance\": \"bill to dental insurance\",\r\n    \"code_type\": \"code type\",\r\n    \"is_lab_case_code\": \"is lab case code\",\r\n    \"alternate_description\": \"alternate description\",\r\n    \"is_hygiene\": \"is hygiene\",\r\n    \"is_taxable\": \"is taxable\",\r\n    \"update_patient_visit\": \"update patient visit\",\r\n    \"recall\": \"recall\"\r\n}\r\n  ]\r\n}"
 								}
 							]
 						},
@@ -1808,6 +1885,45 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"4\",\r\n\"total_count\": \"25407\",\r\n\"execution_time\": \"19\",\r\n\"pagination\": {\r\n\"first\": \"http://api.sikkasoft.com/v4/fee_schedules?offset=0&limit=4\",\r\n\"previous\": \"\",\r\n\"current\": \"http://api.sikkasoft.com/v4/fee_schedules?offset=0&limit=4\",\r\n\"next\": \"http://api.sikkasoft.com/v4/fee_schedules?offset=1&limit=4\",\r\n\"last\": \"http://api.sikkasoft.com/v4/fee_schedules?offset=6351&limit=4\"\r\n},\r\n\"items\": [\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/fee_schedules/9999.60\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"fee_no\": \"0\",\r\n\"procedure_code\": \"9999.60\",\r\n\"fee_name\": \"0\",\r\n\"fee_amount\": \"0.0000\",\r\n\"procedure_code_id\": \"\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/fee_schedules/9999.60\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"fee_no\": \"1\",\r\n\"procedure_code\": \"9999.60\",\r\n\"fee_name\": \"1\",\r\n\"fee_amount\": \"0.0000\",\r\n\"procedure_code_id\": \"\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/fee_schedules/9999.60\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"fee_no\": \"2\",\r\n\"procedure_code\": \"9999.60\",\r\n\"fee_name\": \"2\",\r\n\"fee_amount\": \"0.0000\",\r\n\"procedure_code_id\": \"\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/fee_schedules/9999.60\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"fee_no\": \"3\",\r\n\"procedure_code\": \"9999.60\",\r\n\"fee_name\": \"3\",\r\n\"fee_amount\": \"0.0000\",\r\n\"procedure_code_id\": \"\"\r\n}\r\n]\r\n}"
+								},
+								{
+									"id": "409ddd22-bb74-4dee-ae74-345871d408c4",
+									"name": "fee_schedules?field=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/fee_schedules?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"fee_schedules"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n  \"offset\": \"xx\",\r\n  \"limit\": \"xx\",\r\n  \"total_count\": \"xx\",\r\n  \"execution_time\": \"xx\",\r\n  \"pagination\": {\r\n    \"first\": \"https://api.sikkasoft.com/v4/fee_schedules?offset=xx&limit=xx\",\r\n    \"previous\": \"\",\r\n    \"current\": \"https://api.sikkasoft.com/v4/fee_schedules?offset=xx&limit=xx\",\r\n    \"next\": \"https://api.sikkasoft.com/v4/fee_schedules?offset=xx&limit=xx\",\r\n    \"last\": \"https://api.sikkasoft.com/v4/fee_schedules?offset=xx&limit=xx\"\r\n  },\r\n  \"items\": [\r\n    {\r\n    \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/fee_schedules/xxxx\",\r\n    \"practice_id\": \"practice id\",\r\n    \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\r\n    \"fee_no\": \"fee no\",\r\n    \"procedure_code\": \"procedure code\",\r\n    \"cust_id\": \"cust id\",\r\n    \"fee_name\": \"fee name\",\r\n    \"fee_amount\": \"fee amount\",\r\n    \"procedure_code_id\": \"procedure code id\"\r\n}\r\n  ]\r\n}"
 								}
 							]
 						},
