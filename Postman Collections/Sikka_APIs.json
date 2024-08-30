@@ -473,6 +473,47 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"1\",\n    \"total_count\": \"1234\",\n    \"execution_time\": \"51\",\n    \"pagination\": {\n        \"first\": \"http://api.sikkasoft.com/v4/appointments?offset=0&limit=1\",\n        \"previous\": \"\",\n        \"current\": \"http://api.sikkasoft.com/v4/appointments?offset=0&limit=1\",\n        \"next\": \"http://api.sikkasoft.com/v4/appointments?offset=1&limit=1\",\n        \"last\": \"http://api.sikkasoft.com/v4/appointments?offset=38967&limit=1\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/appointments/70670\",\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/5383\",\n            \"patient_id\": \"5383\",\n            \"guarantor_id\": \"\",\n            \"provider_id\": \"DMD2\",\n            \"provider_href\": \"https://api.sikkasoft.com/v4/practices/1/providers/DMD2\",\n            \"practice_id\": \"1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\n            \"guarantor_href\": \"\",\n            \"amount\": \"0.0000\",\n            \"status\": \"status\",\n            \"note\": \"\",\n            \"surface_quadrant_type\": \"\",\n            \"appointment_sr_no\": \"70670\",\n            \"date\": \"2020-09-29T00:00:00\",\n            \"time\": \"10:30\",\n            \"length\": \"60\",\n            \"description\": \"Seat Br-UR\",\n            \"appointment_made_date\": \"2020-09-14T00:00:00\",\n            \"type\": \"General\",\n            \"procedure_code1\": \"\",\n            \"procedure_code1_amount\": \"0\",\n            \"procedure_code2\": \"\",\n            \"procedure_code2_amount\": \"0\",\n            \"procedure_code3\": \"\",\n            \"procedure_code3_amount\": \"0\",\n            \"patient_name\": \"paitent name\",\n            \"guarantor_name\": \"\",\n            \"procedure_code1_time\": \"0\",\n            \"procedure_code2_time\": \"0\",\n            \"procedure_code3_time\": \"0\",\n            \"surface_quadrant\": \"\"\n        }\n    ]\n}"
+								},
+								{
+									"id": "23fe740c-b872-41fe-a260-fb91b236e381",
+									"name": "appointments Copy",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/appointments",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"appointments"
+											],
+											"query": [
+												{
+													"key": "Request-Key",
+													"value": "<request_key>",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"1\",\n    \"total_count\": \"1234\",\n    \"execution_time\": \"51\",\n    \"pagination\": {\n        \"first\": \"http://api.sikkasoft.com/v4/appointments?offset=0&limit=1\",\n        \"previous\": \"\",\n        \"current\": \"http://api.sikkasoft.com/v4/appointments?offset=0&limit=1\",\n        \"next\": \"http://api.sikkasoft.com/v4/appointments?offset=1&limit=1\",\n        \"last\": \"http://api.sikkasoft.com/v4/appointments?offset=38967&limit=1\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/appointments/70670\",\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/5383\",\n            \"patient_id\": \"5383\",\n            \"guarantor_id\": \"\",\n            \"provider_id\": \"DMD2\",\n            \"provider_href\": \"https://api.sikkasoft.com/v4/practices/1/providers/DMD2\",\n            \"practice_id\": \"1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\n            \"guarantor_href\": \"\",\n            \"amount\": \"0.0000\",\n            \"status\": \"status\",\n            \"note\": \"\",\n            \"surface_quadrant_type\": \"\",\n            \"appointment_sr_no\": \"70670\",\n            \"date\": \"2020-09-29T00:00:00\",\n            \"time\": \"10:30\",\n            \"length\": \"60\",\n            \"description\": \"Seat Br-UR\",\n            \"appointment_made_date\": \"2020-09-14T00:00:00\",\n            \"type\": \"General\",\n            \"procedure_code1\": \"\",\n            \"procedure_code1_amount\": \"0\",\n            \"procedure_code2\": \"\",\n            \"procedure_code2_amount\": \"0\",\n            \"procedure_code3\": \"\",\n            \"procedure_code3_amount\": \"0\",\n            \"patient_name\": \"paitent name\",\n            \"guarantor_name\": \"\",\n            \"procedure_code1_time\": \"0\",\n            \"procedure_code2_time\": \"0\",\n            \"procedure_code3_time\": \"0\",\n            \"surface_quadrant\": \"\"\n        }\n    ]\n}"
 								}
 							]
 						},
