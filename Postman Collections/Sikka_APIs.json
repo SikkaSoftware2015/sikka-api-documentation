@@ -457,7 +457,7 @@
 								},
 								{
 									"id": "7ee02759-18af-47ab-9fbc-88cea65c5755",
-									"name": "appointments",
+									"name": "appointments?fields=get_all",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
@@ -475,7 +475,7 @@
 									"header": null,
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"1\",\n    \"total_count\": \"1234\",\n    \"execution_time\": \"51\",\n    \"pagination\": {\n        \"first\": \"http://api.sikkasoft.com/v4/appointments?offset=0&limit=1\",\n        \"previous\": \"\",\n        \"current\": \"http://api.sikkasoft.com/v4/appointments?offset=0&limit=1\",\n        \"next\": \"http://api.sikkasoft.com/v4/appointments?offset=1&limit=1\",\n        \"last\": \"http://api.sikkasoft.com/v4/appointments?offset=38967&limit=1\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/appointments/70670\",\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/5383\",\n            \"patient_id\": \"5383\",\n            \"guarantor_id\": \"\",\n            \"provider_id\": \"DMD2\",\n            \"provider_href\": \"https://api.sikkasoft.com/v4/practices/1/providers/DMD2\",\n            \"practice_id\": \"1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\n            \"guarantor_href\": \"\",\n            \"amount\": \"0.0000\",\n            \"status\": \"status\",\n            \"note\": \"\",\n            \"surface_quadrant_type\": \"\",\n            \"appointment_sr_no\": \"70670\",\n            \"date\": \"2020-09-29T00:00:00\",\n            \"time\": \"10:30\",\n            \"length\": \"60\",\n            \"description\": \"Seat Br-UR\",\n            \"appointment_made_date\": \"2020-09-14T00:00:00\",\n            \"type\": \"General\",\n            \"procedure_code1\": \"\",\n            \"procedure_code1_amount\": \"0\",\n            \"procedure_code2\": \"\",\n            \"procedure_code2_amount\": \"0\",\n            \"procedure_code3\": \"\",\n            \"procedure_code3_amount\": \"0\",\n            \"patient_name\": \"paitent name\",\n            \"guarantor_name\": \"\",\n            \"procedure_code1_time\": \"0\",\n            \"procedure_code2_time\": \"0\",\n            \"procedure_code3_time\": \"0\",\n            \"surface_quadrant\": \"\"\n        }\n    ]\n}"
+									"body": "{\n  \"offset\": \"xx\",\n  \"limit\": \"xx\",\n  \"total_count\": \"xx\",\n  \"execution_time\": \"xx\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/appointments?offset=xx&limit=xx\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/appointments?offset=xx&limit=xx\",\n    \"next\": \"https://api.sikkasoft.com/v4/appointments?offset=xx&limit=xx\",\n    \"last\": \"https://api.sikkasoft.com/v4/appointments?offset=xx&limit=xx\"\n  },\n  \"items\": [\n{\n    \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/appointments/xxxx\",\n    \"patient_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/patients/xxxx\",\n    \"patient_id\": \"patient id\",\n    \"guarantor_id\": \"guarantor id\",\n    \"status\": \"status\",\n    \"provider_id\": \"provider id\",\n    \"provider_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/providers/xxxx\",\n    \"practice_id\": \"practice id\",\n    \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\n    \"guarantor_href\": \"\",\n    \"hygienist\": \"hygienist\",\n    \"amount\": \"amount\",\n    \"note\": \"note\",\n    \"surface_quadrant_type\": \"surface quadrant type\",\n    \"appointment_sr_no\": \"appointment sr no\",\n    \"operatory\": \"operatory\",\n    \"date\": \"date\",\n    \"time\": \"time\",\n    \"length\": \"length\",\n    \"description\": \"description\",\n    \"last_changed_date\": \"last changed date\",\n    \"appointment_made_date\": \"appointment made date\",\n    \"type\": \"type\",\n    \"procedure_code1\": \"procedure code1\",\n    \"procedure_code1_amount\": \"procedure code1 amount\",\n    \"procedure_code2\": \"procedure code2\",\n    \"procedure_code2_amount\": \"procedure code2 amount\",\n    \"procedure_code3\": \"procedure code3\",\n    \"procedure_code3_amount\": \"procedure code3 amount\",\n    \"procedure_code4\": \"procedure code4\",\n    \"procedure_code4_amount\": \"procedure code4 amount\",\n    \"procedure_code5\": \"procedure code5\",\n    \"procedure_code5_amount\": \"procedure code5 amount\",\n    \"procedure_code6\": \"procedure code6\",\n    \"procedure_code6_amount\": \"procedure code6 amount\",\n    \"procedure_code7\": \"procedure code7\",\n    \"procedure_code7_amount\": \"procedure code7 amount\",\n    \"is_companion\": \"is companion\",\n    \"sooner_if_possible\": \"sooner if possible\",\n    \"confirmed_on_date\": \"confirmed on date\",\n    \"patient_name\": \"patient name\",\n    \"guarantor_name\": \"guarantor name\",\n    \"procedure_code1_time\": \"procedure code1 time\",\n    \"procedure_code2_time\": \"procedure code2 time\",\n    \"procedure_code3_time\": \"procedure code3 time\",\n    \"procedure_code4_time\": \"procedure code4 time\",\n    \"procedure_code5_time\": \"procedure code5 time\",\n    \"procedure_code6_time\": \"procedure code6 time\",\n    \"procedure_code7_time\": \"procedure code7 time\",\n    \"tooth_number\": \"tooth number\",\n    \"surface_quadrant\": \"surface quadrant\",\n    \"schedule\": \"schedule\",\n    \"treatment_class\": \"treatment class\",\n    \"cancelled\": \"cancelled\",\n    \"location\": \"location\",\n    \"procedure_codes\": \"procedure codes\",\n    \"cust_id\": \"cust id\",\n    \"is_confirmed\": \"is confirmed\",\n    \"rowhash\": \"rowhash\",\n    \"original_provider\": \"original provider\",\n    \"status_in_office\": \"status in office\",\n    \"multiple_statuses\": \"multiple statuses\"\n}\n  ]\n}"
 								}
 							]
 						},
@@ -798,6 +798,26 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\n    \"offset\": \"1\",\n    \"limit\": \"1\",\n    \"total_count\": \"19723\",\n    \"execution_time\": \"33\",\n    \"pagination\": {\n        \"first\": \"http://api.sikkasoft.com/v4/transactions?offset=0&limit=1\",\n        \"previous\": \"http://api.sikkasoft.com/v4/transactions?offset=0&limit=1\",\n        \"current\": \"http://api.sikkasoft.com/v4/transactions?offset=1&limit=1\",\n        \"next\": \"http://api.sikkasoft.com/v4/transactions?offset=2&limit=1\",\n        \"last\": \"http://api.sikkasoft.com/v4/transactions?offset=19722&limit=1\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/transactions/31008\",\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/1839\",\n            \"patient_id\": \"1839\",\n            \"guarantor_id\": \"1841\",\n            \"provider_id\": \"GREL\",\n            \"provider_href\": \"https://api.sikkasoft.com/v4/practices/1/providers/GREL\",\n            \"practice_id\": \"1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\n            \"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/1/guarantors/1841\",\n            \"transaction_sr_no\": \"31008\",\n            \"transaction_type\": \"Procedure\",\n            \"transaction_date\": \"2020-09-30T00:00:00\",\n            \"procedure_code\": \"D1208\",\n            \"procedure_description\": \"Topical Appl of Fluor Excl Varn\",\n            \"amount\": \"24.0000\",\n            \"transaction_entry_date\": \"2020-09-30T00:00:00\",\n            \"estimated_insurance_payment\": \"0\",\n            \"tooth_from\": \"\",\n            \"tooth_to\": \"\",\n            \"quantity\": \"\",\n            \"claim_sr_no\": \"2992\",\n            \"claim_href\": \"https://api.sikkasoft.com/v4/practices/1/claims/2992\",\n            \"payment_type\": \"\",\n            \"surface\": \"\",\n            \"note\": \"\",\n            \"created_by\": \"\",\n            \"last_updated_by\": \"\",\n            \"primary_insurance_estimate\": \"0.0000\"\n        }\n    ]\n}"
+								},
+								{
+									"id": "7cd79637-c82b-4b20-83c3-a049c9932021",
+									"name": "transactions?fields=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/transactions"
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"offset\": \"0\",\n  \"limit\": \"xx\",\n  \"total_count\": \"xx\",\n  \"execution_time\": \"xx\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/transactions?offset=xx&limit=xx\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/transactions?offset=xx&limit=xx\",\n    \"next\": \"https://api.sikkasoft.com/v4/transactions?offset=xx&limit=xx\",\n    \"last\": \"https://api.sikkasoft.com/v4/transactions?offset=xx&limit=xx\"\n  },\n  \"items\": [\n{\n    \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/transactions/xxxx\",\n    \"patient_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/patients/xxxx\",\n    \"patient_id\": \"patient id\",\n    \"guarantor_id\": \"guarantor id\",\n    \"provider_id\": \"provider id\",\n    \"provider_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/providers/xxxx\",\n    \"practice_id\": \"practice id\",\n    \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\n    \"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/guarantors/xxxx\",\n    \"transaction_sr_no\": \"transaction sr no\",\n    \"transaction_type\": \"transaction type\",\n    \"transaction_date\": \"transaction date\",\n    \"procedure_code\": \"procedure code\",\n    \"procedure_description\": \"procedure description\",\n    \"amount\": \"amount\",\n    \"transaction_entry_date\": \"transaction entry date\",\n    \"estimated_insurance_payment\": \"estimated insurance payment\",\n    \"tooth_from\": \"tooth from\",\n    \"tooth_to\": \"tooth to\",\n    \"invoice_number\": \"invoice number\",\n    \"invoice_status\": \"invoice status\",\n    \"invoice_item\": \"invoice item\",\n    \"quantity\": \"quantity\",\n    \"claim_sr_no\": \"claim sr no\",\n    \"claim_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/claims/\",\n    \"pre_authorization_id\": \"pre authorization id\",\n    \"payment_type\": \"payment type\",\n    \"surface\": \"surface\",\n    \"note\": \"note\",\n    \"is_group_transaction\": \"is group transaction\",\n    \"cheque_no\": \"cheque no\",\n    \"clinical_condition_id\": \"clinical condition id\",\n    \"collection_provider_id\": \"collection provider id\",\n    \"created_by\": \"created by\",\n    \"last_updated_by\": \"last updated by\",\n    \"primary_insurance_estimate\": \"primary insurance estimate\",\n    \"secondary_insurance_estimate\": \"secondary insurance estimate\",\n    \"surface_quadrant_type\": \"surface quadrant type\",\n    \"appointment_sr_no\": \"appointment sr no\",\n    \"cust_id\": \"cust id\",\n    \"prosthesis\": \"prosthesis\",\n    \"billed_to_insurance\": \"billed to insurance\",\n    \"insurance_payment_date\": \"insurance payment date\",\n    \"secondary_billed_to_insurance\": \"secondary billed to insurance\",\n    \"original_prosthesis_date\": \"original prosthesis date\",\n    \"rowhash\": \"rowhash\",\n    \"amount_paid\": \"amount paid\",\n    \"transaction_code\": \"transaction code\",\n    \"transaction_description\": \"transaction description\",\n    \"payment_procedure_link_id\": \"payment procedure link id\",\n    \"payment_method\": \"payment method\"\n}\n  ]\n}"
 								}
 							]
 						},
@@ -1145,6 +1165,46 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"1\",\r\n\"total_count\": \"7510\",\r\n\"execution_time\": \"174\",\r\n\"pagination\": {\r\n\"first\": \"http://api.sikkasoft.com/v4/treatment_plans?offset=0&limit=1\",\r\n\"previous\": \"\",\r\n\"current\": \"http://api.sikkasoft.com/v4/treatment_plans?offset=0&limit=1\",\r\n\"next\": \"http://api.sikkasoft.com/v4/treatment_plans?offset=1&limit=1\",\r\n\"last\": \"http://api.sikkasoft.com/v4/treatment_plans?offset=7509&limit=1\"\r\n},\r\n\"items\": [\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/treatment_plans/337454\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/524901\",\r\n\"patient_id\": \"524901\",\r\n\"guarantor_id\": \"524900\",\r\n\"provider_id\": \"1\",\r\n\"provider_href\": \"https://api.sikkasoft.com/v4/practices/1/providers/1\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/1/guarantors/524900\",\r\n\"procedure_code\": \"431\",\r\n\"amount\": \"65.0000\",\r\n\"tooth_from\": \"0\",\r\n\"tooth_to\": \"0\",\r\n\"surface\": \"\",\r\n\"clinical_condition_id\": \"\",\r\n\"collection_provider_id\": \"\",\r\n\"created_by\": \"\",\r\n\"last_updated_by\": \"\",\r\n\"primary_insurance_estimate\": \"\",\r\n\"secondary_insurance_estimate\": \"\",\r\n\"surface_quadrant_type\": \"\",\r\n\"appointment_sr_no\": \"\",\r\n\"description\": \"VELSCOPE Pre-Diag Test For Mucosal Abnormalities\",\r\n\"plan_sr_no\": \"337454\",\r\n\"entry_date\": \"\",\r\n\"insurance_payment\": \"65\",\r\n\"treatment_plan_status\": \"created\",\r\n\"procedure_date\": \"2020-09-29T00:00:00\"\r\n}\r\n]\r\n}"
+								},
+								{
+									"id": "d293ac00-7d6e-4e56-9d0e-451fde07a2d5",
+									"name": "treatment_plans?fields=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/treatment_plans",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"treatment_plans"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n  \"offset\": \"xx\",\r\n  \"limit\": \"xx\",\r\n  \"total_count\": \"xx\",\r\n  \"execution_time\": \"xx\",\r\n  \"pagination\": {\r\n    \"first\": \"https://api.sikkasoft.com/v4/treatment_plans?offset=xx&limit=xx\",\r\n    \"previous\": \"\",\r\n    \"current\": \"https://api.sikkasoft.com/v4/treatment_plans?offset=xx&limit=xx\",\r\n    \"next\": \"https://api.sikkasoft.com/v4/treatment_plans?offset=xx&limit=xx\",\r\n    \"last\": \"https://api.sikkasoft.com/v4/treatment_plans?offset=xx&limit=xx\"\r\n  },\r\n  \"items\": [\r\n  {\r\n    \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/treatment_plans/xxxx\",\r\n    \"patient_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/patients/xxxx\",\r\n    \"patient_id\": \"patient id\",\r\n    \"guarantor_id\": \"guarantor id\",\r\n    \"provider_id\": \"provider id\",\r\n    \"provider_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/providers/xxxx\",\r\n    \"practice_id\": \"practice id\",\r\n    \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\r\n    \"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/guarantors/xxxx\",\r\n    \"procedure_code\": \"procedure code\",\r\n    \"amount\": \"amount\",\r\n    \"tooth_from\": \"tooth from\",\r\n    \"tooth_to\": \"tooth to\",\r\n    \"claim_sr_no\": \"claim sr no\",\r\n    \"claim_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/claims/xxxx\",\r\n    \"surface\": \"surface\",\r\n    \"clinical_condition_id\": \"clinical condition id\",\r\n    \"collection_provider_id\": \"collection provider id\",\r\n    \"created_by\": \"created by\",\r\n    \"last_updated_by\": \"last updated by\",\r\n    \"primary_insurance_estimate\": \"primary insurance estimate\",\r\n    \"secondary_insurance_estimate\": \"secondary insurance estimate\",\r\n    \"surface_quadrant_type\": \"surface quadrant type\",\r\n    \"appointment_sr_no\": \"appointment sr no\",\r\n    \"description\": \"description\",\r\n    \"cust_id\": \"cust id\",\r\n    \"plan_sr_no\": \"plan sr no\",\r\n    \"entry_date\": \"entry date\",\r\n    \"insurance_payment\": \"insurance payment\",\r\n    \"treatment_plan_status\": \"treatment plan status\",\r\n    \"procedure_date\": \"procedure date\"\r\n}\r\n]\r\n}"
 								}
 							]
 						},
