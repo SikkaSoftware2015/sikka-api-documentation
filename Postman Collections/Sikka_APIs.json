@@ -457,7 +457,7 @@
 								},
 								{
 									"id": "7ee02759-18af-47ab-9fbc-88cea65c5755",
-									"name": "appointments with get all",
+									"name": "appointments",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
