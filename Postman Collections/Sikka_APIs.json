@@ -586,7 +586,7 @@
 								},
 								{
 									"id": "e0c15ef7-d616-4948-9147-70b6af4f2430",
-									"name": "patients Copy",
+									"name": "patients get_all",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
