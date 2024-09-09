@@ -8075,7 +8075,26 @@
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/practice_resources"
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/practice_resources?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"practice_resources"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
 									},
 									"status": "OK",
 									"code": 200,
@@ -8134,7 +8153,7 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n  \"offset\": \"##\",\n  \"limit\": \"##\",\n  \"total_count\": \"##\",\n  \"execution_time\": \"##\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/practice_resources?offset=##&limit=##\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/practice_resources?offset=##&limit=##\",\n    \"next\": \"https://api.sikkasoft.com/v4/practice_resources?offset=##&limit=##\",\n    \"last\": \"https://api.sikkasoft.com/v4/practice_resources?offset=##&limit=##\"\n  },\n  \"items\": [\n  {\n    \"href\": \"https://api.sikkasoft.com/v4/practices/##/practice_resources/##\",\n    \"practice_id\": \"practice id\",\n    \"practice_href\": \"https://api.sikkasoft.com/v4/practices/##\",\n    \"cust_id\": \"cust id\",\n    \"id\": \"id\",\n    \"resource\": \"resource\",\n    \"common_resource\": \"common resource\"\n  },\n  {\n    \"href\": \"https://api.sikkasoft.com/v4/practices/##/practice_resources/##\",\n    \"practice_id\": \"practice id\",\n    \"practice_href\": \"https://api.sikkasoft.com/v4/practices/##\",\n    \"cust_id\": \"cust id\",\n    \"id\": \"id\",\n    \"resource\": \"resource\",\n    \"common_resource\": \"common resource\"\n  }\n]\n}"
+									"body": "{\n    \"offset\": \"xx\",\n    \"limit\": \"xx\",\n    \"total_count\": \"xx\",\n    \"execution_time\": \"xx\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/practice_resources?offset=xx&limit=xx\",\n        \"previous\": \"previous\",\n        \"current\": \"https://api.sikkasoft.com/v4/practice_resources?offset=xx&limit=xx\",\n        \"next\": \"https://api.sikkasoft.com/v4/practice_resources?offset=xx&limit=xx\",\n        \"last\": \"https://api.sikkasoft.com/v4/practice_resources?offset=xx&limit=xx\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/practice_resources/xxxx\",\n            \"practice_id\": \"practice id\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\n            \"cust_id\": \"cust id\",\n            \"id\": \"id\",\n            \"resource\": \"resource\",\n            \"common_resource\": \"common resource\"\n        }\n    ]\n}"
 								}
 							]
 						},
@@ -8160,6 +8179,79 @@
 								{
 									"id": "e1254faa-50d0-40bf-83f9-322d18e2288a",
 									"name": "veterinary_product_inventory",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "Request-Key",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/veterinary_product_inventory"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.18.0 (Ubuntu)"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 10 May 2022 11:12:31 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Request-Key-Expires",
+											"value": "Wed, 11 May 2022 09:12:24 GMT"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "origin"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload;"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"offset\": \"##\",\n  \"limit\": \"##\",\n  \"total_count\": \"##\",\n  \"execution_time\": \"##\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/veterinary_product_inventory?offset=##&limit=##\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/veterinary_product_inventory?offset=##&limit=##\",\n    \"next\": \"https://api.sikkasoft.com/v4/veterinary_product_inventory?offset=##&limit=##\",\n    \"last\": \"https://api.sikkasoft.com/v4/veterinary_product_inventory?offset=##&limit=##\"\n  },\n  \"items\": [\n       {\n        \"href\": \"https://api.sikkasoft.com/v4/practices/####/veterinary_product_inventory/####\",\n        \"practice_id\": \"practice id\",\n        \"practice_href\": \"https://api.sikkasoft.com/v4/practices/####\",\n        \"description\": \"description\",\n        \"category\": \"category\",\n        \"product_id\": \"product id\",\n        \"price\": \"price\",\n        \"on_hand_quantity\": \"on hand quantity\",\n        \"measure\": \"measure\",\n        \"vendor_item_id\": \"vendor item id\",\n        \"manufacturing_number\": \"manufacturing number\",\n        \"vendor_id\": \"vendor id\",\n        \"vendor_href\": \"https://api.sikkasoft.com/v4/practices/####/vendors/##\"\n    },\n    {\n        \"href\": \"https://api.sikkasoft.com/v4/practices/####/veterinary_product_inventory/####\",\n        \"practice_id\": \"practice id\",\n        \"practice_href\": \"https://api.sikkasoft.com/v4/practices/####\",\n        \"description\": \"description\",\n        \"category\": \"category\",\n        \"product_id\": \"product id\",\n        \"price\": \"price\",\n        \"on_hand_quantity\": \"on hand quantity\",\n        \"measure\": \"measure\",\n        \"vendor_item_id\": \"vendor item id\",\n        \"manufacturing_number\": \"manufacturing number\",\n        \"vendor_id\": \"vendor id\",\n        \"vendor_href\": \"https://api.sikkasoft.com/v4/practices/####/vendors/##\"\n    }\n  ]\n}"
+								},
+								{
+									"id": "7bd8608e-9f18-408d-9948-4c2bf0f7899b",
+									"name": "veterinary_product_inventory?fields=get_all",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
