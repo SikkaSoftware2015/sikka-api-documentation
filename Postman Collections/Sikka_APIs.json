@@ -3081,13 +3081,32 @@
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/insurance_plan_coverage"
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/insurance_plan_coverage?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"insurance_plan_coverage"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
 									},
 									"_postman_previewlanguage": "json",
 									"header": null,
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"4\",\r\n\"total_count\": \"51900\",\r\n\"execution_time\": \"12\",\r\n\"pagination\": {\r\n\"first\": \"http://api.sikkasoft.com/v4/insurance_plan_coverage?offset=0&limit=4\",\r\n\"previous\": \"\",\r\n\"current\": \"http://api.sikkasoft.com/v4/insurance_plan_coverage?offset=0&limit=4\",\r\n\"next\": \"http://api.sikkasoft.com/v4/insurance_plan_coverage?offset=1&limit=4\",\r\n\"last\": \"http://api.sikkasoft.com/v4/insurance_plan_coverage?offset=12974&limit=4\"\r\n},\r\n\"items\": [\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/insurance_plan_coverage/998\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"insurance_company_id\": \"998\",\r\n\"insurance_company_href\": \"https://api.sikkasoft.com/v4/practices/1/insurance_companies/998\",\r\n\"procedure_code_from\": \"9000.00\",\r\n\"co_pay\": \"0.0000\",\r\n\"procedure_code_to\": \"9999.99\",\r\n\"percentage_covered\": \"80\",\r\n\"category\": \"Adj services\",\r\n\"deductible\": \"Preventive\",\r\n\"is_deductible\": \"0\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/insurance_plan_coverage/998\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"insurance_company_id\": \"998\",\r\n\"insurance_company_href\": \"https://api.sikkasoft.com/v4/practices/1/insurance_companies/998\",\r\n\"procedure_code_from\": \"8000.00\",\r\n\"co_pay\": \"0.0000\",\r\n\"procedure_code_to\": \"8999.99\",\r\n\"percentage_covered\": \"50\",\r\n\"category\": \"Orthodontics\",\r\n\"deductible\": \"Standard\",\r\n\"is_deductible\": \"1\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/insurance_plan_coverage/998\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"insurance_company_id\": \"998\",\r\n\"insurance_company_href\": \"https://api.sikkasoft.com/v4/practices/1/insurance_companies/998\",\r\n\"procedure_code_from\": \"7000.00\",\r\n\"co_pay\": \"0.0000\",\r\n\"procedure_code_to\": \"7999.99\",\r\n\"percentage_covered\": \"80\",\r\n\"category\": \"Oral Surgery\",\r\n\"deductible\": \"Standard\",\r\n\"is_deductible\": \"1\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/insurance_plan_coverage/998\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"insurance_company_id\": \"998\",\r\n\"insurance_company_href\": \"https://api.sikkasoft.com/v4/practices/1/insurance_companies/998\",\r\n\"procedure_code_from\": \"2700.00\",\r\n\"co_pay\": \"0.0000\",\r\n\"procedure_code_to\": \"2899.99\",\r\n\"percentage_covered\": \"50\",\r\n\"category\": \"Crowns\",\r\n\"deductible\": \"Standard\",\r\n\"is_deductible\": \"1\"\r\n}\r\n]\r\n}"
+									"body": "{\r\n    \"offset\": \"xx\",\r\n    \"limit\": \"xx\",\r\n    \"total_count\": \"xx\",\r\n    \"execution_time\": \"xx\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/insurance_plan_coverage?offset=xx&limit=xx\",\r\n        \"previous\": \"previous\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/insurance_plan_coverage?offset=xx&limit=xx\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/insurance_plan_coverage?offset=xx&limit=xx\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/insurance_plan_coverage?offset=xx&limit=xx\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/insurance_plan_coverage/xxxx\",\r\n            \"practice_id\": \"practice id\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\r\n            \"insurance_company_id\": \"insurance company id\",\r\n            \"insurance_company_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/insurance_companies/xxxx\",\r\n            \"procedure_code_from\": \"procedure code from\",\r\n            \"co_pay\": \"co pay\",\r\n            \"procedure_code_to\": \"procedure code to\",\r\n            \"percentage_covered\": \"percentage covered\",\r\n            \"category\": \"category\",\r\n            \"deductible\": \"deductible\",\r\n            \"is_deductible\": \"is deductible\"\r\n        }\r\n    ]\r\n}"
 								}
 							]
 						},
