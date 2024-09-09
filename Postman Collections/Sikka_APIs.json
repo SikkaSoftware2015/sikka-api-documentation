@@ -6768,6 +6768,96 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\r\n  \"offset\": \"xx\",\r\n  \"limit\": \"xx\",\r\n  \"total_count\": \"xx\",\r\n  \"execution_time\": \"xx\",\r\n  \"pagination\": {\r\n    \"first\": \"https://api.sikkasoft.com/v4/provider_mapping?offset=xx&limit=xx\",\r\n    \"previous\": \"\",\r\n    \"current\": \"https://api.sikkasoft.com/v4/provider_mapping?offset=xx&limit=xx\",\r\n    \"next\": \"https://api.sikkasoft.com/v4/provider_mapping?offset=xx&limit=xx\",\r\n    \"last\": \"https://api.sikkasoft.com/v4/provider_mapping?offset=xx&limit=xx\"\r\n  },\r\n  \"items\": [\r\n    {\r\n      \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/provider_mapping/xxxx\",\r\n      \"provider_id\": \"provider id\",\r\n      \"practice_id\": \"practice id\",\r\n      \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\r\n      \"description\": \"description\",\r\n      \"name\": \"name\",\r\n      \"cust_id\": \"cust id\",\r\n      \"title\": \"title\",\r\n      \"assign_to_provider\": \"assign to provider\",\r\n      \"selected\": \"selected\",\r\n      \"display_name\": \"display name\",\r\n      \"active\": \"active\"\r\n\t\t}\r\n  ]\r\n}"
+								},
+								{
+									"id": "13e64a8e-d866-4489-a5f3-f46ae5f2a3a6",
+									"name": "provider_mapping?fields=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "Request-Key",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/provider_mapping?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"provider_mapping"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.18.0 (Ubuntu)"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 10 May 2022 11:12:31 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Request-Key-Expires",
+											"value": "Wed, 11 May 2022 09:12:24 GMT"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "origin"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload;"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n    \"offset\": \"xx\",\r\n    \"limit\": \"xx\",\r\n    \"total_count\": \"xx\",\r\n    \"execution_time\": \"xx\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/provider_mapping?offset=xx&limit=xx\",\r\n        \"previous\": \"previous\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/provider_mapping?offset=xx&limit=xx\",\r\n        \"next\": \"next\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/provider_mapping?offset=xx&limit=xx\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/provider_mapping/xxxx\",\r\n            \"provider_id\": \"provider id\",\r\n            \"practice_id\": \"practice id\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\r\n            \"description\": \"description\",\r\n            \"name\": \"name\",\r\n            \"cust_id\": \"cust id\",\r\n            \"title\": \"title\",\r\n            \"assign_to_provider\": \"assign to provider\",\r\n            \"selected\": \"selected\",\r\n            \"display_name\": \"display name\",\r\n            \"active\": \"active\"\r\n        }\r\n    ]\r\n}"
 								}
 							]
 						},
@@ -6860,6 +6950,96 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\r\n  \"offset\": \"xx\",\r\n  \"limit\": \"xx\",\r\n  \"total_count\": \"xx\",\r\n  \"execution_time\": \"xx\",\r\n  \"pagination\": {\r\n    \"first\": \"https://api.sikkasoft.com/v4/authorized_practices?offset=xx&limit=xx\",\r\n    \"previous\": \"\",\r\n    \"current\": \"https://api.sikkasoft.com/v4/authorized_practices?offset=xx&limit=xx\",\r\n    \"next\": \"https://api.sikkasoft.com/v4/authorized_practices?offset=xx&limit=xx\",\r\n    \"last\": \"https://api.sikkasoft.com/v4/authorized_practices?offset=xx&limit=xx\"\r\n  },\r\n  \"items\": [\r\n    {\r\n      \"href\": \"https://api.sikkasoft.com/v4/authorized_practices/xxxx\",\r\n      \"city\": \"city\",\r\n      \"state\": \"state\",\r\n      \"practice_id\": \"practice id\",\r\n      \"address\": \"address\",\r\n      \"zip\": \"zip\",\r\n      \"office_id\": \"office id\",\r\n      \"domain\": \"domain\",\r\n      \"secret_key\": \"secret key\",\r\n      \"practice_name\": \"practice name\",\r\n      \"practice_management_system\": \"practice management system\",\r\n      \"financial_system\": \"financial system\",\r\n      \"practice_management_system_refresh_date\": \"practice management system refresh date\",\r\n      \"data_synchronization_date\": \"data synchronization date\",\r\n      \"data_insert_date\": \"data insert date\",\r\n      \"practice_management_system_version\": \"practice management system version\",\r\n      \"practice_management_system_refresh_date_time_zone\": \"practice management system refresh date time zone\",\r\n      \"partner_id\": \"partner id\",\r\n      \"financial_system_refresh_date\": \"financial system refresh date\",\r\n      \"financial_system_version\": \"financial system version\",\r\n      \"difference_in_minutes\": \"difference in minutes\"\r\n}\r\n  ]\r\n}"
+								},
+								{
+									"id": "9bf43424-b014-4c73-b2d6-baee452f2251",
+									"name": "authorized_practices?fields=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "Request-Key",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/authorized_practices?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"authorized_practices"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.18.0 (Ubuntu)"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 10 May 2022 11:12:31 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Request-Key-Expires",
+											"value": "Wed, 11 May 2022 09:12:24 GMT"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "origin"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload;"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n    \"offset\": \"xx\",\r\n    \"limit\": \"xx\",\r\n    \"total_count\": \"xx\",\r\n    \"execution_time\": \"xx\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/authorized_practices?offset=xx&limit=xx\",\r\n        \"previous\": \"previous\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/authorized_practices?offset=xx&limit=xx\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/authorized_practices?offset=xx&limit=xx\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/authorized_practices?offset=xx&limit=xx\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/authorized_practices/xxxx\",\r\n            \"city\": \"city\",\r\n            \"state\": \"state\",\r\n            \"practice_id\": \"practice id\",\r\n            \"address\": \"address\",\r\n            \"zip\": \"zip\",\r\n            \"office_id\": \"office id\",\r\n            \"domain\": \"domain\",\r\n            \"secret_key\": \"secret key\",\r\n            \"practice_name\": \"practice name\",\r\n            \"practice_management_system\": \"practice management system\",\r\n            \"financial_system\": \"financial system\",\r\n            \"practice_management_system_refresh_date\": \"practice management system refresh date\",\r\n            \"data_synchronization_date\": \"data synchronization date\",\r\n            \"data_insert_date\": \"data insert date\",\r\n            \"practice_management_system_version\": \"practice management system version\",\r\n            \"practice_management_system_refresh_date_time_zone\": \"practice management system refresh date time zone\",\r\n            \"partner_id\": \"partner id\",\r\n            \"financial_system_refresh_date\": \"financial system refresh date\",\r\n            \"financial_system_version\": \"financial system version\",\r\n            \"difference_in_minutes\": \"difference in minutes\"\r\n        }\r\n    ]\r\n}"
 								}
 							]
 						},
@@ -6885,6 +7065,79 @@
 								{
 									"id": "261db9a8-a166-49ca-9946-aeb33d1a58d9",
 									"name": "applications",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "Request-Key",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/applications"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.18.0 (Ubuntu)"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 10 May 2022 11:12:31 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Request-Key-Expires",
+											"value": "Wed, 11 May 2022 09:12:24 GMT"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "origin"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload;"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"offset\": \"xx\",\n    \"limit\": \"xx\",\n    \"total_count\": \"xx\",\n    \"execution_time\": \"xx\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/applications?offset=xx&limit=xx\",\n        \"previous\": \"\",\n        \"current\": \"https://api.sikkasoft.com/v4/applications?offset=xx&limit=xx\",\n        \"next\": \"\",\n        \"last\": \"https://api.sikkasoft.com/v4/applications?offset=xx&limit=xx\"\n    },\n    \"items\": [\n        {\n            \"status\": \"status\",\n            \"scope\": \"scope\",\n            \"description\": \"description\",\n            \"name\": \"name\",\n            \"website\": \"website\",\n            \"expiry_date\": \"expiry date\",\n            \"app_id\": \"app id\",\n            \"registration_date\": \"registration date\",\n            \"activation_date\": \"activation date\",\n            \"parent_master_customer_id\": \"parent master customer id\",\n            \"logo\": \"logo\",\n            \"developers\": [\n                {\n                    \"user_name\": \"user name\",\n                    \"developer_id\": \"developer id\",\n                    \"registration_date\": \"registration date\",\n                    \"status\": \"status\",\n                    \"name\": \"name\",\n                    \"address_line1\": \"address line1\",\n                    \"address_line2\": \"address line2\",\n                    \"phone\": \"phone\",\n                    \"cell\": \"cell\",\n                    \"city\": \"city\",\n                    \"state\": \"state\",\n                    \"country\": \"country\",\n                    \"zipcode\": \"zipcode\",\n                    \"user_type\": \"user type\",\n                    \"parent_developer_id\": \"parent developer id\"\n                },\n                {\n                    \"user_name\": \"user name\",\n                    \"developer_id\": \"developer id\",\n                    \"registration_date\": \"registration date\",\n                    \"status\": \"status\",\n                    \"name\": \"name\",\n                    \"address_line1\": \"address line1\",\n                    \"address_line2\": \"address line2\",\n                    \"phone\": \"phone\",\n                    \"cell\": \"cell\",\n                    \"city\": \"city\",\n                    \"state\": \"state\",\n                    \"country\": \"country\",\n                    \"zipcode\": \"zipcode\",\n                    \"user_type\": \"user type\",\n                    \"parent_developer_id\": \"parent developer id\"\n                },\n                {\n                    \"user_name\": \"user name\",\n                    \"developer_id\": \"developer id\",\n                    \"registration_date\": \"registration date\",\n                    \"status\": \"status\",\n                    \"name\": \"name\",\n                    \"address_line1\": \"address line1\",\n                    \"address_line2\": \"address line2\",\n                    \"phone\": \"phone\",\n                    \"cell\": \"cell\",\n                    \"city\": \"city\",\n                    \"state\": \"state\",\n                    \"country\": \"country\",\n                    \"zipcode\": \"zipcode\",\n                    \"user_type\": \"user type\",\n                    \"parent_developer_id\": \"parent developer id\"\n                }\n            ]\n        }\n    ]\n}"
+								},
+								{
+									"id": "578d6539-2914-4679-bbbb-db15329af6b3",
+									"name": "applications?fields=get_al",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
