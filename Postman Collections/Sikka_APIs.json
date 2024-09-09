@@ -2489,13 +2489,32 @@
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
-										"url": "https://api.sikkasoft.com/v4/appointment_statuses"
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/appointment_statuses?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"appointment_statuses"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
 									},
 									"_postman_previewlanguage": "json",
 									"header": null,
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"500\",\r\n\"total_count\": \"3\",\r\n\"execution_time\": \"283\",\r\n\"pagination\": {\r\n\"first\": \"http://api.sikkasoft.com/v4/appointment_statuses?offset=0&limit=500\",\r\n\"previous\": \"\",\r\n\"current\": \"http://api.sikkasoft.com/v4/appointment_statuses?offset=0&limit=500\",\r\n\"next\": \"\",\r\n\"last\": \"http://api.sikkasoft.com/v4/appointment_statuses?offset=0&limit=500\"\r\n},\r\n\"items\": [\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/appointment_statuses/Open\",\r\n\"status\": \"Open\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/appointment_statuses/Fixed\",\r\n\"status\": \"Fixed\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/appointment_statuses/\",\r\n\"status\": \"Confirmed\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\"\r\n}\r\n]\r\n}"
+									"body": "{\r\n    \"offset\": \"xx\",\r\n    \"limit\": \"xx\",\r\n    \"total_count\": \"xx\",\r\n    \"execution_time\": \"xx\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/appointment_statuses?offset=xx&limit=xx\",\r\n        \"previous\": \"previous\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/appointment_statuses?offset=xx&limit=xx\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/appointment_statuses?offset=xx&limit=xx\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/appointment_statuses?offset=xx&limit=xx\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/appointment_statuses/Completed\",\r\n            \"status\": \"status\",\r\n            \"practice_id\": \"practice id\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\"\r\n        }\r\n    ]\r\n}"
 								}
 							]
 						},
@@ -2515,6 +2534,26 @@
 								{
 									"id": "f0e0cb45-a539-4c94-8348-619d111faea0",
 									"name": "perio_charts",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<requset_key>",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/perio_charts"
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"2\",\r\n\"total_count\": \"546624\",\r\n\"execution_time\": \"329\",\r\n\"pagination\": {\r\n\"first\": \"http://api.sikkasoft.com/v4/perio_charts?offset=0&limit=2\",\r\n\"previous\": \"\",\r\n\"current\": \"http://api.sikkasoft.com/v4/perio_charts?offset=0&limit=2\",\r\n\"next\": \"http://api.sikkasoft.com/v4/perio_charts?offset=1&limit=2\",\r\n\"last\": \"http://api.sikkasoft.com/v4/perio_charts?offset=273311&limit=2\"\r\n},\r\n\"items\": [\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/patient_contracts/799301\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/799301\",\r\n\"patient_id\": \"799301\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"surface\": \"Upper Facial\",\r\n\"tooth_number\": \"1\",\r\n\"chart_date\": \"2020-10-01T00:00:00\",\r\n\"pocket_depth_1\": \"0\",\r\n\"pocket_depth_2\": \"0\",\r\n\"pocket_depth_3\": \"0\",\r\n\"mucogingival_junction_1\": \"0\",\r\n\"mucogingival_junction_2\": \"0\",\r\n\"mucogingival_junction_3\": \"0\",\r\n\"bleed_1\": \"0\",\r\n\"bleed_2\": \"0\",\r\n\"bleed_3\": \"0\",\r\n\"suppuration_1\": \"0\",\r\n\"suppurtation_2\": \"0\",\r\n\"suppurtation_3\": \"0\",\r\n\"furcation_lingual_distal\": \"None\",\r\n\"furcation_lingual_mesial\": \"None\",\r\n\"furcation_lingual\": \"None\",\r\n\"furcation_facial\": \"None\",\r\n\"free_gingival_margin_1\": \"0\",\r\n\"free_gingival_margin_2\": \"0\",\r\n\"free_gingival_margin_3\": \"0\",\r\n\"calculus\": \"\",\r\n\"plaque\": \"\",\r\n\"day_exam_id\": \"1\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/patient_contracts/799301\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/799301\",\r\n\"patient_id\": \"799301\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"surface\": \"Upper Lingual\",\r\n\"tooth_number\": \"1\",\r\n\"chart_date\": \"2020-10-01T00:00:00\",\r\n\"pocket_depth_1\": \"0\",\r\n\"pocket_depth_2\": \"0\",\r\n\"pocket_depth_3\": \"0\",\r\n\"mucogingival_junction_1\": \"0\",\r\n\"mucogingival_junction_2\": \"0\",\r\n\"mucogingival_junction_3\": \"0\",\r\n\"bleed_1\": \"0\",\r\n\"bleed_2\": \"0\",\r\n\"bleed_3\": \"0\",\r\n\"suppuration_1\": \"0\",\r\n\"suppurtation_2\": \"0\",\r\n\"suppurtation_3\": \"0\",\r\n\"furcation_lingual_distal\": \"None\",\r\n\"furcation_lingual_mesial\": \"None\",\r\n\"furcation_lingual\": \"None\",\r\n\"furcation_facial\": \"None\",\r\n\"free_gingival_margin_1\": \"0\",\r\n\"free_gingival_margin_2\": \"0\",\r\n\"free_gingival_margin_3\": \"0\",\r\n\"calculus\": \"\",\r\n\"plaque\": \"\",\r\n\"day_exam_id\": \"1\"\r\n}\r\n]\r\n}"
+								},
+								{
+									"id": "dcc45eec-d338-42f3-9cf8-036ba7405348",
+									"name": "perio_charts?fields=get_all",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
