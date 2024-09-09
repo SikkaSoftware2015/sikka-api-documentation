@@ -2170,13 +2170,32 @@
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/reminders"
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/reminders?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"reminders"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
 									},
 									"_postman_previewlanguage": "json",
 									"header": null,
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"4\",\r\n\"total_count\": \"2440\",\r\n\"execution_time\": \"13\",\r\n\"pagination\": {\r\n\"first\": \"http://api.sikkasoft.com/v4/reminders?offset=0&limit=4\",\r\n\"previous\": \"\",\r\n\"current\": \"http://api.sikkasoft.com/v4/reminders?offset=0&limit=4\",\r\n\"next\": \"http://api.sikkasoft.com/v4/reminders?offset=1&limit=4\",\r\n\"last\": \"http://api.sikkasoft.com/v4/reminders?offset=609&limit=4\"\r\n},\r\n\"items\": [\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/reminders/12\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/9659\",\r\n\"patient_id\": \"9659\",\r\n\"guarantor_id\": \"3293\",\r\n\"status\": \"None\",\r\n\"provider_id\": \"Prov1\",\r\n\"provider_href\": \"https://api.sikkasoft.com/v4/practices/1/providers/Prov1\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"appointment_href\": \"https://api.sikkasoft.com/v4/practices/1/appointments/0\",\r\n\"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/1/guarantors/3293\",\r\n\"procedure_code\": \"\",\r\n\"appointment_sr_no\": \"0\",\r\n\"description\": \"Pano\",\r\n\"provider_type\": \"1\",\r\n\"id\": \"12\",\r\n\"setdate\": \"2020-08-20T00:00:00\",\r\n\"due_date\": \"2020-08-20T00:00:00\",\r\n\"prior_date\": \"\",\r\n\"time_unit\": \"\",\r\n\"care_name\": \"Pano\",\r\n\"interval_type\": \"Months\",\r\n\"interval_length\": \"60\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/reminders/12\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/9680\",\r\n\"patient_id\": \"9680\",\r\n\"guarantor_id\": \"5859\",\r\n\"status\": \"None\",\r\n\"provider_id\": \"Prov1\",\r\n\"provider_href\": \"https://api.sikkasoft.com/v4/practices/1/providers/Prov1\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"appointment_href\": \"https://api.sikkasoft.com/v4/practices/1/appointments/0\",\r\n\"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/1/guarantors/5859\",\r\n\"procedure_code\": \"\",\r\n\"appointment_sr_no\": \"0\",\r\n\"description\": \"Pano\",\r\n\"provider_type\": \"1\",\r\n\"id\": \"12\",\r\n\"setdate\": \"2018-05-25T00:00:00\",\r\n\"due_date\": \"2023-05-25T00:00:00\",\r\n\"prior_date\": \"2018-05-24T00:00:00\",\r\n\"time_unit\": \"\",\r\n\"care_name\": \"Pano\",\r\n\"interval_type\": \"Months\",\r\n\"interval_length\": \"60\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/reminders/12\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/1817\",\r\n\"patient_id\": \"1817\",\r\n\"guarantor_id\": \"1817\",\r\n\"status\": \"None\",\r\n\"provider_id\": \"Prov1\",\r\n\"provider_href\": \"https://api.sikkasoft.com/v4/practices/1/providers/Prov1\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"appointment_href\": \"https://api.sikkasoft.com/v4/practices/1/appointments/0\",\r\n\"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/1/guarantors/1817\",\r\n\"procedure_code\": \"\",\r\n\"appointment_sr_no\": \"0\",\r\n\"description\": \"Pano\",\r\n\"provider_type\": \"1\",\r\n\"id\": \"12\",\r\n\"setdate\": \"2020-07-09T00:00:00\",\r\n\"due_date\": \"2023-01-01T00:00:00\",\r\n\"prior_date\": \"\",\r\n\"time_unit\": \"\",\r\n\"care_name\": \"Pano\",\r\n\"interval_type\": \"Months\",\r\n\"interval_length\": \"60\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/reminders/12\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/6381\",\r\n\"patient_id\": \"6381\",\r\n\"guarantor_id\": \"6381\",\r\n\"status\": \"None\",\r\n\"provider_id\": \"Prov1\",\r\n\"provider_href\": \"https://api.sikkasoft.com/v4/practices/1/providers/Prov1\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"appointment_href\": \"https://api.sikkasoft.com/v4/practices/1/appointments/0\",\r\n\"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/1/guarantors/6381\",\r\n\"procedure_code\": \"\",\r\n\"appointment_sr_no\": \"0\",\r\n\"description\": \"Pano\",\r\n\"provider_type\": \"1\",\r\n\"id\": \"12\",\r\n\"setdate\": \"2016-08-24T00:00:00\",\r\n\"due_date\": \"2021-08-24T00:00:00\",\r\n\"prior_date\": \"2016-08-23T00:00:00\",\r\n\"time_unit\": \"\",\r\n\"care_name\": \"Pano\",\r\n\"interval_type\": \"Months\",\r\n\"interval_length\": \"60\"\r\n}\r\n]\r\n}"
+									"body": "{\r\n    \"offset\": \"xx\",\r\n    \"limit\": \"xx\",\r\n    \"total_count\": \"xx\",\r\n    \"execution_time\": \"xx\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/reminders?offset=xx&limit=xx\",\r\n        \"previous\": \"previous\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/reminders?offset=xx&limit=xx\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/reminders?offset=xx&limit=xx\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/reminders?offset=xx&limit=xx\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/reminders/xxxx\",\r\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/patients/xxxx\",\r\n            \"patient_id\": \"patient id\",\r\n            \"guarantor_id\": \"guarantor id\",\r\n            \"status\": \"status\",\r\n            \"provider_id\": \"provider id\",\r\n            \"provider_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/providers/xxxx\",\r\n            \"practice_id\": \"practice id\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\r\n            \"appointment_href\": \"\",\r\n            \"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/guarantors/xxxx\",\r\n            \"procedure_code\": \"procedure code\",\r\n            \"appointment_sr_no\": \"appointment sr no\",\r\n            \"description\": \"description\",\r\n            \"provider_type\": \"provider type\",\r\n            \"id\": \"id\",\r\n            \"setdate\": \"setdate\",\r\n            \"due_date\": \"due date\",\r\n            \"prior_date\": \"prior date\",\r\n            \"time_unit\": \"time unit\",\r\n            \"care_name\": \"care name\",\r\n            \"interval_type\": \"interval type\",\r\n            \"interval_length\": \"interval length\",\r\n            \"last_exam_date\": \"last exam date\",\r\n            \"scaling_interval\": \"scaling interval\"\r\n        }\r\n    ]\r\n}"
 								}
 							]
 						},
@@ -2196,6 +2215,26 @@
 								{
 									"id": "1b9bf310-a185-439c-ab2d-0642aa50293f",
 									"name": "patient_contract_roll_charges",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/patient_contract_roll_charges"
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"4\",\r\n\"total_count\": \"150610\",\r\n\"execution_time\": \"86\",\r\n\"pagination\": {\r\n\"first\": \"http://api.sikkasoft.com/v4/patient_contract_roll_charges?offset=0&limit=4\",\r\n\"previous\": \"\",\r\n\"current\": \"http://api.sikkasoft.com/v4/patient_contract_roll_charges?offset=0&limit=4\",\r\n\"next\": \"http://api.sikkasoft.com/v4/patient_contract_roll_charges?offset=1&limit=4\",\r\n\"last\": \"http://api.sikkasoft.com/v4/patient_contract_roll_charges?offset=37652&limit=4\"\r\n},\r\n\"items\": [\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1-1/patient_contract_roll_charges/564858\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1-1/patients/564858\",\r\n\"patient_id\": \"564858\",\r\n\"guarantor_id\": \"27124\",\r\n\"firstname\": \"A\",\r\n\"lastname\": \"Kng\",\r\n\"provider_id\": \"86\",\r\n\"provider_href\": \"https://api.sikkasoft.com/v4/practices/1-1/providers/86\",\r\n\"practice_id\": \"1-1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-1\",\r\n\"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/1-1/guarantors/27124\",\r\n\"transaction_type\": \"Initial fee(contract)\",\r\n\"description\": \"Invisalign - Initial Fee (Contract)\",\r\n\"contract_due_date\": \"2020-09-28T00:00:00\",\r\n\"roll_amount\": \"500\",\r\n\"ledger_type\": \"2\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1-1/patient_contract_roll_charges/564858\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1-1/patients/564858\",\r\n\"patient_id\": \"564858\",\r\n\"guarantor_id\": \"27124\",\r\n\"firstname\": \"A\",\r\n\"lastname\": \"Kng\",\r\n\"provider_id\": \"86\",\r\n\"provider_href\": \"https://api.sikkasoft.com/v4/practices/1-1/providers/86\",\r\n\"practice_id\": \"1-1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-1\",\r\n\"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/1-1/guarantors/27124\",\r\n\"transaction_type\": \"Contract Charge\",\r\n\"description\": \"Invisalign - Contract Charge\",\r\n\"contract_due_date\": \"2020-10-01T00:00:00\",\r\n\"roll_amount\": \"500\",\r\n\"ledger_type\": \"3\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1-1/patient_contract_roll_charges/564857\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1-1/patients/564857\",\r\n\"patient_id\": \"564857\",\r\n\"guarantor_id\": \"31075\",\r\n\"firstname\": \"R\",\r\n\"lastname\": \"R\",\r\n\"provider_id\": \"86\",\r\n\"provider_href\": \"https://api.sikkasoft.com/v4/practices/1-1/providers/86\",\r\n\"practice_id\": \"1-1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-1\",\r\n\"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/1-1/guarantors/31075\",\r\n\"transaction_type\": \"Initial fee(contract)\",\r\n\"description\": \"Full braces - Initial Fee (Contract)\",\r\n\"contract_due_date\": \"2020-09-28T00:00:00\",\r\n\"roll_amount\": \"250\",\r\n\"ledger_type\": \"2\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1-1/patient_contract_roll_charges/564857\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1-1/patients/564857\",\r\n\"patient_id\": \"564857\",\r\n\"guarantor_id\": \"31075\",\r\n\"firstname\": \"A\",\r\n\"lastname\": \"R\",\r\n\"provider_id\": \"86\",\r\n\"provider_href\": \"https://api.sikkasoft.com/v4/practices/1-1/providers/86\",\r\n\"practice_id\": \"1-1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-1\",\r\n\"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/1-1/guarantors/31075\",\r\n\"transaction_type\": \"Contract Charge\",\r\n\"description\": \"Full braces - Contract Charge\",\r\n\"contract_due_date\": \"2020-10-01T00:00:00\",\r\n\"roll_amount\": \"250\",\r\n\"ledger_type\": \"3\"\r\n}\r\n]\r\n}"
+								},
+								{
+									"id": "9141af3a-12c6-40c6-a19f-eed850f13699",
+									"name": "patient_contract_roll_charges?fields=get_all",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
