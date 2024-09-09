@@ -5369,7 +5369,7 @@
 								},
 								{
 									"id": "46268f99-1acb-4a2c-a60c-929dd88a2b54",
-									"name": "patient_documents_display Copy",
+									"name": "patient_documents_display?fields=get_all",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
@@ -5379,7 +5379,26 @@
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/patient_documents_display"
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/patient_documents_display?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"patient_documents_display"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
 									},
 									"status": "OK",
 									"code": 200,
@@ -5436,7 +5455,7 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"1\",\n    \"total_count\": \"9145\",\n    \"execution_time\": \"984\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/patient_documents_display?offset=0&limit=1\",\n        \"previous\": \"\",\n        \"current\": \"https://api.sikkasoft.com/v4/patient_documents_display?offset=0&limit=1\",\n        \"next\": \"https://api.sikkasoft.com/v4/patient_documents_display?offset=1&limit=1\",\n        \"last\": \"https://api.sikkasoft.com/v4/patient_documents_display?offset=9144&limit=1\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/patient_documents_display/1179\",\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/1179\",\n            \"patient_id\": \"1179\",\n            \"practice_id\": \"1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\n            \"document_path\": \"\\\\\\\\D5T62DP2\\\\OpenDentImages\\\\N\\\\NalamadguAchyuth1179\\\\NalamadguAchyuth10006.pdf\",\n            \"customer_id\": \"1\",\n            \"rowhash\": \"8F-F6-91-E5-F4-5A-02\",\n            \"link\": \"https://centraldata.s3.amazonaws.com/images/d34001/1/patientdocuments/9788c02a-f15e-44b3-a73b-585e8ffe1f42_NalamadguAchyuth10006.pdf?AWSAccessKeyId=****************&Expires=1656767500&Signature=M8dHWbgTYVsH%2BoslMDTYm4kiCfc%3D\",\n            \"uploaded_time\": \"2022-06-30T01:06:19\"\n        }\n    ]\n}"
+									"body": "{\n    \"offset\": \"xx\",\n    \"limit\": \"xx\",\n    \"total_count\": \"xx\",\n    \"execution_time\": \"xx\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/patient_documents_display?offset=xx&limit=xx\",\n        \"previous\": \"previous\",\n        \"current\": \"https://api.sikkasoft.com/v4/patient_documents_display?offset=xx&limit=xx\",\n        \"next\": \"https://api.sikkasoft.com/v4/patient_documents_display?offset=xx&limit=xx\",\n        \"last\": \"https://api.sikkasoft.com/v4/patient_documents_display?offset=xx&limit=xx\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/patient_documents_display/xxxx\",\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/patients/xxxx\",\n            \"patient_id\": \"patient id\",\n            \"practice_id\": \"practice id\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\n            \"cust_id\": \"cust id\",\n            \"document_path\": \"document path\",\n            \"rowhash\": \"rowhash\",\n            \"link\": \"link\",\n            \"uploaded_time\": \"uploaded time\",\n            \"document_name\": \"document name\",\n            \"document_upload_date\": \"document upload date\"\n        }\n    ]\n}"
 								}
 							]
 						},
@@ -5529,6 +5548,96 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"xx\",\n    \"total_count\": \"xx\",\n    \"execution_time\": \"xx\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/patient_balance?offset=0&limit=xx\",\n        \"previous\": \"https://api.sikkasoft.com/v4/patient_balance?offset=0&limit=xx\",\n        \"current\": \"https://api.sikkasoft.com/v4/patient_balance?offset=0&limit=xx\",\n        \"next\": \"https://api.sikkasoft.com/v4/patient_balance?offset=x&limit=xx\",\n        \"last\": \"https://api.sikkasoft.com/v4/patient_balance?offset=x&limit=xx\"\n    },\n    \"items\": [\n        {\n            \"patient_id\": \"patient_id\",\n            \"firstname\": \"firstname\",\n            \"lastname\": \"lastname\",\n            \"practice_id\": \"practice_id\",\n            \"current_date\": \"current_date\",\n            \"practice_name\": \"practice_name\",\n            \"customer_id\": \"customer_id\",\n            \"chart_number\": \"chart_number\",\n            \"patient_amount_less_than_30\": \"patient_amount_less_than_30\",\n            \"patient_amount_between_30_60\": \"patient_amount_between_30_60\",\n            \"patient_amount_between_60_90\": \"patient_amount_between_60_90\",\n            \"patient_amount_greater_than_90\": \"patient_amount_greater_than_90\",\n            \"insurance_amount_less_than_30\": \"insurance_amount_less_than_30\",\n            \"insurance_amount_between_30_60\": \"insurance_amount_between_30_60\",\n            \"insurance_amount_between_60_90\": \"insurance_amount_between_60_90\",\n            \"insurance_amount_greater_than_90\": \"insurance_amount_greater_than_90\",\n            \"patient_balance\": \"patient_balance\",\n            \"unapplied\": \"unapplied\",\n            \"insurance_due\": \"insurance_due\",\n            \"patient_due\": \"patient_due\",\n            \"account_balance\": \"account_balance\",\n            \"write_off\": \"write_off\"\n        }\n    ]\n}"
+								},
+								{
+									"id": "1141e329-a381-471f-8c04-d748bde93787",
+									"name": "patient_balance?fields=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "Request-Key",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/patient_balance?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"patient_balance"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.18.0 (Ubuntu)"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 10 May 2022 11:12:31 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Request-Key-Expires",
+											"value": "Wed, 11 May 2022 09:12:24 GMT"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "origin"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload;"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"offset\": \"xx\",\n    \"limit\": \"xx\",\n    \"total_count\": \"xx\",\n    \"execution_time\": \"xx\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/patient_balance?offset=xx&limit=xx\",\n        \"previous\": \"previous\",\n        \"current\": \"https://api.sikkasoft.com/v4/patient_balance?offset=xx&limit=xx\",\n        \"next\": \"https://api.sikkasoft.com/v4/patient_balance?offset=xx&limit=xx\",\n        \"last\": \"https://api.sikkasoft.com/v4/patient_balance?offset=xx&limit=xx\"\n    },\n    \"items\": [\n        {\n            \"patient_id\": \"patient id\",\n            \"firstname\": \"firstname\",\n            \"lastname\": \"lastname\",\n            \"practice_id\": \"practice id\",\n            \"current_date\": \"current date\",\n            \"practice_name\": \"practice name\",\n            \"customer_id\": \"customer id\",\n            \"chart_number\": \"chart number\",\n            \"patient_amount_less_than_30\": \"patient amount less than 30\",\n            \"patient_amount_between_30_60\": \"patient amount between 30 60\",\n            \"patient_amount_between_60_90\": \"patient amount between 60 90\",\n            \"patient_amount_greater_than_90\": \"patient amount greater than 90\",\n            \"insurance_amount_less_than_30\": \"insurance amount less than 30\",\n            \"insurance_amount_between_30_60\": \"insurance amount between 30 60\",\n            \"insurance_amount_between_60_90\": \"insurance amount between 60 90\",\n            \"insurance_amount_greater_than_90\": \"insurance amount greater than 90\",\n            \"patient_balance\": \"patient balance\",\n            \"unapplied\": \"unapplied\",\n            \"insurance_due\": \"insurance due\",\n            \"patient_due\": \"patient due\",\n            \"account_balance\": \"account balance\",\n            \"write_off\": \"write off\"\n        }\n    ]\n}"
 								}
 							]
 						},
