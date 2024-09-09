@@ -4835,13 +4835,32 @@
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/vendors"
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/vendors?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"vendors"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
 									},
 									"_postman_previewlanguage": "json",
 									"header": null,
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"2\",\r\n\"total_count\": \"35\",\r\n\"execution_time\": \"14\",\r\n\"pagination\": {\r\n\"first\": \"http://api.sikkasoft.com/v4/vendors?offset=0&limit=2\",\r\n\"previous\": \"\",\r\n\"current\": \"http://api.sikkasoft.com/v4/vendors?offset=0&limit=2\",\r\n\"next\": \"http://api.sikkasoft.com/v4/vendors?offset=1&limit=2\",\r\n\"last\": \"http://api.sikkasoft.com/v4/vendors?offset=17&limit=2\"\r\n},\r\n\"items\": [\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/vendors/10064\",\r\n\"city\": \"\",\r\n\"state\": \"\",\r\n\"email\": \"\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"name\": \"Grass Technologies\",\r\n\"phone\": \"4018284000\",\r\n\"website\": \"\",\r\n\"fax\": \"\",\r\n\"contact\": \"\",\r\n\"vendor_id\": \"10064\",\r\n\"address\": \"\",\r\n\"vendor_code\": \"10064\",\r\n\"account\": \"GRASS\",\r\n\"zip\": \"\",\r\n\"terms\": \"\",\r\n\"other\": \"\",\r\n\"vendor_type\": \"\",\r\n\"vendor_status\": \"Active\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/vendors/10063\",\r\n\"city\": \"Kennewick\",\r\n\"state\": \"WA\",\r\n\"email\": \"AlanD@cal.com\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"name\": \"Cadwell Laboratories\",\r\n\"phone\": \"8002453001\",\r\n\"website\": \"\",\r\n\"fax\": \"5097836503\",\r\n\"contact\": \"\",\r\n\"vendor_id\": \"10063\",\r\n\"address\": \"909 N. Kellogg Street\",\r\n\"vendor_code\": \"10063\",\r\n\"account\": \"CADWE\",\r\n\"zip\": \"99336\",\r\n\"terms\": \"\",\r\n\"other\": \"\",\r\n\"vendor_type\": \"\",\r\n\"vendor_status\": \"Active\"\r\n}\r\n]\r\n}"
+									"body": "{\r\n    \"offset\": \"xx\",\r\n    \"limit\": \"xx\",\r\n    \"total_count\": \"xx\",\r\n    \"execution_time\": \"xx\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/vendors?offset=xx&limit=xx\",\r\n        \"previous\": \"previous\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/vendors?offset=xx&limit=xx\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/vendors?offset=xx&limit=xx\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/vendors?offset=xx&limit=xx\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/vendors/xxxx\",\r\n            \"city\": \"city\",\r\n            \"state\": \"state\",\r\n            \"email\": \"email\",\r\n            \"practice_id\": \"practice id\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\r\n            \"name\": \"name\",\r\n            \"phone\": \"phone\",\r\n            \"website\": \"website\",\r\n            \"fax\": \"fax\",\r\n            \"contact\": \"contact\",\r\n            \"vendor_id\": \"vendor id\",\r\n            \"address\": \"address\",\r\n            \"vendor_code\": \"vendor code\",\r\n            \"account\": \"account\",\r\n            \"zip\": \"zip\",\r\n            \"terms\": \"terms\",\r\n            \"other\": \"other\",\r\n            \"vendor_type\": \"vendor type\",\r\n            \"vendor_status\": \"vendor status\"\r\n        }\r\n    ]\r\n}"
 								}
 							]
 						},
@@ -4861,6 +4880,26 @@
 								{
 									"id": "f7e88d40-c440-45c3-b500-93cfdcb3ddcb",
 									"name": "veterinary_clinics",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/veterinary_clinics"
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
+								},
+								{
+									"id": "b6763c9b-029c-4493-a87e-47d85acdf46c",
+									"name": "veterinary_clinics Copy",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
