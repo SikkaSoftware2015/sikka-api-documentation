@@ -2563,13 +2563,32 @@
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/perio_charts"
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/perio_charts?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"perio_charts"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
 									},
 									"_postman_previewlanguage": "json",
 									"header": null,
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"2\",\r\n\"total_count\": \"546624\",\r\n\"execution_time\": \"329\",\r\n\"pagination\": {\r\n\"first\": \"http://api.sikkasoft.com/v4/perio_charts?offset=0&limit=2\",\r\n\"previous\": \"\",\r\n\"current\": \"http://api.sikkasoft.com/v4/perio_charts?offset=0&limit=2\",\r\n\"next\": \"http://api.sikkasoft.com/v4/perio_charts?offset=1&limit=2\",\r\n\"last\": \"http://api.sikkasoft.com/v4/perio_charts?offset=273311&limit=2\"\r\n},\r\n\"items\": [\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/patient_contracts/799301\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/799301\",\r\n\"patient_id\": \"799301\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"surface\": \"Upper Facial\",\r\n\"tooth_number\": \"1\",\r\n\"chart_date\": \"2020-10-01T00:00:00\",\r\n\"pocket_depth_1\": \"0\",\r\n\"pocket_depth_2\": \"0\",\r\n\"pocket_depth_3\": \"0\",\r\n\"mucogingival_junction_1\": \"0\",\r\n\"mucogingival_junction_2\": \"0\",\r\n\"mucogingival_junction_3\": \"0\",\r\n\"bleed_1\": \"0\",\r\n\"bleed_2\": \"0\",\r\n\"bleed_3\": \"0\",\r\n\"suppuration_1\": \"0\",\r\n\"suppurtation_2\": \"0\",\r\n\"suppurtation_3\": \"0\",\r\n\"furcation_lingual_distal\": \"None\",\r\n\"furcation_lingual_mesial\": \"None\",\r\n\"furcation_lingual\": \"None\",\r\n\"furcation_facial\": \"None\",\r\n\"free_gingival_margin_1\": \"0\",\r\n\"free_gingival_margin_2\": \"0\",\r\n\"free_gingival_margin_3\": \"0\",\r\n\"calculus\": \"\",\r\n\"plaque\": \"\",\r\n\"day_exam_id\": \"1\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/patient_contracts/799301\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/799301\",\r\n\"patient_id\": \"799301\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"surface\": \"Upper Lingual\",\r\n\"tooth_number\": \"1\",\r\n\"chart_date\": \"2020-10-01T00:00:00\",\r\n\"pocket_depth_1\": \"0\",\r\n\"pocket_depth_2\": \"0\",\r\n\"pocket_depth_3\": \"0\",\r\n\"mucogingival_junction_1\": \"0\",\r\n\"mucogingival_junction_2\": \"0\",\r\n\"mucogingival_junction_3\": \"0\",\r\n\"bleed_1\": \"0\",\r\n\"bleed_2\": \"0\",\r\n\"bleed_3\": \"0\",\r\n\"suppuration_1\": \"0\",\r\n\"suppurtation_2\": \"0\",\r\n\"suppurtation_3\": \"0\",\r\n\"furcation_lingual_distal\": \"None\",\r\n\"furcation_lingual_mesial\": \"None\",\r\n\"furcation_lingual\": \"None\",\r\n\"furcation_facial\": \"None\",\r\n\"free_gingival_margin_1\": \"0\",\r\n\"free_gingival_margin_2\": \"0\",\r\n\"free_gingival_margin_3\": \"0\",\r\n\"calculus\": \"\",\r\n\"plaque\": \"\",\r\n\"day_exam_id\": \"1\"\r\n}\r\n]\r\n}"
+									"body": "{\r\n    \"offset\": \"xx\",\r\n    \"limit\": \"xx\",\r\n    \"total_count\": \"xx\",\r\n    \"execution_time\": \"xx\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/perio_charts?offset=xx&limit=xx\",\r\n        \"previous\": \"previous\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/perio_charts?offset=xx&limit=xx\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/perio_charts?offset=xx&limit=xx\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/perio_charts?offset=xx&limit=xx\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/patient_contracts/xxxx\",\r\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/patients/xxxx\",\r\n            \"patient_id\": \"patient id\",\r\n            \"provider_id\": \"provider id\",\r\n            \"provider_href\": \"\",\r\n            \"practice_id\": \"practice id\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\r\n            \"surface\": \"surface\",\r\n            \"tooth_number\": \"tooth number\",\r\n            \"chart_date\": \"chart date\",\r\n            \"pocket_depth_1\": \"pocket depth 1\",\r\n            \"pocket_depth_2\": \"pocket depth 2\",\r\n            \"pocket_depth_3\": \"pocket depth 3\",\r\n            \"mucogingival_junction_1\": \"mucogingival junction 1\",\r\n            \"mucogingival_junction_2\": \"mucogingival junction 2\",\r\n            \"mucogingival_junction_3\": \"mucogingival junction 3\",\r\n            \"bleed_1\": \"bleed 1\",\r\n            \"bleed_2\": \"bleed 2\",\r\n            \"bleed_3\": \"bleed 3\",\r\n            \"suppuration_1\": \"suppuration 1\",\r\n            \"suppurtation_2\": \"suppurtation 2\",\r\n            \"suppurtation_3\": \"suppurtation 3\",\r\n            \"furcation_lingual_distal\": \"furcation lingual distal\",\r\n            \"furcation_lingual_mesial\": \"furcation lingual mesial\",\r\n            \"furcation_lingual\": \"furcation lingual\",\r\n            \"furcation_facial\": \"furcation facial\",\r\n            \"free_gingival_margin_1\": \"free gingival margin 1\",\r\n            \"free_gingival_margin_2\": \"free gingival margin 2\",\r\n            \"free_gingival_margin_3\": \"free gingival margin 3\",\r\n            \"calculus\": \"calculus\",\r\n            \"plaque\": \"plaque\",\r\n            \"day_exam_id\": \"day exam id\",\r\n            \"case_type\": \"case type\",\r\n            \"mobility\": \"mobility\",\r\n            \"bone_loss\": \"bone loss\",\r\n            \"tooth_state\": \"tooth state\",\r\n            \"cal_1\": \"cal 1\",\r\n            \"cal_2\": \"cal 2\",\r\n            \"cal_3\": \"cal 3\",\r\n            \"furcation_buccal_central\": \"furcation buccal central\",\r\n            \"plaque_1\": \"plaque 1\",\r\n            \"plaque_2\": \"plaque 2\",\r\n            \"plaque_3\": \"plaque 3\"\r\n        }\r\n    ]\r\n}"
 								}
 							]
 						},
@@ -2589,6 +2608,26 @@
 								{
 									"id": "fd42cb49-5814-4718-9533-58a43a9adae8",
 									"name": "patient_statuses",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/patient_statuses"
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"500\",\r\n\"total_count\": \"3\",\r\n\"execution_time\": \"57\",\r\n\"pagination\": {\r\n\"first\": \"http://apiv4.sikkasoft.com/v4/patient_statuses?offset=0&limit=500\",\r\n\"previous\": \"\",\r\n\"current\": \"http://apiv4.sikkasoft.com/v4/patient_statuses?offset=0&limit=500\",\r\n\"next\": \"\",\r\n\"last\": \"http://apiv4.sikkasoft.com/v4/patient_statuses?offset=0&limit=500\"\r\n},\r\n\"items\": [\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/patient_statuses/Inactive\",\r\n\"status\": \"Inactive\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/patient_statuses/Active\",\r\n\"status\": \"Active\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\"\r\n}\r\n]\r\n}"
+								},
+								{
+									"id": "deae9788-931b-4ba1-b005-b6db168c2f09",
+									"name": "patient_statuses?fields=get_all",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
