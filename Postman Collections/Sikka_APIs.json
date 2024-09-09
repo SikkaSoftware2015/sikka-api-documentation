@@ -4761,13 +4761,32 @@
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/treatment_plan_phases"
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/treatment_plan_phases?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"treatment_plan_phases"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
 									},
 									"_postman_previewlanguage": null,
 									"header": null,
 									"cookie": [],
 									"responseTime": null,
-									"body": null
+									"body": "{\r\n    \"offset\": \"xx\",\r\n    \"limit\": \"xx\",\r\n    \"total_count\": \"xx\",\r\n    \"execution_time\": \"xx\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/treatment_plan_phases?offset=xx&limit=xx\",\r\n        \"previous\": \"previous\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/treatment_plan_phases?offset=xx&limit=xx\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/treatment_plan_phases?offset=xx&limit=xx\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/treatment_plan_phases?offset=xx&limit=xx\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/treatment_plan_phases/xxxx\",\r\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/patients/xxxx\",\r\n            \"patient_id\": \"patient id\",\r\n            \"guarantor_id\": \"guarantor id\",\r\n            \"provider_id\": \"provider id\",\r\n            \"provider_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/providers/xxxx\",\r\n            \"practice_id\": \"practice id\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\r\n            \"appointment_href\": \"\",\r\n            \"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/guarantors/xxxx\",\r\n            \"procedure_code\": \"procedure code\",\r\n            \"amount\": \"amount\",\r\n            \"tooth_from\": \"tooth from\",\r\n            \"tooth_to\": \"tooth to\",\r\n            \"surface\": \"surface\",\r\n            \"clinical_condition_id\": \"clinical condition id\",\r\n            \"collection_provider_id\": \"collection provider id\",\r\n            \"created_by\": \"created by\",\r\n            \"last_updated_by\": \"last updated by\",\r\n            \"primary_insurance_estimate\": \"primary insurance estimate\",\r\n            \"secondary_insurance_estimate\": \"secondary insurance estimate\",\r\n            \"surface_quadrant_type\": \"surface quadrant type\",\r\n            \"appointment_sr_no\": \"appointment sr no\",\r\n            \"description\": \"description\",\r\n            \"plan_sr_no\": \"plan sr no\",\r\n            \"entry_date\": \"entry date\",\r\n            \"insurance_payment\": \"insurance payment\",\r\n            \"treatment_plan_status\": \"treatment plan status\",\r\n            \"procedure_date\": \"procedure date\",\r\n            \"phase\": \"phase\",\r\n            \"treatment_plan_id\": \"treatment plan id\",\r\n            \"plan_name\": \"plan name\"\r\n        }\r\n    ]\r\n}"
 								}
 							]
 						},
@@ -4787,6 +4806,26 @@
 								{
 									"id": "da096e5e-80e9-4bab-a83e-70d02f78dee5",
 									"name": "vendors",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/vendors"
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"2\",\r\n\"total_count\": \"35\",\r\n\"execution_time\": \"14\",\r\n\"pagination\": {\r\n\"first\": \"http://api.sikkasoft.com/v4/vendors?offset=0&limit=2\",\r\n\"previous\": \"\",\r\n\"current\": \"http://api.sikkasoft.com/v4/vendors?offset=0&limit=2\",\r\n\"next\": \"http://api.sikkasoft.com/v4/vendors?offset=1&limit=2\",\r\n\"last\": \"http://api.sikkasoft.com/v4/vendors?offset=17&limit=2\"\r\n},\r\n\"items\": [\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/vendors/10064\",\r\n\"city\": \"\",\r\n\"state\": \"\",\r\n\"email\": \"\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"name\": \"Grass Technologies\",\r\n\"phone\": \"4018284000\",\r\n\"website\": \"\",\r\n\"fax\": \"\",\r\n\"contact\": \"\",\r\n\"vendor_id\": \"10064\",\r\n\"address\": \"\",\r\n\"vendor_code\": \"10064\",\r\n\"account\": \"GRASS\",\r\n\"zip\": \"\",\r\n\"terms\": \"\",\r\n\"other\": \"\",\r\n\"vendor_type\": \"\",\r\n\"vendor_status\": \"Active\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/vendors/10063\",\r\n\"city\": \"Kennewick\",\r\n\"state\": \"WA\",\r\n\"email\": \"AlanD@cal.com\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"name\": \"Cadwell Laboratories\",\r\n\"phone\": \"8002453001\",\r\n\"website\": \"\",\r\n\"fax\": \"5097836503\",\r\n\"contact\": \"\",\r\n\"vendor_id\": \"10063\",\r\n\"address\": \"909 N. Kellogg Street\",\r\n\"vendor_code\": \"10063\",\r\n\"account\": \"CADWE\",\r\n\"zip\": \"99336\",\r\n\"terms\": \"\",\r\n\"other\": \"\",\r\n\"vendor_type\": \"\",\r\n\"vendor_status\": \"Active\"\r\n}\r\n]\r\n}"
+								},
+								{
+									"id": "86ac6dcd-70dc-4b78-a82e-e1364d1bd92c",
+									"name": "vendors?fields=get_all",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
