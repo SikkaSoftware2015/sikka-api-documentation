@@ -2933,13 +2933,32 @@
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/treatment_plan_statuses"
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/treatment_plan_statuses?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"treatment_plan_statuses"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
 									},
 									"_postman_previewlanguage": "json",
 									"header": null,
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"500\",\r\n\"total_count\": \"5\",\r\n\"execution_time\": \"1402\",\r\n\"pagination\": {\r\n\"first\": \"http://apiv4.sikkasoft.com/v4/treatment_plan_statuses?offset=0&limit=500\",\r\n\"previous\": \"\",\r\n\"current\": \"http://apiv4.sikkasoft.com/v4/treatment_plan_statuses?offset=0&limit=500\",\r\n\"next\": \"\",\r\n\"last\": \"http://apiv4.sikkasoft.com/v4/treatment_plan_statuses?offset=0&limit=500\"\r\n},\r\n\"items\": [\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/treatment_plan_statuses/Diagnosed\",\r\n\"status\": \"Diagnosed\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/treatment_plan_statuses/\",\r\n\"status\": \"\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/treatment_plan_statuses/Scheduled\",\r\n\"status\": \"Scheduled\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/treatment_plan_statuses/Accepted\",\r\n\"status\": \"Accepted\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/treatment_plan_statuses/Presented\",\r\n\"status\": \"Presented\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\"\r\n}\r\n]\r\n}"
+									"body": "{\r\n    \"offset\": \"xx\",\r\n    \"limit\": \"xx\",\r\n    \"total_count\": \"xx\",\r\n    \"execution_time\": \"xx\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/treatment_plan_statuses?offset=xx&limit=xx\",\r\n        \"previous\": \"previous\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/treatment_plan_statuses?offset=xx&limit=xx\",\r\n        \"next\": \"next\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/treatment_plan_statuses?offset=xx&limit=xx\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/treatment_plan_statuses/\",\r\n            \"status\": \"status\",\r\n            \"practice_id\": \"practice id\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\r\n            \"cust_id\": \"cust id\"\r\n        }\r\n    ]\r\n}"
 								}
 							]
 						},
@@ -2959,6 +2978,26 @@
 								{
 									"id": "0d10c7b4-24ea-4932-9fd1-fcd2b26b46d9",
 									"name": "prescriptions",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/prescriptions"
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"4\",\r\n\"total_count\": \"3195\",\r\n\"execution_time\": \"21\",\r\n\"pagination\": {\r\n\"first\": \"http://api.sikkasoft.com/v4/prescriptions?offset=0&limit=4\",\r\n\"previous\": \"\",\r\n\"current\": \"http://api.sikkasoft.com/v4/prescriptions?offset=0&limit=4\",\r\n\"next\": \"http://api.sikkasoft.com/v4/prescriptions?offset=1&limit=4\",\r\n\"last\": \"http://api.sikkasoft.com/v4/prescriptions?offset=798&limit=4\"\r\n},\r\n\"items\": [\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/prescriptions/3194\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/503701\",\r\n\"patient_id\": \"503701\",\r\n\"provider_id\": \"1\",\r\n\"provider_href\": \"https://api.sikkasoft.com/v4/practices/1/providers/1\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"quantity\": \"21\",\r\n\"date\": \"2020-10-12T00:00:00\",\r\n\"notes\": \"\",\r\n\"drug_id\": \"26\",\r\n\"drug_href\": \"https://api.sikkasoft.com/v4/practices/1/drugs/26\",\r\n\"prescription_id\": \"3194\",\r\n\"refills\": \"\",\r\n\"direction\": \"take 1 every 8hrs till all gone\",\r\n\"days\": \"0\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/prescriptions/3193\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/356301\",\r\n\"patient_id\": \"356301\",\r\n\"provider_id\": \"1\",\r\n\"provider_href\": \"https://api.sikkasoft.com/v4/practices/1/providers/1\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"quantity\": \"\",\r\n\"date\": \"2020-10-02T00:00:00\",\r\n\"notes\": \"\",\r\n\"drug_id\": \"7\",\r\n\"drug_href\": \"https://api.sikkasoft.com/v4/practices/1/drugs/7\",\r\n\"prescription_id\": \"3193\",\r\n\"refills\": \"4\",\r\n\"direction\": \"Rx Peridex (3x16oz)Rinse 1/2oz twice daily\",\r\n\"days\": \"0\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/prescriptions/3192\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/796501\",\r\n\"patient_id\": \"796501\",\r\n\"provider_id\": \"1\",\r\n\"provider_href\": \"https://api.sikkasoft.com/v4/practices/1/providers/1\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"quantity\": \"1 Pack\",\r\n\"date\": \"2020-10-02T00:00:00\",\r\n\"notes\": \"Spoke with pharmacist at Lucky on Mowry Ave to give it as a suspension\",\r\n\"drug_id\": \"24\",\r\n\"drug_href\": \"https://api.sikkasoft.com/v4/practices/1/drugs/24\",\r\n\"prescription_id\": \"3192\",\r\n\"refills\": \"0\",\r\n\"direction\": \"2 tabs on day 1 1 tab every day until gone\",\r\n\"days\": \"0\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/prescriptions/3191\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/227401\",\r\n\"patient_id\": \"227401\",\r\n\"provider_id\": \"1\",\r\n\"provider_href\": \"https://api.sikkasoft.com/v4/practices/1/providers/1\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"quantity\": \"\",\r\n\"date\": \"2020-09-30T00:00:00\",\r\n\"notes\": \"\",\r\n\"drug_id\": \"7\",\r\n\"drug_href\": \"https://api.sikkasoft.com/v4/practices/1/drugs/7\",\r\n\"prescription_id\": \"3191\",\r\n\"refills\": \"4\",\r\n\"direction\": \"Rx Peridex (3x16oz)Rinse 1/2oz twice daily\",\r\n\"days\": \"0\"\r\n}\r\n]\r\n}"
+								},
+								{
+									"id": "d7ef6b81-3fae-443c-bc2c-19cd6fe84601",
+									"name": "prescriptions?fields=get_all",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
