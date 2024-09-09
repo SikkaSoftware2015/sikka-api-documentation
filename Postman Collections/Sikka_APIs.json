@@ -8261,7 +8261,26 @@
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/veterinary_product_inventory"
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/veterinary_product_inventory?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"veterinary_product_inventory"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
 									},
 									"status": "OK",
 									"code": 200,
@@ -8320,7 +8339,7 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n  \"offset\": \"##\",\n  \"limit\": \"##\",\n  \"total_count\": \"##\",\n  \"execution_time\": \"##\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/veterinary_product_inventory?offset=##&limit=##\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/veterinary_product_inventory?offset=##&limit=##\",\n    \"next\": \"https://api.sikkasoft.com/v4/veterinary_product_inventory?offset=##&limit=##\",\n    \"last\": \"https://api.sikkasoft.com/v4/veterinary_product_inventory?offset=##&limit=##\"\n  },\n  \"items\": [\n       {\n        \"href\": \"https://api.sikkasoft.com/v4/practices/####/veterinary_product_inventory/####\",\n        \"practice_id\": \"practice id\",\n        \"practice_href\": \"https://api.sikkasoft.com/v4/practices/####\",\n        \"description\": \"description\",\n        \"category\": \"category\",\n        \"product_id\": \"product id\",\n        \"price\": \"price\",\n        \"on_hand_quantity\": \"on hand quantity\",\n        \"measure\": \"measure\",\n        \"vendor_item_id\": \"vendor item id\",\n        \"manufacturing_number\": \"manufacturing number\",\n        \"vendor_id\": \"vendor id\",\n        \"vendor_href\": \"https://api.sikkasoft.com/v4/practices/####/vendors/##\"\n    },\n    {\n        \"href\": \"https://api.sikkasoft.com/v4/practices/####/veterinary_product_inventory/####\",\n        \"practice_id\": \"practice id\",\n        \"practice_href\": \"https://api.sikkasoft.com/v4/practices/####\",\n        \"description\": \"description\",\n        \"category\": \"category\",\n        \"product_id\": \"product id\",\n        \"price\": \"price\",\n        \"on_hand_quantity\": \"on hand quantity\",\n        \"measure\": \"measure\",\n        \"vendor_item_id\": \"vendor item id\",\n        \"manufacturing_number\": \"manufacturing number\",\n        \"vendor_id\": \"vendor id\",\n        \"vendor_href\": \"https://api.sikkasoft.com/v4/practices/####/vendors/##\"\n    }\n  ]\n}"
+									"body": "{\n    \"offset\": \"xx\",\n    \"limit\": \"xx\",\n    \"total_count\": \"xx\",\n    \"execution_time\": \"xx\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/veterinary_product_inventory?offset=xx&limit=xx\",\n        \"previous\": \"previous\",\n        \"current\": \"https://api.sikkasoft.com/v4/veterinary_product_inventory?offset=xx&limit=xx\",\n        \"next\": \"https://api.sikkasoft.com/v4/veterinary_product_inventory?offset=xx&limit=xx\",\n        \"last\": \"https://api.sikkasoft.com/v4/veterinary_product_inventory?offset=xx&limit=xx\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/veterinary_product_inventory/xxxx\",\n            \"practice_id\": \"practice id\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\n            \"description\": \"description\",\n            \"category\": \"category\",\n            \"product_id\": \"product id\",\n            \"price\": \"price\",\n            \"on_hand_quantity\": \"on hand quantity\",\n            \"measure\": \"measure\",\n            \"vendor_item_id\": \"vendor item id\",\n            \"manufacturing_number\": \"manufacturing number\",\n            \"vendor_id\": \"vendor id\",\n            \"vendor_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/vendors/xxxx\"\n        }\n    ]\n}"
 								}
 							]
 						},
@@ -8415,6 +8434,98 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\n  \"offset\": \"##\",\n  \"limit\": \"##\",\n  \"total_count\": \"##\",\n  \"execution_time\": \"##\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/lab_results?offset=##&limit=##\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/lab_results?offset=##&limit=##\",\n    \"next\": \"https://api.sikkasoft.com/v4/lab_results?offset=##&limit=##\",\n    \"last\": \"https://api.sikkasoft.com/v4/lab_results?offset=##&limit=##\"\n  },\n  \"items\": [\n      {\n      \"href\": \"https://api.sikkasoft.com/v4/practices/##/lab_results/####\",\n      \"practice_id\": \"practice id\",\n      \"practice_href\": \"https://api.sikkasoft.com/v4/practices/##\",\n      \"comments\": \"comments\",\n      \"lab_panel_id\": \"lab panel id\",\n      \"lab_panel_href\": \"https://api.sikkasoft.com/v4/practices/##/lab_panels/####\",\n      \"result_date\": \"result date\",\n      \"test_name\": \"test name\",\n      \"measure_unit\": \"measure unit\",\n      \"result\": \"result\",\n      \"result_type\": \"result type\",\n      \"critical_low\": \"critical low\",\n      \"critical_high\": \"critical high\",\n      \"reference_low\": \"reference low\",\n      \"reference_high\": \"reference high\",\n      \"reference_range\": \"reference range\",\n      \"lab_machine_name\": \"lab machine name\",\n      \"lab_machine_type\": \"lab machine type\",\n      \"lab_result_name\": \"lab result name\"\n  },{\n      \"href\": \"https://api.sikkasoft.com/v4/practices/##/lab_results/####\",\n      \"practice_id\": \"practice id\",\n      \"practice_href\": \"https://api.sikkasoft.com/v4/practices/##\",\n      \"comments\": \"comments\",\n      \"lab_panel_id\": \"lab panel id\",\n      \"lab_panel_href\": \"https://api.sikkasoft.com/v4/practices/##/lab_panels/####\",\n      \"result_date\": \"result date\",\n      \"test_name\": \"test name\",\n      \"measure_unit\": \"measure unit\",\n      \"result\": \"result\",\n      \"result_type\": \"result type\",\n      \"critical_low\": \"critical low\",\n      \"critical_high\": \"critical high\",\n      \"reference_low\": \"reference low\",\n      \"reference_high\": \"reference high\",\n      \"reference_range\": \"reference range\",\n      \"lab_machine_name\": \"lab machine name\",\n      \"lab_machine_type\": \"lab machine type\",\n      \"lab_result_name\": \"lab result name\"\n  }\n  ]\n}"
+								},
+								{
+									"id": "7262529c-7a9f-4b94-bb45-0a01e2c994a5",
+									"name": "lab_results?fields=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "Request-Key",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/lab_results?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"lab_results"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.18.0 (Ubuntu)"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 10 May 2022 11:12:31 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Request-Key-Expires",
+											"value": "Wed, 11 May 2022 09:12:24 GMT"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "origin"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload;"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"offset\": \"xx\",\n    \"limit\": \"xx\",\n    \"total_count\": \"xx\",\n    \"execution_time\": \"xx\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/lab_results?offset=xx&limit=xx\",\n        \"previous\": \"previous\",\n        \"current\": \"https://api.sikkasoft.com/v4/lab_results?offset=xx&limit=xx\",\n        \"next\": \"https://api.sikkasoft.com/v4/lab_results?offset=xx&limit=xx\",\n        \"last\": \"https://api.sikkasoft.com/v4/lab_results?offset=xx&limit=xx\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/lab_results/xxxx\",\n            \"practice_id\": \"practice id\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\n            \"comments\": \"comments\",\n            \"lab_panel_id\": \"lab panel id\",\n            \"lab_panel_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/lab_panels/xxxx\",\n            \"result_date\": \"result date\",\n            \"test_name\": \"test name\",\n            \"measure_unit\": \"measure unit\",\n            \"result\": \"result\",\n            \"result_type\": \"result type\",\n            \"critical_low\": \"critical low\",\n            \"critical_high\": \"critical high\",\n            \"reference_low\": \"reference low\",\n            \"reference_high\": \"reference high\",\n            \"reference_range\": \"reference range\",\n            \"lab_machine_name\": \"lab machine name\",\n            \"lab_machine_type\": \"lab machine type\",\n            \"lab_result_name\": \"lab result name\"\n        }\n    ]\n}"
 								}
 							]
 						},
