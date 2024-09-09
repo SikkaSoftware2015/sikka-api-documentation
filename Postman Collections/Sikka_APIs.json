@@ -1549,7 +1549,26 @@
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/practice_variable"
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/practice_variable?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"practice_variable"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
 									},
 									"_postman_previewlanguage": "json",
 									"header": null,
@@ -1743,6 +1762,26 @@
 								{
 									"id": "61ebc987-2a21-4ea6-b84c-f716fc581346",
 									"name": "insurance_accounts_receivables",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/insurance_accounts_receivables"
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"1\",\r\n\"total_count\": \"105\",\r\n\"execution_time\": \"39\",\r\n\"pagination\": {\r\n\"first\": \"http://api.sikkasoft.com/v4/insurance_accounts_receivables?offset=0&limit=1\",\r\n\"previous\": \"\",\r\n\"current\": \"http://api.sikkasoft.com/v4/insurance_accounts_receivables?offset=0&limit=1\",\r\n\"next\": \"http://api.sikkasoft.com/v4/insurance_accounts_receivables?offset=1&limit=1\",\r\n\"last\": \"http://api.sikkasoft.com/v4/insurance_accounts_receivables?offset=104&limit=1\"\r\n},\r\n\"items\": [\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/insurance_accounts_receivables/469301\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/469301\",\r\n\"patient_id\": \"469301\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"amount_less_than_30\": \"225.0000\",\r\n\"amount_greater_than_90\": \"0.0000\",\r\n\"amount_between_30_60\": \"0.0000\",\r\n\"amount_between_60_90\": \"0.0000\",\r\n\"estimated_amount_less_than_30\": \"225.0000\",\r\n\"estimated_amount_between_30_60\": \"0.0000\",\r\n\"estimated_amount_between_60_90\": \"0.0000\",\r\n\"estimated_amount_greater_than_90\": \"0.0000\"\r\n}\r\n]\r\n}"
+								},
+								{
+									"id": "bf406bd8-303a-458c-9d9b-f73c3b52aa3a",
+									"name": "insurance_accounts_receivables?fields=get_all",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
