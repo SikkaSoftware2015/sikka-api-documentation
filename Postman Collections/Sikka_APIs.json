@@ -3828,7 +3828,26 @@
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/medical_history"
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/medical_history?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"medical_history"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
 									},
 									"status": "OK",
 									"code": 200,
@@ -3836,7 +3855,7 @@
 									"header": null,
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"5\",\n    \"total_count\": \"11923\",\n    \"execution_time\": \"14\",\n    \"pagination\": {\n        \"first\": \"http://api.sikkasoft.com/v4/medical_history?offset=0&limit=5\",\n        \"previous\": \"\",\n        \"current\": \"http://api.sikkasoft.com/v4/medical_history?offset=0&limit=5\",\n        \"next\": \"http://api.sikkasoft.com/v4/medical_history?offset=1&limit=5\",\n        \"last\": \"http://api.sikkasoft.com/v4/medical_history?offset=2384&limit=5\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/medical_history/801801\",\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/801801\",\n            \"patient_id\": \"801801\",\n            \"practice_id\": \"1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\n            \"created_date\": \"2020-10-27T00:00:00\",\n            \"description\": \"10/27/2020 @ 2:20 PM BP:102/61 HR:76 - Mg\",\n            \"type\": \"Miscellaneous\",\n            \"name\": \"Additional Comments\",\n            \"value\": \"\",\n            \"updated_date\": \"2020-10-27T00:00:00\"\n        },\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/medical_history/800801\",\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/800801\",\n            \"patient_id\": \"800801\",\n            \"practice_id\": \"1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\n            \"created_date\": \"2020-10-26T00:00:00\",\n            \"description\": \"\",\n            \"type\": \"Allergy\",\n            \"name\": \"Penicillin\",\n            \"value\": \"Active\",\n            \"updated_date\": \"2020-10-26T00:00:00\"\n        },\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/medical_history/800101\",\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/800101\",\n            \"patient_id\": \"800101\",\n            \"practice_id\": \"1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\n            \"created_date\": \"2020-10-26T00:00:00\",\n            \"description\": \"10/26/2020 @ 10:28 am BP: 120/78/76 - DJ\",\n            \"type\": \"Miscellaneous\",\n            \"name\": \"Additional Comments\",\n            \"value\": \"\",\n            \"updated_date\": \"2020-10-26T00:00:00\"\n        },\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/medical_history/799301\",\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/799301\",\n            \"patient_id\": \"799301\",\n            \"practice_id\": \"1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\n            \"created_date\": \"2020-10-27T00:00:00\",\n            \"description\": \"10/01/2020 @ 10:28 AM BP:129/78 - DJ10/27/2020@10:35 am BP: 103/73 - MG\",\n            \"type\": \"Miscellaneous\",\n            \"name\": \"Additional Comments\",\n            \"value\": \"\",\n            \"updated_date\": \"2020-10-27T00:00:00\"\n        },\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/medical_history/798901\",\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/798901\",\n            \"patient_id\": \"798901\",\n            \"practice_id\": \"1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\n            \"created_date\": \"2020-10-26T00:00:00\",\n            \"description\": \"\",\n            \"type\": \"Allergy\",\n            \"name\": \"Penicillin\",\n            \"value\": \"Active\",\n            \"updated_date\": \"2020-10-26T00:00:00\"\n        }\n    ]\n}"
+									"body": "{\n    \"offset\": \"xx\",\n    \"limit\": \"xx\",\n    \"total_count\": \"xx\",\n    \"execution_time\": \"xx\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/medical_history?offset=xx&limit=xx\",\n        \"previous\": \"previous\",\n        \"current\": \"https://api.sikkasoft.com/v4/medical_history?offset=xx&limit=xx\",\n        \"next\": \"https://api.sikkasoft.com/v4/medical_history?offset=xx&limit=xx\",\n        \"last\": \"https://api.sikkasoft.com/v4/medical_history?offset=xx&limit=xx\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/medical_history/xxxx\",\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/patients/xxxx\",\n            \"patient_id\": \"patient id\",\n            \"practice_id\": \"practice id\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\n            \"created_date\": \"created date\",\n            \"description\": \"description\",\n            \"type\": \"type\",\n            \"name\": \"name\",\n            \"cust_id\": \"cust id\",\n            \"value\": \"value\",\n            \"updated_date\": \"updated date\"\n        }\n    ]\n}"
 								}
 							]
 						},
@@ -4019,6 +4038,103 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\r\n    \"offset\": \"0\",\r\n    \"limit\": \"2\",\r\n    \"total_count\": \"2\",\r\n    \"execution_time\": \"16\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/note_types?offset=0&limit=2\",\r\n        \"previous\": \"\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/note_types?offset=0&limit=2\",\r\n        \"next\": \"\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/note_types?offset=0&limit=2\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/2/note_types/PatNote\",\r\n            \"practice_id\": \"2\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/2\",\r\n            \"description\": \"\",\r\n            \"type\": \"PatNote\",\r\n            \"cust_id\": \"2\",\r\n            \"item\": \"\"\r\n        },\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/2/note_types/Clinical Note\",\r\n            \"practice_id\": \"2\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/2\",\r\n            \"description\": \"\",\r\n            \"type\": \"Clinical Note\",\r\n            \"cust_id\": \"2\",\r\n            \"item\": \"\"\r\n        }\r\n    ]\r\n}"
+								},
+								{
+									"id": "4efe59f4-babb-4f07-905f-88901d80bcb7",
+									"name": "note_types?fields=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/note_types?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"note_types"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "accept, authorization, Content-Type, X-Session-Id",
+											"description": ""
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+											"description": ""
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*",
+											"description": ""
+										},
+										{
+											"key": "Cache-Control",
+											"value": "private",
+											"description": ""
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive",
+											"description": ""
+										},
+										{
+											"key": "Content-Length",
+											"value": "888",
+											"description": ""
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": ""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 24 Apr 2017 12:03:40 GMT",
+											"description": ""
+										},
+										{
+											"key": "Server",
+											"value": "Microsoft-IIS/8.5",
+											"description": ""
+										},
+										{
+											"key": "X-AspNet-Version",
+											"value": "4.0.30319",
+											"description": ""
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "ASP.NET",
+											"description": ""
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n    \"offset\": \"xx\",\r\n    \"limit\": \"xx\",\r\n    \"total_count\": \"xx\",\r\n    \"execution_time\": \"xx\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/note_types?offset=xx&limit=xx\",\r\n        \"previous\": \"previous\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/note_types?offset=xx&limit=xx\",\r\n        \"next\": \"next\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/note_types?offset=xx&limit=xx\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/note_types/Treatment note\",\r\n            \"practice_id\": \"practice id\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\r\n            \"description\": \"description\",\r\n            \"type\": \"type\",\r\n            \"cust_id\": \"cust id\",\r\n            \"item\": \"item\"\r\n        }\r\n    ]\r\n}"
 								}
 							]
 						},
@@ -4056,6 +4172,47 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"5\",\r\n\"total_count\": \"148805\",\r\n\"execution_time\": \"197\",\r\n\"pagination\": {\r\n\"first\": \"http://api.sikkasoft.com/v4/patient_documents?offset=0&limit=5\",\r\n\"previous\": \"\",\r\n\"current\": \"http://api.sikkasoft.com/v4/patient_documents?offset=0&limit=5\",\r\n\"next\": \"http://api.sikkasoft.com/v4/patient_documents?offset=1&limit=5\",\r\n\"last\": \"http://api.sikkasoft.com/v4/patient_documents?offset=29760&limit=5\"\r\n},\r\n\"items\": [\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/patient_documents/802101\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/802101\",\r\n\"patient_id\": \"802101\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"document_path\": \"\\\\\\\\Sikkadental\\\\SoftDent\\\\PWImages\\\\Patient\\\\98\\\\418798\\\\Other\\\\SDPatientDoc_418798_10_27_2020_14_45_38.jpg\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/patient_documents/802101\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/802101\",\r\n\"patient_id\": \"802101\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"document_path\": \"\\\\\\\\Sikkadental\\\\SoftDent\\\\PWImages\\\\Patient\\\\98\\\\418798\\\\Other\\\\SDPatientDoc_418798_10_27_2020_14_45_58.jpg\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/patient_documents/802101\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/802101\",\r\n\"patient_id\": \"802101\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"document_path\": \"\\\\\\\\Sikkadental\\\\SoftDent\\\\PWImages\\\\Patient\\\\98\\\\418798\\\\Other\\\\SDPatientDoc_418798_10_27_2020_14_46_13.jpg\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/patient_documents/802101\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/802101\",\r\n\"patient_id\": \"802101\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"document_path\": \"\\\\\\\\Sikkadental\\\\SoftDent\\\\PWImages\\\\Patient\\\\98\\\\418798\\\\Other\\\\SDPatientDoc_418798_10_27_2020_14_46_25.jpg\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/patient_documents/801801\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/801801\",\r\n\"patient_id\": \"801801\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"document_path\": \"\\\\\\\\Sikkadental\\\\SoftDent\\\\PWImages\\\\Patient\\\\90\\\\418790\\\\Other\\\\SDPatientDoc_418790_10_27_2020_11_02_13.pdf\"\r\n}\r\n]\r\n}"
+								},
+								{
+									"id": "0784f863-2c3a-4659-98d6-1a2b7e75042c",
+									"name": "patient_documents?fields=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://api.skkasoft.com/v4/patient_documents?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"skkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"patient_documents"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n    \"offset\": \"xx\",\r\n    \"limit\": \"xx\",\r\n    \"total_count\": \"xx\",\r\n    \"execution_time\": \"xx\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/patient_documents?offset=xx&limit=xx\",\r\n        \"previous\": \"previous\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/patient_documents?offset=xx&limit=xx\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/patient_documents?offset=xx&limit=xx\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/patient_documents?offset=xx&limit=xx\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/patient_documents/xxxx\",\r\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/patients/xxxx\",\r\n            \"patient_id\": \"patient id\",\r\n            \"practice_id\": \"practice id\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\r\n            \"document_path\": \"document path\",\r\n            \"document_name\": \"document name\",\r\n            \"document_upload_date\": \"document upload date\"\r\n        }\r\n    ]\r\n}"
 								}
 							]
 						},
@@ -4124,6 +4281,28 @@
 								{
 									"id": "1c719dfa-02df-4202-87a7-dec3277f59bd",
 									"name": "patients_ssn",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/patients_ssn"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"5\",\r\n\"total_count\": \"12264\",\r\n\"execution_time\": \"61\",\r\n\"pagination\": {\r\n\"first\": \"http://api.sikkasoft.com/v4/patients_ssn?offset=0&limit=5\",\r\n\"previous\": \"\",\r\n\"current\": \"http://api.sikkasoft.com/v4/patients_ssn?offset=0&limit=5\",\r\n\"next\": \"http://api.sikkasoft.com/v4/patients_ssn?offset=1&limit=5\",\r\n\"last\": \"http://api.sikkasoft.com/v4/patients_ssn?offset=2452&limit=5\"\r\n},\r\n\"items\": [\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/patients_ssn/12274\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/12274\",\r\n\"patient_id\": \"12274\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"ssn\": \"xxx\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/patients_ssn/12273\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/12273\",\r\n\"patient_id\": \"12273\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"ssn\": \"xxx\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/patients_ssn/12272\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/12272\",\r\n\"patient_id\": \"12272\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"ssn\": \"xxx\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/patients_ssn/12271\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/12271\",\r\n\"patient_id\": \"12271\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"ssn\": \"xxx\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/patients_ssn/12270\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/12270\",\r\n\"patient_id\": \"12270\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"ssn\": \"xxx\"\r\n}\r\n]\r\n}"
+								},
+								{
+									"id": "044e0a5c-c0f3-4ec5-9e7a-bb8d315ca134",
+									"name": "patients_ssn?fields=get_all",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
