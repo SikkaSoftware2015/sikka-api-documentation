@@ -2244,7 +2244,25 @@
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/patient_contract_roll_charges"
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/patient_contract_roll_charges?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"patient_contract_roll_charges"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all"
+												}
+											]
+										}
 									},
 									"_postman_previewlanguage": "json",
 									"header": null,
