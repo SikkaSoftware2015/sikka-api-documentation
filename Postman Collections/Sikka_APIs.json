@@ -3142,6 +3142,26 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"4\",\r\n\"total_count\": \"2767\",\r\n\"execution_time\": \"22\",\r\n\"pagination\": {\r\n\"first\": \"http://api.sikkasoft.com/v4/employers?offset=0&limit=4\",\r\n\"previous\": \"\",\r\n\"current\": \"http://api.sikkasoft.com/v4/employers?offset=0&limit=4\",\r\n\"next\": \"http://api.sikkasoft.com/v4/employers?offset=1&limit=4\",\r\n\"last\": \"http://api.sikkasoft.com/v4/employers?offset=691&limit=4\"\r\n},\r\n\"items\": [\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/employers/2869\",\r\n\"address_line1\": \"\",\r\n\"address_line2\": \"\",\r\n\"city\": \"\",\r\n\"state\": \"\",\r\n\"zipcode\": \"\",\r\n\"employer_id\": \"2869\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"country\": \"\",\r\n\"name\": \"Silver 70\",\r\n\"phone\": \"\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/employers/2868\",\r\n\"address_line1\": \"\",\r\n\"address_line2\": \"\",\r\n\"city\": \"\",\r\n\"state\": \"\",\r\n\"zipcode\": \"\",\r\n\"employer_id\": \"2868\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"country\": \"\",\r\n\"name\": \"Rebekah Children's Services\",\r\n\"phone\": \"\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/employers/2867\",\r\n\"address_line1\": \"\",\r\n\"address_line2\": \"\",\r\n\"city\": \"\",\r\n\"state\": \"\",\r\n\"zipcode\": \"\",\r\n\"employer_id\": \"2867\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"country\": \"\",\r\n\"name\": \"MAXAR-BUY UP\",\r\n\"phone\": \"\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/employers/2866\",\r\n\"address_line1\": \"\",\r\n\"address_line2\": \"\",\r\n\"city\": \"\",\r\n\"state\": \"\",\r\n\"zipcode\": \"\",\r\n\"employer_id\": \"2866\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"country\": \"\",\r\n\"name\": \"ACTSL/ACTCL TCS LTD Active H1\",\r\n\"phone\": \"\"\r\n}\r\n]\r\n}"
+								},
+								{
+									"id": "6940ee2e-4acc-493d-9262-79b2ebfd9c25",
+									"name": "employers?fields=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/employers"
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"4\",\r\n\"total_count\": \"2767\",\r\n\"execution_time\": \"22\",\r\n\"pagination\": {\r\n\"first\": \"http://api.sikkasoft.com/v4/employers?offset=0&limit=4\",\r\n\"previous\": \"\",\r\n\"current\": \"http://api.sikkasoft.com/v4/employers?offset=0&limit=4\",\r\n\"next\": \"http://api.sikkasoft.com/v4/employers?offset=1&limit=4\",\r\n\"last\": \"http://api.sikkasoft.com/v4/employers?offset=691&limit=4\"\r\n},\r\n\"items\": [\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/employers/2869\",\r\n\"address_line1\": \"\",\r\n\"address_line2\": \"\",\r\n\"city\": \"\",\r\n\"state\": \"\",\r\n\"zipcode\": \"\",\r\n\"employer_id\": \"2869\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"country\": \"\",\r\n\"name\": \"Silver 70\",\r\n\"phone\": \"\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/employers/2868\",\r\n\"address_line1\": \"\",\r\n\"address_line2\": \"\",\r\n\"city\": \"\",\r\n\"state\": \"\",\r\n\"zipcode\": \"\",\r\n\"employer_id\": \"2868\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"country\": \"\",\r\n\"name\": \"Rebekah Children's Services\",\r\n\"phone\": \"\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/employers/2867\",\r\n\"address_line1\": \"\",\r\n\"address_line2\": \"\",\r\n\"city\": \"\",\r\n\"state\": \"\",\r\n\"zipcode\": \"\",\r\n\"employer_id\": \"2867\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"country\": \"\",\r\n\"name\": \"MAXAR-BUY UP\",\r\n\"phone\": \"\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/employers/2866\",\r\n\"address_line1\": \"\",\r\n\"address_line2\": \"\",\r\n\"city\": \"\",\r\n\"state\": \"\",\r\n\"zipcode\": \"\",\r\n\"employer_id\": \"2866\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"country\": \"\",\r\n\"name\": \"ACTSL/ACTCL TCS LTD Active H1\",\r\n\"phone\": \"\"\r\n}\r\n]\r\n}"
 								}
 							]
 						},
