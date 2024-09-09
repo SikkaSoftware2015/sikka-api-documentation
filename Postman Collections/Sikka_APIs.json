@@ -7704,7 +7704,26 @@
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/veterinary_product_details"
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/veterinary_product_details?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"veterinary_product_details"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
 									},
 									"status": "OK",
 									"code": 200,
@@ -7763,7 +7782,7 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n  \"offset\": \"##\",\n  \"limit\": \"##\",\n  \"total_count\": \"##\",\n  \"execution_time\": \"##\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/veterinary_product_details?offset=##&limit=##\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/veterinary_product_details?offset=##&limit=##\",\n    \"next\": \"https://api.sikkasoft.com/v4/veterinary_product_details?offset=##&limit=##\",\n    \"last\": \"https://api.sikkasoft.com/v4/veterinary_product_details?offset=##0&limit=##\"\n  },\n  \"items\": [\n    {\n    \"href\": \"https://api.sikkasoft.com/v4/practices/##/veterinary_product_details/####\",\n    \"provider_id\": \"provider id\",\n    \"provider_href\": \"\",\n    \"practice_id\": \"practice id\",\n    \"practice_href\": \"https://api.sikkasoft.com/v4/practices/##\",\n    \"expires_in\": \"expires in\",\n    \"description\": \"description\",\n    \"location\": \"location\",\n    \"category\": \"category\",\n    \"product_id\": \"product id\",\n    \"price\": \"price\",\n    \"on_hand_quantity\": \"on hand quantity\",\n    \"measure\": \"measure\",\n    \"vendor_item_id\": \"vendor item id\",\n    \"manufacturing_number\": \"manufacturing number\",\n    \"vendor_id\": \"vendor id\",\n    \"vendor_href\": \"https://api.sikkasoft.com/v4/practices/##/vendors/###\",\n    \"cost\": \"cost\",\n    \"package_cost\": \"package cost\",\n    \"UPC\": \"UPC\",\n    \"NDC\": \"NDC\",\n    \"mark_up_package_cost\": \"mark up package cost\",\n    \"mark_up_unit_cost\": \"mark up unit cost\",\n    \"expired_date\": \"expired date\",\n    \"mark_up_percent\": \"mark up percent\",\n    \"months\": \"months\",\n    \"container\": \"container\",\n    \"on_order\": \"on order\",\n    \"order_quantity\": \"order quantity\",\n    \"order_pack\": \"order pack\",\n    \"alloted_quantity\": \"alloted quantity\",\n    \"average_unit_cost\": \"average unit cost\",\n    \"average_package_cost\": \"average package cost\",\n    \"discount_class\": \"discount class\",\n    \"received_date\": \"received date\",\n    \"order_number\": \"order number\"\n}\n  ]\n}"
+									"body": "{\n    \"offset\": \"xx\",\n    \"limit\": \"xx\",\n    \"total_count\": \"xx\",\n    \"execution_time\": \"xx\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/veterinary_product_details?offset=xx&limit=xx\",\n        \"previous\": \"previous\",\n        \"current\": \"https://api.sikkasoft.com/v4/veterinary_product_details?offset=xx&limit=xx\",\n        \"next\": \"https://api.sikkasoft.com/v4/veterinary_product_details?offset=xx&limit=xx\",\n        \"last\": \"https://api.sikkasoft.com/v4/veterinary_product_details?offset=xx&limit=xx\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/veterinary_product_details/xxxx\",\n            \"provider_id\": \"provider id\",\n            \"provider_href\": \"\",\n            \"practice_id\": \"practice id\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\n            \"expires_in\": \"expires in\",\n            \"description\": \"description\",\n            \"location\": \"location\",\n            \"category\": \"category\",\n            \"product_id\": \"product id\",\n            \"price\": \"price\",\n            \"on_hand_quantity\": \"on hand quantity\",\n            \"measure\": \"measure\",\n            \"vendor_item_id\": \"vendor item id\",\n            \"manufacturing_number\": \"manufacturing number\",\n            \"vendor_id\": \"vendor id\",\n            \"vendor_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/vendors/xxxx\",\n            \"cost\": \"cost\",\n            \"package_cost\": \"package cost\",\n            \"UPC\": \"UPC\",\n            \"NDC\": \"NDC\",\n            \"mark_up_package_cost\": \"mark up package cost\",\n            \"mark_up_unit_cost\": \"mark up unit cost\",\n            \"expired_date\": \"expired date\",\n            \"mark_up_percent\": \"mark up percent\",\n            \"months\": \"months\",\n            \"container\": \"container\",\n            \"on_order\": \"on order\",\n            \"order_quantity\": \"order quantity\",\n            \"order_pack\": \"order pack\",\n            \"alloted_quantity\": \"alloted quantity\",\n            \"average_unit_cost\": \"average unit cost\",\n            \"average_package_cost\": \"average package cost\",\n            \"discount_class\": \"discount class\",\n            \"received_date\": \"received date\",\n            \"order_number\": \"order number\"\n        }\n    ]\n}"
 								}
 							]
 						},
@@ -7858,6 +7877,97 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\n  \"offset\": \"##\",\n  \"limit\": \"##\",\n  \"total_count\": \"####\",\n  \"execution_time\": \"####\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/products?offset=##&limit=##\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/products?offset=##&limit=##\",\n    \"next\": \"https://api.sikkasoft.com/v4/products?offset=##&limit=##\",\n    \"last\": \"https://api.sikkasoft.com/v4/products?offset=##&limit=##\"\n  },\n  \"items\": [\n    {\n    \"href\": \"https://api.sikkasoft.com/v4/practices/##/products/####\",\n    \"practice_id\": \"practice id\",\n    \"practice_href\": \"https://api.sikkasoft.com/v4/practices/##\",\n    \"description\": \"description\",\n    \"product_id\": \"product id\",\n    \"cost\": \"cost\",\n    \"product_detail_href\": \"https://api.sikkasoft.com/v4/practices/##/veterinary_product_details/####\"\n    },\n    {\n    \"href\": \"https://api.sikkasoft.com/v4/practices/##/products/####\",\n    \"practice_id\": \"practice id\",\n    \"practice_href\": \"https://api.sikkasoft.com/v4/practices/##\",\n    \"description\": \"description\",\n    \"product_id\": \"product id\",\n    \"cost\": \"cost\",\n    \"product_detail_href\": \"https://api.sikkasoft.com/v4/practices/##/veterinary_product_details/####\"\n    }\n    \n  ]\n}"
+								},
+								{
+									"id": "d4c0ca2c-ca6e-4bbf-931a-f7c373dc2773",
+									"name": "products?fields=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "Request-Key",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/products?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"products"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.18.0 (Ubuntu)"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 10 May 2022 11:12:31 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Request-Key-Expires",
+											"value": "Wed, 11 May 2022 09:12:24 GMT"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "origin"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload;"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"offset\": \"xx\",\n    \"limit\": \"xx\",\n    \"total_count\": \"xx\",\n    \"execution_time\": \"xx\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/products?offset=xx&limit=xx\",\n        \"previous\": \"previous\",\n        \"current\": \"https://api.sikkasoft.com/v4/products?offset=xx&limit=xx\",\n        \"next\": \"https://api.sikkasoft.com/v4/products?offset=xx&limit=xx\",\n        \"last\": \"https://api.sikkasoft.com/v4/products?offset=xx&limit=xx\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/products/xxxx\",\n            \"practice_id\": \"practice id\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\n            \"description\": \"description\",\n            \"product_id\": \"product id\",\n            \"cost\": \"cost\",\n            \"product_detail_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/veterinary_product_details/xxxx\"\n        }\n    ]\n}"
 								}
 							]
 						},
@@ -7883,6 +7993,79 @@
 								{
 									"id": "609d078d-2773-4ae1-add8-eebfcfc50e41",
 									"name": "practice_resources",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "Request-Key",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/practice_resources"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.18.0 (Ubuntu)"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 10 May 2022 11:12:31 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Request-Key-Expires",
+											"value": "Wed, 11 May 2022 09:12:24 GMT"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "origin"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload;"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"offset\": \"##\",\n  \"limit\": \"##\",\n  \"total_count\": \"##\",\n  \"execution_time\": \"##\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/practice_resources?offset=##&limit=##\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/practice_resources?offset=##&limit=##\",\n    \"next\": \"https://api.sikkasoft.com/v4/practice_resources?offset=##&limit=##\",\n    \"last\": \"https://api.sikkasoft.com/v4/practice_resources?offset=##&limit=##\"\n  },\n  \"items\": [\n  {\n    \"href\": \"https://api.sikkasoft.com/v4/practices/##/practice_resources/##\",\n    \"practice_id\": \"practice id\",\n    \"practice_href\": \"https://api.sikkasoft.com/v4/practices/##\",\n    \"cust_id\": \"cust id\",\n    \"id\": \"id\",\n    \"resource\": \"resource\",\n    \"common_resource\": \"common resource\"\n  },\n  {\n    \"href\": \"https://api.sikkasoft.com/v4/practices/##/practice_resources/##\",\n    \"practice_id\": \"practice id\",\n    \"practice_href\": \"https://api.sikkasoft.com/v4/practices/##\",\n    \"cust_id\": \"cust id\",\n    \"id\": \"id\",\n    \"resource\": \"resource\",\n    \"common_resource\": \"common resource\"\n  }\n]\n}"
+								},
+								{
+									"id": "e8cb2c17-52c1-487b-98b4-62879e8b992b",
+									"name": "practice_resources?fields=get_all",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
