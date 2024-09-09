@@ -3604,13 +3604,32 @@
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/lab_panels"
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/lab_panels?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"lab_panels"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
 									},
 									"_postman_previewlanguage": null,
 									"header": null,
 									"cookie": [],
 									"responseTime": null,
-									"body": null
+									"body": "{\r\n    \"offset\": \"xx\",\r\n    \"limit\": \"xx\",\r\n    \"total_count\": \"xx\",\r\n    \"execution_time\": \"xx\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/lab_panels?offset=xx&limit=xx\",\r\n        \"previous\": \"previous\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/lab_panels?offset=xx&limit=xx\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/lab_panels?offset=xx&limit=xx\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/lab_panels?offset=xx&limit=xx\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/lab_panels/xxxx\",\r\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/patients/xxxx\",\r\n            \"patient_id\": \"patient id\",\r\n            \"guarantor_id\": \"guarantor id\",\r\n            \"status\": \"status\",\r\n            \"provider_id\": \"provider id\",\r\n            \"provider_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/providers/xxxx\",\r\n            \"practice_id\": \"practice id\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\r\n            \"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/guarantors/xxxx\",\r\n            \"description\": \"description\",\r\n            \"procedure_code_description\": \"procedure code description\",\r\n            \"create_date\": \"create date\",\r\n            \"comments\": \"comments\",\r\n            \"procedure_code_id\": \"procedure code id\",\r\n            \"procedure_code_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/procedure_codes/xxxx\",\r\n            \"lab_name\": \"lab name\",\r\n            \"lab_panel_id\": \"lab panel id\",\r\n            \"modified_date\": \"modified date\"\r\n        }\r\n    ]\r\n}"
 								}
 							]
 						},
@@ -3630,6 +3649,28 @@
 								{
 									"id": "b885e2e8-d6c5-4ce3-ad60-ffb08ce11937",
 									"name": "lab_profiles",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/lab_profiles"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"2\",\n    \"total_count\": \"9344\",\n    \"execution_time\": \"25\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/lab_profiles?offset=0&limit=2\",\n        \"previous\": \"\",\n        \"current\": \"https://api.sikkasoft.com/v4/lab_profiles?offset=0&limit=2\",\n        \"next\": \"https://api.sikkasoft.com/v4/lab_profiles?offset=1&limit=2\",\n        \"last\": \"https://api.sikkasoft.com/v4/lab_profiles?offset=4671&limit=2\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1-1/lab_profiles/9962\",\n            \"practice_id\": \"1-1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-1\",\n            \"cust_id\": \"1\",\n            \"lab_id\": \"XXXX\",\n            \"rowhash\": \"76-17-BC-C3-87-9E-01\",\n            \"profile_id\": \"9962\",\n            \"profile_name\": \"XXXXX\",\n            \"order_no\": \"28665\",\n            \"can_be_requested\": \"Y\",\n            \"profile_type\": \"Profile/Panel\"\n        },\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1-1/lab_profiles/9961\",\n            \"practice_id\": \"1-1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-1\",\n            \"cust_id\": \"1\",\n            \"lab_id\": \"XXXX\",\n            \"rowhash\": \"0A-D1-55-D4-6F-7E-01\",\n            \"profile_id\": \"9961\",\n            \"profile_name\": \"XXXX\",\n            \"order_no\": \"3001M\",\n            \"can_be_requested\": \"Y\",\n            \"profile_type\": \"Profile/Panel\"\n        }\n    ]\n}"
+								},
+								{
+									"id": "57798cd0-aea6-4ab6-bdd1-27afc5a5ce7e",
+									"name": "lab_profiles?fields=get_all",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
