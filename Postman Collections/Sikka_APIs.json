@@ -3443,6 +3443,45 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": null
+								},
+								{
+									"id": "702f6189-a57f-4076-9895-7f04a89669b5",
+									"name": "lab_cases?fields=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/lab_cases?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"lab_cases"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n    \"offset\": \"xx\",\r\n    \"limit\": \"xx\",\r\n    \"total_count\": \"xx\",\r\n    \"execution_time\": \"xx\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/lab_cases?offset=xx&limit=xx\",\r\n        \"previous\": \"previous\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/lab_cases?offset=xx&limit=xx\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/lab_cases?offset=xx&limit=xx\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/lab_cases?offset=xx&limit=xx\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/lab_cases/xxxx\",\r\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/patients/xxxx\",\r\n            \"patient_id\": \"patient id\",\r\n            \"provider_id\": \"provider id\",\r\n            \"provider_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/providers/xxxx\",\r\n            \"practice_id\": \"practice id\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\r\n            \"appointment_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/appointments/\",\r\n            \"transaction_sr_no\": \"transaction sr no\",\r\n            \"transaction_href\": \"\",\r\n            \"amount\": \"amount\",\r\n            \"note\": \"note\",\r\n            \"appointment_sr_no\": \"appointment sr no\",\r\n            \"is_closed\": \"is closed\",\r\n            \"lab_id\": \"lab id\",\r\n            \"date_created\": \"date created\",\r\n            \"receive_date\": \"receive date\",\r\n            \"finish_date\": \"finish date\",\r\n            \"ship_method\": \"ship method\",\r\n            \"ship_trac_number\": \"ship trac number\",\r\n            \"date_sent\": \"date sent\",\r\n            \"case_record_id\": \"case record id\",\r\n            \"lab_case_category\": \"lab case category\",\r\n            \"lab_detail_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/lab_details/xxxx\",\r\n            \"lab_assignment_number\": \"lab assignment number\"\r\n        }\r\n    ]\r\n}"
 								}
 							]
 						},
@@ -3462,6 +3501,26 @@
 								{
 									"id": "d711d44b-b572-4278-a44c-10035ef7e2ef",
 									"name": "lab_details",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/lab_details"
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"500\",\r\n\"total_count\": \"1\",\r\n\"execution_time\": \"17\",\r\n\"pagination\": {\r\n\"first\": \"http://api.sikkasoft.com/v4/lab_details?offset=0&limit=500\",\r\n\"previous\": \"\",\r\n\"current\": \"http://api.sikkasoft.com/v4/lab_details?offset=0&limit=500\",\r\n\"next\": \"\",\r\n\"last\": \"http://api.sikkasoft.com/v4/lab_details?offset=0&limit=500\"\r\n},\r\n\"items\": [\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/lab_details/0\",\r\n\"city\": \"\",\r\n\"state\": \"\",\r\n\"zipcode\": \"\",\r\n\"email\": \"\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"note\": \"\",\r\n\"phone\": \"\",\r\n\"website\": \"\",\r\n\"contact\": \"\",\r\n\"lab_id\": \"0\",\r\n\"lab_name\": \"(In-House)\",\r\n\"address\": \"\",\r\n\"cell_phone\": \"\"\r\n}\r\n]\r\n}"
+								},
+								{
+									"id": "177d7531-19eb-4458-a2d5-fc2a36fc757d",
+									"name": "lab_details Copy",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
