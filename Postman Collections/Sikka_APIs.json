@@ -1791,13 +1791,32 @@
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/insurance_accounts_receivables"
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/insurance_accounts_receivables?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"insurance_accounts_receivables"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
 									},
 									"_postman_previewlanguage": "json",
 									"header": null,
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"1\",\r\n\"total_count\": \"105\",\r\n\"execution_time\": \"39\",\r\n\"pagination\": {\r\n\"first\": \"http://api.sikkasoft.com/v4/insurance_accounts_receivables?offset=0&limit=1\",\r\n\"previous\": \"\",\r\n\"current\": \"http://api.sikkasoft.com/v4/insurance_accounts_receivables?offset=0&limit=1\",\r\n\"next\": \"http://api.sikkasoft.com/v4/insurance_accounts_receivables?offset=1&limit=1\",\r\n\"last\": \"http://api.sikkasoft.com/v4/insurance_accounts_receivables?offset=104&limit=1\"\r\n},\r\n\"items\": [\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/insurance_accounts_receivables/469301\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/469301\",\r\n\"patient_id\": \"469301\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"amount_less_than_30\": \"225.0000\",\r\n\"amount_greater_than_90\": \"0.0000\",\r\n\"amount_between_30_60\": \"0.0000\",\r\n\"amount_between_60_90\": \"0.0000\",\r\n\"estimated_amount_less_than_30\": \"225.0000\",\r\n\"estimated_amount_between_30_60\": \"0.0000\",\r\n\"estimated_amount_between_60_90\": \"0.0000\",\r\n\"estimated_amount_greater_than_90\": \"0.0000\"\r\n}\r\n]\r\n}"
+									"body": "{\r\n    \"offset\": \"xx\",\r\n    \"limit\": \"xx\",\r\n    \"total_count\": \"xx\",\r\n    \"execution_time\": \"xx\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/insurance_accounts_receivables?offset=xx&limit=xx\",\r\n        \"previous\": \"previous\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/insurance_accounts_receivables?offset=xx&limit=xx\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/insurance_accounts_receivables?offset=xx&limit=xx\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/insurance_accounts_receivables?offset=xx&limit=xx\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/insurance_accounts_receivables/xxxx\",\r\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/patients/xxxx\",\r\n            \"patient_id\": \"patient id\",\r\n            \"practice_id\": \"practice id\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\r\n            \"cust_id\": \"cust id\",\r\n            \"amount_between_0_30\": \"amount between 0 30\",\r\n            \"amount_between_31_60\": \"amount between 31 60\",\r\n            \"amount_between_61_90\": \"amount between 61 90\",\r\n            \"amount_greater_than_90\": \"amount greater than 90\",\r\n            \"estimated_amount_between_0_30\": \"estimated amount between 0 30\",\r\n            \"estimated_amount_between_31_60\": \"estimated amount between 31 60\",\r\n            \"estimated_amount_between_61_90\": \"estimated amount between 61 90\",\r\n            \"estimated_amount_greater_than_90\": \"estimated amount greater than 90\"\r\n        }\r\n    ]\r\n}"
 								}
 							]
 						},
@@ -1990,6 +2009,45 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"500\",\r\n\"total_count\": \"28\",\r\n\"execution_time\": \"11\",\r\n\"pagination\": {\r\n\"first\": \"http://api.sikkasoft.com/v4/payment_types?offset=0&limit=500\",\r\n\"previous\": \"\",\r\n\"current\": \"http://api.sikkasoft.com/v4/payment_types?offset=0&limit=500\",\r\n\"next\": \"\",\r\n\"last\": \"http://api.sikkasoft.com/v4/payment_types?offset=0&limit=500\"\r\n},\r\n\"items\": [\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/payment_types/6\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"description\": \"Money Order Payment' Thank You\",\r\n\"code\": \"6\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/payment_types/5\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"description\": \"Walk In Payment' Thank You\",\r\n\"code\": \"5\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/payment_types/4\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"description\": \"Collections Payment' Thank You\",\r\n\"code\": \"4\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/payment_types/3.50\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"description\": \"SDC Software Products\",\r\n\"code\": \"3.50\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/payment_types/3.25\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"description\": \"\",\r\n\"code\": \"3.25\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/payment_types/3\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"description\": \"Check Payment' Thank You\",\r\n\"code\": \"3\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/payment_types/21\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"description\": \"Sent To Collections\",\r\n\"code\": \"21\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/payment_types/2.93\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"description\": \"ERA Payment by EFT\",\r\n\"code\": \"2.93\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/payment_types/2.92\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"description\": \"ERA Payment by Check\",\r\n\"code\": \"2.92\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/payment_types/2.90\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"description\": \"ELECTRONIC FUNDS TRANSFER (EFT)\",\r\n\"code\": \"2.90\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/payment_types/2.06\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"description\": \"Delta Dental Interest Payment\",\r\n\"code\": \"2.06\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/payment_types/2.05\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"description\": \"Insurance Third Payment\",\r\n\"code\": \"2.05\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/payment_types/2.04\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"description\": \"DO NOT USE\",\r\n\"code\": \"2.04\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/payment_types/2.02\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"description\": \"Insurance Secondary Payment\",\r\n\"code\": \"2.02\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/payment_types/2\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"description\": \"Insurance Payment' Thank You\",\r\n\"code\": \"2\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/payment_types/14.92\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"description\": \"American Express Failed Credit Card Authorization\",\r\n\"code\": \"14.92\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/payment_types/14.91\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"description\": \"American Express Automatic Credit Card Payment\",\r\n\"code\": \"14.91\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/payment_types/14\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"description\": \"American Express Payment' Thank You\",\r\n\"code\": \"14\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/payment_types/13.92\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"description\": \"Discover Failed Credit Card Authorization\",\r\n\"code\": \"13.92\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/payment_types/13.91\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"description\": \"Discover Automatic Credit Card Payment\",\r\n\"code\": \"13.91\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/payment_types/13\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"description\": \"CareCredit Payment' Thank You\",\r\n\"code\": \"13\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/payment_types/12.92\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"description\": \"VISA Failed Credit Card Authorization\",\r\n\"code\": \"12.92\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/payment_types/12.91\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"description\": \"VISA Automatic Credit Card Payment\",\r\n\"code\": \"12.91\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/payment_types/12\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"description\": \"Visa Payment' Thank You\",\r\n\"code\": \"12\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/payment_types/11.92\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"description\": \"Mastercard Failed Credit Card Authorization\",\r\n\"code\": \"11.92\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/payment_types/11.91\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"description\": \"Mastercard Payment By Insurance\",\r\n\"code\": \"11.91\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/payment_types/11\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"description\": \"Master Card Payment' Thank You\",\r\n\"code\": \"11\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/payment_types/1\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"description\": \"Cash Payment' Thank You\",\r\n\"code\": \"1\"\r\n}\r\n]\r\n}"
+								},
+								{
+									"id": "2e6716ec-a541-4b2e-b7ba-803c2ba441ff",
+									"name": "payment_types?fields=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/payment_types?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"payment_types"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n    \"offset\": \"xx\",\r\n    \"limit\": \"xx\",\r\n    \"total_count\": \"xx\",\r\n    \"execution_time\": \"xx\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/payment_types?offset=xx&limit=xx\",\r\n        \"previous\": \"previous\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/payment_types?offset=xx&limit=xx\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/payment_types?offset=xx&limit=xx\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/payment_types?offset=xx&limit=xx\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/vxxxx/practices/xxxx-xxxx/payment_types/xxxx\",\r\n            \"practice_id\": \"practice id\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\r\n            \"description\": \"description\",\r\n            \"code\": \"code\",\r\n            \"cust_id\": \"cust id\",\r\n            \"payment_type_status\": \"payment type status\"\r\n        }\r\n    ]\r\n}"
 								}
 							]
 						},
