@@ -3007,13 +3007,32 @@
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/prescriptions"
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/prescriptions?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"prescriptions"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
 									},
 									"_postman_previewlanguage": "json",
 									"header": null,
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"4\",\r\n\"total_count\": \"3195\",\r\n\"execution_time\": \"21\",\r\n\"pagination\": {\r\n\"first\": \"http://api.sikkasoft.com/v4/prescriptions?offset=0&limit=4\",\r\n\"previous\": \"\",\r\n\"current\": \"http://api.sikkasoft.com/v4/prescriptions?offset=0&limit=4\",\r\n\"next\": \"http://api.sikkasoft.com/v4/prescriptions?offset=1&limit=4\",\r\n\"last\": \"http://api.sikkasoft.com/v4/prescriptions?offset=798&limit=4\"\r\n},\r\n\"items\": [\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/prescriptions/3194\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/503701\",\r\n\"patient_id\": \"503701\",\r\n\"provider_id\": \"1\",\r\n\"provider_href\": \"https://api.sikkasoft.com/v4/practices/1/providers/1\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"quantity\": \"21\",\r\n\"date\": \"2020-10-12T00:00:00\",\r\n\"notes\": \"\",\r\n\"drug_id\": \"26\",\r\n\"drug_href\": \"https://api.sikkasoft.com/v4/practices/1/drugs/26\",\r\n\"prescription_id\": \"3194\",\r\n\"refills\": \"\",\r\n\"direction\": \"take 1 every 8hrs till all gone\",\r\n\"days\": \"0\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/prescriptions/3193\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/356301\",\r\n\"patient_id\": \"356301\",\r\n\"provider_id\": \"1\",\r\n\"provider_href\": \"https://api.sikkasoft.com/v4/practices/1/providers/1\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"quantity\": \"\",\r\n\"date\": \"2020-10-02T00:00:00\",\r\n\"notes\": \"\",\r\n\"drug_id\": \"7\",\r\n\"drug_href\": \"https://api.sikkasoft.com/v4/practices/1/drugs/7\",\r\n\"prescription_id\": \"3193\",\r\n\"refills\": \"4\",\r\n\"direction\": \"Rx Peridex (3x16oz)Rinse 1/2oz twice daily\",\r\n\"days\": \"0\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/prescriptions/3192\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/796501\",\r\n\"patient_id\": \"796501\",\r\n\"provider_id\": \"1\",\r\n\"provider_href\": \"https://api.sikkasoft.com/v4/practices/1/providers/1\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"quantity\": \"1 Pack\",\r\n\"date\": \"2020-10-02T00:00:00\",\r\n\"notes\": \"Spoke with pharmacist at Lucky on Mowry Ave to give it as a suspension\",\r\n\"drug_id\": \"24\",\r\n\"drug_href\": \"https://api.sikkasoft.com/v4/practices/1/drugs/24\",\r\n\"prescription_id\": \"3192\",\r\n\"refills\": \"0\",\r\n\"direction\": \"2 tabs on day 1 1 tab every day until gone\",\r\n\"days\": \"0\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/prescriptions/3191\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/227401\",\r\n\"patient_id\": \"227401\",\r\n\"provider_id\": \"1\",\r\n\"provider_href\": \"https://api.sikkasoft.com/v4/practices/1/providers/1\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"quantity\": \"\",\r\n\"date\": \"2020-09-30T00:00:00\",\r\n\"notes\": \"\",\r\n\"drug_id\": \"7\",\r\n\"drug_href\": \"https://api.sikkasoft.com/v4/practices/1/drugs/7\",\r\n\"prescription_id\": \"3191\",\r\n\"refills\": \"4\",\r\n\"direction\": \"Rx Peridex (3x16oz)Rinse 1/2oz twice daily\",\r\n\"days\": \"0\"\r\n}\r\n]\r\n}"
+									"body": "{\r\n    \"offset\": \"xx\",\r\n    \"limit\": \"xx\",\r\n    \"total_count\": \"xx\",\r\n    \"execution_time\": \"xx\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/prescriptions?offset=xx&limit=xx\",\r\n        \"previous\": \"previous\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/prescriptions?offset=xx&limit=xx\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/prescriptions?offset=xx&limit=xx\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/prescriptions?offset=xx&limit=xx\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/prescriptions/xxxx\",\r\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/patients/xxxx\",\r\n            \"patient_id\": \"patient id\",\r\n            \"provider_id\": \"provider id\",\r\n            \"provider_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/providers/xxxx\",\r\n            \"practice_id\": \"practice id\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\r\n            \"quantity\": \"quantity\",\r\n            \"date\": \"date\",\r\n            \"cust_id\": \"cust id\",\r\n            \"notes\": \"notes\",\r\n            \"drug_id\": \"drug id\",\r\n            \"drug_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/drugs/xxxx\",\r\n            \"prescription_id\": \"prescription id\",\r\n            \"refills\": \"refills\",\r\n            \"direction\": \"direction\",\r\n            \"days\": \"days\"\r\n        }\r\n    ]\r\n}"
 								}
 							]
 						},
@@ -3033,6 +3052,26 @@
 								{
 									"id": "3c7ed010-edd9-4a51-b009-950e823fd5bc",
 									"name": "insurance_plan_coverage",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/insurance_plan_coverage"
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"4\",\r\n\"total_count\": \"51900\",\r\n\"execution_time\": \"12\",\r\n\"pagination\": {\r\n\"first\": \"http://api.sikkasoft.com/v4/insurance_plan_coverage?offset=0&limit=4\",\r\n\"previous\": \"\",\r\n\"current\": \"http://api.sikkasoft.com/v4/insurance_plan_coverage?offset=0&limit=4\",\r\n\"next\": \"http://api.sikkasoft.com/v4/insurance_plan_coverage?offset=1&limit=4\",\r\n\"last\": \"http://api.sikkasoft.com/v4/insurance_plan_coverage?offset=12974&limit=4\"\r\n},\r\n\"items\": [\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/insurance_plan_coverage/998\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"insurance_company_id\": \"998\",\r\n\"insurance_company_href\": \"https://api.sikkasoft.com/v4/practices/1/insurance_companies/998\",\r\n\"procedure_code_from\": \"9000.00\",\r\n\"co_pay\": \"0.0000\",\r\n\"procedure_code_to\": \"9999.99\",\r\n\"percentage_covered\": \"80\",\r\n\"category\": \"Adj services\",\r\n\"deductible\": \"Preventive\",\r\n\"is_deductible\": \"0\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/insurance_plan_coverage/998\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"insurance_company_id\": \"998\",\r\n\"insurance_company_href\": \"https://api.sikkasoft.com/v4/practices/1/insurance_companies/998\",\r\n\"procedure_code_from\": \"8000.00\",\r\n\"co_pay\": \"0.0000\",\r\n\"procedure_code_to\": \"8999.99\",\r\n\"percentage_covered\": \"50\",\r\n\"category\": \"Orthodontics\",\r\n\"deductible\": \"Standard\",\r\n\"is_deductible\": \"1\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/insurance_plan_coverage/998\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"insurance_company_id\": \"998\",\r\n\"insurance_company_href\": \"https://api.sikkasoft.com/v4/practices/1/insurance_companies/998\",\r\n\"procedure_code_from\": \"7000.00\",\r\n\"co_pay\": \"0.0000\",\r\n\"procedure_code_to\": \"7999.99\",\r\n\"percentage_covered\": \"80\",\r\n\"category\": \"Oral Surgery\",\r\n\"deductible\": \"Standard\",\r\n\"is_deductible\": \"1\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/insurance_plan_coverage/998\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"insurance_company_id\": \"998\",\r\n\"insurance_company_href\": \"https://api.sikkasoft.com/v4/practices/1/insurance_companies/998\",\r\n\"procedure_code_from\": \"2700.00\",\r\n\"co_pay\": \"0.0000\",\r\n\"procedure_code_to\": \"2899.99\",\r\n\"percentage_covered\": \"50\",\r\n\"category\": \"Crowns\",\r\n\"deductible\": \"Standard\",\r\n\"is_deductible\": \"1\"\r\n}\r\n]\r\n}"
+								},
+								{
+									"id": "afb46f8e-87d4-42e4-ab75-ba96de41a206",
+									"name": "insurance_plan_coverage?fields=get_all",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
