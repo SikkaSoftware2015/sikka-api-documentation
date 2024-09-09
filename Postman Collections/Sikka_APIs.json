@@ -1462,6 +1462,26 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"1\",\n    \"total_count\": \"6686\",\n    \"execution_time\": \"29\",\n    \"pagination\": {\n        \"first\": \"http://api.sikkasoft.com/v4/guarantors_v2?offset=0&limit=1\",\n        \"previous\": \"\",\n        \"current\": \"http://api.sikkasoft.com/v4/guarantors_v2?offset=0&limit=1\",\n        \"next\": \"http://api.sikkasoft.com/v4/guarantors_v2?offset=1&limit=1\",\n        \"last\": \"http://api.sikkasoft.com/v4/guarantors_v2?offset=6685&limit=1\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/guarantors_v2/80010034\",\n            \"guarantor_id\": \"80010034\",\n            \"firstname\": \"Fran\",\n            \"middlename\": \"\",\n            \"lastname\": \"Aar\",\n            \"salutation\": \"\",\n            \"birthdate\": \"1955-05-29T00:00:00\",\n            \"status\": \"active\",\n            \"address_line1\": \"\",\n            \"city\": \"San Jose\",\n            \"state\": \"CA\",\n            \"zipcode\": \"95116\",\n            \"cell\": \"\",\n            \"email\": \"\",\n            \"employer_id\": \"\",\n            \"employer_href\": \"\",\n            \"practice_id\": \"1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\"\n        }\n    ]\n}"
+								},
+								{
+									"id": "4237dd05-ee00-4c48-afa7-8a0f1e1010f7",
+									"name": "guarantors_v2 Copy",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "request-key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/guarantors_v2"
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"1\",\n    \"total_count\": \"6686\",\n    \"execution_time\": \"29\",\n    \"pagination\": {\n        \"first\": \"http://api.sikkasoft.com/v4/guarantors_v2?offset=0&limit=1\",\n        \"previous\": \"\",\n        \"current\": \"http://api.sikkasoft.com/v4/guarantors_v2?offset=0&limit=1\",\n        \"next\": \"http://api.sikkasoft.com/v4/guarantors_v2?offset=1&limit=1\",\n        \"last\": \"http://api.sikkasoft.com/v4/guarantors_v2?offset=6685&limit=1\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/guarantors_v2/80010034\",\n            \"guarantor_id\": \"80010034\",\n            \"firstname\": \"Fran\",\n            \"middlename\": \"\",\n            \"lastname\": \"Aar\",\n            \"salutation\": \"\",\n            \"birthdate\": \"1955-05-29T00:00:00\",\n            \"status\": \"active\",\n            \"address_line1\": \"\",\n            \"city\": \"San Jose\",\n            \"state\": \"CA\",\n            \"zipcode\": \"95116\",\n            \"cell\": \"\",\n            \"email\": \"\",\n            \"employer_id\": \"\",\n            \"employer_href\": \"\",\n            \"practice_id\": \"1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\"\n        }\n    ]\n}"
 								}
 							]
 						},
