@@ -771,7 +771,26 @@
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/veterinary_patients"
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/veterinary_patients?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"veterinary_patients"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
 									},
 									"status": "OK",
 									"code": 200,
@@ -779,7 +798,7 @@
 									"header": null,
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n\t\"offset\": \"0\",\n\t\"limit\": \"2\",\n\t\"total_count\": \"9475\",\n\t\"execution_time\": \"52\",\n\t\"pagination\": {\n\t\t\"first\": \"https://api.sikkasoft.com/v4/veterinary_patients?offset=0&limit=2\",\n\t\t\"previous\": \"\",\n\t\t\"current\": \"https://api.sikkasoft.com/v4/veterinary_patients?offset=0&limit=2\",\n\t\t\"next\": \"https://api.sikkasoft.com/v4/veterinary_patients?offset=1&limit=2\",\n\t\t\"last\": \"https://api.sikkasoft.com/v4/veterinary_patients?offset=4737&limit=2\"\n\t},\n\t\"items\": [\n\t\t{\n\t\t\t\"href\": \"https://api.sikkasoft.com/v4/practices/1-1/patients/19747\",\n\t\t\t\"patient_id\": \"19747\",\n\t\t\t\"guarantor_id\": \"6214\",\n\t\t\t\"firstname\": \"tomy\",\n\t\t\t\"middlename\": \"\",\n\t\t\t\"lastname\": \"\",\n\t\t\t\"preferred_name\": \"\",\n\t\t\t\"salutation\": \"\",\n\t\t\t\"birthdate\": \"2013-10-09T00:00:00\",\n\t\t\t\"status\": \"Active\",\n\t\t\t\"patient_note\": \"\",\n\t\t\t\"medical_note\": \"\",\n\t\t\t\"alert_note\": \"\",\n\t\t\t\"other_note\": \"\",\n\t\t\t\"gender\": \"Neutered Male\",\n\t\t\t\"address_line1\": \"******\",\n\t\t\t\"address_line2\": \"\",\n\t\t\t\"city\": \"Newport News\",\n\t\t\t\"state\": \"VA\",\n\t\t\t\"zipcode\": \"23602\",\n\t\t\t\"homephone\": \"\",\n\t\t\t\"workphone\": \"\",\n\t\t\t\"cell\": \"111******\",\n\t\t\t\"email\": \"ab**cbhwe**@gmail.com\",\n\t\t\t\"employer_id\": \"\",\n\t\t\t\"employer_href\": \"\",\n\t\t\t\"billing_type\": \"\",\n\t\t\t\"first_visit\": \"2017-05-16T00:00:00\",\n\t\t\t\"last_visit\": \"2021-11-17T00:00:00\",\n\t\t\t\"provider_id\": \"\",\n\t\t\t\"provider_href\": \"\",\n\t\t\t\"practice_id\": \"1-1\",\n\t\t\t\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-1\",\n\t\t\t\"appointment_href\": \"https://api.sikkasoft.com/v4/practices/1-1/appointments?patient_id=19747\",\n\t\t\t\"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/1-1/guarantors/6214\",\n\t\t\t\"primary_insurance_company_id\": \"\",\n\t\t\t\"primary_insurance_company_href\": \"\",\n\t\t\t\"secondary_insurance_company_id\": \"\",\n\t\t\t\"secondary_insurance_company_href\": \"\",\n\t\t\t\"primary_relationship\": \"\",\n\t\t\t\"secondary_relationship\": \"\",\n\t\t\t\"subscriber_id\": \"\",\n\t\t\t\"other_referral\": \"\",\n\t\t\t\"patient_referral\": \"\",\n\t\t\t\"referred_out\": \"Null\",\n\t\t\t\"referred_by_provider_id\": \"\",\n\t\t\t\"referred_by_patient_id\": \"\",\n\t\t\t\"fee_no\": \"\",\n\t\t\t\"guarantor_first_name\": \"abcd\",\n\t\t\t\"guarantor_last_name\": \"Test\",\n\t\t\t\"created_date\": \"\",\n\t\t\t\"family_veterinarian\": \"\",\n\t\t\t\"patient_codes\": \"\",\n\t\t\t\"primary_insurance\": \"\",\n\t\t\t\"secondary_insurance\": \"\",\n\t\t\t\"other_phone\": \"\",\n\t\t\t\"preferred_communication_method\": \"\",\n\t\t\t\"ui_patient_id\": \"\",\n\t\t\t\"petname\": \"Hunter\",\n\t\t\t\"marital_status\": \"\",\n\t\t\t\"breed\": \"T Yor\",\n\t\t\t\"species\": \"Cne\",\n\t\t\t\"color\": \"Black\",\n\t\t\t\"weight\": \"11.9\",\n\t\t\t\"height\": \"\",\n\t\t\t\"weight_type\": \"pounds\",\n\t\t\t\"rabies\": \"\",\n\t\t\t\"feed\": \"\",\n\t\t\t\"diet\": \"\",\n\t\t\t\"trainer\": \"\",\n\t\t\t\"registered_name\": \"\",\n\t\t\t\"registered_number\": \"\",\n\t\t\t\"relative_name\": \"\",\n\t\t\t\"codes\": \"\",\n\t\t\t\"license\": \"\",\n\t\t\t\"preffered_contact\": \"\",\n\t\t\t\"added_by\": \"\",\n\t\t\t\"age\": \"8Yrs. 10Mos.\",\n\t\t\t\"code\": \"\",\n\t\t\t\"certificate\": \"\",\n\t\t\t\"epet_record_id\": \"\",\n\t\t\t\"microchip\": \"\",\n\t\t\t\"plan\": \"\",\n\t\t\t\"pet_class\": \"Family Pet\",\n\t\t\t\"suspended_date\": \"\",\n\t\t\t\"deceased_date\": \"\",\n\t\t\t\"mixed\": \"\",\n\t\t\t\"client_class\": \"\",\n\t\t\t\"cust_id\": \"1\",\n\t\t\t\"guarantor_bill_type\": \"\",\n\t\t\t\"guarantor_bill_type_description\": \"\",\n\t\t\t\"bill_type\": \"\",\n\t\t\t\"guarantor_patient_id\": \"\",\n\t\t\t\"rowhash\": \"D6-72-38-AD-E4-D2-02\"\n\t\t},\n\t\t{\n\t\t\t\"href\": \"https://api.sikkasoft.com/v4/practices/1-1/patients/16169\",\n\t\t\t\"patient_id\": \"16169\",\n\t\t\t\"guarantor_id\": \"5419\",\n\t\t\t\"firstname\": \"dsdsd\",\n\t\t\t\"middlename\": \"\",\n\t\t\t\"lastname\": \"\",\n\t\t\t\"preferred_name\": \"\",\n\t\t\t\"salutation\": \"\",\n\t\t\t\"birthdate\": \"2017-08-24T00:00:00\",\n\t\t\t\"status\": \"Active\",\n\t\t\t\"patient_note\": \"\",\n\t\t\t\"medical_note\": \"\",\n\t\t\t\"alert_note\": \"\",\n\t\t\t\"other_note\": \"\",\n\t\t\t\"gender\": \"Spayed Female\",\n\t\t\t\"address_line1\": \"fdfsf****\",\n\t\t\t\"address_line2\": \"\",\n\t\t\t\"city\": \"Newport News\",\n\t\t\t\"state\": \"VA\",\n\t\t\t\"zipcode\": \"23601\",\n\t\t\t\"homephone\": \"\",\n\t\t\t\"workphone\": \"\",\n\t\t\t\"cell\": \"44444d****\",\n\t\t\t\"email\": \"fsdf****@yahoo.com\",\n\t\t\t\"employer_id\": \"\",\n\t\t\t\"employer_href\": \"\",\n\t\t\t\"billing_type\": \"\",\n\t\t\t\"first_visit\": \"2022-08-24T00:00:00\",\n\t\t\t\"last_visit\": \"\",\n\t\t\t\"provider_id\": \"\",\n\t\t\t\"provider_href\": \"\",\n\t\t\t\"practice_id\": \"1-1\",\n\t\t\t\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-1\",\n\t\t\t\"appointment_href\": \"https://api.sikkasoft.com/v4/practices/1-1/appointments?patient_id=16169\",\n\t\t\t\"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/1-1/guarantors/5419\",\n\t\t\t\"primary_insurance_company_id\": \"\",\n\t\t\t\"primary_insurance_company_href\": \"\",\n\t\t\t\"secondary_insurance_company_id\": \"\",\n\t\t\t\"secondary_insurance_company_href\": \"\",\n\t\t\t\"primary_relationship\": \"\",\n\t\t\t\"secondary_relationship\": \"\",\n\t\t\t\"subscriber_id\": \"\",\n\t\t\t\"other_referral\": \"\",\n\t\t\t\"patient_referral\": \"\",\n\t\t\t\"referred_out\": \"Null\",\n\t\t\t\"referred_by_provider_id\": \"\",\n\t\t\t\"referred_by_patient_id\": \"\",\n\t\t\t\"fee_no\": \"\",\n\t\t\t\"guarantor_first_name\": \"fdf**fsfd\",\n\t\t\t\"guarantor_last_name\": \"fdf**re\",\n\t\t\t\"created_date\": \"\",\n\t\t\t\"family_veterinarian\": \"\",\n\t\t\t\"patient_codes\": \"\",\n\t\t\t\"primary_insurance\": \"\",\n\t\t\t\"secondary_insurance\": \"\",\n\t\t\t\"other_phone\": \"0000***0000\",\n\t\t\t\"preferred_communication_method\": \"\",\n\t\t\t\"ui_patient_id\": \"\",\n\t\t\t\"petname\": \"Stevie\",\n\t\t\t\"marital_status\": \"\",\n\t\t\t\"breed\": \"Sdsdic\",\n\t\t\t\"species\": \"Felidsd\",\n\t\t\t\"color\": \"Gray/White\",\n\t\t\t\"weight\": \"12\",\n\t\t\t\"height\": \"\",\n\t\t\t\"weight_type\": \"pounds\",\n\t\t\t\"rabies\": \"\",\n\t\t\t\"feed\": \"\",\n\t\t\t\"diet\": \"\",\n\t\t\t\"trainer\": \"\",\n\t\t\t\"registered_name\": \"\",\n\t\t\t\"registered_number\": \"\",\n\t\t\t\"relative_name\": \"\",\n\t\t\t\"codes\": \"\",\n\t\t\t\"license\": \"\",\n\t\t\t\"preffered_contact\": \"\",\n\t\t\t\"added_by\": \"\",\n\t\t\t\"age\": \"5Yrs. 0Mos.\",\n\t\t\t\"code\": \"\",\n\t\t\t\"certificate\": \"\",\n\t\t\t\"epet_record_id\": \"\",\n\t\t\t\"microchip\": \"\",\n\t\t\t\"plan\": \"\",\n\t\t\t\"pet_class\": \"Family Pet\",\n\t\t\t\"suspended_date\": \"\",\n\t\t\t\"deceased_date\": \"\",\n\t\t\t\"mixed\": \"\",\n\t\t\t\"client_class\": \"Pet Owner\",\n\t\t\t\"cust_id\": \"1\",\n\t\t\t\"guarantor_bill_type\": \"\",\n\t\t\t\"guarantor_bill_type_description\": \"\",\n\t\t\t\"bill_type\": \"\",\n\t\t\t\"guarantor_patient_id\": \"\",\n\t\t\t\"rowhash\": \"C7-73-75-2A-A6-B5-03\"\n\t\t}\n\t]\n}"
+									"body": "{\n    \"offset\": \"xx\",\n    \"limit\": \"xx\",\n    \"total_count\": \"xx\",\n    \"execution_time\": \"xx\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/veterinary_patients?offset=xx&limit=xx\",\n        \"previous\": \"previous\",\n        \"current\": \"https://api.sikkasoft.com/v4/veterinary_patients?offset=xx&limit=xx\",\n        \"next\": \"https://api.sikkasoft.com/v4/veterinary_patients?offset=xx&limit=xx\",\n        \"last\": \"https://api.sikkasoft.com/v4/veterinary_patients?offset=xx&limit=xx\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/patients/xxxx\",\n            \"patient_id\": \"patient id\",\n            \"guarantor_id\": \"guarantor id\",\n            \"firstname\": \"firstname\",\n            \"middlename\": \"middlename\",\n            \"lastname\": \"lastname\",\n            \"preferred_name\": \"preferred name\",\n            \"salutation\": \"salutation\",\n            \"birthdate\": \"birthdate\",\n            \"status\": \"status\",\n            \"patient_note\": \"patient note\",\n            \"medical_note\": \"medical note\",\n            \"alert_note\": \"alert note\",\n            \"other_note\": \"other note\",\n            \"gender\": \"gender\",\n            \"address_line1\": \"address line1\",\n            \"address_line2\": \"address line2\",\n            \"city\": \"city\",\n            \"state\": \"state\",\n            \"zipcode\": \"zipcode\",\n            \"homephone\": \"homephone\",\n            \"workphone\": \"workphone\",\n            \"cell\": \"cell\",\n            \"email\": \"email\",\n            \"employer_id\": \"employer id\",\n            \"employer_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/employers/\",\n            \"billing_type\": \"billing type\",\n            \"first_visit\": \"first visit\",\n            \"last_visit\": \"last visit\",\n            \"provider_id\": \"provider id\",\n            \"provider_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/providers/xxxx\",\n            \"practice_id\": \"practice id\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\n            \"appointment_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/appointments?patient_id=xxxx\",\n            \"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/guarantors/xxxx\",\n            \"primary_insurance_company_id\": \"primary insurance company id\",\n            \"primary_insurance_company_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/insurance_companies/\",\n            \"secondary_insurance_company_id\": \"secondary insurance company id\",\n            \"secondary_insurance_company_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/insurance_companies/\",\n            \"primary_relationship\": \"primary relationship\",\n            \"secondary_relationship\": \"secondary relationship\",\n            \"subscriber_id\": \"subscriber id\",\n            \"other_referral\": \"other referral\",\n            \"patient_referral\": \"patient referral\",\n            \"referred_out\": \"referred out\",\n            \"referred_by_provider_id\": \"referred by provider id\",\n            \"referred_by_patient_id\": \"referred by patient id\",\n            \"fee_no\": \"fee no\",\n            \"guarantor_first_name\": \"guarantor first name\",\n            \"guarantor_last_name\": \"guarantor last name\",\n            \"created_date\": \"created date\",\n            \"family_veterinarian\": \"family veterinarian\",\n            \"patient_codes\": \"patient codes\",\n            \"primary_insurance\": \"primary insurance\",\n            \"secondary_insurance\": \"secondary insurance\",\n            \"other_phone\": \"other phone\",\n            \"preferred_communication_method\": \"preferred communication method\",\n            \"ui_patient_id\": \"ui patient id\",\n            \"petname\": \"petname\",\n            \"marital_status\": \"marital status\",\n            \"breed\": \"breed\",\n            \"species\": \"species\",\n            \"color\": \"color\",\n            \"weight\": \"weight\",\n            \"height\": \"height\",\n            \"weight_type\": \"weight type\",\n            \"rabies\": \"rabies\",\n            \"feed\": \"feed\",\n            \"diet\": \"diet\",\n            \"trainer\": \"trainer\",\n            \"registered_name\": \"registered name\",\n            \"registered_number\": \"registered number\",\n            \"relative_name\": \"relative name\",\n            \"codes\": \"codes\",\n            \"license\": \"license\",\n            \"preffered_contact\": \"preffered contact\",\n            \"added_by\": \"added by\",\n            \"age\": \"age\",\n            \"code\": \"code\",\n            \"certificate\": \"certificate\",\n            \"epet_record_id\": \"epet record id\",\n            \"microchip\": \"microchip\",\n            \"plan\": \"plan\",\n            \"pet_class\": \"pet class\",\n            \"suspended_date\": \"suspended date\",\n            \"deceased_date\": \"deceased date\",\n            \"mixed\": \"mixed\",\n            \"client_class\": \"client class\",\n            \"cust_id\": \"cust id\",\n            \"guarantor_bill_type\": \"guarantor bill type\",\n            \"guarantor_bill_type_description\": \"guarantor bill type description\",\n            \"bill_type\": \"bill type\",\n            \"guarantor_patient_id\": \"guarantor patient id\",\n            \"rowhash\": \"rowhash\",\n            \"chart_number\": \"chart number\",\n            \"preferred_recall_method\": \"preferred recall method\",\n            \"exclude_message\": \"exclude message\",\n            \"extension\": \"extension\"\n        }\n    ]\n}"
 								}
 							]
 						},
@@ -1232,6 +1251,89 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"1\",\n    \"total_count\": \"25106\",\n    \"execution_time\": \"846\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/contact_details?offset=0&limit=1\",\n        \"previous\": \"\",\n        \"current\": \"https://api.sikkasoft.com/v4/contact_details?offset=0&limit=1\",\n        \"next\": \"https://api.sikkasoft.com/v4/contact_details?offset=1&limit=1\",\n        \"last\": \"https://api.sikkasoft.com/v4/contact_details?offset=25105&limit=1\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/contact_details/99901\",\n            \"practice_id\": \"1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\n            \"uid\": \"99901\",\n            \"contact_of\": \"Patient\",\n            \"contact_type\": \"Home Phone\",\n            \"contact_value\": \"xxx-xxx-xxxx\",\n            \"label\": \"\"\n        }\n    ]\n}"
+								},
+								{
+									"id": "d5ecb05a-6a1e-421f-97e6-379c731a633c",
+									"name": "contact_details?fields=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "request-key",
+												"value": "<request_key>",
+												"type": "text",
+												"disabled": true
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/contact_details",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"contact_details"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding"
+										},
+										{
+											"key": "Server",
+											"value": "Microsoft-IIS/8.5"
+										},
+										{
+											"key": "Request-Key-Expires",
+											"value": "Tue, 06 Oct 2020 21:17:54 GMT"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "ASP.NET"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 06 Oct 2020 20:40:47 GMT"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload;"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"offset\": \"xx\",\n    \"limit\": \"xx\",\n    \"total_count\": \"xx\",\n    \"execution_time\": \"xx\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/contact_details?offset=xx&limit=xx\",\n        \"previous\": \"previous\",\n        \"current\": \"https://api.sikkasoft.com/v4/contact_details?offset=xx&limit=xx\",\n        \"next\": \"https://api.sikkasoft.com/v4/contact_details?offset=xx&limit=xx\",\n        \"last\": \"https://api.sikkasoft.com/v4/contact_details?offset=xx&limit=xx\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/contact_details/xxxx\",\n            \"practice_id\": \"practice id\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\n            \"uid\": \"uid\",\n            \"contact_of\": \"contact of\",\n            \"contact_type\": \"contact type\",\n            \"contact_value\": \"contact value\",\n            \"label\": \"label\"\n        }\n    ]\n}"
 								}
 							]
 						},
