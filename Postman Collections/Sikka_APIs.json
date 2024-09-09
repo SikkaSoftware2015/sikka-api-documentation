@@ -8620,6 +8620,98 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\n  \"offset\": \"##\",\n  \"limit\": \"##\",\n  \"total_count\": \"##\",\n  \"execution_time\": \"##\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/hearing_aid_products?offset##&limit=##\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/hearing_aid_products?offset##&limit=##\",\n    \"next\": \"https://api.sikkasoft.com/v4/hearing_aid_products?offset=##&limit=##\",\n    \"last\": \"https://api.sikkasoft.com/v4/hearing_aid_products?offset=##&limit=##\"\n  },\n  \"items\": [\n      {\n      \"href\": \"https://api.sikkasoft.com/v4/practices/####/hearing_aid_products/####\",\n      \"practice_id\": \"practice id\",\n      \"practice_href\": \"https://api.sikkasoft.com/v4/practices/####\",\n      \"type\": \"type\",\n      \"price\": \"price\",\n      \"manufacturer_id\": \"manufacturer id\",\n      \"manufacturer\": \"manufacturer\",\n      \"battery\": \"battery\",\n      \"tax\": \"tax\",\n      \"technology\": \"technology\",\n      \"manufacturer_href\": \"https://api.sikkasoft.com/v4/practices/####/manufacturers/####\",\n      \"model_id\": \"model id\",\n      \"qb_id\": \"qb id\",\n      \"model\": \"model\"\n  }\n  ]\n}"
+								},
+								{
+									"id": "29e88a81-a97f-43ab-96e1-1901e56b95a9",
+									"name": "hearing_aid_products?fields=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "Request-Key",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/hearing_aid_products?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"hearing_aid_products"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.18.0 (Ubuntu)"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 10 May 2022 11:12:31 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Request-Key-Expires",
+											"value": "Wed, 11 May 2022 09:12:24 GMT"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "origin"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload;"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"offset\": \"xx\",\n    \"limit\": \"xx\",\n    \"total_count\": \"xx\",\n    \"execution_time\": \"xx\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/hearing_aid_products?offset=xx&limit=xx\",\n        \"previous\": \"previous\",\n        \"current\": \"https://api.sikkasoft.com/v4/hearing_aid_products?offset=xx&limit=xx\",\n        \"next\": \"https://api.sikkasoft.com/v4/hearing_aid_products?offset=xx&limit=xx\",\n        \"last\": \"https://api.sikkasoft.com/v4/hearing_aid_products?offset=xx&limit=xx\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx-xxxx/hearing_aid_products/xxxx\",\n            \"practice_id\": \"practice id\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\n            \"type\": \"type\",\n            \"price\": \"price\",\n            \"manufacturer_id\": \"manufacturer id\",\n            \"manufacturer\": \"manufacturer\",\n            \"battery\": \"battery\",\n            \"tax\": \"tax\",\n            \"technology\": \"technology\",\n            \"manufacturer_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/manufacturers/xxxx\",\n            \"model_id\": \"model id\",\n            \"qb_id\": \"qb id\",\n            \"model\": \"model\"\n        }\n    ]\n}"
 								}
 							]
 						},
@@ -8645,6 +8737,79 @@
 								{
 									"id": "4bfae317-2f19-418e-9a99-4b3dd9dc155c",
 									"name": "hearing_care_product_details",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "Request-Key",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/hearing_care_product_details"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.18.0 (Ubuntu)"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 10 May 2022 11:12:31 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Request-Key-Expires",
+											"value": "Wed, 11 May 2022 09:12:24 GMT"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "origin"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload;"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"offset\": \"##\",\n  \"limit\": \"##\",\n  \"total_count\": \"##\",\n  \"execution_time\": \"##\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/hearing_care_product_details?offset=##&limit=##\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/hearing_care_product_details?offset=##&limit=##\",\n    \"next\": \"https://api.sikkasoft.com/v4/hearing_care_product_details?offset=##&limit=##\",\n    \"last\": \"https://api.sikkasoft.com/v4/hearing_care_product_details?offset=##&limit=##\"\n  },\n  \"items\": [\n    {\n    \"href\": \"https://api.sikkasoft.com/v4/practices/####/hearing_care_product_details/####\",\n    \"practice_id\": \"practice id\",\n    \"practice_href\": \"https://api.sikkasoft.com/v4/practices/####\",\n    \"product_id\": \"product id\",\n    \"price\": \"price\",\n    \"manufacturer_id\": \"manufacturer id\",\n    \"battery\": \"battery\",\n    \"quickbooks_id\": \"quickbooks id\",\n    \"tax\": \"tax\",\n    \"technology\": \"technology\",\n    \"HAtype\": \"HAtype\",\n    \"manufacturer_href\": \"https://api.sikkasoft.com/v4/practices/####/manufacturers/####\"\n\t}\n  ]\n}"
+								},
+								{
+									"id": "87da3fd6-4aab-4ec8-bb66-d94a2613177c",
+									"name": "hearing_care_product_details?fields=get_all",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
