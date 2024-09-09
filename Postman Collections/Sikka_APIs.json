@@ -2083,6 +2083,45 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"500\",\r\n\"total_count\": \"1\",\r\n\"execution_time\": \"11\",\r\n\"pagination\": {\r\n\"first\": \"http://api.sikkasoft.com/v4/payment_plans?offset=0&limit=500\",\r\n\"previous\": \"\",\r\n\"current\": \"http://api.sikkasoft.com/v4/payment_plans?offset=0&limit=500\",\r\n\"next\": \"\",\r\n\"last\": \"http://api.sikkasoft.com/v4/payment_plans?offset=0&limit=500\"\r\n},\r\n\"items\": [\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/6/payment_plans/51\",\r\n\"patient_href\": \"\",\r\n\"patient_id\": \"\",\r\n\"guarantor_id\": \"763\",\r\n\"practice_id\": \"6\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/6\",\r\n\"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/6/guarantors/763\",\r\n\"note\": \"***CLEARED***PMT AGREEMENT: 09/29/2009  FC: 0.000%INTERVAL: Monthly  BALANCE FOR PA: 235.00  FIRST DUE: 10/29/2009PMT AMT: 100.00  BAL REMAINING: 235.00  AMT PAST DUE: 0.00LAST PMT: 0.00  None\",\r\n\"description\": \"\",\r\n\"payment_amount\": \"100.0000\",\r\n\"agreement_id\": \"51\",\r\n\"agreemen_type\": \"\",\r\n\"number_of_payments\": \"4\",\r\n\"paymen_interval\": \"Monthly\",\r\n\"create_date\": \"2009-09-29T00:00:00\",\r\n\"startdate\": \"2009-10-29T00:00:00\",\r\n\"enddate\": \"\",\r\n\"interest_rate\": \"0\",\r\n\"loan_amount\": \"385.0000\",\r\n\"remaining_balance\": \"185.0000\",\r\n\"down_payment\": \"\",\r\n\"finance_charges\": \"0.0000\",\r\n\"late_charges\": \"0.0000\",\r\n\"grace_period\": \"0\",\r\n\"minimum_balance_to_charge\": \"0.0100\",\r\n\"is_closed\": \"False\"\r\n}\r\n]\r\n}"
+								},
+								{
+									"id": "b8445cca-c1cf-47d7-9f5d-9bde6ba68e94",
+									"name": "payment_plans?fields=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/payment_plans?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"payment_plans"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n    \"offset\": \"xx\",\r\n    \"limit\": \"xx\",\r\n    \"total_count\": \"xx\",\r\n    \"execution_time\": \"xx\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/payment_plans?offset=xx&limit=xx\",\r\n        \"previous\": \"previous\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/payment_plans?offset=xx&limit=xx\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/payment_plans?offset=xx&limit=xx\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/payment_plans?offset=xx&limit=xx\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/vxxxx/practices/xxxx-xxxx/payment_plans/xxxx\",\r\n            \"patient_href\": \"https://api.sikkasoft.com/vxxxx/practices/xxxx-xxxx/patients/xxxx\",\r\n            \"patient_id\": \"patient id\",\r\n            \"guarantor_id\": \"guarantor id\",\r\n            \"practice_id\": \"practice id\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\r\n            \"guarantor_href\": \"https://api.sikkasoft.com/vxxxx/practices/xxxx/guarantors/xxxx\",\r\n            \"note\": \"note\",\r\n            \"description\": \"description\",\r\n            \"cust_id\": \"cust id\",\r\n            \"payment_amount\": \"payment amount\",\r\n            \"agreement_id\": \"agreement id\",\r\n            \"agreemen_type\": \"agreemen type\",\r\n            \"number_of_payments\": \"number of payments\",\r\n            \"payment_interval\": \"payment interval\",\r\n            \"create_date\": \"create date\",\r\n            \"startdate\": \"startdate\",\r\n            \"enddate\": \"enddate\",\r\n            \"interest_rate\": \"interest rate\",\r\n            \"loan_amount\": \"loan amount\",\r\n            \"remaining_balance\": \"remaining balance\",\r\n            \"down_payment\": \"down payment\",\r\n            \"finance_charges\": \"finance charges\",\r\n            \"late_charges\": \"late charges\",\r\n            \"grace_period\": \"grace period\",\r\n            \"minimum_balance_to_charge\": \"minimum balance to charge\",\r\n            \"is_closed\": \"is closed\"\r\n        }\r\n    ]\r\n}"
 								}
 							]
 						},
