@@ -9433,7 +9433,7 @@
 								},
 								{
 									"id": "669d81b5-8ef5-4eee-9b3e-23fd4dd3743a",
-									"name": "patient360 Copy",
+									"name": "patient360?fields=get_all",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
