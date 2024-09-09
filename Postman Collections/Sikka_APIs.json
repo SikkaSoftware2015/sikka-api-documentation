@@ -2231,44 +2231,6 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"4\",\r\n\"total_count\": \"150610\",\r\n\"execution_time\": \"86\",\r\n\"pagination\": {\r\n\"first\": \"http://api.sikkasoft.com/v4/patient_contract_roll_charges?offset=0&limit=4\",\r\n\"previous\": \"\",\r\n\"current\": \"http://api.sikkasoft.com/v4/patient_contract_roll_charges?offset=0&limit=4\",\r\n\"next\": \"http://api.sikkasoft.com/v4/patient_contract_roll_charges?offset=1&limit=4\",\r\n\"last\": \"http://api.sikkasoft.com/v4/patient_contract_roll_charges?offset=37652&limit=4\"\r\n},\r\n\"items\": [\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1-1/patient_contract_roll_charges/564858\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1-1/patients/564858\",\r\n\"patient_id\": \"564858\",\r\n\"guarantor_id\": \"27124\",\r\n\"firstname\": \"A\",\r\n\"lastname\": \"Kng\",\r\n\"provider_id\": \"86\",\r\n\"provider_href\": \"https://api.sikkasoft.com/v4/practices/1-1/providers/86\",\r\n\"practice_id\": \"1-1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-1\",\r\n\"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/1-1/guarantors/27124\",\r\n\"transaction_type\": \"Initial fee(contract)\",\r\n\"description\": \"Invisalign - Initial Fee (Contract)\",\r\n\"contract_due_date\": \"2020-09-28T00:00:00\",\r\n\"roll_amount\": \"500\",\r\n\"ledger_type\": \"2\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1-1/patient_contract_roll_charges/564858\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1-1/patients/564858\",\r\n\"patient_id\": \"564858\",\r\n\"guarantor_id\": \"27124\",\r\n\"firstname\": \"A\",\r\n\"lastname\": \"Kng\",\r\n\"provider_id\": \"86\",\r\n\"provider_href\": \"https://api.sikkasoft.com/v4/practices/1-1/providers/86\",\r\n\"practice_id\": \"1-1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-1\",\r\n\"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/1-1/guarantors/27124\",\r\n\"transaction_type\": \"Contract Charge\",\r\n\"description\": \"Invisalign - Contract Charge\",\r\n\"contract_due_date\": \"2020-10-01T00:00:00\",\r\n\"roll_amount\": \"500\",\r\n\"ledger_type\": \"3\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1-1/patient_contract_roll_charges/564857\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1-1/patients/564857\",\r\n\"patient_id\": \"564857\",\r\n\"guarantor_id\": \"31075\",\r\n\"firstname\": \"R\",\r\n\"lastname\": \"R\",\r\n\"provider_id\": \"86\",\r\n\"provider_href\": \"https://api.sikkasoft.com/v4/practices/1-1/providers/86\",\r\n\"practice_id\": \"1-1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-1\",\r\n\"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/1-1/guarantors/31075\",\r\n\"transaction_type\": \"Initial fee(contract)\",\r\n\"description\": \"Full braces - Initial Fee (Contract)\",\r\n\"contract_due_date\": \"2020-09-28T00:00:00\",\r\n\"roll_amount\": \"250\",\r\n\"ledger_type\": \"2\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1-1/patient_contract_roll_charges/564857\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1-1/patients/564857\",\r\n\"patient_id\": \"564857\",\r\n\"guarantor_id\": \"31075\",\r\n\"firstname\": \"A\",\r\n\"lastname\": \"R\",\r\n\"provider_id\": \"86\",\r\n\"provider_href\": \"https://api.sikkasoft.com/v4/practices/1-1/providers/86\",\r\n\"practice_id\": \"1-1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-1\",\r\n\"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/1-1/guarantors/31075\",\r\n\"transaction_type\": \"Contract Charge\",\r\n\"description\": \"Full braces - Contract Charge\",\r\n\"contract_due_date\": \"2020-10-01T00:00:00\",\r\n\"roll_amount\": \"250\",\r\n\"ledger_type\": \"3\"\r\n}\r\n]\r\n}"
-								},
-								{
-									"id": "9141af3a-12c6-40c6-a19f-eed850f13699",
-									"name": "patient_contract_roll_charges?fields=get_all",
-									"originalRequest": {
-										"method": "GET",
-										"header": [
-											{
-												"key": "Request-Key",
-												"value": "<request_key>",
-												"type": "text"
-											}
-										],
-										"url": {
-											"raw": "https://api.sikkasoft.com/v4/patient_contract_roll_charges?fields=get_all",
-											"protocol": "https",
-											"host": [
-												"api",
-												"sikkasoft",
-												"com"
-											],
-											"path": [
-												"v4",
-												"patient_contract_roll_charges"
-											],
-											"query": [
-												{
-													"key": "fields",
-													"value": "get_all"
-												}
-											]
-										}
-									},
-									"_postman_previewlanguage": "json",
-									"header": null,
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"4\",\r\n\"total_count\": \"150610\",\r\n\"execution_time\": \"86\",\r\n\"pagination\": {\r\n\"first\": \"http://api.sikkasoft.com/v4/patient_contract_roll_charges?offset=0&limit=4\",\r\n\"previous\": \"\",\r\n\"current\": \"http://api.sikkasoft.com/v4/patient_contract_roll_charges?offset=0&limit=4\",\r\n\"next\": \"http://api.sikkasoft.com/v4/patient_contract_roll_charges?offset=1&limit=4\",\r\n\"last\": \"http://api.sikkasoft.com/v4/patient_contract_roll_charges?offset=37652&limit=4\"\r\n},\r\n\"items\": [\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1-1/patient_contract_roll_charges/564858\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1-1/patients/564858\",\r\n\"patient_id\": \"564858\",\r\n\"guarantor_id\": \"27124\",\r\n\"firstname\": \"A\",\r\n\"lastname\": \"Kng\",\r\n\"provider_id\": \"86\",\r\n\"provider_href\": \"https://api.sikkasoft.com/v4/practices/1-1/providers/86\",\r\n\"practice_id\": \"1-1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-1\",\r\n\"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/1-1/guarantors/27124\",\r\n\"transaction_type\": \"Initial fee(contract)\",\r\n\"description\": \"Invisalign - Initial Fee (Contract)\",\r\n\"contract_due_date\": \"2020-09-28T00:00:00\",\r\n\"roll_amount\": \"500\",\r\n\"ledger_type\": \"2\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1-1/patient_contract_roll_charges/564858\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1-1/patients/564858\",\r\n\"patient_id\": \"564858\",\r\n\"guarantor_id\": \"27124\",\r\n\"firstname\": \"A\",\r\n\"lastname\": \"Kng\",\r\n\"provider_id\": \"86\",\r\n\"provider_href\": \"https://api.sikkasoft.com/v4/practices/1-1/providers/86\",\r\n\"practice_id\": \"1-1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-1\",\r\n\"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/1-1/guarantors/27124\",\r\n\"transaction_type\": \"Contract Charge\",\r\n\"description\": \"Invisalign - Contract Charge\",\r\n\"contract_due_date\": \"2020-10-01T00:00:00\",\r\n\"roll_amount\": \"500\",\r\n\"ledger_type\": \"3\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1-1/patient_contract_roll_charges/564857\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1-1/patients/564857\",\r\n\"patient_id\": \"564857\",\r\n\"guarantor_id\": \"31075\",\r\n\"firstname\": \"R\",\r\n\"lastname\": \"R\",\r\n\"provider_id\": \"86\",\r\n\"provider_href\": \"https://api.sikkasoft.com/v4/practices/1-1/providers/86\",\r\n\"practice_id\": \"1-1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-1\",\r\n\"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/1-1/guarantors/31075\",\r\n\"transaction_type\": \"Initial fee(contract)\",\r\n\"description\": \"Full braces - Initial Fee (Contract)\",\r\n\"contract_due_date\": \"2020-09-28T00:00:00\",\r\n\"roll_amount\": \"250\",\r\n\"ledger_type\": \"2\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1-1/patient_contract_roll_charges/564857\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1-1/patients/564857\",\r\n\"patient_id\": \"564857\",\r\n\"guarantor_id\": \"31075\",\r\n\"firstname\": \"A\",\r\n\"lastname\": \"R\",\r\n\"provider_id\": \"86\",\r\n\"provider_href\": \"https://api.sikkasoft.com/v4/practices/1-1/providers/86\",\r\n\"practice_id\": \"1-1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-1\",\r\n\"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/1-1/guarantors/31075\",\r\n\"transaction_type\": \"Contract Charge\",\r\n\"description\": \"Full braces - Contract Charge\",\r\n\"contract_due_date\": \"2020-10-01T00:00:00\",\r\n\"roll_amount\": \"250\",\r\n\"ledger_type\": \"3\"\r\n}\r\n]\r\n}"
 								}
 							]
 						},
