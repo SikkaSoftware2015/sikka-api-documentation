@@ -9955,7 +9955,7 @@
 											}
 										],
 										"url": {
-											"raw": "https://api.sikkasoft.com/v4/kpis?kpi_name&practice_id&startdate&enddate",
+											"raw": "https://api.sikkasoft.com/v4/kpis/{kpi_name}?startdate=2024-08-01&enddate=2024-09-09&practice_id=1&fields=get_all",
 											"protocol": "https",
 											"host": [
 												"api",
@@ -9964,24 +9964,25 @@
 											],
 											"path": [
 												"v4",
-												"kpis"
+												"kpis",
+												"{kpi_name}"
 											],
 											"query": [
 												{
-													"key": "kpi_name",
-													"value": null
-												},
-												{
-													"key": "practice_id",
-													"value": null
-												},
-												{
 													"key": "startdate",
-													"value": null
+													"value": "2024-08-01"
 												},
 												{
 													"key": "enddate",
-													"value": null
+													"value": "2024-09-09"
+												},
+												{
+													"key": "practice_id",
+													"value": "1"
+												},
+												{
+													"key": "fields",
+													"value": "get_all"
 												}
 											]
 										}
@@ -10043,7 +10044,7 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n  \"offset\": \"##\",\n  \"limit\": \"##\",\n  \"total_count\": \"##\",\n  \"execution_time\": \"##\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/kpis?offset=##&limit=##\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/kpis?offset=##&limit=##\",\n    \"next\": \"\",\n    \"last\": \"https://api.sikkasoft.com/v4/kpis?offset=##&limit=##\"\n  },\n  \"items\": [\n    {\n      \"practice_id\": \"practice id\",\n      \"practice_name\": \"practice name\",\n      \"kpi name which you have selected\": \"kpi name\"\n    },\n    {\n      \"practice_id\": \"practice id\",\n      \"practice_name\": \"practice name\",\n      \"kpi name which you have selected\": \"kpi name\"\n    },\n    {\n      \"practice_id\": \"practice id\",\n      \"practice_name\": \"practice name\",\n      \"kpi name which you have selected\": \"kpi name\"\n    }\n  ]\n}"
+									"body": "{\n    \"offset\": \"xx\",\n    \"limit\": \"xx\",\n    \"total_count\": \"xx\",\n    \"execution_time\": \"xx\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/kpis?offset=xx&limit=xx\",\n        \"previous\": \"previous\",\n        \"current\": \"https://api.sikkasoft.com/v4/kpis?offset=xx&limit=xx\",\n        \"next\": \"next\",\n        \"last\": \"https://api.sikkasoft.com/v4/kpis?offset=xx&limit=xx\"\n    },\n    \"items\": [\n        {\n            \"practice_id\": \"practice id\",\n            \"practice_name\": \"practice name\",\n            \"adjusted_collection\": \"adjusted collection\"\n        }\n    ]\n}"
 								}
 							]
 						}
