@@ -1465,7 +1465,7 @@
 								},
 								{
 									"id": "4237dd05-ee00-4c48-afa7-8a0f1e1010f7",
-									"name": "guarantors_v2 Copy",
+									"name": "guarantors_v2?fields=get_all",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
@@ -1475,13 +1475,32 @@
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/guarantors_v2"
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/guarantors_v2?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"guarantors_v2"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
 									},
 									"_postman_previewlanguage": "json",
 									"header": null,
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"1\",\n    \"total_count\": \"6686\",\n    \"execution_time\": \"29\",\n    \"pagination\": {\n        \"first\": \"http://api.sikkasoft.com/v4/guarantors_v2?offset=0&limit=1\",\n        \"previous\": \"\",\n        \"current\": \"http://api.sikkasoft.com/v4/guarantors_v2?offset=0&limit=1\",\n        \"next\": \"http://api.sikkasoft.com/v4/guarantors_v2?offset=1&limit=1\",\n        \"last\": \"http://api.sikkasoft.com/v4/guarantors_v2?offset=6685&limit=1\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/guarantors_v2/80010034\",\n            \"guarantor_id\": \"80010034\",\n            \"firstname\": \"Fran\",\n            \"middlename\": \"\",\n            \"lastname\": \"Aar\",\n            \"salutation\": \"\",\n            \"birthdate\": \"1955-05-29T00:00:00\",\n            \"status\": \"active\",\n            \"address_line1\": \"\",\n            \"city\": \"San Jose\",\n            \"state\": \"CA\",\n            \"zipcode\": \"95116\",\n            \"cell\": \"\",\n            \"email\": \"\",\n            \"employer_id\": \"\",\n            \"employer_href\": \"\",\n            \"practice_id\": \"1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\"\n        }\n    ]\n}"
+									"body": "{\n    \"offset\": \"xx\",\n    \"limit\": \"xx\",\n    \"total_count\": \"xx\",\n    \"execution_time\": \"xx\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/guarantors_v2?offset=xx&limit=xx\",\n        \"previous\": \"previous\",\n        \"current\": \"https://api.sikkasoft.com/v4/guarantors_v2?offset=xx&limit=xx\",\n        \"next\": \"https://api.sikkasoft.com/v4/guarantors_v2?offset=xx&limit=xx\",\n        \"last\": \"https://api.sikkasoft.com/v4/guarantors_v2?offset=xx&limit=xx\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/guarantors_v2/xxxx\",\n            \"guarantor_id\": \"guarantor id\",\n            \"firstname\": \"firstname\",\n            \"middlename\": \"middlename\",\n            \"lastname\": \"lastname\",\n            \"preferred_name\": \"preferred name\",\n            \"salutation\": \"salutation\",\n            \"birthdate\": \"birthdate\",\n            \"status\": \"status\",\n            \"address_line1\": \"address line1\",\n            \"address_line2\": \"address line2\",\n            \"city\": \"city\",\n            \"state\": \"state\",\n            \"zipcode\": \"zipcode\",\n            \"workphone\": \"workphone\",\n            \"cell\": \"cell\",\n            \"email\": \"email\",\n            \"employer_id\": \"employer id\",\n            \"employer_href\": \"\",\n            \"billing_type\": \"billing type\",\n            \"practice_id\": \"practice id\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\n            \"country\": \"country\",\n            \"preferred_contact\": \"preferred contact\",\n            \"suspended_date\": \"suspended date\",\n            \"client_class\": \"client class\",\n            \"cust_id\": \"cust id\",\n            \"guarantor_class\": \"guarantor class\",\n            \"phone\": \"phone\",\n            \"ssn_on_file\": \"ssn on file\",\n            \"guarantor_bill_type\": \"guarantor bill type\",\n            \"guarantor_bill_type_description\": \"guarantor bill type description\"\n        }\n    ]\n}"
 								}
 							]
 						},
@@ -1517,6 +1536,26 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"500\",\r\n\"total_count\": \"4\",\r\n\"execution_time\": \"13\",\r\n\"pagination\": {\r\n\"first\": \"http://api.sikkasoft.com/v4/practice_variables?offset=0&limit=500\",\r\n\"previous\": \"\",\r\n\"current\": \"http://api.sikkasoft.com/v4/practice_variables?offset=0&limit=500\",\r\n\"next\": \"\",\r\n\"last\": \"http://api.sikkasoft.com/v4/practice_variables?offset=0&limit=500\"\r\n},\r\n\"items\": [\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/practice_variables\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"description\": \"open.unconfirm\",\r\n\"service_name\": \"Appointment Status\",\r\n\"value\": \"open.unconfirm\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/practice_variables\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"description\": \"open.confirm\",\r\n\"service_name\": \"Appointment Status\",\r\n\"value\": \"open.confirm\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/practice_variables\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"description\": \"complete.unconfirm\",\r\n\"service_name\": \"Appointment Status\",\r\n\"value\": \"complete.unconfirm\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/practice_variables\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"description\": \"complete.confirm\",\r\n\"service_name\": \"Appointment Status\",\r\n\"value\": \"complete.confirm\"\r\n}\r\n]\r\n}"
+								},
+								{
+									"id": "6c86ab45-07af-4a29-bbc5-332d738f01a9",
+									"name": "practice_variables?fields=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "request-key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/practice_variable"
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n    \"offset\": \"xx\",\r\n    \"limit\": \"xx\",\r\n    \"total_count\": \"xx\",\r\n    \"execution_time\": \"xx\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/practice_variables?offset=xx&limit=xx\",\r\n        \"previous\": \"previous\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/practice_variables?offset=xx&limit=xx\",\r\n        \"next\": \"next\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/practice_variables?offset=xx&limit=xx\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/practice_variables\",\r\n            \"practice_id\": \"practice id\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\r\n            \"description\": \"description\",\r\n            \"service_name\": \"service name\",\r\n            \"value\": \"value\",\r\n            \"service_item\": \"service item\"\r\n        }\r\n    ]\r\n}"
 								}
 							]
 						},
