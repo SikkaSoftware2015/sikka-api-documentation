@@ -4185,7 +4185,26 @@
 												"type": "text"
 											}
 										],
-										"url": "https://api.skkasoft.com/v4/patient_documents"
+										"url": {
+											"raw": "https://api.skkasoft.com/v4/patient_documents?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"skkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"patient_documents"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
 									},
 									"status": "OK",
 									"code": 200,
@@ -4213,6 +4232,26 @@
 								{
 									"id": "12ea624b-9dab-4112-8a85-ea1b2e222715",
 									"name": "patient_existing_services",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/patient_existing_services"
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"5\",\r\n\"total_count\": \"42056\",\r\n\"execution_time\": \"85\",\r\n\"pagination\": {\r\n\"first\": \"http://api.sikkasoft.com/v4/patient_existing_services?offset=0&limit=5\",\r\n\"previous\": \"\",\r\n\"current\": \"http://api.sikkasoft.com/v4/patient_existing_services?offset=0&limit=5\",\r\n\"next\": \"http://api.sikkasoft.com/v4/patient_existing_services?offset=1&limit=5\",\r\n\"last\": \"http://api.sikkasoft.com/v4/patient_existing_services?offset=8411&limit=5\"\r\n},\r\n\"items\": [\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/patient_existing_services/12260\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/12260\",\r\n\"patient_id\": \"12260\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"procedure_code\": \"D2950\",\r\n\"surface\": \"\",\r\n\"description\": \"CORE BUILDUP INCLUDING ANY PINS\",\r\n\"entered_date\": \"2020-10-26T00:00:00\",\r\n\"tooth\": \"5\",\r\n\"completed_date\": \"2020-10-26T00:00:00\",\r\n\"fee\": \"0.0000\",\r\n\"defective\": \"N\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/patient_existing_services/12260\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/12260\",\r\n\"patient_id\": \"12260\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"procedure_code\": \"D2740\",\r\n\"surface\": \"\",\r\n\"description\": \"CROWN-PORCELAIN/CERAMIC SUBSTRATE\",\r\n\"entered_date\": \"2020-10-26T00:00:00\",\r\n\"tooth\": \"30\",\r\n\"completed_date\": \"2020-10-26T00:00:00\",\r\n\"fee\": \"0.0000\",\r\n\"defective\": \"N\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/patient_existing_services/12260\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/12260\",\r\n\"patient_id\": \"12260\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"procedure_code\": \"D2950\",\r\n\"surface\": \"\",\r\n\"description\": \"CORE BUILDUP INCLUDING ANY PINS\",\r\n\"entered_date\": \"2020-10-26T00:00:00\",\r\n\"tooth\": \"31\",\r\n\"completed_date\": \"2020-10-26T00:00:00\",\r\n\"fee\": \"0.0000\",\r\n\"defective\": \"N\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/patient_existing_services/12260\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/12260\",\r\n\"patient_id\": \"12260\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"procedure_code\": \"D2950\",\r\n\"surface\": \"\",\r\n\"description\": \"CORE BUILDUP INCLUDING ANY PINS\",\r\n\"entered_date\": \"2020-10-26T00:00:00\",\r\n\"tooth\": \"30\",\r\n\"completed_date\": \"2020-10-26T00:00:00\",\r\n\"fee\": \"0.0000\",\r\n\"defective\": \"N\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/patient_existing_services/12260\",\r\n\"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/12260\",\r\n\"patient_id\": \"12260\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"procedure_code\": \"D2740\",\r\n\"surface\": \"\",\r\n\"description\": \"CROWN-PORCELAIN/CERAMIC SUBSTRATE\",\r\n\"entered_date\": \"2020-10-26T00:00:00\",\r\n\"tooth\": \"5\",\r\n\"completed_date\": \"2020-10-26T00:00:00\",\r\n\"fee\": \"0.0000\",\r\n\"defective\": \"N\"\r\n}\r\n]\r\n}"
+								},
+								{
+									"id": "9208c496-f6cb-4da8-8882-6957f0833dbb",
+									"name": "patient_existing_services?fields=get_all",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
