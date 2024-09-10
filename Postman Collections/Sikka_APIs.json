@@ -4561,6 +4561,47 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"5\",\r\n\"total_count\": \"15502\",\r\n\"execution_time\": \"37\",\r\n\"pagination\": {\r\n\"first\": \"http://api.sikkasoft.com/v4/purchase_orders?offset=0&limit=5\",\r\n\"previous\": \"\",\r\n\"current\": \"http://api.sikkasoft.com/v4/purchase_orders?offset=0&limit=5\",\r\n\"next\": \"http://api.sikkasoft.com/v4/purchase_orders?offset=1&limit=5\",\r\n\"last\": \"http://api.sikkasoft.com/v4/purchase_orders?offset=3100&limit=5\"\r\n},\r\n\"items\": [\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/purchase_orders/152\",\r\n\"status\": \"Completed\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"invoice_number\": \"\",\r\n\"quantity\": \"36\",\r\n\"location\": \"Pharmacy\",\r\n\"vendor_id\": \"152\",\r\n\"vendor_href\": \"https://api.sikkasoft.com/v4/practices/1/vendors/152\",\r\n\"procedure_code_id\": \"3204\",\r\n\"procedure_code_href\": \"https://api.sikkasoft.com/v4/practices/1/procedure_codes/3204\",\r\n\"cost\": \"95.4\",\r\n\"tax\": \"0\",\r\n\"order_number\": \"06021501\",\r\n\"order_date\": \"2008-02-15T00:00:00\",\r\n\"unit_cost\": \"2.65\",\r\n\"item_description\": \"Amoxicillin 50 mg/mL (15 mL)\",\r\n\"receipt_date\": \"2008-02-15T00:00:00\",\r\n\"receipt_number\": \"\",\r\n\"freight\": \"\",\r\n\"invoice_amount\": \"0\",\r\n\"invoice_date\": \"\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/purchase_orders/152\",\r\n\"status\": \"Completed\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"invoice_number\": \"\",\r\n\"quantity\": \"220\",\r\n\"location\": \"Pharmacy\",\r\n\"vendor_id\": \"152\",\r\n\"vendor_href\": \"https://api.sikkasoft.com/v4/practices/1/vendors/152\",\r\n\"procedure_code_id\": \"3204\",\r\n\"procedure_code_href\": \"https://api.sikkasoft.com/v4/practices/1/procedure_codes/3204\",\r\n\"cost\": \"583\",\r\n\"tax\": \"0\",\r\n\"order_number\": \"06021501\",\r\n\"order_date\": \"2008-02-15T00:00:00\",\r\n\"unit_cost\": \"2.65\",\r\n\"item_description\": \"Amoxicillin 50 mg/mL (15 mL)\",\r\n\"receipt_date\": \"2008-02-15T00:00:00\",\r\n\"receipt_number\": \"\",\r\n\"freight\": \"\",\r\n\"invoice_amount\": \"0\",\r\n\"invoice_date\": \"\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/purchase_orders/151\",\r\n\"status\": \"Completed\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"invoice_number\": \"\",\r\n\"quantity\": \"14\",\r\n\"location\": \"Pharmacy\",\r\n\"vendor_id\": \"151\",\r\n\"vendor_href\": \"https://api.sikkasoft.com/v4/practices/1/vendors/151\",\r\n\"procedure_code_id\": \"3205\",\r\n\"procedure_code_href\": \"https://api.sikkasoft.com/v4/practices/1/procedure_codes/3205\",\r\n\"cost\": \"58.8\",\r\n\"tax\": \"0\",\r\n\"order_number\": \"06021501\",\r\n\"order_date\": \"2008-02-15T00:00:00\",\r\n\"unit_cost\": \"4.2\",\r\n\"item_description\": \"Amoxicillin 50 mg/mL (30mL)\",\r\n\"receipt_date\": \"2008-02-15T00:00:00\",\r\n\"receipt_number\": \"\",\r\n\"freight\": \"\",\r\n\"invoice_amount\": \"0\",\r\n\"invoice_date\": \"\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/purchase_orders/144\",\r\n\"status\": \"Completed\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"invoice_number\": \"2030876\",\r\n\"quantity\": \"24\",\r\n\"location\": \"Clinic\",\r\n\"vendor_id\": \"144\",\r\n\"vendor_href\": \"https://api.sikkasoft.com/v4/practices/1/vendors/144\",\r\n\"procedure_code_id\": \"WFRS3\",\r\n\"procedure_code_href\": \"https://api.sikkasoft.com/v4/practices/1/procedure_codes/WFRS3\",\r\n\"cost\": \"18.768\",\r\n\"tax\": \"0\",\r\n\"order_number\": \"03012801\",\r\n\"order_date\": \"2005-01-28T00:00:00\",\r\n\"unit_cost\": \"0.782\",\r\n\"item_description\": \"Waltham Feline Renal Support Can 5.8 oz\",\r\n\"receipt_date\": \"2005-01-28T00:00:00\",\r\n\"receipt_number\": \"\",\r\n\"freight\": \"\",\r\n\"invoice_amount\": \"0\",\r\n\"invoice_date\": \"\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/purchase_orders/144\",\r\n\"status\": \"Completed\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"invoice_number\": \"2042416\",\r\n\"quantity\": \"2\",\r\n\"location\": \"Pantry\",\r\n\"vendor_id\": \"144\",\r\n\"vendor_href\": \"https://api.sikkasoft.com/v4/practices/1/vendors/144\",\r\n\"procedure_code_id\": \"WCLF17\",\r\n\"procedure_code_href\": \"https://api.sikkasoft.com/v4/practices/1/procedure_codes/WCLF17\",\r\n\"cost\": \"46.1\",\r\n\"tax\": \"0\",\r\n\"order_number\": \"03032803\",\r\n\"order_date\": \"2005-03-27T00:00:00\",\r\n\"unit_cost\": \"23.05\",\r\n\"item_description\": \"Waltham Canine Low Fat 17.6 lbs\",\r\n\"receipt_date\": \"2005-03-27T00:00:00\",\r\n\"receipt_number\": \"\",\r\n\"freight\": \"\",\r\n\"invoice_amount\": \"0\",\r\n\"invoice_date\": \"\"\r\n}\r\n]\r\n}"
+								},
+								{
+									"id": "a608fb21-07bd-411a-abfc-b90902a5d993",
+									"name": "purchase_orders?fields=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/purchase_orders?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"purchase_orders"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n    \"offset\": \"xx\",\r\n    \"limit\": \"xx\",\r\n    \"total_count\": \"xx\",\r\n    \"execution_time\": \"xx\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/purchase_orders?offset=xx&limit=xx\",\r\n        \"previous\": \"previous\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/purchase_orders?offset=xx&limit=xx\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/purchase_orders?offset=xx&limit=xx\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/purchase_orders?offset=xx&limit=xx\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/purchase_orders/xxxx\",\r\n            \"status\": \"status\",\r\n            \"practice_id\": \"practice id\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\r\n            \"invoice_number\": \"invoice number\",\r\n            \"quantity\": \"quantity\",\r\n            \"location\": \"location\",\r\n            \"vendor_id\": \"vendor id\",\r\n            \"vendor_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/vendors/xxxx\",\r\n            \"procedure_code_id\": \"procedure code id\",\r\n            \"procedure_code_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/procedure_codes/xxxx\",\r\n            \"cost\": \"cost\",\r\n            \"tax\": \"tax\",\r\n            \"order_number\": \"order number\",\r\n            \"order_date\": \"order date\",\r\n            \"unit_cost\": \"unit cost\",\r\n            \"item_description\": \"item description\",\r\n            \"receipt_date\": \"receipt date\",\r\n            \"receipt_number\": \"receipt number\",\r\n            \"freight\": \"freight\",\r\n            \"invoice_amount\": \"invoice amount\",\r\n            \"invoice_date\": \"invoice date\"\r\n        }\r\n    ]\r\n}"
 								}
 							]
 						},
