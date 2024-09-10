@@ -11403,6 +11403,118 @@
 									"cookie": [],
 									"responseTime": "792",
 									"body": "{\r\n    \"offset\": \"0\",\r\n    \"limit\": \"1\",\r\n    \"total_count\": \"16275\",\r\n    \"execution_time\": \"20\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/finance/payroll_details?offset=0&limit=1\",\r\n        \"previous\": \"\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/finance/payroll_details?offset=0&limit=1\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/finance/payroll_details?offset=1&limit=1\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/finance/payroll_details?offset=16274&limit=1\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/finance/payroll_details/E-pay\",\r\n            \"practice_id\": \"1\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n            \"transaction_type\": \"\",\r\n            \"amount\": \"569.0000\",\r\n            \"date\": \"2020-07-07T00:00:00\",\r\n            \"source_name\": \"United States Source\",\r\n            \"payroll_item\": \"Federal Payroll Item\",\r\n            \"class\": \"\",\r\n            \"wage_base\": \"0.0000\",\r\n            \"debit\": \"569.0000\",\r\n            \"credit\": \"0.0000\",\r\n            \"reference_number\": \"E-pay\"\r\n        }\r\n    ]\r\n}"
+								},
+								{
+									"id": "a3254d2c-80d7-4909-8eee-052c67ffed65",
+									"name": "request?fields=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "{{request_key}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/finance/payroll_details?limit=1",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"finance",
+												"payroll_details"
+											],
+											"query": [
+												{
+													"key": "limit",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"name": "Access-Control-Allow-Headers",
+											"key": "Access-Control-Allow-Headers",
+											"value": "accept, authorization, Content-Type, X-Session-Id",
+											"description": ""
+										},
+										{
+											"name": "Access-Control-Allow-Methods",
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+											"description": ""
+										},
+										{
+											"name": "Access-Control-Allow-Origin",
+											"key": "Access-Control-Allow-Origin",
+											"value": "*",
+											"description": ""
+										},
+										{
+											"name": "Cache-Control",
+											"key": "Cache-Control",
+											"value": "private",
+											"description": ""
+										},
+										{
+											"name": "Connection",
+											"key": "Connection",
+											"value": "keep-alive",
+											"description": ""
+										},
+										{
+											"name": "Content-Length",
+											"key": "Content-Length",
+											"value": "813",
+											"description": ""
+										},
+										{
+											"name": "Content-Type",
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": ""
+										},
+										{
+											"name": "Date",
+											"key": "Date",
+											"value": "Mon, 24 Apr 2017 10:05:02 GMT",
+											"description": ""
+										},
+										{
+											"name": "Server",
+											"key": "Server",
+											"value": "Microsoft-IIS/8.5",
+											"description": ""
+										},
+										{
+											"name": "X-AspNet-Version",
+											"key": "X-AspNet-Version",
+											"value": "4.0.30319",
+											"description": ""
+										},
+										{
+											"name": "X-Powered-By",
+											"key": "X-Powered-By",
+											"value": "ASP.NET",
+											"description": ""
+										}
+									],
+									"cookie": [],
+									"responseTime": "792",
+									"body": "{\r\n    \"offset\": \"0\",\r\n    \"limit\": \"1\",\r\n    \"total_count\": \"16275\",\r\n    \"execution_time\": \"20\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/finance/payroll_details?offset=0&limit=1\",\r\n        \"previous\": \"\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/finance/payroll_details?offset=0&limit=1\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/finance/payroll_details?offset=1&limit=1\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/finance/payroll_details?offset=16274&limit=1\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/finance/payroll_details/E-pay\",\r\n            \"practice_id\": \"1\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n            \"transaction_type\": \"\",\r\n            \"amount\": \"569.0000\",\r\n            \"date\": \"2020-07-07T00:00:00\",\r\n            \"source_name\": \"United States Source\",\r\n            \"payroll_item\": \"Federal Payroll Item\",\r\n            \"class\": \"\",\r\n            \"wage_base\": \"0.0000\",\r\n            \"debit\": \"569.0000\",\r\n            \"credit\": \"0.0000\",\r\n            \"reference_number\": \"E-pay\"\r\n        }\r\n    ]\r\n}"
 								}
 							]
 						},
