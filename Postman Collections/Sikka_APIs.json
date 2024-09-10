@@ -10431,6 +10431,112 @@
 									"cookie": [],
 									"responseTime": "3628",
 									"body": "{\r\n    \"offset\": \"0\",\r\n    \"limit\": \"1\",\r\n    \"total_count\": \"485\",\r\n    \"execution_time\": \"12\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/finance/balances?offset=0&limit=1\",\r\n        \"previous\": \"\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/finance/balances?offset=0&limit=1\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/finance/balances?offset=1&limit=1\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/finance/balances?offset=484&limit=1\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/finance/balances/abc def\",\r\n            \"practice_id\": \"1\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n            \"account_name\": \"abc def\",\r\n            \"balance_total\": \"1540.9600\"\r\n        }\r\n    ]\r\n}"
+								},
+								{
+									"id": "8ad3d83a-08a2-4fe7-abb2-c59a12108041",
+									"name": "request?fields=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "{{request_key}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/finance/balances?limit=1&fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"finance",
+												"balances"
+											],
+											"query": [
+												{
+													"key": "limit",
+													"value": "1"
+												},
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "accept, authorization, Content-Type, X-Session-Id",
+											"description": ""
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+											"description": ""
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*",
+											"description": ""
+										},
+										{
+											"key": "Cache-Control",
+											"value": "private",
+											"description": ""
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive",
+											"description": ""
+										},
+										{
+											"key": "Content-Length",
+											"value": "576",
+											"description": ""
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": ""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 24 Apr 2017 09:19:31 GMT",
+											"description": ""
+										},
+										{
+											"key": "Server",
+											"value": "Microsoft-IIS/8.5",
+											"description": ""
+										},
+										{
+											"key": "X-AspNet-Version",
+											"value": "4.0.30319",
+											"description": ""
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "ASP.NET",
+											"description": ""
+										}
+									],
+									"cookie": [],
+									"responseTime": "3628",
+									"body": "{\r\n    \"offset\": \"xx\",\r\n    \"limit\": \"xx\",\r\n    \"total_count\": \"xx\",\r\n    \"execution_time\": \"xx\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/finance/balances?offset=xx&limit=xx\",\r\n        \"previous\": \"previous\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/finance/balances?offset=xx&limit=xx\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/finance/balances?offset=xx&limit=xx\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/finance/balances?offset=xx&limit=xx\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/vxxxx/finance/balances/xxxx\",\r\n            \"practice_id\": \"practice id\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\r\n            \"account_name\": \"account name\",\r\n            \"balance_total\": \"balance total\"\r\n        }\r\n    ]\r\n}"
 								}
 							]
 						},
@@ -10568,6 +10674,112 @@
 									"cookie": [],
 									"responseTime": "2276",
 									"body": "{\r\n    \"offset\": \"0\",\r\n    \"limit\": \"1\",\r\n    \"total_count\": \"47648\",\r\n    \"execution_time\": \"510\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/finance/budgets?offset=0&limit=1\",\r\n        \"previous\": \"\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/finance/budgets?offset=0&limit=1\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/finance/budgets?offset=1&limit=1\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/finance/budgets?offset=47647&limit=1\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/finance/budgets/Truck Insurance\",\r\n            \"practice_id\": \"1\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n            \"account_name\": \"Truck Insurance\",\r\n            \"january\": \"10.0000\",\r\n            \"february\": \"20.0000\",\r\n            \"march\": \"30.0000\",\r\n            \"april\": \"40.0000\",\r\n            \"may\": \"50.0000\",\r\n            \"june\": \"60.0000\",\r\n            \"july\": \"60.0000\",\r\n            \"august\": \"50.0000\",\r\n            \"september\": \"40.0000\",\r\n            \"october\": \"30.0000\",\r\n            \"november\": \"20.0000\",\r\n            \"december\": \"10.0000\",\r\n            \"total\": \"420.0000\"\r\n        }\r\n    ]\r\n}"
+								},
+								{
+									"id": "6a21d233-fc16-41ce-a31f-eec658affdff",
+									"name": "request?fields=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "{{request_key}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/finance/budgets?limit=1&fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"finance",
+												"budgets"
+											],
+											"query": [
+												{
+													"key": "limit",
+													"value": "1"
+												},
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "accept, authorization, Content-Type, X-Session-Id",
+											"description": ""
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+											"description": ""
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*",
+											"description": ""
+										},
+										{
+											"key": "Cache-Control",
+											"value": "private, no-cache=\"set-cookie\"",
+											"description": ""
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive",
+											"description": ""
+										},
+										{
+											"key": "Content-Length",
+											"value": "898",
+											"description": ""
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": ""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 24 Apr 2017 09:25:30 GMT",
+											"description": ""
+										},
+										{
+											"key": "Server",
+											"value": "Microsoft-IIS/8.5",
+											"description": ""
+										},
+										{
+											"key": "X-AspNet-Version",
+											"value": "4.0.30319",
+											"description": ""
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "ASP.NET",
+											"description": ""
+										}
+									],
+									"cookie": [],
+									"responseTime": "2276",
+									"body": "{\r\n    \"offset\": \"xx\",\r\n    \"limit\": \"xx\",\r\n    \"total_count\": \"xx\",\r\n    \"execution_time\": \"xx\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/finance/budgets?offset=xx&limit=xx\",\r\n        \"previous\": \"previous\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/finance/budgets?offset=xx&limit=xx\",\r\n        \"next\": \"next\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/finance/budgets?offset=xx&limit=xx\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/vxxxx/finance/budgets/xxxx\",\r\n            \"practice_id\": \"practice id\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\r\n            \"account_name\": \"account name\",\r\n            \"january\": \"january\",\r\n            \"february\": \"february\",\r\n            \"march\": \"march\",\r\n            \"april\": \"april\",\r\n            \"may\": \"may\",\r\n            \"june\": \"june\",\r\n            \"july\": \"july\",\r\n            \"august\": \"august\",\r\n            \"september\": \"september\",\r\n            \"october\": \"october\",\r\n            \"november\": \"november\",\r\n            \"december\": \"december\",\r\n            \"total\": \"total\"\r\n        }\r\n    ]\r\n}"
 								}
 							]
 						},
