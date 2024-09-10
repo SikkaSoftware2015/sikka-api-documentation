@@ -12549,6 +12549,113 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\n  \"offset\": \"0\",\n  \"limit\": \"50\",\n  \"total_count\": \"1\",\n  \"execution_time\": \"18\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/health_check?offset=0&limit=50\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/health_check?offset=0&limit=50\",\n    \"next\": \"\",\n    \"last\": \"https://api.sikkasoft.com/v4/health_check?offset=0&limit=50\"\n  },\n  \"items\": [\n    {\n      \"href\": \"\",\n      \"practice_id\": \"1\",\n      \"office_id\": \"Dxxxx\",\n      \"domain\": \"Dental\",\n      \"practice_management_system\": \"SoftDent\",\n      \"practice_management_system_version\": \"V18.0\",\n      \"spc_id\": \"40249\",\n      \"refresh_time\": \"10/3/2023 11:36:12 PM\",\n      \"teamviewer_id\": \"xXxXxX\",\n      \"teamviewer_version\": \"TeamViewerXX\",\n      \"spc_version\": \"x.x.x.x\",\n      \"practice_management_system_version_detected\": \"V18.0\",\n      \"practice_management_system_data_path\": \"Z:\\\\Softdent\",\n      \"financial_management_system\": \"\",\n      \"financial_management_system_version\": \"\",\n      \"financial_management_system_version_detected\": \"\",\n      \"financial_management_system_data_path\": \"\",\n      \"spc_schedule_time\": \"X:00 AM\",\n      \"spc_schedule_type\": \"Daily\",\n      \"spc_schedule_interval\": \"XX Minutes\",\n      \"is_spc_update_locked\": \"False\",\n      \"spc_update_lock_note\": \"\",\n      \"last_spc_updated_checked\": \"\",\n      \"is_delta_import_enable\": \"True\",\n      \"etl_start\": \"10/3/2023 11:32:02 PM\",\n      \"etl_end\": \"10/3/2023 11:33:55 PM\",\n      \"web_upload_start\": \"10/3/2023 11:33:56 PM\",\n      \"web_upload_end\": \"10/3/2023 11:36:12 PM\",\n      \"financial_etl_start\": \"10/3/2023 11:33:55 PM\",\n      \"financial_etl_end\": \"10/3/2023 11:33:55 PM\",\n      \"etl_error_log\": \"\",\n      \"etl_error_priority\": \"\",\n      \"etl_error_description\": \"\",\n      \"etl_cpu_utilization\": \"8.38516552450908\",\n      \"etl_memory_utilization\": \"128184320\",\n      \"financial_error_priority\": \"\",\n      \"financial_error_description\": \"\",\n      \"financial_etl_cpu_utilization\": \"\",\n      \"financial_etl_memory_utilization\": \"\",\n      \"local_insert_error_log\": \"\",\n      \"local_insert_error_priority\": \"\",\n      \"local_insert_cpu_utilization\": \"0\",\n      \"local_insert_memory_utilization\": \"0\",\n      \"local_upload_error_description\": \"\",\n      \"web_upload_error_flag\": \"\",\n      \"web_upload_error_priority\": \"\",\n      \"web_upload_bandwidth_utilization\": \"2418676\",\n      \"web_upload_error_description\": \"\",\n      \"upload_to_server\": \"10/4/2023 6:36:13 AM\",\n      \"upload_to_client\": \"10/3/2023 11:36:13 PM\",\n      \"spc_error_flag\": \"\",\n      \"spc_error_priority\": \"\",\n      \"spc_error_description\": \"\",\n      \"timezone\": \"Pacific Standard Time\",\n      \"etl_version\": \"x.x.x.x\",\n      \"is_inactive\": \"False\",\n      \"operating_system\": \"Microsoft Windows XX\",\n      \"machine_name\": \"SIKKATest\",\n      \"disk_free_space\": \"152.25 GB\",\n      \"download_speed\": \"4.98 MB\",\n      \"memory\": \"32.00 GB\"\n    }\n  ]\n}"
+								},
+								{
+									"id": "d9893550-4911-4ef5-8fa8-7e6c661995fa",
+									"name": "health_check?fields=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "App-Id",
+												"value": "{application_id}",
+												"type": "text"
+											},
+											{
+												"key": "App-Key",
+												"value": "{application_key}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/health_check?office_id={{office_id}}&fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"health_check"
+											],
+											"query": [
+												{
+													"key": "office_id",
+													"value": "{{office_id}}"
+												},
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Cache-Control",
+											"value": "private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding"
+										},
+										{
+											"key": "Server",
+											"value": "Microsoft-IIS/8.5"
+										},
+										{
+											"key": "X-AspNet-Version",
+											"value": "4.0.30319"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "ASP.NET"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "accept, authorization, Content-Type, X-Session-Id"
+										},
+										{
+											"key": "X-Api-Server-Version",
+											"value": "1"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 13 Sep 2019 21:56:43 GMT"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1559"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=16000000; includeSubDomains; preload;"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"offset\": \"xx\",\n    \"limit\": \"xx\",\n    \"total_count\": \"xx\",\n    \"execution_time\": \"xx\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/health_check?offset=xx&limit=xx\",\n        \"previous\": \"previous\",\n        \"current\": \"https://api.sikkasoft.com/v4/health_check?offset=xx&limit=xx\",\n        \"next\": \"next\",\n        \"last\": \"https://api.sikkasoft.com/v4/health_check?offset=xx&limit=xx\"\n    },\n    \"items\": [\n        {\n            \"href\": \"\",\n            \"practice_id\": \"practice id\",\n            \"office_id\": \"office id\",\n            \"domain\": \"domain\",\n            \"practice_management_system\": \"practice management system\",\n            \"practice_management_system_version\": \"practice management system version\",\n            \"spc_id\": \"spc id\",\n            \"refresh_time\": \"refresh time\",\n            \"teamviewer_id\": \"teamviewer id\",\n            \"teamviewer_version\": \"teamviewer version\",\n            \"spc_version\": \"spc version\",\n            \"practice_management_system_version_detected\": \"practice management system version detected\",\n            \"practice_management_system_data_path\": \"practice management system data path\",\n            \"financial_management_system\": \"financial management system\",\n            \"financial_management_system_version\": \"financial management system version\",\n            \"financial_management_system_version_detected\": \"financial management system version detected\",\n            \"financial_management_system_data_path\": \"financial management system data path\",\n            \"spc_schedule_time\": \"spc schedule time\",\n            \"spc_schedule_type\": \"spc schedule type\",\n            \"spc_schedule_interval\": \"spc schedule interval\",\n            \"is_spc_update_locked\": \"is spc update locked\",\n            \"spc_update_lock_note\": \"spc update lock note\",\n            \"last_spc_updated_checked\": \"last spc updated checked\",\n            \"is_delta_import_enable\": \"is delta import enable\",\n            \"etl_start\": \"etl start\",\n            \"etl_end\": \"etl end\",\n            \"web_upload_start\": \"web upload start\",\n            \"web_upload_end\": \"web upload end\",\n            \"financial_etl_start\": \"financial etl start\",\n            \"financial_etl_end\": \"financial etl end\",\n            \"etl_error_log\": \"etl error log\",\n            \"etl_error_priority\": \"etl error priority\",\n            \"etl_error_description\": \"etl error description\",\n            \"etl_cpu_utilization\": \"etl cpu utilization\",\n            \"etl_memory_utilization\": \"etl memory utilization\",\n            \"financial_error_priority\": \"financial error priority\",\n            \"financial_error_description\": \"financial error description\",\n            \"financial_etl_cpu_utilization\": \"financial etl cpu utilization\",\n            \"financial_etl_memory_utilization\": \"financial etl memory utilization\",\n            \"local_insert_error_log\": \"local insert error log\",\n            \"local_insert_error_priority\": \"local insert error priority\",\n            \"local_insert_cpu_utilization\": \"local insert cpu utilization\",\n            \"local_insert_memory_utilization\": \"local insert memory utilization\",\n            \"local_upload_error_description\": \"local upload error description\",\n            \"web_upload_error_flag\": \"web upload error flag\",\n            \"web_upload_error_priority\": \"web upload error priority\",\n            \"web_upload_bandwidth_utilization\": \"web upload bandwidth utilization\",\n            \"web_upload_error_description\": \"web upload error description\",\n            \"upload_to_server\": \"upload to server\",\n            \"upload_to_client\": \"upload to client\",\n            \"spc_error_flag\": \"spc error flag\",\n            \"spc_error_priority\": \"spc error priority\",\n            \"spc_error_description\": \"spc error description\",\n            \"timezone\": \"timezone\",\n            \"etl_version\": \"etl version\",\n            \"is_inactive\": \"is inactive\",\n            \"operating_system\": \"operating system\",\n            \"machine_name\": \"machine name\",\n            \"disk_free_space\": \"disk free space\",\n            \"download_speed\": \"download speed\",\n            \"memory\": \"memory\"\n        }\n    ]\n}"
 								}
 							]
 						}
