@@ -10188,6 +10188,112 @@
 									"cookie": [],
 									"responseTime": "1503",
 									"body": "{\r\n    \"offset\": \"0\",\r\n    \"limit\": \"1\",\r\n    \"total_count\": \"95\",\r\n    \"execution_time\": \"12\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/finance/accounts?offset=0&limit=1\",\r\n        \"previous\": \"\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/finance/accounts?offset=0&limit=1\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/finance/accounts?offset=1&limit=1\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/finance/accounts?offset=94&limit=1\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/finance/accounts/12345\",\r\n            \"practice_id\": \"1\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n            \"description\": \"Orders from customers to be filled work to be performed or items to be shipped\",\r\n            \"account_number\": \"12345\",\r\n            \"account_name\": \"12345 Sales Orders\",\r\n            \"account_fullname\": \"Sales Orders\",\r\n            \"account_type\": \"NonPosting\",\r\n            \"balance_total\": \"0.0000\"\r\n        }\r\n    ]\r\n}"
+								},
+								{
+									"id": "e3697e0c-7835-4d31-9018-2ca7b45fca8d",
+									"name": "request?fields=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "{{request_key}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/finance/accounts?limit=1&fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"finance",
+												"accounts"
+											],
+											"query": [
+												{
+													"key": "limit",
+													"value": "1"
+												},
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "accept, authorization, Content-Type, X-Session-Id",
+											"description": ""
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+											"description": ""
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*",
+											"description": ""
+										},
+										{
+											"key": "Cache-Control",
+											"value": "private, no-cache=\"set-cookie\"",
+											"description": ""
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive",
+											"description": ""
+										},
+										{
+											"key": "Content-Length",
+											"value": "721",
+											"description": ""
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": ""
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 24 Apr 2017 09:12:59 GMT",
+											"description": ""
+										},
+										{
+											"key": "Server",
+											"value": "Microsoft-IIS/8.5",
+											"description": ""
+										},
+										{
+											"key": "X-AspNet-Version",
+											"value": "4.0.30319",
+											"description": ""
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "ASP.NET",
+											"description": ""
+										}
+									],
+									"cookie": [],
+									"responseTime": "1503",
+									"body": "{\r\n    \"offset\": \"xx\",\r\n    \"limit\": \"xx\",\r\n    \"total_count\": \"xx\",\r\n    \"execution_time\": \"xx\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/finance/accounts?offset=xx&limit=xx\",\r\n        \"previous\": \"previous\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/finance/accounts?offset=xx&limit=xx\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/finance/accounts?offset=xx&limit=xx\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/finance/accounts?offset=xx&limit=xx\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/finance/accounts/xxxx\",\r\n            \"practice_id\": \"practice id\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\r\n            \"description\": \"description\",\r\n            \"account_number\": \"account number\",\r\n            \"account_name\": \"account name\",\r\n            \"account_fullname\": \"account fullname\",\r\n            \"account_type\": \"account type\",\r\n            \"balance_total\": \"balance total\"\r\n        }\r\n    ]\r\n}"
 								}
 							]
 						},
