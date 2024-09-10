@@ -11801,7 +11801,7 @@
 											"formdata": []
 										},
 										"url": {
-											"raw": "https://api.sikkasoft.com/v4/finance/vendors?limit=1",
+											"raw": "https://api.sikkasoft.com/v4/finance/vendors?limit=1&fields=get_all",
 											"protocol": "https",
 											"host": [
 												"api",
@@ -11817,6 +11817,11 @@
 												{
 													"key": "limit",
 													"value": "1"
+												},
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
 												}
 											]
 										}
@@ -11826,67 +11831,56 @@
 									"_postman_previewlanguage": "json",
 									"header": [
 										{
-											"name": "Access-Control-Allow-Headers",
 											"key": "Access-Control-Allow-Headers",
 											"value": "accept, authorization, Content-Type, X-Session-Id",
 											"description": ""
 										},
 										{
-											"name": "Access-Control-Allow-Methods",
 											"key": "Access-Control-Allow-Methods",
 											"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
 											"description": ""
 										},
 										{
-											"name": "Access-Control-Allow-Origin",
 											"key": "Access-Control-Allow-Origin",
 											"value": "*",
 											"description": ""
 										},
 										{
-											"name": "Cache-Control",
 											"key": "Cache-Control",
 											"value": "private, no-cache=\"set-cookie\"",
 											"description": ""
 										},
 										{
-											"name": "Connection",
 											"key": "Connection",
 											"value": "keep-alive",
 											"description": ""
 										},
 										{
-											"name": "Content-Length",
 											"key": "Content-Length",
 											"value": "1738",
 											"description": ""
 										},
 										{
-											"name": "Content-Type",
 											"key": "Content-Type",
 											"value": "application/json",
 											"description": ""
 										},
 										{
-											"name": "Date",
 											"key": "Date",
 											"value": "Mon, 24 Apr 2017 10:10:30 GMT",
 											"description": ""
 										},
 										{
-											"name": "Server",
 											"key": "Server",
 											"value": "Microsoft-IIS/8.5",
 											"description": ""
 										},
 										{
-											"name": "X-AspNet-Version",
 											"key": "X-AspNet-Version",
 											"value": "4.0.30319",
 											"description": ""
 										},
 										{
-											"name": "X-Powered-By",
 											"key": "X-Powered-By",
 											"value": "ASP.NET",
 											"description": ""
@@ -11894,7 +11888,7 @@
 									],
 									"cookie": [],
 									"responseTime": "1644",
-									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"1\",\n    \"total_count\": \"350\",\n    \"execution_time\": \"11\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/finance/finance_vendors?offset=0&limit=1\",\n        \"previous\": \"\",\n        \"current\": \"https://api.sikkasoft.com/v4/finance/finance_vendors?offset=0&limit=1\",\n        \"next\": \"https://api.sikkasoft.com/v4/finance/finance_vendors?offset=1&limit=1\",\n        \"last\": \"https://api.sikkasoft.com/v4/finance/finance_vendors?offset=349&limit=1\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/finance/vendors/Tin Dabba\",\n            \"practice_id\": \"1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\n            \"phone\": \"\",\n            \"fax\": \"\",\n            \"address\": \"Navi Post Office Juni PO GJ 12345\",\n            \"account_number\": \"1234567890\",\n            \"balance_total\": \"0\",\n            \"vendor\": \"Tin Dabba\",\n            \"contact_person\": \"Satyen Pandya\"\n        }\n    ]\n}"
+									"body": "{\n    \"offset\": \"xx\",\n    \"limit\": \"xx\",\n    \"total_count\": \"xx\",\n    \"execution_time\": \"xx\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/finance/vendors?offset=xx&limit=xx\",\n        \"previous\": \"previous\",\n        \"current\": \"https://api.sikkasoft.com/v4/finance/vendors?offset=xx&limit=xx\",\n        \"next\": \"https://api.sikkasoft.com/v4/finance/vendors?offset=xx&limit=xx\",\n        \"last\": \"https://api.sikkasoft.com/v4/finance/vendors?offset=xx&limit=xx\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/finance/vendors/xxxx\",\n            \"practice_id\": \"practice id\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\n            \"phone\": \"phone\",\n            \"fax\": \"fax\",\n            \"address\": \"address\",\n            \"account_number\": \"account number\",\n            \"balance_total\": \"balance total\",\n            \"vendor\": \"vendor\",\n            \"contact_person\": \"contact person\"\n        }\n    ]\n}"
 								}
 							]
 						}
@@ -11950,6 +11944,52 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"2\",\n    \"total_count\": \"2\",\n    \"execution_time\": \"528\",\n    \"pagination\": {\n        \"first\": \"http://api.sikkasoft.com/v4/data_sync_status?offset=0&limit=2\",\n        \"previous\": \"\",\n        \"current\": \"http://api.sikkasoft.com/v4/data_sync_status?offset=0&limit=2\",\n        \"next\": \"http://api.sikkasoft.com/v4/data_sync_status?offset=1&limit=2\",\n        \"last\": \"http://api.sikkasoft.com/v4/data_sync_status?offset=383&limit=2\"\n    },\n    \"items\": [\n        {\n            \"status\": \"refresh\",\n            \"practice_id\": \"1\",\n            \"office_id\": \"C100812\",\n            \"domain\": \"Chiropractic\",\n            \"practice_name\": \"Georgia Chiro and Wellness center \",\n            \"practice_management_system\": \"Eclipse\",\n            \"data_insert_date\": \"2022-03-28T01:40:31\",\n            \"practice_management_system_version\": \"2018\",\n            \"practice_management_system_refresh_date_time_zone\": \"Eastern Standard Time\"\n        },\n        {\n            \"status\": \"refresh\",\n            \"practice_id\": \"1\",\n            \"office_id\": \"C220212\",\n            \"domain\": \"Chiropractic\",\n            \"practice_name\": \"Better Chiropractic center\",\n            \"practice_management_system\": \"Chirotouch\",\n            \"data_insert_date\": \"2022-03-28T02:27:32\",\n            \"practice_management_system_version\": \"V6.5\",\n            \"practice_management_system_refresh_date_time_zone\": \"US Mountain Standard Time\"\n        }\n    ]\n}"
+								},
+								{
+									"id": "5d32fd80-7096-4ae1-aabe-cf3d7fde067b",
+									"name": "data_sync_status?fields=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "App-Id",
+												"value": "{application id}",
+												"type": "text"
+											},
+											{
+												"key": "App-Key",
+												"value": "{application key}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/data_sync_status?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"data_sync_status"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"offset\": \"xx\",\n    \"limit\": \"xx\",\n    \"total_count\": \"xx\",\n    \"execution_time\": \"xx\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/data_sync_status?offset=xx&limit=xx\",\n        \"previous\": \"previous\",\n        \"current\": \"https://api.sikkasoft.com/v4/data_sync_status?offset=xx&limit=xx\",\n        \"next\": \"https://api.sikkasoft.com/v4/data_sync_status?offset=xx&limit=xx\",\n        \"last\": \"https://api.sikkasoft.com/v4/data_sync_status?offset=xx&limit=xx\"\n    },\n    \"items\": [\n        {\n            \"status\": \"status\",\n            \"practice_id\": \"practice id\",\n            \"office_id\": \"office id\",\n            \"domain\": \"domain\",\n            \"practice_name\": \"practice name\",\n            \"practice_management_system\": \"practice management system\",\n            \"data_insert_date\": \"data insert date\",\n            \"practice_management_system_version\": \"practice management system version\",\n            \"practice_management_system_refresh_date_time_zone\": \"practice management system refresh date time zone\"\n        }\n    ]\n}"
 								}
 							]
 						},
