@@ -508,7 +508,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/appointments_available_slots",
-								"description": "Returns available appointments slots from practice.\n\n**Currently this data available only for OrthotracPMS.**\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n\n\n###### provider_id `optional`\n\n> Provider id as per practice management system \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### startdate `optional`\n\n> format: yyyy-mm-dd, start date \n  \n\n###### enddate `optional`\n\n> format: yyyy-mm-dd, end date \n\n\n###### operatory `optional`\n\n> Operatory \n\n\n###### SortBy\n\n###### practice_id `default`\n\n> practice id of office \n  \n\n###### date\n\n> Available appointment date \n  \n\n###### time\n\n> Available appointment time"
+								"description": "Returns available appointments slots from practice.\n\n**Currently this data available only few PMS, please contact Sikka API support for more details.**\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### provider_id `optional`\n\n> Provider id as per practice management system \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### startdate `optional`\n\n> format: yyyy-mm-dd, start date \n  \n\n###### enddate `optional`\n\n> format: yyyy-mm-dd, end date \n  \n\n###### operatory `optional`\n\n> Operatory \n  \n\n###### SortBy\n\n###### practice_id `default`\n\n> practice id of office \n  \n\n###### date\n\n> Available appointment date \n  \n\n###### time\n\n> Available appointment time"
 							},
 							"response": [
 								{
@@ -546,7 +546,7 @@
 											}
 										],
 										"url": {
-											"raw": "https://api.sikkasoft.com/v4/appointments?fields=get_all",
+											"raw": "https://api.sikkasoft.com/v4/appointments_available_slots?fields=get_all",
 											"protocol": "https",
 											"host": [
 												"api",
@@ -555,13 +555,12 @@
 											],
 											"path": [
 												"v4",
-												"appointments"
+												"appointments_available_slots"
 											],
 											"query": [
 												{
 													"key": "fields",
-													"value": "get_all",
-													"type": "text"
+													"value": "get_all"
 												}
 											]
 										}
@@ -572,7 +571,7 @@
 									"header": null,
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n  \"offset\": \"xx\",\n  \"limit\": \"xx\",\n  \"total_count\": \"xx\",\n  \"execution_time\": \"xx\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/appointments?offset=xx&limit=xx\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/appointments?offset=xx&limit=xx\",\n    \"next\": \"https://api.sikkasoft.com/v4/appointments?offset=xx&limit=xx\",\n    \"last\": \"https://api.sikkasoft.com/v4/appointments?offset=xx&limit=xx\"\n  },\n  \"items\": [\n{\n    \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/appointments/xxxx\",\n    \"patient_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/patients/xxxx\",\n    \"patient_id\": \"patient id\",\n    \"guarantor_id\": \"guarantor id\",\n    \"status\": \"status\",\n    \"provider_id\": \"provider id\",\n    \"provider_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/providers/xxxx\",\n    \"practice_id\": \"practice id\",\n    \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\n    \"guarantor_href\": \"\",\n    \"hygienist\": \"hygienist\",\n    \"amount\": \"amount\",\n    \"note\": \"note\",\n    \"surface_quadrant_type\": \"surface quadrant type\",\n    \"appointment_sr_no\": \"appointment sr no\",\n    \"operatory\": \"operatory\",\n    \"date\": \"date\",\n    \"time\": \"time\",\n    \"length\": \"length\",\n    \"description\": \"description\",\n    \"last_changed_date\": \"last changed date\",\n    \"appointment_made_date\": \"appointment made date\",\n    \"type\": \"type\",\n    \"procedure_code1\": \"procedure code1\",\n    \"procedure_code1_amount\": \"procedure code1 amount\",\n    \"procedure_code2\": \"procedure code2\",\n    \"procedure_code2_amount\": \"procedure code2 amount\",\n    \"procedure_code3\": \"procedure code3\",\n    \"procedure_code3_amount\": \"procedure code3 amount\",\n    \"procedure_code4\": \"procedure code4\",\n    \"procedure_code4_amount\": \"procedure code4 amount\",\n    \"procedure_code5\": \"procedure code5\",\n    \"procedure_code5_amount\": \"procedure code5 amount\",\n    \"procedure_code6\": \"procedure code6\",\n    \"procedure_code6_amount\": \"procedure code6 amount\",\n    \"procedure_code7\": \"procedure code7\",\n    \"procedure_code7_amount\": \"procedure code7 amount\",\n    \"is_companion\": \"is companion\",\n    \"sooner_if_possible\": \"sooner if possible\",\n    \"confirmed_on_date\": \"confirmed on date\",\n    \"patient_name\": \"patient name\",\n    \"guarantor_name\": \"guarantor name\",\n    \"procedure_code1_time\": \"procedure code1 time\",\n    \"procedure_code2_time\": \"procedure code2 time\",\n    \"procedure_code3_time\": \"procedure code3 time\",\n    \"procedure_code4_time\": \"procedure code4 time\",\n    \"procedure_code5_time\": \"procedure code5 time\",\n    \"procedure_code6_time\": \"procedure code6 time\",\n    \"procedure_code7_time\": \"procedure code7 time\",\n    \"tooth_number\": \"tooth number\",\n    \"surface_quadrant\": \"surface quadrant\",\n    \"schedule\": \"schedule\",\n    \"treatment_class\": \"treatment class\",\n    \"cancelled\": \"cancelled\",\n    \"location\": \"location\",\n    \"procedure_codes\": \"procedure codes\",\n    \"cust_id\": \"cust id\",\n    \"is_confirmed\": \"is confirmed\",\n    \"rowhash\": \"rowhash\",\n    \"original_provider\": \"original provider\",\n    \"status_in_office\": \"status in office\",\n    \"multiple_statuses\": \"multiple statuses\"\n}\n  ]\n}"
+									"body": "{\n    \"offset\": \"xx\",\n    \"limit\": \"xx\",\n    \"total_count\": \"xxxx\",\n    \"execution_time\": \"xx\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/appointments_available_slots?offset=xx&limit=xx\",\n        \"previous\": \"\",\n        \"current\": \"https://api.sikkasoft.com/v4/appointments_available_slots?offset=xx&limit=xx\",\n        \"next\": \"https://api.sikkasoft.com/v4/appointments_available_slots?offset=xx&limit=xx\",\n        \"last\": \"https://api.sikkasoft.com/v4/appointments_available_slots?offset=xx&limit=xx\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/{practice_id}/appointments_available_slots/{practice_id}\",\n            \"provider_id\": \"provider_id\",\n            \"provider_href\": \"https://api.sikkasoft.com/v4/practices/{practice_id}/providers/{provider_id}\",\n            \"practice_id\": \"{practice_id}\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/{practice_id}\",\n            \"date\": \"date\",\n            \"time\": \"time\",\n\t\t\t\"time_units\": \"time unit\",\n            \"operatory\": \"operatory\",\n            \"template_code\": \"Contains the template codes where new appointments can be added\",\n            \"template_unit\": \"Contains the time units representing the length of the template\",\n            \"template_color\": \"Contains the template color codes where new appointments can be added\",\n            \"template_type\": \"Contains a numeric value representing the template type\",\n            \"old_color\": \"Contains the previous color code of a slot before an appointment is scheduled\",\n            \"old_code\": \"Contains the previous template code of a slot before an appointment is scheduled\",\n            \"scheduled_color\": \"Contains the color code of a slot after an appointment is scheduled\",\n            \"scheduled_code\": \"Contains the template code of a slot after an appointment is scheduled\"\n        }\n    ]\n}"
 								}
 							]
 						},
