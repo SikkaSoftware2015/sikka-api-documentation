@@ -3496,7 +3496,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "",
+								"url": "https://api.sikkasoft.com/v4/lab_cases",
 								"description": "Returns lab cases data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### startdate `optional`\n\n> format: yyyy-mm-dd, start date \n  \n\n###### enddate `optional`\n\n> format: yyyy-mm-dd, enddate \n  \n\n###### lab_id `optional`\n\n> Lab ID \n  \n\n###### case_record_id `optional`\n\n> Case record ID \n  \n\n###### transaction_sr_no `optional`\n\n> Transaction Serial Number \n  \n\n###### appointment_sr_no `optional`\n\n> Appointment Serial Number \n  \n\n###### provider_id `optional`\n\n> Provider ID \n  \n\n###### Sortby\n\n###### case_record_id `default`\n\n> Case record ID"
 							},
 							"response": [
@@ -3570,7 +3570,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "",
+								"url": "https://api.sikkasoft.com/v4/lab_details",
 								"description": "Returns lab details from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### lab_id `optional`\n\n> lab id from lab details \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### city `optional`\n\n> City \n  \n\n###### state `optional`\n\n> State \n  \n\n###### zipcode `optional`\n\n> Zip Code \n  \n\n###### email `optional`\n\n> Email \n  \n\n###### Sortby\n\n###### lab_id `default`\n\n> lab id from lab details"
 							},
 							"response": [
@@ -3644,7 +3644,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "",
+								"url": "https://api.sikkasoft.com/v4/lab_panels",
 								"description": "Returns lab panels information from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### lab_panel_id `optional`\n\n> lab panel id from appointments \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### procedure_code_id `optional`\n\n> Procedure code id is same as procedure code. \n  \n\n###### status `optional`\n\n> status \n  \n\n###### lab_name `optional`\n\n> lab name \n  \n\n###### Sortby\n\n###### lab_panel_id `default`\n\n> lab panel id from appointments"
 							},
 							"response": [
