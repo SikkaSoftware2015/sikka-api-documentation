@@ -2319,7 +2319,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "",
+								"url": "https://api.sikkasoft.com/v4/patient_contracts",
 								"description": "Returns patient contract data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> guarantor id in practice management system \n  \n\n###### provider_id `optional`\n\n> provider id in practice management system \n  \n\n###### SortBy\n\n###### patient_id `default`\n\n> Patient ID as per the management system \n  \n\n###### practice_id\n\n> Practice ID"
 							},
 							"response": [
@@ -2393,7 +2393,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "",
+								"url": "https://api.sikkasoft.com/v4/fee_schedules",
 								"description": "Returns fee scheudle data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### fee_no `optional`\n\n> fee number in practice management system \n  \n\n###### procedure_code `optional`\n\n> procedure code in practice management system \n  \n\n###### SortBy\n\n###### fee_amount\n\n> Fee Amount \n  \n\n###### procedure_code `default`\n\n> Procedure code as per practice management system"
 							},
 							"response": [
@@ -2467,7 +2467,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "",
+								"url": "https://api.sikkasoft.com/v4/referrals",
 								"description": "Returns appointments data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### referral_type `optional`\n\n> referral type from appointments \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> guarantor id in practice management system \n  \n\n###### referral_id `optional`\n\n> referral id in practice management system \n  \n\n###### SortBy\n\n###### referral_id `default`\n\n> referral id in practice management system \n\n###### practice_id\n\n> practice id of office"
 							},
 							"response": [
@@ -2541,7 +2541,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "",
+								"url": "https://api.sikkasoft.com/v4/appointment_statuses",
 								"description": "Returns appointments status data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### SortBy\n\n###### practice_id `default`\n\n> Practice ID"
 							},
 							"response": [
@@ -2603,7 +2603,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "",
+								"url": "https://api.sikkasoft.com/v4/perio_charts",
 								"description": "Returns perio charts data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> Patient ID as per the management system \n  \n\n###### date `optional`\n\n> Filter on date field, format: yyyy-mm-dd \n  \n\n###### SortBy\n\n###### patient_id `default`\n\n> Patient ID as per the management system\n\n###### date\n\n> Filter on date field, format: yyyy-mm-dd \n  \n\n###### chart_date\n\n> Filter on date field, format: yyyy-mm-dd \n  \n\n###### practice_id\n\n> Practice ID"
 							},
 							"response": [
@@ -2677,7 +2677,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "",
+								"url": "https://api.sikkasoft.com/v4/patient_statuses",
 								"description": "Returns patient status data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### Sortby\n\n###### practice_id `default`\n\n> practice id of office"
 							},
 							"response": [
@@ -2751,7 +2751,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "",
+								"url": "https://api.sikkasoft.com/v4/clinical_conditions",
 								"description": "###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### id `optional`\n\n> clinical condition id in practice management system \n  \n\n###### status `optional`\n\n> appointment / treatment plan / clinical_conditions status \n  \n\n###### Sortby\n\n###### condition_name\n\n> Condition Name \n  \n\n###### tooth_surface\n\n> tooth surface \n  \n\n###### description\n\n> description \n  \n\n###### status\n\n> appointment / treatment plan / clinical_conditions status \n  \n\n###### id `default`\n\n> valid id, coma separated for multiple"
 							},
 							"response": [
