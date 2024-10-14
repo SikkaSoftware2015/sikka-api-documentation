@@ -966,7 +966,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/practices",
-								"description": "Return list of all practices\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### national_provider_identifier `optional`\n\n> National provider identifier \n  \n\n###### SortBy\n\n###### practice_id  `default`\n> practice id of office \n \n###### practice_name\n\n> practice name"
+								"description": "Return list of all practices\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### national_provider_identifier `optional`\n\n> National provider identifier \n  \n\n###### SortBy\n\n###### practice_id `default`\n\n> practice id of office \n  \n\n###### practice_name\n\n> practice name"
 							},
 							"response": [
 								{
