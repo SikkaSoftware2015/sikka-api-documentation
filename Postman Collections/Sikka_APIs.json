@@ -2756,7 +2756,7 @@
 							"response": [
 								{
 									"id": "78812e4f-ed4b-4a53-bbaa-f8451b96edc7",
-									"name": "patient_statuses",
+									"name": "patient_status_history",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
@@ -2766,13 +2766,13 @@
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/patient_statuses"
+										"url": "https://api.sikkasoft.com/v4/patient_status_history"
 									},
 									"_postman_previewlanguage": "json",
 									"header": null,
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"500\",\r\n\"total_count\": \"3\",\r\n\"execution_time\": \"57\",\r\n\"pagination\": {\r\n\"first\": \"http://api.sikkasoft.com/v4/patient_statuses?offset=0&limit=500\",\r\n\"previous\": \"\",\r\n\"current\": \"http://api.sikkasoft.com/v4/patient_statuses?offset=0&limit=500\",\r\n\"next\": \"\",\r\n\"last\": \"http://api.sikkasoft.com/v4/patient_statuses?offset=0&limit=500\"\r\n},\r\n\"items\": [\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/patient_statuses/Inactive\",\r\n\"status\": \"Inactive\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/patient_statuses/Active\",\r\n\"status\": \"Active\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\"\r\n}\r\n]\r\n}"
+									"body": "{\r\n    \"offset\": \"xx\",\r\n    \"limit\": \"xx\",\r\n    \"total_count\": \"xxxx\",\r\n    \"execution_time\": \"xx\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/patient_status_history?offset=xx&limit=xx\",\r\n        \"previous\": \"\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/patient_status_history?offset=xx&limit=xx\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/patient_status_history?offset=xx&limit=xx\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/patient_status_history?offset=xx&limit=xx\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/patient_status_history/123456\",\r\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/123456\",\r\n            \"patient_id\": \"123456\",\r\n            \"practice_id\": \"1\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n            \"date\": \"2024-09-23\",\r\n            \"cust_id\": \"1\",\r\n            \"rowhash\": \"6E-0C-80-BB-E1-EA-01\",\r\n            \"old_status\": \"\",\r\n            \"current_status\": \"New Patient Added\"\r\n        },\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/patient_status_history/123456\",\r\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/123456\",\r\n            \"patient_id\": \"123456\",\r\n            \"practice_id\": \"1\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n            \"date\": \"2024-09-23\",\r\n            \"cust_id\": \"1\",\r\n            \"rowhash\": \"66-34-2C-55-8F-10-01\",\r\n            \"old_status\": \"New Patient Added\",\r\n            \"current_status\": \"Consultation\"\r\n        }\r\n    ]\r\n}"
 								},
 								{
 									"id": "164070ab-795a-4cee-aad6-809c5441c871",
@@ -2787,7 +2787,7 @@
 											}
 										],
 										"url": {
-											"raw": "https://api.sikkasoft.com/v4/patient_statuses?fields=get_all",
+											"raw": "https://api.sikkasoft.com/v4/patient_status_history?fields=get_all",
 											"protocol": "https",
 											"host": [
 												"api",
@@ -2796,13 +2796,12 @@
 											],
 											"path": [
 												"v4",
-												"patient_statuses"
+												"patient_status_history"
 											],
 											"query": [
 												{
 													"key": "fields",
-													"value": "get_all",
-													"type": "text"
+													"value": "get_all"
 												}
 											]
 										}
@@ -2811,7 +2810,7 @@
 									"header": null,
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\r\n    \"offset\": \"xx\",\r\n    \"limit\": \"xx\",\r\n    \"total_count\": \"xx\",\r\n    \"execution_time\": \"xx\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/patient_statuses?offset=xx&limit=xx\",\r\n        \"previous\": \"previous\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/patient_statuses?offset=xx&limit=xx\",\r\n        \"next\": \"next\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/patient_statuses?offset=xx&limit=xx\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/patient_statuses/Inactive\",\r\n            \"status\": \"status\",\r\n            \"practice_id\": \"practice id\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\"\r\n        }\r\n    ]\r\n}"
+									"body": "{\r\n    \"offset\": \"xx\",\r\n    \"limit\": \"xx\",\r\n    \"total_count\": \"xxxx\",\r\n    \"execution_time\": \"xx\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/patient_status_history?offset=xx&limit=xx\",\r\n        \"previous\": \"\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/patient_status_history?offset=xx&limit=xx\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/patient_status_history?offset=xx&limit=xx\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/patient_status_history?offset=xx&limit=xx\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/patient_status_history/123456\",\r\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/123456\",\r\n            \"patient_id\": \"123456\",\r\n            \"practice_id\": \"1\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n            \"date\": \"2024-09-23\",\r\n            \"cust_id\": \"1\",\r\n            \"rowhash\": \"6E-0C-80-BB-E1-EA-01\",\r\n            \"old_status\": \"\",\r\n            \"current_status\": \"New Patient Added\"\r\n        },\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/patient_status_history/123456\",\r\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/123456\",\r\n            \"patient_id\": \"123456\",\r\n            \"practice_id\": \"1\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n            \"date\": \"2024-09-23\",\r\n            \"cust_id\": \"1\",\r\n            \"rowhash\": \"66-34-2C-55-8F-10-01\",\r\n            \"old_status\": \"New Patient Added\",\r\n            \"current_status\": \"Consultation\"\r\n        }\r\n    ]\r\n}"
 								}
 							]
 						},
