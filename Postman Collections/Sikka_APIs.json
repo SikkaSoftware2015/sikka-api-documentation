@@ -802,6 +802,84 @@
 							]
 						},
 						{
+							"name": "patient_extended_info",
+							"id": "cce5e324-cf78-4967-a96f-28aea3af1096",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "https://api.sikkasoft.com/v4/patients",
+								"description": "Returns list of patients with extebded information from practice\n\n---\n\n###### Parameters\n\n###### email `optional`\n\n> Email id. \n  \n\n###### practice_id `optional`\n\n> Practice ID of office \n  \n\n###### patient_id `optional`\n\n> Patient ID as per the practice management system \n  \n\n###### provider_id `optional`\n\n> Provider ID as per the practice management system \n  \n\n###### guarantor_id `optional`\n\n> Guarantor ID as per the practice management system \n  \n\n###### firstname `optional`\n\n> First name of patient \n  \n\n###### lastname `optional`\n\n> Last name of patient \n  \n\n###### first_visit `optional`\n\n> First Visit \n  \n\n###### last_visit `optional`\n\n> Last Visit \n  \n\n###### cell `optional`\n\n> Cell Number \n  \n\n###### search `optional`\n\n> Search patient by firstname , lastname , email , middlename, city, state, zipcode, homephone, workphone, cell \n  \n\n###### status `optional`\n\n> Status of patient \n  \n\n###### phone `optional`\n\n> Phone Number \n  \n\n###### homephone `optional`\n\n> Home Number \n  \n\n###### workphone `optional`\n\n> Work Number \n  \n\n###### microchip `optional`\n\n> Microchip ID \n  \n\n###### rabies `optional`\n\n> Rabies ID \n  \n\n###### petname `optional`\n\n> Pet name \n  \n\n###### SortBy\n\n###### patient_id `default`\n\n> Patient ID as per the practice management system. \n  \n\n###### firstname or first_name\n\n> First Name as per the practice management system. \n  \n\n###### lastname or last_name\n\n> Last Name as per the practice management system. \n  \n\n###### zipcode or patient_zipcode\n\n> Zip Code of patient."
+							},
+							"response": [
+								{
+									"id": "f4bf901e-9e11-481f-8b6d-2646f58495c6",
+									"name": "patients",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "request-key",
+												"value": "' '",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/patients"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"1\",\n    \"total_count\": \"9161\",\n    \"execution_time\": \"47\",\n    \"pagination\": {\n        \"first\": \"http://api.sikkasoft.com/v4/patients?offset=0&limit=1\",\n        \"previous\": \"\",\n        \"current\": \"http://api.sikkasoft.com/v4/patients?offset=0&limit=1\",\n        \"next\": \"http://api.sikkasoft.com/v4/patients?offset=1&limit=1\",\n        \"last\": \"http://api.sikkasoft.com/v4/patients?offset=9160&limit=1\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/patients/799601\",\n            \"patient_id\": \"799601\",\n            \"guarantor_id\": \"799600\",\n            \"firstname\": \"Carlene\",\n            \"middlename\": \"\",\n            \"lastname\": \"Victoria\",\n            \"preferred_name\": \"Caeene\",\n            \"salutation\": \"\",\n            \"birthdate\": \"1984-12-10T00:00:00\",\n            \"status\": \"Active\",\n            \"address_line1\": \"\",\n            \"address_line2\": \"\",\n            \"city\": \"San Jose\",\n            \"state\": \"CA\",\n            \"zipcode\": \"95116\",\n            \"cell\": \"xxx-xxx-xxxx\",\n            \"email\": \"xxxx@xxxx.com\",\n            \"first_visit\": \"\",\n            \"last_visit\": \"\",\n            \"provider_id\": \"1\",\n            \"provider_href\": \"https://api.sikkasoft.com/v4/practices/1/providers/1\",\n            \"practice_id\": \"1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\n            \"appointment_href\": \"https://api.sikkasoft.com/v4/practices/1/appointments?patient_id=799601\",\n            \"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/1/guarantors/799600\",\n            \"primary_insurance_company_id\": \"\",\n            \"primary_insurance_company_href\": \"https://api.sikkasoft.com/v4/practices/1/insurance_companies/\",\n            \"primary_relationship\": \"\",\n            \"primary_medical_insurance\": \"\",\n            \"primary_medical_insurance_id\": \"\",\n            \"primary_medical_relationship\": \"\",\n            \"primary_medical_subscriber_id\": \"\",\n            \"subscriber_id\": \"\",\n            \"other_referral\": \"\",\n            \"patient_referral\": \"\",\n            \"referred_out\": \"\",\n            \"fee_no\": \"0\",\n            \"guarantor_first_name\": \"first name\",\n            \"guarantor_last_name\": \"Last name\",\n            \"created_date\": \"2020-09-25T00:00:00\",\n            \"preferred_contact\": \"\",\n            \"preferred_communication_method\": \"\"\n        }\n    ]\n}"
+								},
+								{
+									"id": "4aa78f69-6a59-4911-b151-87b6bc566b6e",
+									"name": "patients?fields=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "request-key",
+												"value": "' '",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/patients?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"patients"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"type": "text"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"offset\": \"xx\",\n  \"limit\": \"xx\",\n  \"total_count\": \"xx\",\n  \"execution_time\": \"xx\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/patients?offset=xx&limit=xx\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/patients?offset=xx&limit=xx\",\n    \"next\": \"https://api.sikkasoft.com/v4/patients?offset=xx&limit=xx\",\n    \"last\": \"https://api.sikkasoft.com/v4/patients?offset=xx&limit=xx\"\n  },\n  \"items\": [\n{\n    \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/patients/xxxx\",\n    \"patient_id\": \"patient id\",\n    \"guarantor_id\": \"guarantor id\",\n    \"firstname\": \"firstname\",\n    \"middlename\": \"middlename\",\n    \"lastname\": \"lastname\",\n    \"preferred_name\": \"preferred name\",\n    \"salutation\": \"salutation\",\n    \"birthdate\": \"birthdate\",\n    \"status\": \"status\",\n    \"patient_note\": \"patient note\",\n    \"medical_note\": \"medical note\",\n    \"alert_note\": \"alert note\",\n    \"other_note\": \"other note\",\n    \"gender\": \"gender\",\n    \"address_line1\": \"address line1\",\n    \"address_line2\": \"address line2\",\n    \"city\": \"city\",\n    \"state\": \"state\",\n    \"zipcode\": \"zipcode\",\n    \"homephone\": \"homephone\",\n    \"workphone\": \"workphone\",\n    \"cell\": \"cell\",\n    \"email\": \"email\",\n    \"employer_id\": \"employer id\",\n    \"employer_href\": \"\",\n    \"billing_type\": \"billing type\",\n    \"first_visit\": \"first visit\",\n    \"last_visit\": \"last visit\",\n    \"provider_id\": \"provider id\",\n    \"provider_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/providers/xxxx\",\n    \"practice_id\": \"practice id\",\n    \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\n    \"appointment_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/appointments?patient_id=xxxx\",\n    \"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/guarantors/xxxx\",\n    \"primary_insurance_company_id\": \"primary insurance company id\",\n    \"primary_insurance_company_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/insurance_companies/\",\n    \"secondary_insurance_company_id\": \"secondary insurance company id\",\n    \"secondary_insurance_company_href\": \"\",\n    \"primary_relationship\": \"primary relationship\",\n    \"country\": \"country\",\n    \"primary_medical_insurance\": \"primary medical insurance\",\n    \"primary_medical_insurance_id\": \"primary medical insurance id\",\n    \"primary_medical_relationship\": \"primary medical relationship\",\n    \"primary_medical_subscriber_id\": \"primary medical subscriber id\",\n    \"secondary_medical_insurance\": \"secondary medical insurance\",\n    \"secondary_medical_insurance_id\": \"secondary medical insurance id\",       \n    \"secondary_medical_relationship\": \"secondary medical relationship\",       \n    \"secondary_medical_subscriber_id\": \"secondary medical subscriber id\",     \n    \"secondary_relationship\": \"secondary relationship\",\n    \"subscriber_id\": \"subscriber id\",\n    \"patient_account_id\": \"patient account id\",\n    \"other_referral\": \"other referral\",\n    \"patient_referral\": \"patient referral\",\n    \"referred_out\": \"referred out\",\n    \"referred_by_provider_id\": \"referred by provider id\",\n    \"referred_by_patient_id\": \"referred by patient id\",\n    \"image\": \"image\",\n    \"thumb_image\": \"thumb image\",\n    \"fee_no\": \"fee no\",\n    \"guarantor_first_name\": \"guarantor first name\",\n    \"guarantor_last_name\": \"guarantor last name\",\n    \"created_date\": \"created date\",\n    \"preferred_contact\": \"preferred contact\",\n    \"hygienist\": \"hygienist\",\n    \"integration_ids\": \"integration ids\",\n    \"patient_codes\": \"patient codes\",\n    \"primary_insurance\": \"primary insurance\",\n    \"secondary_insurance\": \"secondary insurance\",\n    \"other_phone\": \"other phone\",\n    \"preferred_communication_method\": \"preferred communication method\",       \n    \"ui_patient_id\": \"ui patient id\",\n    \"marital_status\": \"marital status\",\n    \"cust_id\": \"cust id\",\n    \"secondary_subscriber_id\": \"secondary subscriber id\",\n    \"secondary_fee_schedule\": \"secondary fee schedule\",\n    \"email_alert\": \"email alert\",\n    \"text_alert\": \"text alert\",\n    \"voice_alert\": \"voice alert\",\n    \"primary_subscriber_patient_id\": \"primary subscriber patient id\",\n    \"secondary_subscriber_patient_id\": \"secondary subscriber patient id\",     \n    \"guarantor_bill_type\": \"guarantor bill type\",\n    \"guarantor_bill_type_description\": \"guarantor bill type description\",     \n    \"bill_type\": \"bill type\",\n    \"guarantor_patient_id\": \"guarantor patient id\",\n    \"rowhash\": \"rowhash\",\n    \"chart_number\": \"chart number\",\n    \"preferred_recall_method\": \"preferred recall method\",\n    \"exclude_message\": \"exclude message\",\n    \"extension\": \"extension\",\n    \"guarantor_is_send_statements\": \"guarantor is send statements\",\n    \"guarantor_no_email_statements\": \"guarantor no email statements\",\n    \"suppress_billing\": \"suppress billing\",\n    \"profile_status\": \"profile status\"\n}\n  ]\n}"
+								}
+							]
+						},
+						{
 							"name": "veterinary_patients",
 							"id": "cc48ea30-25df-4a74-8fb6-eb208d70a4c2",
 							"protocolProfileBehavior": {
