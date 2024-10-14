@@ -2751,7 +2751,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/patient_status_history",
-								"description": "Returns patient status history data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### Sortby\n\n###### practice_id `default`\n\n> practice id of office"
+								"description": "Returns patient status history data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### patient_id `optional`\n\n> &lt;p &gt;Patient ID as per the management system &lt;/p&gt; \n  \n\n###### startdate\n\n> &lt;p &gt;startdate for contract_due_date, format: yyyy-mm-dd &lt;/p&gt; \n  \n\n###### enddate\n\n> &lt;p &gt;enddate for contract_due_date, format: yyyy-mm-dd &lt;/p&gt; \n  \n\n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### Sortby\n\n###### practice_id `default`\n\n> practice id of office"
 							},
 							"response": [
 								{
