@@ -2750,8 +2750,8 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "https://api.sikkasoft.com/v4/patient_statuses",
-								"description": "Returns patient status data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### Sortby\n\n###### practice_id `default`\n\n> practice id of office"
+								"url": "https://api.sikkasoft.com/v4/patient_status_history",
+								"description": "Returns patient status history data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### Sortby\n\n###### practice_id `default`\n\n> practice id of office"
 							},
 							"response": [
 								{
