@@ -874,7 +874,7 @@
 									"header": null,
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"offset\": \"xx\",\n    \"limit\": \"xx\",\n    \"total_count\": \"xxxx\",\n    \"execution_time\": \"xx\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/patient_extended_info?offset=xx&limit=xx\",\n        \"previous\": \"\",\n        \"current\": \"https://api.sikkasoft.com/v4/patient_extended_info?offset=xx&limit=xx\",\n        \"next\": \"https://api.sikkasoft.com/v4/patient_extended_info?offset=xx&limit=xx\",\n        \"last\": \"https://api.sikkasoft.com/v4/patient_extended_info?offset=xx&limit=xx\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/{practice_id}/patient_extended_info/{patient_id}\",\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/{practice_id}/patients/{patient_id}\",\n            \"patient_id\": \"{patient_id}\",\n            \"practice_id\": \"{practice_id}\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/{practice_id}\",\n            \"cust_id\": {cust_id},\n            \"rowhash\": \"1F-04-F7-F7-C1-47-01\",\n            \"mail_method\": \"mail method\",\n            \"gender_identifier\": \"gender identifier\",\n            \"school\": \"school\",\n            \"treatment_months\": \"xx\",\n            \"status_start_date\": \"yyyy-MM-dd\",\n            \"new_patient_exam_date\": \"yyyy-MM-dd\"\n        },\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/{practice_id}/patient_extended_info/{patient_id}\",\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/{practice_id}/patients/{patient_id}\",\n            \"patient_id\": \"{patient_id}\",\n            \"practice_id\": \"{practice_id}\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/{practice_id}\",\n            \"cust_id\": {cust_id},\n            \"rowhash\": \"CB-D1-6D-3C-D7-C5-03\",\n            \"mail_method\": \"mail method\",\n            \"gender_identifier\": \"gender identifier\",\n            \"school\": \"school\",\n            \"treatment_months\": \"xx\",\n            \"status_start_date\": \"yyyy-MM-dd\",\n            \"new_patient_exam_date\": \"yyyy-MM-dd\"\n        }\n    ]\n}"
+									"body": "{\n    \"offset\": \"xx\",\n    \"limit\": \"xx\",\n    \"total_count\": \"xxxx\",\n    \"execution_time\": \"xx\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/patient_extended_info?offset=xx&limit=xx\",\n        \"previous\": \"\",\n        \"current\": \"https://api.sikkasoft.com/v4/patient_extended_info?offset=xx&limit=xx\",\n        \"next\": \"https://api.sikkasoft.com/v4/patient_extended_info?offset=xx&limit=xx\",\n        \"last\": \"https://api.sikkasoft.com/v4/patient_extended_info?offset=xx&limit=xx\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/{practice_id}/patient_extended_info/{patient_id}\",\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/{practice_id}/patients/{patient_id}\",\n            \"patient_id\": \"{patient_id}\",\n            \"practice_id\": \"{practice_id}\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/{practice_id}\",\n            \"cust_id\": \"{cust_id}\",\n            \"rowhash\": \"1F-04-F7-F7-C1-47-01\",\n            \"mail_method\": \"mail method\",\n            \"gender_identifier\": \"gender identifier\",\n            \"school\": \"school\",\n            \"treatment_months\": \"xx\",\n            \"status_start_date\": \"yyyy-MM-dd\",\n            \"new_patient_exam_date\": \"yyyy-MM-dd\",\n            \"premedicate\": \"true/false\"\n        },\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/{practice_id}/patient_extended_info/{patient_id}\",\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/{practice_id}/patients/{patient_id}\",\n            \"patient_id\": \"{patient_id}\",\n            \"practice_id\": \"{practice_id}\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/{practice_id}\",\n            \"cust_id\": \"{cust_id}\",\n            \"rowhash\": \"CB-D1-6D-3C-D7-C5-03\",\n            \"mail_method\": \"mail method\",\n            \"gender_identifier\": \"gender identifier\",\n            \"school\": \"school\",\n            \"treatment_months\": \"xx\",\n            \"status_start_date\": \"yyyy-MM-dd\",\n            \"new_patient_exam_date\": \"yyyy-MM-dd\",\n            \"premedicate\": \"true/false\"\n        }\n    ]\n}"
 								}
 							]
 						},
@@ -39204,107 +39204,6 @@
 					},
 					"response": [
 						{
-							"id": "5ebafc62-5d67-128e-5470-dee111314ae4",
-							"name": "request",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"body": {
-									"mode": "formdata",
-									"formdata": []
-								},
-								"url": {
-									"raw": "{{url}}/start?app_id={{app_id}}&app_key={{app_key}}&office_id={{office_id}}&secret_key={{secret_key}}",
-									"host": [
-										"{{url}}"
-									],
-									"path": [
-										"start"
-									],
-									"query": [
-										{
-											"key": "app_id",
-											"value": "{{app_id}}"
-										},
-										{
-											"key": "app_key",
-											"value": "{{app_key}}"
-										},
-										{
-											"key": "office_id",
-											"value": "{{office_id}}"
-										},
-										{
-											"key": "secret_key",
-											"value": "{{secret_key}}"
-										}
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"name": "cache-control",
-									"key": "cache-control",
-									"value": "private",
-									"description": ""
-								},
-								{
-									"name": "content-encoding",
-									"key": "content-encoding",
-									"value": "gzip",
-									"description": ""
-								},
-								{
-									"name": "content-length",
-									"key": "content-length",
-									"value": "254",
-									"description": ""
-								},
-								{
-									"name": "content-type",
-									"key": "content-type",
-									"value": "application/json",
-									"description": ""
-								},
-								{
-									"name": "date",
-									"key": "date",
-									"value": "Wed, 27 Sep 2017 11:51:51 GMT",
-									"description": ""
-								},
-								{
-									"name": "server",
-									"key": "server",
-									"value": "Microsoft-IIS/8.5",
-									"description": ""
-								},
-								{
-									"name": "vary",
-									"key": "vary",
-									"value": "Accept-Encoding",
-									"description": ""
-								},
-								{
-									"name": "x-aspnet-version",
-									"key": "x-aspnet-version",
-									"value": "4.0.30319",
-									"description": ""
-								},
-								{
-									"name": "x-powered-by",
-									"key": "x-powered-by",
-									"value": "ASP.NET",
-									"description": ""
-								}
-							],
-							"cookie": [],
-							"responseTime": "1021",
-							"body": "[\n    {\n        \"scope\": \"https://api.sikkasoft.com/v2/\",\n        \"request_key\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\n        \"token_type\": \"Bearer\",\n        \"expires_in\": \"86400\"\n    }\n]"
-						},
-						{
 							"id": "4c0ff35e-6114-aab3-aa4f-5501e1c652ce",
 							"name": "start",
 							"originalRequest": {
@@ -39416,6 +39315,107 @@
 							"cookie": [],
 							"responseTime": "485",
 							"body": "[{\"scope\":\"https:\\/\\/api.sikkasoft.com\\/v2\\/\",\"request_key\":\"ad9beb2883ed1a2277d1aac15fc9793d\",\"token_type\":\"Bearer\",\"expires_in\":\"86400\"}]\r\n"
+						},
+						{
+							"id": "5ebafc62-5d67-128e-5470-dee111314ae4",
+							"name": "request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{url}}/start?app_id={{app_id}}&app_key={{app_key}}&office_id={{office_id}}&secret_key={{secret_key}}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"start"
+									],
+									"query": [
+										{
+											"key": "app_id",
+											"value": "{{app_id}}"
+										},
+										{
+											"key": "app_key",
+											"value": "{{app_key}}"
+										},
+										{
+											"key": "office_id",
+											"value": "{{office_id}}"
+										},
+										{
+											"key": "secret_key",
+											"value": "{{secret_key}}"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"name": "cache-control",
+									"key": "cache-control",
+									"value": "private",
+									"description": ""
+								},
+								{
+									"name": "content-encoding",
+									"key": "content-encoding",
+									"value": "gzip",
+									"description": ""
+								},
+								{
+									"name": "content-length",
+									"key": "content-length",
+									"value": "254",
+									"description": ""
+								},
+								{
+									"name": "content-type",
+									"key": "content-type",
+									"value": "application/json",
+									"description": ""
+								},
+								{
+									"name": "date",
+									"key": "date",
+									"value": "Wed, 27 Sep 2017 11:51:51 GMT",
+									"description": ""
+								},
+								{
+									"name": "server",
+									"key": "server",
+									"value": "Microsoft-IIS/8.5",
+									"description": ""
+								},
+								{
+									"name": "vary",
+									"key": "vary",
+									"value": "Accept-Encoding",
+									"description": ""
+								},
+								{
+									"name": "x-aspnet-version",
+									"key": "x-aspnet-version",
+									"value": "4.0.30319",
+									"description": ""
+								},
+								{
+									"name": "x-powered-by",
+									"key": "x-powered-by",
+									"value": "ASP.NET",
+									"description": ""
+								}
+							],
+							"cookie": [],
+							"responseTime": "1021",
+							"body": "[\n    {\n        \"scope\": \"https://api.sikkasoft.com/v2/\",\n        \"request_key\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\n        \"token_type\": \"Bearer\",\n        \"expires_in\": \"86400\"\n    }\n]"
 						}
 					]
 				},
