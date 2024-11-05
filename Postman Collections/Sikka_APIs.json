@@ -1591,7 +1591,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/outside_doctors",
-								"description": "Returns provider details from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### provider_id `optional`\n\n> provider id in practice management system \n  \n\n###### provider_type `optional`\n\n> provider type in practice management system \n  \n\n###### firstname `optional`\n\n> First name of provider \n  \n\n###### lastname `optional`\n\n> Last name of provider \n  \n\n###### national_provider_identifier `optional`\n\n> National provider identifier \n  \n\n###### status `optional`\n\n> Status of provider \n  \n\n###### is_user `optional`\n\n> Value indicating proivder is a user or not, valid value True/False \n  \n\n###### SortBy\n\n###### provider_id `default`\n\n> provider id in practice management system"
+								"description": "Returns outside doctors details from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### doctor_id `optional`\n\n> doctor id in practice management system \n  \n\n###### patient_id `optional`\n\n> patient id in practice management system \n\n\n###### SortBy\n\n###### doctor_id `default`\n\n> doctor id in practice management system \n\n\n###### patient_id\n\n> patient id in practice management system\n\n\n###### practice_id\n\n> practice id of office"
 							},
 							"response": [
 								{
@@ -1607,25 +1607,7 @@
 												"disabled": true
 											}
 										],
-										"url": {
-											"raw": "https://api.sikkasoft.com/v4/providers?=",
-											"protocol": "https",
-											"host": [
-												"api",
-												"sikkasoft",
-												"com"
-											],
-											"path": [
-												"v4",
-												"providers"
-											],
-											"query": [
-												{
-													"key": "",
-													"value": ""
-												}
-											]
-										}
+										"url": "https://api.sikkasoft.com/v4/outside_doctors"
 									},
 									"_postman_previewlanguage": null,
 									"header": null,
