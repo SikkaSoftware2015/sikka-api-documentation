@@ -1987,7 +1987,7 @@
 							"response": [
 								{
 									"id": "5503c99b-97fd-4559-b637-0ea6e05869cc",
-									"name": "treatment_plans",
+									"name": "patient_treatment_history",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
@@ -1998,7 +1998,7 @@
 											}
 										],
 										"url": {
-											"raw": "https://api.sikkasoft.com/v4/treatment_plans",
+											"raw": "https://api.sikkasoft.com/v4/patient_treatment_history",
 											"protocol": "https",
 											"host": [
 												"api",
@@ -2007,7 +2007,7 @@
 											],
 											"path": [
 												"v4",
-												"treatment_plans"
+												"patient_treatment_history"
 											],
 											"query": [
 												{
@@ -2027,7 +2027,7 @@
 								},
 								{
 									"id": "20699fab-e783-4631-a38e-ce03a37a6ef3",
-									"name": "treatment_plans?fields=get_all",
+									"name": "patient_treatment_history?fields=get_all",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
@@ -2038,7 +2038,7 @@
 											}
 										],
 										"url": {
-											"raw": "https://api.sikkasoft.com/v4/treatment_plans",
+											"raw": "https://api.sikkasoft.com/v4/patient_treatment_history?fields=get_all",
 											"protocol": "https",
 											"host": [
 												"api",
@@ -2047,14 +2047,13 @@
 											],
 											"path": [
 												"v4",
-												"treatment_plans"
+												"patient_treatment_history"
 											],
 											"query": [
 												{
 													"key": "fields",
 													"value": "get_all",
-													"type": "text",
-													"disabled": true
+													"type": "text"
 												}
 											]
 										}
