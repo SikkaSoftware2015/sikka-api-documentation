@@ -9846,7 +9846,7 @@
 							]
 						},
 						{
-							"name": "procedure_codes Copy",
+							"name": "pending_procedures",
 							"id": "9086881d-f5cc-4435-93fe-1ed8dec926ce",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -9855,7 +9855,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/procedure_codes",
-								"description": "Returns procedure codes data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### procedure_code `optional`\n\n> procedure code from appointments \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### procedure_code_category `optional`\n\n> As per the procedure code category in API response. \n  \n\n###### SortBy\n\n###### procedure_code `default`\n\n> Procedure code as per practice management system"
+								"description": "Returns pending procedures for the patient with available balance data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### procedure_code `optional`\n\n> procedure code from appointments \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### procedure_code_category `optional`\n\n> As per the procedure code category in API response. \n  \n\n###### SortBy\n\n###### procedure_code `default`\n\n> Procedure code as per practice management system"
 							},
 							"response": [
 								{
