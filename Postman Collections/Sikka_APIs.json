@@ -2847,7 +2847,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/perio_charts",
-								"description": "Returns perio charts data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> Patient ID as per the management system \n  \n\n###### date `optional`\n\n> Filter on date field, format: yyyy-mm-dd \n  \n\n###### SortBy\n\n###### patient_id `default`\n\n> Patient ID as per the management system\n\n###### date\n\n> Filter on date field, format: yyyy-mm-dd \n  \n\n###### chart_date\n\n> Filter on date field, format: yyyy-mm-dd \n  \n\n###### practice_id\n\n> Practice ID"
+								"description": "Returns perio charts data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> Patient ID as per the management system \n  \n\n###### date `optional`\n\n> Filter on date field, format: yyyy-mm-dd \n  \n\n###### SortBy\n\n###### patient_id `default`\n\n> Patient ID as per the management system \n  \n\n###### date\n\n> Filter on date field, format: yyyy-mm-dd \n  \n\n###### chart_date\n\n> Filter on date field, format: yyyy-mm-dd \n  \n\n###### practice_id\n\n> Practice ID"
 							},
 							"response": [
 								{
@@ -3068,7 +3068,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/clinical_conditions",
-								"description": "###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### id `optional`\n\n> clinical condition id in practice management system \n  \n\n###### status `optional`\n\n> appointment / treatment plan / clinical_conditions status \n  \n\n###### Sortby\n\n###### condition_name\n\n> Condition Name \n  \n\n###### tooth_surface\n\n> tooth surface \n  \n\n###### description\n\n> description \n  \n\n###### status\n\n> appointment / treatment plan / clinical_conditions status \n  \n\n###### id `default`\n\n> valid id, coma separated for multiple"
+								"description": "Returns clinical conditions data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### id `optional`\n\n> clinical condition id in practice management system \n  \n\n###### status `optional`\n\n> appointment / treatment plan / clinical_conditions status \n  \n\n###### Sortby\n\n###### condition_name\n\n> Condition Name \n  \n\n###### tooth_surface\n\n> tooth surface \n  \n\n###### description\n\n> description \n  \n\n###### status\n\n> appointment / treatment plan / clinical_conditions status \n  \n\n###### id `default`\n\n> valid id, coma separated for multiple"
 							},
 							"response": [
 								{
