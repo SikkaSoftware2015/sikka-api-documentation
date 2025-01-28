@@ -3068,7 +3068,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/clinical_conditions",
-								"description": "Returns clinical conditions data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### id `optional`\n\n> clinical condition id in practice management system \n  \n\n###### status `optional`\n\n> appointment / treatment plan / clinical_conditions status \n  \n\n###### Sortby\n\n###### condition_name\n\n> Condition Name \n  \n\n###### tooth_surface\n\n> tooth surface \n  \n\n###### description\n\n> description \n  \n\n###### status\n\n> appointment / treatment plan / clinical_conditions status \n  \n\n###### id `default`\n\n> valid id, coma separated for multiple"
+								"description": "Returns clinical conditions data incuding status and tooth surface from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### id `optional`\n\n> clinical condition id in practice management system \n  \n\n###### status `optional`\n\n> appointment / treatment plan / clinical_conditions status \n  \n\n###### Sortby\n\n###### condition_name\n\n> Condition Name \n  \n\n###### tooth_surface\n\n> tooth surface \n  \n\n###### description\n\n> description \n  \n\n###### status\n\n> appointment / treatment plan / clinical_conditions status \n  \n\n###### id `default`\n\n> valid id, coma separated for multiple"
 							},
 							"response": [
 								{
@@ -3142,7 +3142,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/clinical_note_templates",
-								"description": "###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### template_id `optional`\n\n> template id in practice management system \n\n\n###### template_name `optional`\n\n> template name in practice management system \n\n\n###### category `optional`\n\n> category in practice management system \n\n\n###### prompts `optional`\n\n> prompts in practice management system \n\n\n###### Sortby\n\n###### category\n\n> Category\n  \n\n###### template_name\n\n> Template name\n  \n\n###### template_id `default`\n\n> Template id"
+								"description": "\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### template_id `optional`\n\n> template id in practice management system \n  \n\n###### template_name `optional`\n\n> template name in practice management system \n  \n\n###### category `optional`\n\n> category in practice management system \n  \n\n###### prompts `optional`\n\n> prompts in practice management system \n  \n\n###### Sortby\n\n###### category\n\n> Category \n  \n\n###### template_name\n\n> Template name \n  \n\n###### template_id `default`\n\n> Template id"
 							},
 							"response": [
 								{
