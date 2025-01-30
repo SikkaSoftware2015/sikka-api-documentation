@@ -7201,7 +7201,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/provider_mapping",
-								"description": "Returns provider mapping\n\n### Parameters\n\n#### provider_id `optional`\n\n> Provider ID as per the management system \n  \n\n#### practice_id `optional`\n\n> Practice ID \n  \n\n### SortBy\n\n#### practice_id `default`\n\n> Practice ID"
+								"description": "Returns provider mapping\n\n---\n\n### Parameters\n\n#### provider_id `optional`\n\n> Provider ID as per the management system \n  \n\n#### practice_id `optional`\n\n> Practice ID \n  \n\n### SortBy\n\n#### practice_id `default`\n\n> Practice ID"
 							},
 							"response": [
 								{
@@ -7383,7 +7383,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/authorized_practices",
-								"description": "### Parameters\n\n#### office_id `optional`\n> Office ID\n#### practice_management_system_refresh_date_time_zone `optional`\n> Practice management system refresh date time zone \n#### practice_id `optional`\n> Practice ID\n#### practice_name `optional`\n> Practice name\n#### practice_management_system `optional`\n> Practice management system\n#### practice_management_system_version `optional`\n> Practice management system version \n#### financial_system `optional`\n> Financial system\n#### financial_system_version `optional`\n> Financial system version\n\n### SortBy\n\n#### office_id `default`\n>Office ID\n\n#### practice_id `default`\n>Practice ID"
+								"description": "Return your authorized practices with Sikka practice utility last refresh and data insert time.\n\n---\n\n### Parameters\n\n#### office_id `optional`\n\n> Office ID \n  \n\n#### practice_management_system_refresh_date_time_zone `optional`\n\n> Practice management system refresh date time zone \n  \n\n#### practice_id `optional`\n\n> Practice ID \n  \n\n#### practice_name `optional`\n\n> Practice name \n  \n\n#### practice_management_system `optional`\n\n> Practice management system \n  \n\n#### practice_management_system_version `optional`\n\n> Practice management system version \n  \n\n#### financial_system `optional`\n\n> Financial system \n  \n\n#### financial_system_version `optional`\n\n> Financial system version \n  \n\n### SortBy\n\n#### office_id `default`\n\n> Office ID \n  \n\n#### practice_id `default`\n\n> Practice ID"
 							},
 							"response": [
 								{
@@ -7565,7 +7565,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/applications",
-								"description": "### Parameters\n\n#### app_id `required`\n> This is the ID assigned to the application when the application is registered on API portal\n\n#### app_key `required`\n> This is the unique key generated when the application is registered on API portal\n"
+								"description": "Returns your application details.\n\n---\n\n### Parameters\n\n#### app_id `required`\n\n> This is the ID assigned to the application when the application is registered on API portal \n  \n\n#### app_key `required`\n\n> This is the unique key generated when the application is registered on API portal"
 							},
 							"response": [
 								{
