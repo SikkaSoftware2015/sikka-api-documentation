@@ -8679,7 +8679,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/veterinary_product_inventory",
-								"description": "Returns product inventory for the veterinary practices.\n\n### Parameters\n\n#### product_id `optional`\n\n> ID of product based on practice management system \n  \n\n#### Code `optional`\n\n> Code \n  \n\n#### practice_id `optional`\n\n> Practice ID \n  \n\n### SortBy\n\n#### Code `default`\n\n> Code"
+								"description": "Returns product inventory for the veterinary practices.\n\n---\n\n### Parameters\n\n#### product_id `optional`\n\n> ID of product based on practice management system \n  \n\n#### Code `optional`\n\n> Code \n  \n\n#### practice_id `optional`\n\n> Practice ID \n  \n\n### SortBy\n\n#### Code `default`\n\n> Code"
 							},
 							"response": [
 								{
@@ -8865,7 +8865,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/lab_results",
-								"description": "### Parameters\n\n#### lab_panel_id `optional`\n> Lab Panel ID\n\n### SortBy \n\n#### lab_panel_id `default`\n>  Lab Panel ID"
+								"description": "Returns lab results details. This API is for veterinary practices.\n\n---\n\n### Parameters\n\n#### lab_panel_id `optional`\n\n> Lab Panel ID \n  \n\n### SortBy\n\n#### lab_panel_id `default`\n\n> Lab Panel ID"
 							},
 							"response": [
 								{
