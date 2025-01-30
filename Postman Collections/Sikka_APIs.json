@@ -9051,7 +9051,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/hearing_aid_products",
-								"description": "### Parameters\n\n#### model_id `optional`\n\n> Model ID \n  \n\n#### manufacturer_id `optional`\n\n> Manufacturer ID \n  \n\n### SortBy\n\n#### model_id OR modelID `default`\n\n> Model ID \n  \n\n#### manufacturer_id\n\n> Manufacturer ID"
+								"description": "Returns product list for hearing care.\n\n---\n\n### Parameters\n\n#### model_id `optional`\n\n> Model ID \n  \n\n#### manufacturer_id `optional`\n\n> Manufacturer ID \n  \n\n### SortBy\n\n#### model_id OR modelID `default`\n\n> Model ID \n  \n\n#### manufacturer_id\n\n> Manufacturer ID"
 							},
 							"response": [
 								{
@@ -9237,7 +9237,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/hearing_care_product_details",
-								"description": "### Parameters\n\n#### product_id `optional`\n> ID of product based on practice management system\n\n#### practice_id `optional`\n> Practice ID\n\n ### SortBy \n\n#### product_id `default`\n> ID of product based on practice management system\n\n#### practice_id\n> Practice ID\n \n"
+								"description": "Returns product details for hearing care.\n\n---\n\n### Parameters\n\n#### product_id `optional`\n\n> ID of product based on practice management system \n  \n\n#### practice_id `optional`\n\n> Practice ID \n  \n\n### SortBy\n\n#### product_id `default`\n\n> ID of product based on practice management system \n  \n\n#### practice_id\n\n> Practice ID"
 							},
 							"response": [
 								{
