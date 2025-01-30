@@ -8122,7 +8122,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/veterinary_product_details",
-								"description": "### Parameters\n\n#### vendor_id `optional`\n> Vendor id as per the practice management system\n\n#### order_number `optional`\n> Order Number\n\n#### provider_id `optional`\n> Provider id as per practice management system\n\n#### product_id `optional`\n> ID of product based on practice management system\n\n### SortBy \n\n#### product_id `default`\n> ID of product based on practice management system\n\n#### practice_id\n> Practice ID\n\n#### vendor_id \n> Vendor id as per the practice management system\n"
+								"description": "Returns product details for veterinary practice.\n\n---\n\n### Parameters\n\n#### vendor_id `optional`\n\n> Vendor id as per the practice management system \n  \n\n#### order_number `optional`\n\n> Order Number \n  \n\n#### provider_id `optional`\n\n> Provider id as per practice management system \n  \n\n#### product_id `optional`\n\n> ID of product based on practice management system \n  \n\n### SortBy\n\n#### product_id `default`\n\n> ID of product based on practice management system \n  \n\n#### practice_id\n\n> Practice ID \n  \n\n#### vendor_id\n\n> Vendor id as per the practice management system"
 							},
 							"response": [
 								{
@@ -8308,7 +8308,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/products",
-								"description": "### Parameters\n\n#### domain `optional`\n\n> Domain catagory \n  \n\n#### product_id `optional`\n\n> ID of product based on practice management system \n  \n\n### SortBy\n\n#### practice_id `default`\n\n> Practice ID\n\n#### product_id \n\n> ID of product based on practice management system "
+								"description": "Returns product list. This API is for veterinary practices.\n\n---\n\n### Parameters\n\n#### domain `optional`\n\n> Domain catagory \n  \n\n#### product_id `optional`\n\n> ID of product based on practice management system \n  \n\n### SortBy\n\n#### practice_id `default`\n\n> Practice ID \n  \n\n#### product_id\n\n> ID of product based on practice management system"
 							},
 							"response": [
 								{
@@ -8493,7 +8493,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/practice_resources",
-								"description": "### Parameters\n\n#### id `optional`\n\n> ID as per the response \n  \n\n#### resource `optional`\n\n> Resource is API name \n  \n\n#### common_resource `optional`\n\n> Common resource \n  \n\n### SortBy\n\n#### resourceid `default`\n\n> Resource ID \n  \n\n#### resource\n\n> Resource is API name \n  \n\n#### common_resource\n\n> Common resource \n  \n\n#### practice_id\n\n> Practice ID"
+								"description": "Return practice resources.\n\n### Parameters\n\n#### id `optional`\n\n> ID as per the response \n  \n\n#### resource `optional`\n\n> Resource is API name \n  \n\n#### common_resource `optional`\n\n> Common resource \n  \n\n### SortBy\n\n#### resourceid `default`\n\n> Resource ID \n  \n\n#### resource\n\n> Resource is API name \n  \n\n#### common_resource\n\n> Common resource \n  \n\n#### practice_id\n\n> Practice ID"
 							},
 							"response": [
 								{
@@ -8679,7 +8679,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/veterinary_product_inventory",
-								"description": "### Parameters\n\n#### product_id `optional`\n> ID of product based on practice management system \n  \n\n#### Code `optional`\n> Code \n\n#### practice_id `optional`\n> Practice ID\n  \n\n### SortBy\n\n#### Code `default`\n> Code"
+								"description": "Returns product inventory for the veterinary practices.\n\n### Parameters\n\n#### product_id `optional`\n\n> ID of product based on practice management system \n  \n\n#### Code `optional`\n\n> Code \n  \n\n#### practice_id `optional`\n\n> Practice ID \n  \n\n### SortBy\n\n#### Code `default`\n\n> Code"
 							},
 							"response": [
 								{
