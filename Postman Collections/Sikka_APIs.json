@@ -7750,7 +7750,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/animal_vital_signs",
-								"description": "### Parameters\n\n#### patient_id `optional`\n\n> Patient ID as per the management system \n  \n\n#### date `optional`\n\n> Filter on date field, format: yyyy-mm-dd \n  \n\n#### vital_sign_name `optional`\n\n> Vital sign name \n  \n\n### SortBy\n\n#### patient_id `default`\n\n> Patient ID as per the management system \n  \n\n#### date\n\n> Sorting on date field, format: yyyy-mm-dd \n  \n\n#### practice_id\n\n> Practice ID as per the management system"
+								"description": "Returns vital signs of pat. This API is for veterinary practices\n\n### Parameters\n\n#### patient_id `optional`\n\n> Patient ID as per the management system \n  \n\n#### date `optional`\n\n> Filter on date field, format: yyyy-mm-dd \n  \n\n#### vital_sign_name `optional`\n\n> Vital sign name \n  \n\n### SortBy\n\n#### patient_id `default`\n\n> Patient ID as per the management system \n  \n\n#### date\n\n> Sorting on date field, format: yyyy-mm-dd \n  \n\n#### practice_id\n\n> Practice ID as per the management system"
 							},
 							"response": [
 								{
