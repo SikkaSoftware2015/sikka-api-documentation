@@ -10628,7 +10628,7 @@
 							]
 						},
 						{
-							"name": "kpis details Copy",
+							"name": "patient_eligibility_payers",
 							"id": "d700de93-59a2-4b37-bb78-b42ca140d712",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
