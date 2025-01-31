@@ -10682,7 +10682,7 @@
 							"response": [
 								{
 									"id": "c8521ec7-f2fb-4391-a90c-80b5132968e3",
-									"name": "kpis details",
+									"name": "patient_eligibility_payers",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
