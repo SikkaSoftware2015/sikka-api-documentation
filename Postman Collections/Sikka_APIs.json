@@ -10737,7 +10737,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/patient_eligibility",
-								"description": "API Returns supported payer list\n\n---"
+								"description": "This API returns eligibility and benefit information. We are using third party API to get patient eligibility and benefit information so API response schema will be based on third API response. This API is not included in your API plan, for pricing contact your Sikka support manager.\n\n---"
 							},
 							"response": [
 								{
