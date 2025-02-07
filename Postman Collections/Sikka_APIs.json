@@ -10844,7 +10844,7 @@
 										"type": "text"
 									}
 								],
-								"url": "https://api.sikkasoft.com/v4/patient_eligibility",
+								"url": "https://api.sikkasoft.com/v4/sandbox/patient_eligibility",
 								"description": "This API returns eligibility and benefit information. We are using third party API to get patient eligibility and benefit information so API response schema will be based on third API response. The currently supported test cases for sandbox are:\n\nPRINCIPAL (full dental eligiblity and benefits response)\nAETNA_DENTAL_PLANS (orthodontics flag set)\nDD_CALIFORNIA (general dental eligibility and benefits response)\nMETLIFE (general dental eligibility and benefits response)\n\n---\n\n### Parameters\n\n#### firstname `Required`\n\n> Patient first name. You can get patient first name using patients API. \n  \n\n#### lasttname `Required`\n\n> Patient last name. You can get patient last name using patients API. \n  \n\n#### birthdate `Required`\n\n> You can get birthdate using patients API. Format should be YYYY-MM-DD \n  \n\n#### subscriber_id `Required`\n\n> You can get subscriber id using patients API. MetLife required patient SSN as subscriber id. \n  \n\n#### npi `Required`\n\n> You can get npi using providers API. \n  \n\n#### payer_id `Required`\n\n> You can get supported payer list using patient_eligibility_payers API. \n  \n\n#### is_dependent `Optional`\n\n> When requesting for a dependent this parameter value should be true."
 							},
 							"response": [
