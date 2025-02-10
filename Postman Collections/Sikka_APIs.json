@@ -1582,6 +1582,99 @@
 							]
 						},
 						{
+							"name": "pms_users",
+							"id": "562f44e4-6984-4385-a3ca-e599f498a136",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "https://api.sikkasoft.com/v4/pms_users",
+								"description": "Returns provider details from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### provider_id `optional`\n\n> provider id in practice management system \n  \n\n###### provider_type `optional`\n\n> provider type in practice management system \n  \n\n###### firstname `optional`\n\n> First name of provider \n  \n\n###### lastname `optional`\n\n> Last name of provider \n  \n\n###### national_provider_identifier `optional`\n\n> National provider identifier \n  \n\n###### status `optional`\n\n> Status of provider \n  \n\n###### is_user `optional`\n\n> Value indicating proivder is a user or not, valid value True/False \n  \n\n###### SortBy\n\n###### provider_id `default`\n\n> provider id in practice management system"
+							},
+							"response": [
+								{
+									"id": "283ff0d0-3fb1-4ab8-a51e-b2086feee1a1",
+									"name": "providers",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "request-key",
+												"value": "<request_key>",
+												"type": "text",
+												"disabled": true
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/providers?=",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"providers"
+											],
+											"query": [
+												{
+													"key": "",
+													"value": ""
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"1\",\r\n\"total_count\": \"24\",\r\n\"execution_time\": \"13\",\r\n\"pagination\": {\r\n\"first\": \"http://api.sikkasoft.com/v4/providers?offset=0&limit=1\",\r\n\"previous\": \"\",\r\n\"current\": \"http://api.sikkasoft.com/v4/providers?offset=0&limit=1\",\r\n\"next\": \"http://api.sikkasoft.com/v4/providers?offset=1&limit=1\",\r\n\"last\": \"http://api.sikkasoft.com/v4/providers?offset=23&limit=1\"\r\n},\r\n\"items\": [\r\n{\r\n        \"href\": \"https://api.sikkasoft.com/v4/practices/1/providers/VLP\",\r\n        \"provider_id\": \"VLP\",\r\n        \"firstname\": \"Vdfdd\",\r\n        \"lastname\": \"Ztedda\",\r\n        \"address_line1\": \"1astde\",\r\n        \"address_line2\": \"Last Day 11-30-11\",\r\n        \"city\": \"Lewistown\",\r\n        \"state\": \"IL\",\r\n        \"zipcode\": \"61542\",\r\n        \"country\": \"\",\r\n        \"phone\": \"\",\r\n        \"provider_type\": \"Provider\",\r\n        \"specialty\": \"Dental Assistant\",\r\n        \"practice_id\": \"1\",\r\n        \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n        \"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients?provider_id=VLP\",\r\n        \"appointment_href\": \"https://api.sikkasoft.com/v4/practices/1/appointments?provider_id=VLP\",\r\n        \"status\": \"Inactive\",\r\n        \"provider_account_id\": \"\",\r\n        \"state_id\": \"\",\r\n        \"tax_identification_number\": \"\",\r\n        \"medicaid_id\": \"\",\r\n        \"drug_id\": \"\",\r\n        \"national_provider_identifier\": \"\",\r\n        \"email\": \"\",\r\n        \"birthdate\": \"\",\r\n        \"hire_date\": \"\",\r\n        \"graduated_date\": \"\",\r\n        \"initials\": \"\",\r\n        \"ssn\": \"\",\r\n        \"other_id\": \"\",\r\n        \"bluecross_id\": \"\",\r\n        \"medicare_id\": \"\",\r\n        \"fee_schedule_id\": \"\",\r\n        \"federal_id_no\": \"\",\r\n        \"federal_id_sub_no\": \"\",\r\n        \"gl_sub_account_number\": \"\",\r\n        \"is_hidden\": \"False\",\r\n        \"cust_id\": \"True\",\r\n        \"specialty_code\": \"1593S0542X\"\r\n}\r\n]\r\n}"
+								},
+								{
+									"id": "d0fe7059-b2ab-4e02-b657-fffa83c12638",
+									"name": "providers?fields=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "request-key",
+												"value": "<request_key>",
+												"type": "text",
+												"disabled": true
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/providers?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"providers"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n  \"offset\": \"xx\",\r\n  \"limit\": \"xx\",\r\n  \"total_count\": \"xx\",\r\n  \"execution_time\": \"xx\",\r\n  \"pagination\": {\r\n    \"first\": \"https://api.sikkasoft.com/v4/providers?offset=xx&limit=xx\",\r\n    \"previous\": \"\",\r\n    \"current\": \"https://api.sikkasoft.com/v4/providers?offset=xx&limit=xx\",\r\n    \"next\": \"https://api.sikkasoft.com/v4/providers?offset=xx&limit=xx\",\r\n    \"last\": \"https://api.sikkasoft.com/v4/providers?offset=xx&limit=xx\"\r\n  },\r\n  \"items\": [\r\n  {\r\n    \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/providers/xxxx\",\r\n    \"patient_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/patients?provider_id=xxxx\",\r\n    \"firstname\": \"firstname\",\r\n    \"lastname\": \"lastname\",\r\n    \"birthdate\": \"birthdate\",\r\n    \"status\": \"status\",\r\n    \"address_line1\": \"address line1\",\r\n    \"address_line2\": \"address line2\",\r\n    \"city\": \"city\",\r\n    \"state\": \"state\",\r\n    \"zipcode\": \"zipcode\",\r\n    \"email\": \"email\",\r\n    \"provider_id\": \"provider id\",\r\n    \"practice_id\": \"practice id\",\r\n    \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\r\n    \"appointment_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/appointments?provider_id=xxxx\",\r\n    \"country\": \"country\",\r\n    \"cust_id\": \"cust id\",\r\n    \"national_provider_identifier\": \"national provider identifier\",\r\n    \"provider_type\": \"provider type\",\r\n    \"provider_account_id\": \"provider account id\",\r\n    \"state_id\": \"state id\",\r\n    \"tax_identification_number\": \"tax identification number\",\r\n    \"medicaid_id\": \"medicaid id\",\r\n    \"graduated_date\": \"graduated date\",\r\n    \"hire_date\": \"hire date\",\r\n    \"initials\": \"initials\",\r\n    \"ssn\": \"ssn\",\r\n    \"phone\": \"phone\",\r\n    \"speciality\": \"speciality\",\r\n    \"other_id\": \"other id\",\r\n    \"bluecross_id\": \"bluecross id\",\r\n    \"medicare_id\": \"medicare id\",\r\n    \"fee_schedule_id\": \"fee schedule id\",\r\n    \"federal_id_no\": \"federal id no\",\r\n    \"federal_id_sub_no\": \"federal id sub no\",\r\n    \"gl_sub_account_number\": \"gl sub account number\",\r\n    \"specialty_code\": \"specialty code\",\r\n    \"is_organization\": \"is organization\",\r\n    \"is_hidden\": \"is hidden\",\r\n    \"external_id\": \"external id\",\r\n    \"is_user\": \"true/false\"\r\n}\r\n  ]\r\n}"
+								}
+							]
+						},
+						{
 							"name": "outside_doctors",
 							"id": "8297c6fa-8565-4cd4-ac5e-ac51aa4b26c6",
 							"protocolProfileBehavior": {
