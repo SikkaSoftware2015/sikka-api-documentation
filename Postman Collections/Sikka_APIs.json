@@ -2805,7 +2805,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/referrals",
-								"description": "Returns appointments data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### referral_type `optional`\n\n> referral type from appointments \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> guarantor id in practice management system \n  \n\n###### referral_id `optional`\n\n> referral id in practice management system \n  \n\n###### SortBy\n\n###### referral_id `default`\n\n> referral id in practice management system \n\n###### practice_id\n\n> practice id of office"
+								"description": "Returns referrals data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### referral_type `optional`\n\n> referral type from appointments \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> guarantor id in practice management system \n  \n\n###### referral_id `optional`\n\n> referral id in practice management system \n  \n\n###### SortBy\n\n###### referral_id `default`\n\n> referral id in practice management system \n  \n\n###### practice_id\n\n> practice id of office"
 							},
 							"response": [
 								{
@@ -2857,6 +2857,79 @@
 													"key": "fields",
 													"value": "get_all",
 													"type": "text"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n    \"offset\": \"xx\",\r\n    \"limit\": \"xx\",\r\n    \"total_count\": \"xx\",\r\n    \"execution_time\": \"xx\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/referrals?offset=xx&limit=xx\",\r\n        \"previous\": \"previous\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/referrals?offset=xx&limit=xx\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/referrals?offset=xx&limit=xx\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/referrals?offset=xx&limit=xx\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/referrals/xxxx\",\r\n            \"firstname\": \"firstname\",\r\n            \"middlename\": \"middlename\",\r\n            \"lastname\": \"lastname\",\r\n            \"salutation\": \"salutation\",\r\n            \"address_line1\": \"address line1\",\r\n            \"address_line2\": \"address line2\",\r\n            \"city\": \"city\",\r\n            \"state\": \"state\",\r\n            \"zipcode\": \"zipcode\",\r\n            \"email\": \"email\",\r\n            \"practice_id\": \"practice id\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\r\n            \"cust_id\": \"cust id\",\r\n            \"phone\": \"phone\",\r\n            \"fax\": \"fax\",\r\n            \"referral_id\": \"referral id\",\r\n            \"referral_type\": \"referral type\",\r\n            \"speciality\": \"speciality\",\r\n            \"title\": \"title\",\r\n            \"otherphone\": \"otherphone\",\r\n            \"ext\": \"ext\",\r\n            \"rowhash\": \"rowhash\"\r\n        }\r\n    ]\r\n}"
+								}
+							]
+						},
+						{
+							"name": "multiple_referrals",
+							"id": "31a78381-992a-4d8e-8268-1eb3a15dd9f8",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "https://api.sikkasoft.com/v4/multiple_referrals",
+								"description": "Returns multiple referrals data of patient from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### referral_type `optional`\n\n> referral type from appointments \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> guarantor id in practice management system \n  \n\n###### referral_id `optional`\n\n> referral id in practice management system \n  \n\n###### SortBy\n\n###### referral_id `default`\n\n> referral id in practice management system \n  \n\n###### practice_id\n\n> practice id of office"
+							},
+							"response": [
+								{
+									"id": "b9b61d82-c36e-4992-a676-a100d5fcf272",
+									"name": "multiple_referrals",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/multiple_referrals"
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"2\",\r\n\"total_count\": \"1300\",\r\n\"execution_time\": \"13\",\r\n\"pagination\": {\r\n\"first\": \"http://api.sikkasoft.com/v4/referrals?offset=0&limit=2\",\r\n\"previous\": \"\",\r\n\"current\": \"http://api.sikkasoft.com/v4/referrals?offset=0&limit=2\",\r\n\"next\": \"http://api.sikkasoft.com/v4/referrals?offset=1&limit=2\",\r\n\"last\": \"http://api.sikkasoft.com/v4/referrals?offset=649&limit=2\"\r\n},\r\n\"items\": [\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/referrals/Pat\",\r\n\"firstname\": \"N\",\r\n\"middlename\": \"\",\r\n\"lastname\": \"Ga\",\r\n\"salutation\": \"\",\r\n\"address_line1\": \"1383 Dd Dr\",\r\n\"address_line2\": \"\",\r\n\"city\": \"San Jose\",\r\n\"state\": \"CA\",\r\n\"zipcode\": \"95144\",\r\n\"email\": \"\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"phone\": \"\",\r\n\"fax\": \"\",\r\n\"referral_id\": \"794303\",\r\n\"referral_type\": \"Pat\",\r\n\"speciality\": \"\",\r\n\"title\": \"\",\r\n\"otherphone\": \"\",\r\n\"ext\": \"\"\r\n},\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/referrals/Pat\",\r\n\"firstname\": \"D\",\r\n\"middlename\": \"\",\r\n\"lastname\": \"To\",\r\n\"salutation\": \"\",\r\n\"address_line1\": \"10296 L Dr.\",\r\n\"address_line2\": \"\",\r\n\"city\": \"San Jose\",\r\n\"state\": \"CA\",\r\n\"zipcode\": \"95127\",\r\n\"email\": \"\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"phone\": \"(408)6610381\",\r\n\"fax\": \"\",\r\n\"referral_id\": \"775001\",\r\n\"referral_type\": \"Pat\",\r\n\"speciality\": \"\",\r\n\"title\": \"\",\r\n\"otherphone\": \"\",\r\n\"ext\": \"40\"\r\n}\r\n]\r\n}"
+								},
+								{
+									"id": "3c437183-4291-4b6a-b5b9-8859a24c0faa",
+									"name": "multiple_referrals?fields=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/multiple_referrals?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"multiple_referrals"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all"
 												}
 											]
 										}
