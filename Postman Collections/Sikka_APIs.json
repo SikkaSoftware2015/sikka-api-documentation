@@ -10904,7 +10904,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/pms_general_settings",
-								"description": "API returns details related to general settings of PMS\n\n---"
+								"description": "API returns details related to general settings of PMS\n\n---\n\n### Parameters\n\n#### practice_id `optional`\n\n> Practice ID \n\n\n#### setting_name `optional`\n\n> Name of the setting \n  \n\n#### setting_value `optional`\n\n> Value of the setting\n\n\n### SortBy\n\n#### practice_id `default`\n\n> Practice ID\n\n\n#### practice_id `default`\n\n> Practice ID\n\n\n#### practice_id `default`\n\n> Practice ID"
 							},
 							"response": [
 								{
