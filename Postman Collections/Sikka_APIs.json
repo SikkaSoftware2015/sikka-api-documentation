@@ -11017,7 +11017,7 @@
 								},
 								{
 									"id": "89841f49-62fb-48f0-aafa-5223bdf492c2",
-									"name": "procedure_codes?fields=get_all",
+									"name": "staging_details?fields=get_all",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
@@ -11028,7 +11028,7 @@
 											}
 										],
 										"url": {
-											"raw": "https://api.sikkasoft.com/v4/pending_procedures?fields=get_all",
+											"raw": "https://api.sikkasoft.com/v4/staging_details?fields=get_all",
 											"protocol": "https",
 											"host": [
 												"api",
@@ -11037,7 +11037,7 @@
 											],
 											"path": [
 												"v4",
-												"pending_procedures"
+												"staging_details"
 											],
 											"query": [
 												{
