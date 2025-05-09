@@ -10983,6 +10983,79 @@
 							]
 						},
 						{
+							"name": "staging_details",
+							"id": "03ea0924-92dc-4178-ac06-a34bc271b4ba",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "https://api.sikkasoft.com/v4/staging_details",
+								"description": "Returns pending procedures for the patient with available balance data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### procedure_code `optional`\n\n> procedure code from appointments \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### procedure_date `optional`\n\n> procedure date\n\n###### provider_id `optional`\n\n> Provider id as per practice management system\n  \n\n###### patient_id `optional`\n\n> Patient ID as per the management system\n  \n\n###### guarantor_id `optional`\n\n> Guarantor id as per practice management systems\n\n###### cust_id `optional`\n\n> Cust ID\n  \n\n###### transaction_sr_no `optional`\n\n> Transaction serial number from Practice management System\n  \n\n###### SortBy\n\n###### practice_id\n\n> Practice ID\n\n###### procedure_code\n\n> Procedure code as per practice management system\n\n###### procedure_date\n\n> Procedure Date\n\n###### provider_id\n\n> Provider id as per practice management system\n\n###### patient_id  `default`\n\n> Patient ID as per the management system\n\n###### guarantor_id\n\n> Guarantor id as per practice management systems\n\n###### transaction_sr_no\n\n> Transaction serial number from Practice management System\n\n###### tooth\n\n> Tooth\n\n###### surface\n\n> Surface\n"
+							},
+							"response": [
+								{
+									"id": "570a33de-cdaf-4dd6-a4e0-469472cb087a",
+									"name": "staging_details",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/staging_details"
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n    \"offset\": \"1\",\r\n    \"limit\": \"1\",\r\n    \"total_count\": \"4\",\r\n    \"execution_time\": \"7479\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/pending_procedures?offset=0&limit=1\",\r\n        \"previous\": \"https://api.sikkasoft.com/v4/pending_procedures?offset=0&limit=1\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/pending_procedures?offset=1&limit=1\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/pending_procedures?offset=2&limit=1\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/pending_procedures?offset=3&limit=1\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/pending_procedures/5554\",\r\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/5554\",\r\n            \"patient_id\": \"5554\",\r\n            \"guarantor_id\": \"5554\",\r\n            \"provider_id\": \"EPM\",\r\n            \"provider_href\": \"https://api.sikkasoft.com/v4/practices/1/providers/EPM\",\r\n            \"practice_id\": \"1\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n            \"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/1/guarantors/5554\",\r\n            \"transaction_sr_no\": \"2991471\",\r\n            \"transaction_href\": \"https://api.sikkasoft.com/v4/practices/1/transactions/2991471\",\r\n            \"amount\": \"31.2300\",\r\n            \"surface\": \"\",\r\n            \"description\": \"Polish 1/2 Unit\",\r\n            \"cust_id\": \"1\",\r\n            \"procedure_date\": \"2021-06-02T00:00:00\",\r\n            \"tooth\": \"\",\r\n            \"procedure_code_id\": \"11107\",\r\n            \"procedure_code_href\": \"https://api.sikkasoft.com/v4/practices/1/procedure_codes/11107\",\r\n            \"balance\": \"31.2300\",\r\n            \"user_id\": \"EPM\"\r\n        }\r\n    ]\r\n}"
+								},
+								{
+									"id": "89841f49-62fb-48f0-aafa-5223bdf492c2",
+									"name": "procedure_codes?fields=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/pending_procedures?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"pending_procedures"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n    \"offset\": \"1\",\r\n    \"limit\": \"1\",\r\n    \"total_count\": \"4\",\r\n    \"execution_time\": \"7479\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/pending_procedures?offset=0&limit=1\",\r\n        \"previous\": \"https://api.sikkasoft.com/v4/pending_procedures?offset=0&limit=1\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/pending_procedures?offset=1&limit=1\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/pending_procedures?offset=2&limit=1\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/pending_procedures?offset=3&limit=1\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/pending_procedures/5554\",\r\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/5554\",\r\n            \"patient_id\": \"5554\",\r\n            \"guarantor_id\": \"5554\",\r\n            \"provider_id\": \"EPM\",\r\n            \"provider_href\": \"https://api.sikkasoft.com/v4/practices/1/providers/EPM\",\r\n            \"practice_id\": \"1\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n            \"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/1/guarantors/5554\",\r\n            \"transaction_sr_no\": \"2991471\",\r\n            \"transaction_href\": \"https://api.sikkasoft.com/v4/practices/1/transactions/2991471\",\r\n            \"amount\": \"31.2300\",\r\n            \"surface\": \"\",\r\n            \"description\": \"Polish 1/2 Unit\",\r\n            \"cust_id\": \"1\",\r\n            \"procedure_date\": \"2021-06-02T00:00:00\",\r\n            \"tooth\": \"\",\r\n            \"procedure_code_id\": \"11107\",\r\n            \"procedure_code_href\": \"https://api.sikkasoft.com/v4/practices/1/procedure_codes/11107\",\r\n            \"balance\": \"31.2300\",\r\n            \"user_id\": \"EPM\"\r\n        }\r\n    ]\r\n}"
+								}
+							]
+						},
+						{
 							"name": "patient_eligibility",
 							"id": "21d46306-42f3-4dd6-86e7-99c0cac6f4b4",
 							"protocolProfileBehavior": {
