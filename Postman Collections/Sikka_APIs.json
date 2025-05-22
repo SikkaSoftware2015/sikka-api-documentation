@@ -3372,10 +3372,17 @@
 										}
 									},
 									"_postman_previewlanguage": "json",
-									"header": null,
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\r\n    \"offset\": \"0\",\r\n    \"limit\": \"1\",\r\n    \"total_count\": \"xxx\",\r\n    \"execution_time\": \"xx\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/clinical_note_templates?offset=0&limit=1\",\r\n        \"previous\": \"\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/clinical_note_templates?offset=0&limit=1\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/clinical_note_templates?offset=1&limit=1\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/clinical_note_templates?offset=xxx&limit=1\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/x/clinical_note_templates/xxx\",\r\n            \"practice_id\": \"x\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/x\",\r\n            \"cust_id\": \"x\",\r\n            \"category\": \"DANOS\",\r\n            \"template_id\": \"xxx\",\r\n            \"template_name\": \"Post Op\",\r\n            \"prompts\": \"Tooth-Select One\"\r\n        }\r\n    ]\r\n}"
+									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"1\",\n    \"total_count\": \"xxx\",\n    \"execution_time\": \"xx\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/clinical_note_templates?offset=0&limit=1\",\n        \"previous\": \"\",\n        \"current\": \"https://api.sikkasoft.com/v4/clinical_note_templates?offset=0&limit=1\",\n        \"next\": \"https://api.sikkasoft.com/v4/clinical_note_templates?offset=1&limit=1\",\n        \"last\": \"https://api.sikkasoft.com/v4/clinical_note_templates?offset=xxx&limit=1\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/x/clinical_note_templates/xxx\",\n            \"practice_id\": \"x\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/x\",\n            \"cust_id\": \"x\",\n            \"category\": \"DANOS\",\n            \"template_id\": \"xxx\",\n            \"template_name\": \"Post Op\",\n            \"prompts\": \"Tooth-Select One\",\n            \"template_notes\": \"Sample Notes for template\"\n        }\n    ]\n}"
 								}
 							]
 						},
