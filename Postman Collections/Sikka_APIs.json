@@ -634,17 +634,23 @@
 											"query": [
 												{
 													"key": "fields",
-													"value": "get_all",
-													"type": "text"
+													"value": "get_all"
 												}
 											]
 										}
 									},
 									"_postman_previewlanguage": "json",
-									"header": null,
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										}
+									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n  \"offset\": \"xx\",\n  \"limit\": \"xx\",\n  \"total_count\": \"xx\",\n  \"execution_time\": \"xx\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/accounts_receivables?offset=xx&limit=xx\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/accounts_receivables?offset=xx&limit=xx\",\n    \"next\": \"https://api.sikkasoft.com/v4/accounts_receivables?offset=xx&limit=xx\",\n    \"last\": \"https://api.sikkasoft.com/v4/accounts_receivables?offset=xx&limit=xx\"\n  },\n  \"items\": [\n  {\n    \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/accounts_receivables/xxxx\",\n    \"guarantor_id\": \"guarantor id\",\n    \"practice_id\": \"practice id\",\n    \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\n    \"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/guarantors/xxxx\",\n    \"cust_id\": \"cust id\",\n    \"amount_between_0_30\": \"amount between 0 30\",\n    \"amount_between_31_60\": \"amount between 31 60\",\n    \"amount_between_61_90\": \"amount between 61 90\",\n    \"amount_greater_than_90\": \"amount greater than 90\",\n    \"current_date\": \"current date\",\n    \"entry_id\": \"entry id\",\n    \"write_off_estimate\": \"write off estimate\",\n    \"payment_plan_amount\": \"payment plan amount\",\n    \"unapplied_payments\": \"unapplied payments\"\n}\n  ]\n}"
+									"body": "{\n    \"offset\": \"xx\",\n    \"limit\": \"xx\",\n    \"total_count\": \"xx\",\n    \"execution_time\": \"xx\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/accounts_receivables?offset=xx&limit=xx\",\n        \"previous\": \"\",\n        \"current\": \"https://api.sikkasoft.com/v4/accounts_receivables?offset=xx&limit=xx\",\n        \"next\": \"https://api.sikkasoft.com/v4/accounts_receivables?offset=xx&limit=xx\",\n        \"last\": \"https://api.sikkasoft.com/v4/accounts_receivables?offset=xx&limit=xx\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/accounts_receivables/xxxx\",\n            \"guarantor_id\": \"guarantor id\",\n            \"practice_id\": \"practice id\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\n            \"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/guarantors/xxxx\",\n            \"cust_id\": \"cust id\",\n            \"amount_between_0_30\": \"amount between 0 30\",\n            \"amount_between_31_60\": \"amount between 31 60\",\n            \"amount_between_61_90\": \"amount between 61 90\",\n            \"amount_greater_than_90\": \"amount greater than 90\",\n            \"current_date\": \"current date\",\n            \"entry_id\": \"entry id\",\n            \"write_off_estimate\": \"write off estimate\",\n            \"payment_plan_amount\": \"payment plan amount\",\n            \"unapplied_payments\": \"unapplied payments\",\n            \"estimated_patient_amount\": \"estimated patient amount\",\n            \"estimated_insurance_amount\": \"estimated insurance amount\"\n        }\n    ]\n}"
 								}
 							]
 						},
