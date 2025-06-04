@@ -13917,6 +13917,116 @@
 									"body": "{\n    \"offset\": \"xx\",\n    \"limit\": \"xx\",\n    \"total_count\": \"xx\",\n    \"execution_time\": \"xx\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/health_check?offset=xx&limit=xx\",\n        \"previous\": \"previous\",\n        \"current\": \"https://api.sikkasoft.com/v4/health_check?offset=xx&limit=xx\",\n        \"next\": \"next\",\n        \"last\": \"https://api.sikkasoft.com/v4/health_check?offset=xx&limit=xx\"\n    },\n    \"items\": [\n        {\n            \"href\": \"\",\n            \"practice_id\": \"practice id\",\n            \"office_id\": \"office id\",\n            \"domain\": \"domain\",\n            \"practice_management_system\": \"practice management system\",\n            \"practice_management_system_version\": \"practice management system version\",\n            \"spc_id\": \"spc id\",\n            \"refresh_time\": \"refresh time\",\n            \"teamviewer_id\": \"teamviewer id\",\n            \"teamviewer_version\": \"teamviewer version\",\n            \"spc_version\": \"spc version\",\n            \"practice_management_system_version_detected\": \"practice management system version detected\",\n            \"practice_management_system_data_path\": \"practice management system data path\",\n            \"financial_management_system\": \"financial management system\",\n            \"financial_management_system_version\": \"financial management system version\",\n            \"financial_management_system_version_detected\": \"financial management system version detected\",\n            \"financial_management_system_data_path\": \"financial management system data path\",\n            \"spc_schedule_time\": \"spc schedule time\",\n            \"spc_schedule_type\": \"spc schedule type\",\n            \"spc_schedule_interval\": \"spc schedule interval\",\n            \"is_spc_update_locked\": \"is spc update locked\",\n            \"spc_update_lock_note\": \"spc update lock note\",\n            \"last_spc_updated_checked\": \"last spc updated checked\",\n            \"is_delta_import_enable\": \"is delta import enable\",\n            \"etl_start\": \"etl start\",\n            \"etl_end\": \"etl end\",\n            \"web_upload_start\": \"web upload start\",\n            \"web_upload_end\": \"web upload end\",\n            \"financial_etl_start\": \"financial etl start\",\n            \"financial_etl_end\": \"financial etl end\",\n            \"etl_error_log\": \"etl error log\",\n            \"etl_error_priority\": \"etl error priority\",\n            \"etl_error_description\": \"etl error description\",\n            \"etl_cpu_utilization\": \"etl cpu utilization\",\n            \"etl_memory_utilization\": \"etl memory utilization\",\n            \"financial_error_priority\": \"financial error priority\",\n            \"financial_error_description\": \"financial error description\",\n            \"financial_etl_cpu_utilization\": \"financial etl cpu utilization\",\n            \"financial_etl_memory_utilization\": \"financial etl memory utilization\",\n            \"local_insert_error_log\": \"local insert error log\",\n            \"local_insert_error_priority\": \"local insert error priority\",\n            \"local_insert_cpu_utilization\": \"local insert cpu utilization\",\n            \"local_insert_memory_utilization\": \"local insert memory utilization\",\n            \"local_upload_error_description\": \"local upload error description\",\n            \"web_upload_error_flag\": \"web upload error flag\",\n            \"web_upload_error_priority\": \"web upload error priority\",\n            \"web_upload_bandwidth_utilization\": \"web upload bandwidth utilization\",\n            \"web_upload_error_description\": \"web upload error description\",\n            \"upload_to_server\": \"upload to server\",\n            \"upload_to_client\": \"upload to client\",\n            \"spc_error_flag\": \"spc error flag\",\n            \"spc_error_priority\": \"spc error priority\",\n            \"spc_error_description\": \"spc error description\",\n            \"timezone\": \"timezone\",\n            \"etl_version\": \"etl version\",\n            \"is_inactive\": \"is inactive\",\n            \"operating_system\": \"operating system\",\n            \"machine_name\": \"machine name\",\n            \"disk_free_space\": \"disk free space\",\n            \"download_speed\": \"download speed\",\n            \"memory\": \"memory\"\n        }\n    ]\n}"
 								}
 							]
+						},
+						{
+							"name": "supported_pmses",
+							"id": "2815b94b-4836-44ba-ac1a-ea7e300ac153",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "App-Id",
+										"value": "<Application Id>",
+										"type": "text"
+									},
+									{
+										"key": "App-Key",
+										"value": "<Application Key>",
+										"type": "text"
+									}
+								],
+								"url": "https://api.sikkasoft.com/v4/supported_pmses",
+								"description": "‘health_check’ API provides detailed information about SPC and machine, SPC is installed on.\n\nIt contains error log information, PMS, machine, SPC and data synchronization dates\n\n---\n\n\n###### Headers\n\n###### **App-Id** `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### **App-Key** `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### Parameters\n\n###### **office_id** `optional`\n\n> Mastercustomerid, This is the ID assigned to a practice when that practice is added \n  \n\n###### **practice_id** `optional`\n\n> practice id of office \n  \n\n###### **spc_id** `optional`\n\n> spc_id \n  \n\n###### **spc_version** `optional`\n\n> spc_version \n  \n\n###### **practice_management_system** `optional`\n\n> practice_management_system \n  \n\n###### **practice_management_system_version** `optional`\n\n> practice_management_system_version \n  \n\n###### **spc_schedule_type** `optional`\n\n> spc_schedule_type \n  \n\n###### **web_upload_error_priority** `optional`\n\n> web_upload_error_priority \n  \n\n###### **domain** `optional`\n\n> domain \n  \n\n###### **spc_error_priority** `optional`\n\n> spc_error_priority \n  \n\n###### **spc_error_flag** `optional`\n\n> spc_error_flag \n  \n\n###### **etl_version** `optional`\n\n> etl_version \n  \n\n###### **is_inactive** `optional`\n\n> is_inactive \n  \n\n##### API response contains below information\n\n| SPC information |  |  |\n| --- | --- | --- |\n| office_id | spc_id | practice_id |\n| refresh_time | spc_version | spc_schedule_time |\n| spc_schedule_type | spc_schedule_interval | is_spc_update_locked |\n| spc_update_lock_note | last_spc_updated_checked | is_delta_import_enable |\n| domain | spc_error_flag | spc_error_priority |\n| spc_error_description | timezone | is_inactive |\n\n| ETL information |  |  |\n| --- | --- | --- |\n| etl_start | etl_error_priority | local_insert_error_priority |\n| etl_end | etl_error_description | local_insert_cpu_utilization |\n| web_upload_start | etl_cpu_utilization | local_insert_memory_utilization |\n| web_upload_end | etl_memory_utilization | local_upload_error_description |\n|  | financial_error_priority | web_upload_error_flag |\n|  | financial_error_description | web_upload_error_priority |\n| financial_etl_start | financial_etl_cpu_utilization | web_upload_bandwidth_utilization |\n| financial_etl_end | financial_etl_memory_utilization | web_upload_error_description |\n| etl_error_log | local_insert_error_log | upload_to_server |\n| upload_to_client |  |  |\n| etl_version |  |  |\n\n| PMS information |\n| --- |\n| practice_management_system |\n| practice_management_system_version |\n| practice_management_system_version_detected |\n| practice_management_system_data_path |\n| DetectedPMSVersion |\n| PMSDataPath |\n| PMSDatabaseName |\n\n| Financial System Information |\n| --- |\n| financial_management_system |\n| financial_management_system_version |\n| financial_management_system_version_detected |\n| financial_management_system_data_path |\n\n| Teamviwer |\n| --- |\n| teamviwer_id |\n| teamviwer_version |\n\n##### When you should use ‘health_check’ API ?\n\n> If you want to build SPC support portal and monitor SPC & ETL health. \n  \n> Check SPC information. SPC should be active , there should be no error & refresh time should be current ( based on SPC schedule type setting ) \n  \n> In case of error or data is not updated , first check SPC_error_flag , spc_error_description \n  \n> For more details you can check ETL information & PMS information ( start & end time , error description , notes , priority etc. ) \n  \n\nFor example, report SPC error codes and descriptions that will direct you to the cause. It may indicate that the PMS Version detected seems to be different from what is configured. Or it will tell you the last time we heard from that SPC, or what version it is, how much of the cpu is being used for the refresh, how much memory there is, the version of the OS, it’s IP addresses and more."
+							},
+							"response": [
+								{
+									"id": "db814fcd-59bd-4a74-b5f6-2c84d512a45e",
+									"name": "health_check",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "App-Id",
+												"value": "{application_id}",
+												"type": "text"
+											},
+											{
+												"key": "App-Key",
+												"value": "{application_key}",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/supported_pmses"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Cache-Control",
+											"value": "private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding"
+										},
+										{
+											"key": "Server",
+											"value": "Microsoft-IIS/8.5"
+										},
+										{
+											"key": "X-AspNet-Version",
+											"value": "4.0.30319"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "ASP.NET"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Methods",
+											"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+										},
+										{
+											"key": "Access-Control-Allow-Headers",
+											"value": "accept, authorization, Content-Type, X-Session-Id"
+										},
+										{
+											"key": "X-Api-Server-Version",
+											"value": "1"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 13 Sep 2019 21:56:43 GMT"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1559"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=16000000; includeSubDomains; preload;"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"2\",\n    \"total_count\": \"441\",\n    \"execution_time\": \"810\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/supported_pmses?offset=0&limit=2\",\n        \"previous\": \"\",\n        \"current\": \"https://api.sikkasoft.com/v4/supported_pmses?offset=0&limit=2\",\n        \"next\": \"https://api.sikkasoft.com/v4/supported_pmses?offset=1&limit=2\",\n        \"last\": \"https://api.sikkasoft.com/v4/supported_pmses?offset=220&limit=2\"\n    },\n    \"items\": [\n        {\n            \"specialty\": \"\",\n            \"domain\": \"Animal Shelter\",\n            \"practice_management_system\": \"Chameleon\",\n            \"practice_management_system_version\": \"V1.0\",\n            \"display_practice_management_system_name\": \"\",\n            \"release_state\": \"Beta\",\n            \"release_notes\": \"\",\n            \"appointment_status_writeback\": \"\",\n            \"payment_writeback\": \"\",\n            \"new_appointment_writeback\": \"\",\n            \"new_patient_writeback\": \"\",\n            \"note_writeback\": \"\",\n            \"claim_notes_status_writeback\": \"\",\n            \"insurance_payment_writeback\": \"\",\n            \"lab_result_writeback\": \"\"\n        },\n        {\n            \"specialty\": \"\",\n            \"domain\": \"Animal Shelter\",\n            \"practice_management_system\": \"Shelter Buddy\",\n            \"practice_management_system_version\": \"Web\",\n            \"display_practice_management_system_name\": \"\",\n            \"release_state\": \"Production\",\n            \"release_notes\": \"\",\n            \"appointment_status_writeback\": \"\",\n            \"payment_writeback\": \"\",\n            \"new_appointment_writeback\": \"\",\n            \"new_patient_writeback\": \"\",\n            \"note_writeback\": \"\",\n            \"claim_notes_status_writeback\": \"\",\n            \"insurance_payment_writeback\": \"\",\n            \"lab_result_writeback\": \"\"\n        }\n    ]\n}"
+								}
+							]
 						}
 					],
 					"id": "cafb990b-67be-41c1-ac6d-863b0b6b4a4d"
