@@ -14033,13 +14033,7 @@
 				}
 			],
 			"id": "603347df-cf60-4fcd-ab4c-9e047b36756d",
-			"description": "## https://api.sikkasoft.com/v4"
-		},
-		{
-			"name": "Sikka API v2 - Deprecated",
-			"item": [],
-			"id": "4a90818c-b880-4b29-b3a3-46e71331e73d",
-			"description": "Sikka Platform Cloud provides APIs so you can quickly build secure apps\nfor over 90% of dental, veterinary, audiology and optometry industries.Use our API to gain access to all the opt - in HIPAA / HITECH compliant rich data that a healthcare practice generates.\n> Join our Ecosystem and build your own Apps!The Sikka Ecosystem harnesses the power of over 50 unique apps\nfor you to gain full control of your practice,\nwhile viewing real - time industry metrics, securely - all at your fingertips!\n> Visit : [Sikka Marketplace](https://www.sikkasoft.com)\n\n>Note : Certain special characters are not allowed in the API URI path segment (:, #, ?, /, \\\\, %, +, =)"
+			"description": "## [https://api.sikkasoft.com/v4](https://api.sikkasoft.com/v4)"
 		}
 	],
 	"event": [
