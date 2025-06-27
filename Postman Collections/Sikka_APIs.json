@@ -6345,6 +6345,26 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\n    \"offset\": \"xx\",\n    \"limit\": \"xx\",\n    \"total_count\": \"xx\",\n    \"execution_time\": \"xx\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/patient_balance?offset=xx&limit=xx\",\n        \"previous\": \"previous\",\n        \"current\": \"https://api.sikkasoft.com/v4/patient_balance?offset=xx&limit=xx\",\n        \"next\": \"https://api.sikkasoft.com/v4/patient_balance?offset=xx&limit=xx\",\n        \"last\": \"https://api.sikkasoft.com/v4/patient_balance?offset=xx&limit=xx\"\n    },\n    \"items\": [\n        {\n            \"patient_id\": \"patient id\",\n            \"firstname\": \"firstname\",\n            \"lastname\": \"lastname\",\n            \"practice_id\": \"practice id\",\n            \"current_date\": \"current date\",\n            \"practice_name\": \"practice name\",\n            \"customer_id\": \"customer id\",\n            \"chart_number\": \"chart number\",\n            \"patient_amount_less_than_30\": \"patient amount less than 30\",\n            \"patient_amount_between_30_60\": \"patient amount between 30 60\",\n            \"patient_amount_between_60_90\": \"patient amount between 60 90\",\n            \"patient_amount_greater_than_90\": \"patient amount greater than 90\",\n            \"insurance_amount_less_than_30\": \"insurance amount less than 30\",\n            \"insurance_amount_between_30_60\": \"insurance amount between 30 60\",\n            \"insurance_amount_between_60_90\": \"insurance amount between 60 90\",\n            \"insurance_amount_greater_than_90\": \"insurance amount greater than 90\",\n            \"patient_balance\": \"patient balance\",\n            \"unapplied\": \"unapplied\",\n            \"insurance_due\": \"insurance due\",\n            \"patient_due\": \"patient due\",\n            \"account_balance\": \"account balance\",\n            \"write_off\": \"write off\"\n        }\n    ]\n}"
+								},
+								{
+									"id": "d4f939be-2be3-4d3b-bc0c-7fd0da9a16b4",
+									"name": "patient_balance",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "Request-Key",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/patient_balance"
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
 								}
 							]
 						},
