@@ -1853,7 +1853,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "https://api.sikkasoft.com/v4/practice_variable",
+								"url": "https://api.sikkasoft.com/v4/practice_variables",
 								"description": "Returns practice variables like appointment status , patient status from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### service_name `optional`\n\n> Service name as per the response \n  \n\n###### service_item `optional`\n\n> Service item as per the response \n  \n\n###### Sortby\n\n###### service_name\n\n> Service name as per the response \n  \n\n###### practice_id `default`\n\n> practice id of office"
 							},
 							"response": [
@@ -1869,7 +1869,7 @@
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/practice_variable"
+										"url": "https://api.sikkasoft.com/v4/practice_variables"
 									},
 									"_postman_previewlanguage": "json",
 									"header": null,
@@ -1890,7 +1890,7 @@
 											}
 										],
 										"url": {
-											"raw": "https://api.sikkasoft.com/v4/practice_variable?fields=get_all",
+											"raw": "https://api.sikkasoft.com/v4/practice_variables?fields=get_all",
 											"protocol": "https",
 											"host": [
 												"api",
@@ -1899,13 +1899,12 @@
 											],
 											"path": [
 												"v4",
-												"practice_variable"
+												"practice_variables"
 											],
 											"query": [
 												{
 													"key": "fields",
-													"value": "get_all",
-													"type": "text"
+													"value": "get_all"
 												}
 											]
 										}
