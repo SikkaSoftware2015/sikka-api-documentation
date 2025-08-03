@@ -11126,7 +11126,7 @@
 							"response": [
 								{
 									"id": "0e7537c2-8adb-4a05-b6a9-0a48e39aca99",
-									"name": "staging_details",
+									"name": "patient_xrays",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
