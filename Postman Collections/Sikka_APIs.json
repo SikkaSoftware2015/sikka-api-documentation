@@ -11132,11 +11132,11 @@
 										"header": [
 											{
 												"key": "Request-Key",
-												"value": "<request_key>",
+												"value": "0b95142decd4aec54896d40a72bd5eea",
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/staging_details"
+										"url": "https://api.sikkasoft.com/v4/patient_xrays"
 									},
 									"_postman_previewlanguage": "json",
 									"header": null,
