@@ -11112,6 +11112,79 @@
 							]
 						},
 						{
+							"name": "patient_xrays",
+							"id": "d15fdef4-0b77-4267-ba48-1ce46be557cc",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "https://api.sikkasoft.com/v4/patient_xrays",
+								"description": "Returns staging details from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### group_id `optional`\n\n> group id \n  \n\n###### detail_id `optional`\n\n> detail id \n  \n\n###### patient_id `optional`\n\n> Patient ID as per the management system \n  \n\n###### category `optional`\n\n> category \n  \n\n###### status `optional`\n\n> status \n  \n\n###### date_filter_on`optional`\n\n> Field name on which stardate and enddate filter will be applied, valid values are: progress_date/estimated_surgery_date/stage_date(default) \n  \n\n###### startdate `optional`\n\n> format: yyyy-mm-dd, start date \n  \n\n###### enddate `optional`\n\n> format: yyyy-mm-dd, end date \n  \n\n###### SortBy\n\n###### stage_date\n\n> Stage date \n  \n\n###### estimated_surgery_date\n\n> Estimated surgery date \n  \n\n###### progress_date\n\n> Progress date \n  \n\n###### status\n\n> Status \n  \n\n###### practice_id\n\n> Practice ID \n  \n\n###### patient_id\n\n> Patient ID as per the management system \n  \n\n###### detail_id\n\n> Detail id \n  \n\n###### group_id `default`\n\n> Group id"
+							},
+							"response": [
+								{
+									"id": "0e7537c2-8adb-4a05-b6a9-0a48e39aca99",
+									"name": "staging_details",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/staging_details"
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n    \"offset\": \"0\",\r\n    \"limit\": \"2\",\r\n    \"total_count\": \"3\",\r\n    \"execution_time\": \"156\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/staging_details?offset=0&limit=2\",\r\n        \"previous\": \"\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/staging_details?offset=0&limit=2\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/staging_details?offset=1&limit=2\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/staging_details?offset=1&limit=2\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1-1/staging_details/4\",\r\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/1-1/patients/24136\",\r\n            \"patient_id\": \"24136\",\r\n            \"status\": \"Active\",\r\n            \"practice_id\": \"1-1\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-1\",\r\n            \"description\": \"Placement\",\r\n            \"cust_id\": \"1\",\r\n            \"category\": \"Implants\",\r\n            \"rowhash\": \"A6-FC-23-8A-BF-A4-00\",\r\n            \"group_id\": \"4\",\r\n            \"detail_id\": \"5\",\r\n            \"stage_date\": \"2007-06-06T00:00:00\",\r\n            \"estimated_surgery_date\": \"\",\r\n            \"progress_date\": \"\",\r\n            \"detail_note\": \"#22 #27\",\r\n            \"group_note\": \"#22 4x13  #27 4x13\"\r\n        },\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1-1/staging_details/4\",\r\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/1-1/patients/24136\",\r\n            \"patient_id\": \"24136\",\r\n            \"status\": \"Active\",\r\n            \"practice_id\": \"1-1\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-1\",\r\n            \"description\": \"Placement\",\r\n            \"cust_id\": \"1\",\r\n            \"category\": \"Implants\",\r\n            \"rowhash\": \"87-3A-89-65-C0-D3-01\",\r\n            \"group_id\": \"4\",\r\n            \"detail_id\": \"6\",\r\n            \"stage_date\": \"2007-07-19T00:00:00\",\r\n            \"estimated_surgery_date\": \"\",\r\n            \"progress_date\": \"\",\r\n            \"detail_note\": \"#28\",\r\n            \"group_note\": \"#22 4x13  #27 4x13\"\r\n        }\r\n    ]\r\n}"
+								},
+								{
+									"id": "04613f55-b6fc-42a5-92c8-d2a0c07764c2",
+									"name": "staging_details?fields=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/staging_details?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"staging_details"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n    \"offset\": \"0\",\r\n    \"limit\": \"2\",\r\n    \"total_count\": \"3\",\r\n    \"execution_time\": \"156\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/staging_details?offset=0&limit=2\",\r\n        \"previous\": \"\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/staging_details?offset=0&limit=2\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/staging_details?offset=1&limit=2\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/staging_details?offset=1&limit=2\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1-1/staging_details/4\",\r\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/1-1/patients/24136\",\r\n            \"patient_id\": \"24136\",\r\n            \"status\": \"Active\",\r\n            \"practice_id\": \"1-1\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-1\",\r\n            \"description\": \"Placement\",\r\n            \"cust_id\": \"1\",\r\n            \"category\": \"Implants\",\r\n            \"rowhash\": \"A6-FC-23-8A-BF-A4-00\",\r\n            \"group_id\": \"4\",\r\n            \"detail_id\": \"5\",\r\n            \"stage_date\": \"2007-06-06T00:00:00\",\r\n            \"estimated_surgery_date\": \"\",\r\n            \"progress_date\": \"\",\r\n            \"detail_note\": \"#22 #27\",\r\n            \"group_note\": \"#22 4x13  #27 4x13\"\r\n        },\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1-1/staging_details/4\",\r\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/1-1/patients/24136\",\r\n            \"patient_id\": \"24136\",\r\n            \"status\": \"Active\",\r\n            \"practice_id\": \"1-1\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-1\",\r\n            \"description\": \"Placement\",\r\n            \"cust_id\": \"1\",\r\n            \"category\": \"Implants\",\r\n            \"rowhash\": \"87-3A-89-65-C0-D3-01\",\r\n            \"group_id\": \"4\",\r\n            \"detail_id\": \"6\",\r\n            \"stage_date\": \"2007-07-19T00:00:00\",\r\n            \"estimated_surgery_date\": \"\",\r\n            \"progress_date\": \"\",\r\n            \"detail_note\": \"#28\",\r\n            \"group_note\": \"#22 4x13  #27 4x13\"\r\n        }\r\n    ]\r\n}"
+								}
+							]
+						},
+						{
 							"name": "patient_eligibility",
 							"id": "21d46306-42f3-4dd6-86e7-99c0cac6f4b4",
 							"protocolProfileBehavior": {
