@@ -13205,12 +13205,6 @@
 					"description": "Sikka APIs allows you to get the data extracted from financial systems like Quickbooks. Explore finance API for more details"
 				},
 				{
-					"name": "Sikka Payments API",
-					"item": [],
-					"id": "6552173c-8ad7-4d4b-9fd1-5c5ab91f53b8",
-					"description": "<img src=\"https://api.sikkasoft.com/portal/images/comingsoon.png\">\n\n##### Till then you can use our [Sikka Payments API v2](https://apidocs.sikkasoft.com/#d945a0d4-7607-442b-b8a5-31a58e004f0b)"
-				},
-				{
 					"name": "Support APIs",
 					"item": [
 						{
