@@ -2305,7 +2305,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/insurance_companies",
-								"description": "Returns insurance company detail from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### insurance_company_id `optional`\n\n> insurance company id from appointments \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### SortBy\n\n###### practice_id\n\n> Practice ID \n  \n\n###### insurance_company_name\n\n> Insurance Company Name \n  \n\n###### insurance_company_id `default`\n\n> Insurance Company ID"
+								"description": "Returns insurance company detail from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### insurance_company_id `optional`\n\n> insurance company id from appointments \n  \n\n###### practice_id `optional`\n\n> practice id of office\n\n###### carrier_id `optional`\n\n> Carrier Id\n  \n\n###### SortBy\n\n###### practice_id\n\n> Practice ID \n  \n\n###### insurance_company_name\n\n> Insurance Company Name \n  \n\n###### insurance_company_id `default`\n\n> Insurance Company ID"
 							},
 							"response": [
 								{
