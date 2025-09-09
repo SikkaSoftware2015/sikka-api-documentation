@@ -3592,7 +3592,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/treatment_plan_statuses",
-								"description": "Returns treatment plans status data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### SortBy\n\n###### practice_id `default`\n\n> practice id of office"
+								"description": "Returns treatment plans status data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office\n\n###### status `optional`\n\n> Status\n\n###### SortBy\n\n###### practice_id `default`\n\n> practice id of office"
 							},
 							"response": [
 								{
