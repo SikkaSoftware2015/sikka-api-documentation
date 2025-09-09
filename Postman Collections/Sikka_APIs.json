@@ -3007,7 +3007,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/appointment_statuses",
-								"description": "Returns appointments status data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### SortBy\n\n###### practice_id `default`\n\n> Practice ID"
+								"description": "Returns appointments status data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n\n###### status `optional`\n\n> Status\n  \n\n###### SortBy\n\n###### practice_id `default`\n\n> Practice ID"
 							},
 							"response": [
 								{
