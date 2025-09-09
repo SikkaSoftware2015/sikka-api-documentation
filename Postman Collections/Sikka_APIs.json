@@ -5609,7 +5609,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/veterinary_clinics",
-								"description": "Returns veterinary clinic information\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### SortBy\n\n###### name\n\n> Veterinary clinic name \n  \n\n###### veterinary_clinic_id `default`\n\n> Veterinary clinic id"
+								"description": "Returns veterinary clinic information\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office\n\n###### veterinary_clinic_id `default`\n\n> Veterinary clinic id \n  \n###### SortBy\n\n###### name\n\n> Veterinary clinic name \n  \n\n###### veterinary_clinic_id `default`\n\n> Veterinary clinic id"
 							},
 							"response": [
 								{
