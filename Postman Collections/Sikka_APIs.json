@@ -11660,7 +11660,7 @@
 									"formdata": []
 								},
 								"url": "https://api.sikkasoft.com/v4/finance/balances",
-								"description": "Returns balance details data from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### SortBy\n\n###### account_name `default`\n\n> Account name"
+								"description": "Returns balance details data from practice's finance system.\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n\n###### account_name `optional`\n\n> Account name\n  \n\n###### SortBy\n\n###### account_name `default`\n\n> Account name"
 							},
 							"response": [
 								{
