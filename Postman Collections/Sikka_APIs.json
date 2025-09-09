@@ -501,7 +501,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/appointments_available_slots",
-								"description": "Returns available appointments slots from practice.\n\n**Currently this data available only for Orthotrac and Dolphin Management.**\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### provider_id `optional`\n\n> Provider id as per practice management system \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### startdate `optional`\n\n> format: yyyy-mm-dd, start date \n  \n\n###### enddate `optional`\n\n> format: yyyy-mm-dd, end date \n  \n\n###### operatory `optional`\n\n> Operatory \n  \n\n###### SortBy\n\n###### practice_id `default`\n\n> practice id of office \n  \n\n###### date\n\n> Available appointment date \n  \n\n###### time\n\n> Available appointment time"
+								"description": "Returns available appointments slots from practice.\n\n**Currently this data available only for Orthotrac and Dolphin Management.**\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### provider_id `optional`\n\n> Provider id as per practice management system \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### startdate `optional`\n\n> format: yyyy-mm-dd, start date \n  \n\n###### enddate `optional`\n\n> format: yyyy-mm-dd, end date \n  \n\n###### operatory `optional`\n\n> Operatory \n\n###### book_code `optional`\n\n> BookCode\n\n###### arrival_status `optional`\n\n> Arrival Status\n  \n\n###### SortBy\n\n###### practice_id `default`\n\n> practice id of office \n  \n\n###### date\n\n> Available appointment date \n  \n\n###### time\n\n> Available appointment time"
 							},
 							"response": [
 								{
@@ -1605,7 +1605,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/provider_time_clock",
-								"description": "Returns provider's times clock details from practice\n\n---\n\n###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### Parameters\n\n###### date_filter_on`optional`\n\n> Field name on which stardate and enddate filter will be applied, valid values are: uploaded_date/created_date(default) \n  \n\n###### startdate `optional`\n\n> format: yyyy-mm-dd, start date \n  \n\n###### enddate `optional`\n\n> format: yyyy-mm-dd, end date \n  \n\n###### SortBy\n\n###### created_date\n\n> Created date \n  \n\n###### uploaded_date\n\n> Uploaded date \n  \n\n###### patient_id\n\n> Patient Id. Default"
+								"description": "Returns provider's times clock details from practice\n\n---\n\n###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### Parameters  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### provider_id `optional`\n\n> provider id in practice management system \n  \n\n###### SortBy\n\n###### provider_id `default`\n\n> provider id in practice management system"
 							},
 							"response": [
 								{
