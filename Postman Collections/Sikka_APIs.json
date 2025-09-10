@@ -1605,7 +1605,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/provider_time_clock",
-								"description": "Returns provider's times clock details from practice\n\n---\n\n###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### Parameters\n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### provider_id `optional`\n\n> provider id in practice management system \n  \n\n###### startdate `optional`\n\n> format: yyyy-mm-dd, start date on punch_date \n  \n\n###### enddate `optional`\n\n> format: yyyy-mm-dd, end date on punch_date \n  \n\n###### cust_id `optional`\n\n> Cust Id (Customer ID) \n  \n\n###### SortBy\n\n###### provider_id `default`\n\n> provider id in practice management system \n  \n\n###### practice_id\n\n> practice id of office \n  \n\n###### punch_date\n\n> punch date"
+								"description": "Returns provider's times clock details from practice\n\n---\n\n###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### Parameters\n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### provider_id `optional`\n\n> provider id in practice management system \n  \n\n###### startdate `optional`\n\n> format: yyyy-mm-dd, start date on punch_date \n  \n\n###### enddate `optional`\n\n> format: yyyy-mm-dd, end date on punch_date \n  \n\n###### cust_id `optional`\n\n> Cust Id (Customer ID) \n  \n\n###### SortBy\n\n###### provider_id `default`\n\n> provider id in practice management system \n  \n\n###### practice_id\n\n> practice id of office \n  \n\n###### punch_date\n\n> punch date\n\n###### rowhash\n\n> Rowhash"
 							},
 							"response": [
 								{
