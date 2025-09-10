@@ -4969,7 +4969,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "",
-								"description": "Returns patient's ssn information from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### patient_id `optional`\n\n> patient id from practice \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### Sortby\n\n###### patient_id `default`\n\n> patient id from practice\n\n###### firstname\n\n> Patient first name \n  \n\n###### lastname\n\n> Patient last name \n  \n\n###### zipcode\n\n> Patient location zipcode \n  \n\n"
+								"description": "Returns patient's ssn information from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### patient_id `optional`\n\n> patient id from practice \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### Sortby\n\n###### patient_id `default`\n\n> patient id from practice \n  \n\n###### firstname\n\n> Patient first name \n  \n\n###### lastname\n\n> Patient last name \n  \n\n###### zipcode\n\n> Patient location zipcode\n\n###### rowhash\n\n> Rowhash"
 							},
 							"response": [
 								{
