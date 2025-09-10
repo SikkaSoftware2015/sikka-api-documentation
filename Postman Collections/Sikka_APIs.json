@@ -10353,7 +10353,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/xrays",
-								"description": "Returns patientxray details.\n\n---\n\n### Parameters\n\n#### practice_id `optional`\n\n> Practice ID\n\n#### patient_id `optional`\n\n> Patient ID \n  \n### SortBy\n\n#### practice_id `default`\n\n> Practice ID \n  \n\n#### patient_id\n\n> Patient ID"
+								"description": "Returns patientxray details.\n\n---\n\n### Parameters\n\n#### practice_id `optional`\n\n> Practice ID \n  \n\n#### patient_id `optional`\n\n> Patient ID \n  \n\n### SortBy\n\n#### practice_id `default`\n\n> Practice ID \n  \n\n#### patient_id\n\n> Patient ID"
 							},
 							"response": [
 								{
