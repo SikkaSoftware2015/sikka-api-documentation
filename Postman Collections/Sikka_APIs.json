@@ -7453,7 +7453,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/provider_mapping",
-								"description": "Returns provider mapping\n\n---\n\n### Parameters\n\n#### provider_id `optional`\n\n> Provider ID as per the management system \n  \n\n#### practice_id `optional`\n\n> Practice ID \n  \n\n### SortBy\n\n#### practice_id `default`\n\n> Practice ID"
+								"description": "Returns provider mapping\n\n---\n\n### Parameters\n\n#### provider_id `optional`\n\n> Provider ID as per the management system \n  \n\n#### practice_id `optional`\n\n> Practice ID \n  \n\n### SortBy\n\n#### practice_id \n\n> Practice ID\n\n#### provider_id `default`\n\n> Provider ID as per the management system"
 							},
 							"response": [
 								{
