@@ -1734,7 +1734,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/outside_doctors",
-								"description": "Returns outside doctors details from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### doctor_id `optional`\n\n> doctor id in practice management system \n  \n\n###### patient_id `optional`\n\n> patient id in practice management system\n\n###### cust_id `optional`\n\n> Cust Id (Customer ID)\n  \n\n###### SortBy\n\n###### doctor_id `default`\n\n> doctor id in practice management system \n  \n\n###### patient_id\n\n> patient id in practice management system \n  \n\n###### practice_id\n\n> practice id of office"
+								"description": "Returns outside doctors details from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### doctor_id `optional`\n\n> doctor id in practice management system \n  \n\n###### patient_id `optional`\n\n> patient id in practice management system \n  \n\n###### cust_id `optional`\n\n> Cust Id (Customer ID) \n  \n\n###### SortBy\n\n###### doctor_id `default`\n\n> doctor id in practice management system \n  \n\n###### patient_id\n\n> patient id in practice management system \n  \n\n###### practice_id\n\n> practice id of office\n\n###### rowhash\n\n> Rowhash"
 							},
 							"response": [
 								{
