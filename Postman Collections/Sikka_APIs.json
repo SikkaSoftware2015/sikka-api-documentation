@@ -11150,7 +11150,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/patient_xrays",
-								"description": "This API read X Rays from Dexis and return.\n\n---\n\n###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### Parameters\n\n###### date_filter_on`optional`\n\n> Field name on which stardate and enddate filter will be applied, valid values are: uploaded_date/created_date(default) \n  \n\n###### startdate `optional`\n\n> format: yyyy-mm-dd, start date \n  \n\n###### enddate `optional`\n\n> format: yyyy-mm-dd, end date\n\n#### patient_id `optional`\n\n> Patient ID \n  \n###### SortBy\n\n###### created_date\n\n> Created date \n  \n\n###### uploaded_date\n\n> Uploaded date \n  \n\n###### patient_id\n\n> Patient Id. Default"
+								"description": "This API read X Rays from Dexis and return.\n\n---\n\n###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### Parameters\n\n###### date_filter_on`optional`\n\n> Field name on which stardate and enddate filter will be applied, valid values are: uploaded_date/created_date(default) \n  \n\n###### startdate `optional`\n\n> format: yyyy-mm-dd, start date \n  \n\n###### enddate `optional`\n\n> format: yyyy-mm-dd, end date \n  \n\n###### patient_id\n\n> Patient ID\n  \n\n###### SortBy\n\n###### created_date\n\n> Created date \n  \n\n###### uploaded_date\n\n> Uploaded date \n  \n\n###### patient_id\n\n> Patient Id. Default"
 							},
 							"response": [
 								{
