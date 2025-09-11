@@ -409,7 +409,7 @@
 						}
 					],
 					"id": "8b8ddc1a-ec5e-4981-b893-e842eb57e59c",
-					"description": "Welcome to Sikka API. Here you will find the step-by-step guide that will help you build an application on the Sikka Platform and full listing of all the available APIs. As we add more APIs, they will automatically documented here and available to you as per your API plan. For more information about a particular endpoint, click on its name. You will be taken to the API’s documentation page, which includes query parameters the API will accept, the JSON parameters will be in the response and an example.\n\n❶ Signup at Sikka API portal & create an application\n\n❷ Select an APIs\n\n❸ Start Fetching and displaying data\n\n[](https://vimeo.com/681537014)\n\n[<img src=\"https://i9.ytimg.com/vi/3qFZD5MafAA/mq1.jpg?sqp=COS-zP0F&amp;rs=AOn4CLBEZ5Ceg8SuXmw5O6y4uJbj-mOMpA&amp;retry=2\">](https://vimeo.com/681537014)"
+					"description": "Welcome to Sikka API. Here you will find the step-by-step guide that will help you build an application on the Sikka Platform and full listing of all the available APIs. As we add more APIs, they will automatically documented here and available to you as per your API plan. For more information about a particular endpoint, click on its name. You will be taken to the API’s documentation page, which includes query parameters the API will accept, the JSON parameters will be in the response and an example.\n\n❶ Signup at Sikka API portal & create an application\n\n❷ Select an APIs\n\n❸ Start Fetching and displaying data"
 				},
 				{
 					"name": "One API",
