@@ -14111,7 +14111,8 @@
 				{
 					"name": "Payments APIs",
 					"item": [],
-					"id": "3e9d5667-6da5-4eea-99de-6b044a38da95"
+					"id": "3e9d5667-6da5-4eea-99de-6b044a38da95",
+					"description": "**Status:** Work in progress – The implementation work of documentation for the Payment APIs is in progress, and details such as request/response structure, validation rules, and examples will be updated soon."
 				}
 			],
 			"id": "603347df-cf60-4fcd-ab4c-9e047b36756d",
