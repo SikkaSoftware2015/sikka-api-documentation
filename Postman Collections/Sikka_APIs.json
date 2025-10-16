@@ -14148,7 +14148,7 @@
 									}
 								},
 								"url": "https://api.sikkasoft.com/v4/remote_command",
-								"description": "POST ‘remote_command’ API allows to send command to 'Sikka Practice Utility' to refresh data and change refresh settings.\n\n###### Headers\n\n###### **App-Id** `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### **App-Key** `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### Request Body\n\n###### **office_id** `Required`\n\n> Office_id you received from ‘authorized_practices’ API \n  \n\n###### **spc_id** `Required`\n\n> spc_id you received from health_check API. \n  \n\n###### **command_name** `Required`\n\n> command_name. Value should be refresh_data, change_setting_schedule_interval or change_setting_schedule_time. \n  \n\n###### **interval_type** `Optional`\n\n> interval_type is mandatory if command_name is change_setting_schedule_interval. Value should be Minutes or Hours. \n  \n\n###### **interval_length** `Optional`\n\n> interval_length is mandatory if command_name is change_setting_schedule_interval. if interval_type is Hours then value should be between 1 to 24. if interval_type is Minutes then value should be between 15 to 60. \n  \n\n###### **new_value** `Optional`\n\n> new_value is mandatory if command_name is change_setting_schedule_time. Value should be time in hh:mm tt format."
+								"description": "POST ‘remote_command’ API allows to send command to 'Sikka Practice Utility' to refresh data and change refresh settings.\n\n###### Headers\n\n###### **App-Id** `Required`\n\n> A Valid 32 characters alpha-numeric request key \n "
 							},
 							"response": [
 								{
