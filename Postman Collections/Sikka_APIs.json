@@ -14155,7 +14155,7 @@
 							"response": [
 								{
 									"id": "8ef04c31-ad95-4179-881f-74b415ff4a42",
-									"name": "remote_command",
+									"name": "stored_card",
 									"originalRequest": {
 										"method": "DELETE",
 										"header": [
