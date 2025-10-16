@@ -14126,20 +14126,7 @@
 							},
 							"request": {
 								"method": "DELETE",
-								"header": [
-									{
-										"key": "App-Id",
-										"value": "<Application Id>",
-										"type": "text",
-										"disabled": true
-									},
-									{
-										"key": "App-Key",
-										"value": "<Application Key>",
-										"type": "text",
-										"disabled": true
-									}
-								],
+								"header": [],
 								"body": {
 									"mode": "raw",
 									"raw": "",
@@ -14226,21 +14213,8 @@
 								}
 							},
 							"request": {
-								"method": "DELETE",
-								"header": [
-									{
-										"key": "App-Id",
-										"value": "<Application Id>",
-										"type": "text",
-										"disabled": true
-									},
-									{
-										"key": "App-Key",
-										"value": "<Application Key>",
-										"type": "text",
-										"disabled": true
-									}
-								],
+								"method": "GET",
+								"header": [],
 								"body": {
 									"mode": "raw",
 									"raw": "",
@@ -14250,7 +14224,7 @@
 										}
 									}
 								},
-								"url": "https://api.sikkasoft.com/v4/payment/store_card",
+								"url": "https://api.sikkasoft.com/v4/payment/transactions",
 								"description": "###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### Parameters\n\n###### **cust_id** `mandatory`\n\n> Cust ID (Customer ID) \n  \n\n###### **guarantor_id** `mandatory`\n\n> Guarantor ID as per the practice management system\n  \n\n###### **name** `mandatory`\n\n> Name \n  \n\n###### **patient_id** `mandatory`\n\n> Patient ID as per the practice management system\n  \n\n###### **practice_id** `mandatory`\n\n> Practice ID of office\n  \n\n###### **provider_id** `mandatory`\n\n> Provider ID as per the practice management system\n  \n\n###### **zipcode** `optional`\n\n> Zip code \n  \n\n###### **payment_provider** `mandatory`\n\n> Name of payment provider\n  \n\n###### **billing_id** `mandatory`\n\n> Unique billing identifier of the stored card record"
 							},
 							"response": [
