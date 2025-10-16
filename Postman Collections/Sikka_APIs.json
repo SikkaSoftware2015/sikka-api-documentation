@@ -14112,7 +14112,7 @@
 					"name": "Payments APIs",
 					"item": [
 						{
-							"name": "stored_card",
+							"name": "store_card",
 							"id": "b7fde59e-c142-41bc-a1da-120324e7ae39",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true,
@@ -14213,7 +14213,7 @@
 							]
 						},
 						{
-							"name": "stored_card Copy",
+							"name": "payment/transactions",
 							"id": "fa91df3b-6740-409d-9ce4-98165c74fc59",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true,
