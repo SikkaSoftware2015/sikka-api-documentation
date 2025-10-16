@@ -14125,17 +14125,19 @@
 								}
 							},
 							"request": {
-								"method": "POST",
+								"method": "DELETE",
 								"header": [
 									{
 										"key": "App-Id",
 										"value": "<Application Id>",
-										"type": "text"
+										"type": "text",
+										"disabled": true
 									},
 									{
 										"key": "App-Key",
 										"value": "<Application Key>",
-										"type": "text"
+										"type": "text",
+										"disabled": true
 									}
 								],
 								"body": {
@@ -14147,8 +14149,8 @@
 										}
 									}
 								},
-								"url": "https://api.sikkasoft.com/v4/remote_command",
-								"description": "POST ‘remote_command’ API allows to send command to 'Sikka Practice Utility' to refresh data and change refresh settings.\n\n###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key"
+								"url": "https://api.sikkasoft.com/v4/payment/store_card",
+								"description": "###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key"
 							},
 							"response": [
 								{
