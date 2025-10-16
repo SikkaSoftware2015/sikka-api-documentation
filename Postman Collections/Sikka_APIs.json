@@ -14150,7 +14150,7 @@
 									}
 								},
 								"url": "https://api.sikkasoft.com/v4/payment/store_card",
-								"description": "###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### Parameters\n\n###### **cust_id** `mandatory`\n\n> CustID \n  \n\n###### **guarantor_id** `mandatory`\n\n> GuarantorID \n  \n\n###### **name** `mandatory`\n\n> Name \n  \n\n###### **patient_id** `mandatory`\n\n> PatientID \n  \n\n###### **practice_id=available** `mandatory`\n\n> PracticeID \n  \n\n###### **provider_id=available** `mandatory`\n\n> ProviderID \n  \n\n###### **zipcode=available** `optional`\n\n> Zipcode \n  \n\n###### **payment_provider=available** `mandatory`\n\n> PaymentProvider \n  \n\n###### **billing_id=available** `mandatory`\n\n> BillingID"
+								"description": "###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### Parameters\n\n###### **cust_id** `mandatory`\n\n> CustID \n  \n\n###### **guarantor_id** `mandatory`\n\n> GuarantorID \n  \n\n###### **name** `mandatory`\n\n> Name \n  \n\n###### **patient_id** `mandatory`\n\n> PatientID \n  \n\n###### **practice_id** `mandatory`\n\n> PracticeID \n  \n\n###### **provider_id** `mandatory`\n\n> ProviderID \n  \n\n###### **zipcode** `optional`\n\n> Zipcode \n  \n\n###### **payment_provider** `mandatory`\n\n> PaymentProvider \n  \n\n###### **billing_id** `mandatory`\n\n> BillingID"
 							},
 							"response": [
 								{
