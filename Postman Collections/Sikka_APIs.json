@@ -14110,7 +14110,113 @@
 				},
 				{
 					"name": "Payments APIs",
-					"item": [],
+					"item": [
+						{
+							"name": "stored_card",
+							"id": "b7fde59e-c142-41bc-a1da-120324e7ae39",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true,
+								"disabledSystemHeaders": {
+									"user-agent": true,
+									"accept": true,
+									"host": true,
+									"accept-encoding": true,
+									"connection": true
+								}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "App-Id",
+										"value": "<Application Id>",
+										"type": "text"
+									},
+									{
+										"key": "App-Key",
+										"value": "<Application Key>",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"office_id\":\"D111226\",\r\n    \"spc_id\":\"655265656\",\r\n    \"command_name\":\"refresh_data/change_setting_schedule_interval/change_setting_schedule_time\",\r\n    \"interval_length\":\"20\",\r\n    \"interval_type\":\"Minutes/Hours\",\r\n    \"new_value\":\"02:12 AM\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://api.sikkasoft.com/v4/remote_command",
+								"description": "POST ‘remote_command’ API allows to send command to 'Sikka Practice Utility' to refresh data and change refresh settings.\n\n###### Headers\n\n###### **App-Id** `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### **App-Key** `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### Request Body\n\n###### **office_id** `Required`\n\n> Office_id you received from ‘authorized_practices’ API \n  \n\n###### **spc_id** `Required`\n\n> spc_id you received from health_check API. \n  \n\n###### **command_name** `Required`\n\n> command_name. Value should be refresh_data, change_setting_schedule_interval or change_setting_schedule_time. \n  \n\n###### **interval_type** `Optional`\n\n> interval_type is mandatory if command_name is change_setting_schedule_interval. Value should be Minutes or Hours. \n  \n\n###### **interval_length** `Optional`\n\n> interval_length is mandatory if command_name is change_setting_schedule_interval. if interval_type is Hours then value should be between 1 to 24. if interval_type is Minutes then value should be between 15 to 60. \n  \n\n###### **new_value** `Optional`\n\n> new_value is mandatory if command_name is change_setting_schedule_time. Value should be time in hh:mm tt format."
+							},
+							"response": [
+								{
+									"id": "8ef04c31-ad95-4179-881f-74b415ff4a42",
+									"name": "remote_command",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "App-Id",
+												"value": "{application_id}",
+												"type": "text"
+											},
+											{
+												"key": "App-Key",
+												"value": "{application_key}",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\t\"office_id\": \"D112332\",\r\n\t\"spc_id\": \"6552322\",\r\n\t\"command_name\": \"refresh_data\",\r\n\t\"interval_length\": \"\",\r\n\t\"interval_type\": \"\",\r\n\t\"new_value\": \"\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "https://api.sikkasoft.com/v4/remote_command"
+									},
+									"status": "Accepted",
+									"code": 202,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Mon, 17 Jul 2023 04:56:14 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=15724800; includeSubDomains"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"http_code\": \"202\",\n    \"http_code_desc\": \"Accepted\",\n    \"error_code\": \"API1029\",\n    \"short_message\": \"Request Accepted.\",\n    \"long_message\": \"Id:1531464\",\n    \"more_information\": \"https://api.sikkasoft.com/v4/remote_command_status?id=1531464\"\n}"
+								}
+							]
+						}
+					],
 					"id": "3e9d5667-6da5-4eea-99de-6b044a38da95",
 					"description": "**Status:** Work in progress – The implementation work of documentation for the Payment APIs is in progress, and details such as request/response structure, validation rules, and examples will be updated soon."
 				}
