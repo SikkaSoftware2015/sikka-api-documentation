@@ -14150,11 +14150,112 @@
 									}
 								},
 								"url": "https://api.sikkasoft.com/v4/payment/store_card",
-								"description": "###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### Parameters\n\n###### **cust_id** `mandatory`\n\n> CustID \n  \n\n###### **guarantor_id** `mandatory`\n\n> GuarantorID \n  \n\n###### **name** `mandatory`\n\n> Name \n  \n\n###### **patient_id** `mandatory`\n\n> PatientID \n  \n\n###### **practice_id** `mandatory`\n\n> PracticeID \n  \n\n###### **provider_id** `mandatory`\n\n> ProviderID \n  \n\n###### **zipcode** `optional`\n\n> Zipcode \n  \n\n###### **payment_provider** `mandatory`\n\n> PaymentProvider \n  \n\n###### **billing_id** `mandatory`\n\n> BillingID"
+								"description": "###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### Parameters\n\n###### **cust_id** `mandatory`\n\n> Cust ID (Customer ID) \n  \n\n###### **guarantor_id** `mandatory`\n\n> Guarantor ID as per the practice management system\n  \n\n###### **name** `mandatory`\n\n> Name \n  \n\n###### **patient_id** `mandatory`\n\n> Patient ID as per the practice management system\n  \n\n###### **practice_id** `mandatory`\n\n> Practice ID of office\n  \n\n###### **provider_id** `mandatory`\n\n> Provider ID as per the practice management system\n  \n\n###### **zipcode** `optional`\n\n> Zip code \n  \n\n###### **payment_provider** `mandatory`\n\n> Name of payment provider\n  \n\n###### **billing_id** `mandatory`\n\n> Unique billing identifier of the stored card record"
 							},
 							"response": [
 								{
 									"id": "8ef04c31-ad95-4179-881f-74b415ff4a42",
+									"name": "stored_card",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Request-Key",
+												"value": "{request_key}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\t\r\n\t\"cust_id\": \"cust_id - mandatory\",\t\r\n\t\"guarantor_id\": \"guarantor_id - mandatory\",\r\n\t\"name\": \"name - mandatory\",\r\n\t\"patient_id\": \"patient_id - mandatory\",\t\r\n\t\"practice_id\": \"practice_id - mandatory\",\r\n\t\"provider_id\": \"provider_id - mandatory\",\t\r\n\t\"zipcode\": \"zipcode - optional\",\r\n\t\"payment_provider\": \"payment_provider\",\r\n\t\"billing_id\": \"billing_id -  mandatory\"    \r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "https://api.sikkasoft.com/v4/payment/store_card"
+									},
+									"status": "Accepted",
+									"code": 202,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Mon, 17 Jul 2023 04:56:14 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=15724800; includeSubDomains"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n\t\"offset\": \"0\",\n\t\"limit\": \"50\",\n\t\"total_count\": \"1\",\n\t\"execution_time\": \"1111\",\n\t\"pagination\": {\n\t\t\"first\": \"http://api.sikkasoft.com/v4/payment/transactions?offset=0&limit=50\",\n\t\t\"previous\": \"\",\n\t\t\"current\": \"http://api.sikkasoft.com/v4/payment/transactions?offset=0&limit=50\",\n\t\t\"next\": \"\",\n\t\t\"last\": \"http://api.sikkasoft.com/v4/payment/transactions?offset=0&limit=50\"\n\t},\n\t\"items\": [{\n\t\t\"address1\": \"address1\",\n\t\t\"address2\": \"address2\",\n\t\t\"api_host\": \"Q/P\",\n\t\t\"api_name\": \"DELETE store_card\",\n\t\t\"app_id\": \"app id\",\n\t\t\"avs_code\": \"avs code\",\n\t\t\"avs_code_description\": \"avs code description\",\n\t\t\"billing_id\": \"billing id\",\n\t\t\"card_logo\": \"card logo\",\n\t\t\"card_number_masked\": \"xxxx\",\n\t\t\"city\": \"city\",\n\t\t\"country\": \"country\",\n\t\t\"cust_id\": \"cust id\",\n\t\t\"description\": \"payment provider response description\",\n\t\t\"email\": \"email\",\n\t\t\"expiration_month\": \"MM\",\n\t\t\"expiration_year\": \"yy\",\n\t\t\"guarantor_id\": \"guarantor id\",\n\t\t\"is_active\": \"true/false\",\n\t\t\"is_default\": \"true/false\",\n\t\t\"name\": \"name\",\n\t\t\"office_id\": \"office id\",\n\t\t\"order_id\": \"order id\",\n\t\t\"patient_id\": \"patient id\",\n\t\t\"payment_provider\": \"payment_provider\",\n\t\t\"payment_provider_message\": \"payment provider message for reference\",\n\t\t\"phone\": \"phone\",\n\t\t\"practice_id\": \"practice id\",\n\t\t\"provider_id\": \"provider id\",\n\t\t\"request_from_app\": \"app name as per API Portal\",\n\t\t\"request_status\": \"request status\",\n\t\t\"response_code\": \"payment provider response code\",\n\t\t\"response_code_description\": \"payment provider response code description\",\n\t\t\"sikkapay_reference_number\": \"sikkapay reference number\",\n\t\t\"state\": \"state\",\n\t\t\"ticket\": \"ticket\",\n\t\t\"ticket_number\": \"ticket number\",\n\t\t\"transaction_amount\": \"0.00\",\n\t\t\"transaction_date\": \"yyyy-MM-dd\",\n\t\t\"transaction_id\": \"transaction id\",\n\t\t\"transaction_media\": \"credit_card\",\n\t\t\"transaction_status\": \"status of transaction\",\n\t\t\"transaction_time\": \"HH:mm:ss\",\n\t\t\"transaction_type\": \"store\",\n\t\t\"zipcode\": \"zip code\",\n\t\t\"transaction_description\": \"description of transaction\",\n\t\t\"authorization_code\": \"authorization_code\",\n\t\t\"issuer_id\": \"issuer_id\"\n\t}]\n}"
+								}
+							]
+						},
+						{
+							"name": "stored_card Copy",
+							"id": "fa91df3b-6740-409d-9ce4-98165c74fc59",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true,
+								"disabledSystemHeaders": {
+									"user-agent": true,
+									"accept": true,
+									"host": true,
+									"accept-encoding": true,
+									"connection": true
+								}
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "App-Id",
+										"value": "<Application Id>",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "App-Key",
+										"value": "<Application Key>",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://api.sikkasoft.com/v4/payment/store_card",
+								"description": "###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### Parameters\n\n###### **cust_id** `mandatory`\n\n> Cust ID (Customer ID) \n  \n\n###### **guarantor_id** `mandatory`\n\n> Guarantor ID as per the practice management system\n  \n\n###### **name** `mandatory`\n\n> Name \n  \n\n###### **patient_id** `mandatory`\n\n> Patient ID as per the practice management system\n  \n\n###### **practice_id** `mandatory`\n\n> Practice ID of office\n  \n\n###### **provider_id** `mandatory`\n\n> Provider ID as per the practice management system\n  \n\n###### **zipcode** `optional`\n\n> Zip code \n  \n\n###### **payment_provider** `mandatory`\n\n> Name of payment provider\n  \n\n###### **billing_id** `mandatory`\n\n> Unique billing identifier of the stored card record"
+							},
+							"response": [
+								{
+									"id": "6ff153a3-4a14-48e1-b10d-2eed7313bd8f",
 									"name": "stored_card",
 									"originalRequest": {
 										"method": "DELETE",
