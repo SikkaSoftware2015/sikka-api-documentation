@@ -14436,10 +14436,21 @@
 							},
 							"request": {
 								"method": "POST",
-								"header": [],
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Request-Key",
+										"value": "{request_key}",
+										"type": "text"
+									}
+								],
 								"body": {
 									"mode": "raw",
-									"raw": "",
+									"raw": "{\r\n\t\"transaction_id\": \"transaction_id - mandatory\",\r\n\t\"transaction_date\": \"transaction_date - mandatory\",\r\n\t\"transaction_time\": \"transaction_time - mandatory\",\r\n\t\"transaction_type\": \"transaction_type - mandatory\",\r\n\t\"transaction_status\": \"transaction_status - mandatory\",\r\n\t\"patient_id\": \"patient_id - mandatory\",\r\n\t\"guarantor_id\": \"guarantor_id - mandatory\",\r\n\t\"practice_id\": \"practice_id - mandatory\",\r\n\t\"provider_id\": \"provider_id - mandatory\",\r\n\t\"cust_id\": \"cust_id - mandatory\",\r\n\t\"name\": \"name - mandatory\",\r\n\t\"order_id\": \"order_id - mandatory\",\r\n\t\"payment_provider\": \"payment_provider - mandatory\",\r\n\t\"response_code\": \"response_code - mandatory\",\r\n\t\"sikkapay_reference_number\": \"sikkapay_reference_number - mandatory\",\r\n\t\"payment_provider_message\": \"payment_provider_message - optional\",\r\n\t\"address1\": \"address1 - optional\",\r\n\t\"address2\": \"address2 - optional\",\r\n\t\"city\": \"city - optional\",\r\n\t\"state\": \"state - optional\",\r\n\t\"zipcode\": \"zipcode - optional\",\r\n\t\"email\": \"email - optional\",\r\n\t\"phone\": \"phone - optional\",\r\n\t\"card_number_masked\": \"card_number_masked - optional\",\r\n\t\"expiration_month\": \"expiration_month - optional\",\r\n\t\"expiration_year\": \"expiration_year - optional\",\r\n\t\"transaction_amount\": \"transaction_amount - mandatory\",\r\n\t\"transaction_media\": \"transaction_media - mandatory\",\r\n\t\"authorization_code\": \"authorization_code - optional\",\r\n\t\"avs_code\": \"avs_code - optional\",\r\n\t\"description\": \"description - optional\",\r\n\t\"reference_number\": \"reference_number - optional\",\r\n\t\"is_chain_head\": \"is_chain_head - optional\",\r\n\t\"chain_id\": \"chain_id - optional\",\r\n\t\"billing_id\": \"billing_id - optional\"\t\t\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -14467,150 +14478,16 @@
 												"type": "text"
 											}
 										],
-										"url": {
-											"raw": "https://api.sikkasoft.com/v4/payment/transactions?offset={offset}&limit={limit}&sort_by={sort_by}&sort_order={sort_order}&patient_id={patient_id}&guarantor_id={guarantor_id}&practice_id={practice_id}&transaction_status={transaction_status}&transaction_type={transaction_type}&transaction_media={transaction_media}&ticket_number={ticket_number}&payment_provider={payment_provider}&card_logo={card_logo}&transaction_amount={transaction_amount}&order_id={order_id}&reference_number={reference_number}&name={name}&email={email}&phone={phone}&startdate={startdate}&enddate={enddate}&chain_id={chain_id}&is_chain_head={is_chain_head}&sikkapay_reference_number={sikkapay_reference_number}&api_name={api_name}&is_recurring_payment={is_recurring_payment}&recurring_unit={recurring_unit}&is_start_now={is_start_now}&recurring_start_date={recurring_start_date}&number_of_recurs={number_of_recurs}&period_between_recurring_unit={period_between_recurring_unit}&recurring_amount={recurring_amount}",
-											"protocol": "https",
-											"host": [
-												"api",
-												"sikkasoft",
-												"com"
-											],
-											"path": [
-												"v4",
-												"payment",
-												"transactions"
-											],
-											"query": [
-												{
-													"key": "offset",
-													"value": "{offset}"
-												},
-												{
-													"key": "limit",
-													"value": "{limit}"
-												},
-												{
-													"key": "sort_by",
-													"value": "{sort_by}"
-												},
-												{
-													"key": "sort_order",
-													"value": "{sort_order}"
-												},
-												{
-													"key": "patient_id",
-													"value": "{patient_id}"
-												},
-												{
-													"key": "guarantor_id",
-													"value": "{guarantor_id}"
-												},
-												{
-													"key": "practice_id",
-													"value": "{practice_id}"
-												},
-												{
-													"key": "transaction_status",
-													"value": "{transaction_status}"
-												},
-												{
-													"key": "transaction_type",
-													"value": "{transaction_type}"
-												},
-												{
-													"key": "transaction_media",
-													"value": "{transaction_media}"
-												},
-												{
-													"key": "ticket_number",
-													"value": "{ticket_number}"
-												},
-												{
-													"key": "payment_provider",
-													"value": "{payment_provider}"
-												},
-												{
-													"key": "card_logo",
-													"value": "{card_logo}"
-												},
-												{
-													"key": "transaction_amount",
-													"value": "{transaction_amount}"
-												},
-												{
-													"key": "order_id",
-													"value": "{order_id}"
-												},
-												{
-													"key": "reference_number",
-													"value": "{reference_number}"
-												},
-												{
-													"key": "name",
-													"value": "{name}"
-												},
-												{
-													"key": "email",
-													"value": "{email}"
-												},
-												{
-													"key": "phone",
-													"value": "{phone}"
-												},
-												{
-													"key": "startdate",
-													"value": "{startdate}"
-												},
-												{
-													"key": "enddate",
-													"value": "{enddate}"
-												},
-												{
-													"key": "chain_id",
-													"value": "{chain_id}"
-												},
-												{
-													"key": "is_chain_head",
-													"value": "{is_chain_head}"
-												},
-												{
-													"key": "sikkapay_reference_number",
-													"value": "{sikkapay_reference_number}"
-												},
-												{
-													"key": "api_name",
-													"value": "{api_name}"
-												},
-												{
-													"key": "is_recurring_payment",
-													"value": "{is_recurring_payment}"
-												},
-												{
-													"key": "recurring_unit",
-													"value": "{recurring_unit}"
-												},
-												{
-													"key": "is_start_now",
-													"value": "{is_start_now}"
-												},
-												{
-													"key": "recurring_start_date",
-													"value": "{recurring_start_date}"
-												},
-												{
-													"key": "number_of_recurs",
-													"value": "{number_of_recurs}"
-												},
-												{
-													"key": "period_between_recurring_unit",
-													"value": "{period_between_recurring_unit}"
-												},
-												{
-													"key": "recurring_amount",
-													"value": "{recurring_amount}"
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\t\"transaction_id\": \"transaction_id\",\r\n\t\"transaction_date\": \"transaction_date\",\r\n\t\"transaction_time\": \"transaction_time\",\r\n\t\"transaction_type\": \"transaction_type\",\r\n\t\"transaction_status\": \"transaction_status\",\r\n\t\"patient_id\": \"patient_id\",\r\n\t\"guarantor_id\": \"guarantor_id\",\r\n\t\"practice_id\": \"practice_id\",\r\n\t\"provider_id\": \"provider_id\",\r\n\t\"cust_id\": \"cust_id\",\r\n\t\"name\": \"name\",\r\n\t\"order_id\": \"order_id\",\r\n\t\"payment_provider\": \"payment_provider\",\r\n\t\"response_code\": \"response_code\",\r\n\t\"sikkapay_reference_number\": \"sikkapay_reference_number\",\r\n\t\"payment_provider_message\": \"payment_provider_message\",\r\n\t\"address1\": \"address1\",\r\n\t\"address2\": \"address2\",\r\n\t\"city\": \"city\",\r\n\t\"state\": \"state\",\r\n\t\"zipcode\": \"zipcode\",\r\n\t\"email\": \"email\",\r\n\t\"phone\": \"phone\",\r\n\t\"card_number_masked\": \"card_number_masked\",\r\n\t\"expiration_month\": \"expiration_month\",\r\n\t\"expiration_year\": \"expiration_year\",\r\n\t\"transaction_amount\": \"transaction_amount\",\r\n\t\"transaction_media\": \"transaction_media\",\r\n\t\"authorization_code\": \"authorization_code\",\r\n\t\"avs_code\": \"avs_code\",\r\n\t\"description\": \"description\",\r\n\t\"reference_number\": \"reference_number\",\r\n\t\"is_chain_head\": \"is_chain_head\",\r\n\t\"chain_id\": \"chain_id\",\r\n\t\"billing_id\": \"billing_id\"\t\t\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
 												}
-											]
-										}
+											}
+										},
+										"url": "https://api.sikkasoft.com/v4/payment/transactions"
 									},
 									"status": "Accepted",
 									"code": 202,
@@ -14639,7 +14516,7 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n\t\"offset\": \"0\",\n\t\"limit\": \"xxx\",\n\t\"total_count\": \"xxx\",\n\t\"execution_time\": \"xxx\",\n\t\"pagination\": {\n\t\t\"first\": \"http://api.sikkasoft.com/v4/payment/transactions?offset=0&limit=500\",\n\t\t\"previous\": \"\",\n\t\t\"current\": \"http://api.sikkasoft.com/v4/payment/transactions?offset=0&limit=500\",\n\t\t\"next\": \"\",\n\t\t\"last\": \"http://api.sikkasoft.com/v4/payment/transactions?offset=0&limit=500\"\n\t},\n\t\"items\": [{\n\t\t\"guarantor_id\": \"guarantor_id\",\n\t\t\"patient_id\": \"patient_id\",\n\t\t\"provider_id\": \"provider_id\",\n\t\t\"practice_id\": \"practice_id\",\n\t\t\"expiration_month\": \"expiration_month\",\n\t\t\"expiration_year\": \"expiration_year\",\n\t\t\"transaction_id\": \"transaction_id\",\n\t\t\"transaction_amount\": \"transaction_amount\",\n\t\t\"reference_number\": \"reference_number\",\n\t\t\"ticket_number\": \"ticket_number\",\n\t\t\"description\": \"description\",\n\t\t\"cust_id\": \"cust_id\",\n\t\t\"transaction_date\": \"transaction_date\",\n\t\t\"transaction_time\": \"transaction_time\",\n\t\t\"email\": \"email\",\n\t\t\"city\": \"city\",\n\t\t\"state\": \"state\",\n\t\t\"zipcode\": \"zipcode\",\n\t\t\"office_id\": \"office_id\",\n\t\t\"api_name\": \"api_name\",\n\t\t\"card_logo\": \"card_logo\",\n\t\t\"card_number_masked\": \"card_number_masked\",\n\t\t\"transaction_type\": \"transaction_type\",\n\t\t\"transaction_status\": \"transaction_status\",\n\t\t\"name\": \"name\",\n\t\t\"address1\": \"address1\",\n\t\t\"address2\": \"address2\",\n\t\t\"phone\": \"phone\",\n\t\t\"transaction_media\": \"transaction_media\",\n\t\t\"payment_provider\": \"payment_provider\",\n\t\t\"api_host\": \"api_host\",\n\t\t\"avs_code\": \"avs_code\",\n\t\t\"order_id\": \"order_id\",\n\t\t\"authorization_code\": \"authorization_code\",\n\t\t\"payment_provider_message\": \"payment_provider_message\",\n\t\t\"response_code\": \"response_code\",\n\t\t\"app_id\": \"app_id\",\n\t\t\"request_time\": \"request_time\",\n\t\t\"chain_id\": \"chain_id\",\n\t\t\"is_chain_head\": \"true/false\",\n\t\t\"sikkapay_reference_number\": \"sikkapay_reference_number\"\n\t}]\n}"
+									"body": "{\n\t\"offset\": \"0\",\n\t\"limit\": \"50\",\n\t\"total_count\": \"1\",\n\t\"execution_time\": \"111\",\n\t\"pagination\": {\n\t\t\"first\": \"http://api.sikkasoft.com/v4/payment/transactions?offset=0&limit=50\",\n\t\t\"previous\": \"\",\n\t\t\"current\": \"http://api.sikkasoft.com/v4/payment/transactions?offset=0&limit=50\",\n\t\t\"next\": \"\",\n\t\t\"last\": \"http://api.sikkasoft.com/v4/payment/transactions?offset=0&limit=50\"\n\t},\n\t\"items\": [{\n\t\t\"address1\": \"address1\",\n\t\t\"address2\": \"address1\",\n\t\t\"api_host\": \"Q/P\",\n\t\t\"api_name\": \"POST transaction\",\n\t\t\"authorization_code\": \"code\",\n\t\t\"avs_code\": \"avs code\",\n\t\t\"avs_code_description\": \"avs code description\",\n\t\t\"card_logo\": \"card_logo\",\n\t\t\"card_number_masked\": \"xxxx\",\n\t\t\"card_type\": \"card type, initial (M,V)\",\n\t\t\"city\": \"city\",\n\t\t\"cust_id\": \"cust id\",\n\t\t\"cvv\": \"cvv\",\n\t\t\"description\": \"payment provider response description\",\n\t\t\"email\": \"email\",\n\t\t\"encrypted\": \"false/true\",\n\t\t\"expiration_month\": \"MM\",\n\t\t\"expiration_year\": \"yy\",\n\t\t\"guarantor_id\": \"guarantor_id\",\n\t\t\"is_recurring_payment\": \"false/true\",\n\t\t\"is_sandbox\": \"true/false\",\n\t\t\"name\": \"name\",\n\t\t\"order_id\": \"order id\",\n\t\t\"patient_id\": \"patient id\",\n\t\t\"payment_provider\": \"payment_provider\",\n\t\t\"payment_provider_message\": \"payment provider message for reference\",\n\t\t\"phone\": \"phone number\",\n\t\t\"practice_id\": \"practice id\",\n\t\t\"provider_id\": \"provider id\",\n\t\t\"receipt_id\": \"receipt id\",\n\t\t\"reference_number\": \"reference number\",\n\t\t\"request_from_app\": \"app name as per API Portal\",\n\t\t\"response_code\": \"payment provider response code\",\n\t\t\"response_code_description\": \"payment provider response code description\",\n\t\t\"state\": \"state\",\n\t\t\"ticket\": \"ticket\",\n\t\t\"transaction_amount\": \"xx.xx\",\n\t\t\"transaction_date\": \"yyyy-MM-dd\",\n\t\t\"transaction_id\": \"transaction id\",\n\t\t\"transaction_media\": \"credit_card\",\n\t\t\"transaction_status\": \"status of transaction\",\n\t\t\"transaction_time\": \"HH:mm:ss\",\n\t\t\"transaction_type\": \"sale\",\n\t\t\"zipcode\": \"zip code\"\n\t}]\n}"
 								}
 							]
 						}
