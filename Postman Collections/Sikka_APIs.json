@@ -14488,7 +14488,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"guarantor_id\": \"guarantor_id - mandatory\",\r\n    \"patient_id\": \"patient_id - mandatory\",\r\n    \"provider_id\": \"provider_id - mandatory\",\r\n    \"practice_id\": \"practice_id - mandatory\",\r\n    \"cust_id\": \"cust_id - mandatory\",\r\n    \"zipcode\": \"zipcode - optional\",\r\n    \"name\": \"name - mandatory\",\r\n    \"transaction_amount\": \"transaction_amount(without $ sign, xx.xx) - mandatory\",\r\n    \"original_transaction_id\": \"original transaction id which is being refunded - mandatory\",\r\n    \"order_id\": \"order_id of original_transaction_id - mandatory\",\r\n    \"payment_provider\": \"payment_provider\"\r\n}",
+											"raw": "{\r\n    \"guarantor_id\": \"guarantor_id\",\r\n    \"patient_id\": \"patient_id\",\r\n    \"provider_id\": \"provider_id\",\r\n    \"practice_id\": \"practice_id\",\r\n    \"cust_id\": \"cust_id\",\r\n    \"zipcode\": \"zipcode\",\r\n    \"name\": \"name\",\r\n    \"transaction_amount\": \"transaction_amount(without $ sign, xx.xx)\",\r\n    \"original_transaction_id\": \"original transaction id which is being refunded\",\r\n    \"order_id\": \"order_id of original_transaction_id\",\r\n    \"payment_provider\": \"payment_provider\"\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
