@@ -14209,7 +14209,7 @@
 							"response": [
 								{
 									"id": "6ff153a3-4a14-48e1-b10d-2eed7313bd8f",
-									"name": "stored_card",
+									"name": "payment/transactions",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
@@ -14396,11 +14396,6 @@
 								"method": "POST",
 								"header": [
 									{
-										"key": "Content-Type",
-										"value": "application/json",
-										"type": "text"
-									},
-									{
 										"key": "Request-Key",
 										"value": "{request_key}",
 										"type": "text"
@@ -14412,7 +14407,7 @@
 							"response": [
 								{
 									"id": "d95ef9c6-31e2-4df5-9942-40f2e539fc10",
-									"name": "stored_card",
+									"name": "payment/transactions",
 									"originalRequest": {
 										"method": "POST",
 										"header": [
@@ -14490,7 +14485,7 @@
 							"response": [
 								{
 									"id": "0333c688-94b6-4e2b-9ded-0ebc14e2c54c",
-									"name": "stored_card",
+									"name": "paymennt/refund",
 									"originalRequest": {
 										"method": "POST",
 										"header": [
