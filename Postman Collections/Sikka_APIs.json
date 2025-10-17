@@ -14508,7 +14508,7 @@
 							]
 						},
 						{
-							"name": "payment/sale",
+							"name": "payment/sale by ach",
 							"id": "0a0b3ba0-5b23-4847-9970-67ede5298db1",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true,
@@ -14572,7 +14572,7 @@
 							]
 						},
 						{
-							"name": "payment/sale Copy",
+							"name": "payment/sale by Credit Card",
 							"id": "79cca92c-9dc9-4c32-bd98-8cbef5e2367b",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true,
