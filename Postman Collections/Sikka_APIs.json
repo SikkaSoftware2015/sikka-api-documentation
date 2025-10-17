@@ -14508,7 +14508,7 @@
 							]
 						},
 						{
-							"name": "payment/refund Copy",
+							"name": "payment/sale",
 							"id": "0a0b3ba0-5b23-4847-9970-67ede5298db1",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true,
@@ -14529,13 +14529,13 @@
 										"type": "text"
 									}
 								],
-								"url": "https://api.sikkasoft.com/v4/payment/refund",
+								"url": "https://api.sikkasoft.com/v4/payment/sale",
 								"description": "###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### Parameters\n\n###### **guarantor_id** `Required`\n\n> Guarantor ID as per the practice management system \n  \n\n###### **patient_id** `Required`\n\n> Patient ID as per the practice management system \n  \n\n###### **provider_id** `Required`\n\n> Provider ID as per the practice management system \n  \n\n###### **practice_id** `Required`\n\n> Practice ID of office \n  \n\n###### **cust_id** `Required`\n\n> CustId (Customer ID) \n  \n\n###### **zipcode** `optional`\n\n> Zip code \n  \n\n###### **name** `Required`\n\n> Name of customer \n  \n\n###### **transaction_amount** `Required`\n\n> Total amount involved in the transaction \n  \n\n###### **original_transaction_id** `Required`\n\n> original transaction id which is being refunded \n  \n\n###### **order_id** `Required`\n\n> generate order_id, format SPyyyyMMddhhmmssfffffff \n  \n\n###### **payment_provider** `Required`\n\n> Name of the payment service provider"
 							},
 							"response": [
 								{
 									"id": "7fbbd1cf-522c-432e-b18f-35246eb90e00",
-									"name": "paymennt/refund",
+									"name": "paymennt/sale",
 									"originalRequest": {
 										"method": "POST",
 										"header": [
@@ -14559,7 +14559,7 @@
 												}
 											}
 										},
-										"url": "https://api.sikkasoft.com/v4/payment/refund"
+										"url": "https://api.sikkasoft.com/v4/payment/sale"
 									},
 									"status": "Accepted",
 									"code": 202,
