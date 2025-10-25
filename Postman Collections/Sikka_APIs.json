@@ -9861,7 +9861,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/operatories",
-								"description": "Returns operatories available in practice.  \nprovider_id return only for EagleSoft and one operatory assigned to multiple providers API returns all provider is seperated by pipe(|) sign in provider_id field.\n\n---\n\n### Parameters\n\n#### cust_id `mandatory`\n\n> Customer Id \n  \n\n#### is_hidden `optional`\n\n> Is Hidden. Value should be T/F \n  \n\n### SortBy\n\n#### operatory `default`\n\n> Operatory"
+								"description": "Returns operatories available in practice.  \nThe `provider_id` is returned only for **EagleSoft**. If a single operatory is assigned to multiple providers, the API returns all provider IDs in the `provider_id` field, separated by a pipe (`|`) character.  \n  \n\n---\n\n### Parameters\n\n#### cust_id `mandatory`\n\n> Customer Id \n  \n\n#### is_hidden `optional`\n\n> Is Hidden. Value should be T/F \n  \n\n### SortBy\n\n#### operatory `default`\n\n> Operatory"
 							},
 							"response": [
 								{
