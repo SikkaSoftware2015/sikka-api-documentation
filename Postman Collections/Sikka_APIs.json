@@ -10012,8 +10012,7 @@
 												},
 												{
 													"key": "fields",
-													"value": "get_all",
-													"type": "text"
+													"value": "get_all"
 												}
 											]
 										}
@@ -10093,7 +10092,7 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"offset\": \"xx\",\n    \"limit\": \"xx\",\n    \"total_count\": \"xx\",\n    \"execution_time\": \"xx\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/operatories?offset=xx&limit=xx\",\n        \"previous\": \"previous\",\n        \"current\": \"https://api.sikkasoft.com/v4/operatories?offset=xx&limit=xx\",\n        \"next\": \"next\",\n        \"last\": \"https://api.sikkasoft.com/v4/operatories?offset=xx&limit=xx\"\n    },\n    \"items\": [\n        {\n            \"operatory\": \"operatory\",\n            \"cust_id\": \"cust id\",\n            \"is_hidden\": \"is hidden\",\n            \"abbreviation\": \"abbreviation\"\n        }\n    ]\n}"
+									"body": "{\n    \"offset\": \"xx\",\n    \"limit\": \"xx\",\n    \"total_count\": \"xx\",\n    \"execution_time\": \"xx\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/operatories?offset=xx&limit=xx\",\n        \"previous\": \"previous\",\n        \"current\": \"https://api.sikkasoft.com/v4/operatories?offset=xx&limit=xx\",\n        \"next\": \"next\",\n        \"last\": \"https://api.sikkasoft.com/v4/operatories?offset=xx&limit=xx\"\n    },\n    \"items\": [\n        {\n            \"provider_id\":\"\",\n            \"practice_id\": \"1-0\",\n            \"operatory\": \"Test1\",\n            \"cust_id\": \"1\",\n            \"is_hidden\": \"F\",\n            \"abbreviation\": \"OP-9\"\n        }\n    ]\n}"
 								}
 							]
 						},
