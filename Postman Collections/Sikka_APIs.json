@@ -14878,7 +14878,7 @@
 												}
 											}
 										},
-										"url": "https://api.sikkasoft.com/v4/payment/stor_card"
+										"url": "https://api.sikkasoft.com/v4/payment/store_card"
 									},
 									"status": "Accepted",
 									"code": 202,
