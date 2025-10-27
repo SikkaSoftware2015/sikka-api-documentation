@@ -14153,6 +14153,11 @@
 							"description": "These endpoints can be used to run a real-time payment transactions via Sikka’s secure payment gateway. It will work with one or more third-party payment processors that you have configured with your end-user's account.\n\nThese APIs do not write back to the PMS - they are design for authorizing, capturing, and tracking payments.\n\nAny sensitive data must be transmitted over HTTPS."
 						},
 						{
+							"name": "New Folder",
+							"item": [],
+							"id": "df881961-752b-4335-b4e9-c7e9ca159630"
+						},
+						{
 							"name": "store_card",
 							"id": "b7fde59e-c142-41bc-a1da-120324e7ae39",
 							"protocolProfileBehavior": {
