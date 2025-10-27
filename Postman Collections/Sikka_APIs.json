@@ -15087,6 +15087,18 @@
 									"body": "{\r\n    \"offset\": \"0\",\r\n    \"limit\": \"50\",\r\n    \"total_count\": \"1\",\r\n    \"execution_time\": \"1111\",\r\n    \"pagination\": {\r\n        \"first\": \"http://api.sikkasoft.com/v4/payment/transactions?offset=0&limit=50\",\r\n        \"previous\": \"\",\r\n        \"current\": \"http://api.sikkasoft.com/v4/payment/transactions?offset=0&limit=50\",\r\n        \"next\": \"\",\r\n        \"last\": \"http://api.sikkasoft.com/v4/payment/transactions?offset=0&limit=50\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"address1\": \"address1\",\r\n            \"address2\": \"address1\",\r\n            \"api_host\": \"Q/P\",\r\n            \"api_name\": \"POST sale\",\r\n            \"authorization_code\": \"code\",\r\n            \"avs_code\": \"avs code\",\r\n            \"avs_code_description\": \"avs code description\",\r\n            \"card_logo\": \"card_logo\",\r\n            \"card_number_masked\": \"xxxx\",\r\n            \"card_type\": \"card type, initial (M,V)\",\r\n            \"city\": \"city\",\r\n            \"cust_id\": \"cust id\",\r\n            \"cvv\": \"cvv\",\r\n            \"description\": \"payment provider response description\",\r\n            \"email\": \"email\",\r\n            \"encrypted\": \"false/true\",\r\n            \"expiration_month\": \"MM\",\r\n            \"expiration_year\": \"yy\",\r\n            \"guarantor_id\": \"guarantor_id\",\r\n            \"is_recurring_payment\": \"false/true\",\r\n            \"is_sandbox\": \"true/false\",\r\n            \"name\": \"name\",\r\n            \"order_id\": \"order id\",\r\n            \"patient_id\": \"patient id\",\r\n            \"payment_provider\": \"payment_provider\",\r\n            \"payment_provider_message\": \"payment provider message for reference\",\r\n            \"phone\": \"phone number\",\r\n            \"practice_id\": \"practice id\",\r\n            \"provider_id\": \"provider id\",\r\n            \"receipt_id\": \"receipt id\",\r\n            \"reference_number\": \"reference number\",\r\n            \"request_from_app\": \"app name as per API Portal\",\r\n            \"response_code\": \"payment provider response code\",\r\n            \"response_code_description\": \"payment provider response code description\",\r\n            \"state\": \"state\",\r\n            \"ticket\": \"ticket\",\r\n            \"transaction_amount\": \"xx.xx\",\r\n            \"transaction_date\": \"yyyy-MM-dd\",\r\n            \"transaction_id\": \"transaction id\",\r\n            \"transaction_media\": \"credit_card\",\r\n            \"transaction_status\": \"status of transaction\",\r\n            \"transaction_time\": \"HH:mm:ss\",\r\n            \"transaction_type\": \"sale\",\r\n            \"zipcode\": \"zip code\",\r\n            \"charges\": [\r\n                {\r\n                    \"amount\": \"amount of the charge\",\r\n                    \"name\": \"name of the charge\",\r\n                    \"description\": \"description of the charge\"\r\n                },\r\n                {\r\n                    \"amount\": \"amount of the charge\",\r\n                    \"name\": \"name of the charge\",\r\n                    \"description\": \"description of the charge\"\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}"
 								}
 							]
+						},
+						{
+							"name": "New Request",
+							"id": "57c4fcca-db5f-4040-8b69-872f7bb50258",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "3e9d5667-6da5-4eea-99de-6b044a38da95"
