@@ -14976,7 +14976,7 @@
 										"type": "text"
 									}
 								],
-								"url": "https://api.sikkasoft.com/v4/payment/void",
+								"url": "https://api.sikkasoft.com/v4/payment/refund2",
 								"description": "###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### Parameters\n\n###### **guarantor_id** `Required`\n\n> Guarantor ID as per the practice management system\n\n###### **patient_id** `Required`\n\n> Patient ID as per the practice management system\n\n###### **provider_id** `Required`\n\n> Provider ID as per the practice management system\n\n###### **practice_id** `Required`\n\n> Practice ID of office\n\n###### **cust_id** `Required`\n\n> Cust ID (Customer ID)\n\n###### **zipcode** `optional`\n\n> Zip code\n\n###### **name** `Required`\n\n> Name of customer\n\n###### **original_transaction_id** `Required`\n\n> original transaction id which is being refunded\n\n###### **order_id** `Required`\n\n> order_id of original_transaction_id\n\n###### **payment_provider** `optional`\n\n> Name of the payment service provider "
 							},
 							"response": [
