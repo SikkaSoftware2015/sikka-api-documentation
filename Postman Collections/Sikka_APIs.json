@@ -14159,71 +14159,9 @@
 							"description": "Please note that you must have a valid merchant account setup and approved with your integrated payment processor before using this API.\n\nIf your practice or business has not yet gone through the onboarding process, feel free to reach out to Sikka Support to start the merchant onboarding process.\n\nOnce your account has been onboarded, you will receive processor credentials for your account, which will enable you to securely process payments through Sikka’s integrated payment processing gateway."
 						},
 						{
-							"name": "store_card",
-							"id": "b7fde59e-c142-41bc-a1da-120324e7ae39",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true,
-								"disabledSystemHeaders": {
-									"user-agent": true,
-									"accept": true,
-									"host": true,
-									"accept-encoding": true,
-									"connection": true
-								}
-							},
-							"request": {
-								"method": "DELETE",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "https://api.sikkasoft.com/v4/payment/store_card",
-								"description": "###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### Parameters\n\n###### **cust_id** `Required`\n\n> Cust ID (Customer ID) \n  \n\n###### **guarantor_id** `Required`\n\n> Guarantor ID as per the practice management system \n  \n\n###### **name** `Required`\n\n> Name \n  \n\n###### **patient_id** `Required`\n\n> Patient ID as per the practice management system \n  \n\n###### **practice_id** `Required`\n\n> Practice ID of office \n  \n\n###### **provider_id** `Required`\n\n> Provider ID as per the practice management system \n  \n\n###### **zipcode** `optional`\n\n> Zip code \n  \n\n###### **payment_provider** `Required`\n\n> Name of payment provider \n  \n\n###### **billing_id** `Required`\n\n> Unique billing identifier of the stored card record"
-							},
-							"response": [
-								{
-									"id": "8ef04c31-ad95-4179-881f-74b415ff4a42",
-									"name": "stored_card",
-									"originalRequest": {
-										"method": "DELETE",
-										"header": [
-											{
-												"key": "Content-Type",
-												"value": "application/json",
-												"type": "text"
-											},
-											{
-												"key": "Request-Key",
-												"value": "{request_key}",
-												"type": "text"
-											}
-										],
-										"body": {
-											"mode": "raw",
-											"raw": "{\t\r\n\t\"cust_id\": \"cust_id - mandatory\",\t\r\n\t\"guarantor_id\": \"guarantor_id - mandatory\",\r\n\t\"name\": \"name - mandatory\",\r\n\t\"patient_id\": \"patient_id - mandatory\",\t\r\n\t\"practice_id\": \"practice_id - mandatory\",\r\n\t\"provider_id\": \"provider_id - mandatory\",\t\r\n\t\"zipcode\": \"zipcode - optional\",\r\n\t\"payment_provider\": \"payment_provider\",\r\n\t\"billing_id\": \"billing_id -  mandatory\"    \r\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": "https://api.sikkasoft.com/v4/payment/store_card"
-									},
-									"status": "Accepted",
-									"code": 202,
-									"_postman_previewlanguage": "json",
-									"header": [],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n\t\"offset\": \"0\",\n\t\"limit\": \"50\",\n\t\"total_count\": \"1\",\n\t\"execution_time\": \"1111\",\n\t\"pagination\": {\n\t\t\"first\": \"http://api.sikkasoft.com/v4/payment/transactions?offset=0&limit=50\",\n\t\t\"previous\": \"\",\n\t\t\"current\": \"http://api.sikkasoft.com/v4/payment/transactions?offset=0&limit=50\",\n\t\t\"next\": \"\",\n\t\t\"last\": \"http://api.sikkasoft.com/v4/payment/transactions?offset=0&limit=50\"\n\t},\n\t\"items\": [{\n\t\t\"address1\": \"address1\",\n\t\t\"address2\": \"address2\",\n\t\t\"api_host\": \"Q/P\",\n\t\t\"api_name\": \"DELETE store_card\",\n\t\t\"app_id\": \"app id\",\n\t\t\"avs_code\": \"avs code\",\n\t\t\"avs_code_description\": \"avs code description\",\n\t\t\"billing_id\": \"billing id\",\n\t\t\"card_logo\": \"card logo\",\n\t\t\"card_number_masked\": \"xxxx\",\n\t\t\"city\": \"city\",\n\t\t\"country\": \"country\",\n\t\t\"cust_id\": \"cust id\",\n\t\t\"description\": \"payment provider response description\",\n\t\t\"email\": \"email\",\n\t\t\"expiration_month\": \"MM\",\n\t\t\"expiration_year\": \"yy\",\n\t\t\"guarantor_id\": \"guarantor id\",\n\t\t\"is_active\": \"true/false\",\n\t\t\"is_default\": \"true/false\",\n\t\t\"name\": \"name\",\n\t\t\"office_id\": \"office id\",\n\t\t\"order_id\": \"order id\",\n\t\t\"patient_id\": \"patient id\",\n\t\t\"payment_provider\": \"payment_provider\",\n\t\t\"payment_provider_message\": \"payment provider message for reference\",\n\t\t\"phone\": \"phone\",\n\t\t\"practice_id\": \"practice id\",\n\t\t\"provider_id\": \"provider id\",\n\t\t\"request_from_app\": \"app name as per API Portal\",\n\t\t\"request_status\": \"request status\",\n\t\t\"response_code\": \"payment provider response code\",\n\t\t\"response_code_description\": \"payment provider response code description\",\n\t\t\"sikkapay_reference_number\": \"sikkapay reference number\",\n\t\t\"state\": \"state\",\n\t\t\"ticket\": \"ticket\",\n\t\t\"ticket_number\": \"ticket number\",\n\t\t\"transaction_amount\": \"0.00\",\n\t\t\"transaction_date\": \"yyyy-MM-dd\",\n\t\t\"transaction_id\": \"transaction id\",\n\t\t\"transaction_media\": \"credit_card\",\n\t\t\"transaction_status\": \"status of transaction\",\n\t\t\"transaction_time\": \"HH:mm:ss\",\n\t\t\"transaction_type\": \"store\",\n\t\t\"zipcode\": \"zip code\",\n\t\t\"transaction_description\": \"description of transaction\",\n\t\t\"authorization_code\": \"authorization_code\",\n\t\t\"issuer_id\": \"issuer_id\"\n\t}]\n}"
-								}
-							]
+							"name": "New Folder",
+							"item": [],
+							"id": "d2316de9-214d-448c-b0a6-3f8f3277039a"
 						},
 						{
 							"name": "payment/transactions",
@@ -14487,6 +14425,137 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\n\t\"offset\": \"0\",\n\t\"limit\": \"50\",\n\t\"total_count\": \"1\",\n\t\"execution_time\": \"111\",\n\t\"pagination\": {\n\t\t\"first\": \"http://api.sikkasoft.com/v4/payment/transactions?offset=0&limit=50\",\n\t\t\"previous\": \"\",\n\t\t\"current\": \"http://api.sikkasoft.com/v4/payment/transactions?offset=0&limit=50\",\n\t\t\"next\": \"\",\n\t\t\"last\": \"http://api.sikkasoft.com/v4/payment/transactions?offset=0&limit=50\"\n\t},\n\t\"items\": [{\n\t\t\"address1\": \"address1\",\n\t\t\"address2\": \"address1\",\n\t\t\"api_host\": \"Q/P\",\n\t\t\"api_name\": \"POST transaction\",\n\t\t\"authorization_code\": \"code\",\n\t\t\"avs_code\": \"avs code\",\n\t\t\"avs_code_description\": \"avs code description\",\n\t\t\"card_logo\": \"card_logo\",\n\t\t\"card_number_masked\": \"xxxx\",\n\t\t\"card_type\": \"card type, initial (M,V)\",\n\t\t\"city\": \"city\",\n\t\t\"cust_id\": \"cust id\",\n\t\t\"cvv\": \"cvv\",\n\t\t\"description\": \"payment provider response description\",\n\t\t\"email\": \"email\",\n\t\t\"encrypted\": \"false/true\",\n\t\t\"expiration_month\": \"MM\",\n\t\t\"expiration_year\": \"yy\",\n\t\t\"guarantor_id\": \"guarantor_id\",\n\t\t\"is_recurring_payment\": \"false/true\",\n\t\t\"is_sandbox\": \"true/false\",\n\t\t\"name\": \"name\",\n\t\t\"order_id\": \"order id\",\n\t\t\"patient_id\": \"patient id\",\n\t\t\"payment_provider\": \"payment_provider\",\n\t\t\"payment_provider_message\": \"payment provider message for reference\",\n\t\t\"phone\": \"phone number\",\n\t\t\"practice_id\": \"practice id\",\n\t\t\"provider_id\": \"provider id\",\n\t\t\"receipt_id\": \"receipt id\",\n\t\t\"reference_number\": \"reference number\",\n\t\t\"request_from_app\": \"app name as per API Portal\",\n\t\t\"response_code\": \"payment provider response code\",\n\t\t\"response_code_description\": \"payment provider response code description\",\n\t\t\"state\": \"state\",\n\t\t\"ticket\": \"ticket\",\n\t\t\"transaction_amount\": \"xx.xx\",\n\t\t\"transaction_date\": \"yyyy-MM-dd\",\n\t\t\"transaction_id\": \"transaction id\",\n\t\t\"transaction_media\": \"credit_card\",\n\t\t\"transaction_status\": \"status of transaction\",\n\t\t\"transaction_time\": \"HH:mm:ss\",\n\t\t\"transaction_type\": \"sale\",\n\t\t\"zipcode\": \"zip code\"\n\t}]\n}"
+								}
+							]
+						},
+						{
+							"name": "payment/verify_card",
+							"id": "2bf3733e-abd6-4497-9240-554acd2b8e83",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true,
+								"disabledSystemHeaders": {
+									"user-agent": true,
+									"accept": true,
+									"host": true,
+									"accept-encoding": true,
+									"connection": true
+								}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Request-Key",
+										"value": "{request_key}",
+										"type": "text"
+									}
+								],
+								"url": "https://api.sikkasoft.com/v4/payment/verify_card",
+								"description": "###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### Parameters\n\n###### **address1** `optional`\n\n> Primary address \n  \n\n###### **card_number** `Required`\n\n> Card Number \n  \n\n###### **cust_id** `Required`\n\n> CustId (Customer ID) \n  \n\n###### **cvv** `optional`\n\n> CVV \n  \n\n###### **expiration_month** `Required`\n\n> Card expiration month \n  \n\n###### **expiration_year** `Required`\n\n> Card expiration year \n  \n\n###### **guarantor_id** `Required`\n\n> Guarantor ID as per the practice management system \n  \n\n###### **name** `Required`\n\n> Name of customer \n  \n\n###### **patient_id** `Required`\n\n> Patient ID as per the practice management system \n  \n\n###### **practice_id** `Required`\n\n> Practice ID of office \n  \n\n###### **provider_id** `Required`\n\n> Provider ID as per the practice management system \n  \n\n###### **zipcode** `optional`\n\n> Zip code \n  \n\n###### **payment_provider** `Required`\n\n> Name of the payment service provider"
+							},
+							"response": [
+								{
+									"id": "b93b468e-521d-453b-ba59-034f8680fcf7",
+									"name": "payment/verify_card",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Request-Key",
+												"value": "{request_key}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\t\"address1\": \"address1\",\r\n\t\"card_number\": \"card_number\",\r\n\t\"cust_id\": \"cust_id\",\r\n\t\"cvv\": \"cvv\",\r\n\t\"expiration_month\": \"expiration_month(MM)\",\r\n\t\"expiration_year\": \"expiration_year(yyyy)\",\r\n\t\"guarantor_id\": \"guarantor_id\",\r\n\t\"name\": \"name\",\r\n\t\"patient_id\": \"patient_id\",\r\n\t\"practice_id\": \"practice_id\",\r\n\t\"provider_id\": \"provider_id\",\r\n\t\"zipcode\": \"zipcode\",\r\n\t\"payment_provider\": \"payment_provider\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "https://api.sikkasoft.com/v4/payment/verify_card"
+									},
+									"status": "Accepted",
+									"code": 202,
+									"_postman_previewlanguage": "json",
+									"header": [],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"50\",\r\n\t\"total_count\": \"xx\",\r\n\t\"execution_time\": \"xxxx\",\r\n\t\"pagination\": {\r\n\t\t\"first\": \"http://api.sikkasoft.com/v4/payment/transactions?offset=0&limit=50\",\r\n\t\t\"previous\": \"\",\r\n\t\t\"current\": \"http://api.sikkasoft.com/v4/payment/transactions?offset=0&limit=50\",\r\n\t\t\"next\": \"\",\r\n\t\t\"last\": \"http://api.sikkasoft.com/v4/payment/transactions?offset=0&limit=50\"\r\n\t},\r\n\t\"items\": [{\r\n\t\t\t\t\"address1\": \"address1\",\r\n\t\t\"address2\": \"address2\",\r\n\t\t\"api_host\": \"Q/P\",\r\n\t\t\"api_name\": \"POST verify_card\",\r\n\t\t\"authorization_code\": \"code\",\r\n\t\t\"avs_code\": \"avs code\",\r\n\t\t\"avs_code_description\": \"avs code description\",\r\n\t\t\"card_logo\": \"card_logo\",\r\n\t\t\"card_number_masked\": \"xxxx\",\r\n\t\t\"city\": \"city\",\r\n\t\t\"cust_id\": \"cust id\",\r\n\t\t\"cvv\": \"cvv\",\r\n\t\t\"description\": \"payment provider response description\",\r\n\t\t\"email\": \"email\",\r\n\t\t\"expiration_month\": \"MM\",\r\n\t\t\"expiration_year\": \"yy\",\r\n\t\t\"guarantor_id\": \"guarantor_id\",\r\n\t\t\"name\": \"name\",\r\n\t\t\"order_id\": \"order id\",\r\n\t\t\"patient_id\": \"patient id\",\r\n\t\t\"payment_provider\": \"payment_provider\",\r\n\t\t\"payment_provider_message\": \"payment provider message for reference\",\r\n\t\t\"phone\": \"phone number\",\r\n\t\t\"practice_id\": \"practice id\",\r\n\t\t\"provider_id\": \"provider id\",\r\n\t\t\"request_from_app\": \"app name as per API Portal\",\r\n\t\t\"response_code\": \"payment provider response code\",\r\n\t\t\"response_code_description\": \"payment provider response code description\",\r\n\t\t\"state\": \"state\",\r\n\t\t\"ticket\": \"ticket\",\r\n\t\t\"transaction_amount\": \"xx.xx\",\r\n\t\t\"transaction_date\": \"yyyy-MM-dd\",\r\n\t\t\"transaction_id\": \"transaction id\",\r\n\t\t\"transaction_media\": \"credit_card\",\r\n\t\t\"transaction_status\": \"status of transaction\",\r\n\t\t\"transaction_time\": \"HH:mm:ss\",\r\n\t\t\"transaction_type\": \"verify\",\r\n\t\t\"zipcode\": \"zip code\",\r\n\t\t\"sikkapay_reference_number\": \"sikkapay_reference_number\",\r\n\t\t\"ticket_number\": \"ticket_number\",\r\n\t\t\"reference_number\": \"reference_number\"\r\n\t}]\r\n}"
+								}
+							]
+						},
+						{
+							"name": "store_card",
+							"id": "b7fde59e-c142-41bc-a1da-120324e7ae39",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true,
+								"disabledSystemHeaders": {
+									"user-agent": true,
+									"accept": true,
+									"host": true,
+									"accept-encoding": true,
+									"connection": true
+								}
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://api.sikkasoft.com/v4/payment/store_card",
+								"description": "###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### Parameters\n\n###### **cust_id** `Required`\n\n> Cust ID (Customer ID) \n  \n\n###### **guarantor_id** `Required`\n\n> Guarantor ID as per the practice management system \n  \n\n###### **name** `Required`\n\n> Name \n  \n\n###### **patient_id** `Required`\n\n> Patient ID as per the practice management system \n  \n\n###### **practice_id** `Required`\n\n> Practice ID of office \n  \n\n###### **provider_id** `Required`\n\n> Provider ID as per the practice management system \n  \n\n###### **zipcode** `optional`\n\n> Zip code \n  \n\n###### **payment_provider** `Required`\n\n> Name of payment provider \n  \n\n###### **billing_id** `Required`\n\n> Unique billing identifier of the stored card record"
+							},
+							"response": [
+								{
+									"id": "8ef04c31-ad95-4179-881f-74b415ff4a42",
+									"name": "stored_card",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Request-Key",
+												"value": "{request_key}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\t\r\n\t\"cust_id\": \"cust_id - mandatory\",\t\r\n\t\"guarantor_id\": \"guarantor_id - mandatory\",\r\n\t\"name\": \"name - mandatory\",\r\n\t\"patient_id\": \"patient_id - mandatory\",\t\r\n\t\"practice_id\": \"practice_id - mandatory\",\r\n\t\"provider_id\": \"provider_id - mandatory\",\t\r\n\t\"zipcode\": \"zipcode - optional\",\r\n\t\"payment_provider\": \"payment_provider\",\r\n\t\"billing_id\": \"billing_id -  mandatory\"    \r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "https://api.sikkasoft.com/v4/payment/store_card"
+									},
+									"status": "Accepted",
+									"code": 202,
+									"_postman_previewlanguage": "json",
+									"header": [],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n\t\"offset\": \"0\",\n\t\"limit\": \"50\",\n\t\"total_count\": \"1\",\n\t\"execution_time\": \"1111\",\n\t\"pagination\": {\n\t\t\"first\": \"http://api.sikkasoft.com/v4/payment/transactions?offset=0&limit=50\",\n\t\t\"previous\": \"\",\n\t\t\"current\": \"http://api.sikkasoft.com/v4/payment/transactions?offset=0&limit=50\",\n\t\t\"next\": \"\",\n\t\t\"last\": \"http://api.sikkasoft.com/v4/payment/transactions?offset=0&limit=50\"\n\t},\n\t\"items\": [{\n\t\t\"address1\": \"address1\",\n\t\t\"address2\": \"address2\",\n\t\t\"api_host\": \"Q/P\",\n\t\t\"api_name\": \"DELETE store_card\",\n\t\t\"app_id\": \"app id\",\n\t\t\"avs_code\": \"avs code\",\n\t\t\"avs_code_description\": \"avs code description\",\n\t\t\"billing_id\": \"billing id\",\n\t\t\"card_logo\": \"card logo\",\n\t\t\"card_number_masked\": \"xxxx\",\n\t\t\"city\": \"city\",\n\t\t\"country\": \"country\",\n\t\t\"cust_id\": \"cust id\",\n\t\t\"description\": \"payment provider response description\",\n\t\t\"email\": \"email\",\n\t\t\"expiration_month\": \"MM\",\n\t\t\"expiration_year\": \"yy\",\n\t\t\"guarantor_id\": \"guarantor id\",\n\t\t\"is_active\": \"true/false\",\n\t\t\"is_default\": \"true/false\",\n\t\t\"name\": \"name\",\n\t\t\"office_id\": \"office id\",\n\t\t\"order_id\": \"order id\",\n\t\t\"patient_id\": \"patient id\",\n\t\t\"payment_provider\": \"payment_provider\",\n\t\t\"payment_provider_message\": \"payment provider message for reference\",\n\t\t\"phone\": \"phone\",\n\t\t\"practice_id\": \"practice id\",\n\t\t\"provider_id\": \"provider id\",\n\t\t\"request_from_app\": \"app name as per API Portal\",\n\t\t\"request_status\": \"request status\",\n\t\t\"response_code\": \"payment provider response code\",\n\t\t\"response_code_description\": \"payment provider response code description\",\n\t\t\"sikkapay_reference_number\": \"sikkapay reference number\",\n\t\t\"state\": \"state\",\n\t\t\"ticket\": \"ticket\",\n\t\t\"ticket_number\": \"ticket number\",\n\t\t\"transaction_amount\": \"0.00\",\n\t\t\"transaction_date\": \"yyyy-MM-dd\",\n\t\t\"transaction_id\": \"transaction id\",\n\t\t\"transaction_media\": \"credit_card\",\n\t\t\"transaction_status\": \"status of transaction\",\n\t\t\"transaction_time\": \"HH:mm:ss\",\n\t\t\"transaction_type\": \"store\",\n\t\t\"zipcode\": \"zip code\",\n\t\t\"transaction_description\": \"description of transaction\",\n\t\t\"authorization_code\": \"authorization_code\",\n\t\t\"issuer_id\": \"issuer_id\"\n\t}]\n}"
 								}
 							]
 						},
@@ -14807,70 +14876,6 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"50\",\r\n\t\"total_count\": \"1\",\r\n\t\"execution_time\": \"1111\",\r\n\t\"pagination\": {\r\n\t\t\"first\": \"http://api.sikkasoft.com/v4/payment/transactions?offset=0&limit=50\",\r\n\t\t\"previous\": \"\",\r\n\t\t\"current\": \"http://api.sikkasoft.com/v4/payment/transactions?offset=0&limit=50\",\r\n\t\t\"next\": \"\",\r\n\t\t\"last\": \"http://api.sikkasoft.com/v4/payment/transactions?offset=0&limit=50\"\r\n\t},\r\n\t\"items\": [{\r\n\t\t\"address1\": \"address1\",\r\n\t\t\"address2\": \"address2\",\r\n\t\t\"api_host\": \"Q/P\",\r\n\t\t\"api_name\": \"POST store_card\",\r\n\t\t\"app_id\": \"app id\",\r\n\t\t\"avs_code\": \"avs code\",\r\n\t\t\"avs_code_description\": \"avs code description\",\r\n\t\t\"billing_id\": \"billing id\",\r\n\t\t\"card_logo\": \"card logo\",\r\n\t\t\"card_number_masked\": \"xxxx\",\r\n\t\t\"city\": \"city\",\r\n\t\t\"country\": \"country\",\r\n\t\t\"cust_id\": \"cust id\",\r\n\t\t\"description\": \"payment provider response description\",\r\n\t\t\"email\": \"email\",\r\n\t\t\"expiration_month\": \"MM\",\r\n\t\t\"expiration_year\": \"yy\",\r\n\t\t\"guarantor_id\": \"guarantor id\",\r\n\t\t\"is_active\": \"true/false\",\r\n\t\t\"is_default\": \"true/false\",\r\n\t\t\"name\": \"name\",\r\n\t\t\"office_id\": \"office id\",\r\n\t\t\"order_id\": \"order id\",\r\n\t\t\"patient_id\": \"patient id\",\r\n\t\t\"payment_provider\": \"payment_provider\",\r\n\t\t\"payment_provider_message\": \"payment provider message for reference\",\r\n\t\t\"phone\": \"phone\",\r\n\t\t\"practice_id\": \"practice id\",\r\n\t\t\"provider_id\": \"provider id\",\r\n\t\t\"request_from_app\": \"app name as per API Portal\",\r\n\t\t\"request_status\": \"request status\",\r\n\t\t\"response_code\": \"payment provider response code\",\r\n\t\t\"response_code_description\": \"payment provider response code description\",\r\n\t\t\"sikkapay_reference_number\": \"sikkapay reference number\",\r\n\t\t\"state\": \"state\",\r\n\t\t\"ticket\": \"ticket\",\r\n\t\t\"ticket_number\": \"ticket number\",\r\n\t\t\"transaction_amount\": \"0.00\",\r\n\t\t\"transaction_date\": \"yyyy-MM-dd\",\r\n\t\t\"transaction_id\": \"transaction id\",\r\n\t\t\"transaction_media\": \"credit_card\",\r\n\t\t\"transaction_status\": \"status of transaction\",\r\n\t\t\"transaction_time\": \"HH:mm:ss\",\r\n\t\t\"transaction_type\": \"store\",\r\n\t\t\"zipcode\": \"zip code\"\r\n\t}]\r\n}"
-								}
-							]
-						},
-						{
-							"name": "payment/verify_card",
-							"id": "2bf3733e-abd6-4497-9240-554acd2b8e83",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true,
-								"disabledSystemHeaders": {
-									"user-agent": true,
-									"accept": true,
-									"host": true,
-									"accept-encoding": true,
-									"connection": true
-								}
-							},
-							"request": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "Request-Key",
-										"value": "{request_key}",
-										"type": "text"
-									}
-								],
-								"url": "https://api.sikkasoft.com/v4/payment/verify_card",
-								"description": "###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### Parameters\n\n###### **address1** `optional`\n\n> Primary address \n  \n\n###### **card_number** `Required`\n\n> Card Number \n  \n\n###### **cust_id** `Required`\n\n> CustId (Customer ID) \n  \n\n###### **cvv** `optional`\n\n> CVV \n  \n\n###### **expiration_month** `Required`\n\n> Card expiration month \n  \n\n###### **expiration_year** `Required`\n\n> Card expiration year \n  \n\n###### **guarantor_id** `Required`\n\n> Guarantor ID as per the practice management system \n  \n\n###### **name** `Required`\n\n> Name of customer \n  \n\n###### **patient_id** `Required`\n\n> Patient ID as per the practice management system \n  \n\n###### **practice_id** `Required`\n\n> Practice ID of office \n  \n\n###### **provider_id** `Required`\n\n> Provider ID as per the practice management system \n  \n\n###### **zipcode** `optional`\n\n> Zip code \n  \n\n###### **payment_provider** `Required`\n\n> Name of the payment service provider"
-							},
-							"response": [
-								{
-									"id": "b93b468e-521d-453b-ba59-034f8680fcf7",
-									"name": "payment/verify_card",
-									"originalRequest": {
-										"method": "POST",
-										"header": [
-											{
-												"key": "Content-Type",
-												"value": "application/json",
-												"type": "text"
-											},
-											{
-												"key": "Request-Key",
-												"value": "{request_key}",
-												"type": "text"
-											}
-										],
-										"body": {
-											"mode": "raw",
-											"raw": "{\r\n\t\"address1\": \"address1\",\r\n\t\"card_number\": \"card_number\",\r\n\t\"cust_id\": \"cust_id\",\r\n\t\"cvv\": \"cvv\",\r\n\t\"expiration_month\": \"expiration_month(MM)\",\r\n\t\"expiration_year\": \"expiration_year(yyyy)\",\r\n\t\"guarantor_id\": \"guarantor_id\",\r\n\t\"name\": \"name\",\r\n\t\"patient_id\": \"patient_id\",\r\n\t\"practice_id\": \"practice_id\",\r\n\t\"provider_id\": \"provider_id\",\r\n\t\"zipcode\": \"zipcode\",\r\n\t\"payment_provider\": \"payment_provider\"\r\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": "https://api.sikkasoft.com/v4/payment/verify_card"
-									},
-									"status": "Accepted",
-									"code": 202,
-									"_postman_previewlanguage": "json",
-									"header": [],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\r\n\t\"offset\": \"0\",\r\n\t\"limit\": \"50\",\r\n\t\"total_count\": \"xx\",\r\n\t\"execution_time\": \"xxxx\",\r\n\t\"pagination\": {\r\n\t\t\"first\": \"http://api.sikkasoft.com/v4/payment/transactions?offset=0&limit=50\",\r\n\t\t\"previous\": \"\",\r\n\t\t\"current\": \"http://api.sikkasoft.com/v4/payment/transactions?offset=0&limit=50\",\r\n\t\t\"next\": \"\",\r\n\t\t\"last\": \"http://api.sikkasoft.com/v4/payment/transactions?offset=0&limit=50\"\r\n\t},\r\n\t\"items\": [{\r\n\t\t\t\t\"address1\": \"address1\",\r\n\t\t\"address2\": \"address2\",\r\n\t\t\"api_host\": \"Q/P\",\r\n\t\t\"api_name\": \"POST verify_card\",\r\n\t\t\"authorization_code\": \"code\",\r\n\t\t\"avs_code\": \"avs code\",\r\n\t\t\"avs_code_description\": \"avs code description\",\r\n\t\t\"card_logo\": \"card_logo\",\r\n\t\t\"card_number_masked\": \"xxxx\",\r\n\t\t\"city\": \"city\",\r\n\t\t\"cust_id\": \"cust id\",\r\n\t\t\"cvv\": \"cvv\",\r\n\t\t\"description\": \"payment provider response description\",\r\n\t\t\"email\": \"email\",\r\n\t\t\"expiration_month\": \"MM\",\r\n\t\t\"expiration_year\": \"yy\",\r\n\t\t\"guarantor_id\": \"guarantor_id\",\r\n\t\t\"name\": \"name\",\r\n\t\t\"order_id\": \"order id\",\r\n\t\t\"patient_id\": \"patient id\",\r\n\t\t\"payment_provider\": \"payment_provider\",\r\n\t\t\"payment_provider_message\": \"payment provider message for reference\",\r\n\t\t\"phone\": \"phone number\",\r\n\t\t\"practice_id\": \"practice id\",\r\n\t\t\"provider_id\": \"provider id\",\r\n\t\t\"request_from_app\": \"app name as per API Portal\",\r\n\t\t\"response_code\": \"payment provider response code\",\r\n\t\t\"response_code_description\": \"payment provider response code description\",\r\n\t\t\"state\": \"state\",\r\n\t\t\"ticket\": \"ticket\",\r\n\t\t\"transaction_amount\": \"xx.xx\",\r\n\t\t\"transaction_date\": \"yyyy-MM-dd\",\r\n\t\t\"transaction_id\": \"transaction id\",\r\n\t\t\"transaction_media\": \"credit_card\",\r\n\t\t\"transaction_status\": \"status of transaction\",\r\n\t\t\"transaction_time\": \"HH:mm:ss\",\r\n\t\t\"transaction_type\": \"verify\",\r\n\t\t\"zipcode\": \"zip code\",\r\n\t\t\"sikkapay_reference_number\": \"sikkapay_reference_number\",\r\n\t\t\"ticket_number\": \"ticket_number\",\r\n\t\t\"reference_number\": \"reference_number\"\r\n\t}]\r\n}"
 								}
 							]
 						},
