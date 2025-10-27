@@ -14907,7 +14907,7 @@
 							"response": [
 								{
 									"id": "cbc38234-829e-40b1-8c4d-f2adcc3ae185",
-									"name": "payment/sale",
+									"name": "payment/sale with charges",
 									"originalRequest": {
 										"method": "POST",
 										"header": [
