@@ -14135,6 +14135,11 @@
 							"description": "Every error response contains an error code, error message, and payment provider message and code (if one exists, also refer [Error Codes](#71748379-2864-4b5f-aaff-a8bb04ddb213)).\n\nRetry transient network errors only, but do not retry declined transactions or bad credentials."
 						},
 						{
+							"name": "New Folder",
+							"item": [],
+							"id": "d16cbcba-8278-4af6-8ff7-b6771c0cd05e"
+						},
+						{
 							"name": "store_card",
 							"id": "b7fde59e-c142-41bc-a1da-120324e7ae39",
 							"protocolProfileBehavior": {
