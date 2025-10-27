@@ -14125,7 +14125,8 @@
 						{
 							"name": "New Folder",
 							"item": [],
-							"id": "a9ef4932-8316-474e-b979-f4453c1c87c9"
+							"id": "a9ef4932-8316-474e-b979-f4453c1c87c9",
+							"description": "\n\nSikka ONE APIs serve as a single gateway for multiple payment processors integrated together.\n\nThe actual processor being utilized (i.e., Stripe, Square, GlobalPayments, etc.) is based on your setup at the practice level.\n\nProcessor-specific transaction IDs are provided in the API response, enabling developers to reconcile and confirm payments via the processor dashboard if necessary."
 						},
 						{
 							"name": "store_card",
