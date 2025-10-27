@@ -14117,11 +14117,6 @@
 							"description": "This API allows for secure initiation, authorization, and tracking of payment transactions through third-party processors. It supports real-time card and ACH payments, refunds, and transaction status inquiries while staying fully compliant with PCI-DSS and other financial regulations.\n\n_Note:_ These APIs do not change or write back to the practice management system. They work within Sikka’s secure financial gateway layer."
 						},
 						{
-							"name": "Security & Compliance",
-							"item": [],
-							"id": "accaba28-0fbe-4a7d-8bd4-86848bc640c4"
-						},
-						{
 							"name": "store_card",
 							"id": "b7fde59e-c142-41bc-a1da-120324e7ae39",
 							"protocolProfileBehavior": {
