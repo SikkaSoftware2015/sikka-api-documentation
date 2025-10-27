@@ -14856,7 +14856,7 @@
 									"id": "9276250a-b7cb-4762-b897-312d7e64b4f6",
 									"name": "payment/verify_card",
 									"originalRequest": {
-										"method": "POST",
+										"method": "PUT",
 										"header": [
 											{
 												"key": "Content-Type",
@@ -14878,7 +14878,7 @@
 												}
 											}
 										},
-										"url": "https://api.sikkasoft.com/v4/payment/verify_card"
+										"url": "https://api.sikkasoft.com/v4/payment/stor_card"
 									},
 									"status": "Accepted",
 									"code": 202,
