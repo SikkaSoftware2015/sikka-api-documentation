@@ -15006,7 +15006,7 @@
 												}
 											}
 										},
-										"url": "https://api.sikkasoft.com/v4/payment/verify_card"
+										"url": "https://api.sikkasoft.com/v4/payment/refund2"
 									},
 									"status": "Accepted",
 									"code": 202,
