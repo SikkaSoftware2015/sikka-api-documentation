@@ -14137,7 +14137,8 @@
 						{
 							"name": "Refunds / Voids",
 							"item": [],
-							"id": "d16cbcba-8278-4af6-8ff7-b6771c0cd05e"
+							"id": "d16cbcba-8278-4af6-8ff7-b6771c0cd05e",
+							"description": "Refunds are required to cite the original transaction_id and go through the same third-party payment processor.\n\nFull refunds are accommodated based on processor capability.\n\nVoid operations can only be done prior to settlement; otherwise, a refund should be provided."
 						},
 						{
 							"name": "store_card",
