@@ -14918,7 +14918,7 @@
 							"response": [
 								{
 									"id": "1c3925ef-f511-4121-a4c3-15610b956eb3",
-									"name": "payment/store_card",
+									"name": "payment/void",
 									"originalRequest": {
 										"method": "POST",
 										"header": [
