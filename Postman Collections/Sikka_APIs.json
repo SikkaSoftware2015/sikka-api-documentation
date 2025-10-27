@@ -14141,7 +14141,7 @@
 							"description": "Refunds are required to cite the original transaction_id and go through the same third-party payment processor.\n\nFull refunds are accommodated based on processor capability.\n\nVoid operations can only be done prior to settlement; otherwise, a refund should be provided."
 						},
 						{
-							"name": "New Folder",
+							"name": "Processor-Agnostic Design",
 							"item": [],
 							"id": "82e1e5bf-21a6-43ea-acc6-ed662f7ac221"
 						},
