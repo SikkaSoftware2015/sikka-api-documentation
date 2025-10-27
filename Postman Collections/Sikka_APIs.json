@@ -14790,7 +14790,7 @@
 							"response": [
 								{
 									"id": "b93b468e-521d-453b-ba59-034f8680fcf7",
-									"name": "payment/store_card",
+									"name": "payment/verify_card",
 									"originalRequest": {
 										"method": "POST",
 										"header": [
