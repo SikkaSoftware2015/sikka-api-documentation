@@ -14129,7 +14129,7 @@
 							"description": "Sikka ONE APIs serve as a single gateway for multiple payment processors integrated together.\n\nThe actual processor being utilized is based on your setup at the practice level.\n\nProcessor-specific transaction IDs are provided in the API response, enabling developers to reconcile and confirm payments via the processor dashboard if necessary."
 						},
 						{
-							"name": "New Folder",
+							"name": "Error Handling",
 							"item": [],
 							"id": "a3b02bd5-0cf4-4805-8aae-88ef20a5121b"
 						},
