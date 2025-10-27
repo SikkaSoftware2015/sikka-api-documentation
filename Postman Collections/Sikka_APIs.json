@@ -15019,7 +15019,7 @@
 							]
 						},
 						{
-							"name": "payment/refund2 Copy",
+							"name": "payment/sale",
 							"id": "24f47026-3087-445c-a818-e55dff9780cc",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true,
