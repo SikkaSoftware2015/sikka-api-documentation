@@ -14726,7 +14726,7 @@
 							"response": [
 								{
 									"id": "e5b47258-571c-4320-857f-f03c0faa943e",
-									"name": "paymennt/sale",
+									"name": "payment/store_card",
 									"originalRequest": {
 										"method": "POST",
 										"header": [
