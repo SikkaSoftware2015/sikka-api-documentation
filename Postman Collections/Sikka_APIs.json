@@ -14119,7 +14119,8 @@
 						{
 							"name": "Security & Compliance",
 							"item": [],
-							"id": "accaba28-0fbe-4a7d-8bd4-86848bc640c4"
+							"id": "accaba28-0fbe-4a7d-8bd4-86848bc640c4",
+							"description": "Each endpoint is PCI-DSS compliant.\n\nCard numbers and ACH routing are just a few examples of sensitive payment data that must never be sent in plaintext/query string.\n\nThe client and API need to talk over HTTPS (TLS 1.2+).\n\nAuthentication is done using a valid App-Key, App-Id, and/or Request-Key in each request."
 						},
 						{
 							"name": "store_card",
