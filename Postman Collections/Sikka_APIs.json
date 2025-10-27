@@ -14891,7 +14891,7 @@
 							]
 						},
 						{
-							"name": "payment/store_card Copy",
+							"name": "payment/void",
 							"id": "6d714cb1-168b-48b1-a878-af485b5a3d1a",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true,
