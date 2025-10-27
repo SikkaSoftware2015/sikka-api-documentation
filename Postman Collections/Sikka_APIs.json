@@ -14982,7 +14982,7 @@
 							"response": [
 								{
 									"id": "3d472615-fd2a-4eb5-a0c0-559313b0ca73",
-									"name": "payment/void",
+									"name": "payment/refund2",
 									"originalRequest": {
 										"method": "POST",
 										"header": [
