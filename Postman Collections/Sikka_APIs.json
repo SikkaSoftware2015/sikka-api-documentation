@@ -14147,6 +14147,11 @@
 							"description": "Sikka Payment APIs allow smooth transition-onboarding of a new processor without client side code changes."
 						},
 						{
+							"name": "New Folder",
+							"item": [],
+							"id": "a68715ee-f205-4738-baff-058a03209532"
+						},
+						{
 							"name": "store_card",
 							"id": "b7fde59e-c142-41bc-a1da-120324e7ae39",
 							"protocolProfileBehavior": {
