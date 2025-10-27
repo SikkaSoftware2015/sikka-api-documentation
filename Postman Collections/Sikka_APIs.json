@@ -14854,7 +14854,7 @@
 							"response": [
 								{
 									"id": "9276250a-b7cb-4762-b897-312d7e64b4f6",
-									"name": "payment/verify_card",
+									"name": "payment/store_card",
 									"originalRequest": {
 										"method": "PUT",
 										"header": [
