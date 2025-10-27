@@ -14840,7 +14840,7 @@
 								}
 							},
 							"request": {
-								"method": "POST",
+								"method": "PUT",
 								"header": [
 									{
 										"key": "Request-Key",
