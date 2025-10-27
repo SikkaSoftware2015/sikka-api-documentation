@@ -15070,7 +15070,7 @@
 												}
 											}
 										},
-										"url": "https://api.sikkasoft.com/v4/payment/refund2"
+										"url": "https://api.sikkasoft.com/v4/payment/sale"
 									},
 									"status": "Accepted",
 									"code": 202,
