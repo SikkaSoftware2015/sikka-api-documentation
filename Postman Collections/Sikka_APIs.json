@@ -14635,7 +14635,7 @@
 							]
 						},
 						{
-							"name": "payment/sale by",
+							"name": "payment/sale by Stored Card",
 							"id": "8d42f4c9-4d50-4e22-90b0-4e8ad13f4562",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true,
