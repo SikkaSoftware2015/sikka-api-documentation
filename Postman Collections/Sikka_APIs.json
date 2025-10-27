@@ -14113,7 +14113,8 @@
 						{
 							"name": "Overview, Purpose",
 							"item": [],
-							"id": "e02ca97c-d5f1-4b9e-9263-a9e69d92466d"
+							"id": "e02ca97c-d5f1-4b9e-9263-a9e69d92466d",
+							"description": "This API allows for secure initiation, authorization, and tracking of payment transactions through third-party processors. It supports real-time card and ACH payments, refunds, and transaction status inquiries while staying fully compliant with PCI-DSS and other financial regulations.\n\n_Note:_ These APIs do not change or write back to the practice management system. They work within Sikka’s secure financial gateway layer."
 						},
 						{
 							"name": "store_card",
