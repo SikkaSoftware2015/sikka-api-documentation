@@ -14159,11 +14159,6 @@
 							"description": "Please note that you must have a valid merchant account setup and approved with your integrated payment processor before using this API.\n\nIf your practice or business has not yet gone through the onboarding process, feel free to reach out to Sikka Support to start the merchant onboarding process.\n\nOnce your account has been onboarded, you will receive processor credentials for your account, which will enable you to securely process payments through Sikka’s integrated payment processing gateway."
 						},
 						{
-							"name": "Payment Transactions",
-							"item": [],
-							"id": "d2316de9-214d-448c-b0a6-3f8f3277039a"
-						},
-						{
 							"name": "payment/transactions",
 							"id": "fa91df3b-6740-409d-9ce4-98165c74fc59",
 							"protocolProfileBehavior": {
