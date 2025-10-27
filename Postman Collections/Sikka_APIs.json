@@ -14982,7 +14982,7 @@
 							"response": [
 								{
 									"id": "c8bbb534-f667-4d32-8b23-24c0dda6ecb8",
-									"name": "payment/verify_card",
+									"name": "payment/refund2",
 									"originalRequest": {
 										"method": "POST",
 										"header": [
