@@ -14144,7 +14144,7 @@
 							"name": "Processor-Agnostic Design",
 							"item": [],
 							"id": "82e1e5bf-21a6-43ea-acc6-ed662f7ac221",
-							"description": "Sikka Payment APIs, allowing for smooth transition-onboarding of a new processor without client side code changes."
+							"description": "Sikka Payment APIs allow smooth transition-onboarding of a new processor without client side code changes."
 						},
 						{
 							"name": "store_card",
