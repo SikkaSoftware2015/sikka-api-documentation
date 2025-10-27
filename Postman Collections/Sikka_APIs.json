@@ -14752,7 +14752,7 @@
 							]
 						},
 						{
-							"name": "payment/sale by Credit Card",
+							"name": "payment/sale by credit_card",
 							"id": "79cca92c-9dc9-4c32-bd98-8cbef5e2367b",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true,
