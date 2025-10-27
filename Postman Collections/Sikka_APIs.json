@@ -14920,7 +14920,7 @@
 									"id": "1c3925ef-f511-4121-a4c3-15610b956eb3",
 									"name": "payment/store_card",
 									"originalRequest": {
-										"method": "PUT",
+										"method": "POST",
 										"header": [
 											{
 												"key": "Content-Type",
@@ -14942,7 +14942,7 @@
 												}
 											}
 										},
-										"url": "https://api.sikkasoft.com/v4/payment/store_card"
+										"url": "https://api.sikkasoft.com/v4/payment/void"
 									},
 									"status": "Accepted",
 									"code": 202,
