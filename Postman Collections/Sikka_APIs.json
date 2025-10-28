@@ -15135,20 +15135,7 @@
 				},
 				{
 					"name": "MCP",
-					"item": [
-						{
-							"name": "New Request",
-							"id": "9b07c554-008f-4ec5-afa5-7aefb0de0022",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": []
-							},
-							"response": []
-						}
-					],
+					"item": [],
 					"id": "2e3e7c7d-b4f1-460d-878a-9f77c843ec94",
 					"description": "Connect Sikka API to external tools using the Model Context Protocol"
 				}
