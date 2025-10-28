@@ -14160,7 +14160,20 @@
 						},
 						{
 							"name": "Charges Object",
-							"item": [],
+							"item": [
+								{
+									"name": "New Request",
+									"id": "0b2bfe52-cd83-4eb5-95ac-c8c310a75436",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": []
+									},
+									"response": []
+								}
+							],
 							"id": "c6e8cfa8-d970-4105-8096-da4ed7377ada",
 							"description": "The **`charges`** object represents additional transaction-related fees that may be included during a payment sale.\n\nIt helps record and track supplementary charges like taxes, tips, service fees, or shipping costs that accompany the primary payment.\n\n#### **Usage**\n\nThis object can be used across all **`POST payment/sale`** endpoints:\n\n- `payment/sale` (Credit Card)\n    \n- `payment/sale` (ACH)\n    \n- `payment/sale` (Stored Card using `billing_id`)\n    \n\nInclude it in the request payload under the `\"charges\"` property.\n\n#### **Notes**\n\n- Charge names must be **unique** within the same transaction to avoid duplication.\n    \n- Validation of data types and amounts is recommended before submitting the request.\n    \n- The feature is compatible with all payment media types (`credit_card`, `ach`, `billing_id`)."
 						},
