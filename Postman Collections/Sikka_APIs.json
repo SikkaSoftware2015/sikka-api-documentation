@@ -15135,13 +15135,7 @@
 				},
 				{
 					"name": "MCP",
-					"item": [
-						{
-							"name": "New Folder",
-							"item": [],
-							"id": "9288c1d7-08dc-4597-a0f7-28a036ee17d8"
-						}
-					],
+					"item": [],
 					"id": "2e3e7c7d-b4f1-460d-878a-9f77c843ec94",
 					"description": "Connect Sikka API to external tools using the Model Context Protocol"
 				}
