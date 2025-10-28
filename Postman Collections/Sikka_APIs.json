@@ -14165,11 +14165,35 @@
 									"name": "payment/sale with charges",
 									"id": "0b2bfe52-cd83-4eb5-95ac-c8c310a75436",
 									"protocolProfileBehavior": {
-										"disableBodyPruning": true
+										"disableBodyPruning": true,
+										"disabledSystemHeaders": {
+											"content-length": true,
+											"host": true,
+											"user-agent": true,
+											"accept": true,
+											"connection": true,
+											"accept-encoding": true
+										}
 									},
 									"request": {
-										"method": "GET",
-										"header": []
+										"method": "POST",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "{request_key}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"address1\": \"address1\",\r\n    \"address2\": \"address2\",\r\n    \"card_number\": \"card_number\",\r\n    \"city\": \"city\",\r\n    \"cust_id\": \"cust_id\",\r\n    \"cvv\": \"cvv\",\r\n    \"email\": \"email\",\r\n    \"expiration_month\": \"expiration_month(MM)\",\r\n    \"expiration_year\": \"expiration_year(yyyy)\",\r\n    \"guarantor_id\": \"guarantor_id\",\r\n    \"name\": \"name\",\r\n    \"patient_id\": \"patient_id\",\r\n    \"phone\": \"phone\",\r\n    \"practice_id\": \"practice_id\",\r\n    \"provider_id\": \"provider_id\",\r\n    \"state\": \"state\",\r\n    \"transaction_amount\": \"transaction_amount(without $ sign, xx.xx)\",\r\n    \"transaction_media\": \"credit_card\",\r\n    \"zipcode\": \"zipcode\",\r\n    \"payment_provider\": \"payment_provider\",\r\n    \"charges\": [\r\n        {\r\n            \"amount\": \"amount of the charge\",\r\n            \"name\": \"name of the charge\",\r\n            \"description\": \"description of the charge\"\r\n        },\r\n        {\r\n            \"amount\": \"amount of the charge\",\r\n            \"name\": \"name of the charge\",\r\n            \"description\": \"description of the charge\"\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "https://api.sikkasoft.com/v4/payment/sale"
 									},
 									"response": []
 								}
