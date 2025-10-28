@@ -14875,7 +14875,7 @@
 							]
 						},
 						{
-							"name": "payment/sale with charges",
+							"name": "charges Object",
 							"id": "24f47026-3087-445c-a818-e55dff9780cc",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true,
