@@ -14162,7 +14162,7 @@
 							"name": "Charges Object",
 							"item": [
 								{
-									"name": "New Request",
+									"name": "payment/sale with charges",
 									"id": "0b2bfe52-cd83-4eb5-95ac-c8c310a75436",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
