@@ -14160,44 +14160,7 @@
 						},
 						{
 							"name": "Charges Object",
-							"item": [
-								{
-									"name": "payment/sale with charges",
-									"id": "0b2bfe52-cd83-4eb5-95ac-c8c310a75436",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true,
-										"disabledSystemHeaders": {
-											"content-length": true,
-											"host": true,
-											"user-agent": true,
-											"accept": true,
-											"connection": true,
-											"accept-encoding": true
-										}
-									},
-									"request": {
-										"method": "POST",
-										"header": [
-											{
-												"key": "Request-Key",
-												"value": "{request_key}",
-												"type": "text"
-											}
-										],
-										"body": {
-											"mode": "raw",
-											"raw": "{\r\n    \"address1\": \"address1\",\r\n    \"address2\": \"address2\",\r\n    \"card_number\": \"card_number\",\r\n    \"city\": \"city\",\r\n    \"cust_id\": \"cust_id\",\r\n    \"cvv\": \"cvv\",\r\n    \"email\": \"email\",\r\n    \"expiration_month\": \"expiration_month(MM)\",\r\n    \"expiration_year\": \"expiration_year(yyyy)\",\r\n    \"guarantor_id\": \"guarantor_id\",\r\n    \"name\": \"name\",\r\n    \"patient_id\": \"patient_id\",\r\n    \"phone\": \"phone\",\r\n    \"practice_id\": \"practice_id\",\r\n    \"provider_id\": \"provider_id\",\r\n    \"state\": \"state\",\r\n    \"transaction_amount\": \"transaction_amount(without $ sign, xx.xx)\",\r\n    \"transaction_media\": \"credit_card\",\r\n    \"zipcode\": \"zipcode\",\r\n    \"payment_provider\": \"payment_provider\",\r\n    \"charges\": [\r\n        {\r\n            \"amount\": \"amount of the charge\",\r\n            \"name\": \"name of the charge\",\r\n            \"description\": \"description of the charge\"\r\n        },\r\n        {\r\n            \"amount\": \"amount of the charge\",\r\n            \"name\": \"name of the charge\",\r\n            \"description\": \"description of the charge\"\r\n        }\r\n    ]\r\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": "https://api.sikkasoft.com/v4/payment/sale"
-									},
-									"response": []
-								}
-							],
+							"item": [],
 							"id": "c6e8cfa8-d970-4105-8096-da4ed7377ada",
 							"description": "The **`charges`** object represents additional transaction-related fees that may be included during a payment sale.\n\nIt helps record and track supplementary charges like taxes, tips, service fees, or shipping costs that accompany the primary payment.\n\n#### **Usage**\n\nThis object can be used across all **`POST payment/sale`** endpoints:\n\n- `payment/sale` (Credit Card)\n    \n- `payment/sale` (ACH)\n    \n- `payment/sale` (Stored Card using `billing_id`)\n    \n\nInclude it in the request payload under the `\"charges\"` property.\n\n#### **Notes**\n\n- Charge names must be **unique** within the same transaction to avoid duplication.\n    \n- Validation of data types and amounts is recommended before submitting the request.\n    \n- The feature is compatible with all payment media types (`credit_card`, `ach`, `billing_id`).\n    \n\n``` json\n\"charges\": [\n        {\n            \"amount\": \"amount of the charge\",\n            \"name\": \"name of the charge\",\n            \"description\": \"description of the charge\"\n        },\n        {\n            \"amount\": \"amount of the charge\",\n            \"name\": \"name of the charge\",\n            \"description\": \"description of the charge\"\n        }\n    ]\n\n ```"
 						},
