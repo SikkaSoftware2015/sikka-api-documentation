@@ -11197,7 +11197,7 @@
 									"id": "631040ea-fc3a-4a0f-86de-b2c9c343f40f",
 									"name": "patient_eligibility",
 									"originalRequest": {
-										"method": "GET",
+										"method": "POST",
 										"header": [
 											{
 												"key": "Request-Key",
