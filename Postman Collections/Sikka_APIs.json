@@ -11212,7 +11212,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"firstname\": \"TEST\",\r\n    \"lastname\": \"PERSON\",\r\n    \"birthdate\": \"01/01/2011\",\r\n    \"subscriber_id\": \"1234567890\",\r\n    \"npi\": \"1234567890\",\r\n    \"payer_id\": \"PRINCIPAL\"\r\n}",
+											"raw": "{\r\n    \"firstname\": \"TEST\",\r\n    \"lastname\": \"PERSON\",\r\n    \"birthdate\": \"01/01/2011\",\r\n    \"subscriber_id\": \"1234567890\",\r\n    \"npi\": \"1234567890\",\r\n    \"payer_id\": \"PRINCIPAL\",\r\n    \"is_dependent\":\"true\",\r\n    \"dependent_firstname\": \"aaaaa\",\r\n    \"dependent_lastname\": \"aaaaa\",\r\n    \"dependent_birthdate\": \"2014-10-18\",\r\n    \"dependent_subscriber_id\": \"11111111\",\r\n    \"dependent_group_number\":\"2222\",\r\n    \"is_clear_coverage\":\"true\"\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
