@@ -2860,7 +2860,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/referrals",
-								"description": "Returns referrals data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### referral_type `optional`\n\n> referral type from appointments \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> patient id in practice management system \n  \n\n###### referral_id `optional`\n\n> referral id in practice management system \n  \n\n###### SortBy\n\n###### referral_id `default`\n\n> referral id in practice management system \n  \n\n###### practice_id\n\n> practice id of office\n\n###### rowhash\n\n> Rowhash"
+								"description": "Returns referrals data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### referral_type `optional`\n\n> referral type from appointments \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### referral_id `optional`\n\n> referral id in practice management system \n  \n\n###### SortBy\n\n###### referral_id `default`\n\n> referral id in practice management system \n  \n\n###### practice_id\n\n> practice id of office\n\n###### rowhash\n\n> Rowhash"
 							},
 							"response": [
 								{
