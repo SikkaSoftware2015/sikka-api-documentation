@@ -282,7 +282,7 @@
 							"name": "Request Header",
 							"item": [],
 							"id": "96e7d1d6-8653-42de-a39d-e3ba06e692e3",
-							"description": "> &#9989; The request header supports 'request-key','app-id' & 'app-key' parameters that are common across all '/v4' endpoints; as a result, the header parameters aren’t documented with each endpoint.\n\nIn Sikka API , user can send request key , app id and app key as url parameter also. [ &#10060; not recommended for security reason ]\n\nIf user does not want to expose keys in url parameter then we do support send keys in request header.\n\n\nList of request headers:\n\n| Request Header | Description |\n| ------ | ------ |\n|  `request-key`  | Request-Key header supports in all '/v4' APIs |\n|  `app-id`  | App-Id. Application id header supported in all 'v4' api or where it is required |\n|  `app-key`  | App-Key. Application Key header supported in all 'v4' api or where it is required |"
+							"description": "> &#9989; The request header supports 'request-key','app-id' & 'app-key' parameters that are common across all '/v4' endpoints; as a result, the header parameters aren’t documented with each endpoint.\n\n\nList of request headers:\n\n| Request Header | Description |\n| ------ | ------ |\n|  `request-key`  | Request-Key header supports in all '/v4' APIs |\n|  `app-id`  | App-Id. Application id header supported in all 'v4' api or where it is required |\n|  `app-key`  | App-Key. Application Key header supported in all 'v4' api or where it is required |"
 						},
 						{
 							"name": "Response Header",
