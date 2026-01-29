@@ -11317,14 +11317,124 @@
 									{
 										"key": "Request-Key",
 										"value": "<request_key>",
-										"type": "text",
-										"disabled": true
+										"type": "text"
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/patient_contracts_details",
 								"description": "Return patient contarcts details\n\n---\n\n###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### Parameters\n\n###### patient_id `optional`\n\n> Patient ID as per the management system \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### guarantor_id `optional`\n\n> guarantor id in practice management system \n  \n\n###### insurance_plan_id `optional`\n\n> Unique identifier of the insurance plan \n  \n\n###### startdate `optional`\n\n> format: yyyy-mm-dd, start date \n  \n\n###### enddate `optional`\n\n> format: yyyy-mm-dd, end date \n  \n\n###### date_filter_on`optional`\n\n> Field name on which stardate and enddate filter will be applied, valid values are: Contract_Completion_Date or Contract_Start_Date(default) \n  \n\n###### number_of_payments `optional`\n\n> Total number of payments \n  \n\n###### gross_amount `optional`\n\n> Total amount before any adjustments/deduction \n  \n\n###### initial_amount `optional`\n\n> Amount paid initially \n  \n\n###### paid_amount `optional`\n\n> Total amount paid \n  \n\n###### payment_interval `optional`\n\n> Frequency of payments \n  \n\n###### remaining_balance `optional`\n\n> Remaining balance \n  \n\n###### SortBy\n\n###### practice_id\n\n> practice id of office \n  \n\n###### guarantor_id\n\n> guarantor id in practice management system \n  \n\n###### Contract_Start_Date\n\n> format: yyyy-mm-dd \n  \n\n###### Contract_Completion_Date\n\n> format: yyyy-mm-dd \n  \n\n###### patient_id `default`\n\n> Patient Id"
 							},
-							"response": []
+							"response": [
+								{
+									"id": "203a493a-035e-40d9-a478-333bfdd78fa0",
+									"name": "patient_contracts_details",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text",
+												"disabled": true
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/patient_contracts_details"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "",
+									"header": [
+										{
+											"key": "server",
+											"value": "nginx/1.28.0"
+										},
+										{
+											"key": "date",
+											"value": "Thu, 29 Jan 2026 10:23:07 GMT"
+										},
+										{
+											"key": "content-type",
+											"value": "application/json"
+										},
+										{
+											"key": "transfer-encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "vary",
+											"value": "Accept-Encoding"
+										},
+										{
+											"key": "request-key-expires",
+											"value": "Fri, 30 Jan 2026 10:21:22 GMT"
+										},
+										{
+											"key": "x-rate-limit-limit",
+											"value": "250"
+										},
+										{
+											"key": "x-rate-limit-remaining",
+											"value": "248"
+										},
+										{
+											"key": "x-rate-limit-reset",
+											"value": "32"
+										},
+										{
+											"key": "x-frame-options",
+											"value": "DENY"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-xss-protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "origin"
+										},
+										{
+											"key": "access-control-expose-headers",
+											"value": "*"
+										},
+										{
+											"key": "content-encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "strict-transport-security",
+											"value": "max-age=31536000; includeSubDomains; preload;"
+										},
+										{
+											"key": "content-security-policy",
+											"value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
+										},
+										{
+											"key": "access-control-allow-methods",
+											"value": "GET, HEAD, OPTIONS, POST, PUT, PATCH"
+										},
+										{
+											"key": "access-control-allow-credentials",
+											"value": "true"
+										},
+										{
+											"key": "access-control-allow-headers",
+											"value": "Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization"
+										}
+									],
+									"cookie": [
+										{
+											"expires": "Invalid Date",
+											"domain": "",
+											"path": ""
+										}
+									],
+									"responseTime": null,
+									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"50\",\n    \"total_count\": \"1\",\n    \"execution_time\": \"22\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/patient_contracts_details?offset=0&limit=50\",\n        \"previous\": \"\",\n        \"current\": \"https://api.sikkasoft.com/v4/patient_contracts_details?offset=0&limit=50\",\n        \"next\": \"\",\n        \"last\": \"https://api.sikkasoft.com/v4/patient_contracts_details?offset=0&limit=50\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/2/patient_contracts_details/1\",\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/2/patients/1\",\n            \"patient_id\": \"1\",\n            \"guarantor_id\": \"1\",\n            \"practice_id\": \"2\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/2\",\n            \"guarantor_href\": \"https://api.sikkasoft.com/v4/practices/2/guarantors/1\",\n            \"patient_name\": \"Harshil\",\n            \"cust_id\": \"2\",\n            \"number_of_payments\": \"2\",\n            \"payment_interval\": \"monthly\",\n            \"remaining_balance\": \"100.00\",\n            \"gross_amount\": \"100.00\",\n            \"paid_amount\": \"200.00\",\n            \"initial_amount\": \"150.00\",\n            \"rowhash\": \"00-E2-00-99-99-99-99-99\",\n            \"insurance_plan_id\": \"1\",\n            \"contract_start_date\": \"2026-01-28T00:00:00\",\n            \"contract_completion_date\": \"2026-01-29T00:00:00\",\n            \"contract_description\": \"Harshil Test\"\n        }\n    ]\n}"
+								}
+							]
 						},
 						{
 							"name": "patient_eligibility",
