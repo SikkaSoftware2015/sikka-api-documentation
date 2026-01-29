@@ -11175,6 +11175,41 @@
 							]
 						},
 						{
+							"name": "pet_nutrition",
+							"id": "00bc18d8-046a-4f5b-b2bd-52f14a57838b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "https://api.sikkasoft.com/v4/patient_xrays",
+								"description": "This API read X Rays from Dexis and return.\n\n---\n\n###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### Parameters\n\n###### date_filter_on`optional`\n\n> Field name on which stardate and enddate filter will be applied, valid values are: uploaded_date or created_date(default) \n  \n\n###### startdate `optional`\n\n> format: yyyy-mm-dd, start date \n  \n\n###### enddate `optional`\n\n> format: yyyy-mm-dd, end date \n  \n\n###### patient_id\n\n> Patient ID \n  \n\n###### SortBy\n\n###### created_date\n\n> Created date \n  \n\n###### uploaded_date\n\n> Uploaded date \n  \n\n###### patient_id `default`\n\n> Patient Id"
+							},
+							"response": [
+								{
+									"id": "bc799baa-d0e6-4db0-a4dc-de36cada6e4e",
+									"name": "patient_xrays",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/patient_xrays"
+									},
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n    \"offset\": \"0\",\r\n    \"limit\": \"1\",\r\n    \"total_count\": \"42\",\r\n    \"execution_time\": \"9\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/patient_xrays?offset=0&limit=1\",\r\n        \"previous\": \"\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/patient_xrays?offset=0&limit=1\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/patient_xrays?offset=1&limit=1\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/patient_xrays?offset=41&limit=1\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1-247/patient_xrays/546546\",\r\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/1-247/patients/546546\",\r\n            \"patient_id\": \"546546\",\r\n            \"firstname\": \"Test\",\r\n            \"lastname\": \"Samaaa\",\r\n            \"practice_id\": \"1-247\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-247\",\r\n            \"created_date\": \"2022-11-02T08:16:00\",\r\n            \"tooth_number\": \"3-4-5-28-29-30\",\r\n            \"cust_id\": \"1\",\r\n            \"xray_link\": \"https://centraldata.s3.amazonaws.com/images/xrayimages/D49170//253774202407081031304047.png?AWSAccessKeyId={{vault:aws-access-key}}&Expires=1754280156&x-amz-security-token=IQoJb3JpZ2luX2VjEOz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIBdA0LvCk0iuk%2Bc3ELiuF361ULQ4op0h8gBYHlKDL6oJAiEArktwFLoniBbdI5XXjev63kVTx1Uxgoezp6XI1aY7E6sqsgUIJRAAGgwyMDk1MTc1NDg5NzYiDIRkZcWiU0qj%2Ft9dXSqPBcjk1g6eDcQDmhRvNiUPOztKPzreVIXHDtrCb9seztUBOfzP7MhnKyl%2FU%2BSaAo7Bi6KNJHzD7MhssPiB4sUY3ALTxEpTmxli9AnpnFUQYkQJXlvXhopVx3hL4OBNUmSw7VxMFk5bxibUsMYHzUmsHidhsD8tl%2FVLgx%2F%2FIrJdneIlpzaTLBl3TOif56qoAhpjDRKd20ybQwHNFo%2BHYgywEZXHRbo5UpVJoWxh4JmOG6yO0m3nQSlDL%2FYsfk2pgl9JqVA7rTCr6EvW0F82WAEM53CLLqBlJJQAS2pSFCAARayne5EbD%2BiwcmR38YZCpkz6r%2F4lvYzEtRM6Hoh41jDEVos99WdyaLA3Laq1BpGJVFCDKfY1OT60RWUDiH4o0ZzKF4lKGYpkbiX%2Bf0qFIbpru2GYrKNXj4QAB%2BzOdzfB%2BLMs3vU5zIt32ia2MhhHaiKZkkOzjlREwl1bDyrKEVHYjAxfGH8Iuh%2BGUsycZeqHu6HOBLBchTzx%2BnIL2QsZXHmiRliKcT%2BoM83JDdqtAGb\",\r\n            \"uploaded_date\": \"2024-07-08T10:31:30\",\r\n            \"xray_type\": \"xray\",\r\n            \"xray_sub_type\": \"bitewing\",\r\n            \"image_name\": \"000002.png\"\r\n        }\r\n    ]\r\n}"
+								}
+							]
+						},
+						{
 							"name": "patient_eligibility",
 							"id": "21d46306-42f3-4dd6-86e7-99c0cac6f4b4",
 							"protocolProfileBehavior": {
