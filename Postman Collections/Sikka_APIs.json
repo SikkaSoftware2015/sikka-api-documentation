@@ -11176,20 +11176,20 @@
 						},
 						{
 							"name": "pet_nutrition",
-							"id": "af997b6a-8943-4076-9533-7eb216de92a8",
+							"id": "95dffa48-15f1-45b6-9e2c-176887391c5f",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "https://api.sikkasoft.com/v4/appointments",
-								"description": "Returns pet_nutrition data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> Patient ID as per the management system \n  \n\n###### guarantor_id `optional`\n\n> guarantor id in practice management system \n   \n\n###### startdate `optional`\n\n> format: yyyy-mm-dd, start date \n  \n\n###### enddate `optional`\n\n> format: yyyy-mm-dd, end date \n  \n\n###### date_filter_on`optional`\n\n> Field name on which stardate and enddate filter will be applied, valid values are:\nPrescriptionDate(default)\n  \n\n###### code `optional`\n\n> Code\n\n###### SortBy\n\n\n###### prescription_date\n\n> format: yyyy-mm-dd, end date \n\n###### practice_id `optional`\n\n> practice id of office\n\n\n###### patient_id\n\n> Patient ID as per the management system "
+								"url": "https://api.sikkasoft.com/v4/pet_nutrition",
+								"description": "This API read X Rays from Dexis and return.\n\n---\n\n###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### Parameters\n\n###### date_filter_on`optional`\n\n> Field name on which stardate and enddate filter will be applied, valid values are: uploaded_date or created_date(default) \n  \n\n###### startdate `optional`\n\n> format: yyyy-mm-dd, start date \n  \n\n###### enddate `optional`\n\n> format: yyyy-mm-dd, end date \n  \n\n###### patient_id\n\n> Patient ID \n  \n\n###### SortBy\n\n###### created_date\n\n> Created date \n  \n\n###### uploaded_date\n\n> Uploaded date \n  \n\n###### patient_id `default`\n\n> Patient Id"
 							},
 							"response": [
 								{
-									"id": "ee8557e8-8f4d-4b57-b775-89a70406aa34",
-									"name": "pet_nutrition",
+									"id": "3c861427-ea14-45b1-a455-bbf0cc2d9dd9",
+									"name": "patient_xrays",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
@@ -11199,55 +11199,13 @@
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/pet_nutrition"
+										"url": "https://api.sikkasoft.com/v4/patient_xrays"
 									},
-									"status": "OK",
-									"code": 200,
 									"_postman_previewlanguage": "json",
 									"header": null,
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"1\",\n    \"total_count\": \"1234\",\n    \"execution_time\": \"51\",\n    \"pagination\": {\n        \"first\": \"http://api.sikkasoft.com/v4/appointments?offset=0&limit=1\",\n        \"previous\": \"\",\n        \"current\": \"http://api.sikkasoft.com/v4/appointments?offset=0&limit=1\",\n        \"next\": \"http://api.sikkasoft.com/v4/appointments?offset=1&limit=1\",\n        \"last\": \"http://api.sikkasoft.com/v4/appointments?offset=38967&limit=1\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/appointments/70670\",\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/5383\",\n            \"patient_id\": \"5383\",\n            \"guarantor_id\": \"\",\n            \"provider_id\": \"DMD2\",\n            \"provider_href\": \"https://api.sikkasoft.com/v4/practices/1/providers/DMD2\",\n            \"practice_id\": \"1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\n            \"guarantor_href\": \"\",\n            \"amount\": \"0.0000\",\n            \"status\": \"status\",\n            \"note\": \"\",\n            \"surface_quadrant_type\": \"\",\n            \"appointment_sr_no\": \"70670\",\n            \"date\": \"2020-09-29T00:00:00\",\n            \"time\": \"10:30\",\n            \"length\": \"60\",\n            \"description\": \"Seat Br-UR\",\n            \"appointment_made_date\": \"2020-09-14T00:00:00\",\n            \"type\": \"General\",\n            \"procedure_code1\": \"\",\n            \"procedure_code1_amount\": \"0\",\n            \"procedure_code2\": \"\",\n            \"procedure_code2_amount\": \"0\",\n            \"procedure_code3\": \"\",\n            \"procedure_code3_amount\": \"0\",\n            \"patient_name\": \"paitent name\",\n            \"guarantor_name\": \"\",\n            \"procedure_code1_time\": \"0\",\n            \"procedure_code2_time\": \"0\",\n            \"procedure_code3_time\": \"0\",\n            \"surface_quadrant\": \"\"\n        }\n    ]\n}"
-								},
-								{
-									"id": "8d82b84f-362c-493e-9a26-5ac58b0d392b",
-									"name": "pet_nutrition?fields=get_all",
-									"originalRequest": {
-										"method": "GET",
-										"header": [
-											{
-												"key": "Request-Key",
-												"value": "<request_key>",
-												"type": "text"
-											}
-										],
-										"url": {
-											"raw": "https://api.sikkasoft.com/v4/appointments?fields=get_all",
-											"protocol": "https",
-											"host": [
-												"api",
-												"sikkasoft",
-												"com"
-											],
-											"path": [
-												"v4",
-												"appointments"
-											],
-											"query": [
-												{
-													"key": "fields",
-													"value": "get_all"
-												}
-											]
-										}
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": null,
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"offset\": \"xx\",\n    \"limit\": \"xx\",\n    \"total_count\": \"xx\",\n    \"execution_time\": \"xx\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/appointments?offset=xx&limit=xx\",\n        \"previous\": \"\",\n        \"current\": \"https://api.sikkasoft.com/v4/appointments?offset=xx&limit=xx\",\n        \"next\": \"https://api.sikkasoft.com/v4/appointments?offset=xx&limit=xx\",\n        \"last\": \"https://api.sikkasoft.com/v4/appointments?offset=xx&limit=xx\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/appointments/xxxx\",\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/patients/xxxx\",\n            \"patient_id\": \"patient id\",\n            \"guarantor_id\": \"guarantor id\",\n            \"status\": \"status\",\n            \"provider_id\": \"provider id\",\n            \"provider_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/providers/xxxx\",\n            \"practice_id\": \"practice id\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\n            \"guarantor_href\": \"\",\n            \"hygienist\": \"hygienist\",\n            \"amount\": \"amount\",\n            \"note\": \"note\",\n            \"surface_quadrant_type\": \"surface quadrant type\",\n            \"appointment_sr_no\": \"appointment sr no\",\n            \"operatory\": \"operatory\",\n            \"date\": \"date\",\n            \"time\": \"time\",\n            \"length\": \"length\",\n            \"description\": \"description\",\n            \"last_changed_date\": \"last changed date\",\n            \"appointment_made_date\": \"appointment made date\",\n            \"type\": \"type\",\n            \"procedure_code1\": \"procedure code1\",\n            \"procedure_code1_amount\": \"procedure code1 amount\",\n            \"procedure_code2\": \"procedure code2\",\n            \"procedure_code2_amount\": \"procedure code2 amount\",\n            \"procedure_code3\": \"procedure code3\",\n            \"procedure_code3_amount\": \"procedure code3 amount\",\n            \"procedure_code4\": \"procedure code4\",\n            \"procedure_code4_amount\": \"procedure code4 amount\",\n            \"procedure_code5\": \"procedure code5\",\n            \"procedure_code5_amount\": \"procedure code5 amount\",\n            \"procedure_code6\": \"procedure code6\",\n            \"procedure_code6_amount\": \"procedure code6 amount\",\n            \"procedure_code7\": \"procedure code7\",\n            \"procedure_code7_amount\": \"procedure code7 amount\",\n            \"is_companion\": \"is companion\",\n            \"sooner_if_possible\": \"sooner if possible\",\n            \"confirmed_on_date\": \"confirmed on date\",\n            \"patient_name\": \"patient name\",\n            \"guarantor_name\": \"guarantor name\",\n            \"procedure_code1_time\": \"procedure code1 time\",\n            \"procedure_code2_time\": \"procedure code2 time\",\n            \"procedure_code3_time\": \"procedure code3 time\",\n            \"procedure_code4_time\": \"procedure code4 time\",\n            \"procedure_code5_time\": \"procedure code5 time\",\n            \"procedure_code6_time\": \"procedure code6 time\",\n            \"procedure_code7_time\": \"procedure code7 time\",\n            \"tooth_number\": \"tooth number\",\n            \"surface_quadrant\": \"surface quadrant\",\n            \"schedule\": \"schedule\",\n            \"treatment_class\": \"treatment class\",\n            \"cancelled\": \"cancelled\",\n            \"location\": \"location\",\n            \"procedure_codes\": \"procedure codes\",\n            \"cust_id\": \"cust id\",\n            \"is_confirmed\": \"is confirmed\",\n            \"rowhash\": \"rowhash\",\n            \"original_provider\": \"original provider\",\n            \"status_in_office\": \"status in office\",\n            \"multiple_statuses\": \"multiple statuses\",\n            \"performed\": \"performed\",\n            \"cancelled_date\": \"cancelled_date\",\n            \"arrival_status\": \"arrival_status\",\n            \"arrival_time\": \"arrival_time\",\n            \"in_chair_time\": \"in_chair_time\",\n            \"walkout_time\": \"walkout_time\",\n            \"service_category\": \"service_category\"\n        }\n    ]\n}"
+									"body": "{\r\n    \"offset\": \"0\",\r\n    \"limit\": \"1\",\r\n    \"total_count\": \"42\",\r\n    \"execution_time\": \"9\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/patient_xrays?offset=0&limit=1\",\r\n        \"previous\": \"\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/patient_xrays?offset=0&limit=1\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/patient_xrays?offset=1&limit=1\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/patient_xrays?offset=41&limit=1\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1-247/patient_xrays/546546\",\r\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/1-247/patients/546546\",\r\n            \"patient_id\": \"546546\",\r\n            \"firstname\": \"Test\",\r\n            \"lastname\": \"Samaaa\",\r\n            \"practice_id\": \"1-247\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1-247\",\r\n            \"created_date\": \"2022-11-02T08:16:00\",\r\n            \"tooth_number\": \"3-4-5-28-29-30\",\r\n            \"cust_id\": \"1\",\r\n            \"xray_link\": \"https://centraldata.s3.amazonaws.com/images/xrayimages/D49170//253774202407081031304047.png?AWSAccessKeyId={{vault:aws-access-key}}&Expires=1754280156&x-amz-security-token=IQoJb3JpZ2luX2VjEOz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIBdA0LvCk0iuk%2Bc3ELiuF361ULQ4op0h8gBYHlKDL6oJAiEArktwFLoniBbdI5XXjev63kVTx1Uxgoezp6XI1aY7E6sqsgUIJRAAGgwyMDk1MTc1NDg5NzYiDIRkZcWiU0qj%2Ft9dXSqPBcjk1g6eDcQDmhRvNiUPOztKPzreVIXHDtrCb9seztUBOfzP7MhnKyl%2FU%2BSaAo7Bi6KNJHzD7MhssPiB4sUY3ALTxEpTmxli9AnpnFUQYkQJXlvXhopVx3hL4OBNUmSw7VxMFk5bxibUsMYHzUmsHidhsD8tl%2FVLgx%2F%2FIrJdneIlpzaTLBl3TOif56qoAhpjDRKd20ybQwHNFo%2BHYgywEZXHRbo5UpVJoWxh4JmOG6yO0m3nQSlDL%2FYsfk2pgl9JqVA7rTCr6EvW0F82WAEM53CLLqBlJJQAS2pSFCAARayne5EbD%2BiwcmR38YZCpkz6r%2F4lvYzEtRM6Hoh41jDEVos99WdyaLA3Laq1BpGJVFCDKfY1OT60RWUDiH4o0ZzKF4lKGYpkbiX%2Bf0qFIbpru2GYrKNXj4QAB%2BzOdzfB%2BLMs3vU5zIt32ia2MhhHaiKZkkOzjlREwl1bDyrKEVHYjAxfGH8Iuh%2BGUsycZeqHu6HOBLBchTzx%2BnIL2QsZXHmiRliKcT%2BoM83JDdqtAGb\",\r\n            \"uploaded_date\": \"2024-07-08T10:31:30\",\r\n            \"xray_type\": \"xray\",\r\n            \"xray_sub_type\": \"bitewing\",\r\n            \"image_name\": \"000002.png\"\r\n        }\r\n    ]\r\n}"
 								}
 							]
 						},
