@@ -11333,8 +11333,7 @@
 											{
 												"key": "Request-Key",
 												"value": "<request_key>",
-												"type": "text",
-												"disabled": true
+												"type": "text"
 											}
 										],
 										"url": "https://api.sikkasoft.com/v4/patient_contracts_details"
