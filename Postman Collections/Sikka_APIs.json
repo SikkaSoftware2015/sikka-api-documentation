@@ -11316,7 +11316,7 @@
 								"header": [
 									{
 										"key": "Request-Key",
-										"value": "",
+										"value": "<request_key>",
 										"type": "text",
 										"disabled": true
 									}
