@@ -11450,8 +11450,8 @@
 										"type": "text"
 									}
 								],
-								"url": "https://api.sikkasoft.com/v4/patient_contracts_details",
-								"description": "Return pms_definitions\n\n---\n\n###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### Parameters\n\n###### practice_id `optional`\n\n> practice id of office \n   \n###### category `optional`\n\n> category\n\n###### is_hidden `optional`\n\n> is_hidden\n\n###### category_name `optional`\n\n> category_name\n\n###### item_name `optional`\n\n> item_name\n\n###### category `optional`\n\n> category\n\n###### category `optional`\n\n> category\n\n###### category `optional`\n\n> category\n\n###### category `optional`\n\n> category\n\n###### category `optional`\n\n> category\n\n###### category `optional`\n\n> category\n   \n\n###### SortBy\n\n###### practice_id\n\n> practice id of office \n  \n\n###### guarantor_id\n\n> guarantor id in practice management system \n  \n\n###### Contract_Start_Date\n\n> format: yyyy-mm-dd \n  \n\n###### Contract_Completion_Date\n\n> format: yyyy-mm-dd \n  \n\n###### patient_id `default`\n\n> Patient Id"
+								"url": "https://api.sikkasoft.com/v4/pms_definitions",
+								"description": "Return pms_definitions\n\n---\n\n###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### Parameters\n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### category `optional`\n\n> category \n  \n\n###### is_hidden `optional`\n\n> is_hidden \n  \n\n###### category_name `optional`\n\n> category_name \n  \n\n###### item_name `optional`\n\n> item_name \n  \n\n###### definition_id `optional`\n\n> definition_id \n  \n\n###### item_order `optional`\n\n> item_order \n  \n\n###### item_value `optional`\n\n> item_value \n  \n\n###### item_color `optional`\n\n> item_color \n\n\n###### SortBy\n\n###### definition_id\n\n> definition id"
 							},
 							"response": [
 								{
