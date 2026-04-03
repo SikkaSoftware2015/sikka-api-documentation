@@ -11451,7 +11451,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/pms_definitions",
-								"description": "Return pms_definitions\n\n---\n\n###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### Parameters\n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### category `optional`\n\n> category \n  \n\n###### is_hidden `optional`\n\n> is_hidden \n  \n\n###### category_name `optional`\n\n> category_name \n  \n\n###### item_name `optional`\n\n> item_name \n  \n\n###### definition_id `optional`\n\n> definition_id \n  \n\n###### item_order `optional`\n\n> item_order \n  \n\n###### item_value `optional`\n\n> item_value \n  \n\n###### item_color `optional`\n\n> item_color \n\n\n###### SortBy\n\n###### definition_id\n\n> definition id"
+								"description": "Return pms_definitions\n\n---\n\n###### Headers\n\n###### Request-Key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### Parameters\n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### category `optional`\n\n> Category identifier\n  \n\n###### is_hidden `optional`\n\n> Visibility flag \n  \n\n###### category_name `optional`\n\n> Name of the category \n  \n\n###### item_name `optional`\n\n> Name of the item \n  \n\n###### definition_id `optional`\n\n> Unique item definition ID\n  \n\n###### item_order `optional`\n\n> Display order of item\n  \n\n###### item_value `optional`\n\n> Value of the item\n  \n\n###### item_color `optional`\n\n> color code for item\n  \n\n###### SortBy\n\n###### definition_id\n\n> definition id"
 							},
 							"response": [
 								{
@@ -11466,7 +11466,7 @@
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/patient_contracts_details"
+										"url": "https://api.sikkasoft.com/v4/pms_definitions"
 									},
 									"status": "OK",
 									"code": 200,
