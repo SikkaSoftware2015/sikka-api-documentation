@@ -10675,41 +10675,21 @@
 										"header": [
 											{
 												"key": "Request-Key",
-												"value": "Request-Key",
+												"value": "08121f26b579e73a2a421d0ee601d39d",
+												"type": "text"
+											},
+											{
+												"key": "App-id",
+												"value": "e83f69d3e42135222ce3d8f5d8c7238a",
+												"type": "text"
+											},
+											{
+												"key": "App-key",
+												"value": "ac25a68d6f6d2cfb807d5537eafff2e8",
 												"type": "text"
 											}
 										],
-										"url": {
-											"raw": "https://api.sikkasoft.com/v4/kpis?kpi_name&practice_id&startdate&enddate",
-											"protocol": "https",
-											"host": [
-												"api",
-												"sikkasoft",
-												"com"
-											],
-											"path": [
-												"v4",
-												"kpis"
-											],
-											"query": [
-												{
-													"key": "kpi_name",
-													"value": null
-												},
-												{
-													"key": "practice_id",
-													"value": null
-												},
-												{
-													"key": "startdate",
-													"value": null
-												},
-												{
-													"key": "enddate",
-													"value": null
-												}
-											]
-										}
+										"url": "https://api.sikkasoft.com/v4/standard/appointment_statuses"
 									},
 									"status": "OK",
 									"code": 200,
@@ -10768,7 +10748,7 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n  \"offset\": \"##\",\n  \"limit\": \"##\",\n  \"total_count\": \"##\",\n  \"execution_time\": \"##\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/kpis?offset=##&limit=##\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/kpis?offset=##&limit=##\",\n    \"next\": \"\",\n    \"last\": \"https://api.sikkasoft.com/v4/kpis?offset=##&limit=##\"\n  },\n  \"items\": [\n    {\n      \"practice_id\": \"practice id\",\n      \"practice_name\": \"practice name\",\n      \"kpi name which you have selected\": \"kpi name\"\n    },\n    {\n      \"practice_id\": \"practice id\",\n      \"practice_name\": \"practice name\",\n      \"kpi name which you have selected\": \"kpi name\"\n    },\n    {\n      \"practice_id\": \"practice id\",\n      \"practice_name\": \"practice name\",\n      \"kpi name which you have selected\": \"kpi name\"\n    }\n  ]\n}"
+									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"2\",\n    \"total_count\": \"15\",\n    \"execution_time\": \"11\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/standard_appointment_statuses?offset=0&limit=2\",\n        \"previous\": \"\",\n        \"current\": \"https://api.sikkasoft.com/v4/standard_appointment_statuses?offset=0&limit=2\",\n        \"next\": \"https://api.sikkasoft.com/v4/standard_appointment_statuses?offset=1&limit=2\",\n        \"last\": \"https://api.sikkasoft.com/v4/standard_appointment_statuses?offset=7&limit=2\"\n    },\n    \"items\": [\n        {\n            \"pms_name\": \"EagleSoft\",\n            \"standard_status\": \"Unconfirmed\",\n            \"status\": \"WAITING FOR CALLBACK\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"Cancelled\",\n            \"status\": \"DELETED-CANCELLED\"\n        }\n    ]\n}\n"
 								},
 								{
 									"id": "d6fa2085-ad5c-4e46-8e86-b98c01a2ced3",
