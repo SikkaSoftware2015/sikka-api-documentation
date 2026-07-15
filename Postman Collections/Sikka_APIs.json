@@ -10894,6 +10894,251 @@
 							]
 						},
 						{
+							"name": "standard_treatment_plan_statuses",
+							"id": "5ab1dce9-7d23-4d68-ac58-56783c22cec2",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Request-Key",
+										"value": "Request-Key",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "App-Id",
+										"value": "App-Id",
+										"type": "text"
+									},
+									{
+										"key": "App-Key",
+										"value": "App-Key",
+										"type": "text"
+									}
+								],
+								"url": "https://api.sikkasoft.com/v4/standard/treatment_plan_statuses",
+								"description": "---\n\n### Parameters\n\n#### pms_name `Required`\n\n> pms_name from PMS list \n  \n\n#### standard_status `Optional`\n\n> standard_status \n  \n\n#### status `Optional`\n\n> status"
+							},
+							"response": [
+								{
+									"id": "9710d5a8-771e-465a-bf92-4c4581a132b9",
+									"name": "standard_appointment_statuses",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "Request-Key",
+												"type": "text",
+												"disabled": true
+											},
+											{
+												"key": "App-Id",
+												"value": "e83f69d3e42135222ce3d8f5d8c7238a",
+												"type": "text"
+											},
+											{
+												"key": "App-key",
+												"value": "ac25a68d6f6d2cfb807d5537eafff2e8",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/standard/treatment_plan_statuses?pms_name=EagleSoft&limit=2",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"standard",
+												"treatment_plan_statuses"
+											],
+											"query": [
+												{
+													"key": "pms_name",
+													"value": "EagleSoft"
+												},
+												{
+													"key": "limit",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.18.0 (Ubuntu)"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 10 May 2022 11:12:31 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Request-Key-Expires",
+											"value": "Wed, 11 May 2022 09:12:24 GMT"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "origin"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload;"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"2\",\n    \"total_count\": \"24\",\n    \"execution_time\": \"10\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/standard_treatment_plan_statuses?offset=0&limit=2\",\n        \"previous\": \"\",\n        \"current\": \"https://api.sikkasoft.com/v4/standard_treatment_plan_statuses?offset=0&limit=2\",\n        \"next\": \"https://api.sikkasoft.com/v4/standard_treatment_plan_statuses?offset=1&limit=2\",\n        \"last\": \"https://api.sikkasoft.com/v4/standard_treatment_plan_statuses?offset=11&limit=2\"\n    },\n    \"items\": [\n        {\n            \"pms_name\": \"EagleSoft\",\n            \"standard_status\": \"Proposed\",\n            \"status\": \"PROPOSED\"\n        },\n        {\n            \"pms_name\": \"EagleSoft\",\n            \"standard_status\": \"Presented\",\n            \"status\": \"PRESENTED\"\n        }\n    ]\n}\n"
+								},
+								{
+									"id": "723090d1-39d4-40a1-aaa9-5f9b1121b4f5",
+									"name": "standard_appointment_statuses?fields=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "Request-Key",
+												"type": "text"
+											},
+											{
+												"key": "App-Id",
+												"value": "App-Id",
+												"type": "text"
+											},
+											{
+												"key": "App-Key",
+												"value": "App-Key",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/standard/appointment_statuses?pms_name=EagleSoft&fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"standard",
+												"appointment_statuses"
+											],
+											"query": [
+												{
+													"key": "pms_name",
+													"value": "EagleSoft"
+												},
+												{
+													"key": "fields",
+													"value": "get_all"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.18.0 (Ubuntu)"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 10 May 2022 11:12:31 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Request-Key-Expires",
+											"value": "Wed, 11 May 2022 09:12:24 GMT"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "origin"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload;"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"50\",\n    \"total_count\": \"15\",\n    \"execution_time\": \"13\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/standard_appointment_statuses?offset=0&limit=50\",\n        \"previous\": \"\",\n        \"current\": \"https://api.sikkasoft.com/v4/standard_appointment_statuses?offset=0&limit=50\",\n        \"next\": \"\",\n        \"last\": \"https://api.sikkasoft.com/v4/standard_appointment_statuses?offset=0&limit=50\"\n    },\n    \"items\": [\n        {\n            \"pms_name\": \"EagleSoft\",\n            \"standard_status\": \"Unconfirmed\",\n            \"status\": \"WAITING FOR CALLBACK\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"Cancelled\",\n            \"status\": \"DELETED-CANCELLED\"\n        },\n        {\n            \"pms_name\": \"EagleSoft\",\n            \"standard_status\": \"Cancelled\",\n            \"status\": \"DELETED-FAILED\"\n        },\n        {\n            \"pms_name\": \"EagleSoft\",\n            \"standard_status\": \"Unconfirmed\",\n            \"status\": \"UNCONFIRMED\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"UNKNOWN\",\n            \"status\": \"DELETED-NEITHER\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"Unconfirmed\",\n            \"status\": \"LEFT MESSAGE\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"UNKNOWN\",\n            \"status\": \"NO ANSWER\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"Unconfirmed\",\n            \"status\": \"SENT EMAIL\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"UNKNOWN\",\n            \"status\": \"OTHER\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"UNKNOWN\",\n            \"status\": \"NOFLEX\"\n        },\n        {\n            \"pms_name\": \"EagleSoft\",\n            \"standard_status\": \"Confirmed\",\n            \"status\": \"CONFIRMED\"\n        },\n        {\n            \"pms_name\": \"EagleSoft\",\n            \"standard_status\": \"Cancelled\",\n            \"status\": \"DELETED-NEITHER\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"Confirmed\",\n            \"status\": \"FIRM-E\"\n        },\n        {\n            \"pms_name\": \"EagleSoft\",\n            \"standard_status\": \"UNKNOWN\",\n            \"status\": \"SENT EMAIL\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"UNKNOWN\",\n            \"status\": \"PHONE BUSY\"\n        }\n    ]\n}\n"
+								}
+							]
+						},
+						{
 							"name": "subscribers",
 							"id": "4427a4db-e78b-4067-94cd-2a60c94809a4",
 							"protocolProfileBehavior": {
