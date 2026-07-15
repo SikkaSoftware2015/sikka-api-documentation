@@ -10664,12 +10664,12 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/standard_appointment_statuses",
-								"description": "---\n\n### Parameters\n\n#### request_key `required`\n\n> Valid 32 characters alpha-numeric request key \n  \n\n#### kpi_name `Required`\n\n> KPI name from KPI list \n  \n\n#### startdate `Required`\n\n> StartDate YYYY-MM-DD \n  \n\n#### enddate `Required`\n\n> EndDate YYYY-MM-DD \n  \n\n#### practice_id `Required`\n\n> Practice ID"
+								"description": "---\n\n### Parameters\n\n#### request_key `required`\n\n> Valid 32 characters alpha-numeric request key \n  \n\n#### pms_name `Required`\n\n> pms_name from PMS list \n  \n\n#### standard_status `Optional`\n\n> standard_status \n  \n\n#### status `Optional`\n\n> status \n  "
 							},
 							"response": [
 								{
 									"id": "db47d7b8-7dcd-4266-a4c1-b260533a767e",
-									"name": "kpis details",
+									"name": "standard_appointment_statuses",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
@@ -10772,7 +10772,7 @@
 								},
 								{
 									"id": "d6fa2085-ad5c-4e46-8e86-b98c01a2ced3",
-									"name": "kpis details?fields=get_all",
+									"name": "standard_appointment_statuses?fields=get_all",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
