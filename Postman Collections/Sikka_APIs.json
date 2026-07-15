@@ -15975,6 +15975,143 @@
 					"item": [],
 					"id": "954f4172-94de-4f14-b497-4cb9132f7be6",
 					"description": "## **PMS - GoHighLevel Data Sync Configuration Documentation**\n\n### **📌 Overview**\n\nThis section outlines the essential steps required to configure the integration between the Practice Management Software (PMS) and GoHighLevel (GHL) through Sikka Sync App. Follow each step carefully to ensure a smooth setup and data synchronization process.\n\n<a href=\"https://centraldata.s3.us-east-1.amazonaws.com/images/api_partner_logos/GHL-PMS-Demo-Integration-Video.mp4\">GHL PMS Demo Integration</a>\n\n---\n\n## **Step 1 : Set Up Workflows in GoHighLevel (GHL)**\n\n### **1.1 Configure Inbound and Outbound Workflows**\n\n- **Inbound Workflows**:These are used to receive data from the PMS (such as new or  \n    updated patient and appointment information).\n    \n- **Outbound Workflows**: These are used to send appointment updates and confirmations  \n    back to the PMS.\n    \n\nPlease find the link to the GHL Snapshot for the GHL workflows (inbound and outbound). Import both workflows from this link to your sub-account, which handles the new data sync of patients and appointments.\n\n<a href=\"https://affiliates.gohighlevel.com/?fp_ref=sikka-test18&amp;share=LI3DMK7H5bkHzwCJj8Np\">GHL Workflow Snapshot</a>\n\nWhen setting up a new workflow, ensure all triggers,mappings and actions are properly defined.  \nThe webhook URLs must be saved correctly to enable seamless data flow between systems.\n\n### **Inbound Workflow in GHL**\n\n<img src=\"https://centraldata.s3.us-east-1.amazonaws.com/images/api_partner_logos/GoHighLevelIntegration-1.png\">\n\n### **Outbound Workflow in GHL**\n\n<img src=\"https://centraldata.s3.us-east-1.amazonaws.com/images/api_partner_logos/GoHighLevelIntegration-2.png\">\n\n---\n\n## **Step 2 : Install the Sikka Platform Utility (SPU)**\n\n### **2.1 Install SPU**\n\nThe Sikka Platform Utility (SPU), which facilitates the data sync process needs to be installed  \nwhere your PMS is hosted. A member of our CSO team can assist you with the SPU installation  \nprocess.\n\n<img src=\"https://centraldata.s3.us-east-1.amazonaws.com/images/api_partner_logos/GoHighLevelIntegration-3.png\">\n\n---\n\n## **Step 3 : Configure the GHL Configurations in API Portal**\n\n### **3.1 Setup Inbound URL and API Keys**\n\n- Navigate to the Sikka ‘s API portal  \n    ([https://api.sikkasoft.com/v4/portal/authentication/login](https://api.sikkasoft.com/v4/portal/authentication/login))\n    \n- Go to Settings -> GoHighLevel Configuration\n    \n\n<img src=\"https://centraldata.s3.us-east-1.amazonaws.com/images/api_partner_logos/GoHighLevelIntegration-4.png\">\n\n- Select your **‘Application’** and click on ‘Configure’ for your practice.\n    \n\n<img src=\"https://centraldata.s3.us-east-1.amazonaws.com/images/api_partner_logos/GoHighLevelIntegration-5.png\">\n\n- Enter the GHL field details configured in your GHL app workflow into this form.Follow the steps below to copy the Inbound URL and Location ID, and click **‘Save Configuration’** to complete the setup.\n    \n\nCopy the inbound URL from GHL inbound workflow.\n\n<img src=\"https://centraldata.s3.us-east-1.amazonaws.com/images/api_partner_logos/GoHighLevelIntegration-6.png\">\n\nCopy the location ID from the GHL app\n\n<img src=\"https://centraldata.s3.us-east-1.amazonaws.com/images/api_partner_logos/GoHighLevelIntegration-7.png\">\n\nEnter all the details gathered in the GHL Configuration form on the API Portal and click  \non save.\n\n<img src=\"https://centraldata.s3.us-east-1.amazonaws.com/images/api_partner_logos/GoHighLevelIntegration-8.png\">\n\n**Note:** Operatory and Provider configured here become global defaults and will apply to every  \nwrite-back in this practice.\n\n- Map all the 6 GHL status to your PMS description(Example: \"Cancelled\" in GHL should correspond to \"Broken\" in PMS).Please note that based on the status that you map here,the system will use when posting appointment-status updates **back to the PMS.** Incorrect mappings can lead to mismatched updates.Please **‘Save Status Mappings’** before closing the modal.\n    \n\n<img src=\"https://centraldata.s3.us-east-1.amazonaws.com/images/api_partner_logos/GoHighLevelIntegration-9.png\">\n\n---\n\n## **Step 4 : Configure the Webhook URL in the API Portal**\n\nPlease reach out to the Sikka Support team for the webhook URL and complete the configuration on your end.\n\n<img src=\"https://centraldata.s3.us-east-1.amazonaws.com/images/api_partner_logos/GoHighLevelIntegration-10.png\">\n\n---\n\n## **Step 5 : Configure Calendar Availability in GHL (Optional)**\n\n### **1.1 Set Calendar Availability in GHL**\n\n- Log in to GHL sub account and navigate to **Calendars > Settings.**\n    \n- Set the working hours, time zones, and available appointment slots for each day of the week.\n    \n- Make sure these match the actual office schedule to avoid conflicts or scheduling issues.\n    \n\nThe current integration enables two-way data sync between the PMS and GoHighLevel (GHL).  \nNew and updated patients and appointments are pushed from the PMS to GHL, while all new  \nand updated appointments are written back to the PMS.\n\nBy default, new appointments created in the PMS via writeback are assigned a default  \nstatus—**‘Scheduled’** for OpenDental.\n\nFor Dentrix PMS, broken appointment writeback is currently not supported. This can be  \nimplemented upon request if needed.\n\nFor rescheduled appointments in PMS, the update is posted in GHL by canceling the existing  \nappointment and creating a new one at the rescheduled time. When an appointment is  \nrescheduled in GHL, it cannot be written back to the PMS as GHL does not have a specific  \nstatus to identify rescheduled appointments.\n\nPlease create new patients in GHL or PMS with first name, last name and email as necessary  \nfields as we are using patients as unique combinations of first name, last name and email.\n\n**Support for new patient write‑back now exists, though it is subject to timing constraints due to the SPU’s refresh cycle.**\n\n---\n\n## **⚠ Timing limitations in GoHighLevel**\n\n- The SPU refreshes every 15 minutes, so if a **new patient** is created in GHL and an  \n    appointment is scheduled for them **within the same 15-minute window** (before the  \n    data sync) , the appointment write-back may not complete in time.\n    \n- Likewise, if an **appointment’s status** is changed within 15 minutes of creation in GHL  \n    (before the data sync), that update may not be captured."
+				},
+				{
+					"name": "Claim Clearinghouse APIs",
+					"item": [
+						{
+							"name": "POST dental_claim - build a Vyne claim (BUILT)",
+							"id": "c4247867-86f2-457e-88cf-5e4d6681d355",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Request-Key",
+										"value": "{{request_key}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"clearinghouse_provider\": \"VYNE\",\n  \"trading_partner_service_id\": \"{{payer_id}}\",\n  \"trading_partner_name\": \"{{payer_name}}\",\n  \"usage_indicator\": \"T\",\n  \"submitter\": {\n    \"organization_name\": \"Bright Smile Dental\",\n    \"contact_information\": { \"name\": \"Jane Doe\", \"phone_number\": \"4085551234\" },\n    \"practice_id\": \"{{practice_id}}\"\n  },\n  \"receiver\": { \"organization_name\": \"{{payer_name}}\" },\n  \"billing\": {\n    \"npi\": \"{{billing_npi}}\",\n    \"organization_name\": \"Bright Smile Dental\",\n    \"employer_id\": \"{{billing_tax_id}}\",\n    \"taxonomy_code\": \"1223G0001X\",\n    \"address\": { \"address1\": \"123 Main St\", \"city\": \"Portland\", \"state\": \"OR\", \"postal_code\": \"97201\" },\n    \"provider_id\": \"{{provider_id}}\"\n  },\n  \"subscriber\": {\n    \"first_name\": \"John\",\n    \"last_name\": \"Sample\",\n    \"member_id\": \"SUB123456\",\n    \"date_of_birth\": \"1985-04-12\",\n    \"gender\": \"M\",\n    \"patient_id\": \"{{patient_id}}\",\n    \"guarantor_id\": \"{{guarantor_id}}\"\n  },\n  \"claim_information\": {\n    \"claim_charge_amount\": \"120.00\",\n    \"place_of_service_code\": \"11\",\n    \"claim_frequency_code\": \"1\",\n    \"signature_indicator\": \"Y\",\n    \"plan_participation_code\": \"A\",\n    \"benefits_assignment_certification_indicator\": \"Y\",\n    \"release_information_code\": \"Y\",\n    \"service_lines\": [\n      { \"service_date\": \"2026-03-01\", \"dental_service\": { \"procedure_code\": \"D0120\", \"line_item_charge_amount\": \"120.00\" } }\n    ]\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{base_url}}/claim_clearinghouse/dental_claim",
+								"description": "## POST /claim_clearinghouse/dental_claim\n\n**Purpose:** Validate a dental claim and generate its 837D EDI, then store it with status **BUILT**. This call does **not** transmit the claim - use the submit endpoint for that.\n\n**Audience:** API partners building Vyne dental claims.\n\n**Prerequisites:**\n- Valid partner request key.\n- The practice is registered as a Vyne facility.\n- A resolved Vyne payer (`trading_partner_service_id`) from `GET /recipients` (or a payer mapping).\n\n**State transition:** none -> **BUILT**. Submission (`POST /dental_claim/{claimId}/submit`) moves BUILT -> SUBMITTED.\n\n### Headers\n| Header | Required | Notes |\n| --- | --- | --- |\n| `Request-Key` or `Authorization: Bearer` | Yes | Partner request key. Missing/invalid -> `API1004`. |\n| `Content-Type` | Yes | `application/json` |\n\n### Body - top level\n| Field | Type | Required | Accepted values / format | Notes |\n| --- | --- | --- | --- | --- |\n| `clearinghouse_provider` | string | Yes (Vyne) | `VYNE` | Must be set for Vyne. Omitting it defaults to STEDI. Values other than STEDI/VYNE -> `API1020`. |\n| `trading_partner_service_id` | string | Yes | Vyne payer id | From `GET /recipients`. |\n| `trading_partner_name` | string | Yes | payer name | |\n| `usage_indicator` | string | No | `T` or `P` | Defaults to `P`. Other values -> `API1020`. |\n| `submitter` | object | Yes | see below | |\n| `receiver` | object | Yes | see below | |\n| `billing` | object | Yes | see below | |\n| `subscriber` | object | Yes | see below | |\n| `claim_information` | object | Yes | see below | |\n| `rendering` | object | No | see below | |\n| `dependent` | object | No | see below | Present only when the patient is NOT the subscriber. |\n| `payer_address` | object | No | address | If provided, `address1` + `city` required; `state` a valid 2-letter code. |\n| `original_claim_id` | string | No | prior claim id | Resubmission link; typically used with `claim_frequency_code=7`. |\n| `submission_source` | string | No | `auto` / `manual` | Defaults to `manual`. |\n| `validate_npi_nppes` | boolean | No | `true` / `false` | Documented as opt-in NPPES registry check. NOTE: current implementation may perform the NPPES lookup regardless of this flag (known discrepancy, pending fix). |\n\n### Body - submitter (required)\n| Field | Type | Required | Notes |\n| --- | --- | --- | --- |\n| `organization_name` | string | No | |\n| `contact_information` | object | Yes | |\n| `contact_information.phone_number` | string | Yes | Exactly 10 digits (AAABBBCCCC). |\n| `contact_information.name` | string | No | |\n| `practice_id` | string | Yes | Sikka practice identifier (resolves the office). |\n| `cust_id` | string | No | Sikka customer id; when provided must belong to the practice. |\n\n### Body - receiver (required)\n| Field | Type | Required | Notes |\n| --- | --- | --- | --- |\n| `organization_name` | string | Yes | Payer/receiver name. |\n\n### Body - billing (required)\n| Field | Type | Required | Notes |\n| --- | --- | --- | --- |\n| `npi` | string | Yes | Exactly 10 digits, must pass Luhn check. |\n| `organization_name` | string | No (recommended) | |\n| `taxonomy_code` | string | No | Exactly 10 alphanumeric characters. |\n| `employer_id` | string | No | 9 digits, no separators. Mutually exclusive with `ssn`. |\n| `ssn` | string | No | 9 digits. Mutually exclusive with `employer_id`. |\n| `employer_identification_number` | string | No | 9 digits. |\n| `address` | object | No | If provided, `address1` + `city` required; `state` valid 2-letter. |\n| `contact_information.phone_number` | string | No | If provided, 10 digits. |\n| `provider_id` | string | Yes | Sikka provider identifier. |\n\n### Body - subscriber (required)\n| Field | Type | Required | Notes |\n| --- | --- | --- | --- |\n| `member_id` | string | Yes | Insured member id. |\n| `first_name` / `last_name` | string | Yes | Insured name. |\n| `date_of_birth` | string | No | `yyyy-MM-dd`. |\n| `gender` | string | No | `M`, `F`, or `U`. |\n| `group_number` | string | No | |\n| `address` | object | No | If provided, `address1` + `city` required; `state` valid 2-letter. |\n| `payment_responsibility_level_code` | string | No | Valid code (e.g. `P`, `S`, `T`). |\n| `patient_id` | string | Yes | Sikka patient identifier. |\n| `guarantor_id` | string | Yes | Sikka guarantor identifier. |\n\n### Body - claim_information (required)\n| Field | Type | Required | Accepted values | Notes |\n| --- | --- | --- | --- | --- |\n| `claim_charge_amount` | string | Yes | decimal, e.g. `120.00` | |\n| `place_of_service_code` | string | Yes | e.g. `11` | |\n| `claim_frequency_code` | string | Yes | `1`,`7`,`8`,`G`,`I`,`X`,`Y` | `1` = new. |\n| `signature_indicator` | string | Yes | `Y` / `N` | |\n| `plan_participation_code` | string | Yes | `A`,`B`,`C` | A=Assigned, B=Lab only, C=Not assigned. |\n| `benefits_assignment_certification_indicator` | string | Yes | `N`,`Y`,`W` | |\n| `release_information_code` | string | Yes | `Y`,`I` | |\n| `claim_filing_code` | string | No | | |\n| `service_facility_location` | object | No | | If `npi` provided: 10 digits + Luhn. |\n| `health_care_code_information` | array | No | diagnosis codes | If provided, `[0].diagnosis_type_code` must be `ABK` and `diagnosis_code` required; additional entries `ABK`/`ABF`. |\n| `claim_supplemental_information.payer_claim_control_number` | string | Conditional | | Required when `claim_frequency_code` is `7`,`8`,`G`,`I`,`X`,`Y`; must be omitted when `1`. |\n| `service_lines` | array | Yes (>= 1) | see below | |\n\n### Body - claim_information.service_lines[] (at least one)\n| Field | Type | Required | Notes |\n| --- | --- | --- | --- |\n| `service_date` | string | Yes | `yyyy-MM-dd`. |\n| `dental_service` | object | Yes | |\n| `dental_service.procedure_code` | string | Yes | ADA code, e.g. `D0120`. |\n| `dental_service.line_item_charge_amount` | string | Yes | decimal, e.g. `120.00`. |\n| `dental_service.oral_cavity_designation` | array | No | e.g. `[\"UR\"]`. |\n| `teeth_information` | array | No | `tooth_code` + `tooth_surface_codes[]`. |\n\n### Cross-field rules\n- `billing.ssn` and `billing.employer_id` are mutually exclusive.\n- Payer Claim Control Number is required for replacement/void frequency codes and forbidden for new (`1`).\n- Providing a `dependent` block means the `subscriber` block holds the insured's identity; the dependent holds the patient's demographics. `dependent.relationship_to_subscriber_code` cannot be `self`/`18`.\n- All dates are `yyyy-MM-dd`.\n\n### Notes\n- On success the claim is **BUILT** only; call submit to transmit.\n- A 17-character `patient_control_number` is generated by the API.\n- See saved examples for a success response and common error responses."
+							},
+							"response": [
+								{
+									"id": "ad41a95b-b87e-4087-a192-3500ef06f74d",
+									"name": "201 Created - claim BUILT",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Request-Key",
+												"value": "{{request_key}}"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{ ...see request body... }"
+										},
+										"url": "{{base_url}}/claim_clearinghouse/dental_claim"
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"http_code\": \"201\",\n  \"http_code_desc\": \"Created\",\n  \"error_code\": \"API2016\",\n  \"short_message\": \"New resource created successfully\",\n  \"long_message\": \"Id:100123\",\n  \"more_information\": \"claim_id=100123, patient_control_number=A1B2C3D4E5F6G7H8I, clearinghouse_provider=VYNE, control_number=000000123, gs06=123, claim_status=BUILT, built_at=2026-07-15T10:22:31Z\"\n}"
+								},
+								{
+									"id": "a9089554-3093-4ee3-a10a-2beadcefc399",
+									"name": "400 Bad Request - validation error",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Request-Key",
+												"value": "{{request_key}}"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{ ...request with an invalid billing.npi... }"
+										},
+										"url": "{{base_url}}/claim_clearinghouse/dental_claim"
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"http_code\": \"400\",\n  \"http_code_desc\": \"BadRequest\",\n  \"error_code\": \"API1020\",\n  \"short_message\": \"Missing Parameter\",\n  \"long_message\": \"billing.npi must be exactly 10 digits\",\n  \"more_information\": \"\"\n}"
+								},
+								{
+									"id": "d4bbf8d8-bbfd-47ab-9fe8-811ecb0d2fd4",
+									"name": "400 Bad Request - missing/invalid request key",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{ ...see request body... }"
+										},
+										"url": "{{base_url}}/claim_clearinghouse/dental_claim"
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"http_code\": \"400\",\n  \"http_code_desc\": \"BadRequest\",\n  \"error_code\": \"API1004\",\n  \"short_message\": \"Missing Parameter\",\n  \"long_message\": \"Requestkey is missing/invalid\",\n  \"more_information\": \"\"\n}"
+								}
+							]
+						}
+					],
+					"id": "f3da131e-94f3-45a7-aba1-7a701d89732d"
 				}
 			],
 			"id": "603347df-cf60-4fcd-ab4c-9e047b36756d",
