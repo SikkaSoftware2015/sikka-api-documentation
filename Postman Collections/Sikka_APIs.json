@@ -10689,7 +10689,30 @@
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/standard/appointment_statuses"
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/standard/appointment_statuses?pms_name=EagleSoft&limit=2",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"standard",
+												"appointment_statuses"
+											],
+											"query": [
+												{
+													"key": "pms_name",
+													"value": "EagleSoft"
+												},
+												{
+													"key": "limit",
+													"value": "2"
+												}
+											]
+										}
 									},
 									"status": "OK",
 									"code": 200,
