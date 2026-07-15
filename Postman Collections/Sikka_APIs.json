@@ -3339,7 +3339,7 @@
 									}
 								],
 								"url": "https://api.sikkasoft.com/v4/kpis",
-								"description": "## Key Performance Indicators\n\nA key performance indicator (KPI) is a business metric used to evaluate factors that are crucial to the success of an organization.KPIs give you unique views of practice data that lead to action items to drive increased revenue and save valuable practice time.\n\n---\n\n### Parameters\n\n#### request_key `required`\n\n> Valid 32 characters alpha-numeric request key\n\n#### kpi_name `optional`\n\n> Kpi Name \n  \n##### There are over 300 key performance indicators, but below are available in v4 right now.\n\n### Table\n\n| Sr No | Key Performance Indicators |\n| --- | --- |\n| 1 | accounts_receivable |\n| 2 | active_patients |\n| 3 | adjusted_collection |\n| 4 | adjusted_production |\n| 5 | adjusted_production_by_category |\n| 6 | adjusted_production_by_dentist |\n| 7 | adjusted_production_by_hygienist |\n| 8 | adjusted_production_by_referral_source |\n| 9 | adjusted_production_per_day |\n| 10 | adult_prophy |\n| 11 | all_hygienist_patient_visits |\n| 12 | amount_by_transaction_type |\n| 13 | average_daily_scheduled_production |\n| 14 | collection_to_production |\n| 15 | comprehensive_exams |\n| 16 | hygiene_reappointment |\n| 17 | new_patients |\n| 18 | no_show_appointments |\n| 19 | number_of_patients_seen |\n| 20 | practice_report |\n| 21 | provider_adjusted_production_per_hour |\n| 22 | provider_total_production_per_hour |\n| 23 | recall_potential_by_office_trend |\n| 24 | recalls_by_office_trend |\n| 25 | total_collection |\n| 26 | total_patients |\n| 27 | total_production |\n| 28 | total_production_by_dentist |\n| 29 | total_production_by_hygienist |\n| 30 | total_production_by_provider_category |\n| 31 | total_production_per_day |\n| 32 | treatment_plan_analysis |"
+								"description": "## Key Performance Indicators\n\nA key performance indicator (KPI) is a business metric used to evaluate factors that are crucial to the success of an organization.KPIs give you unique views of practice data that lead to action items to drive increased revenue and save valuable practice time.\n\n---\n\n### Parameters\n\n#### request_key `required`\n\n> Valid 32 characters alpha-numeric request key \n  \n\n#### kpi_name `optional`\n\n> Kpi Name \n  \n\n##### There are over 300 key performance indicators, but below are available in v4 right now.\n\n### Table\n\n| Sr No | Key Performance Indicators |\n| --- | --- |\n| 1 | accounts_receivable |\n| 2 | active_patients |\n| 3 | adjusted_collection |\n| 4 | adjusted_production |\n| 5 | adjusted_production_by_category |\n| 6 | adjusted_production_by_dentist |\n| 7 | adjusted_production_by_hygienist |\n| 8 | adjusted_production_by_referral_source |\n| 9 | adjusted_production_per_day |\n| 10 | adult_prophy |\n| 11 | all_hygienist_patient_visits |\n| 12 | amount_by_transaction_type |\n| 13 | average_daily_scheduled_production |\n| 14 | collection_to_production |\n| 15 | comprehensive_exams |\n| 16 | hygiene_reappointment |\n| 17 | new_patients |\n| 18 | no_show_appointments |\n| 19 | number_of_patients_seen |\n| 20 | practice_report |\n| 21 | provider_adjusted_production_per_hour |\n| 22 | provider_total_production_per_hour |\n| 23 | recall_potential_by_office_trend |\n| 24 | recalls_by_office_trend |\n| 25 | total_collection |\n| 26 | total_patients |\n| 27 | total_production |\n| 28 | total_production_by_dentist |\n| 29 | total_production_by_hygienist |\n| 30 | total_production_by_provider_category |\n| 31 | total_production_per_day |\n| 32 | treatment_plan_analysis |"
 							},
 							"response": [
 								{
@@ -3667,6 +3667,268 @@
 								},
 								{
 									"id": "5557b18a-e96c-4bd7-88ec-780efefd6548",
+									"name": "kpis details?fields=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "Request-Key",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/kpis/{kpi_name}?startdate=2024-08-01&enddate=2024-09-09&practice_id=1&fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"kpis",
+												"{kpi_name}"
+											],
+											"query": [
+												{
+													"key": "startdate",
+													"value": "2024-08-01"
+												},
+												{
+													"key": "enddate",
+													"value": "2024-09-09"
+												},
+												{
+													"key": "practice_id",
+													"value": "1"
+												},
+												{
+													"key": "fields",
+													"value": "get_all"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.18.0 (Ubuntu)"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 10 May 2022 11:12:31 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Request-Key-Expires",
+											"value": "Wed, 11 May 2022 09:12:24 GMT"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "origin"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload;"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"offset\": \"xx\",\n    \"limit\": \"xx\",\n    \"total_count\": \"xx\",\n    \"execution_time\": \"xx\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/kpis?offset=xx&limit=xx\",\n        \"previous\": \"previous\",\n        \"current\": \"https://api.sikkasoft.com/v4/kpis?offset=xx&limit=xx\",\n        \"next\": \"next\",\n        \"last\": \"https://api.sikkasoft.com/v4/kpis?offset=xx&limit=xx\"\n    },\n    \"items\": [\n        {\n            \"practice_id\": \"practice id\",\n            \"practice_name\": \"practice name\",\n            \"adjusted_collection\": \"adjusted collection\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "kpis details Copy",
+							"id": "1d125a8c-03ed-470c-978c-71d0ed644a6e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Request-Key",
+										"value": "Request-Key",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://api.sikkasoft.com/v4/kpis?kpi_name&practice_id&startdate&enddate",
+									"protocol": "https",
+									"host": [
+										"api",
+										"sikkasoft",
+										"com"
+									],
+									"path": [
+										"v4",
+										"kpis"
+									],
+									"query": [
+										{
+											"key": "kpi_name",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "practice_id",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "startdate",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "enddate",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"description": "## Key Performance Indicators\n\nA key performance indicator (KPI) is a business metric used to evaluate factors that are crucial to the success of an organization. KPIs give you unique views of practice data that lead to action items to drive increased revenue and save valuable practice time.\n\n---\n\n### Parameters\n\n#### request_key `required`\n\n> Valid 32 characters alpha-numeric request key \n  \n\n#### kpi_name `Required`\n\n> KPI name from KPI list \n  \n\n#### startdate `Required`\n\n> StartDate YYYY-MM-DD \n  \n\n#### enddate `Required`\n\n> EndDate YYYY-MM-DD \n  \n\n#### practice_id `Required`\n\n> Practice ID"
+							},
+							"response": [
+								{
+									"id": "db47d7b8-7dcd-4266-a4c1-b260533a767e",
+									"name": "kpis details",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "Request-Key",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/kpis?kpi_name&practice_id&startdate&enddate",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"kpis"
+											],
+											"query": [
+												{
+													"key": "kpi_name",
+													"value": null
+												},
+												{
+													"key": "practice_id",
+													"value": null
+												},
+												{
+													"key": "startdate",
+													"value": null
+												},
+												{
+													"key": "enddate",
+													"value": null
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.18.0 (Ubuntu)"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 10 May 2022 11:12:31 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Request-Key-Expires",
+											"value": "Wed, 11 May 2022 09:12:24 GMT"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "Referrer-Policy",
+											"value": "origin"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload;"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n  \"offset\": \"##\",\n  \"limit\": \"##\",\n  \"total_count\": \"##\",\n  \"execution_time\": \"##\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/kpis?offset=##&limit=##\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/kpis?offset=##&limit=##\",\n    \"next\": \"\",\n    \"last\": \"https://api.sikkasoft.com/v4/kpis?offset=##&limit=##\"\n  },\n  \"items\": [\n    {\n      \"practice_id\": \"practice id\",\n      \"practice_name\": \"practice name\",\n      \"kpi name which you have selected\": \"kpi name\"\n    },\n    {\n      \"practice_id\": \"practice id\",\n      \"practice_name\": \"practice name\",\n      \"kpi name which you have selected\": \"kpi name\"\n    },\n    {\n      \"practice_id\": \"practice id\",\n      \"practice_name\": \"practice name\",\n      \"kpi name which you have selected\": \"kpi name\"\n    }\n  ]\n}"
+								},
+								{
+									"id": "d6fa2085-ad5c-4e46-8e86-b98c01a2ced3",
 									"name": "kpis details?fields=get_all",
 									"originalRequest": {
 										"method": "GET",
