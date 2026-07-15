@@ -10660,6 +10660,17 @@
 									{
 										"key": "Request-Key",
 										"value": "Request-Key",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "App-Id",
+										"value": "App-Id",
+										"type": "text"
+									},
+									{
+										"key": "App-Key",
+										"value": "App-Key",
 										"type": "text"
 									}
 								],
@@ -10676,7 +10687,8 @@
 											{
 												"key": "Request-Key",
 												"value": "Request-Key",
-												"type": "text"
+												"type": "text",
+												"disabled": true
 											},
 											{
 												"key": "App-id",
