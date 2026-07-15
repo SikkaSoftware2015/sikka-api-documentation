@@ -10663,7 +10663,7 @@
 										"type": "text"
 									}
 								],
-								"url": "https://api.sikkasoft.com/v4/standard_appointment_statuses",
+								"url": "https://api.sikkasoft.com/v4/standard/appointment_statuses",
 								"description": "---\n\n### Parameters\n\n#### request_key `required`\n\n> Valid 32 characters alpha-numeric request key \n  \n\n#### pms_name `Required`\n\n> pms_name from PMS list \n  \n\n#### standard_status `Optional`\n\n> standard_status \n  \n\n#### status `Optional`\n\n> status \n  "
 							},
 							"response": [
