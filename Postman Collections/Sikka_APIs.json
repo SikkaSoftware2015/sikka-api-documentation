@@ -10794,7 +10794,8 @@
 											{
 												"key": "Request-Key",
 												"value": "Request-Key",
-												"type": "text"
+												"type": "text",
+												"disabled": true
 											},
 											{
 												"key": "App-Id",
@@ -10925,7 +10926,7 @@
 							"response": [
 								{
 									"id": "9710d5a8-771e-465a-bf92-4c4581a132b9",
-									"name": "standard_appointment_statuses",
+									"name": "standard_treatment_plan_statuses",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
@@ -10937,12 +10938,12 @@
 											},
 											{
 												"key": "App-Id",
-												"value": "e83f69d3e42135222ce3d8f5d8c7238a",
+												"value": "App-Id",
 												"type": "text"
 											},
 											{
 												"key": "App-key",
-												"value": "ac25a68d6f6d2cfb807d5537eafff2e8",
+												"value": "App-key",
 												"type": "text"
 											}
 										],
@@ -11032,14 +11033,15 @@
 								},
 								{
 									"id": "723090d1-39d4-40a1-aaa9-5f9b1121b4f5",
-									"name": "standard_appointment_statuses?fields=get_all",
+									"name": "standard_treatment_plan_statuses?fields=get_all",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
 											{
 												"key": "Request-Key",
 												"value": "Request-Key",
-												"type": "text"
+												"type": "text",
+												"disabled": true
 											},
 											{
 												"key": "App-Id",
@@ -11048,12 +11050,12 @@
 											},
 											{
 												"key": "App-Key",
-												"value": "App-Key",
+												"value": "App-key",
 												"type": "text"
 											}
 										],
 										"url": {
-											"raw": "https://api.sikkasoft.com/v4/standard/appointment_statuses?pms_name=EagleSoft&fields=get_all",
+											"raw": "https://api.sikkasoft.com/v4/standard/treatment_plan_statuses?pms_name=EagleSoft&fields=get_all",
 											"protocol": "https",
 											"host": [
 												"api",
@@ -11063,7 +11065,7 @@
 											"path": [
 												"v4",
 												"standard",
-												"appointment_statuses"
+												"treatment_plan_statuses"
 											],
 											"query": [
 												{
@@ -11134,7 +11136,7 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"50\",\n    \"total_count\": \"15\",\n    \"execution_time\": \"13\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/standard_appointment_statuses?offset=0&limit=50\",\n        \"previous\": \"\",\n        \"current\": \"https://api.sikkasoft.com/v4/standard_appointment_statuses?offset=0&limit=50\",\n        \"next\": \"\",\n        \"last\": \"https://api.sikkasoft.com/v4/standard_appointment_statuses?offset=0&limit=50\"\n    },\n    \"items\": [\n        {\n            \"pms_name\": \"EagleSoft\",\n            \"standard_status\": \"Unconfirmed\",\n            \"status\": \"WAITING FOR CALLBACK\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"Cancelled\",\n            \"status\": \"DELETED-CANCELLED\"\n        },\n        {\n            \"pms_name\": \"EagleSoft\",\n            \"standard_status\": \"Cancelled\",\n            \"status\": \"DELETED-FAILED\"\n        },\n        {\n            \"pms_name\": \"EagleSoft\",\n            \"standard_status\": \"Unconfirmed\",\n            \"status\": \"UNCONFIRMED\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"UNKNOWN\",\n            \"status\": \"DELETED-NEITHER\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"Unconfirmed\",\n            \"status\": \"LEFT MESSAGE\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"UNKNOWN\",\n            \"status\": \"NO ANSWER\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"Unconfirmed\",\n            \"status\": \"SENT EMAIL\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"UNKNOWN\",\n            \"status\": \"OTHER\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"UNKNOWN\",\n            \"status\": \"NOFLEX\"\n        },\n        {\n            \"pms_name\": \"EagleSoft\",\n            \"standard_status\": \"Confirmed\",\n            \"status\": \"CONFIRMED\"\n        },\n        {\n            \"pms_name\": \"EagleSoft\",\n            \"standard_status\": \"Cancelled\",\n            \"status\": \"DELETED-NEITHER\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"Confirmed\",\n            \"status\": \"FIRM-E\"\n        },\n        {\n            \"pms_name\": \"EagleSoft\",\n            \"standard_status\": \"UNKNOWN\",\n            \"status\": \"SENT EMAIL\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"UNKNOWN\",\n            \"status\": \"PHONE BUSY\"\n        }\n    ]\n}\n"
+									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"50\",\n    \"total_count\": \"24\",\n    \"execution_time\": \"11\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/standard_treatment_plan_statuses?offset=0&limit=50\",\n        \"previous\": \"\",\n        \"current\": \"https://api.sikkasoft.com/v4/standard_treatment_plan_statuses?offset=0&limit=50\",\n        \"next\": \"\",\n        \"last\": \"https://api.sikkasoft.com/v4/standard_treatment_plan_statuses?offset=0&limit=50\"\n    },\n    \"items\": [\n        {\n            \"pms_name\": \"EagleSoft\",\n            \"standard_status\": \"Proposed\",\n            \"status\": \"PROPOSED\"\n        },\n        {\n            \"pms_name\": \"EagleSoft\",\n            \"standard_status\": \"Presented\",\n            \"status\": \"PRESENTED\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"UNKNOWN\",\n            \"status\": \"FMX-INTRAORAL-COMPLETE SERIES\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"UNKNOWN\",\n            \"status\": \"OFFICE VISIT\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"Planned\",\n            \"status\": \"PERIODIC ORAL EVALUATION\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"UNKNOWN\",\n            \"status\": \"LIMITED ORAL EVALUATION\"\n        },\n        {\n            \"pms_name\": \"EagleSoft\",\n            \"standard_status\": \"Completed\",\n            \"status\": \"POST TO WALKOUT\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"UNKNOWN\",\n            \"status\": \"DECONTAMINATE\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"Proposed\",\n            \"status\": \"CREATED\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"Planned\",\n            \"status\": \"PERIODONTAL MAINTENANCE\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"Planned\",\n            \"status\": \"FLUORIDE TX\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"Declined\",\n            \"status\": \"REJECTED\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"Planned\",\n            \"status\": \"HEALTHY MOUTH CLEANING-ADULT\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"Accepted\",\n            \"status\": \"ACCEPTED\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"Planned\",\n            \"status\": \"CROWN-PORCELAIN/CERAMIC SUBSTR\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"Planned\",\n            \"status\": \"ROOT CANAL THERAPY - MOLAR\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"In Progress\",\n            \"status\": \"ACTIVE\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"Completed\",\n            \"status\": \"COMPLETED\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"UNKNOWN\",\n            \"status\": \"EPWORTH SURVEY\"\n        },\n        {\n            \"pms_name\": \"EagleSoft\",\n            \"standard_status\": \"UNKNOWN\",\n            \"status\": \"D2391\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"UNKNOWN\",\n            \"status\": \"INTRAORAL-PERIAPICAL-1ST FILM\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"On Hold\",\n            \"status\": \"REFERRED\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"Pending Insurance\",\n            \"status\": \"PENDING\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"UNKNOWN\",\n            \"status\": \"COMP ORAL EVAL-NEW/ESTAB PAT\"\n        }\n    ]\n}\n"
 								}
 							]
 						},
