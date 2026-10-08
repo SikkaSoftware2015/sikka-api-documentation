@@ -3366,14 +3366,38 @@
 									"name": "insured?fields=get_all",
 									"originalRequest": {
 										"method": "GET",
-										"header": [],
-										"url": "https://api.sikkasoft.com/v4/insured"
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/insured?fields=Get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"insured"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "Get_all"
+												}
+											]
+										}
 									},
 									"_postman_previewlanguage": null,
 									"header": null,
 									"cookie": [],
 									"responseTime": null,
-									"body": null
+									"body": "{\r\n    \"offset\": \"0\",\r\n    \"limit\": \"1\",\r\n    \"total_count\": \"16150\",\r\n    \"execution_time\": \"33\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/insured?offset=0&limit=1\",\r\n        \"previous\": \"\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/insured?offset=0&limit=1\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/insured?offset=1&limit=1\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/insured?offset=16149&limit=1\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/insured/85\",\r\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/245301\",\r\n            \"patient_id\": \"245301\",\r\n            \"practice_id\": \"1\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n            \"claim_sr_no\": \"85\",\r\n            \"claim_href\": \"https://api.sikkasoft.com/v4/practices/1/claims/85\",\r\n            \"cust_id\": \"1\",\r\n            \"insurance_company_id\": \"28\",\r\n            \"insurance_company_href\": \"https://api.sikkasoft.com/v4/practices/1/insurance_companies/28\",\r\n            \"insured_number\": \"\",\r\n            \"insurance_benefit\": \"\",\r\n            \"assign_release\": \"Y\",\r\n            \"ssn_subscriber_id\": \"454647484\",\r\n            \"insured_user_count\": \"\",\r\n            \"previous_year_insurance_used\": \"\",\r\n            \"signature_on_file\": \"Y\"\r\n        }\r\n    ]\r\n}"
 								}
 							]
 						},
