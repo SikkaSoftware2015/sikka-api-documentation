@@ -3340,7 +3340,13 @@
 									"name": "insured",
 									"originalRequest": {
 										"method": "GET",
-										"header": [],
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>",
+												"type": "text"
+											}
+										],
 										"url": "https://api.sikkasoft.com/v4/insured"
 									},
 									"_postman_previewlanguage": "",
@@ -3353,7 +3359,7 @@
 										}
 									],
 									"responseTime": null,
-									"body": ""
+									"body": "{\r\n    \"offset\": \"0\",\r\n    \"limit\": \"1\",\r\n    \"total_count\": \"16150\",\r\n    \"execution_time\": \"34\",\r\n    \"pagination\": {\r\n        \"first\": \"https://api.sikkasoft.com/v4/insured?offset=0&limit=1\",\r\n        \"previous\": \"\",\r\n        \"current\": \"https://api.sikkasoft.com/v4/insured?offset=0&limit=1\",\r\n        \"next\": \"https://api.sikkasoft.com/v4/insured?offset=1&limit=1\",\r\n        \"last\": \"https://api.sikkasoft.com/v4/insured?offset=16149&limit=1\"\r\n    },\r\n    \"items\": [\r\n        {\r\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/insured/85\",\r\n            \"patient_href\": \"https://api.sikkasoft.com/v4/practices/1/patients/245301\",\r\n            \"patient_id\": \"245301\",\r\n            \"practice_id\": \"1\",\r\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n            \"claim_sr_no\": \"85\",\r\n            \"claim_href\": \"https://api.sikkasoft.com/v4/practices/1/claims/85\",\r\n            \"cust_id\": \"1\",\r\n            \"insurance_company_id\": \"28\",\r\n            \"insurance_company_href\": \"https://api.sikkasoft.com/v4/practices/1/insurance_companies/28\",\r\n            \"insured_number\": \"\",\r\n            \"insurance_benefit\": \"\",\r\n            \"assign_release\": \"Y\",\r\n            \"ssn_subscriber_id\": \"454647484\",\r\n            \"insured_user_count\": \"\",\r\n            \"previous_year_insurance_used\": \"\",\r\n            \"signature_on_file\": \"Y\"\r\n        }\r\n    ]\r\n}"
 								},
 								{
 									"id": "24704d35-48dd-481a-b1cc-a1e4a451fe18",
