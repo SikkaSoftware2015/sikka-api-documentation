@@ -3331,8 +3331,8 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "https://api.sikkasoft.com/v4/insurance_plan_coverage",
-								"description": "Returns insurance plan and coverage data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### insurance_company_id `optional`\n\n> insurance company id from appointments \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### SortBy\n\n###### insurance_company_id `default`\n\n> Insurance Company ID"
+								"url": "https://api.sikkasoft.com/v4/insured",
+								"description": "Returns insurance plan and coverage data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key\n\n###### practice_id `optional`\n\n> practice id of office\n\n###### patient_id `optional`\n\n> Patient ID as per the management system\n\n###### claim_sr_no `optional`\n\n> claim serial number in practice management system\n\n###### insured_number `optional`\n\n> insured/member number of the subscriber\n\n###### insurance_company_id `optional`\n\n> insurance company id of the carrier\n\n###### ssn_subscriber_id `optional`\n\n> SSN / subscriber id of the insured\n\n###### cust_id `optional`\n\n> cust id\n  \n\n###### SortBy\n\n###### patient_id `default`\n\n> Patient ID\n\n###### claim_sr_no\n\n> Claim serial number\n\n###### insured_no\n\n> Insured/member number\n\n###### insurance_company_id\n\n> Insurance Company ID\n\n###### ssn_subscriber_id\n\n> SSN / subscriber id\n\n###### practice_id\n\n> Practice ID"
 							},
 							"response": [
 								{
