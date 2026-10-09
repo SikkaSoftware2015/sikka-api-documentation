@@ -3347,7 +3347,7 @@
 												"type": "text"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/insurance_plan_coverage"
+										"url": "https://api.sikkasoft.com/v4/insured"
 									},
 									"_postman_previewlanguage": "json",
 									"header": null,
@@ -3357,7 +3357,7 @@
 								},
 								{
 									"id": "774831b3-2c14-4cf7-9917-45b4d38d73bf",
-									"name": "insurance_plan_coverage?fields=get_all",
+									"name": "insured?fields=get_all",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
@@ -3368,7 +3368,7 @@
 											}
 										],
 										"url": {
-											"raw": "https://api.sikkasoft.com/v4/insurance_plan_coverage?fields=get_all",
+											"raw": "https://api.sikkasoft.com/v4/insured?fields=get_all",
 											"protocol": "https",
 											"host": [
 												"api",
@@ -3377,13 +3377,12 @@
 											],
 											"path": [
 												"v4",
-												"insurance_plan_coverage"
+												"insured"
 											],
 											"query": [
 												{
 													"key": "fields",
-													"value": "get_all",
-													"type": "text"
+													"value": "get_all"
 												}
 											]
 										}
