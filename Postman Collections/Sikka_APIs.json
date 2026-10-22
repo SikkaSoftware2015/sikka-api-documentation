@@ -11146,7 +11146,7 @@
 											}
 										],
 										"url": {
-											"raw": "https://api.sikkasoft.com/v4/standard/appointment_statuses?pms_name=EagleSoft&fields=get_all",
+											"raw": "https://api.sikkasoft.com/v4/standard/pateint_statuses?pms_name=EagleSoft&fields=get_all",
 											"protocol": "https",
 											"host": [
 												"api",
@@ -11156,7 +11156,7 @@
 											"path": [
 												"v4",
 												"standard",
-												"appointment_statuses"
+												"pateint_statuses"
 											],
 											"query": [
 												{
@@ -11227,7 +11227,7 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"50\",\n    \"total_count\": \"15\",\n    \"execution_time\": \"13\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/standard_appointment_statuses?offset=0&limit=50\",\n        \"previous\": \"\",\n        \"current\": \"https://api.sikkasoft.com/v4/standard_appointment_statuses?offset=0&limit=50\",\n        \"next\": \"\",\n        \"last\": \"https://api.sikkasoft.com/v4/standard_appointment_statuses?offset=0&limit=50\"\n    },\n    \"items\": [\n        {\n            \"pms_name\": \"EagleSoft\",\n            \"standard_status\": \"Unconfirmed\",\n            \"status\": \"WAITING FOR CALLBACK\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"Cancelled\",\n            \"status\": \"DELETED-CANCELLED\"\n        },\n        {\n            \"pms_name\": \"EagleSoft\",\n            \"standard_status\": \"Cancelled\",\n            \"status\": \"DELETED-FAILED\"\n        },\n        {\n            \"pms_name\": \"EagleSoft\",\n            \"standard_status\": \"Unconfirmed\",\n            \"status\": \"UNCONFIRMED\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"UNKNOWN\",\n            \"status\": \"DELETED-NEITHER\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"Unconfirmed\",\n            \"status\": \"LEFT MESSAGE\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"UNKNOWN\",\n            \"status\": \"NO ANSWER\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"Unconfirmed\",\n            \"status\": \"SENT EMAIL\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"UNKNOWN\",\n            \"status\": \"OTHER\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"UNKNOWN\",\n            \"status\": \"NOFLEX\"\n        },\n        {\n            \"pms_name\": \"EagleSoft\",\n            \"standard_status\": \"Confirmed\",\n            \"status\": \"CONFIRMED\"\n        },\n        {\n            \"pms_name\": \"EagleSoft\",\n            \"standard_status\": \"Cancelled\",\n            \"status\": \"DELETED-NEITHER\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"Confirmed\",\n            \"status\": \"FIRM-E\"\n        },\n        {\n            \"pms_name\": \"EagleSoft\",\n            \"standard_status\": \"UNKNOWN\",\n            \"status\": \"SENT EMAIL\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"UNKNOWN\",\n            \"status\": \"PHONE BUSY\"\n        }\n    ]\n}\n"
+									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"50\",\n    \"total_count\": \"15\",\n    \"execution_time\": \"13\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/standard_patient_statuses?offset=0&limit=50\",\n        \"previous\": \"\",\n        \"current\": \"https://api.sikkasoft.com/v4/standard_patient_statuses?offset=0&limit=50\",\n        \"next\": \"\",\n        \"last\": \"https://api.sikkasoft.com/v4/standard_patient_statuses?offset=0&limit=50\"\n    },\n    \"items\": [\n        {\n            \"pms_name\": \"EagleSoft\",\n            \"standard_status\": \"Active\",\n            \"status\": \"Active\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"InActive\",\n            \"status\": \"InActive\"\n        }\n    ]\n}\n"
 								}
 							]
 						},
