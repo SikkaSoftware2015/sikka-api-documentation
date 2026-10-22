@@ -10986,7 +10986,7 @@
 							]
 						},
 						{
-							"name": "standard_appointment_statuses Copy",
+							"name": "standard/patient_statuses",
 							"id": "056c8890-36f3-4ee3-8001-4710a6c4ab4c",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -11011,13 +11011,13 @@
 										"type": "text"
 									}
 								],
-								"url": "https://api.sikkasoft.com/v4/standard/appointment_statuses",
+								"url": "https://api.sikkasoft.com/v4/standard/patient_statuses",
 								"description": "---\n\n### Parameters\n  \n#### pms_name `Required`\n\n> pms_name from PMS list \n  \n\n#### standard_status `Optional`\n\n> standard_status \n  \n\n#### status `Optional`\n\n> status"
 							},
 							"response": [
 								{
 									"id": "b2642003-f197-4714-adde-c3d55865f9da",
-									"name": "standard_appointment_statuses",
+									"name": "standard/patient_statuses",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
@@ -11039,7 +11039,7 @@
 											}
 										],
 										"url": {
-											"raw": "https://api.sikkasoft.com/v4/standard/appointment_statuses?pms_name=EagleSoft&limit=2",
+											"raw": "https://api.sikkasoft.com/v4/standard/patient_statuses?pms_name=EagleSoft&limit=2",
 											"protocol": "https",
 											"host": [
 												"api",
@@ -11049,7 +11049,7 @@
 											"path": [
 												"v4",
 												"standard",
-												"appointment_statuses"
+												"patient_statuses"
 											],
 											"query": [
 												{
@@ -11120,7 +11120,7 @@
 									],
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"2\",\n    \"total_count\": \"15\",\n    \"execution_time\": \"11\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/standard_appointment_statuses?offset=0&limit=2\",\n        \"previous\": \"\",\n        \"current\": \"https://api.sikkasoft.com/v4/standard_appointment_statuses?offset=0&limit=2\",\n        \"next\": \"https://api.sikkasoft.com/v4/standard_appointment_statuses?offset=1&limit=2\",\n        \"last\": \"https://api.sikkasoft.com/v4/standard_appointment_statuses?offset=7&limit=2\"\n    },\n    \"items\": [\n        {\n            \"pms_name\": \"EagleSoft\",\n            \"standard_status\": \"Unconfirmed\",\n            \"status\": \"WAITING FOR CALLBACK\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"Cancelled\",\n            \"status\": \"DELETED-CANCELLED\"\n        }\n    ]\n}\n"
+									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"2\",\n    \"total_count\": \"15\",\n    \"execution_time\": \"11\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/standard_pateint_statuses?offset=0&limit=2\",\n        \"previous\": \"\",\n        \"current\": \"https://api.sikkasoft.com/v4/standard_pateint_statuses?offset=0&limit=2\",\n        \"next\": \"https://api.sikkasoft.com/v4/standard_pateint_statuses?offset=1&limit=2\",\n        \"last\": \"https://api.sikkasoft.com/v4/standard_pateint_statuses?offset=7&limit=2\"\n    },\n    \"items\": [\n        {\n            \"pms_name\": \"EagleSoft\",\n            \"standard_status\": \"Active\",\n            \"status\": \"Active\"\n        },\n        {\n            \"pms_name\": \"Eaglesoft\",\n            \"standard_status\": \"InActive\",\n            \"status\": \"InActive\"\n        }\n    ]\n}\n"
 								},
 								{
 									"id": "c060a508-0a59-4532-be9e-898a2e956e2e",
