@@ -1665,7 +1665,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/contact_details",
-								"description": "Returns contact details of patients from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> patient id in practice management system \n  \n\n###### uid `optional`\n\n> Unique Id \n  \n\n###### contact_of `optional`\n\n> Contact of patient \n  \n\n###### contact_type `optional`\n\n> Contact Type of patient \n  \n\n###### contact_value `optional`\n\n> Contact value \n  \n\n###### SortBy\n\n###### uid `default`\n\n> Unique Id \n\n###### contact_of\n\n> Contact of patient \n  \n\n###### contact_type\n\n> Contact Type of patient \n  \n\n###### contact_value\n\n> Contact value \n  \n\n###### practice_id\n\n> practice id of office"
+								"description": "Returns contact details of patients from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> patient id in practice management system \n  \n\n###### uid `optional`\n\n> Unique Id \n  \n\n###### contact_of `optional`\n\n> Contact of patient \n  \n\n###### contact_type `optional`\n\n> Contact Type of patient \n  \n\n###### contact_value `optional`\n\n> Contact value \n  \n\n###### SortBy\n\n###### uid `default`\n\n> Unique Id \n  \n\n###### contact_of\n\n> Contact of patient \n  \n\n###### contact_type\n\n> Contact Type of patient \n  \n\n###### contact_value\n\n> Contact value \n  \n\n###### practice_id\n\n> practice id of office"
 							},
 							"response": [
 								{
@@ -1846,7 +1846,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/discount_plans",
-								"description": "Returns contact details of patients from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> patient id in practice management system \n  \n\n###### uid `optional`\n\n> Unique Id \n  \n\n###### contact_of `optional`\n\n> Contact of patient \n  \n\n###### contact_type `optional`\n\n> Contact Type of patient \n  \n\n###### contact_value `optional`\n\n> Contact value \n  \n\n###### SortBy\n\n###### uid `default`\n\n> Unique Id \n\n###### contact_of\n\n> Contact of patient \n  \n\n###### contact_type\n\n> Contact Type of patient \n  \n\n###### contact_value\n\n> Contact value \n  \n\n###### practice_id\n\n> practice id of office"
+								"description": "Returns contact details of patients from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> patient id in practice management system \n  \n\n###### uid `optional`\n\n> Unique Id \n  \n\n###### contact_of `optional`\n\n> Contact of patient \n  \n\n###### contact_type `optional`\n\n> Contact Type of patient \n  \n\n###### contact_value `optional`\n\n> Contact value \n  \n\n###### SortBy\n\n###### uid `default`\n\n> Unique Id \n  \n\n###### contact_of\n\n> Contact of patient \n  \n\n###### contact_type\n\n> Contact Type of patient \n  \n\n###### contact_value\n\n> Contact value \n  \n\n###### practice_id\n\n> practice id of office"
 							},
 							"response": [
 								{
@@ -1862,7 +1862,7 @@
 											}
 										],
 										"url": {
-											"raw": "https://api.sikkasoft.com/v4/contact_details",
+											"raw": "https://api.sikkasoft.com/v4/discount_plans",
 											"protocol": "https",
 											"host": [
 												"api",
@@ -1871,7 +1871,7 @@
 											],
 											"path": [
 												"v4",
-												"contact_details"
+												"discount_plans"
 											],
 											"query": [
 												{
@@ -1933,19 +1933,18 @@
 								},
 								{
 									"id": "feaae498-922e-4bc2-950e-2d2703ec65c8",
-									"name": "contact_details?fields=get_all",
+									"name": "discount_plans?fields=get_all",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
 											{
 												"key": "request-key",
 												"value": "<request_key>",
-												"type": "text",
 												"disabled": true
 											}
 										],
 										"url": {
-											"raw": "https://api.sikkasoft.com/v4/contact_details",
+											"raw": "https://api.sikkasoft.com/v4/discount_plans",
 											"protocol": "https",
 											"host": [
 												"api",
@@ -1954,7 +1953,7 @@
 											],
 											"path": [
 												"v4",
-												"contact_details"
+												"discount_plans"
 											],
 											"query": [
 												{
