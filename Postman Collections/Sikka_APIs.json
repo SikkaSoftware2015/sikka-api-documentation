@@ -1851,7 +1851,7 @@
 							"response": [
 								{
 									"id": "330b809a-a8e5-463c-b9cb-2e42d5f87360",
-									"name": "drugs",
+									"name": "discount_plans",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
@@ -1872,7 +1872,7 @@
 								},
 								{
 									"id": "eb674cf3-0297-41b6-8c42-9ebd1c2bdcf7",
-									"name": "drugs?fields=get_all",
+									"name": "discount_plans?fields=get_all",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
