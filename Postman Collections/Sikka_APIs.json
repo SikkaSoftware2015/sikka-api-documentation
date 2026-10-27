@@ -1846,7 +1846,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/discount_plans",
-								"description": "Returns drugs data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### drug_id `optional`\n\n> drug id from appointments \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### date `optional`\n\n> format: yyyy-mm-dd, date \n  \n\n###### SortBy\n\n###### drug_id `default`\n\n> drug id from appointments"
+								"description": "Returns discount plan data from practice\n---\n\n###### Parameters\n\n###### request_key `Required`\n> A Valid 32 characters alpha-numeric request key\n\n###### practice_id `optional`\n> practice id of office\n\n###### cust_id `optional`\n> customer id of office\n\n###### discount_plan_id `optional`\n> unique id of the discount plan in practice management system\n\n###### discount_plan_name `optional`\n> name or description of the discount plan\n\n###### fee_schedule_id `optional`\n> fee schedule number assigned to the discount plan\n\n###### plan_status `optional`\n> status of the discount plan, whether it is active or inactive\n\n\n###### SortBy\n\n###### discount_plan_id `default`\n> unique id of the discount plan as per practice management system\n\n###### discount_plan_name\n> Discount Plan Name\n\n###### fee_schedule_id\n> Fee Schedule Id\n\n###### annual_maximum_amount\n> Annual Maximum Amount"
 							},
 							"response": [
 								{
