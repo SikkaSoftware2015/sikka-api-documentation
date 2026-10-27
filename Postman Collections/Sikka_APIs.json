@@ -1837,6 +1837,186 @@
 							]
 						},
 						{
+							"name": "discount_plans",
+							"id": "df99b71b-8fa9-4c0f-83ca-fa0866576ae1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "https://api.sikkasoft.com/v4/discount_plans",
+								"description": "Returns contact details of patients from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### patient_id `optional`\n\n> patient id in practice management system \n  \n\n###### uid `optional`\n\n> Unique Id \n  \n\n###### contact_of `optional`\n\n> Contact of patient \n  \n\n###### contact_type `optional`\n\n> Contact Type of patient \n  \n\n###### contact_value `optional`\n\n> Contact value \n  \n\n###### SortBy\n\n###### uid `default`\n\n> Unique Id \n\n###### contact_of\n\n> Contact of patient \n  \n\n###### contact_type\n\n> Contact Type of patient \n  \n\n###### contact_value\n\n> Contact value \n  \n\n###### practice_id\n\n> practice id of office"
+							},
+							"response": [
+								{
+									"id": "a3b06eb8-d39b-4046-8b40-a3031297489a",
+									"name": "discount_plans",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "request-key",
+												"value": "<request_key>",
+												"disabled": true
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/contact_details",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"contact_details"
+											],
+											"query": [
+												{
+													"key": "",
+													"value": "",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding"
+										},
+										{
+											"key": "Server",
+											"value": "Microsoft-IIS/8.5"
+										},
+										{
+											"key": "Request-Key-Expires",
+											"value": "Tue, 06 Oct 2020 21:17:54 GMT"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "ASP.NET"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 06 Oct 2020 20:40:47 GMT"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload;"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"offset\": \"0\",\n    \"limit\": \"1\",\n    \"total_count\": \"25106\",\n    \"execution_time\": \"846\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/contact_details?offset=0&limit=1\",\n        \"previous\": \"\",\n        \"current\": \"https://api.sikkasoft.com/v4/contact_details?offset=0&limit=1\",\n        \"next\": \"https://api.sikkasoft.com/v4/contact_details?offset=1&limit=1\",\n        \"last\": \"https://api.sikkasoft.com/v4/contact_details?offset=25105&limit=1\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/1/contact_details/99901\",\n            \"practice_id\": \"1\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\n            \"uid\": \"99901\",\n            \"contact_of\": \"Patient\",\n            \"contact_type\": \"Home Phone\",\n            \"contact_value\": \"xxx-xxx-xxxx\",\n            \"label\": \"\"\n        }\n    ]\n}"
+								},
+								{
+									"id": "feaae498-922e-4bc2-950e-2d2703ec65c8",
+									"name": "contact_details?fields=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "request-key",
+												"value": "<request_key>",
+												"type": "text",
+												"disabled": true
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/contact_details",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"contact_details"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding"
+										},
+										{
+											"key": "Server",
+											"value": "Microsoft-IIS/8.5"
+										},
+										{
+											"key": "Request-Key-Expires",
+											"value": "Tue, 06 Oct 2020 21:17:54 GMT"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "ASP.NET"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 06 Oct 2020 20:40:47 GMT"
+										},
+										{
+											"key": "Strict-Transport-Security",
+											"value": "max-age=31536000; includeSubDomains; preload;"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"offset\": \"xx\",\n    \"limit\": \"xx\",\n    \"total_count\": \"xx\",\n    \"execution_time\": \"xx\",\n    \"pagination\": {\n        \"first\": \"https://api.sikkasoft.com/v4/contact_details?offset=xx&limit=xx\",\n        \"previous\": \"previous\",\n        \"current\": \"https://api.sikkasoft.com/v4/contact_details?offset=xx&limit=xx\",\n        \"next\": \"https://api.sikkasoft.com/v4/contact_details?offset=xx&limit=xx\",\n        \"last\": \"https://api.sikkasoft.com/v4/contact_details?offset=xx&limit=xx\"\n    },\n    \"items\": [\n        {\n            \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/contact_details/xxxx\",\n            \"practice_id\": \"practice id\",\n            \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\n            \"uid\": \"uid\",\n            \"contact_of\": \"contact of\",\n            \"contact_type\": \"contact type\",\n            \"contact_value\": \"contact value\",\n            \"label\": \"label\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
 							"name": "drugs",
 							"id": "6c88fd9b-cf27-4ee9-8607-f89b26c41656",
 							"protocolProfileBehavior": {
