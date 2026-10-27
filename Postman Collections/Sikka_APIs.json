@@ -1838,7 +1838,7 @@
 						},
 						{
 							"name": "discount_plans",
-							"id": "df99b71b-8fa9-4c0f-83ca-fa0866576ae1",
+							"id": "62716144-0322-4872-b445-8491aa8e04e8",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1846,105 +1846,43 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/discount_plans",
-								"description": "## Returns discount plan data from practice.\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### cust_id `optional`\n\n> customer id of office \n  \n\n###### discount_plan_id `optional`\n\n> unique id of the discount plan in practice management system \n  \n\n###### discount_plan_name `optional`\n\n> name or description of the discount plan \n  \n\n###### fee_schedule_id `optional`\n\n> fee schedule number assigned to the discount plan \n  \n\n###### plan_status `optional`\n\n> status of the discount plan, whether it is active or inactive \n  \n\n###### SortBy\n\n###### discount_plan_id `default`\n\n> unique id of the discount plan as per practice management system \n  \n\n###### discount_plan_name\n\n> Discount Plan Name \n  \n\n###### fee_schedule_id\n\n> Fee Schedule Id \n  \n\n###### annual_maximum_amount\n\n> Annual Maximum Amount"
+								"description": "Returns drugs data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### drug_id `optional`\n\n> drug id from appointments \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### date `optional`\n\n> format: yyyy-mm-dd, date \n  \n\n###### SortBy\n\n###### drug_id `default`\n\n> drug id from appointments"
 							},
 							"response": [
 								{
-									"id": "a3b06eb8-d39b-4046-8b40-a3031297489a",
-									"name": "discount_plans",
+									"id": "330b809a-a8e5-463c-b9cb-2e42d5f87360",
+									"name": "drugs",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
 											{
-												"key": "request-key",
-												"value": "<request_key>",
-												"disabled": true
+												"key": "Request-Key",
+												"value": "<request_key>"
 											}
 										],
-										"url": {
-											"raw": "https://api.sikkasoft.com/v4/discount_plans",
-											"protocol": "https",
-											"host": [
-												"api",
-												"sikkasoft",
-												"com"
-											],
-											"path": [
-												"v4",
-												"discount_plans"
-											],
-											"query": [
-												{
-													"key": "",
-													"value": "",
-													"disabled": true
-												}
-											]
-										}
+										"url": "https://api.sikkasoft.com/v4/discount_plans"
 									},
 									"status": "OK",
 									"code": 200,
 									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Transfer-Encoding",
-											"value": "chunked"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json"
-										},
-										{
-											"key": "Content-Encoding",
-											"value": "gzip"
-										},
-										{
-											"key": "Vary",
-											"value": "Accept-Encoding"
-										},
-										{
-											"key": "Server",
-											"value": "Microsoft-IIS/8.5"
-										},
-										{
-											"key": "Request-Key-Expires",
-											"value": "Tue, 06 Oct 2020 21:17:54 GMT"
-										},
-										{
-											"key": "X-Powered-By",
-											"value": "ASP.NET"
-										},
-										{
-											"key": "Date",
-											"value": "Tue, 06 Oct 2020 20:40:47 GMT"
-										},
-										{
-											"key": "Strict-Transport-Security",
-											"value": "max-age=31536000; includeSubDomains; preload;"
-										},
-										{
-											"key": "Content-Security-Policy",
-											"value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
-										}
-									],
+									"header": null,
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n  \"offset\": \"xx\",\n  \"limit\": \"xx\",\n  \"total_count\": \"xx\",\n  \"execution_time\": \"xx\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/discount_plans?offset=xx&limit=xx\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/discount_plans?offset=xx&limit=xx\",\n    \"next\": \"https://api.sikkasoft.com/v4/discount_plans?offset=xx&limit=xx\",\n    \"last\": \"https://api.sikkasoft.com/v4/discount_plans?offset=xx&limit=xx\"\n  },\n  \"items\": [\n    {\n      \"discount_plan_id\": \"discount plan id\",\n      \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/discount_plans/xxxx\",\n      \"discount_plan_name\": \"discount plan name\",\n      \"fee_schedule_id\": \"fee schedule id\",\n      \"fee_schedule_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/fee_schedules?fee_no=xxxx\",\n      \"plan_status\": \"plan status\",\n      \"plan_note\": \"plan note\",\n      \"exam_frequency_limit\": \"exam frequency limit\",\n      \"xray_frequency_limit\": \"xray frequency limit\",\n      \"prophylaxis_frequency_limit\": \"prophylaxis frequency limit\",\n      \"fluoride_frequency_limit\": \"fluoride frequency limit\",\n      \"periodontal_maintenance_frequency_limit\": \"periodontal maintenance frequency limit\",\n      \"limited_exam_frequency_limit\": \"limited exam frequency limit\",\n      \"periapical_xray_frequency_limit\": \"periapical xray frequency limit\",\n      \"annual_maximum_amount\": \"annual maximum amount\",\n      \"practice_id\": \"practice id\",\n      \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\n      \"cust_id\": \"cust id\",\n      \"rowhash\": \"rowhash\"\n    }\n  ]\n}"
+									"body": "{\r\n  \"offset\": \"xx\",\r\n  \"limit\": \"xx\",\r\n  \"total_count\": \"xx\",\r\n  \"execution_time\": \"xx\",\r\n  \"pagination\": {\r\n    \"first\": \"https://api.sikkasoft.com/v4/discount_plans?offset=xx&limit=xx\",\r\n    \"previous\": \"\",\r\n    \"current\": \"https://api.sikkasoft.com/v4/discount_plans?offset=xx&limit=xx\",\r\n    \"next\": \"https://api.sikkasoft.com/v4/discount_plans?offset=xx&limit=xx\",\r\n    \"last\": \"https://api.sikkasoft.com/v4/discount_plans?offset=xx&limit=xx\"\r\n  },\r\n  \"items\": [\r\n    {\r\n      \"discount_plan_id\": \"discount plan id\",\r\n      \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/discount_plans/xxxx\",\r\n      \"discount_plan_name\": \"discount plan name\",\r\n      \"fee_schedule_id\": \"fee schedule id\",\r\n      \"fee_schedule_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/fee_schedules?fee_no=xxxx\",\r\n      \"plan_status\": \"plan status\",\r\n      \"plan_note\": \"plan note\",\r\n      \"exam_frequency_limit\": \"exam frequency limit\",\r\n      \"xray_frequency_limit\": \"xray frequency limit\",\r\n      \"prophylaxis_frequency_limit\": \"prophylaxis frequency limit\",\r\n      \"fluoride_frequency_limit\": \"fluoride frequency limit\",\r\n      \"periodontal_maintenance_frequency_limit\": \"periodontal maintenance frequency limit\",\r\n      \"limited_exam_frequency_limit\": \"limited exam frequency limit\",\r\n      \"periapical_xray_frequency_limit\": \"periapical xray frequency limit\",\r\n      \"annual_maximum_amount\": \"annual maximum amount\",\r\n      \"practice_id\": \"practice id\",\r\n      \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\r\n      \"cust_id\": \"cust id\",\r\n      \"rowhash\": \"rowhash\"\r\n    }\r\n  ]\r\n}"
 								},
 								{
-									"id": "feaae498-922e-4bc2-950e-2d2703ec65c8",
-									"name": "discount_plans?fields=get_all",
+									"id": "eb674cf3-0297-41b6-8c42-9ebd1c2bdcf7",
+									"name": "drugs?fields=get_all",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
 											{
-												"key": "request-key",
-												"value": "<request_key>",
-												"disabled": true
+												"key": "Request-Key",
+												"value": "<request_key>"
 											}
 										],
 										"url": {
-											"raw": "https://api.sikkasoft.com/v4/discount_plans",
+											"raw": "https://api.sikkasoft.com/v4/discount_plans?fields=get_all",
 											"protocol": "https",
 											"host": [
 												"api",
@@ -1958,8 +1896,7 @@
 											"query": [
 												{
 													"key": "fields",
-													"value": "get_all",
-													"disabled": true
+													"value": "get_all"
 												}
 											]
 										}
@@ -1967,51 +1904,10 @@
 									"status": "OK",
 									"code": 200,
 									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Transfer-Encoding",
-											"value": "chunked"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json"
-										},
-										{
-											"key": "Content-Encoding",
-											"value": "gzip"
-										},
-										{
-											"key": "Vary",
-											"value": "Accept-Encoding"
-										},
-										{
-											"key": "Server",
-											"value": "Microsoft-IIS/8.5"
-										},
-										{
-											"key": "Request-Key-Expires",
-											"value": "Tue, 06 Oct 2020 21:17:54 GMT"
-										},
-										{
-											"key": "X-Powered-By",
-											"value": "ASP.NET"
-										},
-										{
-											"key": "Date",
-											"value": "Tue, 06 Oct 2020 20:40:47 GMT"
-										},
-										{
-											"key": "Strict-Transport-Security",
-											"value": "max-age=31536000; includeSubDomains; preload;"
-										},
-										{
-											"key": "Content-Security-Policy",
-											"value": "default-src 'self' 'unsafe-inline' * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval' ; img-src * data: blob:; font-src * 'unsafe-inline' data: blob:;"
-										}
-									],
+									"header": null,
 									"cookie": [],
 									"responseTime": null,
-									"body": "{\n  \"offset\": \"xx\",\n  \"limit\": \"xx\",\n  \"total_count\": \"xx\",\n  \"execution_time\": \"xx\",\n  \"pagination\": {\n    \"first\": \"https://api.sikkasoft.com/v4/discount_plans?offset=xx&limit=xx\",\n    \"previous\": \"\",\n    \"current\": \"https://api.sikkasoft.com/v4/discount_plans?offset=xx&limit=xx\",\n    \"next\": \"https://api.sikkasoft.com/v4/discount_plans?offset=xx&limit=xx\",\n    \"last\": \"https://api.sikkasoft.com/v4/discount_plans?offset=xx&limit=xx\"\n  },\n  \"items\": [\n    {\n      \"discount_plan_id\": \"discount plan id\",\n      \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/discount_plans/xxxx\",\n      \"discount_plan_name\": \"discount plan name\",\n      \"fee_schedule_id\": \"fee schedule id\",\n      \"fee_schedule_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/fee_schedules?fee_no=xxxx\",\n      \"plan_status\": \"plan status\",\n      \"plan_note\": \"plan note\",\n      \"exam_frequency_limit\": \"exam frequency limit\",\n      \"xray_frequency_limit\": \"xray frequency limit\",\n      \"prophylaxis_frequency_limit\": \"prophylaxis frequency limit\",\n      \"fluoride_frequency_limit\": \"fluoride frequency limit\",\n      \"periodontal_maintenance_frequency_limit\": \"periodontal maintenance frequency limit\",\n      \"limited_exam_frequency_limit\": \"limited exam frequency limit\",\n      \"periapical_xray_frequency_limit\": \"periapical xray frequency limit\",\n      \"annual_maximum_amount\": \"annual maximum amount\",\n      \"practice_id\": \"practice id\",\n      \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\n      \"cust_id\": \"cust id\",\n      \"rowhash\": \"rowhash\"\n    }\n  ]\n}"
+									"body": "{\r\n  \"offset\": \"xx\",\r\n  \"limit\": \"xx\",\r\n  \"total_count\": \"xx\",\r\n  \"execution_time\": \"xx\",\r\n  \"pagination\": {\r\n    \"first\": \"https://api.sikkasoft.com/v4/discount_plans?offset=xx&limit=xx\",\r\n    \"previous\": \"\",\r\n    \"current\": \"https://api.sikkasoft.com/v4/discount_plans?offset=xx&limit=xx\",\r\n    \"next\": \"https://api.sikkasoft.com/v4/discount_plans?offset=xx&limit=xx\",\r\n    \"last\": \"https://api.sikkasoft.com/v4/discount_plans?offset=xx&limit=xx\"\r\n  },\r\n  \"items\": [\r\n    {\r\n      \"discount_plan_id\": \"discount plan id\",\r\n      \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/discount_plans/xxxx\",\r\n      \"discount_plan_name\": \"discount plan name\",\r\n      \"fee_schedule_id\": \"fee schedule id\",\r\n      \"fee_schedule_href\": \"https://api.sikkasoft.com/v4/practices/xxxx/fee_schedules?fee_no=xxxx\",\r\n      \"plan_status\": \"plan status\",\r\n      \"plan_note\": \"plan note\",\r\n      \"exam_frequency_limit\": \"exam frequency limit\",\r\n      \"xray_frequency_limit\": \"xray frequency limit\",\r\n      \"prophylaxis_frequency_limit\": \"prophylaxis frequency limit\",\r\n      \"fluoride_frequency_limit\": \"fluoride frequency limit\",\r\n      \"periodontal_maintenance_frequency_limit\": \"periodontal maintenance frequency limit\",\r\n      \"limited_exam_frequency_limit\": \"limited exam frequency limit\",\r\n      \"periapical_xray_frequency_limit\": \"periapical xray frequency limit\",\r\n      \"annual_maximum_amount\": \"annual maximum amount\",\r\n      \"practice_id\": \"practice id\",\r\n      \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\r\n      \"cust_id\": \"cust id\",\r\n      \"rowhash\": \"rowhash\"\r\n    }\r\n  ]\r\n}"
 								}
 							]
 						},
