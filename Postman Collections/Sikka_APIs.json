@@ -7457,7 +7457,7 @@
 								"method": "GET",
 								"header": [],
 								"url": "https://api.sikkasoft.com/v4/patient_referrals",
-								"description": "Returns patient status data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### status `optional`\n\n> Status \n  \n\n###### Sortby\n\n###### practice_id `default`\n\n> practice id of office"
+								"description": "Returns patient referral account data from practice. Each record links a patient to a referral source, including the direction of the referral (to or from), the referral date, and any referral notes.\n---\n\n###### Parameters\n\n###### request_key `Required`\n> A Valid 32 characters alpha-numeric request key\n\n###### practice_id `optional`\n> practice id of office\n\n###### referral_id `optional`\n> referral id in practice management system, single value only\n\n###### patient_id `optional`\n> patient id in practice management system. Accepts comma separated values\n\n###### customer_id `optional`\n> Customer ID\n\n###### SortBy\n\n###### referral_account_id `default`\n> referral account id in practice management system\n\n###### referral_id\n> referral id in practice management system\n\n###### patient_id\n> patient id in practice management system\n\n###### practice_id\n> practice id of office"
 							},
 							"response": [
 								{
