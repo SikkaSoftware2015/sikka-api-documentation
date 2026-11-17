@@ -8096,14 +8096,13 @@
 								},
 								{
 									"id": "014476b3-40eb-4e9d-865a-b7b69e053abc",
-									"name": "payment_types?fields=get_all Copy",
+									"name": "payment_types (Winoms)",
 									"originalRequest": {
 										"method": "GET",
 										"header": [
 											{
 												"key": "Request-Key",
-												"value": "<request_key>",
-												"type": "text"
+												"value": "<request_key>"
 											}
 										],
 										"url": {
@@ -8121,12 +8120,13 @@
 											"query": [
 												{
 													"key": "fields",
-													"value": "get_all",
-													"type": "text"
+													"value": "get_all"
 												}
 											]
 										}
 									},
+									"status": "OK",
+									"code": 200,
 									"_postman_previewlanguage": "json",
 									"header": null,
 									"cookie": [],
