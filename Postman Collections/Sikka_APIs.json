@@ -1421,6 +1421,87 @@
 							]
 						},
 						{
+							"name": "claim_descriptions Copy",
+							"id": "1599e367-408c-434d-86e2-06e5d45345a6",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Request-Key",
+										"value": "<request_key>",
+										"type": "text"
+									}
+								],
+								"url": "https://api.sikkasoft.com/v4/claim_descriptions",
+								"description": "Returns claims data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### claim_description_id `optional`\n\n> claim_description_id \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### SortBy\n\n###### claim_description_id `default`\n\n> claim_description_id"
+							},
+							"response": [
+								{
+									"id": "3d70a67c-be4e-477c-9d97-5c6b3a9d807e",
+									"name": "claim_insured_details",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>"
+											}
+										],
+										"url": "https://api.sikkasoft.com/v4/claim_descriptions"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n\"offset\": \"0\",\r\n\"limit\": \"500\",\r\n\"total_count\": \"1\",\r\n\"execution_time\": \"13\",\r\n\"pagination\": {\r\n\"first\": \"http://api.sikkasoft.com/v4/claim_descriptions?offset=0&limit=500\",\r\n\"previous\": \"\",\r\n\"current\": \"http://api.sikkasoft.com/v4/claim_descriptions?offset=0&limit=500\",\r\n\"next\": \"\",\r\n\"last\": \"http://api.sikkasoft.com/v4/claim_descriptions?offset=0&limit=500\"\r\n},\r\n\"items\": [\r\n{\r\n\"href\": \"https://api.sikkasoft.com/v4/practices/1/claim_descriptions/1\",\r\n\"practice_id\": \"1\",\r\n\"practice_href\": \"https://api.sikkasoft.com/v4/practices/1\",\r\n\"claim_description_id\": \"1\",\r\n\"eligibility\": \"\",\r\n\"prior_date\": \"1111-11-11T00:00:00\",\r\n\"ortho_treatment_plan_date\": \"2011-11-11T00:00:00\",\r\n\"first_visit_date_current_series\": \"2011-05-19T00:00:00\",\r\n\"occupant_status\": \"0\",\r\n\"occupant_description\": \"\",\r\n\"accident_status\": \"\",\r\n\"accident_description\": \"\",\r\n\"prosthesis\": \"Replacement\",\r\n\"replace_reason\": \"\",\r\n\"orthodontic_treat\": \"0\",\r\n\"mos_remian\": \"0\",\r\n\"another_plan\": \"0\",\r\n\"plan_desc\": \"\",\r\n\"place_of_treat\": \"Office\",\r\n\"auto_accident_date\": \"2011-11-11T00:00:00\",\r\n\"pre_autho_no\": \"\",\r\n\"orig_ref_no\": \"\",\r\n\"occurance_date\": \"2011-11-11T00:00:00\"\r\n}\r\n]\r\n}"
+								},
+								{
+									"id": "ca04e8ff-9729-4b17-a551-03804aff79f0",
+									"name": "claim_insured_details?fields=get_all",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Request-Key",
+												"value": "<request_key>"
+											}
+										],
+										"url": {
+											"raw": "https://api.sikkasoft.com/v4/claim_insured_details?fields=get_all",
+											"protocol": "https",
+											"host": [
+												"api",
+												"sikkasoft",
+												"com"
+											],
+											"path": [
+												"v4",
+												"claim_insured_details"
+											],
+											"query": [
+												{
+													"key": "fields",
+													"value": "get_all"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\r\n  \"offset\": \"xx\",\r\n  \"limit\": \"xx\",\r\n  \"total_count\": \"xx\",\r\n  \"execution_time\": \"xx\",\r\n  \"pagination\": {\r\n    \"first\": \"https://api.sikkasoft.com/v4/claim_descriptions?offset=xx&limit=xx\",\r\n    \"previous\": \"\",\r\n    \"current\": \"https://api.sikkasoft.com/v4/claim_descriptions?offset=xx&limit=xx\",\r\n    \"next\": \"https://api.sikkasoft.com/v4/claim_descriptions?offset=xx&limit=xx\",\r\n    \"last\": \"https://api.sikkasoft.com/v4/claim_descriptions?offset=xx&limit=xx\"\r\n  },\r\n  \"items\": [\r\n  {\r\n    \"href\": \"https://api.sikkasoft.com/v4/practices/xxxx/claim_descriptions/xxxx\",\r\n    \"practice_id\": \"practice id\",\r\n    \"practice_href\": \"https://api.sikkasoft.com/v4/practices/xxxx\",\r\n    \"cust_id\": \"cust id\",\r\n    \"claim_description_id\": \"claim description id\",\r\n    \"eligibility\": \"eligibility\",\r\n    \"prior_date\": \"prior date\",\r\n    \"ext\": \"ext\",\r\n    \"ortho_treatment_plan_date\": \"ortho treatment plan date\",\r\n    \"first_visit_date_current_series\": \"first visit date current series\",\r\n    \"occupant_status\": \"occupant status\",\r\n    \"occupant_description\": \"occupant description\",\r\n    \"accident_status\": \"accident status\",\r\n    \"accident_description\": \"accident description\",\r\n    \"prosthesis\": \"prosthesis\",\r\n    \"replace_reason\": \"replace reason\",\r\n    \"orthodontic_treat\": \"orthodontic treat\",\r\n    \"mos_remian\": \"mos remian\",\r\n    \"another_plan\": \"another plan\",\r\n    \"plan_desc\": \"plan desc\",\r\n    \"place_of_treat\": \"place of treat\",\r\n    \"xray_model_how_many\": \"xray model how many\",\r\n    \"school_city\": \"school city\",\r\n    \"student_status\": \"student status\",\r\n    \"auto_accident_date\": \"auto accident date\",\r\n    \"pre_autho_no\": \"pre autho no\",\r\n    \"oral\": \"oral\",\r\n    \"special\": \"special\",\r\n    \"ordered_date\": \"ordered date\",\r\n    \"medicare\": \"medicare\",\r\n    \"retroactive\": \"retroactive\",\r\n    \"chdp\": \"chdp\",\r\n    \"ccs\": \"ccs\",\r\n    \"re_eval\": \"re eval\",\r\n    \"orig_ref_no\": \"orig ref no\",\r\n    \"pla_of_treat\": \"pla of treat\",\r\n    \"occurance_date\": \"occurance date\",\r\n    \"ins_ref\": \"ins ref\",\r\n    \"appliance_date\": \"appliance date\",\r\n    \"accident_date\": \"accident date\",\r\n    \"month_of_treatment\": \"month of treatment\"\r\n}\r\n  ]\r\n}"
+								}
+							]
+						},
+						{
 							"name": "claims",
 							"id": "9ed6fc05-1aa1-4ef2-a695-b30eae5aa678",
 							"protocolProfileBehavior": {
