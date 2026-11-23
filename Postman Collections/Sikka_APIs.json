@@ -1421,7 +1421,7 @@
 							]
 						},
 						{
-							"name": "claim_descriptions Copy",
+							"name": "claim_insured_details",
 							"id": "1599e367-408c-434d-86e2-06e5d45345a6",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -1431,11 +1431,10 @@
 								"header": [
 									{
 										"key": "Request-Key",
-										"value": "<request_key>",
-										"type": "text"
+										"value": "<request_key>"
 									}
 								],
-								"url": "https://api.sikkasoft.com/v4/claim_descriptions",
+								"url": "https://api.sikkasoft.com/v4/claim_insured_details",
 								"description": "Returns claims data from practice\n\n---\n\n###### Parameters\n\n###### request_key `Required`\n\n> A Valid 32 characters alpha-numeric request key \n  \n\n###### claim_description_id `optional`\n\n> claim_description_id \n  \n\n###### practice_id `optional`\n\n> practice id of office \n  \n\n###### SortBy\n\n###### claim_description_id `default`\n\n> claim_description_id"
 							},
 							"response": [
@@ -1450,7 +1449,7 @@
 												"value": "<request_key>"
 											}
 										],
-										"url": "https://api.sikkasoft.com/v4/claim_descriptions"
+										"url": "https://api.sikkasoft.com/v4/claim_insured_details"
 									},
 									"status": "OK",
 									"code": 200,
